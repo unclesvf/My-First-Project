@@ -104,6 +104,16 @@ These are the questions I carry with me as I grow into manhood in this New World
         term: "Columbian Exchange",
         definition: "The widespread transfer of plants, animals, culture, populations, technology, and ideas between the Americas and the Old World following Columbus's voyages.",
       },
+      {
+        id: "fc1-9",
+        term: "Pedro Menéndez de Avilés",
+        definition: "Spanish admiral and explorer who founded St. Augustine in 1565, establishing the first permanent European settlement in the continental United States.",
+      },
+      {
+        id: "fc1-10",
+        term: "Virginia Company of London",
+        definition: "English joint-stock company chartered by King James I in 1606 that funded and established the Jamestown colony to pursue profit through trade and resources.",
+      },
     ],
     quiz: [
       {
@@ -296,6 +306,16 @@ Now, as I near the end of my seven years of service, I look at Jamestown with mi
         id: "fc2-8",
         term: "Indentured Servant",
         definition: "A person who agreed to work for a set period (usually 4-7 years) in exchange for passage to America, room, and board.",
+      },
+      {
+        id: "fc2-9",
+        term: "Lord De La Warr",
+        definition: "English colonial governor who arrived in 1610 with supplies and reinforcements, saving Jamestown just as survivors were abandoning the colony.",
+      },
+      {
+        id: "fc2-10",
+        term: "Chief Powhatan",
+        definition: "Powerful leader of the Powhatan Confederacy who controlled relations with Jamestown colonists, sometimes trading with them and sometimes besieging the fort.",
       },
     ],
     quiz: [
@@ -490,6 +510,16 @@ We made a peace treaty with Massasoit that lasted over fifty years. In autumn of
         term: "Massasoit",
         definition: "Leader of the Wampanoag people who made a peace treaty with the Pilgrims that lasted more than fifty years.",
       },
+      {
+        id: "fc3-9",
+        term: "Separatists",
+        definition: "English Protestants who believed the Church of England was too corrupt to reform and separated to form their own congregations. The Pilgrims were Separatists.",
+      },
+      {
+        id: "fc3-10",
+        term: "Wampanoag",
+        definition: "The Native American people who lived in present-day Massachusetts and Rhode Island, led by Massasoit, who helped the Pilgrims survive and celebrated the First Thanksgiving with them.",
+      },
     ],
     quiz: [
       {
@@ -673,6 +703,16 @@ By 1640, about 20,000 colonists lived in Massachusetts Bay. We were the largest 
         term: "Covenant Community",
         definition: "A society based on agreement among members to live according to certain religious and moral principles.",
       },
+      {
+        id: "fc4-9",
+        term: "Massachusetts Bay Company",
+        definition: "Joint-stock company that received a royal charter to establish Massachusetts Bay Colony in 1630, bringing the charter to America to govern themselves independently from England.",
+      },
+      {
+        id: "fc4-10",
+        term: "Puritan Ethic",
+        definition: "A moral code emphasizing hard work, thrift, plain living, and strict observance of the Sabbath, which shaped colonial New England culture and later American values.",
+      },
     ],
     quiz: [
       {
@@ -855,6 +895,16 @@ Father says the Middle Colonies represent America's future: a place where people
         id: "fc5-8",
         term: "Patroon System",
         definition: "Dutch land system where wealthy men received large estates if they brought 50 settlers to New Netherland.",
+      },
+      {
+        id: "fc5-9",
+        term: "Peter Stuyvesant",
+        definition: "Last Dutch governor of New Netherland who peacefully surrendered the colony to the English in 1664, allowing Dutch citizens to keep their land and customs.",
+      },
+      {
+        id: "fc5-10",
+        term: "Duke of York",
+        definition: "Brother of King Charles II who received the former Dutch colony as a grant, renaming New Amsterdam to New York after himself in 1664.",
       },
     ],
     quiz: [
@@ -1051,6 +1101,16 @@ I'm only fourteen, but I understand that I'm witnessing something terrible—the
         term: "Hereditary Slavery",
         definition: "Laws making slavery permanent and passed from enslaved mothers to their children for life, creating generations of enslaved families.",
       },
+      {
+        id: "fc6-9",
+        term: "House of Burgesses",
+        definition: "Virginia's colonial legislature, the first representative assembly in America, though controlled by wealthy planters who made laws protecting slavery and their economic interests.",
+      },
+      {
+        id: "fc6-10",
+        term: "Atlantic Slave Trade",
+        definition: "The forced transportation of millions of enslaved Africans across the Atlantic Ocean to the Americas, where they were sold as property to work on plantations.",
+      },
     ],
     quiz: [
       {
@@ -1243,6 +1303,16 @@ Father says some Quakers in Philadelphia are speaking out against slavery, calli
         id: "fc7-8",
         term: "Molasses",
         definition: "A thick syrup produced from sugar cane, imported from the Caribbean and used in New England to make rum.",
+      },
+      {
+        id: "fc7-9",
+        term: "Colonial Economy",
+        definition: "Economic system where different colonial regions specialized in producing specific goods based on their climate, resources, and labor systems for Atlantic trade networks.",
+      },
+      {
+        id: "fc7-10",
+        term: "Customs Officials",
+        definition: "English government agents who enforced the Navigation Acts by inspecting ships, collecting duties, and preventing illegal trade between colonists and foreign nations.",
       },
     ],
     quiz: [
@@ -1437,6 +1507,16 @@ As I think back on that day when Whitefield preached, I realize I witnessed a tr
         term: "Denomination",
         definition: "A distinct religious group within Christianity, such as Baptists, Methodists, or Presbyterians.",
       },
+      {
+        id: "fc8-9",
+        term: "Sinners in the Hands of an Angry God",
+        definition: "Famous sermon by Jonathan Edwards vividly describing hell and divine judgment, causing intense emotional reactions among listeners and exemplifying Great Awakening preaching style.",
+      },
+      {
+        id: "fc8-10",
+        term: "Religious Authority",
+        definition: "Power held by church leaders and ministers to interpret scripture and guide believers, which the Great Awakening challenged by emphasizing personal faith experiences.",
+      },
     ],
     quiz: [
       {
@@ -1629,6 +1709,16 @@ Most importantly, the war removed the French threat. For decades, we colonials h
         id: "fc9-8",
         term: "William Pitt",
         definition: "British leader who changed war strategy by committing massive resources to the North American campaign, leading to British victory.",
+      },
+      {
+        id: "fc9-9",
+        term: "General Edward Braddock",
+        definition: "British general whose army was disastrously defeated in 1755 near Fort Duquesne when he ignored colonial advice and used European battlefield tactics in American forests.",
+      },
+      {
+        id: "fc9-10",
+        term: "Seven Years' War",
+        definition: "Global conflict between Britain and France fought from 1756 to 1763, with the French and Indian War being its North American theater of operations.",
       },
     ],
     quiz: [
@@ -1826,6 +1916,16 @@ Britain sees us as colonists who exist to serve the empire. But we're beginning 
         id: "fc10-8",
         term: "Colonial Press",
         definition: "Newspapers and printing shops that spread news and ideas throughout the colonies, helping create shared colonial identity and political awareness.",
+      },
+      {
+        id: "fc10-9",
+        term: "Benjamin Franklin",
+        definition: "Colonial printer, inventor, scientist, and philosopher who exemplified Enlightenment ideals, believing in self-improvement, education, and practical reason for solving problems.",
+      },
+      {
+        id: "fc10-10",
+        term: "Social Hierarchy",
+        definition: "The colonial class structure with wealthy merchants and planters at top, middle-class artisans and farmers in middle, and indentured servants and enslaved people at bottom.",
       },
     ],
     quiz: [
@@ -2029,6 +2129,16 @@ I've learned that we're not just fighting about taxes. We're fighting about what
         id: "fc11-8",
         term: "Patrick Henry",
         definition: "Virginia orator who gave fiery speeches against British taxation, declaring 'If this be treason, make the most of it!'",
+      },
+      {
+        id: "fc11-9",
+        term: "Townshend Acts",
+        definition: "1767 British laws placing duties on imported goods like tea, glass, and paper, with revenue used to pay royal governors, reducing colonial legislative control.",
+      },
+      {
+        id: "fc11-10",
+        term: "Daughters of Liberty",
+        definition: "Women's groups that supported colonial resistance by organizing spinning bees to make homemade cloth, boycotting British goods, and promoting patriotic values in their homes.",
       },
     ],
     quiz: [
@@ -2235,6 +2345,16 @@ Looking back now, I see the Boston Massacre as a turning point. Not because of w
         term: "Acquitted",
         definition: "Found not guilty in a trial. Most soldiers in the Boston Massacre trial were acquitted.",
       },
+      {
+        id: "fc12-9",
+        term: "Thomas Hutchinson",
+        definition: "Acting royal governor of Massachusetts who ordered British troops to withdraw from Boston after the Massacre to prevent further violence and possible rebellion.",
+      },
+      {
+        id: "fc12-10",
+        term: "Castle Island",
+        definition: "Harbor fortification where British troops were relocated after the Boston Massacre, removing them from direct contact with Boston's civilian population to reduce tensions.",
+      },
     ],
     quiz: [
       {
@@ -2438,6 +2558,16 @@ My master says we're on a path to independence now, though few dare speak the wo
         term: "Old South Meeting House",
         definition: "A Boston building where colonists gathered for meetings and protests, including the meeting that preceded the Boston Tea Party.",
       },
+      {
+        id: "fc13-9",
+        term: "British East India Company",
+        definition: "Powerful British trading company given monopoly rights to sell tea in American colonies through the Tea Act, sparking colonial resistance and the Tea Party.",
+      },
+      {
+        id: "fc13-10",
+        term: "Committees of Correspondence",
+        definition: "Networks organized by colonists to share information, coordinate resistance to British policies, and build unity among the thirteen colonies.",
+      },
     ],
     quiz: [
       {
@@ -2630,6 +2760,16 @@ Ralph Waldo Emerson would later call that first shot at Concord "the shot heard 
         id: "fc14-8",
         term: "North Bridge",
         definition: "The location at Concord where colonial militia made a successful stand against British troops, forcing them to retreat.",
+      },
+      {
+        id: "fc14-9",
+        term: "William Dawes",
+        definition: "Patriot who rode alongside Paul Revere on the night of April 18, 1775, warning colonists that British troops were marching toward Lexington and Concord.",
+      },
+      {
+        id: "fc14-10",
+        term: "Old North Church",
+        definition: "Boston church where lanterns were hung to signal how British troops were approaching: 'one if by land, two if by sea,' part of the warning system.",
       },
     ],
     quiz: [
@@ -2834,6 +2974,16 @@ Standing in Independence Hall as the Declaration was read, I felt the weight of 
         term: "Natural Rights",
         definition: "Enlightenment concept that people are born with certain fundamental rights that government must protect.",
       },
+      {
+        id: "fc15-9",
+        term: "Consent of the Governed",
+        definition: "The principle that government power comes from the people's agreement to be governed, not from divine right or force, central to Declaration's philosophy.",
+      },
+      {
+        id: "fc15-10",
+        term: "Richard Henry Lee",
+        definition: "Virginia delegate who proposed the resolution on June 7, 1776, that the colonies should be free and independent states, initiating the independence vote.",
+      },
     ],
     quiz: [
       {
@@ -3033,6 +3183,16 @@ As we prepared to leave Valley Forge, Washington addressed us. He thanked us for
         term: "Bayonet",
         definition: "A blade attached to the end of a musket, used in close combat. Von Steuben trained Americans in bayonet fighting.",
       },
+      {
+        id: "fc16-9",
+        term: "Typhus",
+        definition: "A deadly disease spread by lice and poor sanitation that killed many Continental soldiers at Valley Forge during the harsh winter encampment.",
+      },
+      {
+        id: "fc16-10",
+        term: "Continental Currency",
+        definition: "Paper money issued by Congress to pay soldiers and buy supplies, but it rapidly lost value, becoming nearly worthless and making survival difficult.",
+      },
     ],
     quiz: [
       {
@@ -3226,6 +3386,16 @@ Still, today is a day for celebration. The impossible has happened. Farmers and 
         id: "fc17-8",
         term: "Redoubt",
         definition: "A small defensive fortification. American and French forces stormed British redoubts at Yorktown.",
+      },
+      {
+        id: "fc17-9",
+        term: "Chesapeake Bay",
+        definition: "Large bay in Virginia where French Admiral de Grasse's fleet blocked British naval support, trapping Cornwallis's army at Yorktown for the decisive siege.",
+      },
+      {
+        id: "fc17-10",
+        term: "The World Turned Upside Down",
+        definition: "Song reportedly played by British forces during their surrender at Yorktown, symbolizing the shocking defeat of the world's greatest empire by colonial rebels.",
       },
     ],
     quiz: [
@@ -3429,6 +3599,16 @@ Will we live up to "all men are created equal"? Will we expand liberty and justi
         term: "Checks and Balances",
         definition: "The system where each branch of government can limit the powers of the other branches.",
       },
+      {
+        id: "fc18-9",
+        term: "Separation of Powers",
+        definition: "The constitutional principle dividing government into three branches—legislative, executive, and judicial—each with distinct responsibilities to prevent concentration of power and tyranny.",
+      },
+      {
+        id: "fc18-10",
+        term: "Shays' Rebellion",
+        definition: "1786 Massachusetts farmers' uprising against high taxes that exposed the Articles of Confederation's weakness, prompting calls for a stronger national government and the Constitutional Convention.",
+      },
     ],
     quiz: [
       {
@@ -3628,6 +3808,16 @@ My father took me to see Washington's farewell parade. The man looked old and ti
         id: "fc19-8",
         term: "Two-Term Tradition",
         definition: "Washington's decision to serve only two terms, establishing an informal limit later made law.",
+      },
+      {
+        id: "fc19-9",
+        term: "Whiskey Rebellion",
+        definition: "1794 Pennsylvania farmers' uprising against federal whiskey tax, crushed by Washington leading militia, proving the new government could enforce its laws with strength.",
+      },
+      {
+        id: "fc19-10",
+        term: "National Bank",
+        definition: "Financial institution proposed by Hamilton to stabilize currency, manage debt, and strengthen the economy, opposed by Jefferson as unconstitutional expansion of federal power.",
       },
     ],
     quiz: [
@@ -3834,6 +4024,16 @@ As I set the final letters in the press—"Congress shall make no law"—I feel 
         id: "fc20-8",
         term: "Warrant",
         definition: "A legal document authorizing police to make an arrest, search, or seizure.",
+      },
+      {
+        id: "fc20-9",
+        term: "Self-Incrimination",
+        definition: "Testifying against oneself in a criminal case, which the Fifth Amendment protects against, giving people the right to remain silent during police questioning.",
+      },
+      {
+        id: "fc20-10",
+        term: "Seditious Libel",
+        definition: "The crime of criticizing government in Britain and many countries, which the First Amendment prevents Congress from making illegal, protecting free press in America.",
       },
     ],
     quiz: [
@@ -4057,6 +4257,16 @@ Watching Federalists and Democratic-Republicans battle, I realize we're creating
         term: "National Bank",
         definition: "A central bank proposed by Hamilton to manage government finances and stabilize the economy.",
       },
+      {
+        id: "fc21-9",
+        term: "Jay Treaty",
+        definition: "1794 agreement with Britain settling disputes and establishing trade terms, strongly opposed by Democratic-Republicans who saw it as abandoning France and favoring Britain.",
+      },
+      {
+        id: "fc21-10",
+        term: "French Revolution",
+        definition: "1789 overthrow of French monarchy that divided Americans, with Democratic-Republicans celebrating it and Federalists growing horrified by its violence and radicalism.",
+      },
     ],
     quiz: [
       {
@@ -4260,6 +4470,16 @@ For now, Americans celebrate. The Louisiana Purchase seems like pure triumph—d
         id: "fc22-8",
         term: "Constitutional Dilemma",
         definition: "Jefferson's conflict between strict interpretation of the Constitution and practical need for the Purchase.",
+      },
+      {
+        id: "fc22-9",
+        term: "Creole Culture",
+        definition: "The unique French, Spanish, African, and Caribbean cultural blend of New Orleans that challenged American assumptions about what it meant to be American.",
+      },
+      {
+        id: "fc22-10",
+        term: "Lewis and Clark",
+        definition: "Explorers commissioned by Jefferson to survey and map the Louisiana Purchase territory, documenting geography, Native peoples, and natural resources from 1804-1806.",
       },
     ],
     quiz: [
@@ -4483,6 +4703,16 @@ The West was no longer unknown. For better and worse, Americans would now flood 
         term: "Rocky Mountains",
         definition: "The massive mountain range the expedition crossed, proving no easy water route to the Pacific existed.",
       },
+      {
+        id: "fc23-9",
+        term: "York",
+        definition: "William Clark's enslaved servant who was a full participant in the Lewis and Clark expedition, yet remained enslaved despite his contributions.",
+      },
+      {
+        id: "fc23-10",
+        term: "Mandan People",
+        definition: "Native American tribe in North Dakota who sheltered the expedition through their first winter, providing food, knowledge, and survival assistance essential to mission success.",
+      },
     ],
     quiz: [
       {
@@ -4705,6 +4935,16 @@ Standing in Baltimore, looking at the flag over Fort McHenry, I understand what 
         term: "Burning of Washington",
         definition: "August 1814 British attack on Washington D.C., burning the Capitol and White House.",
       },
+      {
+        id: "fc24-9",
+        term: "Battle of New Orleans",
+        definition: "Andrew Jackson's decisive January 1815 victory over British forces, fought two weeks after peace treaty was signed, making him a national hero.",
+      },
+      {
+        id: "fc24-10",
+        term: "Hartford Convention",
+        definition: "1814 meeting of New England Federalists opposing the war, proposing constitutional amendments and discussing secession, which destroyed Federalist Party's credibility when war ended victoriously.",
+      },
     ],
     quiz: [
       {
@@ -4919,6 +5159,16 @@ Whether this doctrine will protect liberty or serve empire, whether it will insp
         term: "Western Hemisphere",
         definition: "The Americas—North, Central, and South America—which Monroe declared off-limits to European colonization.",
       },
+      {
+        id: "fc25-9",
+        term: "Holy Alliance",
+        definition: "Coalition of European monarchies (Russia, Prussia, Austria, France) committed to crushing republican movements and restoring monarchy, prompting the Monroe Doctrine to protect Latin American republics.",
+      },
+      {
+        id: "fc25-10",
+        term: "Simón Bolívar",
+        definition: "South American revolutionary leader who fought for independence from Spain, inspired by American and French revolutionary ideals, establishing republics throughout the continent.",
+      },
     ],
     quiz: [
       {
@@ -5095,6 +5345,8 @@ The age of the common man had arrived. America would never be the same. For bett
       {id: "fc26-6", term: "Common Man", definition: "Ordinary citizens, especially farmers and workers, who Jackson claimed to represent."},
       {id: "fc26-7", term: "Rotation in Office", definition: "Jackson's principle that government jobs should rotate among citizens rather than becoming permanent positions."},
       {id: "fc26-8", term: "Democratic Participation", definition: "Active involvement of citizens in political processes and government."},
+      {id: "fc26-9", term: "Nullification Crisis", definition: "1832-1833 conflict when South Carolina threatened to nullify federal tariff laws, resolved by compromise but revealing tensions over states' rights versus federal authority."},
+      {id: "fc26-10", term: "Majority Tyranny", definition: "The danger in democracy where the majority oppresses minority rights, a problem Jacksonian Democracy exposed as white male voters expanded power while excluding others."},
     ],
     quiz: [
       {
@@ -5229,6 +5481,8 @@ The United States calls itself a beacon of liberty, a nation founded on equality
       {id: "fc27-6", term: "Indian Territory", definition: "Land in present Oklahoma where tribes were forced to relocate."},
       {id: "fc27-7", term: "Five Civilized Tribes", definition: "Cherokee, Creek, Seminole, Chickasaw, Choctaw—called 'civilized' for adopting European ways."},
       {id: "fc27-8", term: "Removal", definition: "Forced relocation of Native Americans from ancestral lands."},
+      {id: "fc27-9", term: "Cherokee Phoenix", definition: "Newspaper published by Cherokee in English and Cherokee, proving their literacy and civilization yet failing to prevent their forced removal from ancestral lands."},
+      {id: "fc27-10", term: "John Ross", definition: "Cherokee chief who led legal resistance to removal, advocating in courts and Congress, but was ultimately forced to lead his people on the Trail of Tears."},
     ],
     quiz: [
       {id: "q27-1", question: "What was the Indian Removal Act?", options: ["Protection for Natives", "1830 law removing tribes to land west of Mississippi", "Peace treaty", "Trade agreement"], correctOptionIndex: 1, explanation: "The 1830 Indian Removal Act authorized removing Native tribes from eastern lands to territory west of the Mississippi River."},
@@ -5315,6 +5569,8 @@ My generation would see these questions answered, but the answers would come in 
       {id: "fc28-6", term: "Protective Tariff", definition: "Tax on imports to protect domestic industries from foreign competition."},
       {id: "fc28-7", term: "Federal Supremacy", definition: "Principle that federal law is supreme over state law in conflicts."},
       {id: "fc28-8", term: "Compromise Tariff", definition: "Clay's agreement to gradually reduce tariffs, ending the crisis."},
+      {id: "fc28-9", term: "Compact Theory", definition: "Southern constitutional theory that states created the Union as a compact and could therefore nullify federal laws or secede if violated."},
+      {id: "fc28-10", term: "Ordinance of Nullification", definition: "South Carolina's 1832 declaration that federal tariffs were null and void within the state, asserting state authority to nullify federal laws."},
     ],
     quiz: [
       {id: "q28-1", question: "What is nullification?", options: ["Making nothing", "Theory that states can refuse to enforce federal laws", "A tariff", "A compromise"], correctOptionIndex: 1, explanation: "Nullification is the theory that states can declare federal laws unconstitutional and refuse to enforce them."},
@@ -5401,6 +5657,8 @@ Standing in Rochester, watching reform movements multiply, I see America's futur
       {id: "fc29-6", term: "Moral Reform", definition: "Belief society could be perfected through religious-inspired improvements."},
       {id: "fc29-7", term: "William Lloyd Garrison", definition: "Radical abolitionist demanding immediate end to slavery."},
       {id: "fc29-8", term: "Dorothea Dix", definition: "Reformer advocating humane treatment of mentally ill."},
+      {id: "fc29-9", term: "Second Great Awakening", definition: "Early 1800s religious revival movement emphasizing personal salvation and moral reform, inspiring temperance, abolition, and other social reform movements."},
+      {id: "fc29-10", term: "Horace Mann", definition: "Education reformer who advocated for public schools, teacher training, and universal education, believing educated citizens were essential to democracy."},
     ],
     quiz: [
       {id: "q29-1", question: "What was the Second Great Awakening?", options: ["Political movement", "Religious revival emphasizing personal conversion and reform", "A war", "Trade agreement"], correctOptionIndex: 1, explanation: "Religious revival movement emphasizing personal conversion, free will in salvation, and moral reform of society."},
@@ -5491,6 +5749,8 @@ The fight for women's rights has begun. It will take decades, face setbacks, div
       {id: "fc30-6", term: "Separate Spheres", definition: "Ideology that men belong in public life, women in domestic life."},
       {id: "fc30-7", term: "Property Rights", definition: "Women's demand to control own property including after marriage."},
       {id: "fc30-8", term: "Frederick Douglass", definition: "Former slave who supported women's suffrage at Seneca Falls."},
+      {id: "fc30-9", term: "Elizabeth Cady Stanton", definition: "Women's rights leader who organized Seneca Falls Convention and drafted Declaration of Sentiments modeled on Declaration of Independence, demanding equality for women."},
+      {id: "fc30-10", term: "Lucretia Mott", definition: "Quaker abolitionist and women's rights advocate who co-organized Seneca Falls Convention, connecting women's rights and anti-slavery movements."},
     ],
     quiz: [
       {id: "q30-1", question: "What was Seneca Falls Convention?", options: ["Political rally", "First women's rights convention (1848)", "Religious meeting", "Trade fair"], correctOptionIndex: 1, explanation: "First organized meeting to discuss women's rights in America, launching the movement."},
@@ -5581,6 +5841,8 @@ America is fulfilling its destiny to span the continent. But destiny, I'm learni
       {id: "fc31-6", term: "49th Parallel", definition: "Compromise border between U.S. and Canada in Pacific Northwest."},
       {id: "fc31-7", term: "John O'Sullivan", definition: "Journalist who coined 'Manifest Destiny.'"},
       {id: "fc31-8", term: "Westward Expansion", definition: "Movement of American settlers across continent in 1800s."},
+      {id: "fc31-9", term: "Oregon Trail", definition: "2,000-mile overland route from Missouri to Oregon Territory used by hundreds of thousands of settlers moving west, symbolizing American westward migration and Manifest Destiny."},
+      {id: "fc31-10", term: "James K. Polk", definition: "Expansionist president (1845-1849) who acquired Oregon Territory through negotiation and California through war, believing in America's Manifest Destiny to span the continent."},
     ],
     quiz: [
       {id: "q31-1", question: "What was Manifest Destiny?", options: ["A person", "Belief America destined by God to expand across continent", "A wagon", "A treaty"], correctOptionIndex: 1, explanation: "Belief it was God's will for U.S. to expand across North America."},
@@ -5673,6 +5935,8 @@ History will remember the Mexican-American War as a successful land grab. But so
       {id: "fc32-6", term: "Bear Flag Revolt", definition: "American settlers' rebellion in California during Mexican War."},
       {id: "fc32-7", term: "Rio Grande", definition: "River that became disputed Texas-Mexico border."},
       {id: "fc32-8", term: "Wilmot Proviso", definition: "Failed proposal to ban slavery in territories acquired from Mexico."},
+      {id: "fc32-9", term: "Mexican Cession", definition: "Vast territory including California, Nevada, Utah, Arizona, and parts of other states that Mexico surrendered to U.S. in Treaty of Guadalupe Hidalgo for $15 million."},
+      {id: "fc32-10", term: "All of Mexico Movement", definition: "Extreme expansionist position advocating annexation of all Mexico after military victory, opposed by moderates who negotiated limited territorial gains instead."},
     ],
     quiz: [
       {id: "q32-1", question: "What caused Mexican-American War?", options: ["Religious differences", "Texas annexation and border disputes", "Trade disagreement", "Accident"], correctOptionIndex: 1, explanation: "War caused by Texas annexation and disputes over Texas-Mexico border."},
@@ -5759,6 +6023,8 @@ Standing in our California store, free state citizens in a divided nation, I und
       {id: "fc33-6", term: "Sectional Balance", definition: "Equal number of free and slave states in Senate."},
       {id: "fc33-7", term: "Personal Liberty Laws", definition: "Northern state laws attempting to protect fugitive slaves."},
       {id: "fc33-8", term: "Stephen Douglas", definition: "Senator who helped pass Compromise of 1850."},
+      {id: "fc33-9", term: "Millard Fillmore", definition: "President who signed the Compromise of 1850 into law after Zachary Taylor's death, supporting enforcement of the controversial Fugitive Slave Act."},
+      {id: "fc33-10", term: "Underground Railroad", definition: "Secret network helping enslaved people escape to freedom in the North, which the Fugitive Slave Act of 1850 sought to destroy by requiring Northerners to assist in captures."},
     ],
     quiz: [
       {id: "q33-1", question: "What was Compromise of 1850?", options: ["Tax agreement", "Admitted California free while strengthening fugitive slave laws", "Military pact", "Trade deal"], correctOptionIndex: 1, explanation: "Compromise admitted California as free state but included stricter Fugitive Slave Act."},
@@ -5861,6 +6127,8 @@ The slavery question won't be resolved easily. The South won't give up its "pecu
       {id: "fc34-6", term: "Abolitionist Literature", definition: "Books and publications advocating end of slavery."},
       {id: "fc34-7", term: "Pro-Slavery Response", definition: "Southern novels defending slavery in response to Uncle Tom's Cabin."},
       {id: "fc34-8", term: "Moral Persuasion", definition: "Strategy of changing opinions through emotional appeal rather than politics."},
+      {id: "fc34-9", term: "Humanizing the Enslaved", definition: "Stowe's literary technique of portraying enslaved people as individuals with families, emotions, and dignity, countering pro-slavery arguments that dehumanized them as property."},
+      {id: "fc34-10", term: "Sentimental Literature", definition: "Literary genre appealing to readers' emotions and sympathy, used by Stowe to make Northern readers feel the horror of slavery's impact on families."},
     ],
     quiz: [
       {id: "q34-1", question: "What was Uncle Tom's Cabin?", options: ["A house", "Anti-slavery novel by Stowe that influenced Northern opinion", "A restaurant", "A ship"], correctOptionIndex: 1, explanation: "1852 novel depicting slavery's horrors that profoundly influenced Northern attitudes."},
@@ -5979,6 +6247,8 @@ The experiment of popular sovereignty failed in Kansas. And with its failure, th
       {id: "fc35-6", term: "Pottawatomie Massacre", definition: "John Brown's killing of five pro-slavery settlers."},
       {id: "fc35-7", term: "Sack of Lawrence", definition: "Pro-slavery attack on abolitionist town in Kansas."},
       {id: "fc35-8", term: "Sumner-Brooks Incident", definition: "Representative Brooks beating Senator Sumner with cane in Senate chamber."},
+      {id: "fc35-9", term: "Missouri Compromise Repeal", definition: "Kansas-Nebraska Act's effective repeal of the 1820 Missouri Compromise ban on slavery north of 36°30', reigniting sectional conflict over slavery expansion."},
+      {id: "fc35-10", term: "Republican Party Formation", definition: "New anti-slavery political party founded in 1854 in response to Kansas-Nebraska Act, uniting former Whigs, Free Soilers, and anti-slavery Democrats."},
     ],
     quiz: [
       {id: "q35-1", question: "What was Kansas-Nebraska Act?", options: ["Tax law", "Law allowing Kansas/Nebraska to decide slavery by popular sovereignty", "Military law", "Trade agreement"], correctOptionIndex: 1, explanation: "1854 law letting Kansas and Nebraska settlers vote on allowing slavery."},
@@ -6099,6 +6369,8 @@ Taney died in 1864, with the Union he tried to preserve broken by war and the sl
       {id: "fc36-6", term: "Territorial Slavery", definition: "Court ruled Congress couldn't ban slavery in territories."},
       {id: "fc36-7", term: "Republican Opposition", definition: "Party vowed to defy Dred Scott decision if they won presidency."},
       {id: "fc36-8", term: "Constitutional Crisis", definition: "Dred Scott created crisis by eliminating legal solutions to slavery question."},
+      {id: "fc36-9", term: "Chief Justice Roger Taney", definition: "Supreme Court Chief Justice who wrote Dred Scott majority opinion denying citizenship to Black people and declaring Missouri Compromise unconstitutional."},
+      {id: "fc36-10", term: "Citizenship Rights", definition: "Legal status granting protections and privileges that Dred Scott decision denied to all Black people, whether free or enslaved, declaring them non-citizens."},
     ],
     quiz: [
       {id: "q36-1", question: "What did Dred Scott decision rule?", options: ["Freed all slaves", "Black people weren't citizens and had no rights", "Banned slavery", "Gave everyone rights"], correctOptionIndex: 1, explanation: "Court ruled Black people weren't citizens and 'had no rights which white man was bound to respect.'"},
@@ -6233,6 +6505,8 @@ I stand on the battery in Charleston Harbor, looking at Fort Sumter flying the C
       {id: "fc37-6", term: "Border States", definition: "Slave states (Delaware, Maryland, Kentucky, Missouri) that stayed in Union."},
       {id: "fc37-7", term: "Republican Party", definition: "Anti-slavery expansion party formed 1854, Lincoln's party."},
       {id: "fc37-8", term: "Deep South", definition: "First seven states to secede (SC, MS, FL, AL, GA, LA, TX)."},
+      {id: "fc37-9", term: "Lincoln-Douglas Debates", definition: "1858 Illinois Senate debates where Lincoln argued slavery was morally wrong while Douglas defended popular sovereignty, establishing Lincoln as national anti-slavery figure."},
+      {id: "fc37-10", term: "House Divided Speech", definition: "Lincoln's 1858 declaration that nation 'cannot endure permanently half slave and half free,' predicting eventual resolution through either slavery's extension or extinction."},
     ],
     quiz: [
       {id: "q37-1", question: "Why did South secede?", options: ["No reason", "Lincoln's election—they saw Republican opposition to slavery expansion as existential threat", "Economic boom", "Religious differences"], correctOptionIndex: 1, explanation: "South seceded because Lincoln's Republican victory threatened slavery's expansion, which they saw as existential threat."},
@@ -6355,6 +6629,8 @@ Looking back, Antietam was the turning point. Not militarily—the war would con
       {id: "fc38-6", term: "George McClellan", definition: "Cautious Union general who commanded at Antietam."},
       {id: "fc38-7", term: "Total War", definition: "Strategy of destroying enemy's economy and will to fight, not just defeating armies."},
       {id: "fc38-8", term: "Anaconda Plan", definition: "Union strategy to blockade South and control Mississippi River."},
+      {id: "fc38-9", term: "Battle of Antietam", definition: "September 1862 bloodiest single-day battle in American history with 23,000 casualties, providing Lincoln opportunity to issue Emancipation Proclamation after Union tactical victory."},
+      {id: "fc38-10", term: "Ulysses S. Grant", definition: "Union general who won key victories at Vicksburg and later commanded all Union armies, using relentless pressure to wear down Confederate forces."},
     ],
     quiz: [
       {id: "q38-1", question: "What happened at Bull Run?", options: ["Union victory", "Confederate victory shocking North that war wouldn't be quick/easy", "Draw", "Nothing"], correctOptionIndex: 1, explanation: "First major battle was Confederate victory that shattered Northern expectations of quick war."},
@@ -6489,6 +6765,8 @@ But the war ground on. Lee's army, though defeated at Gettysburg, remained dange
       {id: "fc39-6", term: "George Meade", definition: "Union general who defeated Lee at Gettysburg."},
       {id: "fc39-7", term: "High Water Mark", definition: "Farthest point of Confederate advance at Gettysburg."},
       {id: "fc39-8", term: "Mississippi River", definition: "Key waterway Union controlled after capturing Vicksburg."},
+      {id: "fc39-9", term: "Turning Point", definition: "July 1863 dual Union victories at Gettysburg and Vicksburg that shifted war momentum decisively in Union favor, ending Confederate hopes for victory."},
+      {id: "fc39-10", term: "Cemetery Ridge", definition: "Elevated position at Gettysburg where Union forces repelled Pickett's Charge, with Confederate failure marking the high-water mark of the rebellion."},
     ],
     quiz: [
       {id: "q39-1", question: "What was Gettysburg?", options: ["Southern city", "July 1863 Pennsylvania battle, war's turning point with 51,000 casualties", "Peace conference", "Treaty"], correctOptionIndex: 1, explanation: "Three-day July 1863 battle in Pennsylvania was war's turning point, ending Lee's invasion of North."},
@@ -6615,6 +6893,8 @@ Standing at Appomattox, watching former enemies shake hands, I felt hope. The wa
       {id: "fc40-6", term: "John Wilkes Booth", definition: "Confederate sympathizer who assassinated Lincoln."},
       {id: "fc40-7", term: "Andrew Johnson", definition: "Vice President who became president after Lincoln's death."},
       {id: "fc40-8", term: "620,000 Dead", definition: "Total American deaths in Civil War, more than all other U.S. wars combined until Vietnam."},
+      {id: "fc40-9", term: "Ford's Theatre", definition: "Washington theater where John Wilkes Booth assassinated President Lincoln while he watched a play, just days after Confederate surrender at Appomattox."},
+      {id: "fc40-10", term: "Reconstruction Era", definition: "Post-Civil War period (1865-1877) when federal government attempted to rebuild the South and integrate freed slaves into American society as citizens."},
     ],
     quiz: [
       {id: "q40-1", question: "What happened at Appomattox?", options: ["War started", "Lee surrendered to Grant, ending Civil War", "Major battle", "Peace conference failed"], correctOptionIndex: 1, explanation: "April 9, 1865, Lee surrendered to Grant at Appomattox Court House, ending Civil War."},
@@ -6741,6 +7021,8 @@ I'm sixteen now, watching as Congress and the President battle over Reconstructi
       {id: "fc41-6", term: "Andrew Johnson", definition: "President whose lenient Reconstruction policies angered Republicans."},
       {id: "fc41-7", term: "Radical Republicans", definition: "Congressional group wanting harsh treatment of South and protection for freed slaves."},
       {id: "fc41-8", term: "Presidential Reconstruction", definition: "Johnson's lenient plan allowing quick Southern readmission with few protections for freed slaves."},
+      {id: "fc41-9", term: "Fourteenth Amendment", definition: "1868 amendment granting citizenship to freed slaves and guaranteeing equal protection under law, though Southern states initially resisted ratification."},
+      {id: "fc41-10", term: "Fifteenth Amendment", definition: "1870 amendment prohibiting denial of voting rights based on race, though Southern states later used literacy tests and poll taxes to circumvent it."},
     ],
     quiz: [
       {id: "q41-1", question: "What was Reconstruction?", options: ["Rebuilding houses", "Period of rebuilding South and integrating freed slaves 1865-1877", "A war", "Economic boom"], correctOptionIndex: 1, explanation: "Reconstruction was the period after Civil War focused on rebuilding South and integrating freed slaves into society."},
@@ -6861,6 +7143,8 @@ I'm eighteen now, educated and hopeful but also realistic. We've made extraordin
       {id: "fc42-6", term: "Hiram Revels", definition: "First Black U.S. Senator, representing Mississippi during Reconstruction."},
       {id: "fc42-7", term: "Carpetbaggers", definition: "Northern Republicans who moved South during Reconstruction."},
       {id: "fc42-8", term: "Scalawags", definition: "Southern whites who supported Reconstruction."},
+      {id: "fc42-9", term: "Military Reconstruction", definition: "Federal military occupation of Southern states to enforce civil rights laws and protect Black voters from violent intimidation by white supremacist groups."},
+      {id: "fc42-10", term: "Enforcement Acts", definition: "Federal laws passed 1870-1871 authorizing military force to protect Black voting rights and prosecute Ku Klux Klan violence in the South."},
     ],
     quiz: [
       {id: "q42-1", question: "What was Radical Reconstruction?", options: ["Lenient Southern policy", "Congressional plan with harsh Southern terms and Black rights protection", "No policy", "Confederate victory"], correctOptionIndex: 1, explanation: "Radical Reconstruction was Congress's plan imposing military control and protecting Black rights."},
@@ -6987,6 +7271,8 @@ We'll remember Reconstruction not as a complete failure but as an unfinished rev
       {id: "fc43-6", term: "Poll Tax", definition: "Fee required to vote, used to prevent poor Blacks from voting."},
       {id: "fc43-7", term: "Literacy Test", definition: "Reading requirement used to prevent Blacks from voting."},
       {id: "fc43-8", term: "Rutherford B. Hayes", definition: "President whose election led to end of Reconstruction."},
+      {id: "fc43-9", term: "Grandfather Clause", definition: "Law allowing men to vote if their grandfather could vote, exempting poor whites from literacy tests while excluding Blacks whose grandfathers were enslaved."},
+      {id: "fc43-10", term: "Plessy v. Ferguson", definition: "1896 Supreme Court decision legalizing racial segregation through 'separate but equal' doctrine, giving constitutional approval to Jim Crow laws."},
     ],
     quiz: [
       {id: "q43-1", question: "What was Compromise of 1877?", options: ["Started Reconstruction", "Ended Reconstruction by withdrawing federal troops from South", "Freed slaves", "Won Civil War"], correctOptionIndex: 1, explanation: "Compromise of 1877 ended Reconstruction by withdrawing federal troops, abandoning Southern Blacks."},
@@ -7105,6 +7391,8 @@ The coming decades will determine whether America addresses these inequalities o
       {id: "fc44-6", term: "Monopoly", definition: "When one company controls entire industry, eliminating competition."},
       {id: "fc44-7", term: "Gospel of Wealth", definition: "Carnegie's idea that rich should use wealth for public good."},
       {id: "fc44-8", term: "Child Labor", definition: "Children working in factories, mines, and farms instead of attending school."},
+      {id: "fc44-9", term: "Vertical Integration", definition: "Carnegie's business strategy controlling every stage of production from raw materials to finished products, eliminating middlemen and maximizing profits."},
+      {id: "fc44-10", term: "Horizontal Integration", definition: "Rockefeller's business strategy buying out competitors in same industry to eliminate competition and create monopoly control over oil production."},
     ],
     quiz: [
       {id: "q44-1", question: "What was the Gilded Age?", options: ["Age of gold discovery", "Period of rapid industrialization with golden surface hiding poverty", "Colonial period", "Medieval times"], correctOptionIndex: 1, explanation: "Gilded Age (1870-1900) saw rapid industrialization and wealth, but 'gilded' means gold-covered surface hiding problems underneath."},
@@ -7229,6 +7517,8 @@ The question is whether America will embrace this diversity or resist it. Will t
       {id: "fc45-6", term: "Steerage", definition: "Cheapest, most crowded section of ship used by poor immigrants."},
       {id: "fc45-7", term: "Nativism", definition: "Hostility toward immigrants by native-born Americans."},
       {id: "fc45-8", term: "Melting Pot", definition: "Idea that different cultures blend together in America."},
+      {id: "fc45-9", term: "Chinese Exclusion Act", definition: "1882 law banning Chinese immigration for ten years, first federal law restricting immigration based on nationality, reflecting nativist hostility toward Asian immigrants."},
+      {id: "fc45-10", term: "Angel Island", definition: "Pacific immigration station where Asian immigrants, especially Chinese, faced lengthy interrogations and harsh treatment compared to European immigrants at Ellis Island."},
     ],
     quiz: [
       {id: "q45-1", question: "What was Ellis Island?", options: ["Resort island", "Immigration station where millions entered America", "Prison", "Military base"], correctOptionIndex: 1, explanation: "Ellis Island was immigration station in New York Harbor where millions of immigrants were processed entering America."},
@@ -7359,6 +7649,8 @@ That's what the labor movement is about—not just wages and hours, but human di
       {id: "fc46-6", term: "Triangle Shirtwaist Fire", definition: "1911 fire killing 146 workers, spurring labor reforms."},
       {id: "fc46-7", term: "Industrial Workers of the World", definition: "Radical union organizing all workers regardless of skill, race, or gender."},
       {id: "fc46-8", term: "Collective Bargaining", definition: "Negotiations between unions and employers over wages and conditions."},
+      {id: "fc46-9", term: "Pullman Strike", definition: "1894 nationwide railroad strike led by Eugene Debs, broken by federal troops, demonstrating government support for corporations over workers."},
+      {id: "fc46-10", term: "Strikebreakers", definition: "Workers hired to replace striking employees, often called 'scabs,' used by employers to undermine union organizing and break strikes."},
     ],
     quiz: [
       {id: "q46-1", question: "What was Haymarket Affair?", options: ["Market opening", "1886 labor rally ending in bombing and repression", "Peace conference", "Trade agreement"], correctOptionIndex: 1, explanation: "1886 Chicago labor rally for 8-hour day ended with bomb killing police, leading to execution of labor leaders and setback for movement."},
@@ -7501,6 +7793,8 @@ Father says the Populist Party failed, but the Populist spirit survives. Every t
       {id: "fc47-6", term: "Graduated Income Tax", definition: "Tax system where wealthy pay higher percentage—Populist demand."},
       {id: "fc47-7", term: "Direct Election of Senators", definition: "Populist demand (achieved 1913) that voters elect senators directly."},
       {id: "fc47-8", term: "Railroad Monopolies", definition: "Railroad companies that controlled shipping rates, exploiting farmers."},
+      {id: "fc47-9", term: "Gold Standard", definition: "Monetary system backing currency with gold, favored by bankers but limiting money supply and hurting debtors, which Populists opposed."},
+      {id: "fc47-10", term: "Omaha Platform", definition: "1892 Populist Party platform demanding free silver, graduated income tax, government railroad ownership, and direct election of senators to empower common people."},
     ],
     quiz: [
       {id: "q47-1", question: "Who were Populists?", options: ["City factory owners", "Farmers organizing against railroad/bank monopolies", "Foreign immigrants", "Government officials"], correctOptionIndex: 1, explanation: "Populists were farmers organizing through People's Party to fight railroad and bank exploitation."},
@@ -7631,6 +7925,8 @@ That lesson remains relevant. Every generation faces the question: will governme
       {id: "fc48-6", term: "Seventeenth Amendment", definition: "1913 amendment providing direct election of senators."},
       {id: "fc48-7", term: "Nineteenth Amendment", definition: "1920 amendment granting women's suffrage."},
       {id: "fc48-8", term: "Trust-Busting", definition: "Breaking up monopolies to restore competition."},
+      {id: "fc48-9", term: "Jane Addams", definition: "Social reformer who founded Hull House settlement in Chicago, helping immigrants and advocating for child labor laws, women's suffrage, and peace."},
+      {id: "fc48-10", term: "Pure Food and Drug Act", definition: "1906 law regulating food and medicine safety, passed after Upton Sinclair's 'The Jungle' exposed meatpacking industry horrors."},
     ],
     quiz: [
       {id: "q48-1", question: "What was Progressive Era?", options: ["Period of no change", "Period of political/social reform movements 1900-1920", "Colonial period", "Medieval times"], correctOptionIndex: 1, explanation: "Progressive Era saw reforms attacking corruption, regulating business, protecting consumers/workers, expanding democracy."},
@@ -7757,6 +8053,8 @@ That principle still requires fighting for. Winning the vote is a milestone, not
       {id: "fc49-6", term: "Carrie Chapman Catt", definition: "Suffragist leader whose state-by-state strategy helped win amendment."},
       {id: "fc49-7", term: "National American Woman Suffrage Association", definition: "Major organization fighting for women's voting rights."},
       {id: "fc49-8", term: "Silent Sentinels", definition: "Suffragists who picketed White House, facing arrest and force-feeding."},
+      {id: "fc49-9", term: "Seneca Falls Convention", definition: "1848 first women's rights convention where suffrage movement began with Declaration of Sentiments demanding equality, leading to 72-year struggle for voting rights."},
+      {id: "fc49-10", term: "State-by-State Strategy", definition: "Suffrage movement approach winning voting rights state by state to build momentum for national constitutional amendment, pioneered by Carrie Chapman Catt."},
     ],
     quiz: [
       {id: "q49-1", question: "When did women win national suffrage?", options: ["1776", "1920 with Nineteenth Amendment", "1865", "2000"], correctOptionIndex: 1, explanation: "Women won national voting rights in 1920 when Nineteenth Amendment was ratified, 72 years after Seneca Falls."},
@@ -7906,6 +8204,8 @@ For now, I'm home, trying to build a normal life, carrying memories I'll never e
       {id: "fc50-6", term: "League of Nations", definition: "International organization Wilson proposed to prevent future wars—U.S. Senate rejected it."},
       {id: "fc50-7", term: "Treaty of Versailles", definition: "1919 peace treaty ending WWI, harsh on Germany."},
       {id: "fc50-8", term: "Armistice Day", definition: "November 11, 1918—day WWI fighting ended."},
+      {id: "fc50-9", term: "American Expeditionary Force", definition: "U.S. military forces commanded by General John Pershing in World War I, arriving in France in 1917 to tip the balance toward Allied victory."},
+      {id: "fc50-10", term: "Isolationism", definition: "Post-WWI American foreign policy rejecting League of Nations and international commitments, as Senate feared entangling alliances would drag U.S. into future European wars."},
     ],
     quiz: [
       {id: "q50-1", question: "Why did America enter WWI?", options: ["For fun", "German submarine warfare and Zimmermann Telegram", "Britain forced us", "No reason"], correctOptionIndex: 1, explanation: "America entered WWI due to unrestricted German submarine warfare and Zimmermann Telegram proposing German-Mexican alliance against U.S."},
