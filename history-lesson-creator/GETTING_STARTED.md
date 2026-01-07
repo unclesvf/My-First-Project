@@ -1,4 +1,4 @@
-# Getting Started with History Lesson Creator
+# Getting Started with History for Homeschoolers
 
 ## Quick Start
 

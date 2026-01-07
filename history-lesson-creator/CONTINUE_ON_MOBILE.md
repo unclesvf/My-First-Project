@@ -1,4 +1,4 @@
-# Continue History Lesson Creator on iPhone
+# Continue History for Homeschoolers on iPhone
 
 ## Project Location
 **Full Path**: `C:\Users\scott\My-First-Project\My-First-Project\history-lesson-creator\`
@@ -117,7 +117,7 @@ See LESSON_OUTLINE.md for complete list through WWI
 
 **Prompt to use:**
 
-"I'm continuing a project to build a History Lesson Creator for 7th graders. I've built a Next.js app with 3 complete lessons and need to generate lessons 4-50.
+"I'm continuing a project to build a History for Homeschoolers app for 7th graders. I've built a Next.js app with 3 complete lessons and need to generate lessons 4-50.
 
 Project details:
 - File to edit: data/lessons.ts

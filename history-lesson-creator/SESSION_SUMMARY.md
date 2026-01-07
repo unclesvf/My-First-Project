@@ -1,4 +1,4 @@
-# Session Summary - History Lesson Creator
+# Session Summary - History for Homeschoolers
 
 ## 🎯 Accomplished in This Session
 
@@ -112,7 +112,7 @@
 
 **Next Steps:**
 Start new session with prompt:
-"Continue History Lesson Creator project. Generate lessons 6-22 following same quality as lessons 1-5. See SESSION_SUMMARY.md for context and LESSON_OUTLINE.md for topics."
+"Continue History for Homeschoolers project. Generate lessons 6-22 following same quality as lessons 1-5. See SESSION_SUMMARY.md for context and LESSON_OUTLINE.md for topics."
 
 ---
 

@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(node count_quizzes.js:*)",
+      "Bash(for:*)",
+      "Bash(do grep -n \"id: \"\"q$i-5\"\"\" data/lessons.ts)",
+      "Bash(done)",
+      "Bash(do echo \"Lesson $i:\")",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git push:*)",
+      "Bash(node count_flashcards.js:*)"
+    ]
+  }
+}
