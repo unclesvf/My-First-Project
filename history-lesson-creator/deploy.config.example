@@ -1,0 +1,19 @@
+# Deployment Configuration for A2Hosting
+# Copy this file to 'deploy.config' and fill in your details
+
+# SSH Connection Details
+SSH_USER="your_username"           # Your A2Hosting username (e.g., unclesvf)
+SSH_HOST="unclesvf.com"            # Your domain or server hostname
+SSH_PORT="22"                      # SSH port (usually 22 for A2Hosting)
+
+# Remote Server Path
+# For A2Hosting, this is typically:
+# - public_html/ for main domain
+# - public_html/subdirectory/ for subdirectory
+REMOTE_PATH="public_html/history"  # Where to upload files on server
+
+# Site URL (for testing after deployment)
+SITE_URL="unclesvf.com/history"    # Your live site URL
+
+# Optional: SSH Key Path (if using key authentication)
+# SSH_KEY="/path/to/your/private/key"
