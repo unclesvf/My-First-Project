@@ -371,6 +371,30 @@ Now, as I near the end of my seven years of service, I look at Jamestown with mi
         correctOptionIndex: 1,
         explanation: "In 1619, a Dutch ship brought approximately twenty Africans to Jamestown, where they were sold as indentured servants. This marked the beginning of African presence in English North America, which would eventually lead to the institution of slavery.",
       },
+      {
+        id: "q2-7",
+        question: "What was the Virginia Company's main goal in establishing Jamestown?",
+        options: [
+          "To provide religious freedom",
+          "To find profit through gold and resources, funded by investors",
+          "To establish a democratic government",
+          "To spread education",
+        ],
+        correctOptionIndex: 1,
+        explanation: "The Virginia Company was a joint-stock company where investors pooled money hoping to profit from gold, resources, and trade. Unlike the Pilgrims who came for religious freedom, Jamestown was primarily an economic venture seeking wealth for shareholders.",
+      },
+      {
+        id: "q2-8",
+        question: "How did tobacco cultivation change Jamestown society?",
+        options: [
+          "It had no effect",
+          "It created demand for intensive labor, leading to increased use of indentured servants and later slavery",
+          "It made everyone wealthy equally",
+          "It reduced the need for workers",
+        ],
+        correctOptionIndex: 1,
+        explanation: "Tobacco was extremely labor-intensive, requiring constant planting, weeding, picking, and curing. This created enormous demand for workers. Initially, indentured servants like Samuel filled this need, but the system would eventually evolve into race-based slavery to meet tobacco's labor demands.",
+      },
     ],
   },
 
@@ -539,6 +563,30 @@ We made a peace treaty with Massasoit that lasted over fifty years. In autumn of
         ],
         correctOptionIndex: 1,
         explanation: "The Pilgrims landed in New England, far north of their intended destination in Virginia. Since they were outside Virginia Company territory, they had no legal authority or government, so they created their own through the Compact.",
+      },
+      {
+        id: "q3-7",
+        question: "What was Squanto's tragic backstory that made his help even more remarkable?",
+        options: [
+          "He had never met Europeans before",
+          "He had been kidnapped by English traders, taken to Europe, and returned to find his entire village wiped out by disease",
+          "He was a European who learned Native languages",
+          "He was Massasoit's son",
+        ],
+        correctOptionIndex: 1,
+        explanation: "Squanto had been kidnapped by English traders years earlier and taken to Europe. After eventually making his way back home, he found his entire village (the Patuxet) had been wiped out by disease. Despite everything the English had done to him, he chose to help the Pilgrims survive.",
+      },
+      {
+        id: "q3-8",
+        question: "What was the main difference between the 'Saints' and 'Strangers' aboard the Mayflower?",
+        options: [
+          "Saints were children, Strangers were adults",
+          "Saints were Separatists seeking religious freedom, Strangers came for land and economic opportunity",
+          "Saints were from England, Strangers were from Holland",
+          "There was no difference",
+        ],
+        correctOptionIndex: 1,
+        explanation: "The Pilgrims called themselves 'Saints' because they were Separatists motivated by religious convictions. The 'Strangers' were non-Separatist passengers who came for economic opportunity and land rather than religious reasons. This difference created tension aboard the Mayflower and contributed to the need for the Mayflower Compact.",
       },
     ],
   },
@@ -2860,6 +2908,30 @@ Standing in Independence Hall as the Declaration was read, I felt the weight of 
         correctOptionIndex: 1,
         explanation: "The Declaration was based on Enlightenment ideas from thinkers like John Locke: natural rights, government by consent of the governed, and the right of people to alter or abolish unjust government.",
       },
+      {
+        id: "q15-7",
+        question: "Why did Thomas Paine write Common Sense in simple language?",
+        options: [
+          "He couldn't write well",
+          "To reach common people, not just educated elites",
+          "It was required by law",
+          "He wanted to write quickly",
+        ],
+        correctOptionIndex: 1,
+        explanation: "Paine deliberately wrote Common Sense in plain, accessible language so ordinary people—farmers, laborers, shopkeepers—could read and understand arguments for independence. This democratized political debate and helped build popular support for revolution.",
+      },
+      {
+        id: "q15-8",
+        question: "What did signing the Declaration of Independence mean for the signers?",
+        options: [
+          "They received money from Congress",
+          "They committed treason against Britain, risking execution if caught",
+          "They became automatically immune from British law",
+          "Nothing—it was just symbolic",
+        ],
+        correctOptionIndex: 1,
+        explanation: "By signing the Declaration, the delegates committed treason against Britain, punishable by execution. Benjamin Franklin reportedly said, 'We must all hang together, or most assuredly we shall all hang separately.' They literally risked their lives by signing.",
+      },
     ],
   },
 
@@ -3023,6 +3095,42 @@ As we prepared to leave Valley Forge, Washington addressed us. He thanked us for
         correctOptionIndex: 1,
         explanation: "Valley Forge, though devastating, ultimately strengthened the Continental Army. Survivors were toughened, von Steuben's training made them professional soldiers, and they proved their commitment to the cause.",
       },
+      {
+        id: "q16-6",
+        question: "How did Washington's leadership at Valley Forge inspire his troops?",
+        options: [
+          "He stayed in a warm house away from camp",
+          "He shared his men's suffering, refusing comfort while they froze, visiting their huts and checking on the sick",
+          "He abandoned the army",
+          "He threatened to execute deserters",
+        ],
+        correctOptionIndex: 1,
+        explanation: "Washington could have stayed in a warm house but chose to remain with his troops, visiting their crude huts, checking on the sick, and sharing their hardships. His personal example of sacrifice and commitment kept the army from dissolving during the terrible winter.",
+      },
+      {
+        id: "q16-7",
+        question: "What was firecake, and why did soldiers eat it?",
+        options: [
+          "A delicious dessert",
+          "Flour and water baked on stones—it was all they had when rations ran out",
+          "A type of firewood",
+          "A celebratory food",
+        ],
+        correctOptionIndex: 1,
+        explanation: "Firecake was a crude bread made by mixing flour and water and baking it on hot stones. Soldiers ate it because they had nothing else—sometimes not even this meager food. It symbolized the extreme deprivation at Valley Forge.",
+      },
+      {
+        id: "q16-8",
+        question: "How many soldiers died at Valley Forge, and what does this reveal about the Revolution?",
+        options: [
+          "No one died",
+          "About 2,500 out of 12,000—showing the Revolution was won through tremendous sacrifice, not just battlefield victories",
+          "Only 10 soldiers died",
+          "Everyone died",
+        ],
+        correctOptionIndex: 1,
+        explanation: "About 2,500 of 12,000 soldiers died at Valley Forge from disease, cold, and starvation—more than died in most battles. This reveals that the Revolution was won not just through military victories but through the soldiers' willingness to endure unimaginable suffering for the cause of independence.",
+      },
     ],
   },
 
@@ -3180,6 +3288,42 @@ Still, today is a day for celebration. The impossible has happened. Farmers and 
         ],
         correctOptionIndex: 1,
         explanation: "Some African Americans fought for American independence because they were promised freedom from slavery in exchange for their military service. However, many remained enslaved even after the war.",
+      },
+      {
+        id: "q17-6",
+        question: "What was significant about the night assault on British redoubts at Yorktown?",
+        options: [
+          "It failed completely",
+          "American troops, including Black soldiers, captured key positions in brutal hand-to-hand combat, allowing artillery to target Yorktown directly",
+          "No one participated",
+          "It was canceled",
+        ],
+        correctOptionIndex: 1,
+        explanation: "On October 14, American forces including Black soldiers stormed British Redoubt Number 10 with bayonets in a night assault. The French simultaneously captured Redoubt Number 9. These positions allowed American artillery to fire directly into Yorktown, making Cornwallis's position untenable.",
+      },
+      {
+        id: "q17-7",
+        question: "Why did Cornwallis's attempt to escape across the York River fail?",
+        options: [
+          "He never tried to escape",
+          "A sudden storm scattered his boats, and even nature seemed to favor American independence",
+          "American troops stopped him",
+          "He changed his mind",
+        ],
+        correctOptionIndex: 1,
+        explanation: "Cornwallis desperately tried to evacuate his troops across the York River to Gloucester Point on the night of October 16-17, hoping to escape north. But a sudden storm scattered his boats, making evacuation impossible. Even the weather seemed to conspire against British escape.",
+      },
+      {
+        id: "q17-8",
+        question: "What does Marcus's father's statement about fighting for equality reveal about the Revolution's legacy?",
+        options: [
+          "The Revolution solved all problems",
+          "Independence was won, but the struggle for true equality—especially for Black Americans—was just beginning",
+          "Everyone gained equal rights immediately",
+          "The Revolution failed completely",
+        ],
+        correctOptionIndex: 1,
+        explanation: "Marcus's father observes that while they won independence, the promise of equality in the Declaration hadn't been fulfilled for everyone, especially enslaved people. His words reveal the Revolution's contradictions—proclaiming liberty while maintaining slavery—and foreshadow the long struggle for civil rights that would follow.",
       },
     ],
   },
@@ -3359,6 +3503,30 @@ Will we live up to "all men are created equal"? Will we expand liberty and justi
         correctOptionIndex: 1,
         explanation: "Checks and balances is the constitutional principle that each branch of government (legislative, executive, judicial) has ways to check and limit the powers of the other branches, preventing any one branch from becoming too powerful.",
       },
+      {
+        id: "q18-7",
+        question: "What triggered Shays' Rebellion, and why was it significant?",
+        options: [
+          "High taxes on farmers in Massachusetts; showed the Articles of Confederation government was too weak to maintain order",
+          "A dispute over slavery",
+          "A foreign invasion",
+          "It never happened",
+        ],
+        correctOptionIndex: 0,
+        explanation: "Shays' Rebellion was an uprising of Massachusetts farmers against high taxes and debt collection. The weak federal government couldn't stop it, alarming leaders and demonstrating the urgent need for a stronger central government—directly leading to the Constitutional Convention.",
+      },
+      {
+        id: "q18-8",
+        question: "What does Rebecca mean when she notes the Constitution says 'more perfect,' not 'perfect'?",
+        options: [
+          "It was a mistake in writing",
+          "The founders knew the Constitution had flaws but included a way to improve it over time through amendments",
+          "They thought it was already perfect",
+          "They didn't care about perfection",
+        ],
+        correctOptionIndex: 1,
+        explanation: "The phrase 'more perfect Union' acknowledges the Constitution wasn't perfect—it allowed slavery, excluded women and the poor from voting. But the amendment process meant it could evolve and improve over time without revolution. This made it a 'living document' capable of growth toward justice.",
+      },
     ],
   },
 
@@ -3522,6 +3690,42 @@ My father took me to see Washington's farewell parade. The man looked old and ti
         ],
         correctOptionIndex: 1,
         explanation: "Washington voluntarily stepped down after two terms, establishing the precedent that presidents shouldn't serve for life. This tradition lasted until FDR and was made law by the 22nd Amendment.",
+      },
+      {
+        id: "q19-6",
+        question: "What were the main philosophical differences between Hamilton and Jefferson?",
+        options: [
+          "They agreed on everything",
+          "Hamilton favored strong central government and industry; Jefferson favored states' rights and agriculture",
+          "Hamilton opposed all government",
+          "Jefferson wanted monarchy",
+        ],
+        correctOptionIndex: 1,
+        explanation: "Hamilton believed in a strong federal government, national bank, and industrial economy. Jefferson favored limited federal power, strong state governments, and an agricultural economy of independent farmers. These opposing visions created America's first political divide.",
+      },
+      {
+        id: "q19-7",
+        question: "Why did Washington warn against political parties in his Farewell Address?",
+        options: [
+          "He loved political parties",
+          "He feared parties would divide the nation and prioritize party loyalty over national interest",
+          "He wanted only one party",
+          "He didn't mention parties",
+        ],
+        correctOptionIndex: 1,
+        explanation: "Washington warned that political parties ('factions') would divide Americans, make compromise impossible, and lead people to put party loyalty above national interest. Despite this warning, parties emerged immediately with the Hamilton-Jefferson rivalry.",
+      },
+      {
+        id: "q19-8",
+        question: "What did Washington's decision to step down after two terms demonstrate about American democracy?",
+        options: [
+          "That he was tired of the job",
+          "That power could transfer peacefully and presidents would voluntarily give up power—rejecting monarchy",
+          "That the presidency was weak",
+          "That Washington failed",
+        ],
+        correctOptionIndex: 1,
+        explanation: "By voluntarily giving up power when he could have served for life, Washington proved that America wasn't replacing a king with another kind of monarch. His peaceful transfer of power established that presidents serve temporarily, not for life—a revolutionary act that defined American democracy.",
       },
     ],
   },
@@ -3692,6 +3896,42 @@ As I set the final letters in the press—"Congress shall make no law"—I feel 
         ],
         correctOptionIndex: 1,
         explanation: "The Bill of Rights was added to protect individual liberties and limit government power. Anti-Federalists demanded these protections before agreeing to ratify the Constitution.",
+      },
+      {
+        id: "q20-6",
+        question: "What does the Fifth Amendment protect?",
+        options: [
+          "Freedom of religion",
+          "The right not to testify against yourself (self-incrimination)",
+          "Freedom of speech",
+          "The right to vote",
+        ],
+        correctOptionIndex: 1,
+        explanation: "The Fifth Amendment protects against self-incrimination—you don't have to testify against yourself. It also guarantees due process of law and protection against double jeopardy (being tried twice for the same crime).",
+      },
+      {
+        id: "q20-7",
+        question: "According to Jacob's master, why is protecting unpopular speech important?",
+        options: [
+          "It isn't important",
+          "Because if you only defend speech you agree with, you don't truly believe in free speech",
+          "Only popular speech should be protected",
+          "The government should control all speech",
+        ],
+        correctOptionIndex: 1,
+        explanation: "Jacob's master explains that the First Amendment's true test comes when protecting speech we find offensive or dangerous. If we only protect speech we agree with, we don't actually believe in freedom of speech. Unpopular speech is precisely what needs protection.",
+      },
+      {
+        id: "q20-8",
+        question: "What does the lesson reveal about the Bill of Rights needing active defense?",
+        options: [
+          "Rights protect themselves automatically",
+          "Rights are just words on paper unless each generation actively defends them against erosion",
+          "Rights can never be threatened",
+          "Only the government needs to protect rights",
+        ],
+        correctOptionIndex: 1,
+        explanation: "Jacob's master warns that rights aren't 'self-executing'—they're words on paper that only have meaning if courts enforce them, citizens demand them, and each generation defends them. Governments always want more power, and crises tempt people to trade freedom for security. Rights must be actively protected.",
       },
     ],
   },
@@ -3879,6 +4119,42 @@ Watching Federalists and Democratic-Republicans battle, I realize we're creating
         correctOptionIndex: 1,
         explanation: "A fundamental disagreement was over federal power: Federalists wanted a strong central government, while Democratic-Republicans wanted limited federal power and strong states' rights.",
       },
+      {
+        id: "q21-6",
+        question: "Which social groups tended to support each party?",
+        options: [
+          "Everyone supported both parties equally",
+          "Federalists: merchants, bankers, wealthy urbanites; Democratic-Republicans: farmers, planters, working people",
+          "Federalists: only farmers; Democratic-Republicans: only merchants",
+          "No pattern existed",
+        ],
+        correctOptionIndex: 1,
+        explanation: "Federalists drew support from merchants, bankers, manufacturers, and wealthy landowners mostly in cities and northern states. Democratic-Republicans appealed to farmers, planters, and working people mostly in the South and West. This reflected their different economic visions for America.",
+      },
+      {
+        id: "q21-7",
+        question: "How did newspapers contribute to the partisan divide?",
+        options: [
+          "They remained neutral",
+          "Party-affiliated newspapers viciously attacked opponents, questioning their motives and patriotism",
+          "Newspapers didn't exist yet",
+          "They ignored politics",
+        ],
+        correctOptionIndex: 1,
+        explanation: "Each party secretly funded newspapers that published their views and attacked opponents. The Gazette of the United States (Federalist) and National Gazette (Democratic-Republican) went beyond policy disagreements to personal attacks, calling opponents monarchists or anarchists, fueling partisan hatred.",
+      },
+      {
+        id: "q21-8",
+        question: "What does the Hamilton-Jefferson split reveal about democracy?",
+        options: [
+          "Democracy prevents all disagreement",
+          "Even founders who created the system couldn't agree on fundamentals, showing democracy requires managing conflict, not eliminating it",
+          "Only one vision should exist",
+          "Political disagreement destroys nations",
+        ],
+        correctOptionIndex: 1,
+        explanation: "Hamilton and Jefferson—both Founding Fathers—had irreconcilable visions for America. Their split shows that even the best political system can't eliminate fundamental disagreements. Democracy isn't about consensus; it's about managing conflict through peaceful means—elections, debate, compromise—rather than violence.",
+      },
     ],
   },
 
@@ -4046,6 +4322,42 @@ For now, Americans celebrate. The Louisiana Purchase seems like pure triumph—d
         ],
         correctOptionIndex: 1,
         explanation: "Jefferson's 'empire of liberty' was his vision of America expanding across the continent as a nation of independent farmers, each owning land and governing themselves democratically.",
+      },
+      {
+        id: "q22-6",
+        question: "How much did the Louisiana Purchase cost, and what did it include?",
+        options: [
+          "$1 million for just New Orleans",
+          "$15 million for over 800,000 square miles, doubling the nation's size",
+          "$100 million for a small territory",
+          "It was free",
+        ],
+        correctOptionIndex: 1,
+        explanation: "The United States paid France $15 million for the Louisiana Territory—over 800,000 square miles stretching from the Mississippi River to the Rocky Mountains. This doubled the size of the United States and cost about 3 cents per acre, one of history's greatest real estate deals.",
+      },
+      {
+        id: "q22-7",
+        question: "What constitutional principle did Jefferson compromise by approving the Purchase?",
+        options: [
+          "He didn't compromise any principles",
+          "His belief in strict constitutional interpretation—the Constitution didn't explicitly authorize purchasing territory",
+          "His belief in states' rights",
+          "His opposition to expansion",
+        ],
+        correctOptionIndex: 1,
+        explanation: "Jefferson believed in strict interpretation—the federal government should only exercise powers explicitly stated in the Constitution. Since the Constitution didn't mention buying territory, he should have opposed it. But the deal was too advantageous, so he approved it, showing how practical necessity can override theoretical principles.",
+      },
+      {
+        id: "q22-8",
+        question: "How did the Louisiana Purchase affect Native peoples?",
+        options: [
+          "It didn't affect them",
+          "It opened vast territories for American expansion, ultimately leading to displacement of Native peoples living there",
+          "It protected all Native lands",
+          "Native peoples welcomed the change",
+        ],
+        correctOptionIndex: 1,
+        explanation: "While Americans celebrated doubling the nation's size, the Louisiana Territory was already home to numerous Native nations. The Purchase would lead to decades of westward expansion, displacing Native peoples, breaking treaties, and forcing tribes onto reservations. America's 'empire of liberty' was built on Native lands.",
       },
     ],
   },
@@ -4233,6 +4545,42 @@ The West was no longer unknown. For better and worse, Americans would now flood 
         correctOptionIndex: 1,
         explanation: "The expedition successfully mapped vast territories, established American claims to the Pacific Northwest, made peaceful contact with many Native peoples, and brought back valuable scientific and geographic knowledge.",
       },
+      {
+        id: "q23-6",
+        question: "Why was Sacagawea's presence particularly valuable to the expedition?",
+        options: [
+          "She had no impact",
+          "Her presence as a woman with a baby signaled peaceful intentions to tribes, and she provided crucial translation and guidance",
+          "She only cooked meals",
+          "She frightened Native tribes away",
+        ],
+        correctOptionIndex: 1,
+        explanation: "Sacagawea's presence was invaluable in multiple ways: she signaled peaceful intentions (war parties didn't travel with women and babies), she translated with the Shoshone who provided horses to cross the Rockies, and she knew how to find food and navigate terrain. Her contributions were essential to the expedition's success.",
+      },
+      {
+        id: "q23-7",
+        question: "How many miles did the Lewis and Clark expedition travel?",
+        options: [
+          "About 100 miles",
+          "About 4,000 miles from St. Louis to the Pacific and back",
+          "About 10 miles",
+          "They traveled by ship only",
+        ],
+        correctOptionIndex: 1,
+        explanation: "The Lewis and Clark expedition traveled approximately 4,000 miles from St. Louis to the Pacific Ocean and back, taking over two years (1804-1806) to complete the journey through uncharted wilderness.",
+      },
+      {
+        id: "q23-8",
+        question: "What broader significance did the expedition have for American expansion?",
+        options: [
+          "It discouraged westward expansion",
+          "It provided knowledge and maps that enabled future westward expansion and strengthened U.S. claims to Pacific territories",
+          "It proved expansion was impossible",
+          "It had no long-term impact",
+        ],
+        correctOptionIndex: 1,
+        explanation: "The expedition's detailed maps, journals, and knowledge of routes, resources, and Native peoples enabled future American expansion westward. It strengthened U.S. claims to the Pacific Northwest and inspired thousands of settlers to move west, ultimately fulfilling Jefferson's vision of an 'empire of liberty'—though at tremendous cost to Native peoples.",
+      },
     ],
   },
 
@@ -4419,6 +4767,42 @@ Standing in Baltimore, looking at the flag over Fort McHenry, I understand what 
         correctOptionIndex: 1,
         explanation: "The War of 1812 ended with the Treaty of Ghent in December 1814. The treaty restored pre-war boundaries with no major territorial changes, essentially a draw.",
       },
+      {
+        id: "q24-6",
+        question: "Who were the 'War Hawks' and what did they want?",
+        options: [
+          "British generals",
+          "Congressional leaders like Henry Clay and John C. Calhoun who pushed for war, wanting to seize Canada and defend American honor",
+          "Peace activists",
+          "French diplomats",
+        ],
+        correctOptionIndex: 1,
+        explanation: "War Hawks were Congressional leaders, mostly young Democratic-Republicans from the South and West like Henry Clay and John C. Calhoun. They pushed for war to defend American honor, stop British support of Native tribes, and seize Canada as payback.",
+      },
+      {
+        id: "q24-7",
+        question: "Why is the War of 1812 sometimes called a pointless war?",
+        options: [
+          "It achieved clear victory",
+          "No territory changed hands, no major concessions made—it ended in a draw after thousands died",
+          "Everyone benefited equally",
+          "It was very short",
+        ],
+        correctOptionIndex: 1,
+        explanation: "The Treaty of Ghent restored pre-war boundaries with no territorial gains for either side and no resolution of impressment issues. Thousands died, Washington burned, and invasions failed—all for a status quo peace. Yet it had profound effects on American identity and nationalism.",
+      },
+      {
+        id: "q24-8",
+        question: "How did the War of 1812 change American identity?",
+        options: [
+          "It didn't change anything",
+          "It sparked nationalism—Americans identified more as a united nation rather than separate states, with shared heroes and symbols",
+          "It destroyed American unity",
+          "It made Americans want to rejoin Britain",
+        ],
+        correctOptionIndex: 1,
+        explanation: "Before 1812, many Americans identified primarily with their states. The war created shared national experiences, heroes (like Jackson), and symbols (the Star-Spangled Banner). It killed the Federalist Party, proved America's survival against Britain, and sparked an 'Era of Good Feelings.' Americans increasingly saw themselves as one nation, not thirteen separate states.",
+      },
     ],
   },
 
@@ -4597,6 +4981,42 @@ Whether this doctrine will protect liberty or serve empire, whether it will insp
         correctOptionIndex: 1,
         explanation: "The Monroe Doctrine showed America's growing confidence and ambition. Despite being militarily weaker than European powers, America boldly claimed the Western Hemisphere as its sphere of influence.",
       },
+      {
+        id: "q25-6",
+        question: "What was the Holy Alliance and why did it threaten Latin America?",
+        options: [
+          "A trade agreement",
+          "European monarchies (Russia, Prussia, Austria, France) committed to crushing republican movements and restoring monarchy",
+          "An American political party",
+          "A religious organization",
+        ],
+        correctOptionIndex: 1,
+        explanation: "The Holy Alliance was a coalition of European monarchies formed after Napoleon's defeat. They were committed to suppressing republican and democratic movements. They threatened to help Spain reconquer its former colonies in Latin America that had established republican governments.",
+      },
+      {
+        id: "q25-7",
+        question: "Why did John Quincy Adams reject a joint British-American declaration?",
+        options: [
+          "He hated Britain",
+          "He wanted an independent American policy, not to 'come in as a cock-boat in the wake of the British man-of-war'",
+          "Britain refused to cooperate",
+          "He didn't reject it",
+        ],
+        correctOptionIndex: 1,
+        explanation: "Adams argued America should make its own independent declaration rather than hide behind Britain. He said it would be 'more candid and dignified' to declare American principles explicitly rather than appear as a subordinate following Britain's lead. Monroe agreed, making the doctrine purely American.",
+      },
+      {
+        id: "q25-8",
+        question: "What contradiction does Clara's father acknowledge about the Monroe Doctrine?",
+        options: [
+          "No contradictions existed",
+          "America protects Latin American sovereignty while displacing Native Americans and enslaving people at home—claiming liberty abroad while denying it domestically",
+          "The doctrine was perfectly consistent",
+          "Only Europeans were hypocritical",
+        ],
+        correctOptionIndex: 1,
+        explanation: "Clara's father recognizes deep contradictions: America warns Europe against colonization while expanding westward over Native lands, proclaims liberty for Latin America while enslaving millions at home, and claims to protect sovereignty while asserting dominance. The gap between American ideals and actions would continue to trouble the nation.",
+      },
     ],
   },
 
@@ -4698,6 +5118,41 @@ The age of the common man had arrived. America would never be the same. For bett
         correctOptionIndex: 1,
         explanation: "During the Jacksonian era, most states dropped property requirements for voting, allowing nearly all white men to vote regardless of wealth—a major expansion of democracy."
       },
+      {
+        id: "q26-4",
+        question: "Why did Jackson oppose the Second Bank of the United States?",
+        options: ["He thought it was too small", "He saw it as a corrupt monopoly favoring wealthy Eastern elites over common people", "He wanted to open his own bank", "He supported all banks equally"],
+        correctOptionIndex: 1,
+        explanation: "Jackson viewed the Bank as a corrupt monopoly that gave special privileges to the wealthy and Eastern elites while hurting farmers and workers. He believed it concentrated dangerous economic power in private hands."
+      },
+      {
+        id: "q26-5",
+        question: "What were the limits of Jacksonian Democracy?",
+        options: ["It expanded rights for all Americans equally", "It expanded rights for white men while excluding women, Black people, and Native Americans", "It gave everyone property", "It ended all elections"],
+        correctOptionIndex: 1,
+        explanation: "Jacksonian Democracy expanded political participation for white men but excluded women, denied or restricted voting rights for free Black men, ignored enslaved people's rights, and pushed Native Americans westward."
+      },
+      {
+        id: "q26-6",
+        question: "How did voter participation change from 1824 to 1840?",
+        options: ["It decreased to 10%", "It increased from about 27% to over 80%", "It stayed exactly the same", "It decreased to 50%"],
+        correctOptionIndex: 1,
+        explanation: "Voter participation exploded during the Jacksonian era, rising from about 27% of eligible voters in 1824 to over 80% by 1840 as property requirements were dropped and politics became more accessible."
+      },
+      {
+        id: "q26-7",
+        question: "What was the result of Jackson's destruction of the Second Bank?",
+        options: ["Permanent economic prosperity", "The Panic of 1837 and economic chaos from unrestrained state banks", "Immediate formation of a better bank", "No economic effects"],
+        correctOptionIndex: 1,
+        explanation: "While Jackson's supporters celebrated destroying the Bank, it removed restraints on reckless state bank lending, contributing to the Panic of 1837 which devastated the economy—showing unintended consequences of Jackson's policies."
+      },
+      {
+        id: "q26-8",
+        question: "What was Jackson's contradictory legacy?",
+        options: ["He only had positive impacts", "He democratized politics for common white men but concentrated presidential power, ignored the Supreme Court, and pursued Indian removal", "He accomplished nothing", "He only helped the wealthy"],
+        correctOptionIndex: 1,
+        explanation: "Jackson expanded democracy for white men and fought economic elites, but also concentrated executive power, ignored judicial decisions, rewarded loyalty over competence, and pursued genocidal Indian removal policies."
+      },
     ],
   },
 
@@ -4779,6 +5234,11 @@ The United States calls itself a beacon of liberty, a nation founded on equality
       {id: "q27-1", question: "What was the Indian Removal Act?", options: ["Protection for Natives", "1830 law removing tribes to land west of Mississippi", "Peace treaty", "Trade agreement"], correctOptionIndex: 1, explanation: "The 1830 Indian Removal Act authorized removing Native tribes from eastern lands to territory west of the Mississippi River."},
       {id: "q27-2", question: "What was the Trail of Tears?", options: ["A celebration", "Forced march of Cherokee to Oklahoma killing thousands", "A road", "A river"], correctOptionIndex: 1, explanation: "The Trail of Tears was the brutal forced march of Cherokee 1,000 miles to Oklahoma. Over 4,000 of 16,000 Cherokee died."},
       {id: "q27-3", question: "Why couldn't the Cherokee keep their land?", options: ["They didn't want it", "Despite adopting European ways, whites wanted their land—especially after gold was found", "They lost a war", "They sold it"], correctOptionIndex: 1, explanation: "Despite having schools, farms, and written language, Cherokee were removed because whites wanted their land, especially after gold was discovered in Georgia."},
+      {id: "q27-4", question: "What was the Worcester v. Georgia decision?", options: ["It supported Georgia's authority over Cherokee", "The Supreme Court ruled Cherokee were a sovereign nation—but Jackson ignored it", "It ended all Native rights", "It never happened"], correctOptionIndex: 1, explanation: "Chief Justice Marshall ruled that the Cherokee were a sovereign nation and Georgia had no authority over them. However, President Jackson refused to enforce the Court's decision, showing justice without enforcement is meaningless."},
+      {id: "q27-5", question: "How many Cherokee died on the Trail of Tears?", options: ["None", "Over 4,000 of 16,000—about one quarter", "All of them", "A dozen"], correctOptionIndex: 1, explanation: "Of approximately 16,000 Cherokee forced to march to Oklahoma, over 4,000 died from disease, cold, starvation, and exhaustion—roughly one quarter of the entire Cherokee population."},
+      {id: "q27-6", question: "How had the Cherokee attempted to keep their land?", options: ["Through warfare only", "By adopting European civilization: farms, schools, written language, Christianity, and a constitution", "By hiding", "They never tried"], correctOptionIndex: 1, explanation: "The Cherokee adopted European ways—establishing farms, schools, creating a written language (by Sequoyah), converting to Christianity, and forming a constitutional government—believing this would prove they deserved to keep their land. It didn't work."},
+      {id: "q27-7", question: "What were the Five Civilized Tribes?", options: ["European tribes", "Cherokee, Creek, Seminole, Chickasaw, and Choctaw—all forcibly removed despite adopting European customs", "Military groups", "Friendly tribes who kept their land"], correctOptionIndex: 1, explanation: "The Five Civilized Tribes—Cherokee, Creek, Seminole, Chickasaw, and Choctaw—were called 'civilized' for adopting European ways. All were forcibly removed to Indian Territory despite their adoption of American culture."},
+      {id: "q27-8", question: "What did the Trail of Tears reveal about American ideals?", options: ["That they applied equally to everyone", "That American ideals of rights and justice were selective—applying to whites but not Native Americans", "That all laws were followed", "Nothing"], correctOptionIndex: 1, explanation: "The Trail of Tears showed that America's founding principles of liberty, rights, and justice didn't protect Native Americans. When white settlers wanted Native land, legal decisions, treaties, and moral arguments meant nothing—power and racial prejudice triumphed over justice."},
     ],
   },
 
@@ -4860,6 +5320,11 @@ My generation would see these questions answered, but the answers would come in 
       {id: "q28-1", question: "What is nullification?", options: ["Making nothing", "Theory that states can refuse to enforce federal laws", "A tariff", "A compromise"], correctOptionIndex: 1, explanation: "Nullification is the theory that states can declare federal laws unconstitutional and refuse to enforce them."},
       {id: "q28-2", question: "Why did South Carolina oppose the tariff?", options: ["They loved imports", "High tariffs helped North but hurt Southern agricultural economy", "They supported it", "No reason"], correctOptionIndex: 1, explanation: "High tariffs protected Northern manufacturing but made imports expensive for Southern agricultural states."},
       {id: "q28-3", question: "How did Jackson respond?", options: ["Supported nullification", "Declared federal law supreme and threatened force while accepting tariff compromise", "Did nothing", "Resigned"], correctOptionIndex: 1, explanation: "Jackson opposed nullification, declared federal supremacy, threatened military force, but accepted Clay's tariff compromise."},
+      {id: "q28-4", question: "According to Calhoun's compact theory, who created the federal government?", options: ["The President", "The sovereign states", "Foreign countries", "The Supreme Court"], correctOptionIndex: 1, explanation: "Calhoun argued the Constitution was a compact among sovereign states, and since states created the federal government, they could judge whether it exceeded its delegated powers."},
+      {id: "q28-5", question: "What deeper issue besides tariffs was South Carolina really protecting through nullification?", options: ["Education", "Slavery", "Transportation", "Architecture"], correctOptionIndex: 1, explanation: "The lesson reveals that South Carolinians feared if the federal government could impose tariffs against their will, it might abolish slavery next. Nullification was fundamentally about protecting slavery."},
+      {id: "q28-6", question: "How did Henry Clay's compromise resolve the crisis?", options: ["Forced South Carolina to surrender", "Gradually reduced tariff while passing Force Bill, letting both sides claim victory", "Eliminated all tariffs immediately", "Made Jackson resign"], correctOptionIndex: 1, explanation: "Clay's compromise gradually reduced the tariff over ten years (South Carolina's victory) while passing the Force Bill maintaining federal supremacy (Jackson's victory), allowing both sides to save face."},
+      {id: "q28-7", question: "Why is the Nullification Crisis called a 'dress rehearsal' for the Civil War?", options: ["Both involved theater productions", "The same arguments about states' rights and federal power reappeared when Southern states seceded in 1861", "It had no connection to the Civil War", "It was about the same tariff"], correctOptionIndex: 1, explanation: "South Carolina's arguments in 1832—states' rights, federal tyranny, right to resist—would echo in 1861 when Southern states seceded. Jackson's threat to use military force to preserve the Union foreshadowed Lincoln's actions."},
+      {id: "q28-8", question: "What contradiction in Southern ideology did the Nullification Crisis reveal?", options: ["None—Southern logic was perfectly consistent", "South Carolina claimed to defend minority rights while denying rights to the enslaved majority", "The South opposed all federal power equally", "Southerners never mentioned states' rights"], correctOptionIndex: 1, explanation: "South Carolina claimed to defend minority rights against majority tyranny, but ignored the enslaved majority in their own state. They demanded federal restraint on slavery but federal power to capture escaped slaves—states' rights was selectively applied."},
     ],
   },
 
@@ -4941,6 +5406,11 @@ Standing in Rochester, watching reform movements multiply, I see America's futur
       {id: "q29-1", question: "What was the Second Great Awakening?", options: ["Political movement", "Religious revival emphasizing personal conversion and reform", "A war", "Trade agreement"], correctOptionIndex: 1, explanation: "Religious revival movement emphasizing personal conversion, free will in salvation, and moral reform of society."},
       {id: "q29-2", question: "How did it inspire social reform?", options: ["It didn't", "Led people to believe they could perfect society through moral improvements", "Opposed reform", "Only affected religion"], correctOptionIndex: 1, explanation: "If individuals could be perfected, reformers believed society could be perfected through moral improvements."},
       {id: "q29-3", question: "What was temperance?", options: ["Weather movement", "Reform advocating limiting/banning alcohol", "Political party", "Military strategy"], correctOptionIndex: 1, explanation: "Temperance movement advocated limiting or banning alcohol consumption, arguing drinking destroyed families."},
+      {id: "q29-4", question: "How did Charles Finney's message differ from Puritan theology?", options: ["It was identical", "Finney preached free will and personal choice in salvation, versus Puritan predestination", "Finney opposed all religion", "Finney only preached to rich people"], correctOptionIndex: 1, explanation: "Puritans taught predestination—God predetermined who would be saved. Finney preached you could choose salvation through free will, making salvation a personal decision rather than predetermined fate."},
+      {id: "q29-5", question: "What was William Lloyd Garrison's position on slavery?", options: ["Gradual emancipation with compensation", "Immediate abolition without compensation or colonization", "Slavery should expand", "He never mentioned slavery"], correctOptionIndex: 1, explanation: "Garrison demanded immediate end to slavery without compensating owners or sending freed people to Africa. His motto 'I will be heard!' represented uncompromising abolition—slavery was sin that required immediate end."},
+      {id: "q29-6", question: "Why did the Grimké sisters have particular credibility as abolitionists?", options: ["They were foreign visitors", "They were from a Southern slaveholding family and spoke from personal witness", "They were politicians", "They never spoke publicly"], correctOptionIndex: 1, explanation: "Sarah and Angelina Grimké were from South Carolina, from a slaveholding family. Their testimony about slavery's evils was powerful because they witnessed it firsthand and rejected their own family's practices."},
+      {id: "q29-7", question: "How did women's participation in reform movements connect to women's rights?", options: ["It didn't connect at all", "Women reformers recognized the contradiction—demanding rights for slaves while lacking rights themselves", "Women opposed their own rights", "Reform only involved men"], correctOptionIndex: 1, explanation: "Women active in abolition saw the parallel—both slavery and women's oppression involved hierarchy and inequality. If they could demand rights for enslaved people, why not demand rights for women? This radicalized some women reformers toward feminism."},
+      {id: "q29-8", question: "How did the Second Great Awakening intensify sectional conflict?", options: ["It united North and South", "Northern revivals produced abolitionists while Southern revivals produced slavery defenders—both claimed religious authority", "It had no political impact", "It only affected economics"], correctOptionIndex: 1, explanation: "Northern revivals led many to see slavery as sin requiring abolition. Southern revivals led others to defend slavery using biblical arguments. Both sides claimed God's authority, making compromise nearly impossible and helping set the stage for civil war."},
     ],
   },
 
@@ -5026,6 +5496,11 @@ The fight for women's rights has begun. It will take decades, face setbacks, div
       {id: "q30-1", question: "What was Seneca Falls Convention?", options: ["Political rally", "First women's rights convention (1848)", "Religious meeting", "Trade fair"], correctOptionIndex: 1, explanation: "First organized meeting to discuss women's rights in America, launching the movement."},
       {id: "q30-2", question: "What was Declaration of Sentiments?", options: ["War declaration", "Document declaring men and women created equal", "Treaty", "Recipe book"], correctOptionIndex: 1, explanation: "Paralleled Declaration of Independence, stating 'all men and women are created equal' with list of grievances."},
       {id: "q30-3", question: "Most controversial demand?", options: ["Better food", "Voting rights for women", "More churches", "Lower taxes"], correctOptionIndex: 1, explanation: "Voting rights (suffrage) was most controversial. Even supporters thought it too radical."},
+      {id: "q30-4", question: "What legal restrictions on women did the Declaration of Sentiments list?", options: ["Women had complete equality", "Married women had no legal existence—property, earnings, and children belonged to husbands", "Women owned everything", "Only foreign women faced restrictions"], correctOptionIndex: 1, explanation: "The Declaration listed 18 grievances including that married women had no legal existence. Their property, earnings, and even children legally belonged to their husbands. Women also couldn't vote, access higher education, or enter most professions."},
+      {id: "q30-5", question: "What was the 'separate spheres' doctrine?", options: ["A geography theory", "Ideology that men belong in public life (politics/business) while women belong in domestic life (home/children)", "A military strategy", "An economic policy"], correctOptionIndex: 1, explanation: "The 'separate spheres' doctrine claimed men naturally belonged in public life—politics, business, professions—while women naturally belonged in domestic life—home, children, moral influence. Stanton argued these weren't natural differences but social constructions."},
+      {id: "q30-6", question: "What role did Frederick Douglass play at Seneca Falls?", options: ["He opposed women's rights", "He spoke powerfully in favor of women's suffrage, arguing exclusion of women was as unjust as exclusion of Black men", "He didn't attend", "He organized the convention"], correctOptionIndex: 1, explanation: "Frederick Douglass, the great abolitionist, attended and spoke powerfully in favor of women's suffrage. He argued that excluding women from voting was as unjust as excluding Black men, helping the suffrage resolution pass."},
+      {id: "q30-7", question: "How long did it take for American women to win the right to vote after Seneca Falls?", options: ["1 year", "72 years (1920)", "They still can't vote", "It happened immediately"], correctOptionIndex: 1, explanation: "Women's suffrage wasn't achieved nationally until 1920, 72 years after the 1848 Seneca Falls Convention. The teenagers at the convention would be dead before women won the vote they demanded."},
+      {id: "q30-8", question: "What was the connection between abolition and women's rights movements?", options: ["No connection existed", "Many women came to feminism through antislavery work, recognizing parallels between slavery and women's oppression", "They opposed each other", "Only men supported abolition"], correctOptionIndex: 1, explanation: "Many women came to feminism through antislavery activism. They saw slavery's injustice and recognized parallels to women's oppression—both were defended as 'natural' hierarchies ordained by God, both denied rights to subordinated groups."},
     ],
   },
 
@@ -5037,8 +5512,64 @@ The fight for women's rights has begun. It will take decades, face setbacks, div
     story: {
       narrator: "Samuel, age 16, on Oregon Trail, 1846",
       chapters: [
-        {title: "Oregon Trail", content: `I'm Samuel, sixteen, on the Oregon Trail. Six months from Missouri, 2,000 miles of hardship. John O'Sullivan called it "Manifest Destiny"—God intended America to span the continent. But whose land? We're crossing Native territories. We see empty land ready for settlement. They see homeland being invaded. What we call progress, they call theft.`},
-        {title: "54-40 or Fight", content: `America growing rapidly. Annexed Texas (1845). Conflict with Mexico over border. Negotiating with Britain over Oregon—some demand all Oregon to 54°40'. Polk compromised at 49th parallel. But pushed for war with Mexico. We've reached Oregon and claimed land. But costs are high. Natives displaced. Mexico will lose half its territory. Manifest Destiny brings us opportunity—but dispossession for those here first.`},
+        {
+          title: "Oregon Trail",
+          content: `I'm Samuel, sixteen, and our family has been on the Oregon Trail for six months. We left Independence, Missouri in the spring of 1846 with everything we owned packed into a covered wagon. Two thousand miles of prairie, mountains, rivers, and desert separate us from Oregon's Willamette Valley.
+
+The journey is harder than anyone imagined. We wake before dawn, travel until dusk, covering maybe fifteen miles a day if we're lucky. We've buried three people from our wagon train—cholera, accident, childbirth. Mother keeps a tight grip on my younger siblings, terrified of losing anyone.
+
+The landscape is beautiful and terrifying. Endless prairie grass, buffalo herds darkening the horizon, thunderstorms that shake our wagon. We crossed the Platte River, climbed through South Pass in the Rockies, and descended into the harsh desert beyond. Every step west is a step into the unknown.
+
+Journalist John O'Sullivan calls this "Manifest Destiny"—the idea that God intended America to span the continent from Atlantic to Pacific. President Polk echoes this, saying it's America's divine mission to spread democracy and civilization across North America. Many in our wagon train believe this. They see Oregon as a promised land, empty and waiting for Americans to claim it.`,
+        },
+        {
+          title: "Whose Land?",
+          content: `But the land isn't empty. We've passed through territories of the Pawnee, Sioux, Shoshone, and dozens of other Native nations. They watch our wagon trains from hills, sometimes trading with us, sometimes just observing. We're crossing their homeland without permission, hunting their buffalo, using their water, cutting their trees for firewood.
+
+Father tries to trade fairly when we encounter Native peoples. Some pioneers treat them with respect. But others are hostile, seeing them as obstacles to American progress. I've heard men in our train talk about Natives as "savages" who don't deserve the land because they don't farm it in European ways.
+
+This troubles me. The Natives we've met are skilled hunters, have complex societies, follow migration patterns refined over centuries. They use the land differently than we do, but they clearly own it and depend on it. When we claim Oregon as empty land ready for settlement, we're erasing the people who've lived there for thousands of years.
+
+I asked Father about this. He sighed and said, "Son, America needs land for its growing population. We believe our way of life—farming, democracy, Christianity—is superior and destined to spread. But you're right to feel uncomfortable. Manifest Destiny gives us a noble-sounding justification for taking what belongs to others. History will judge whether we're heroes or thieves."`,
+        },
+        {
+          title: "54-40 or Fight",
+          content: `Oregon itself is disputed territory. Britain and America both claim it through competing treaties and exploration. The boundary hasn't been settled. Some Americans demand all of Oregon up to the 54°40' north latitude—the southern border of Russian Alaska. "54-40 or Fight!" is the slogan. They're willing to go to war with Britain for every inch of Oregon.
+
+President Polk campaigned on aggressive expansion. He's already annexed Texas in 1845, angering Mexico. Now he's negotiating with Britain over Oregon while preparing for possible war with Mexico over the Texas boundary and California.
+
+The tension is real. Britain has the world's most powerful navy. War with them would be devastating. But many Americans are land-hungry, believing the continent is rightfully ours. Compromise seems weak to them—they want all the territory America can seize.
+
+In the end, Polk compromises with Britain at the 49th parallel—the current U.S.-Canada border. We get the southern part of Oregon (present-day Oregon, Washington, Idaho). Britain keeps the northern part (British Columbia). The "54-40 or Fight" crowd is disappointed, but war is avoided. We've gained enormous territory without fighting Britain.
+
+But Polk won't compromise with Mexico. He wants California and New Mexico, and he's willing to provoke war to get them. Manifest Destiny, it seems, applies differently depending on the opponent's strength.`,
+        },
+        {
+          title: "Reaching Oregon",
+          content: `After six months, we finally reach Oregon's Willamette Valley. The land is beautiful—green, fertile, watered by rain. We claim 640 acres under the Donation Land Act. It's ours if we farm it for four years. We've traveled 2,000 miles for this moment.
+
+Building our homestead is backbreaking work. We clear land, build a cabin, plant crops. Our nearest neighbors are miles away. Winters are wet and mild compared to Missouri, but loneliness is hard. Mother misses her family, her church, her friends. We've gained land but lost community.
+
+More wagon trains arrive constantly. Oregon is filling with Americans, and we're organizing territorial government. We've banned slavery—most Oregonians are farmers who don't want to compete with slave labor. But we've also passed laws excluding free Black people from living here. Oregon's vision of freedom is selective.
+
+As I work our land, I think about the Native peoples who lived here before us. They're being pushed out, their villages abandoned, their salmon fishing sites taken over. We call this progress—transforming "wilderness" into farms and towns. But I can't shake the feeling that we're destroying a way of life that worked for thousands of years.`,
+        },
+        {
+          title: "The Cost of Destiny",
+          content: `Manifest Destiny has given America vast new territory. Oregon, Texas, and soon California and the Southwest will add millions of acres to the nation. Americans are flooding west, building farms, towns, eventually states. The nation is growing wealthy and powerful.
+
+But the costs are staggering. Native peoples are being displaced everywhere. The Cherokee's Trail of Tears is just the beginning—soon the Plains tribes, the Southwest tribes, the Pacific Northwest tribes will all face removal, war, or confinement to reservations. An entire continent's indigenous peoples are being dispossessed in the name of American expansion.
+
+Mexico will lose half its territory in the coming war. The Californios, Tejanos, and other Mexicans living in those territories will become Americans overnight, often losing their land through legal chicanery despite treaty promises. Their culture and language will be marginalized in what was once their homeland.
+
+Most troubling is what this expansion does to our slavery crisis. Every new territory raises the question: will it be slave or free? Oregon has chosen free. But Texas is slave. What about the territories we'll take from Mexico? The Missouri Compromise divided Louisiana Purchase territories at 36°30'. But that doesn't apply to these new lands. We'll have to fight this battle again and again.
+
+Standing on our Oregon claim, looking at the land we've worked so hard to reach, I understand the appeal of Manifest Destiny. We've created opportunity for our family, claimed land for farming, extended American democracy westward. This is the promise of the West—a fresh start, abundant land, freedom to build the life you choose.
+
+But I also see the darker truth: Manifest Destiny is a beautiful phrase for conquest. We've taken this land from people who lived here first. We've provoked war with Mexico to seize more. We're spreading not just democracy but also slavery's curse. And we're planting the seeds of future conflicts—between North and South over slavery's expansion, between settlers and Natives over land, between the ideal of equality and the practice of exclusion.
+
+America is fulfilling its destiny to span the continent. But destiny, I'm learning, is a word we use to make conquest sound noble. The land we've gained is real. So is the blood on our hands. Future generations will have to decide whether the cost was worth it, whether Manifest Destiny was divine providence or national greed. I fear I know the answer.`,
+        },
       ],
     },
     flashcards: [
@@ -5055,6 +5586,11 @@ The fight for women's rights has begun. It will take decades, face setbacks, div
       {id: "q31-1", question: "What was Manifest Destiny?", options: ["A person", "Belief America destined by God to expand across continent", "A wagon", "A treaty"], correctOptionIndex: 1, explanation: "Belief it was God's will for U.S. to expand across North America."},
       {id: "q31-2", question: "What was Oregon Trail?", options: ["State road", "2,000-mile route to Oregon used by migrants", "River", "Mountain"], correctOptionIndex: 1, explanation: "Roughly 2,000-mile route thousands traveled by wagon from Missouri to Oregon."},
       {id: "q31-3", question: "Conflicts from Manifest Destiny?", options: ["No conflicts", "Dispossession of Natives and war with Mexico", "Peace with all", "Friendship"], correctOptionIndex: 1, explanation: "Led to pushing Natives off lands and Mexican-American War over territory."},
+      {id: "q31-4", question: "What was the '54-40 or Fight' controversy about?", options: ["A math problem", "Dispute with Britain over Oregon boundary—some wanted all territory to latitude 54°40'", "A battle date", "A voting age"], correctOptionIndex: 1, explanation: "Americans disputed Oregon's northern boundary with Britain. '54-40 or Fight' demanded all Oregon to latitude 54°40' (Alaska's border). Polk compromised at 49th parallel, avoiding war with Britain."},
+      {id: "q31-5", question: "How did President Polk handle the Oregon dispute differently than the Mexico situation?", options: ["He treated them the same", "He compromised with powerful Britain at the 49th parallel but refused to compromise with weaker Mexico", "He went to war with Britain but not Mexico", "He gave up all claims to Oregon"], correctOptionIndex: 1, explanation: "Polk compromised with Britain, settling for the 49th parallel to avoid war with a powerful opponent. But he refused to compromise with Mexico, deliberately provoking war to seize California and New Mexico. Manifest Destiny applied differently based on opponent strength."},
+      {id: "q31-6", question: "What contradiction did Oregon's laws reveal about American ideas of freedom?", options: ["No contradictions existed", "Oregon banned slavery but also banned free Black people from living there", "Oregon welcomed everyone equally", "Oregon had no laws"], correctOptionIndex: 1, explanation: "Oregon's vision of freedom was selective—they banned slavery (most farmers didn't want to compete with slave labor) but also passed laws excluding free Black people from living in the territory. This revealed racial prejudice underlying Northern 'free' states."},
+      {id: "q31-7", question: "How did westward expansion intensify the slavery crisis?", options: ["It didn't affect slavery", "Every new territory raised the question whether it would be slave or free, threatening sectional balance", "It ended slavery immediately", "Slavery wasn't controversial"], correctOptionIndex: 1, explanation: "Every territory gained from expansion reopened the slavery question: would it be slave or free? Oregon chose free, Texas was slave, but what about territories from Mexico? Each decision threatened the sectional balance in Congress, making civil war more likely."},
+      {id: "q31-8", question: "What was the ultimate cost of Manifest Destiny to Native peoples?", options: ["They benefited greatly", "Displacement from ancestral lands across the continent—Plains tribes, Southwest tribes, Pacific Northwest tribes all faced removal or war", "Nothing changed for them", "They gained new territories"], correctOptionIndex: 1, explanation: "Native peoples across the continent were dispossessed as Americans expanded west. The Cherokee's Trail of Tears was just the beginning—Plains tribes, Southwest tribes, Pacific Northwest tribes would all face removal, war, or confinement to reservations as Americans claimed their lands."},
     ],
   },
 
@@ -5068,8 +5604,64 @@ The fight for women's rights has begun. It will take decades, face setbacks, div
     story: {
       narrator: "Miguel, age 16, American soldier, 1847",
       chapters: [
-        {title: "War with Mexico", content: `I'm Miguel, sixteen, fighting in Mexico. Texas annexation and border disputes led to war. Many support it as Manifest Destiny. Others—especially abolitionists—oppose it as war to expand slavery. We've won major battles. General Winfield Scott captured Mexico City. But victory feels hollow—we're taking half of Mexico's territory.`},
-        {title: "Treaty of Guadalupe Hidalgo", content: `Treaty gives U.S. California, Nevada, Utah, Arizona, New Mexico, parts of Colorado and Wyoming. Mexico loses half its territory. Mexican citizens in these areas become Americans overnight—their property often seized despite treaty promises. We've gained vast land. But reopened slavery question: will these territories be slave or free? This territorial gain will tear the nation apart.`},
+        {
+          title: "War with Mexico",
+          content: `I'm Miguel, sixteen, a private in the U.S. Army fighting in Mexico. My family is from New Mexico, Spanish-speaking Catholics who've lived here for generations. When Texas joined the Union last year and President Polk sent troops to the disputed border, war became inevitable. Mexico says the border is the Nueces River. America claims it's the Rio Grande, 150 miles south. Polk ordered General Taylor to occupy the disputed zone. When Mexican troops fired on American soldiers, Polk told Congress: "American blood has been shed on American soil." War was declared in May 1846.
+
+Many Americans support this war as Manifest Destiny—God's will for America to expand. Newspaper editor John O'Sullivan writes that we're bringing democracy and progress to backward Mexico. Young men volunteer eagerly, seeing glory and adventure. They sing songs about conquering Mexico City.
+
+But not everyone supports the war. Abolitionists like Frederick Douglass denounce it as a scheme to expand slavery into new territories. Congressman Abraham Lincoln questions Polk's claim about where American blood was shed, demanding to see the exact "spot" where the attack occurred. He suspects Polk provoked the war deliberately. Henry David Thoreau goes to jail rather than pay taxes supporting what he calls an unjust war.
+
+I'm conflicted. I'm American, but my family is culturally Mexican. I fight alongside Anglo soldiers who call Mexicans greasers and talk about their racial inferiority. They say we're bringing civilization to savages. But Mexico City was a great capital when English colonists were starving at Jamestown. Mexican culture is rich, complex, deeply rooted. We're not saving Mexico—we're conquering it.`,
+        },
+        {
+          title: "The Campaigns",
+          content: `The war has gone badly for Mexico from the start. General Zachary Taylor captured Monterrey and defeated a larger Mexican force at Buena Vista. General Winfield Scott landed at Veracruz and marched inland toward Mexico City, following the route Cortés took three centuries earlier. Scott is brilliant—he's taken fortress after fortress with minimal American casualties.
+
+The fighting is brutal. At Churubusco, Mexican defenders including the San Patricio Battalion—Irish-American deserters who switched sides—fought to the death rather than surrender. At Chapultepec, teenage Mexican cadets chose to die defending their military academy rather than retreat. One wrapped himself in Mexico's flag and leapt to his death rather than let it be captured. Mexicans fight with desperate courage, but American artillery and discipline prevail.
+
+I was at the Battle of Cerro Gordo, where we flanked the Mexican army and routed them. I saw Mexican soldiers—boys my age—running in terror as American troops advanced with bayonets. Some begged for mercy in Spanish I understood but my commanding officer didn't. The killing felt like murder, not war.
+
+By September 1847, we captured Mexico City. General Scott raised the American flag over the National Palace. Mexico's government collapsed, unable to continue the fight. We've conquered their capital, occupied their country, crushed their army. Victory is complete—and completely unjust.`,
+        },
+        {
+          title: "The Price of Victory",
+          content: `The war cost about 13,000 American lives—though most died of disease, not battle. Mexican casualties were far higher, including thousands of civilians. We've devastated their country, killed their young men, occupied their capital. And for what? To seize territory Polk wanted from the beginning.
+
+The Treaty of Guadalupe Hidalgo is being negotiated now. Rumors say Mexico will lose California, Nevada, Utah, Arizona, New Mexico, and parts of Colorado and Wyoming—about 55% of their pre-war territory. The Rio Grande will be the Texas border. America will pay $15 million, which sounds generous until you realize we're paying for land we took by force. It's like a thief offering to buy the wallet he just stole from you.
+
+The treaty promises that Mexicans living in the ceded territories can keep their property and become American citizens if they choose. But I don't trust these promises. I've seen how Americans treat Mexicans. The Spanish land grants will be challenged in American courts. English-only laws will marginalize Spanish speakers. Within a generation, Californios and Tejanos will be foreigners in their own homeland.
+
+My family in New Mexico will become Americans overnight. They're worried. Will they be equal citizens or second-class subjects? Will their Catholic faith be respected? Will their land grants be honored? Will their children speak Spanish or be forced to abandon it? Becoming American doesn't feel like opportunity—it feels like occupation.`,
+        },
+        {
+          title: "The Slavery Question Returns",
+          content: `The war's most dangerous consequence isn't in Mexico—it's in America. We've gained over 500,000 square miles of new territory, and every inch reopens the question: will it be slave or free?
+
+Even before the war ended, Congressman David Wilmot proposed the Wilmot Proviso—banning slavery in any territory acquired from Mexico. The idea inflamed the South. They'd supported the war expecting to expand slavery westward. If new territories are all free, the North will dominate Congress forever. The South threatens secession if slavery is banned from the Mexican Cession.
+
+The North, meanwhile, increasingly opposes slavery's expansion. They see the war itself as a slaveholders' conspiracy to grab more territory for their evil institution. The Free Soil Party forms, dedicated to preventing slavery's spread. Their slogan: "Free Soil, Free Speech, Free Labor, Free Men."
+
+California's gold rush in 1849 makes this urgent. Thousands flood to California, creating a population large enough for statehood almost instantly. But will it be slave or free? The Missouri Compromise doesn't apply—California is too far west. We need a new compromise, and quickly.
+
+I see the future clearly: the land we've taken from Mexico will tear America apart. Every territory we add makes the slavery conflict worse. We couldn't solve the question with the Louisiana Purchase territories. We couldn't solve it with Texas. We won't solve it with California and New Mexico. Eventually, we'll fight each other over the very territories we took from Mexico. The Mexican-American War's real casualty will be American union.`,
+        },
+        {
+          title: "An Unjust War",
+          content: `Looking back, I see the Mexican-American War as a dark chapter in American history. We provoked a weaker neighbor into war, conquered half their country, and took their land. We claimed Manifest Destiny and moral superiority while acting like any other conquering empire.
+
+President Polk got everything he wanted—California, New Mexico, settlement of the Texas border. America gained ports on the Pacific, rich mineral deposits, fertile valleys, access to trade with Asia. We've become a continental power stretching from sea to sea. In practical terms, the war was a huge success.
+
+But morally? We attacked a weaker neighbor and took their land. We killed thousands to satisfy territorial ambitions. We broke Mexico as a nation—they'll struggle with political instability and economic weakness for generations, partly because we stripped away their richest provinces. We acted as conquerors, not liberators.
+
+And we've poisoned ourselves in the process. The territory we gained has intensified the slavery crisis that will tear our nation apart. Within fifteen years, we'll be fighting a far bloodier war among ourselves over whether slavery can expand into these territories. The Mexican-American War will lead directly to the Civil War.
+
+Ulysses S. Grant, who fought in Mexico and will later command Union armies, will call this "one of the most unjust wars ever waged by a stronger against a weaker nation." I agree. We won the war but lost our moral standing. We gained territory but lost our innocence.
+
+Standing in occupied Mexico City, watching American soldiers celebrate, I feel ashamed. Manifest Destiny is just a pretty name for empire. We're no different from the European powers we claim to oppose—we just use different rhetoric. We speak of freedom while conquering. We proclaim democracy while denying it to others. We invoke God's will to justify our greed.
+
+History will remember the Mexican-American War as a successful land grab. But some of us who fought it know the truth: it was conquest dressed as destiny, imperialism wrapped in patriotism, and injustice disguised as providence. We won Mexico's land but lost America's soul.`,
+        },
       ],
     },
     flashcards: [
@@ -5086,6 +5678,11 @@ The fight for women's rights has begun. It will take decades, face setbacks, div
       {id: "q32-1", question: "What caused Mexican-American War?", options: ["Religious differences", "Texas annexation and border disputes", "Trade disagreement", "Accident"], correctOptionIndex: 1, explanation: "War caused by Texas annexation and disputes over Texas-Mexico border."},
       {id: "q32-2", question: "What did U.S. gain?", options: ["Nothing", "California, Nevada, Utah, Arizona, New Mexico, parts of Colorado/Wyoming", "Only Texas", "Florida"], correctOptionIndex: 1, explanation: "Treaty of Guadalupe Hidalgo gave U.S. vast Mexican territory—about half of Mexico."},
       {id: "q32-3", question: "Why did abolitionists oppose war?", options: ["They supported Mexico", "They saw it as war to expand slavery into new territories", "They opposed all wars", "No reason"], correctOptionIndex: 1, explanation: "Abolitionists opposed the war as an attempt to expand slavery into new territories."},
+      {id: "q32-4", question: "What did the Treaty of Guadalupe Hidalgo promise to Mexicans living in ceded territories?", options: ["They had to leave immediately", "They could keep property and become American citizens if they chose", "They would be enslaved", "Nothing was promised"], correctOptionIndex: 1, explanation: "The treaty promised Mexicans in ceded territories could keep their property and become American citizens. But the lesson shows these promises were often broken—Spanish land grants were challenged in courts, and Californios and Tejanos became marginalized in their own homeland."},
+      {id: "q32-5", question: "What was the Wilmot Proviso?", options: ["A peace treaty", "Proposal to ban slavery in any territory acquired from Mexico", "A military strategy", "A trade agreement"], correctOptionIndex: 1, explanation: "Congressman David Wilmot proposed banning slavery in territories acquired from Mexico. This inflamed the South, who'd supported the war expecting to expand slavery westward. Though it failed, it showed the North's growing opposition to slavery's expansion."},
+      {id: "q32-6", question: "How did the California Gold Rush in 1849 make the slavery question urgent?", options: ["It didn't affect slavery", "Thousands flooded to California, creating a population large enough for statehood—but would it be slave or free?", "It ended the gold rush", "California remained empty"], correctOptionIndex: 1, explanation: "The 1849 Gold Rush brought over 100,000 people to California almost instantly, making it ready for statehood. But this raised the urgent question: would it be slave or free? The Missouri Compromise didn't apply to California, requiring a new political solution."},
+      {id: "q32-7", question: "How did Ulysses S. Grant (who fought in the war) later describe the Mexican-American War?", options: ["The most just war in history", "One of the most unjust wars ever waged by a stronger against a weaker nation", "A minor skirmish", "A defensive necessity"], correctOptionIndex: 1, explanation: "Grant, who fought in Mexico and later commanded Union armies in the Civil War, called it 'one of the most unjust wars ever waged by a stronger against a weaker nation.' He recognized America attacked a weaker neighbor to seize territory."},
+      {id: "q32-8", question: "How did the Mexican-American War lead to the Civil War?", options: ["It didn't connect to the Civil War", "Territory gained from Mexico intensified the slavery crisis—every new territory raised the question slave or free", "It prevented the Civil War", "Mexico started the Civil War"], correctOptionIndex: 1, explanation: "The vast territory gained from Mexico (California, New Mexico, etc.) reopened the slavery question with explosive intensity. Every territory had to decide: slave or free? This sectional conflict over whether slavery could expand into Mexican Cession territories led directly to the Civil War within fifteen years."},
     ],
   },
 
@@ -5097,8 +5694,60 @@ The fight for women's rights has begun. It will take decades, face setbacks, div
     story: {
       narrator: "Anna, age 15, from California, 1850",
       chapters: [
-        {title: "Crisis Over Slavery", content: `I'm Anna from California. Gold Rush brought thousands here. We want statehood—as a free state. But this would upset the balance: 15 slave states, 15 free states. South threatens secession if we're admitted free. Henry Clay proposes compromise: admit California free, organize Utah/New Mexico territories without deciding slavery (popular sovereignty), stricter fugitive slave law, end DC slave trade.`},
-        {title: "Uneasy Truce", content: `After fierce debate, compromise passes. California admitted free. But Fugitive Slave Act outrages North—requires Northerners to help catch runaways. Slave hunters can seize free Blacks with minimal evidence. Many refuse to comply. Compromise delayed conflict but solved nothing fundamental. Slavery question will explode again. This temporary peace won't last.`},
+        {
+          title: "Crisis Over Slavery",
+          content: `I'm Anna, fifteen, living in San Francisco. The California Gold Rush has transformed our territory overnight. In 1848, when gold was discovered at Sutter's Mill, California had maybe 14,000 non-Native residents. By 1850, we have over 100,000. We've written a constitution, established government, and applied for statehood.
+
+But there's a problem: our constitution bans slavery. We want to enter the Union as a free state. This would destroy the delicate balance in the Senate. Currently there are fifteen slave states and fifteen free states, giving each side equal representation. Admitting California free would give free states a 16-15 advantage. The South is threatening secession if we're admitted.
+
+Father owns a general store serving miners. He explains the crisis: "The South fears that if free states dominate the Senate, they'll eventually abolish slavery everywhere. They see California's admission as an existential threat. Some Southern congressmen are openly discussing leaving the Union rather than accepting permanent minority status."
+
+The whole nation is on edge. John Calhoun, the South's intellectual leader, is dying but still fighting for Southern rights. He warns that the North's opposition to slavery's expansion will destroy the Union. William Seward of New York argues that there's a "higher law than the Constitution" that demands freedom—infuriating Southerners who believe Northerners are abandoning constitutional compromises.`,
+        },
+        {
+          title: "Clay's Compromise",
+          content: `Henry Clay, now 73 and in failing health, proposes one last compromise to save the Union. He's brokered compromises before—the Missouri Compromise in 1820, the Tariff Compromise in 1833. He's called the "Great Compromiser," though critics say he just postpones inevitable conflicts.
+
+Clay's proposal has multiple parts: First, admit California as a free state—what we desperately want. Second, organize Utah and New Mexico territories without deciding on slavery, letting settlers eventually decide through "popular sovereignty." Third, end the slave trade (but not slavery itself) in Washington D.C., where it embarrasses the nation. Fourth, pass a stricter Fugitive Slave Law requiring Northerners to help capture runaway slaves. Fifth, resolve Texas's boundary disputes and assume its debts.
+
+It's classic Clay—something for everyone, something to anger everyone. California gets statehood as a free state, pleasing the North. The South gets the Fugitive Slave Act and the possibility of slavery in Utah and New Mexico through popular sovereignty. Both sides have to swallow things they hate.
+
+The debates are epic. Clay speaks for hours defending his compromise. Calhoun, too weak to speak, has his speech read arguing that the North must stop opposing slavery or the Union will dissolve. Daniel Webster, Massachusetts senator and Northern icon, shocks abolitionists by supporting the compromise, including the Fugitive Slave Act. He's called a traitor by anti-slavery Northerners, but he believes saving the Union matters more than opposing slavery's expansion.`,
+        },
+        {
+          title: "The Fugitive Slave Act",
+          content: `After months of debate, the Compromise passes in September 1850. California is admitted as the thirty-first state, a free state! We celebrate in San Francisco with parades, speeches, and fireworks. We're Americans now, full members of the Union.
+
+But our celebration is muted by the Fugitive Slave Act, the compromise's most controversial provision. This law requires federal marshals to arrest suspected runaways. It denies accused runaways jury trials—a commissioner decides their fate, earning $10 if he rules the person is a slave but only $5 if he rules them free, creating a financial incentive for slave-catchers. Any citizen who refuses to help capture runaways can be fined $1,000. The law applies nationwide, making the entire country complicit in slavery.
+
+Northern states are outraged. Some pass "Personal Liberty Laws" trying to protect accused runaways, though these conflict with federal law. Vigilance committees form in Northern cities to warn fugitives when slave-catchers arrive and help them escape to Canada. Churches openly defy the law, hiding runaways in their basements.
+
+The law terrorizes free Black communities in the North. Slave-catchers can seize any Black person, claim they're a runaway, and haul them before a biased commissioner with minimal evidence. Free people who've lived in the North for years are kidnapped and sold South. Parents warn children never to talk to strangers, never to go out alone. The North's free Black population lives in fear.`,
+        },
+        {
+          title: "Popular Sovereignty's Flaw",
+          content: `The compromise's popular sovereignty provision sounds democratic—let settlers decide slavery for themselves. But it's morally bankrupt. Whether human beings can be enslaved shouldn't be decided by majority vote. And it invites conflict, as we'll see when Kansas and Nebraska territories are organized.
+
+Stephen Douglas, the Illinois senator who championed popular sovereignty, argues it's the perfect solution: it's democratic, respects local self-government, and removes slavery from national politics. Let each territory decide for itself, he says, and the nation can avoid tearing itself apart over the issue.
+
+But this assumes slavery is just another political question, like tariff rates or internal improvements. It's not. It's about whether human beings can be property, whether liberty is a fundamental right or a privilege reserved for whites. You can't compromise on that through voting.
+
+The compromise also exposes the hypocrisy of Manifest Destiny rhetoric. We claimed to bring freedom and democracy to Mexican territories. Now we're organizing those same territories with the possibility of slavery. We conquered Mexico in freedom's name, then prepared to extend slavery into the conquered lands. The inconsistency is staggering.`,
+        },
+        {
+          title: "Temporary Peace",
+          content: `The Compromise of 1850 brings temporary calm. Tensions ease. Talk of secession fades. Many Americans are relieved that catastrophe was averted. We've postponed the crisis again, just as the Missouri Compromise postponed it in 1820.
+
+But others see the compromise as a failure. Abolitionists are disgusted that California's admission was purchased with the Fugitive Slave Act. They vow civil disobedience, refusing to obey what they consider an immoral law. Ralph Waldo Emerson declares, "This filthy enactment was made in the nineteenth century, by people who could read and write. I will not obey it, by God."
+
+The South, meanwhile, sees the compromise as a last stand. Many Southerners feel they made huge concessions—admitting California free, ending the D.C. slave trade—in exchange for Northern promises to respect slavery where it exists and enforce the Fugitive Slave Act. If the North doesn't keep its promises, many Southerners say, secession will be justified.
+
+Living in California, far from these tensions, I see the compromise's fundamental flaw: it doesn't resolve anything. It admits California free but doesn't address whether slavery can expand elsewhere. It strengthens fugitive slave laws but doesn't address the moral question of slavery itself. It buys time but doesn't build lasting peace.
+
+Father is pessimistic. "We've patched the hole in the dam," he says, "but water pressure keeps building. The Missouri Compromise bought thirty years. This one might buy ten. Eventually, the dam will break, and when it does, the flood will be catastrophic."
+
+Standing in our California store, free state citizens in a divided nation, I understand we're living in a breathing space between storms. The Compromise of 1850 saved the Union—for now. But it didn't solve the slavery question. It just postponed the day of reckoning. That day is coming, and when it arrives, compromise won't be enough. The slavery question will be answered not through congressional deals but through blood and fire. The Compromise of 1850 is America's last peaceful attempt to manage the unmanageable. Its failure will lead to war.`,
+        },
       ],
     },
     flashcards: [
@@ -5115,6 +5764,11 @@ The fight for women's rights has begun. It will take decades, face setbacks, div
       {id: "q33-1", question: "What was Compromise of 1850?", options: ["Tax agreement", "Admitted California free while strengthening fugitive slave laws", "Military pact", "Trade deal"], correctOptionIndex: 1, explanation: "Compromise admitted California as free state but included stricter Fugitive Slave Act."},
       {id: "q33-2", question: "What was Fugitive Slave Act?", options: ["Freed all slaves", "Required Northerners to help capture escaped slaves", "Banned slavery", "Protected runaways"], correctOptionIndex: 1, explanation: "Required Northern citizens to assist in capturing fugitive slaves, outraging many Northerners."},
       {id: "q33-3", question: "What was popular sovereignty?", options: ["Direct democracy", "Letting territorial settlers vote on allowing slavery", "Monarchy", "Dictatorship"], correctOptionIndex: 1, explanation: "Popular sovereignty let settlers in territories decide whether to allow slavery."},
+      {id: "q33-4", question: "Why did the South oppose California's admission as a free state?", options: ["They hated California", "It would break the 15-15 sectional balance in the Senate, giving free states permanent majority", "California had no resources", "No one opposed it"], correctOptionIndex: 1, explanation: "In 1850, there were 15 slave states and 15 free states, giving each side equal Senate representation. Admitting California free would create a 16-15 free state majority. The South feared this would eventually lead to slavery's abolition and threatened secession."},
+      {id: "q33-5", question: "What made the Fugitive Slave Act especially unjust?", options: ["It was completely fair", "Commissioners earned $10 for ruling someone a slave but only $5 for ruling them free, creating financial incentive for slavery", "It gave accused people jury trials", "It only applied to the South"], correctOptionIndex: 1, explanation: "The Act denied accused runaways jury trials. A commissioner decided their fate, earning $10 if he ruled the person was a slave but only $5 if he ruled them free—creating a clear financial incentive to side with slave-catchers. This, combined with minimal evidence requirements, made the law deeply unjust."},
+      {id: "q33-6", question: "What controversial position did Daniel Webster take?", options: ["He opposed all compromise", "He shocked abolitionists by supporting the compromise including the Fugitive Slave Act, believing Union mattered more", "He supported immediate abolition", "He remained silent"], correctOptionIndex: 1, explanation: "Daniel Webster, a Massachusetts senator and Northern icon, shocked anti-slavery Northerners by supporting Clay's compromise, including the hated Fugitive Slave Act. Abolitionists called him a traitor, but he believed preserving the Union was more important than opposing slavery's expansion."},
+      {id: "q33-7", question: "Why was popular sovereignty morally problematic?", options: ["It was perfectly moral", "Whether human beings can be enslaved shouldn't be decided by majority vote—it treats slavery as just another political question", "Everyone loved the idea", "It ended slavery"], correctOptionIndex: 1, explanation: "Popular sovereignty treated slavery as just another political issue that could be decided by majority vote, like tariff rates. But whether human beings can be property isn't a question that should be decided democratically—it's a fundamental moral question about human rights and dignity."},
+      {id: "q33-8", question: "Why did the Compromise of 1850 ultimately fail to prevent civil war?", options: ["It solved all problems permanently", "It postponed conflict without resolving the fundamental question of slavery—bought time but didn't build lasting peace", "It started the war immediately", "No one followed it"], correctOptionIndex: 1, explanation: "The compromise admitted California free and strengthened fugitive slave laws, but didn't resolve the fundamental question: can slavery expand or not? It bought temporary peace by avoiding the hard questions. Like the Missouri Compromise before it, it postponed conflict but couldn't prevent the eventual reckoning over slavery."},
     ],
   },
 
@@ -5126,8 +5780,76 @@ The fight for women's rights has begun. It will take decades, face setbacks, div
     story: {
       narrator: "Rebecca, age 14, Northern girl, 1852",
       chapters: [
-        {title: "A Book That Changed America", content: `I'm Rebecca, fourteen. I just read Uncle Tom's Cabin by Harriet Beecher Stowe. It tells the story of enslaved people: Uncle Tom, sold away from his family; Eliza, fleeing across ice with her baby; cruel overseer Simon Legree beating slaves. Mother cried reading it. Father, who'd been indifferent to slavery, now calls it evil. The book makes slavery personal, human, impossible to ignore.`},
-        {title: "Nation Divided", content: `The book sells 300,000 copies first year. Northerners who'd tolerated slavery now oppose it morally. Southerners furious—call it propaganda, lies. They publish pro-slavery novels defending the institution. When Lincoln later meets Stowe, he reportedly says, "So you're the little woman who wrote the book that started this great war." Literature has power. Stowe's words changed hearts, hardened divisions, made civil war more likely.`},
+        {
+          title: "A Book That Changed America",
+          content: `I'm Rebecca, fourteen years old, living in Boston. Everyone in my family is reading Uncle Tom's Cabin by Harriet Beecher Stowe. The novel was published this year, 1852, and it's become the most talked-about book in America.
+
+Mother bought a copy last month. She read passages aloud at dinner until Father insisted on reading it himself. My older brother, studying at Harvard, says his classmates debate it constantly. Even our minister preached a sermon about it.
+
+I finally started reading last week and couldn't put it down. The story follows enslaved people in the South: Uncle Tom, a faithful man sold away from his wife and children; Eliza, a mother who escapes across the frozen Ohio River, leaping from ice floe to ice floe with her baby to avoid slave catchers; Little Eva, a white child who befriends Uncle Tom and dies young; and Simon Legree, a cruel overseer who beats slaves and ultimately kills Uncle Tom.
+
+Mrs. Stowe writes in the preface that slavery is a moral evil that Christians must oppose. She describes the brutality of slavery—families torn apart at auction blocks, mothers watching their children sold away, men and women whipped for trying to learn to read. She makes slavery not an abstract political issue but a human tragedy affecting real people with hopes, fears, loves, and souls.
+
+When I finished the book, I cried. Mother cried when she read it. Even Father, who'd always said slavery was a Southern problem that didn't concern us, now calls it evil and says something must be done. That's the power of this book—it makes slavery personal, human, impossible to ignore.`,
+        },
+        {
+          title: "The Characters Come Alive",
+          content: `The characters in Uncle Tom's Cabin feel real to me. Uncle Tom isn't just a name in a newspaper story about slavery—he's a person I know through Mrs. Stowe's words.
+
+Tom is deeply religious, kind, and noble. He's sold away from his family because his owner, Mr. Shelby, has debts. Tom could escape but doesn't because he gave his word. Eventually he ends up owned by Simon Legree, a cruel man who beats his slaves and forces them to work until they collapse.
+
+Legree orders Tom to whip another slave. Tom refuses, saying he'd rather die than hurt someone. Legree beats him brutally. Tom forgives him, maintaining his Christian faith even as he's dying. His death scene made me weep.
+
+Eliza's story is different—she's a fighter. When she learns her son Harry will be sold away from her, she runs. Slave catchers pursue her to the Ohio River. The river is frozen but breaking up, with ice chunks floating in the current. With her baby in her arms, Eliza jumps from ice floe to ice floe, leaping across freezing water while men chase her. She makes it to the free state of Ohio.
+
+Mrs. Stowe writes other characters too: George Harris, Eliza's husband, who escapes slavery separately; Topsy, a slave girl who's never known love; Augustine St. Clare, a kind master who dies before freeing his slaves; and his daughter Eva, an angelic child who treats Tom with love and respect but dies of illness.
+
+These aren't abstract principles—they're people. And that's why the book is changing minds across the North.`,
+        },
+        {
+          title: "Reaction in the North",
+          content: `Uncle Tom's Cabin is everywhere in the North. It's selling faster than any book in American history—300,000 copies in the first year. Only the Bible sells more copies.
+
+People who've never thought much about slavery can't stop talking about it now. At my school, girls discuss whether Eliza's escape was realistic. (It was based on true accounts.) In Father's office, men debate what should be done about slavery. In churches, ministers quote Mrs. Stowe and condemn slavery from their pulpits.
+
+The book's timing is significant. The Fugitive Slave Act of 1850 requires Northerners to help capture escaped slaves. We've seen slave catchers in Boston, dragging Black people back to bondage while crowds protest. Mrs. Stowe's novel shows us exactly what we're sending people back to when we obey that law.
+
+Some Northerners who'd been indifferent or even supportive of slavery now call it evil. They see the contradiction between American ideals of freedom and the reality of human bondage. They can't reconcile "all men are created equal" with families separated on auction blocks.
+
+My friend Sarah's father, a merchant who does business with Southern cotton traders, stopped buying cotton after reading the book. "I won't profit from such evil," he said. My uncle, who'd always avoided political discussions, now attends abolitionist meetings.
+
+Mrs. Stowe has done what decades of political speeches couldn't—she's changed hearts. By making readers care about Tom, Eliza, and the others as human beings, she's made slavery not just wrong in abstract principle but unbearable in human reality.`,
+        },
+        {
+          title: "Southern Outrage",
+          content: `The South is furious about Uncle Tom's Cabin. Southern newspapers call it lies, propaganda, and slander. They say Mrs. Stowe has never lived in the South and doesn't understand the institution of slavery.
+
+Southern writers publish their own novels defending slavery—books with titles like Aunt Phillis's Cabin and The Planter's Northern Bride. These books depict slavery as benevolent, claiming enslaved people are happy, well-cared for, and better off than Northern factory workers. They portray slaveholders as kind Christians and abolitionists as hypocrites and troublemakers.
+
+But even as Southerners attack the book, their reaction proves its power. If Uncle Tom's Cabin were just false propaganda, they could ignore it. Instead, they feel compelled to write elaborate defenses of slavery, which shows how threatened they are by Mrs. Stowe's narrative.
+
+Some Southern states ban the book. Booksellers are threatened. A few brave Southerners who question slavery after reading it face social ostracism or worse. The book becomes a dividing line—Northerners embrace it, Southerners condemn it.
+
+The sectional divide deepens. Before Uncle Tom's Cabin, many Northerners tolerated slavery as a Southern institution protected by the Constitution. Now they see it as morally wrong and call for its end. Before the book, Southerners defended slavery as a "necessary evil." Now they defend it as a "positive good" and attack anyone who questions it.
+
+My cousin in Virginia stopped writing to me after I mentioned reading the book. Her letter was angry: "Your Mrs. Stowe knows nothing of our ways. We treat our people well. Yankees should mind their own business." We used to write weekly. Now we're silent. The book has divided not just the nation but families.`,
+        },
+        {
+          title: "The Power of Words",
+          content: `It's extraordinary that a novel—a work of fiction—could have such political impact. But Uncle Tom's Cabin proves that stories can change the world.
+
+Mrs. Stowe didn't write a political treatise or economic argument. She wrote about people—their loves, losses, hopes, and suffering. She made readers feel the weight of slavery in their hearts, not just understand it in their heads.
+
+When I read about Tom being sold away from his wife and children, I thought of my own father and what it would be like if someone could legally separate our family. When I read about Eliza risking death to save her son from slavery, I thought of my mother and how she'd do anything to protect us. Mrs. Stowe made slavery real by making it personal.
+
+The book's impact will be lasting. Years from now, when people ask what caused the Civil War (which feels increasingly inevitable), they'll point to many factors—the Missouri Compromise, the Fugitive Slave Act, Bleeding Kansas. But they'll also point to Uncle Tom's Cabin.
+
+Abraham Lincoln reportedly said, when he met Mrs. Stowe during the Civil War, "So you're the little woman who wrote the book that started this great war." It's probably apocryphal, but it captures a truth: literature has power. Words matter. Stories can change minds, shift politics, and alter history.
+
+I'm just a fourteen-year-old girl in Boston. I can't vote. I can't hold office. I can't make laws. But I can read, think, and talk about what I've read. Mrs. Stowe has shown me that moral persuasion—changing hearts through truth and empathy—can be as powerful as any political movement.
+
+The slavery question won't be resolved easily. The South won't give up its "peculiar institution" just because Northerners read a novel. But Uncle Tom's Cabin has made compromise harder and conflict more likely. We can no longer pretend slavery is just a political issue that rational people can negotiate. It's a moral issue that demands choosing sides. And increasingly, the North is choosing the side of freedom.`,
+        },
       ],
     },
     flashcards: [
@@ -5144,6 +5866,11 @@ The fight for women's rights has begun. It will take decades, face setbacks, div
       {id: "q34-1", question: "What was Uncle Tom's Cabin?", options: ["A house", "Anti-slavery novel by Stowe that influenced Northern opinion", "A restaurant", "A ship"], correctOptionIndex: 1, explanation: "1852 novel depicting slavery's horrors that profoundly influenced Northern attitudes."},
       {id: "q34-2", question: "How did it affect the nation?", options: ["No effect", "Galvanized Northern opposition to slavery while enraging South", "Everyone agreed", "Ended slavery"], correctOptionIndex: 1, explanation: "Galvanized Northern anti-slavery feeling while enraging South, deepening sectional divide."},
       {id: "q34-3", question: "Who was Harriet Beecher Stowe?", options: ["A slave", "Author who wrote Uncle Tom's Cabin", "British queen", "Southern plantation owner"], correctOptionIndex: 1, explanation: "Author whose anti-slavery novel became best-seller and changed Northern attitudes."},
+      {id: "q34-4", question: "How popular was Uncle Tom's Cabin?", options: ["No one read it", "Sold 300,000 copies in first year—fastest-selling book in American history except the Bible", "Sold 10 copies", "Was never published"], correctOptionIndex: 1, explanation: "Uncle Tom's Cabin sold 300,000 copies in its first year, making it the fastest-selling book in American history except for the Bible. Its extraordinary popularity showed how deeply it resonated with Northern readers."},
+      {id: "q34-5", question: "Why was the book's timing significant?", options: ["It had no connection to current events", "It appeared right after the Fugitive Slave Act of 1850, showing Northerners what they were sending people back to", "Slavery had already ended", "No one cared about slavery"], correctOptionIndex: 1, explanation: "The book was published in 1852, just two years after the Fugitive Slave Act required Northerners to help capture escaped slaves. Stowe's novel showed readers the horrors of slavery they were complicit in enforcing, making many Northerners refuse to obey the law."},
+      {id: "q34-6", question: "How did Southern writers respond to Uncle Tom's Cabin?", options: ["They ignored it completely", "They published pro-slavery novels defending slavery as benevolent and attacking Stowe", "They agreed with Stowe", "They banned all books"], correctOptionIndex: 1, explanation: "Southern writers published novels with titles like 'Aunt Phillis's Cabin' depicting slavery as benevolent, claiming enslaved people were happy and well-cared for. The fact they felt compelled to respond showed how threatened they were by Stowe's narrative."},
+      {id: "q34-7", question: "How did Stowe make slavery personal rather than abstract?", options: ["She only discussed economics", "She wrote about people—families torn apart, mothers protecting children—making readers feel slavery's human cost", "She avoided emotional content", "She only used statistics"], correctOptionIndex: 1, explanation: "Stowe didn't write political arguments—she wrote about people readers could care about. When readers saw Tom sold from his family or Eliza risking death to save her son, they connected slavery to their own experiences of family love. This emotional connection changed hearts where political arguments had failed."},
+      {id: "q34-8", question: "What did Abraham Lincoln reportedly say about Uncle Tom's Cabin?", options: ["He never heard of it", "He called Stowe 'the little woman who wrote the book that started this great war'", "He banned the book", "He thought it was fiction with no impact"], correctOptionIndex: 1, explanation: "Lincoln reportedly said upon meeting Stowe during the Civil War: 'So you're the little woman who wrote the book that started this great war.' Though probably apocryphal, it captures the truth that Uncle Tom's Cabin played a significant role in bringing North and South to war by making compromise over slavery impossible."},
     ],
   },
 
@@ -5155,8 +5882,92 @@ The fight for women's rights has begun. It will take decades, face setbacks, div
     story: {
       narrator: "John, age 17, Kansas settler, 1856",
       chapters: [
-        {title: "Popular Sovereignty Fails", content: `I'm John, seventeen, in Kansas Territory. Stephen Douglas's Kansas-Nebraska Act let us vote on slavery—popular sovereignty. Seemed democratic. But pro-slavery Missourians cross border to vote illegally. Abolitionists pour in from North. Both sides bring weapons. Elections rigged. Competing governments form. Kansas becomes battleground for nation's slavery conflict.`},
-        {title: "Bleeding Kansas", content: `Violence erupts. Pro-slavery forces attack Lawrence. John Brown leads abolitionists in Pottawatomie Massacre, killing five. Guerrilla warfare. Over 200 dead. In Washington, Senator Brooks beats Senator Sumner with a cane for anti-slavery speech. Democracy fails when both sides refuse to accept votes, resort to violence. "Bleeding Kansas" shows slavery question won't be solved peacefully. War approaches.`},
+        {
+          title: "The Kansas-Nebraska Act",
+          content: `I'm John, seventeen years old, and my family moved to Kansas Territory in 1855. We came from Ohio seeking good farmland and a fresh start. Kansas seemed like the perfect opportunity.
+
+The Kansas-Nebraska Act, passed by Congress in 1854, created Kansas and Nebraska territories. Senator Stephen Douglas from Illinois championed the law. Its key provision was "popular sovereignty"—letting the settlers themselves vote on whether to allow slavery rather than having Congress decide.
+
+Douglas said popular sovereignty was democratic, giving people the right to govern themselves. It also repealed the Missouri Compromise of 1820, which had banned slavery north of the 36°30' line. Kansas was north of that line, so under the Missouri Compromise it would have been free territory. Now it was up for grabs.
+
+When we arrived, Kansas was beautiful—rolling prairies, fertile soil, clear streams. The land seemed full of promise. But we quickly discovered that Kansas wasn't just about farming. It was about slavery. And that question would be decided not through peaceful voting but through intimidation, fraud, and violence.
+
+Northerners called it "the struggle for Kansas." Southerners called it defending their rights. We called it terrifying. Our family just wanted to farm, but we were caught in the middle of a conflict that would determine not just Kansas's future but America's.`,
+        },
+        {
+          title: "Border Ruffians and Fraud",
+          content: `The 1855 territorial election should have been straightforward: Kansas settlers vote on whether to allow slavery. Instead, it became a farce.
+
+Days before the election, thousands of armed Missourians—called "Border Ruffians"—crossed into Kansas. They weren't settlers. They came just to vote illegally, then returned to Missouri. They carried weapons, whiskey, and determination to make Kansas a slave state.
+
+I was in Lawrence on election day. Armed men surrounded polling places. They threatened anyone who challenged their right to vote. When election judges asked for proof of residency, the Border Ruffians showed them guns instead of documents.
+
+"Are you going to question my ballot?" one Missourian asked our poll judge, hand on his revolver. The judge backed down.
+
+The results were absurd. Precincts with a hundred residents recorded six hundred votes. Some areas reported more votes cast than the entire population of Kansas Territory. The pro-slavery candidates won overwhelmingly—through massive fraud.
+
+A pro-slavery territorial legislature was installed. They immediately passed laws protecting slavery, making it illegal to speak against slavery, and requiring an oath of loyalty to the pro-slavery government to hold office or vote. Free-state settlers refused to recognize this fraudulent government.
+
+We formed our own free-state government in Topeka, elected our own legislature, wrote our own constitution banning slavery. Now Kansas had two competing governments, each claiming legitimacy. Federal authorities backed the pro-slavery legislature. We backed the free-state government.
+
+It was absurd—and dangerous. Two governments couldn't occupy the same territory. Something had to give.`,
+        },
+        {
+          title: "Violence Erupts",
+          content: `May 1856. Pro-slavery forces attacked Lawrence, the free-state capital. They called us traitors and rebels. They said they'd teach us to respect the lawful government.
+
+Eight hundred armed men marched on Lawrence. They destroyed our printing presses—the Herald of Freedom and the Kansas Free State—throwing the type into the river. They burned the Free State Hotel, a symbol of anti-slavery resistance. They looted homes and businesses. They fired a cannon at Governor Robinson's house.
+
+No one was killed in the attack, but the "Sack of Lawrence" enraged free-state settlers. We'd been peaceful, believing democracy and law would prevail. The attack showed that pro-slavery forces would use violence to get their way.
+
+Three days later, John Brown responded. I didn't know Brown well—he was a fierce abolitionist with burning eyes and absolute certainty. He had come to Kansas with his sons to fight slavery.
+
+Brown and his followers went to Pottawatomie Creek, where pro-slavery settlers lived. In the middle of the night, they dragged five men from their homes and killed them with broadswords. The victims weren't Border Ruffians or attackers of Lawrence—they were settlers who supported slavery. Brown called it divine justice. Others called it murder.
+
+I was horrified. Violence had begotten violence. Both sides now had blood on their hands. The cycle of revenge had begun, and I didn't see how it could stop.
+
+The violence in Kansas was matched by violence in Washington. Senator Charles Sumner of Massachusetts gave a speech condemning the "Crime Against Kansas." Representative Preston Brooks of South Carolina, enraged by the speech, walked into the Senate chamber and beat Sumner nearly to death with a cane. Sumner was so badly injured he couldn't return to the Senate for three years.
+
+Popular sovereignty had failed spectacularly. Instead of peaceful democracy, we had guerrilla warfare.`,
+        },
+        {
+          title: "Bleeding Kansas",
+          content: `The violence didn't stop. For the next three years, Kansas bled.
+
+Pro-slavery "Border Ruffians" and free-state "Jayhawkers" raided each other's settlements. They burned homes, stole livestock, destroyed crops. They murdered people suspected of supporting the other side. No one was safe.
+
+My family's farm was raided twice. The first time, Border Ruffians stole our horses and warned Father to leave Kansas or face consequences. The second time, they burned our barn. We rebuilt, but we slept with rifles beside our beds.
+
+Other families had it worse. The Wilkinson family—free-staters—were driven from their home and fled to Iowa. The Jones family—pro-slavery—had their son killed in an ambush. Neighbors who'd once helped each other now feared each other.
+
+Some settlers gave up and left. Kansas's population fluctuated as people fled the violence. But others, like my family, stayed. We believed Kansas must be free, and we wouldn't let intimidation drive us away.
+
+John Brown became a legendary figure—hero to some, terrorist to others. He led raids against pro-slavery settlements, always claiming God's will justified his actions. His methods were brutal, but his conviction was absolute.
+
+Federal troops were sent to keep peace, but they mostly sided with the pro-slavery territorial government, viewing free-staters as rebels. We appealed to Washington for fair elections, federal intervention, admission as a free state. We were ignored.
+
+By 1858, over 200 people had died in Bleeding Kansas. The phrase became a rallying cry for both sides: abolitionists pointed to Kansas as proof that slavery couldn't be contained peacefully; Southerners pointed to Kansas as proof that abolitionists were violent radicals.
+
+The nation watched Kansas bleed and saw its own future.`,
+        },
+        {
+          title: "Democracy Fails",
+          content: `Kansas eventually joined the Union as a free state in 1861—but only after the Southern states had already seceded. By then, the lesson of Kansas was clear: the slavery question couldn't be solved through popular sovereignty, compromise, or peaceful politics.
+
+Looking back, I understand what went wrong. Popular sovereignty sounded democratic, but it failed because both sides refused to accept outcomes they opposed. Pro-slavery forces rigged elections. Free-state settlers formed their own government. Neither side trusted democratic processes when they might lose.
+
+Democracy requires shared values and willingness to accept majority rule. We didn't have that in Kansas. We had two incompatible visions: one where slavery was an accepted institution, another where it was an intolerable evil. There was no middle ground.
+
+Stephen Douglas thought popular sovereignty would take the slavery issue out of Congress and let local people decide. Instead, it brought the conflict to Kansas and turned it into a war zone. Rather than solving the slavery question, popular sovereignty showed it was unsolvable through peaceful means.
+
+I'm twenty-one now. Kansas is finally at peace, admitted as a free state. But the nation isn't at peace. The same conflict that bled Kansas is tearing the country apart. Southern states are seceding. War is coming.
+
+I think about those years of violence—the raids, the murders, the fear. I think about John Brown, hanged in 1859 for raiding the federal arsenal at Harpers Ferry, trying to start a slave rebellion. I think about Senator Sumner, beaten unconscious for a speech. I think about neighbors killing neighbors over an institution that should never have existed.
+
+Bleeding Kansas was a preview of the Civil War. We showed that Americans would kill each other over slavery. We showed that political solutions had failed. We showed that when fundamental moral questions divide a people, words give way to violence.
+
+The experiment of popular sovereignty failed in Kansas. And with its failure, the nation's last hope for peaceful resolution of the slavery question died too. We're all Kansas now—bleeding and divided, heading toward a war that might have been avoided if we'd faced the truth earlier: slavery was wrong, and no compromise could make it right.`,
+        },
       ],
     },
     flashcards: [
@@ -5173,6 +5984,11 @@ The fight for women's rights has begun. It will take decades, face setbacks, div
       {id: "q35-1", question: "What was Kansas-Nebraska Act?", options: ["Tax law", "Law allowing Kansas/Nebraska to decide slavery by popular sovereignty", "Military law", "Trade agreement"], correctOptionIndex: 1, explanation: "1854 law letting Kansas and Nebraska settlers vote on allowing slavery."},
       {id: "q35-2", question: "What was Bleeding Kansas?", options: ["Medical crisis", "Violent conflict over whether Kansas would allow slavery", "Natural disaster", "Festival"], correctOptionIndex: 1, explanation: "Violent conflict as pro and anti-slavery forces fought for control of Kansas."},
       {id: "q35-3", question: "What did Bleeding Kansas demonstrate?", options: ["Democracy works", "Slavery question couldn't be solved peacefully—violence was approaching", "Everyone agreed", "Problem solved"], correctOptionIndex: 1, explanation: "Showed slavery question couldn't be solved peacefully when both sides refused to accept results and resorted to violence."},
+      {id: "q35-4", question: "What did the Kansas-Nebraska Act do to the Missouri Compromise?", options: ["Strengthened it", "Repealed it—overturning the 1820 ban on slavery north of 36°30'", "Had no effect on it", "The Missouri Compromise never existed"], correctOptionIndex: 1, explanation: "The Kansas-Nebraska Act repealed the Missouri Compromise of 1820, which had banned slavery north of the 36°30' line. Kansas was north of that line, so under the Missouri Compromise it would have been free. Popular sovereignty made it contestable."},
+      {id: "q35-5", question: "How did 'Border Ruffians' subvert the 1855 Kansas election?", options: ["They voted fairly", "Thousands of armed Missourians illegally crossed into Kansas, voted at gunpoint, then returned to Missouri", "They didn't participate", "Elections were completely fair"], correctOptionIndex: 1, explanation: "Thousands of armed Missourians called 'Border Ruffians' illegally entered Kansas just to vote, threatened poll judges with weapons, created massive fraud (precincts with 100 residents recorded 600 votes), then returned to Missouri. This rigged the election for pro-slavery candidates."},
+      {id: "q35-6", question: "What was the Pottawatomie Massacre?", options: ["A natural disaster", "John Brown and followers killed five pro-slavery settlers with broadswords in revenge for the Sack of Lawrence", "A peaceful protest", "A celebration"], correctOptionIndex: 1, explanation: "Three days after pro-slavery forces attacked Lawrence, John Brown and his followers went to Pottawatomie Creek and killed five pro-slavery settlers with broadswords. Brown called it divine justice; others called it murder. It escalated Kansas's cycle of violence."},
+      {id: "q35-7", question: "What was the Sumner-Brooks incident?", options: ["Two men having dinner", "Representative Preston Brooks beat Senator Charles Sumner nearly to death with a cane in the Senate chamber", "A friendly debate", "They never met"], correctOptionIndex: 1, explanation: "After Senator Sumner gave a speech condemning the 'Crime Against Kansas,' Representative Preston Brooks walked into the Senate chamber and beat Sumner nearly to death with a cane. Sumner couldn't return to the Senate for three years. This showed violence over slavery had reached even Washington."},
+      {id: "q35-8", question: "Why did popular sovereignty fail in Kansas?", options: ["It worked perfectly", "Both sides refused to accept outcomes they opposed—democracy requires shared values and willingness to accept majority rule, which didn't exist", "Everyone agreed immediately", "No one voted"], correctOptionIndex: 1, explanation: "Popular sovereignty failed because both sides refused to accept democratic outcomes they opposed. Pro-slavery forces rigged elections, free-staters formed their own government, and both resorted to violence. Democracy requires shared values and acceptance of majority rule—Kansas had neither. The two sides held incompatible visions with no middle ground."},
     ],
   },
 
@@ -5184,8 +6000,94 @@ The fight for women's rights has begun. It will take decades, face setbacks, div
     story: {
       narrator: "Frederick, age 16, free Black in Pennsylvania, 1857",
       chapters: [
-        {title: "The Case", content: `I'm Frederick, sixteen, free Black in Pennsylvania. Today the Supreme Court ruled on Dred Scott v. Sandford. Scott, enslaved, lived in free territory then returned to slave state. He sued for freedom. We hoped the Court would free him. Instead, Chief Justice Taney ruled: Black people aren't citizens, have no rights whites must respect. Even free Blacks like me have no legal standing. Devastating.`},
-        {title: "Constitutional Crisis", content: `Worse: Taney ruled Congress can't ban slavery in territories—Missouri Compromise unconstitutional. Popular sovereignty unconstitutional. No legal way to stop slavery's spread. Southerners celebrate. Northerners outraged. Republicans vow to ignore the decision if they win presidency. Supreme Court's credibility destroyed. Constitutional remedies exhausted. If law can't resolve this conflict, only war can.`},
+        {
+          title: "Dred Scott's Long Battle",
+          content: `I'm Frederick, sixteen years old, and I'm free. My father was born enslaved but bought his freedom and moved our family to Pennsylvania, a free state. We have our own home, our own business. We're free—or so I thought.
+
+Today, March 6, 1857, the Supreme Court announced its decision in Dred Scott v. Sandford. We've been following this case for years, hoping for justice. Dred Scott was enslaved in Missouri. His owner, an army surgeon, took him to Illinois (a free state) and then to Wisconsin Territory (free under the Missouri Compromise). Scott lived in free territory for years, married there, had children there.
+
+When they returned to Missouri, Scott's owner died. Scott sued for his freedom, arguing that living in free territory had made him free. It seemed like a clear case: if you live as a free man in free territory, you should be free.
+
+The case went through Missouri courts, then federal courts, finally reaching the Supreme Court. The free Black community watched anxiously. If Scott won, it would establish that enslaved people who entered free territory became free. It would be a major victory for freedom.
+
+We should have known better than to hope. The Supreme Court has nine justices. Five are from slave states. Chief Justice Roger Taney is from Maryland, a state that depends on slavery. President Buchanan, who just took office, pressured justices to settle the slavery question once and for all.
+
+Today we learned the result. And it's worse than we imagined.`,
+        },
+        {
+          title: "No Rights That White Men Must Respect",
+          content: `Chief Justice Taney's opinion was read in the courtroom. The words spread through the free Black community like fire. I heard them from my father, who heard them from a lawyer friend.
+
+Taney ruled that Black people—whether enslaved or free—are not citizens of the United States. We cannot sue in federal court. We have no standing before the law.
+
+Then came the most devastating sentence: Black people "had for more than a century before been regarded as beings of an inferior order, and altogether unfit to associate with the white race, either in social or political relations; and so far inferior, that they had no rights which the white man was bound to respect."
+
+No rights which the white man was bound to respect.
+
+I am sixteen years old. I was born free in Pennsylvania. My father worked for years to earn his freedom and build a life for us. We pay taxes. We obey laws. We contribute to our community. And the highest court in the land says we have no rights that white men must respect.
+
+The ruling doesn't just deny Dred Scott his freedom—it denies my humanity. It says that my family, despite living in a free state, could be kidnapped and enslaved, and we'd have no legal recourse. We're not citizens. We're not even fully human in the eyes of the law.
+
+Mother cried when she heard. Father was silent, his jaw clenched. My younger sister asked, "Does this mean we're not free anymore?" I didn't know how to answer.
+
+The Dred Scott decision tells us that America—with all its talk of liberty and equality—doesn't include us. We're outsiders in the country where we were born.`,
+        },
+        {
+          title: "The Missouri Compromise Struck Down",
+          content: `Taney's opinion went further than just denying Dred Scott's freedom and Black citizenship. He struck down the Missouri Compromise, the law that had regulated slavery in the territories for 37 years.
+
+The Missouri Compromise of 1820 banned slavery north of the 36°30' line in the Louisiana Territory. It was a carefully crafted compromise that had kept peace for decades. But Taney ruled it unconstitutional.
+
+His reasoning: Congress has no power to ban slavery in the territories. Enslaved people are property, protected by the Fifth Amendment, which says property cannot be taken without due process. Banning slavery in territories would deprive slaveholders of their property rights.
+
+Think about the implications. If Congress can't ban slavery in territories, then slavery can expand anywhere. The Republican Party's entire platform—stopping slavery's expansion—is unconstitutional according to the Supreme Court.
+
+Popular sovereignty is also undermined. If slaveholders have a constitutional right to bring enslaved people into any territory, how can territorial legislatures vote to ban slavery? The Supreme Court has essentially said slavery must be allowed everywhere.
+
+Free states like Pennsylvania are theoretically still free, but even that feels uncertain. If enslaved people are property, and property rights are protected by the Constitution, couldn't a slaveholder bring enslaved people into Pennsylvania and claim constitutional protection? The logic of Taney's decision could theoretically nationalize slavery.
+
+Northerners are outraged. The Chicago Tribune writes: "The Constitution is now what the Supreme Court says it is, not what the People say it is." The New York Tribune calls it a "wicked and false judgment."
+
+But it's the law of the land. And we have no recourse except to change the Court—which requires electing a president who will appoint different justices. But how long will that take?`,
+        },
+        {
+          title: "Sectional Crisis Deepens",
+          content: `The reaction to the Dred Scott decision splits along sectional lines, making the national divide even worse.
+
+Southerners celebrate. Finally, they say, the Supreme Court has recognized their rights. Slavery is constitutional. It can't be banned in territories. The Republican Party's platform is unconstitutional. Southern newspapers call it a great victory for constitutional law.
+
+Some Southern politicians take it further. Senator Albert Brown of Mississippi says if slavery is constitutionally protected in territories, it must be protected in states too. He proposes a federal slave code to enforce slavery everywhere. Other Southerners talk about reopening the African slave trade, banned since 1808.
+
+Northerners are furious. Republicans call the decision illegitimate, a political ruling rather than a legal one. They point out that Taney could have ruled narrowly—just deciding that Scott, as a non-citizen, couldn't sue in federal court. Instead, he issued a sweeping opinion about slavery in the territories, going beyond what the case required.
+
+Abraham Lincoln, a Republican lawyer from Illinois, says the decision is wrongly decided and not binding as a permanent precedent. He argues that if Republicans win the presidency, they can effectively ignore the decision by appointing new justices who will overturn it.
+
+This is extraordinary: a major political party vowing to defy a Supreme Court decision. It shows how completely the constitutional system is breaking down. The Court was supposed to be the final arbiter, the institution that settles disputes peacefully. Now its rulings are rejected by half the country.
+
+The free Black community is devastated but not surprised. We've always known that American law didn't protect us equally. But having it stated so explicitly by the Supreme Court is a blow. Some free Black families consider emigrating to Canada or Liberia, despairing of ever achieving equality in America.
+
+The Dred Scott decision doesn't resolve the slavery crisis. It deepens it. It radicalizes both sides and eliminates the middle ground.`,
+        },
+        {
+          title: "The Path to War",
+          content: `Four years after the Dred Scott decision, the Civil War begins. I'm twenty now, watching the nation tear itself apart over the question the Supreme Court tried to settle.
+
+Looking back, I see how the decision made war more likely. Before Dred Scott, there were potential compromises: ban slavery in some territories, allow it in others; admit states in pairs (one free, one slave); enforce the Fugitive Slave Act while limiting slavery's expansion.
+
+After Dred Scott, these compromises seemed impossible. The Court had ruled that any restriction on slavery was unconstitutional. But Republicans, who won a majority in the North, refused to accept this. They campaigned explicitly on stopping slavery's expansion, directly contradicting the Supreme Court.
+
+In 1860, Abraham Lincoln was elected president without winning a single Southern state. His election showed that the North would never accept the Dred Scott decision. Southern states, believing their constitutional rights would not be protected, began seceding.
+
+The irony is bitter: Taney thought his decision would settle the slavery question and preserve the Union. Instead, it hastened the Union's dissolution. By denying any middle ground, by declaring slavery constitutionally protected everywhere, he made peaceful coexistence impossible.
+
+Dred Scott himself was freed shortly after the decision—his owner emancipated him. He died a free man in 1858, just months after the Supreme Court said he had no rights. His widow and daughters lived to see the Thirteenth Amendment abolish slavery in 1865, overturning Taney's ruling.
+
+I think about that phrase often: "No rights which the white man was bound to respect." It still stings. But the Civil War and the constitutional amendments that followed proved Taney wrong. We do have rights. We are citizens. We are human beings entitled to dignity, equality, and justice.
+
+The Dred Scott decision was the Supreme Court's greatest failure—a stain on American law that took a war and constitutional amendments to erase. It taught a painful lesson: courts can't save a nation from itself. When fundamental moral questions divide a people, legal decisions won't resolve them. Only the people themselves, through struggle and sacrifice, can build a more just society.
+
+Taney died in 1864, with the Union he tried to preserve broken by war and the slavery system he tried to protect crumbling. History has judged him harshly, and rightly so. The Dred Scott decision stands as a warning: law without justice is tyranny, and courts that protect oppression betray their purpose.`,
+        },
       ],
     },
     flashcards: [
@@ -5202,6 +6104,11 @@ The fight for women's rights has begun. It will take decades, face setbacks, div
       {id: "q36-1", question: "What did Dred Scott decision rule?", options: ["Freed all slaves", "Black people weren't citizens and had no rights", "Banned slavery", "Gave everyone rights"], correctOptionIndex: 1, explanation: "Court ruled Black people weren't citizens and 'had no rights which white man was bound to respect.'"},
       {id: "q36-2", question: "What about territories?", options: ["States decide", "Congress couldn't ban slavery in territories—Missouri Compromise unconstitutional", "Slavery banned everywhere", "No rule made"], correctOptionIndex: 1, explanation: "Court ruled Congress had no power to ban slavery in territories, declaring Missouri Compromise unconstitutional."},
       {id: "q36-3", question: "Why was decision so divisive?", options: ["Everyone agreed", "Eliminated legal solutions to slavery, making war more likely", "It freed slaves", "It was fair"], correctOptionIndex: 1, explanation: "By ruling out legal solutions to slavery question, decision made war more likely as only remaining resolution."},
+      {id: "q36-4", question: "What was Dred Scott's argument for freedom?", options: ["He was never enslaved", "He lived in free territory (Illinois and Wisconsin) for years, so he should be free", "He bought his freedom", "He escaped"], correctOptionIndex: 1, explanation: "Dred Scott argued that because his owner took him to Illinois (a free state) and Wisconsin Territory (free under Missouri Compromise) where he lived for years, he had become free. It seemed logical—living as a free man in free territory should make you free."},
+      {id: "q36-5", question: "What exact phrase did Chief Justice Taney use about Black people's rights?", options: ["They have full rights", "They had 'no rights which the white man was bound to respect'", "They are equal citizens", "Rights don't exist"], correctOptionIndex: 1, explanation: "Taney wrote that Black people were 'so far inferior, that they had no rights which the white man was bound to respect.' This devastating phrase denied Black people's humanity and citizenship, affecting even free Black people in Northern states."},
+      {id: "q36-6", question: "Why did Taney rule Congress couldn't ban slavery in territories?", options: ["He just felt like it", "Enslaved people are property, protected by Fifth Amendment—banning slavery would deprive slaveholders of property without due process", "Slavery didn't exist", "Everyone agreed"], correctOptionIndex: 1, explanation: "Taney argued enslaved people are property protected by the Fifth Amendment, which prohibits taking property without due process. Therefore, Congress couldn't ban slavery in territories because that would unconstitutionally deprive slaveholders of their 'property.' This logic could theoretically nationalize slavery."},
+      {id: "q36-7", question: "How did Republicans respond to the Dred Scott decision?", options: ["They accepted it completely", "They called it wrongly decided and vowed to effectively ignore it by appointing new justices who would overturn it", "They disbanded their party", "They supported Taney"], correctOptionIndex: 1, explanation: "Republicans, including Abraham Lincoln, called the decision wrongly decided and not binding as permanent precedent. They vowed that if they won the presidency, they'd appoint new justices to overturn it. This extraordinary defiance of a Supreme Court ruling showed how completely the constitutional system was breaking down."},
+      {id: "q36-8", question: "What was the irony of Taney's attempt to settle the slavery question?", options: ["It worked perfectly", "He tried to preserve the Union but his decision hastened its dissolution by eliminating compromise and making war inevitable", "Everyone loved the decision", "There was no irony"], correctOptionIndex: 1, explanation: "Taney thought his decision would settle the slavery question and save the Union. Instead, by declaring any restriction on slavery unconstitutional, he eliminated the middle ground and made peaceful coexistence impossible. His attempt to preserve the Union through law hastened the Union's violent breakup."},
     ],
   },
 
@@ -5215,8 +6122,106 @@ The fight for women's rights has begun. It will take decades, face setbacks, div
     story: {
       narrator: "William, age 15, from South Carolina, 1860",
       chapters: [
-        {title: "Lincoln Wins", content: `I'm William from South Carolina. Abraham Lincoln won presidency without a single Southern electoral vote. Republicans oppose slavery's expansion. South sees this as existential threat. South Carolina secedes December 1860. Father and neighbors celebrate—we're independent! Then Mississippi, Florida, Alabama, Georgia, Louisiana, Texas follow. Confederate States of America formed. Jefferson Davis president. We've left the Union.`},
-        {title: "Fort Sumter", content: `Federal Fort Sumter in Charleston harbor remains Union controlled. Lincoln says he'll resupply it. Confederate commander demands surrender. Lincoln won't abandon federal property. April 12, 1861, we bombard Fort Sumter. It surrenders after 34 hours. We've fired on the American flag. No turning back now. Lincoln calls for 75,000 troops. Virginia, North Carolina, Tennessee, Arkansas join Confederacy. War has begun.`},
+        {
+          title: "The Election of 1860",
+          content: `I'm William, fifteen years old, from Charleston, South Carolina. The presidential election of 1860 has our city in turmoil. Father says this election will determine whether we remain in the Union or leave it.
+
+The election is complicated. Four major candidates are running. The Democratic Party split along sectional lines. Northern Democrats nominated Stephen Douglas, supporting popular sovereignty. Southern Democrats nominated John Breckinridge, demanding federal protection of slavery in all territories.
+
+The Constitutional Union Party, trying to avoid the slavery issue entirely, nominated John Bell. They call for preserving the Union without taking sides on slavery.
+
+And then there's Abraham Lincoln, the Republican candidate. Republicans oppose slavery's expansion into the territories, though they promise not to interfere with slavery where it already exists. Their platform says slavery is morally wrong and must be contained.
+
+No Republican has ever won the presidency. Their party didn't even exist six years ago. And they're not even on the ballot in most Southern states, including South Carolina. We can't vote for Lincoln even if we wanted to—which we don't.
+
+Father and his friends talk constantly about what they'll do if Lincoln wins. "A Black Republican president," they call him, though Lincoln isn't actually radical on slavery. He just opposes its expansion. But to Southerners, that's enough. Father says Lincoln's election would be a declaration that the North has permanent control of the government and will slowly strangle slavery to death.
+
+"We won't submit to rule by a sectional Northern party," Father says. "If Lincoln wins, South Carolina will secede from the Union."
+
+I'm not sure what to think. All my life I've been taught that South Carolina is part of the United States. I've learned about Washington and Jefferson, the Constitution and the Union. Now Father says we'll leave? It's frightening and exciting at once.`,
+        },
+        {
+          title: "Lincoln Wins—The South Reacts",
+          content: `November 6, 1860. Election results arrive by telegraph. Abraham Lincoln has won the presidency. He carried every Northern state except New Jersey (which he split with Douglas). He didn't win a single Southern state—didn't even appear on the ballot in most of them. He won with 40% of the popular vote but a clear majority of electoral votes.
+
+Charleston erupts. Church bells ring. Crowds gather in the streets. But they're not celebrating Lincoln's victory—they're celebrating South Carolina's decision to leave the Union.
+
+The palmetto flag—South Carolina's state flag—is raised across the city. Men wear blue cockades (ribbons) in their hats to show support for secession. Militia companies parade through the streets. There's talk of seizing federal forts and arsenals.
+
+Father comes home from a meeting. "The legislature has called a special convention," he tells Mother. "We'll vote on secession in December. It's really happening."
+
+I ask if war is coming. Father pauses. "Lincoln can't force us to stay in the Union. That would be tyranny. We have the right to govern ourselves. If we leave peacefully, there's no reason for war."
+
+But Mother looks worried. "What if Lincoln doesn't let us leave peacefully?"
+
+"Then we'll defend ourselves," Father says. "But it won't come to that. Once several states secede, Lincoln will have to accept it. The North won't go to war to force us back into the Union."
+
+I'm not so sure. I remember Uncle Tom visiting from Boston last year. He said Northerners would never allow the Union to be dissolved. "You can't just leave whenever you lose an election," he said. Father and Uncle Tom argued so fiercely they haven't spoken since.
+
+December 20, 1860. South Carolina's secession convention meets in Charleston. The vote is unanimous: 169-0 to secede from the United States. We're now an independent republic—the first state to leave the Union.
+
+The news spreads rapidly. Crowds celebrate in the streets. Cannons fire salutes. We've done what we've threatened for decades. South Carolina has seceded.`,
+        },
+        {
+          title: "The Confederacy Forms",
+          content: `South Carolina's secession triggers a chain reaction. Within weeks, six more states of the Deep South follow: Mississippi, Florida, Alabama, Georgia, Louisiana, and Texas. All cite Lincoln's election and Northern hostility to slavery as reasons for leaving.
+
+In February 1861, delegates from the seceded states meet in Montgomery, Alabama. They form a new nation: the Confederate States of America. They write a constitution—similar to the U.S. Constitution but explicitly protecting slavery. They elect Jefferson Davis of Mississippi as president and Alexander Stephens of Georgia as vice president.
+
+Stephens gives a speech explaining the Confederacy's foundation. He says the United States was founded on the false idea "that all men are created equal." The Confederacy, he says, is founded on the opposite principle: "that the negro is not equal to the white man; that slavery, subordination to the superior race, is his natural and normal condition."
+
+I'm at the dinner table when Father reads Stephens's speech from the newspaper. He nods approvingly. "Finally, someone speaking the truth," he says.
+
+I feel uncomfortable but don't say anything. Mother, who's never liked slavery much but accepts it, looks troubled. My older sister Sarah asks, "But Father, isn't slavery wrong? Reverend Thompson has preached that all souls are equal before God."
+
+Father's face hardens. "Reverend Thompson is a fool if he said that. The Bible supports slavery. Ham's descendants were cursed to servitude. Slavery is ordained by God and nature."
+
+The conversation ends. But Sarah's question stays with me. I've grown up in a slaveholding society. Our family owns three enslaved people who work our farm and household. I've never questioned it before. But now, as we create a new nation explicitly founded on slavery, I wonder if we're on the right side.
+
+Eight slave states remain in the Union: Delaware, Maryland, Kentucky, Missouri, Virginia, North Carolina, Tennessee, and Arkansas. They're waiting to see what happens. If Lincoln uses force against the Confederacy, they'll likely secede too. If he accepts Confederate independence peacefully, they'll likely stay.
+
+Everything depends on what happens next.`,
+        },
+        {
+          title: "The Fort Sumter Crisis",
+          content: `Charleston Harbor, March 1861. Fort Sumter, a federal fort on an island in our harbor, remains under Union control. Major Robert Anderson commands about 80 U.S. soldiers there. Confederate forces surround the fort from batteries on the shore.
+
+President Lincoln took office on March 4. In his inaugural address, he said he won't interfere with slavery where it exists but will preserve the Union. He says secession is unconstitutional: "No state can lawfully leave the Union." But he also promises not to invade the South unless provoked.
+
+Fort Sumter is the test. If Lincoln abandons it, he accepts Confederate independence. If he reinforces it, it's an act of war. Lincoln decides to send supplies but not weapons—provisions to keep the garrison fed but no military reinforcement.
+
+Confederate President Davis faces a dilemma too. If he allows resupply, it accepts continued federal presence in Charleston Harbor. If he attacks, he starts a war the Confederacy might not win.
+
+I watch from the battery with Father on April 11. Confederate General Beauregard sends a message to Major Anderson demanding surrender. Anderson refuses but says they'll run out of food in a few days anyway.
+
+That's not good enough for the Confederacy. At 4:30 a.m. on April 12, 1861, Confederate batteries open fire on Fort Sumter. I wake to the sound of cannons. The bombardment lasts 34 hours. We fire thousands of shells at the fort. Buildings catch fire. The barracks burn. Anderson's men take shelter in the lower level.
+
+Miraculously, no one is killed in the bombardment. On April 13, with the fort in ruins and fires raging, Anderson surrenders. Confederate forces allow him to evacuate his garrison with full military honors.
+
+I watch the American flag come down from Fort Sumter. The Confederate flag goes up in its place. Charleston celebrates like we've won a great victory. But I feel uneasy. We've fired on the United States flag. We've started a war. There's no going back now.`,
+        },
+        {
+          title: "The Nation Chooses Sides",
+          content: `April 15, 1861. President Lincoln responds to Fort Sumter's fall by calling for 75,000 volunteers to suppress the rebellion. He's calling us rebels. He's asking Northern states to provide troops to invade the South.
+
+The effect is immediate. The Upper South states—Virginia, North Carolina, Tennessee, and Arkansas—had resisted secession. But they won't provide troops to fight against other Southern states. Within weeks, all four secede and join the Confederacy.
+
+Virginia's secession is the most significant. It's the most populous Southern state, the wealthiest, the most industrialized. Richmond becomes the Confederate capital. Robert E. Lee, offered command of the Union army, resigns his U.S. commission and joins Virginia. "I cannot raise my hand against my birthplace, my home, my children," he says.
+
+The Confederacy now has eleven states. But four slave states stay in the Union: Delaware, Maryland, Kentucky, and Missouri. Lincoln works desperately to keep them. Maryland, surrounding Washington D.C., is crucial—losing it would isolate the capital. Kentucky controls the Ohio River. Missouri controls the Mississippi River.
+
+In Charleston, the war fever is intense. Thousands of young men volunteer for the Confederate army. They think the war will be short—one big battle, and the Yankees will give up. "We'll whip them in three months," Father says. He's too old to enlist, but my older cousin James joins a Charleston regiment.
+
+I'm fifteen, too young to enlist yet. Part of me is relieved. Another part feels guilty for not being more eager to fight for our new nation.
+
+Mother cries when James leaves. "It won't be as easy as they think," she says quietly to me. "The North has more people, more factories, more railroads. They won't let us go without a terrible fight."
+
+The Union has 22 million people. The Confederacy has 9 million, of whom 3.5 million are enslaved. The North has most of the factories, railroads, and banks. The South has cotton—"King Cotton," we call it—which we believe will bring Britain and France to our aid.
+
+Two nations now occupy the space that was once the United States. The Confederacy believes it's fighting for independence and self-government, like the American Revolution. The Union believes it's fighting to preserve the nation and prove that democracy can survive.
+
+I stand on the battery in Charleston Harbor, looking at Fort Sumter flying the Confederate flag. A war has begun that will determine America's future. Neither side knows it will last four years, cost 750,000 lives, and end slavery forever. We think we're fighting for our rights and our way of life. History will judge whether we were on the right side.`,
+        },
       ],
     },
     flashcards: [
@@ -5233,6 +6238,11 @@ The fight for women's rights has begun. It will take decades, face setbacks, div
       {id: "q37-1", question: "Why did South secede?", options: ["No reason", "Lincoln's election—they saw Republican opposition to slavery expansion as existential threat", "Economic boom", "Religious differences"], correctOptionIndex: 1, explanation: "South seceded because Lincoln's Republican victory threatened slavery's expansion, which they saw as existential threat."},
       {id: "q37-2", question: "What was Fort Sumter?", options: ["Confederate capital", "Federal fort where Confederates fired first shots starting Civil War", "Northern city", "Railroad"], correctOptionIndex: 1, explanation: "Federal fort in Charleston harbor where Confederates fired first shots of Civil War in April 1861."},
       {id: "q37-3", question: "Who was Jefferson Davis?", options: ["Union general", "President of Confederate States of America", "British leader", "Northern senator"], correctOptionIndex: 1, explanation: "Jefferson Davis served as president of the Confederate States of America."},
+      {id: "q37-4", question: "What made the 1860 election unusual?", options: ["Only one candidate ran", "Four major candidates ran; Lincoln won with only 40% of popular vote but no Southern electoral votes", "Everyone voted for Lincoln", "No one voted"], correctOptionIndex: 1, explanation: "Four candidates ran: Lincoln (Republican), Douglas (Northern Democrat), Breckinridge (Southern Democrat), and Bell (Constitutional Union). Lincoln won every Northern state but no Southern states—he wasn't even on the ballot in most of the South. He won with 40% of popular vote but clear electoral majority."},
+      {id: "q37-5", question: "What did Confederate Vice President Alexander Stephens say in his 'Cornerstone Speech'?", options: ["The Confederacy would end slavery", "The Confederacy was founded on the principle that 'the negro is not equal to the white man' and slavery is his 'natural and normal condition'", "All people are equal", "Slavery wasn't important"], correctOptionIndex: 1, explanation: "Stephens explicitly stated the Confederacy rejected the idea 'that all men are created equal' and was instead founded on white supremacy and slavery as Black people's 'natural and normal condition.' This made the Confederacy's purpose unambiguously clear—defending slavery and racial hierarchy."},
+      {id: "q37-6", question: "Which Upper South states joined the Confederacy after Fort Sumter?", options: ["None joined", "Virginia, North Carolina, Tennessee, and Arkansas seceded after Lincoln called for troops", "All Northern states", "Only Texas"], correctOptionIndex: 1, explanation: "These four Upper South states had initially resisted secession. But when Lincoln called for 75,000 troops to suppress the rebellion, they refused to provide troops against other Southern states and seceded. Virginia's secession was most significant—it was the wealthiest, most populous, and most industrialized Southern state."},
+      {id: "q37-7", question: "Which slave states stayed in the Union as 'border states'?", options: ["All slave states seceded", "Delaware, Maryland, Kentucky, and Missouri stayed in the Union", "Only New York", "California and Texas"], correctOptionIndex: 1, explanation: "These four slave states stayed in the Union, though their loyalty was contested. Maryland was crucial because it surrounded Washington D.C. Kentucky controlled the Ohio River. Missouri controlled the Mississippi River. Lincoln worked desperately to keep them in the Union."},
+      {id: "q37-8", question: "What were the relative advantages of North vs. South at the war's start?", options: ["South had more of everything", "Union had 22 million people vs. 9 million (including 3.5 million enslaved), plus most factories, railroads, and banks; South had cotton and military tradition", "They were exactly equal", "South had larger population"], correctOptionIndex: 1, explanation: "The Union had overwhelming advantages in population (22 million vs. 9 million), industry, railroads, and finance. The South had 'King Cotton'—believing cotton exports would bring British and French support—plus a strong military tradition and defensive advantage. The South believed European support and defending their own territory would offset Northern material advantages."},
     ],
   },
 
@@ -5244,8 +6254,96 @@ The fight for women's rights has begun. It will take decades, face setbacks, div
     story: {
       narrator: "Thomas, age 17, Union soldier, 1862",
       chapters: [
-        {title: "First Bull Run", content: `I'm Thomas, seventeen, Union Army. We marched to Virginia confident—we'd crush the rebellion quickly. At Bull Run, reality hit. Confederate forces led by Stonewall Jackson stood firm. We broke and ran. Civilians who'd come from Washington to watch fled with us. Humiliating defeat. War won't be quick or easy. Both sides dig in for long fight.`},
-        {title: "Antietam", content: `September 1862, bloodiest single day in American history. 23,000 killed or wounded at Antietam. I saw friends die. Saw more death in one day than imaginable. Tactically a draw. But Confederates retreat. Lincoln uses it to issue Emancipation Proclamation—freeing slaves in rebel states. War now about slavery, not just Union. Changes everything. Foreign powers won't support Confederacy. Gives war moral purpose.`},
+        {
+          title: "First Bull Run—The Illusion Shatters",
+          content: `I'm Thomas, seventeen years old, and I enlisted in the Union Army in May 1861. The war fever in my hometown of Cleveland was intense. After Fort Sumter fell, President Lincoln called for 75,000 volunteers. Within days, thousands of men signed up, including me.
+
+We were confident—cocky, even. We'd heard Southerners were inferior fighters, plantation aristocrats who'd never done hard work. We'd crush this rebellion in three months, march to Richmond, capture Jeff Davis, and be home by harvest. Our officers encouraged this thinking. "One good battle," they said, "and the Confederacy will collapse."
+
+In July, we marched from Washington toward Manassas, Virginia, where Confederate forces gathered near a creek called Bull Run. It was slow going. Our regiment of volunteers had barely trained. We weren't soldiers yet—just farmers and clerks in uniforms.
+
+The march felt like a picnic. Civilians from Washington followed in carriages, bringing picnic baskets and opera glasses to watch the battle. Congressmen came. Society ladies. They expected entertainment—a real battle to witness from a safe distance.
+
+July 21, 1861. The battle began at dawn. At first, it went well. We pushed Confederate forces back. By afternoon, we seemed to be winning. Then everything fell apart.
+
+Confederate reinforcements arrived—fresh troops led by General Thomas Jackson. Our forces attacked his position repeatedly. He wouldn't budge. "There stands Jackson like a stone wall!" a Confederate officer shouted. The name stuck—Stonewall Jackson.
+
+More Confederate reinforcements arrived. They counterattacked. Our line broke. Someone shouted "Retreat!" and suddenly we were running. The retreat became a rout—panicked soldiers fleeing in disorder. Civilians who'd come to watch got caught in the chaos. Carriages overturned. Men abandoned weapons and equipment.
+
+I ran too. I'm not proud of it, but when thousands of men are running and artillery shells are exploding, you run. We didn't stop until we reached Washington, exhausted and humiliated.
+
+The battle taught us the war wouldn't be quick or easy. The Confederates were fighters. This would be a long, hard war.`,
+        },
+        {
+          title: "Building an Army",
+          content: `After Bull Run, the Union Army transformed. General George McClellan took command. He was young, energetic, and organized. "I will build the finest army the world has seen," he promised.
+
+McClellan was good at training. He drilled us constantly. We learned to march in formation, load and fire rifles properly, dig entrenchments, follow orders. He built hospitals, supply systems, and fortifications around Washington. Raw recruits became soldiers.
+
+But McClellan was overcautious. He always believed Confederate forces were larger than they were. He drilled us for months, preparing for a perfect campaign. Lincoln grew impatient. "If McClellan isn't going to use his army, I'd like to borrow it," Lincoln reportedly said.
+
+Meanwhile, I was learning what war really meant. The camps were crowded, unsanitary, and disease-ridden. For every soldier killed in battle, two died from disease—typhoid, dysentery, measles. My friend William died of typhoid in camp, never firing a shot at the enemy.
+
+Letters from home told of growing war weariness. People were shocked by casualty lists. The romance of war faded when fathers and sons started dying. But Lincoln insisted we must preserve the Union. The nation couldn't survive if states could leave whenever they disagreed with election results.
+
+The war's purpose evolved too. At first, we fought to preserve the Union, explicitly not to free slaves. Lincoln feared alienating border states like Kentucky and Maryland if he made it about slavery. But as the war continued and we saw enslaved people fleeing to Union lines, asking for protection, the slavery question became unavoidable.
+
+Some escaped slaves helped the Union cause, providing intelligence about Confederate positions, working as laborers, even guiding our troops. "Contraband," we called them—Confederate property now in Union hands. It was a legal fiction that avoided calling them free, but it recognized we couldn't send them back to slavery while fighting against their masters.
+
+By early 1862, we were ready for a real campaign. McClellan planned to take Richmond by landing troops on the Virginia peninsula and advancing up toward the capital. The Peninsula Campaign would test whether we were truly ready for war.`,
+        },
+        {
+          title: "The Peninsula Campaign—Frustration",
+          content: `Spring 1862. McClellan's Peninsula Campaign began with promise and ended in frustration. We landed over 100,000 troops on the peninsula between the York and James Rivers, planning to march up to Richmond, just 70 miles away.
+
+But McClellan moved cautiously, always overestimating Confederate strength. He spent weeks besieging Yorktown, though it was lightly defended. When Confederates abandoned it, we pursued slowly. Confederate forces under General Joseph Johnston retreated toward Richmond, and McClellan followed at a crawl.
+
+By late May, we could see Richmond's church spires. We were so close! Then Johnston attacked at Seven Pines. The battle was chaotic and bloody but inconclusive. Johnston was wounded, though, and Jefferson Davis replaced him with Robert E. Lee.
+
+That change would prove significant. Lee was aggressive where Johnston had been cautious. Within weeks, Lee launched the Seven Days Battles—a series of attacks that drove us away from Richmond. We lost more men than Lee did, but McClellan panicked and retreated to the James River.
+
+I was in those battles. The fighting was more intense than Bull Run. At Gaines' Mill, Confederate forces attacked our position repeatedly. The noise was deafening—thousands of rifles firing, artillery booming, men screaming. We held our position for hours before being ordered to retreat.
+
+At Malvern Hill, the final battle of the Seven Days, we repulsed massive Confederate attacks. They charged across open ground into our artillery fire—slaughter worse than anything I'd seen. We won tactically but retreated anyway because McClellan lost his nerve.
+
+The Peninsula Campaign failed. McClellan blamed Washington for not sending reinforcements. Lincoln blamed McClellan for being overcautious. We'd gotten within sight of Richmond but accomplished nothing except losing thousands of men.
+
+The campaign taught me that generals matter. McClellan was brilliant at organization but terrible at fighting. Lee was the opposite—aggressive, willing to take risks. Unless we found better generals, this war would last years.`,
+        },
+        {
+          title: "Second Bull Run—Defeat Again",
+          content: `After McClellan's Peninsula Campaign failed, Lincoln tried a new approach. He brought General John Pope from the West to command a new Army of Virginia. Pope was confident, even arrogant. "I have come to you from the West, where we have always seen the backs of our enemies," he announced.
+
+August 1862. Lee and Stonewall Jackson outmaneuvered Pope at Second Bull Run—the same battlefield where we'd been defeated a year earlier. Jackson marched his forces around Pope's flank, attacked our supply depot, then positioned his troops along an unfinished railroad cut.
+
+Pope attacked Jackson's position repeatedly, thinking he'd trapped Jackson. But Lee arrived with reinforcements. On the second day, while Pope focused on Jackson, Lee's other corps under James Longstreet hit our flank with 28,000 men. Our line collapsed. We retreated again to Washington, defeated at the same place we'd been beaten a year earlier.
+
+I fought in those attacks against Jackson's position. We charged across open ground into rifle and artillery fire. Men fell by the hundreds. We'd reach the railroad cut, fight hand-to-hand, then be driven back. We attacked again and again, making no progress, losing friends with each assault.
+
+When Longstreet's attack hit our flank, the retreat became a rout again. We fell back to Washington's fortifications, exhausted and demoralized. Pope was relieved of command. Lincoln, despite misgivings, restored McClellan to command. McClellan was cautious, but soldiers trusted him.
+
+Then Lee made a bold move: he invaded Maryland. If he could win a victory on Northern soil, Britain and France might recognize the Confederacy. Maryland, a slave state, might join the Confederacy. A victory might swing the fall elections to Democrats who'd negotiate peace.
+
+McClellan marched out to meet Lee. We were tired, depleted, and demoralized from defeats. But we were also angry. The Confederates had invaded our territory. This time we'd be defending our homes, not attacking theirs. The armies converged on a small Maryland town: Sharpsburg, along Antietam Creek.`,
+        },
+        {
+          title: "Antietam—The Bloodiest Day",
+          content: `September 17, 1862. Antietam. The bloodiest single day in American history. Twenty-three thousand men killed, wounded, or missing in twelve hours of fighting.
+
+I was in the assault on the Sunken Road—later called Bloody Lane. Confederate infantry positioned in a natural trench fired volley after volley into our ranks as we advanced across an open field. Men fell in waves. We'd get close, fire, retreat, then attack again. For three hours we assaulted that position, bodies piling up. Finally, we flanked it and the Confederates retreated, leaving the sunken road filled with their dead and wounded.
+
+Meanwhile, other battles raged. At the Cornfield, men fought back and forth through tall corn. The field changed hands multiple times. "Every stalk of corn was cut down as if by a knife," a soldier said later. At the Dunker Church, infantry and artillery tore the small building apart. At Burnside's Bridge, Union forces spent hours trying to cross a narrow stone bridge under Confederate fire.
+
+The fighting was worse than anything I'd experienced. At Gaines' Mill or Second Bull Run, the battle was chaotic but spread across time and space. At Antietam, it was concentrated horror—thousands of men in a small area killing each other with rifles, artillery, and bayonets.
+
+By evening, both armies were exhausted. Technically the battle was a draw—neither side clearly won. But Lee's invasion was stopped. He retreated back to Virginia, his Maryland Campaign failed. McClellan claimed victory but didn't pursue aggressively, frustrating Lincoln again.
+
+But Antietam had enormous consequences beyond the battlefield. Lincoln had been waiting for a Union victory to announce a new policy. On September 22, five days after Antietam, he issued the Preliminary Emancipation Proclamation. On January 1, 1863, all slaves in states still in rebellion would be declared free.
+
+The war's purpose transformed. We weren't just fighting to preserve the Union—we were fighting to end slavery. It changed everything. Britain and France, which had considered recognizing the Confederacy, couldn't support a nation fighting to preserve slavery. Enslaved people in the South began escaping to Union lines, seeking the freedom Lincoln promised. And Northern soldiers like me now fought for a moral cause, not just a political one.
+
+Looking back, Antietam was the turning point. Not militarily—the war would continue nearly three more years. But morally and politically. After Antietam, the war became a war to end slavery. And that meant there could be no compromise, no negotiated peace that left the institution intact. The war would end only with Union victory and slavery's destruction. The bloodiest day led to the most important transformation—from a war to preserve the Union to a war for freedom.`,
+        },
       ],
     },
     flashcards: [
@@ -5262,6 +6360,11 @@ The fight for women's rights has begun. It will take decades, face setbacks, div
       {id: "q38-1", question: "What happened at Bull Run?", options: ["Union victory", "Confederate victory shocking North that war wouldn't be quick/easy", "Draw", "Nothing"], correctOptionIndex: 1, explanation: "First major battle was Confederate victory that shattered Northern expectations of quick war."},
       {id: "q38-2", question: "What was Antietam?", options: ["Confederate capital", "Bloodiest single day in American history with 23,000 casualties", "Union capital", "Peace treaty"], correctOptionIndex: 1, explanation: "September 1862 battle was bloodiest single day in U.S. history with 23,000 killed or wounded."},
       {id: "q38-3", question: "What was Emancipation Proclamation?", options: ["Tax law", "Lincoln's order freeing slaves in Confederate states", "Treaty ending war", "Military strategy"], correctOptionIndex: 1, explanation: "Lincoln's 1863 order freed slaves in rebel states, making war about ending slavery."},
+      {id: "q38-4", question: "How did Thomas 'Stonewall' Jackson get his nickname?", options: ["He built stone walls", "At Bull Run, a Confederate officer said 'There stands Jackson like a stone wall!' as he held his position under attack", "He collected stones", "He was very quiet"], correctOptionIndex: 1, explanation: "During the First Battle of Bull Run, when Union forces attacked Jackson's position repeatedly and he wouldn't budge, a Confederate officer shouted 'There stands Jackson like a stone wall!' The name stuck, and he became known as Stonewall Jackson, one of the Confederacy's most effective generals."},
+      {id: "q38-5", question: "What was George McClellan's fatal flaw as a general?", options: ["He trained poorly", "He was brilliant at organizing and training but overcautious in battle, always overestimating enemy strength", "He was too aggressive", "He never showed up"], correctOptionIndex: 1, explanation: "McClellan built and trained a superb army but was overcautious in using it. He always believed Confederate forces were larger than they actually were. He'd get close to victory but then hesitate and retreat. Lincoln grew frustrated, saying 'If McClellan isn't going to use his army, I'd like to borrow it.'"},
+      {id: "q38-6", question: "How close did McClellan's Peninsula Campaign get to Richmond?", options: ["Never left Washington", "Within sight of Richmond's church spires before Lee drove him back", "Captured Richmond easily", "Got lost"], correctOptionIndex: 1, explanation: "McClellan's 100,000-strong army got so close to Richmond that soldiers could see the city's church spires. But Robert E. Lee's aggressive Seven Days Battles drove McClellan back to the James River despite Lee losing more men. McClellan's caution turned near-victory into failure."},
+      {id: "q38-7", question: "Why was Antietam a turning point beyond the battlefield?", options: ["It wasn't important", "It gave Lincoln the victory he needed to issue the Emancipation Proclamation, transforming the war into a fight to end slavery", "It ended the war", "Both sides surrendered"], correctOptionIndex: 1, explanation: "Though tactically a draw, Antietam stopped Lee's invasion of Maryland. Lincoln had been waiting for a Union victory to announce emancipation without appearing desperate. Five days after Antietam, he issued the Preliminary Emancipation Proclamation. This transformed the war from preserving the Union to ending slavery, preventing British/French recognition of the Confederacy."},
+      {id: "q38-8", question: "How did the Emancipation Proclamation change the war's purpose?", options: ["It didn't change anything", "War became about ending slavery, not just preserving the Union—made compromise impossible and enlisted moral cause", "It ended the war immediately", "Only affected economics"], correctOptionIndex: 1, explanation: "Before Emancipation, the war was officially about preserving the Union, not ending slavery. After January 1, 1863, the war became about ending slavery. This prevented Britain/France from supporting the Confederacy (they couldn't back a slave nation), encouraged enslaved people to escape to Union lines, and gave Northern soldiers a moral cause. Most importantly, it meant no compromise peace leaving slavery intact was possible."},
     ],
   },
 
@@ -5273,8 +6376,108 @@ The fight for women's rights has begun. It will take decades, face setbacks, div
     story: {
       narrator: "Sarah, age 15, from Gettysburg, 1863",
       chapters: [
-        {title: "Three Days of Hell", content: `I'm Sarah from Gettysburg, Pennsylvania. July 1-3, 1863, our town became battlefield. 160,000 soldiers fighting. Lee invaded North hoping for decisive victory to force peace. Union forces under Meade held high ground. Pickett's Charge—15,000 Confederates crossed open field into Union fire. Slaughter. Lee's army shattered, retreats. 51,000 killed, wounded, or missing in three days. Our town destroyed but Confederacy broken.`},
-        {title: "Vicksburg Falls", content: `Same day Lee retreats, July 4, Vicksburg falls to Grant after long siege. Union controls Mississippi River. Confederacy split in half. Lincoln: "The Father of Waters again goes unvexed to the sea." These twin victories—Gettysburg and Vicksburg—mark war's turning point. Confederacy can't win now. Just matter of when they surrender. But war will grind on two more years.`},
+        {
+          title: "Our Town Becomes a Battlefield",
+          content: `I'm Sarah, fifteen years old, and I live in Gettysburg, Pennsylvania. It's a small town—just 2,400 people—where ten roads meet. We have a Lutheran seminary, a college, farms, shops. It's a peaceful place. Or it was, until July 1863.
+
+June brought rumors of Confederate invasion. General Lee's Army of Northern Virginia was marching north through Maryland into Pennsylvania. People were frightened. Some families fled. Others stayed, hoping the armies would pass us by.
+
+June 30. Confederate soldiers appeared on the Chambersburg Pike, west of town. They were foraging for supplies—shoes, food, horses. They didn't stay long, but they'd be back.
+
+July 1 dawned hot and clear. I woke to the sound of distant gunfire. Confederate and Union cavalry were fighting west of town. Then infantry arrived—thousands of soldiers in gray and blue converging on Gettysburg from different roads.
+
+Mother told me to stay in the cellar. From the small window, I could see soldiers running through our streets. Artillery shells exploded. Buildings caught fire. The battle spread through town.
+
+By afternoon, Union forces retreated through Gettysburg to Cemetery Hill, a rise south of town. Confederates pursued, capturing thousands of Union soldiers. Our house became a Confederate aid station. Wounded men filled every room. The carpets soaked with blood. Surgeons amputated limbs on our kitchen table while I helped tend the wounded.
+
+That night, more Union forces arrived—the rest of General George Meade's Army of the Potomac. They took positions on Cemetery Hill, Cemetery Ridge, and two rocky hills called Little Round Top and Big Round Top. The Confederates held the town and Seminary Ridge, west of Cemetery Ridge.
+
+One hundred sixty thousand soldiers now surrounded Gettysburg. Two massive armies facing each other across open fields. And our town was caught in the middle.`,
+        },
+        {
+          title: "Day Two—Little Round Top",
+          content: `July 2. The second day of battle was even more terrible than the first. The fighting shifted south to the Round Tops—rocky, wooded hills at the end of the Union line.
+
+From our cellar, we heard continuous artillery fire. The explosions shook the house. Between bombardments, we heard rifle volleys—thousands of guns firing together—and the screams of wounded men.
+
+A Union soldier who took shelter in our cellar briefly told us what was happening. Confederates were attacking the Union left flank, trying to capture Little Round Top. If they took that hill, they could place artillery there and destroy the Union line on Cemetery Ridge.
+
+Union Colonel Joshua Chamberlain defended Little Round Top with the 20th Maine regiment. They fought for hours, running out of ammunition. Finally, with Confederates charging up the hill and no bullets left, Chamberlain ordered a bayonet charge down the hill. The desperate attack surprised the Confederates and drove them back.
+
+Little Round Top remained in Union hands—barely. If it had fallen, the entire Union position might have collapsed.
+
+Meanwhile, fighting raged at other points: the Wheatfield, the Peach Orchard, Devil's Den. Thousands of men fought and died in our farm fields. Each location changed hands multiple times.
+
+That evening, the guns finally quieted. Both armies held their positions, exhausted. Our cellar flooded with more wounded. Confederate and Union soldiers lay side by side, too hurt to care which army they belonged to. I gave them water, held their hands, wrote letters home for those who could speak.
+
+One Confederate boy—he couldn't have been older than seventeen—asked me to write to his mother in Georgia. "Tell her I was brave," he said. "Tell her I wasn't scared." He died before dawn. I still have the letter I never sent.
+
+Two days of battle. Thousands dead. And everyone knew the third day would be worse.`,
+        },
+        {
+          title: "Day Three—Pickett's Charge",
+          content: `July 3, 1863. The third day of battle. The day Gettysburg became the war's turning point.
+
+The morning was relatively quiet—just scattered skirmishing. Then, at 1 p.m., the Confederate artillery opened up. Over 150 cannons bombarded the Union center on Cemetery Ridge. The noise was unimaginable—constant explosions for nearly two hours. Our house shook. Plaster fell from the ceiling. We huddled in the cellar, praying.
+
+The Union artillery answered. The cannonade was the largest of the war—over 300 cannons firing. The sound must have been heard fifty miles away.
+
+Then, around 3 p.m., the guns quieted. An eerie silence fell. From our cellar window, I saw what happened next.
+
+Fifteen thousand Confederate soldiers emerged from the woods on Seminary Ridge. They formed battle lines—a mile-wide formation in perfect order. Then they began marching across the open fields toward Cemetery Ridge, three-quarters of a mile away.
+
+It was called Pickett's Charge, though three divisions participated, not just George Pickett's. The Confederates advanced slowly, steadily, in parade-ground formation. They looked magnificent and doomed.
+
+Union artillery opened fire. Shells tore gaps in the Confederate ranks. The men closed the gaps and kept marching. Union infantry waited behind a stone wall on Cemetery Ridge. When the Confederates came within rifle range, the Union line erupted in fire.
+
+The slaughter was terrible. Confederate soldiers fell by hundreds, then thousands. Some reached the stone wall—the "High Water Mark of the Confederacy," it's called now. For a few minutes, Confederate soldiers broke through the Union line in hand-to-hand fighting. Then Union reinforcements pushed them back.
+
+The survivors retreated across the blood-soaked field, leaving thousands of dead and wounded behind. Of the 15,000 who charged, fewer than half returned. Pickett's division was destroyed—three brigade commanders killed, all thirteen regimental commanders killed or wounded.
+
+General Lee met the survivors. "It's all my fault," he said. He expected a Union counterattack, but it never came. Meade's army was too battered to pursue.`,
+        },
+        {
+          title: "The Aftermath",
+          content: `July 4. Lee's army began retreating to Virginia. The Battle of Gettysburg was over. The Confederacy had lost.
+
+The carnage was unimaginable. Fifty-one thousand men killed, wounded, or missing in three days. Seven thousand dead horses rotting in the summer heat. Every house, barn, and church in Gettysburg filled with wounded. The field hospitals overwhelmed.
+
+For weeks, we cared for the wounded. My mother and I tended dozens of soldiers in our home. Some recovered. Many died. We buried them in our garden because the graveyards filled up.
+
+The smell was terrible—decomposing bodies, gangrene, disease. The town hired workers to bury the dead and burn the horse carcasses. It took weeks. Gettysburg would never be the same.
+
+In November, President Lincoln came to dedicate a national cemetery for the soldiers who died here. Edward Everett, a famous orator, spoke for two hours. Then Lincoln stood and spoke for just two minutes.
+
+I was there, in the crowd. Lincoln's words were simple but powerful: "Four score and seven years ago our fathers brought forth on this continent, a new nation, conceived in Liberty, and dedicated to the proposition that all men are created equal."
+
+He said we were fighting to ensure "that government of the people, by the people, for the people, shall not perish from the earth." He made the war about more than just preserving the Union—it was about preserving democracy itself and fulfilling the promise that all men are created equal.
+
+The Gettysburg Address lasted just 272 words, but it redefined the war's meaning. We weren't just fighting to preserve the Union. We were fighting for the principle of human equality.
+
+Gettysburg cost us dearly, but it stopped Lee's invasion and broke the Confederacy's offensive power. Lee would never again invade the North. The war would continue nearly two more years, but after Gettysburg, Confederate victory became impossible.`,
+        },
+        {
+          title: "Vicksburg—The River Runs Free",
+          content: `The same day Lee retreated from Gettysburg—July 4, 1863—another momentous victory occurred a thousand miles away. Vicksburg, Mississippi, surrendered to General Ulysses S. Grant after a 47-day siege.
+
+We learned about it days later through the newspapers. The news was almost as important as Gettysburg, though it felt distant from our Pennsylvania town.
+
+Vicksburg sat on high bluffs overlooking the Mississippi River. Confederates called it the "Gibraltar of the Confederacy." As long as they held Vicksburg, they controlled a crucial stretch of the Mississippi, keeping the Confederacy connected between east and west.
+
+Grant had tried for months to capture Vicksburg through conventional attacks. All failed. So he changed strategy. He marched his army south along the west bank of the Mississippi, crossed below Vicksburg, then circled behind the city, cutting it off from supplies and reinforcements.
+
+Confederate General John Pemberton had 30,000 troops in Vicksburg. Rather than risk losing them in battle, he retreated into the city's fortifications. Grant besieged the city, bombarding it with artillery and digging trenches closer and closer to Confederate lines.
+
+For 47 days, Vicksburg's civilians and soldiers endured constant bombardment. They dug caves in the hillsides to escape the shells. Food ran out—they ate horses, mules, even rats. Disease spread. Finally, on July 4, Pemberton surrendered.
+
+The Mississippi River now belonged to the Union. The Confederacy was cut in half. Arkansas, Louisiana, and Texas were isolated from the rest of the Confederate states. Supplies and troops from these western states could no longer reach the eastern armies.
+
+President Lincoln said, "The Father of Waters again goes unvexed to the sea." The river that had been contested for two years now flowed freely under Union control.
+
+Together, Gettysburg and Vicksburg marked the war's turning point. Before July 1863, Confederate victory was possible. After, it became a matter of when, not if, the Union would win.
+
+But the war ground on. Lee's army, though defeated at Gettysburg, remained dangerous. The Confederacy fought desperately for nearly two more years. More men would die, more towns would be destroyed, before the war finally ended. But here in Gettysburg, in early July 1863, we witnessed the moment when the tide turned—when the Union began winning a war that would preserve the nation and end slavery.`,
+        },
       ],
     },
     flashcards: [
@@ -5291,6 +6494,11 @@ The fight for women's rights has begun. It will take decades, face setbacks, div
       {id: "q39-1", question: "What was Gettysburg?", options: ["Southern city", "July 1863 Pennsylvania battle, war's turning point with 51,000 casualties", "Peace conference", "Treaty"], correctOptionIndex: 1, explanation: "Three-day July 1863 battle in Pennsylvania was war's turning point, ending Lee's invasion of North."},
       {id: "q39-2", question: "What was significance of Vicksburg?", options: ["No importance", "Gave Union control of Mississippi River, splitting Confederacy", "Confederate victory", "Started the war"], correctOptionIndex: 1, explanation: "Vicksburg's fall gave Union complete control of Mississippi River, splitting Confederacy in half."},
       {id: "q39-3", question: "Why were these battles turning points?", options: ["They weren't", "Ended Confederate hopes of winning war—only question was when they'd surrender", "South won", "Started peace talks"], correctOptionIndex: 1, explanation: "Twin victories at Gettysburg and Vicksburg ended Confederate ability to win, though war continued two more years."},
+      {id: "q39-4", question: "What was Pickett's Charge?", options: ["A cavalry retreat", "Failed Confederate assault where 15,000 men charged across open ground into Union fire, losing over half", "A successful breakthrough", "A peaceful march"], correctOptionIndex: 1, explanation: "On July 3, 15,000 Confederate soldiers marched three-quarters of a mile across open fields toward Union positions on Cemetery Ridge. Despite marching in perfect formation, they were devastated by artillery and rifle fire. Some briefly broke through the Union line at the 'High Water Mark,' but were pushed back. Fewer than half returned—Pickett's division was destroyed."},
+      {id: "q39-5", question: "How did Joshua Chamberlain save Little Round Top?", options: ["He retreated immediately", "Out of ammunition, he ordered a desperate bayonet charge down the hill that surprised and drove back Confederates", "He surrendered the position", "He called for reinforcements"], correctOptionIndex: 1, explanation: "Colonel Chamberlain's 20th Maine defended Little Round Top for hours until they ran out of ammunition. With Confederates charging up the hill and no bullets left, Chamberlain ordered a bayonet charge downhill. The desperate, unexpected attack surprised the Confederates and drove them back, saving the crucial position."},
+      {id: "q39-6", question: "How many casualties occurred at Gettysburg?", options: ["100 men", "51,000 killed, wounded, or missing in three days", "No casualties", "1,000 men"], correctOptionIndex: 1, explanation: "The Battle of Gettysburg produced approximately 51,000 casualties (killed, wounded, or missing) in just three days of fighting. This made it one of the bloodiest battles in American history. Every house, barn, and church in town became a hospital, and the town spent weeks burying the dead."},
+      {id: "q39-7", question: "What was the main message of Lincoln's Gettysburg Address?", options: ["The war was pointless", "The war was about preserving democracy and the principle that all men are created equal", "Surrender to the South", "Focus only on economics"], correctOptionIndex: 1, explanation: "In just 272 words, Lincoln redefined the war's meaning. He emphasized the nation was 'conceived in Liberty, and dedicated to the proposition that all men are created equal' and that they were fighting to ensure 'government of the people, by the people, for the people, shall not perish from the earth.' He made the war about preserving democracy and fulfilling the promise of equality."},
+      {id: "q39-8", question: "What was significant about the timing of Gettysburg and Vicksburg?", options: ["They happened years apart", "Both Union victories occurred on the same day—July 4, 1863—doubly symbolic", "Only one actually happened", "They had no connection"], correctOptionIndex: 1, explanation: "Both major Union victories happened on the same day—July 4, 1863. Lee retreated from Gettysburg and Vicksburg surrendered to Grant on Independence Day. Together, these victories marked the war's turning point: Gettysburg ended Confederate offensive power in the East, and Vicksburg gave Union control of the Mississippi River, splitting the Confederacy."},
     ],
   },
 
@@ -5302,8 +6510,100 @@ The fight for women's rights has begun. It will take decades, face setbacks, div
     story: {
       narrator: "Daniel, age 16, Union soldier, 1865",
       chapters: [
-        {title: "Surrender at Appomattox", content: `I'm Daniel, Union soldier. April 9, 1865, Lee surrenders to Grant at Appomattox Court House. Four years, 620,000 dead, nation devastated. Grant's terms generous—Confederate soldiers can keep horses for spring planting, officers keep sidearms, no trials for treason. As they stack weapons, we don't cheer. Grant forbids it: "The war is over, the rebels are our countrymen again." Trying to heal nation.`},
-        {title: "Lincoln Assassinated", content: `Five days later, April 14, President Lincoln shot at Ford's Theatre by John Wilkes Booth, Confederate sympathizer. Lincoln dies next morning. Nation mourns. The man who preserved the Union, freed the slaves, sought reconciliation—killed just as peace arrives. Vice President Andrew Johnson becomes president. He lacks Lincoln's vision. Reconstruction will be much harder without Lincoln's leadership and compassion.`},
+        {
+          title: "The Final Campaign",
+          content: `I'm Daniel, sixteen years old, and I've been a Union soldier for two years. I enlisted in 1863 after the Emancipation Proclamation. The war had become a crusade to end slavery, and I wanted to be part of it.
+
+By early 1865, the war's end was approaching. General Ulysses S. Grant commanded all Union armies. He'd been promoted after his victories at Vicksburg and Chattanooga. Grant understood that the Union's advantages—more men, more industry, more supplies—would win a war of attrition. He launched coordinated campaigns against Confederate armies across multiple fronts.
+
+In Virginia, Grant pursued Robert E. Lee's Army of Northern Virginia relentlessly. No more cautious McClellan-style retreats after battles. Grant fought Lee continuously—the Wilderness, Spotsylvania, Cold Harbor—then moved south, forcing Lee to defend Richmond and Petersburg.
+
+The fighting was brutal. At Cold Harbor in June 1864, we assaulted Confederate entrenchments and lost 7,000 men in under an hour. Grant was criticized for the casualties, but he kept pressing Lee, knowing the Confederacy couldn't replace its losses.
+
+Meanwhile, General William Sherman marched through Georgia, capturing Atlanta in September 1864, then marching to the sea. His army destroyed Confederate infrastructure—railroads, factories, warehouses. Sherman's March showed the Confederacy couldn't protect its own territory.
+
+By spring 1865, Lee's army was trapped in Petersburg, besieged by Grant's forces. The Confederate army was starving, depleted, and demoralized. Deserters fled daily. On April 2, Grant broke through Petersburg's defenses. Lee evacuated Richmond—the Confederate capital fell.
+
+Lee retreated west, hoping to join Confederate forces in North Carolina. Grant pursued. We marched hard, cutting off Lee's escape routes, forcing him toward a small Virginia town: Appomattox Court House.`,
+        },
+        {
+          title: "Palm Sunday at Appomattox",
+          content: `April 9, 1865. Palm Sunday. We woke to news that Confederate forces blocked Lee's retreat route. Lee's army was surrounded. He had perhaps 28,000 hungry, exhausted men. Grant had over 100,000 fresh troops.
+
+That morning, Lee attempted one final breakout. Confederate cavalry attacked Union lines blocking the road west. For a moment, it looked like they might break through. Then Union infantry reinforcements arrived. Lee's escape was impossible.
+
+Around 8:30 a.m., a Confederate officer rode out under a white flag, requesting a truce to discuss terms. Lee would surrender.
+
+The officers chose the home of Wilmer McLean for the surrender meeting. By strange coincidence, McLean had lived near Manassas in 1861—the first Battle of Bull Run was fought on his property. He'd moved to Appomattox to escape the war. Now the war was ending in his parlor.
+
+Grant arrived around 1:30 p.m., muddy from hard riding. Lee was there in his finest uniform. The contrast was striking: the Confederate commander immaculate in defeat, the Union commander travel-worn in victory.
+
+They talked briefly about old army days—both had served in the Mexican-American War. Then they discussed terms. Lee asked what Grant proposed.
+
+Grant's terms were generous. Confederate soldiers would surrender their weapons but could keep their horses—they'd need them for spring planting. Officers could keep their sidearms. No one would be tried for treason. Soldiers could go home, and as long as they obeyed the law, they wouldn't be bothered by U.S. authorities.
+
+Lee accepted. He asked if cavalrymen and artillerymen—who owned their own horses in the Confederate army—could keep them. Grant agreed immediately. "Let all the men who claim to own a horse or mule take the animals home with them to work their little farms," Grant said.
+
+Lee signed the surrender document. Four years of war ended in that moment.`,
+        },
+        {
+          title: "The Armies Say Goodbye",
+          content: `April 12. Three days after the surrender, Confederate soldiers formally laid down their weapons. I was there, part of the Union honor guard.
+
+About 28,000 Confederate soldiers marched between two lines of Union troops. They carried their battle flags and stacked their rifles. Then they surrendered their flags—the flags they'd carried through dozens of battles.
+
+It was heartbreaking to watch. These men had fought courageously for four years. They'd endured terrible hardships. They believed in their cause, wrong though it was. Now they were defeated, surrendering the symbols of everything they'd fought for.
+
+Some Confederate soldiers cried. Others were stone-faced. They stacked their weapons with dignity, trying to maintain pride in defeat.
+
+General Joshua Chamberlain—the hero of Little Round Top—commanded the Union troops. As the Confederates approached, Chamberlain ordered his men to carry arms, a salute of respect. The Confederate commander, General John Gordon, responded by dipping his sword in salute and ordering his men to carry arms as well.
+
+It was a moment of mutual respect between enemies. We didn't cheer or celebrate. Grant had forbidden celebrations: "The war is over; the rebels are our countrymen again." We'd fought to preserve the Union. Now we had to reunite it.
+
+After the surrender, Confederate soldiers began the long walk home. Many had hundreds of miles to travel. The Union army provided rations—25,000 portions of food. Some Union soldiers shared coffee and hardtack with their former enemies.
+
+I talked with a Confederate soldier from North Carolina. He was nineteen, had fought since 1861. "I'm going home to help my family," he said. "We lost the war, lost slavery. Now we have to figure out what comes next."
+
+The war had cost 620,000 American lives—more than all other U.S. wars combined until Vietnam. Entire towns in the South were destroyed. The economy was ruined. Slavery was ended. The United States would never be the same.`,
+        },
+        {
+          title: "Our American Cousin",
+          content: `April 14, 1865. Good Friday. Five days after Appomattox, the war essentially over. President Lincoln was in good spirits. Richmond had fallen. Lee had surrendered. The Union was preserved. Slavery would be abolished—the Thirteenth Amendment was making its way through the states.
+
+That evening, Lincoln went to Ford's Theatre in Washington to see a play: "Our American Cousin," a popular comedy. He brought his wife Mary and two guests. They sat in the presidential box overlooking the stage.
+
+The theater was crowded. People were celebrating the war's end. The play was funny, and the audience laughed. Lincoln laughed too, finally able to relax after four years of terrible burdens.
+
+At 10:15 p.m., during the third act, John Wilkes Booth entered the presidential box. Booth was an actor, a Confederate sympathizer, and a man consumed by hatred of Lincoln. He believed Lincoln was a tyrant who'd destroyed the South.
+
+Booth shot Lincoln in the back of the head with a derringer pistol. Lincoln slumped forward, unconscious. Booth jumped from the box to the stage, shouting "Sic semper tyrannis!" (Thus always to tyrants). He fled the theater.
+
+Doctors carried Lincoln to a house across the street. The bullet had entered his brain. There was no hope of recovery. Lincoln's cabinet and family gathered around his bedside. He never regained consciousness.
+
+At 7:22 a.m. on April 15, Abraham Lincoln died. Secretary of War Edwin Stanton said, "Now he belongs to the ages."
+
+The news spread through Washington, then the nation. People who'd been celebrating the war's end now mourned. The man who'd preserved the Union, freed the slaves, and sought reconciliation with the South—killed just as peace arrived.
+
+Booth was hunted down and killed twelve days later. His co-conspirators—he'd planned to kill Vice President Johnson and Secretary of State Seward as well—were captured and hanged. But the damage was done. Lincoln was gone.`,
+        },
+        {
+          title: "What Might Have Been",
+          content: `Vice President Andrew Johnson became president on April 15. Johnson was a Tennessee Democrat who'd remained loyal to the Union. But he lacked Lincoln's vision, compassion, and political skill.
+
+Lincoln had been planning "Reconstruction"—the process of bringing Southern states back into the Union and transforming the South from a slave society to a free one. In his second inaugural address, he'd spoken of "malice toward none, charity for all." He wanted to heal the nation's wounds quickly.
+
+But Lincoln also believed formerly enslaved people must have rights. He'd seen Black soldiers fight for the Union—200,000 of them served after the Emancipation Proclamation. He was considering limited voting rights for Black men, particularly those who'd served in the military or were educated.
+
+Johnson had none of Lincoln's commitment to racial equality. He opposed slavery but also opposed political and social equality for Black people. His Reconstruction policies would be lenient to former Confederates and harsh to formerly enslaved people seeking rights.
+
+I think about what might have been if Lincoln had lived. Would Reconstruction have been more just? Would the promise of the Emancipation Proclamation and the Thirteenth Amendment been fulfilled? Would Black Americans have gained true equality rather than facing a century of segregation and discrimination?
+
+We'll never know. History doesn't reveal its alternatives. But Lincoln's assassination was a tragedy not just for the man but for the nation. His murder robbed America of its best chance for healing and genuine transformation.
+
+The Civil War ended slavery and preserved the Union—enormous achievements. Over 620,000 died to accomplish them. But the war didn't resolve the deeper question of racial equality. That struggle would continue for another century and more.
+
+Standing at Appomattox, watching former enemies shake hands, I felt hope. The war was over. We'd won. Now came the harder work of building a truly united nation based on the principle that all men are created equal. Lincoln understood that challenge. His death made it far more difficult. We would spend the next century learning what we might have accomplished if Lincoln had lived to guide Reconstruction with the same wisdom he'd shown in winning the war.`,
+        },
       ],
     },
     flashcards: [
@@ -5320,6 +6620,11 @@ The fight for women's rights has begun. It will take decades, face setbacks, div
       {id: "q40-1", question: "What happened at Appomattox?", options: ["War started", "Lee surrendered to Grant, ending Civil War", "Major battle", "Peace conference failed"], correctOptionIndex: 1, explanation: "April 9, 1865, Lee surrendered to Grant at Appomattox Court House, ending Civil War."},
       {id: "q40-2", question: "What were Grant's surrender terms?", options: ["Harsh punishments", "Generous—Confederates could keep horses/sidearms, no treason trials", "Everyone executed", "No terms"], correctOptionIndex: 1, explanation: "Grant offered generous terms: soldiers keep horses, officers keep sidearms, no trials for treason."},
       {id: "q40-3", question: "What happened to Lincoln?", options: ["Retired happily", "Assassinated by John Wilkes Booth five days after war ended", "Became king", "Lost election"], correctOptionIndex: 1, explanation: "Lincoln was shot by Confederate sympathizer John Wilkes Booth on April 14, 1865, dying the next morning."},
+      {id: "q40-4", question: "What was Grant's military strategy in the final campaign?", options: ["Avoid all battles", "War of attrition—use Union's superior numbers and resources to continuously pressure Lee until Confederacy collapsed", "Single decisive battle", "Retreat to Canada"], correctOptionIndex: 1, explanation: "Grant understood the Union's advantages in men, industry, and supplies would win a war of attrition. He fought Lee continuously—Wilderness, Spotsylvania, Cold Harbor—never retreating like McClellan. Though costly, this strategy relentlessly wore down Lee's army, which couldn't replace losses. Grant kept pressing until Lee was trapped at Petersburg and forced to surrender."},
+      {id: "q40-5", question: "Why was Grant's decision to let Confederates keep their horses significant?", options: ["Horses had no value", "They'd need them for spring planting—showed Grant understood need to help South rebuild", "It was required by law", "He forgot to demand them"], correctOptionIndex: 1, explanation: "When Lee asked if soldiers who owned horses could keep them, Grant immediately agreed: 'Let all the men who claim to own a horse or mule take the animals home with them to work their little farms.' This showed Grant's magnanimity and understanding that the South needed to rebuild. It was about healing, not punishing."},
+      {id: "q40-6", question: "What gesture of respect did Joshua Chamberlain order at the formal surrender?", options: ["He ordered troops to turn their backs", "He ordered Union troops to 'carry arms' (salute) as Confederates stacked their weapons", "He refused to attend", "He ordered celebrations"], correctOptionIndex: 1, explanation: "As Confederate soldiers marched between Union lines to surrender their weapons and flags, Chamberlain ordered his Union troops to 'carry arms'—a salute of respect. Confederate General Gordon responded by dipping his sword in salute and ordering his men to carry arms as well. It was a moment of mutual respect between former enemies."},
+      {id: "q40-7", question: "Why did John Wilkes Booth assassinate Lincoln?", options: ["Random act", "Confederate sympathizer who hated Lincoln for destroying the South and ending slavery", "Paid by foreign government", "Accident"], correctOptionIndex: 1, explanation: "Booth was an actor and passionate Confederate sympathizer who believed Lincoln was a tyrant who'd destroyed the South. He shot Lincoln on April 14, 1865—Good Friday—at Ford's Theatre, shouting 'Sic semper tyrannis!' (Thus always to tyrants). Lincoln died the next morning. Booth was hunted down and killed twelve days later."},
+      {id: "q40-8", question: "How did Lincoln's assassination affect Reconstruction?", options: ["Made no difference", "Robbed the nation of Lincoln's vision for healing—Andrew Johnson lacked Lincoln's commitment to racial equality", "Improved Reconstruction", "Ended Reconstruction immediately"], correctOptionIndex: 1, explanation: "Lincoln had spoken of 'malice toward none, charity for all' and was considering voting rights for Black men. His assassination put Andrew Johnson in charge—a man who opposed slavery but also opposed political equality for Black people. Johnson's lenient policies toward former Confederates and harsh treatment of formerly enslaved people seeking rights made Reconstruction far less just than Lincoln might have achieved. The nation lost its best chance for genuine transformation and healing."},
     ],
   },
 
@@ -5333,8 +6638,98 @@ The fight for women's rights has begun. It will take decades, face setbacks, div
     story: {
       narrator: "Marcus, age 15, freed slave in Georgia, 1865",
       chapters: [
-        {title: "Freedom at Last", content: `I'm Marcus, fifteen, born enslaved in Georgia. The war's over. We're free! Thirteenth Amendment abolished slavery. But what does freedom mean? No land, no money, no education. Where do we go? What do we do? Freedmen's Bureau helps with food, schools, labor contracts. But most former slaves stay on plantations working for former masters. Freedom without resources isn't much freedom.`},
-        {title: "Presidential Reconstruction", content: `President Johnson's Reconstruction lenient to South. Former Confederates return to power. They pass Black Codes restricting our freedom—can't vote, own guns, testify against whites. Sharecropping replaces slavery—we work land for share of crop but end up in debt. Almost like slavery again. Republicans in Congress furious. They'll take control of Reconstruction away from Johnson. Radical Reconstruction coming.`},
+        {
+          title: "The Day of Jubilee",
+          content: `I'm Marcus, fifteen years old, and I was born enslaved on a cotton plantation in Georgia. I've worked in the fields since I was seven—planting, weeding, picking cotton from dawn to dusk. I've been whipped for working too slowly. I've watched my older sister sold away when I was ten. I've lived every day knowing I was property, not a person.
+
+June 1865. The war is over. Union soldiers arrive at our plantation. They gather all the enslaved people—about 200 of us. A Union officer reads from a paper: By order of the President of the United States, all persons held as slaves are declared free.
+
+Free. The word doesn't seem real. We've heard rumors for months—Lincoln's Emancipation Proclamation, Confederate surrender, the Thirteenth Amendment working its way through the states. But hearing it officially declared, by a Union officer with the power to enforce it, makes it real.
+
+Some people shout and cry. Others are silent, stunned. Old Samuel, who's been enslaved for sixty years, falls to his knees weeping. My mother grabs my hand, squeezing so hard it hurts. "We're free, Marcus," she whispers. "Free."
+
+Master Harrison watches from the porch, face red with anger. He shouts that we're still his property, that the Union has no right to steal his slaves. The Union officer ignores him. "You're free to go wherever you want," he tells us. "You don't have to stay here."
+
+But where would we go? We have no money. No land. No possessions except the clothes we're wearing. We don't know where our families who were sold away have gone. Freedom is wonderful in principle, but terrifying in practice. What do we do now?`,
+        },
+        {
+          title: "The Freedmen's Bureau",
+          content: `Days after emancipation, most formerly enslaved people are still on the plantations. Some leave immediately, seeking family members sold away or just wanting to experience freedom by traveling. But most stay, not because we want to but because we have nowhere else to go.
+
+The Union army establishes the Freedmen's Bureau—an agency to help formerly enslaved people transition to freedom. Bureau agents arrive in Georgia, setting up offices in towns.
+
+I walk to town with my mother to visit the Bureau office. The agent is a young Union officer from Massachusetts. He's sympathetic but overwhelmed. Thousands of freed people need help—food, shelter, land, work, education. The Bureau has limited resources.
+
+"We're providing rations for those who have no food," he explains. "We're setting up schools so you can learn to read and write. And we're helping negotiate labor contracts with landowners."
+
+Labor contracts. The agent explains that freed people can work for former slaveholders, but now as paid laborers with written contracts. The contracts specify wages, working conditions, and term of employment. Both parties must agree. If the landowner violates the contract, the Bureau will intervene.
+
+It sounds better than slavery. But when Mother and I return to the plantation, Master Harrison offers a contract that pays almost nothing—$5 a month plus rations and a cabin. We'd work dawn to dusk, just like before, with harsh penalties for "idleness" or "disobedience."
+
+Mother refuses to sign. "I won't work for him anymore," she says. "Not for any wage."
+
+We leave the plantation with nothing but our clothes. We walk to town, where the Freedmen's Bureau provides temporary shelter and rations. They help Mother find work as a laundress. It doesn't pay much, but she's her own boss now. That matters more than money.
+
+The Freedmen's Bureau also sets up a school. I enroll immediately. Learning to read feels like true freedom—access to knowledge formerly forbidden to enslaved people.`,
+        },
+        {
+          title: "The Promise of Land",
+          content: `Summer 1865. There are rumors spreading through freed communities: "Forty acres and a mule." The government will give freed people land confiscated from Confederate plantations.
+
+The rumor comes from General Sherman's Special Field Order No. 15, issued in January 1865. It set aside land along the South Carolina and Georgia coast for formerly enslaved families. Each family could claim forty acres. The army would loan mules.
+
+By June, 40,000 freed people have settled on 400,000 acres of this land. They're building homes, planting crops, creating communities. For the first time, they own the land they work.
+
+I meet a family who'd settled on one of the Sea Islands. "It's ours," the father tells me, eyes shining. "We own forty acres. Our children will inherit it. We're free and we're landowners."
+
+But then President Johnson reverses the policy. He pardons former Confederates and returns their land—including the land freed people have settled on. Federal troops force families off land they've been farming for months.
+
+The devastation is total. Freed people believed the government had promised them land. "Forty acres and a mule" seemed like acknowledgment that we'd earned ownership through centuries of unpaid labor. Taking it away feels like a betrayal.
+
+Most freed people have no choice but to work for former slaveholders. But without land of our own, we have no leverage. Landowners offer terrible wages or sharecropping arrangements. Sharecropping means we work the land for a share of the crop—typically half. The landowner provides land, tools, and seed. We provide labor.
+
+In theory, sharecropping could work. In practice, it becomes a system of debt peonage. Landowners charge high prices for supplies, keep unfair records of debts, and manipulate the final accounting so sharecroppers end up owing money each year. We're trapped in cycles of debt, unable to leave until we pay what we "owe."
+
+Freedom without land or education or capital isn't much freedom. It's survival, not prosperity.`,
+        },
+        {
+          title: "The Black Codes",
+          content: `Fall 1865. Southern states begin passing "Black Codes"—laws specifically targeting freed people and restricting our freedom.
+
+Georgia's Black Code requires freed people to have written proof of employment. If you don't have a contract with a landowner, you can be arrested for vagrancy and forced to work for whoever pays your fine. It's slavery by another name.
+
+The codes prohibit Black people from owning firearms, serving on juries, testifying against white people in court, or voting. They establish separate legal standards—harsher punishments for Black people than whites for the same crimes.
+
+Some codes even require freed people to get licenses to work in any job other than farmer or servant. The licenses are expensive, keeping us in agricultural labor controlled by white landowners.
+
+I experience the Black Codes personally. Walking through town one evening, I'm stopped by a white constable. "Where's your proof of employment?" he demands.
+
+I explain I'm enrolled in the Freedmen's Bureau school and living with my mother, who works as a laundress. He says that's not good enough. I need a labor contract with a landowner or I'm vagrant. He arrests me.
+
+At the courthouse, they fine me $10—two months' wages for most freed people. I can't pay. The judge says I'll be hired out to whoever pays the fine. A plantation owner pays it. Now I owe him $10 plus interest, to be worked off at $5 per month. I'm trapped in forced labor.
+
+The Freedmen's Bureau agent intervenes, arguing the arrest was illegal. After weeks of bureaucracy, they release me. But thousands of other freed people aren't so lucky. They're trapped in labor arrangements that differ from slavery only in name.
+
+The Black Codes prove that former slaveholders and Confederate sympathizers still control Southern state governments. They're using legal mechanisms to restore as much of the pre-war social order as possible. Freedom guaranteed by the Thirteenth Amendment means little when state laws can criminalize Black life itself.`,
+        },
+        {
+          title: "Presidential Reconstruction Fails",
+          content: `By late 1865, it's clear that President Andrew Johnson's Reconstruction policy has failed. Johnson pardoned most former Confederates, allowed them to vote and hold office, and did nothing to stop the Black Codes. He opposes federal intervention to protect freed people's rights.
+
+Johnson believes Reconstruction should be lenient and quick. Restore Southern states to the Union, let them govern themselves, move on. He opposes Black voting rights, saying states should decide that question. His racism is barely concealed—he openly says he believes white people are superior and Black people unfit for citizenship.
+
+Meanwhile, Republicans in Congress grow increasingly angry. They'd fought a war to end slavery and preserve the Union. Now former Confederate leaders were returning to Congress, Black Codes were re-establishing quasi-slavery, and freed people had no protection.
+
+In December 1865, Congress refuses to seat the Southern representatives and senators Johnson allowed to be elected. Congress forms the Joint Committee on Reconstruction to investigate conditions in the South.
+
+The committee hears testimony from freed people about Black Codes, violence, exploitation, and denial of rights. They hear about the Ku Klux Klan—a terrorist organization of former Confederates who attack, whip, and murder freed people and white Republicans to maintain white supremacy.
+
+Congress decides to take control of Reconstruction away from Johnson. They'll pass laws protecting freed people's rights, require Southern states to guarantee Black voting rights, and use federal military power to enforce these requirements.
+
+It's called "Radical Reconstruction," though it's only radical in insisting that freed people actually be free and have rights as citizens. To us, it's just common sense—freedom means political rights, legal equality, and protection from violence. Anything less isn't freedom at all.
+
+I'm sixteen now, watching as Congress and the President battle over Reconstruction. The outcome will determine whether the promise of emancipation—freedom, citizenship, equality—will be fulfilled or betrayed. Radical Reconstruction offers hope. But I've learned that hope must be fought for, defended, and never taken for granted. The struggle for real freedom has only just begun.`,
+        },
       ],
     },
     flashcards: [
@@ -5351,6 +6746,11 @@ The fight for women's rights has begun. It will take decades, face setbacks, div
       {id: "q41-1", question: "What was Reconstruction?", options: ["Rebuilding houses", "Period of rebuilding South and integrating freed slaves 1865-1877", "A war", "Economic boom"], correctOptionIndex: 1, explanation: "Reconstruction was the period after Civil War focused on rebuilding South and integrating freed slaves into society."},
       {id: "q41-2", question: "What were Black Codes?", options: ["Helpful laws", "Southern laws restricting freed slaves' rights and movement", "Federal protections", "Education programs"], correctOptionIndex: 1, explanation: "Black Codes were Southern laws restricting freed slaves' rights, movement, and opportunities."},
       {id: "q41-3", question: "What was sharecropping?", options: ["Generous gift program", "System where freed slaves worked land for crop share, often resulting in debt", "Fair wage system", "Land ownership"], correctOptionIndex: 1, explanation: "Sharecropping had freed slaves work land for share of crop but usually resulted in debt, resembling slavery."},
+      {id: "q41-4", question: "What was President Johnson's approach to Reconstruction?", options: ["Harsh punishment of former Confederates", "Lenient policies allowing former Confederates back into power quickly with minimal requirements", "Complete equality for freed slaves", "Long-term federal occupation"], correctOptionIndex: 1, explanation: "Andrew Johnson, who became president after Lincoln's assassination, took a lenient approach to Reconstruction. He quickly pardoned former Confederates, allowed Southern states to rejoin without guaranteeing Black rights, and opposed federal intervention to protect freed slaves."},
+      {id: "q41-5", question: "What did freed slaves most want during Reconstruction?", options: ["To return to slavery", "Land ownership ('40 acres and a mule'), education, and civil rights", "To leave the South immediately", "Only political power"], correctOptionIndex: 1, explanation: "Freed slaves primarily wanted economic independence through land ownership (symbolized by '40 acres and a mule'), access to education, and protection of their civil and political rights. Land ownership was especially important because without economic independence, freedom meant little."},
+      {id: "q41-6", question: "What was the Freedmen's Bureau?", options: ["A Confederate organization", "Federal agency providing food, medical care, education, and legal assistance to freed slaves", "A slave-trading company", "A political party"], correctOptionIndex: 1, explanation: "The Freedmen's Bureau was a federal agency created to help freed slaves transition to freedom. It provided food, shelter, medical care, established schools, helped negotiate labor contracts, and provided legal assistance. Though underfunded and opposed by Southern whites, it achieved significant successes, especially in education."},
+      {id: "q41-7", question: "Why did sharecropping trap freed slaves in poverty?", options: ["It gave them too much money", "Landowners charged high prices for supplies and rent, keeping sharecroppers in perpetual debt", "It was completely fair", "Sharecroppers owned the land"], correctOptionIndex: 1, explanation: "Sharecroppers had to buy seeds, tools, and supplies from landowners on credit at inflated prices. After harvest, landowners took their share of crops plus payment for supplies. The system was designed so sharecroppers remained in debt year after year, unable to leave or earn independence—creating a form of economic slavery."},
+      {id: "q41-8", question: "What does Samuel's father mean by 'paper freedom'?", options: ["Freedom was complete and perfect", "Legal freedom without economic resources or political power—freedom in name only", "Freedom to read", "Freedom was a document"], correctOptionIndex: 1, explanation: "Samuel's father describes 'paper freedom' as freedom that exists legally but not practically. Freed slaves were legally free but lacked land, resources, education, or political power. Black Codes restricted their rights, sharecropping trapped them in debt, and violence kept them subordinate. True freedom requires not just legal status but economic opportunity and civil rights."},
     ],
   },
 
@@ -5362,8 +6762,94 @@ The fight for women's rights has begun. It will take decades, face setbacks, div
     story: {
       narrator: "Eliza, age 16, freed slave in South Carolina, 1868",
       chapters: [
-        {title: "Congress Takes Over", content: `I'm Eliza, sixteen, freed slave in South Carolina. Congress passed Reconstruction Acts over Johnson's veto. Military governors control South until states write new constitutions guaranteeing Black male suffrage. Fourteenth Amendment makes us citizens with equal protection. Fifteenth Amendment protects voting rights. Black men voting! Serving in legislatures! This is real change.`},
-        {title: "Backlash and Violence", content: `But white Southerners resist violently. Ku Klux Klan terrorizes Black voters and white Republicans. Murders, beatings, burnings. They want to restore white supremacy, undo Reconstruction. Federal troops protect us somewhat. We're building schools, churches, communities. Black politicians like Hiram Revels serve in Congress. But violence threatens everything we've gained. How long will Northern support last?`},
+        {
+          title: "Congress Takes Control",
+          content: `I'm Eliza, sixteen years old, and I live in South Carolina. I was born enslaved but freed when I was thirteen, after the Civil War ended. The past three years have been chaotic—freedom without resources, Black Codes restricting our rights, President Johnson allowing former Confederates back into power.
+
+But in March 1867, everything changed. Congress passed the Reconstruction Acts over President Johnson's veto. They took control of Reconstruction away from the President.
+
+The Acts divided the former Confederacy into five military districts, each governed by a Union general. These generals have power to protect our rights and maintain order. Southern states must write new constitutions guaranteeing Black male suffrage—the right to vote. States must ratify the Fourteenth Amendment, making us citizens with equal protection under law. Only after meeting these requirements can states rejoin the Union.
+
+It's radical—the federal government forcing states to guarantee Black voting rights. But it's also necessary. Presidential Reconstruction failed. Former slaveholders passed Black Codes and used violence to restore white supremacy. Only federal military power can protect our freedom.
+
+In South Carolina, General Daniel Sickles is military governor. He invalidates the Black Codes, protects Black people's rights to testify in court, and ensures fair treatment. It's the first time in my life I've felt protected by law rather than threatened by it.
+
+Most important: Black men can vote. My father registered to vote in 1867. He was almost fifty years old and had been enslaved his entire life. Now he's a voter with the power to choose representatives.
+
+"I never thought I'd see this day," he said, showing me his voter registration certificate. "Free and a citizen with the right to vote." He cried—tears of joy and disbelief that freedom could mean this much.`,
+        },
+        {
+          title: "Constitutional Conventions",
+          content: `Summer 1867. South Carolina holds a constitutional convention to write a new state constitution. For the first time, Black men participate in government. Of 124 delegates, 76 are Black—a majority. Most were enslaved just two years ago.
+
+I attend the convention's opening session in Charleston. The convention hall is packed—Black and white delegates, spectators, journalists. It's extraordinary seeing Black men debating law and policy, writing a constitution that will govern all South Carolinians.
+
+The constitution they write is remarkably progressive. It establishes public schools for all children—Black and white—funded by taxes. It protects property rights and civil rights for all citizens. It gives Black men the right to vote and hold office. It's more democratic than the old constitution, which concentrated power in the hands of wealthy white planters.
+
+Some delegates are highly educated—ministers, teachers, skilled craftsmen who were free before the war. Others are recently freed, with little formal education but keen intelligence and determination. Robert Smalls, a former slave who became a Civil War hero by capturing a Confederate ship and delivering it to the Union, is a delegate. So is Francis Cardozo, an educated minister who becomes Secretary of State.
+
+White conservatives are furious. They call the convention "Negro rule" and the delegates ignorant. But the constitution the convention produces is sound, fair, and progressive. Voters ratify it overwhelmingly in 1868.
+
+That same year, South Carolina elects a new legislature under the new constitution. Eighty-seven of 157 legislators are Black. It's the only state legislature in American history with a Black majority.
+
+My father's friend Robert is elected to the state House of Representatives. He'd been a field hand, enslaved his entire life. Now he's a legislator making laws. "We're building a new South," he tells us. "A South based on equality and justice, not slavery and oppression."`,
+        },
+        {
+          title: "The Fourteenth and Fifteenth Amendments",
+          content: `The constitutional changes aren't just at the state level. Congress is rewriting the U.S. Constitution to protect Black rights.
+
+The Fourteenth Amendment, ratified in 1868, makes us citizens. Before, the Dred Scott decision said Black people weren't citizens. The Fourteenth Amendment overturns that, declaring that all persons born in the United States are citizens. It guarantees equal protection under law and due process. States can't deprive citizens of rights without legal process.
+
+This is monumental. Citizenship isn't just symbolic—it means legal standing. We can sue in court, claim constitutional protections, demand equal treatment. The amendment provides the constitutional foundation for civil rights.
+
+The Fifteenth Amendment, ratified in 1870, protects voting rights. It declares that the right to vote cannot be denied based on "race, color, or previous condition of servitude." Black men across the country can vote, not just in the South.
+
+I watch as my father and other Black men vote for the first time in 1868. They line up outside the polling place, many wearing their best clothes, treating it as the solemn civic duty it is. White conservatives glare at them, angry that former slaves now have political power. But federal troops are there to protect the voters.
+
+Father votes for Republican candidates—the party of Lincoln, emancipation, and Reconstruction. He's voting for men who will protect his rights and continue building a society based on equality.
+
+That night, when the votes are counted, Republicans sweep the elections. Black men helped elect them. We're not just free—we're political participants with actual power to shape government. It's what freedom should mean: not just absence of slavery but presence of rights and political power.`,
+        },
+        {
+          title: "Progress and Achievement",
+          content: `The years 1868-1870 are a time of remarkable progress in South Carolina. Black men serve in the legislature, as sheriffs and judges, as members of Congress. Hiram Revels of Mississippi becomes the first Black U.S. Senator in 1870. Joseph Rainey of South Carolina becomes the first Black member of the House of Representatives. These men prove that Black people can govern effectively.
+
+The Reconstruction governments invest in public education. Before the war, it was illegal to teach enslaved people to read. Now the state builds schools for Black and white children. The Freedmen's Bureau and Northern missionary societies help establish schools across the South.
+
+I'm able to attend school for the first time. I'm sixteen and learning to read alongside younger children. It's humbling but wonderful. Our teacher is a Black woman from the North who came south to teach. She's patient and encouraging.
+
+"Education is freedom," she tells us. "No one can take knowledge from you. Learn to read, and you can educate yourselves forever."
+
+Black communities build churches, mutual aid societies, and political organizations. Churches become centers of community life—not just for worship but for education, political organizing, and mutual support.
+
+We're also building economic independence. Some Black families buy land. Others open businesses. Father saves money working as a carpenter, hoping to buy our own farm someday. We're trying to build a foundation for future generations.
+
+The progress feels fragile but real. For the first time, Black people in the South have legal rights, political power, and opportunities for education and economic advancement. We're building the society that should have existed from America's founding—one based on equality and democracy rather than slavery and racial hierarchy.`,
+        },
+        {
+          title: "The Reign of Terror",
+          content: `But white conservatives won't accept this new order. They use violence to restore white supremacy and undo Reconstruction.
+
+The Ku Klux Klan—a terrorist organization of former Confederates—spreads across the South. They wear white robes and hoods to hide their identities. They ride at night, attacking Black people who assert their rights and white Republicans who support Reconstruction.
+
+In 1868, the Klan murders my neighbor, Samuel, a Black man who registered to vote. They dragged him from his home at night, beat him, and hanged him from a tree. His crime: political activism.
+
+They leave his body hanging as a warning to other Black voters. The message is clear: assert your rights and you'll die.
+
+The violence escalates before the 1868 election. The Klan attacks polling places, murders Black voters, burns Black churches and schools. In some areas, they kill dozens of Black people and white Republicans in coordinated campaigns of terror.
+
+Father still votes, but he's frightened. We all are. Every Black person exercising their rights knows they might be the next victim. But many refuse to be intimidated. "They want us to be afraid," Father says. "If we surrender our rights out of fear, freedom means nothing."
+
+Congress passes the Enforcement Acts and the Ku Klux Klan Act, giving the federal government power to protect Black voters and prosecute terrorists. President Grant sends federal troops to suppress the Klan. Hundreds of Klan members are arrested and tried.
+
+For a while, the federal intervention works. Klan violence decreases. We have a few years of relative safety to vote and participate in government.
+
+But we wonder how long it will last. Northern commitment to Reconstruction is wavering. Democrats campaign on ending "Negro rule" and restoring "home rule"—code words for white supremacy. Economic depression in the North makes Reconstruction seem less important. White Northerners who fought to end slavery are losing interest in protecting Black rights.
+
+Reconstruction gave us citizenship, voting rights, and political power. But it didn't give us economic independence or change white Southerners' determination to maintain racial hierarchy. Everything we've gained depends on federal military protection and Northern political will. What happens when those fade?
+
+I'm eighteen now, educated and hopeful but also realistic. We've made extraordinary progress, but it's under siege. The question isn't whether we deserve freedom and equality—we do, obviously. The question is whether America will defend those principles against violent opposition. The answer will determine not just Reconstruction's success but the meaning of American democracy itself.`,
+        },
       ],
     },
     flashcards: [
@@ -5380,6 +6866,11 @@ The fight for women's rights has begun. It will take decades, face setbacks, div
       {id: "q42-1", question: "What was Radical Reconstruction?", options: ["Lenient Southern policy", "Congressional plan with harsh Southern terms and Black rights protection", "No policy", "Confederate victory"], correctOptionIndex: 1, explanation: "Radical Reconstruction was Congress's plan imposing military control and protecting Black rights."},
       {id: "q42-2", question: "What did Fourteenth Amendment do?", options: ["Nothing", "Granted citizenship and equal protection to freed slaves", "Banned voting", "Started Civil War"], correctOptionIndex: 1, explanation: "Fourteenth Amendment made freed slaves citizens with equal protection under law."},
       {id: "q42-3", question: "What was the Ku Klux Klan?", options: ["Political party", "Terrorist organization using violence to restore white supremacy", "Education group", "Government agency"], correctOptionIndex: 1, explanation: "KKK was terrorist organization using murder, beatings, and intimidation to restore white supremacy and undo Reconstruction."},
+      {id: "q42-4", question: "What was the Fifteenth Amendment?", options: ["Property rights", "Guaranteed Black men's right to vote", "Tax reform", "Education mandate"], correctOptionIndex: 1, explanation: "The 15th Amendment (1870) prohibited denying voting rights based on race, color, or previous condition of servitude, guaranteeing Black men the right to vote throughout the nation."},
+      {id: "q42-5", question: "How did Congress enforce Reconstruction?", options: ["It didn't", "Divided South into 5 military districts with federal troops protecting Black rights", "Through negotiation only", "By ignoring the South"], correctOptionIndex: 1, explanation: "The Reconstruction Acts divided the South into 5 military districts governed by Union generals with federal troops enforcing order, protecting Black voters, and ensuring compliance with new constitutions guaranteeing Black rights."},
+      {id: "q42-6", question: "What historic first did Radical Reconstruction achieve?", options: ["Nothing new happened", "Created America's first multiracial democracy with Black men voting and holding office", "Ended all discrimination", "Made everyone wealthy"], correctOptionIndex: 1, explanation: "For the first time in American history, Black men could vote and hold office. Fourteen Black men served in Congress, hundreds in state legislatures. This brief multiracial democracy proved such government was possible—though violent backlash would end it."},
+      {id: "q42-7", question: "How did the KKK undermine Reconstruction?", options: ["Through peaceful protest", "Used terror—murder, beatings, intimidation—to prevent Black voting and restore white supremacy", "By moving away", "Through legal challenges only"], correctOptionIndex: 1, explanation: "The KKK used systematic terrorism: murdering Black leaders, beating voters at polls, burning schools and churches, intimidating white Republicans. Their goal was restoring white supremacy by making it too dangerous for Black people to vote or assert their rights."},
+      {id: "q42-8", question: "Why was Reconstruction called 'Radical'?", options: ["It changed nothing", "It radically transformed Southern society by granting Black men citizenship, voting rights, and political power", "It was moderate", "Only the name was radical"], correctOptionIndex: 1, explanation: "Reconstruction was 'radical' because it fundamentally transformed Southern society: enslaved people became citizens, gained voting rights, held office, and shaped government. This overthrew centuries of white supremacy and created multiracial democracy—a revolutionary change white Southerners violently resisted."},
     ],
   },
 
@@ -5391,8 +6882,100 @@ The fight for women's rights has begun. It will take decades, face setbacks, div
     story: {
       narrator: "Samuel, age 17, Black voter in Mississippi, 1877",
       chapters: [
-        {title: "Northern Commitment Fades", content: `I'm Samuel, seventeen, Black voter in Mississippi. Northern support for Reconstruction fading. Economic depression, political corruption scandals, war weariness. Northerners losing interest in protecting Southern Blacks. White Southerners systematically disenfranchising us through violence, intimidation, poll taxes, literacy tests. Federal troops no longer protect us. We're being abandoned.`},
-        {title: "The Compromise", content: `1876 election disputed. Democrat Tilden vs Republican Hayes. Compromise of 1877: Hayes becomes president, federal troops withdraw from South. Reconstruction ends. Democrats "redeem" South, restore white rule. Jim Crow era begins—segregation, disenfranchisement, violence. Everything we fought for during Reconstruction—gone. Will take another century to achieve civil rights. Reconstruction failed us.`},
+        {
+          title: "The North Grows Weary",
+          content: `I'm Samuel, seventeen years old, and I live in Mississippi. I was born free in 1860, just before the Civil War. My early childhood was during slavery, though my family was free. I grew up during Reconstruction, experiencing both its promise and its betrayal.
+
+By the mid-1870s, Northern commitment to Reconstruction is fading. Several factors explain why.
+
+First, economic crisis. The Panic of 1873 triggered a severe depression—the worst in American history to that point. Banks failed. Businesses collapsed. Unemployment soared. Northern voters care more about economic recovery than Southern Black rights. Democrats campaign on ending expensive Reconstruction programs and letting the South govern itself.
+
+Second, scandal. The Grant administration is plagued by corruption scandals—the Crédit Mobilier railroad scandal, the Whiskey Ring tax fraud, and others. Republicans, the party of Reconstruction, lose credibility. Democrats gain ground, winning control of the House of Representatives in 1874.
+
+Third, fatigue. The Civil War ended in 1865. Reconstruction has lasted over a decade. Northern voters are tired of military occupation, political battles, and "the Negro question." They want to move on. Many believe Reconstruction has done enough—slavery ended, constitutional amendments passed. What more do Black people want?
+
+The answer, of course, is actual equality and protection. Constitutional amendments mean nothing if states won't enforce them and the federal government won't intervene. But white Northerners, who never fully supported racial equality anyway, are losing interest in fighting for it.
+
+I see this shift in Mississippi. Federal troops used to protect Black voters. Now there are fewer troops, and they rarely intervene when white supremacists intimidate voters. The Freedmen's Bureau closed in 1872. Federal enforcement of civil rights laws weakens. We're increasingly on our own, facing determined white opposition without federal protection.`,
+        },
+        {
+          title: "Redemption Through Violence",
+          content: `White Southern Democrats launch campaigns to "redeem" the South—their term for restoring white supremacy and Democratic control. They use legal and illegal methods, but mostly violence and intimidation.
+
+In Mississippi, the 1875 election campaign is called the "Mississippi Plan"—a blueprint for violently overthrowing Republican governments. White militias, sometimes called "White Leagues" or "Red Shirts," intimidate and murder Black voters and white Republicans.
+
+I witness it personally. In September 1875, I attend a Republican rally in Clinton, Mississippi. White Democrats attack the gathering with guns. They murder dozens of Black people. The violence spreads across the state. Over 300 Black people are killed in the months leading to the election.
+
+Father, a Republican organizer, goes into hiding. White militias search for him, promising to "string him up" if they find him. We hide him in the woods. He can't campaign, can't even vote safely.
+
+On election day, armed white men surround polling places. They fire guns into the air, threatening any Black person who tries to vote. In some areas, they prevent Black voters from reaching polls at all. In others, they force Black voters to vote Democratic at gunpoint.
+
+The result is predictable: Democrats sweep the election through fraud and terror. Mississippi is "redeemed"—white supremacists control the government again.
+
+We appeal to President Grant for federal intervention. Grant sends a half-hearted response. He's politically weakened by scandals and facing Northern opposition to continued intervention in the South. Mississippi's Republican governor, Adelbert Ames, is forced to resign. Democrats take complete control.
+
+By 1876, only three Southern states—Louisiana, South Carolina, and Florida—still have Republican governments protected by federal troops. The rest have been "redeemed" through violence. Reconstruction is collapsing.`,
+        },
+        {
+          title: "The Disputed Election of 1876",
+          content: `November 1876. The presidential election pits Republican Rutherford B. Hayes against Democrat Samuel Tilden. It's a crucial election—the Democratic platform explicitly calls for ending Reconstruction and removing federal troops from the South.
+
+Election night, Tilden appears to have won. He carries most Southern states and several Northern states. He has 184 electoral votes to Hayes's 165. He needs just one more electoral vote to win the presidency.
+
+But twenty electoral votes are disputed—nineteen from the three Southern states still under Republican control (Louisiana, South Carolina, Florida) and one from Oregon. In the South, both parties claim victory, submitting competing election returns. Democrats say they won legitimately. Republicans say Democrats won through violence and fraud—which is largely true.
+
+If all twenty disputed votes go to Hayes, he wins 185-184. If even one goes to Tilden, Tilden becomes president. The Constitution provides no clear mechanism for resolving disputed electoral votes. The nation faces a constitutional crisis.
+
+Congress creates an Electoral Commission—fifteen members split between Republicans, Democrats, and Supreme Court justices. The commission votes along party lines, 8-7, awarding all disputed votes to Hayes. Democrats are furious, calling it a stolen election.
+
+Some Democrats talk of resuming the Civil War. There's talk of armed resistance, of not allowing Hayes to take office. The nation teeters on the edge of renewed conflict.
+
+Then, in back-room negotiations, a deal is struck: the Compromise of 1877.
+
+Republicans agree to withdraw federal troops from the South, ending Reconstruction and military protection of Black rights. They promise federal funding for Southern internal improvements and a Southerner in Hayes's cabinet.
+
+Democrats agree to accept Hayes as president and to respect Black civil and political rights—a promise they'll immediately break.`,
+        },
+        {
+          title: "The Last Troops Leave",
+          content: `April 1877. President Hayes orders the last federal troops withdrawn from Louisiana and South Carolina. Reconstruction is over.
+
+I watch as Union soldiers leave Jackson, Mississippi. They've been our protectors—the only force preventing complete white supremacist control. Now they're leaving, and we're left defenseless.
+
+The symbolism is stark. Soldiers who fought to free us, who protected our rights during Reconstruction, are abandoning us to the very people who enslaved us. It feels like a betrayal of everything the Civil War was fought for.
+
+Within days of the troops' departure, Democratic "Redeemers" take complete control of Southern state governments. They immediately begin dismantling Reconstruction's achievements.
+
+They cut funding for public schools, especially Black schools. They pass laws restricting Black voting rights—poll taxes, literacy tests, understanding clauses, grandfather clauses. These laws are designed to circumvent the Fifteenth Amendment while appearing race-neutral.
+
+They establish segregation laws, soon called "Jim Crow" laws after a racist minstrel show character. These laws mandate separate facilities for Black and white people—schools, railroad cars, restaurants, hotels, water fountains, even cemeteries. The Supreme Court will uphold these laws in Plessy v. Ferguson (1896), ruling that "separate but equal" doesn't violate the Fourteenth Amendment—even though separate is never equal.
+
+They use violence and legal mechanisms to force Black people out of political office. Black legislators, sheriffs, and judges are threatened, attacked, or driven away. Within a few years, Black political participation drops dramatically.
+
+Father tries to vote in the 1878 election. He's turned away at the polling place. The registrar says he failed the "understanding" test—he couldn't adequately explain a section of the state constitution. The test is subjective and impossible to pass if the registrar doesn't want you to vote. White people aren't required to take it.
+
+Father, who risked his life to vote during Reconstruction, is disenfranchised in his own country.`,
+        },
+        {
+          title: "Reconstruction's Legacy",
+          content: `By 1880, Reconstruction is dead. White supremacists control the South. Black people are segregated, disenfranchised, and terrorized. The promise of freedom, citizenship, and equality has been betrayed.
+
+Looking back, I try to understand what happened. Reconstruction achieved enormous things: abolished slavery, granted citizenship and voting rights, established public schools, enabled Black political participation. For a brief moment, genuine multiracial democracy existed in the South.
+
+But Reconstruction failed to provide freed people with economic independence—land or capital. Without economic power, we remained dependent on white landowners. Sharecropping trapped us in cycles of debt and poverty.
+
+Reconstruction also failed to change white Southerners' commitment to white supremacy. They never accepted equality and used violence relentlessly to restore racial hierarchy. The federal government eventually decided protecting Black rights wasn't worth the cost.
+
+Most fundamentally, Reconstruction failed because white Northern voters never fully supported racial equality. They opposed slavery as morally wrong and economically inefficient. But they didn't believe Black people were equals deserving the same opportunities as whites. Once slavery ended and the Union was restored, they lost interest in the "Negro question."
+
+The betrayal of Reconstruction will have consequences for generations. Segregation and disenfranchisement will last nearly a century. Black Southerners will face lynch mobs, economic exploitation, and denial of basic rights. Not until the Civil Rights Movement of the 1950s and 60s will the promises of Reconstruction—freedom, equality, voting rights—be renewed and partially fulfilled.
+
+I'm seventeen, watching everything my parents' generation fought for during Reconstruction dismantled. The Thirteenth, Fourteenth, and Fifteenth Amendments are still in the Constitution, but no one enforces them. We're free in name but not in reality.
+
+Reconstruction taught me that constitutional rights are only as strong as the political will to enforce them. Justice delayed is justice denied. And American democracy's most fundamental test—whether it can extend freedom and equality to all citizens—has been failed. The struggle will continue, but it will take another century before we see real progress.
+
+We'll remember Reconstruction not as a complete failure but as an unfinished revolution—a glimpse of what America could be if it lived up to its founding ideals. The fight for true freedom and equality didn't end in 1877. It continues still.`,
+        },
       ],
     },
     flashcards: [
@@ -5409,6 +6992,11 @@ The fight for women's rights has begun. It will take decades, face setbacks, div
       {id: "q43-1", question: "What was Compromise of 1877?", options: ["Started Reconstruction", "Ended Reconstruction by withdrawing federal troops from South", "Freed slaves", "Won Civil War"], correctOptionIndex: 1, explanation: "Compromise of 1877 ended Reconstruction by withdrawing federal troops, abandoning Southern Blacks."},
       {id: "q43-2", question: "What was Jim Crow?", options: ["A person", "System of racial segregation and discrimination in South", "Economic policy", "Military strategy"], correctOptionIndex: 1, explanation: "Jim Crow was system of racial segregation and discrimination that followed Reconstruction's end."},
       {id: "q43-3", question: "Why did Reconstruction end?", options: ["It succeeded", "Northern commitment faded due to depression, scandals, war weariness", "South reformed", "Blacks gained full equality"], correctOptionIndex: 1, explanation: "Northern support faded due to economic depression, political scandals, and war weariness, abandoning Southern Blacks."},
+      {id: "q43-4", question: "What was the disputed 1876 election?", options: ["Clear Republican victory", "Tilden (Democrat) won popular vote but Hayes (Republican) became president through compromise", "Democrats won completely", "No election occurred"], correctOptionIndex: 1, explanation: "Democrat Samuel Tilden won the popular vote and led in electoral votes, but 20 electoral votes were disputed. Republicans agreed to give Democrats control of the South and withdraw federal troops in exchange for Hayes becoming president—ending Reconstruction."},
+      {id: "q43-5", question: "How did Southern states disenfranchise Black voters after Reconstruction?", options: ["They couldn't", "Poll taxes, literacy tests, grandfather clauses, and violence prevented Black voting", "Blacks voted freely", "Federal government protected voting"], correctOptionIndex: 1, explanation: "Southern states used poll taxes (fees to vote), literacy tests (reading requirements selectively enforced), grandfather clauses (exempting whites whose grandfathers voted), and KKK violence to prevent Black voting while technically not violating the 15th Amendment."},
+      {id: "q43-6", question: "What did 'separate but equal' mean in practice?", options: ["True equality", "Segregation with Black facilities grossly inferior to white facilities", "No segregation", "Integration"], correctOptionIndex: 1, explanation: "The doctrine of 'separate but equal' meant segregating races in all public facilities. In practice, Black schools, hospitals, transportation, and facilities were vastly inferior—separate was never equal. This system lasted until the 1950s-60s Civil Rights Movement."},
+      {id: "q43-7", question: "Why did the North abandon Reconstruction?", options: ["The South became equal", "Economic depression, Grant scandals, fatigue with Southern problems, and racism made Northerners prioritize reunion over racial justice", "Reconstruction succeeded", "There was no abandonment"], correctOptionIndex: 1, explanation: "Multiple factors led North to abandon Reconstruction: the Panic of 1873 depression made them focus on economic issues, Grant administration scandals, fatigue after 12 years of conflict, and widespread Northern racism that never truly supported racial equality. Reunion with white Southerners became more important than protecting Black rights."},
+      {id: "q43-8", question: "What was the long-term impact of Reconstruction's failure?", options: ["Immediate equality", "Jim Crow segregation lasted until 1960s Civil Rights Movement—nearly 90 years of oppression", "No lasting impact", "South became progressive"], correctOptionIndex: 1, explanation: "Reconstruction's failure condemned Black Southerners to nearly 90 years of Jim Crow segregation, disenfranchisement, violence, and second-class citizenship. The promises of the 14th and 15th Amendments wouldn't be fulfilled until the Civil Rights Movement of the 1950s-60s. Reconstruction's failure was one of American history's greatest tragedies."},
     ],
   },
 
@@ -5422,8 +7010,90 @@ The fight for women's rights has begun. It will take decades, face setbacks, div
     story: {
       narrator: "Anna, age 15, factory worker in New York, 1890",
       chapters: [
-        {title: "Industrial Revolution", content: `I'm Anna, fifteen, working in New York garment factory. America's industrializing rapidly. Railroads connect the nation. Factories mass-produce goods. Inventions like telephone, electric light transform life. Rockefeller controls oil. Carnegie controls steel. Morgan controls finance. Corporations grow enormous. But workers like me labor 12-hour days in dangerous conditions for low pay. Children work in mines and factories. No regulations, no safety, no unions allowed. Gilded Age: golden surface hiding poverty and exploitation.`},
-        {title: "Robber Barons or Captains of Industry?", content: `Are industrial tycoons robber barons stealing wealth or captains of industry building America? They create jobs, make goods cheaper, build infrastructure. But they crush competitors, bribe politicians, exploit workers. Carnegie preaches "Gospel of Wealth"—rich should give back. He builds libraries. But he also breaks strikes with violence. Progress and exploitation intertwined. America becoming wealthy and powerful—but benefits don't reach us workers.`},
+        {
+          title: "The Golden Surface",
+          content: `I'm Anna, fifteen years old, and I work in a garment factory in New York City. My family immigrated from Italy two years ago seeking opportunity in America. What we found was hard work, poverty, and inequality—but also a nation transforming before our eyes.
+
+This era is called the Gilded Age—a name from Mark Twain's novel. "Gilded" means covered with a thin layer of gold. It looks beautiful on the surface but hides something cheaper underneath. That describes America in the 1890s perfectly.
+
+The surface is golden indeed. America is industrializing at breathtaking speed. Railroads crisscross the continent—by 1890, we have 200,000 miles of track. Factories produce goods that would have taken months to make by hand. Inventions transform daily life: the telephone, electric lights, the phonograph, motion pictures.
+
+Enormous corporations dominate the economy. John D. Rockefeller's Standard Oil controls 90% of America's oil refining. Andrew Carnegie's steel company produces more steel than all of Britain. J.P. Morgan's banking house finances major corporations and railroads. These men are richer than anyone in American history.
+
+American cities grow enormous. New York has skyscrapers—buildings ten stories tall made possible by steel frames and elevators. Chicago rebuilds after the Great Fire, becoming a modern metropolis. Streetcars and elevated trains move millions of people daily.
+
+From a distance, it looks like a golden age of progress and prosperity. America is becoming the world's leading industrial nation, surpassing Britain. We're building a modern economy that will dominate the twentieth century.
+
+But beneath the golden surface lies exploitation, poverty, and suffering. And I see it every day in the factory where I work.`,
+        },
+        {
+          title: "Life in the Factory",
+          content: `I work twelve hours a day, six days a week in a garment factory making shirtwaists (women's blouses). The factory is on the eighth floor of a building with no fire escapes. Three hundred women and girls work here, crowded together at sewing machines.
+
+We arrive at 7 a.m. The foreman locks the doors—he says it prevents theft and unauthorized breaks. We work until 7 p.m. with a thirty-minute lunch break. The air is thick with cotton dust. The noise from hundreds of sewing machines is deafening. In summer, the heat is unbearable. In winter, there's barely any heating.
+
+I earn $6 per week—about 10 cents per hour. From that, I pay for thread and needles, which the company charges us for. If I make a mistake, they fine me. If I'm late, they dock my pay. I bring home maybe $5 per week, which I give to my mother to help pay rent and buy food.
+
+The work is dangerous. Girls lose fingers in the machines. The foreman rushes us constantly—more production, faster work. If we can't keep up, we're fired and replaced immediately. There are always more immigrants desperate for work.
+
+There are no safety regulations. No minimum wage. No maximum hours. No workers' compensation if you're injured. No child labor laws—girls as young as ten work alongside me. No unions allowed—the owner fires anyone who tries to organize.
+
+This is the reality beneath the Gilded Age's golden surface. While Rockefeller and Carnegie build mansions with dozens of rooms, we live ten people to a two-room apartment. While Morgan finances billion-dollar corporations, we work twelve-hour days for poverty wages. The industrial revolution creates enormous wealth, but it doesn't reach the workers who produce it.`,
+        },
+        {
+          title: "The Titans of Industry",
+          content: `The men who control American industry are sometimes called "Robber Barons"—a term suggesting they stole their fortunes. Others call them "Captains of Industry"—leaders who built America's economy. The truth is complicated.
+
+Andrew Carnegie is a good example. He immigrated from Scotland poor, worked in factories and telegraph offices, invested wisely, and built a steel empire. By 1890, his Carnegie Steel Company produces more steel than all of Britain. He sells it to railroads, construction companies, manufacturers. Steel frames make skyscrapers possible. Steel rails carry trains across continents.
+
+Carnegie preaches the "Gospel of Wealth"—the idea that rich people should use their fortunes for public good. He builds libraries across America—free libraries where working people like me can educate ourselves. He donates to universities, museums, and concert halls. He writes that dying rich is dying in disgrace—wealth should be given back to society.
+
+But Carnegie also crushes unions, pays workers poverty wages, and uses violence against strikes. In 1892, at his Homestead steel plant, workers struck for better wages. Carnegie's managers hired Pinkerton guards—private police—who shot striking workers, killing several. The strike was broken with state militia.
+
+John D. Rockefeller built Standard Oil through ruthless competition. He undercut competitors' prices until they went bankrupt, then bought their companies cheap. He made secret deals with railroads for lower shipping rates, making it impossible for competitors to match his prices. He created a monopoly—one company controlling an entire industry.
+
+Rockefeller made oil products cheaper and more widely available. Kerosene for lamps became affordable for ordinary families. But he destroyed competitors, bribed politicians, and concentrated enormous power in his own hands.
+
+J.P. Morgan, the banker, financed major corporations and reorganized bankrupt railroads. He stabilized industries and made American business more efficient. But he also controlled enormous financial power, deciding which companies succeeded or failed.
+
+These men built American industry, but they also exploited workers, crushed competition, and corrupted politics. The Gilded Age creates enormous wealth, but it concentrates it in a few hands while millions labor in poverty.`,
+        },
+        {
+          title: "Child Labor and Exploitation",
+          content: `The worst aspect of the Gilded Age is child labor. Children as young as six work in mines, factories, and fields instead of attending school. I see it daily in the garment factory where ten-year-old girls work alongside me.
+
+In coal mines, young boys work as "breakers"—sitting for twelve hours sorting coal, breathing dust that ruins their lungs. In textile mills, children crawl under machines to fix threads, risking being crushed if they're not fast enough. In glass factories, boys work near furnaces in extreme heat. Many are injured or killed.
+
+There are no child labor laws. Factory owners prefer hiring children—they're cheaper than adults, easier to control, and their small hands can do delicate work. Families need children's wages to survive. My younger brother wanted to work rather than attend school because we need money for rent and food.
+
+Reformers are starting to document these conditions. Journalist Jacob Riis photographs tenement life and child labor in his book "How the Other Half Lives." People are shocked to see how working families actually live. But changing laws is difficult when wealthy industrialists control politicians.
+
+The Gilded Age has no safety regulations, no minimum wage, no workplace protections. Economic theory says the market should regulate itself—"laissez-faire" economics, meaning the government shouldn't interfere in business. If workers don't like conditions, they can quit. If they can't find better jobs, that's their problem.
+
+But this ignores power imbalances. Workers need wages to survive. Employers can replace any worker easily when there are thousands of desperate immigrants. Individual workers have no power to negotiate. That's why workers are starting to organize unions—the only way to balance corporate power.
+
+The question of the Gilded Age is whether America will continue letting corporations exploit workers without regulation, or whether government will intervene to protect workers' rights and welfare. That battle will define the Progressive Era to come.`,
+        },
+        {
+          title: "The Meaning of Progress",
+          content: `The Gilded Age forces us to ask: What is progress?
+
+By some measures, America is progressing rapidly. Steel production increases twentyfold between 1870 and 1900. Railroad mileage quadruples. Factories produce goods once made slowly by hand. Inventions like electricity, telephones, and internal combustion engines transform life. America becomes the world's leading industrial nation.
+
+Wealthy Americans live better than ever. They build enormous mansions—the Vanderbilts' estate has 250 rooms. They vacation in Europe, collect art, throw lavish parties. The upper class enjoys a golden age of luxury and culture.
+
+But for workers like me, life is hard. We work longer hours in more dangerous conditions than craftsmen did fifty years earlier. We live in crowded tenements. We can't afford doctors when we're sick. Our children work in factories instead of attending school. Economic progress hasn't improved our lives—in some ways, it's made them worse.
+
+The benefits of industrialization go to capital (factory owners, investors) rather than labor (workers). Corporations profit enormously while workers barely survive. Inequality grows wider every year. The richest 1% own more than the bottom 50% combined.
+
+This raises fundamental questions about American democracy. Can democracy survive when economic power is so concentrated? When wealthy industrialists can bribe politicians and control elections? When workers have no voice in decisions affecting their lives?
+
+Some people—socialists and labor organizers—argue the system is fundamentally unjust. They call for workers to own the factories they work in, to share in the profits they create. Others—Progressive reformers—argue the system can be fixed with regulations: safety laws, child labor laws, limits on corporate power.
+
+I'm fifteen, working twelve-hour days in dangerous conditions for poverty wages. The Gilded Age is making some people incredibly rich and powerful. But it's built on the exploitation of people like me. Progress that doesn't improve workers' lives isn't real progress—it's just a golden surface hiding suffering underneath.
+
+The coming decades will determine whether America addresses these inequalities or whether the Gilded Age's injustices continue. Workers are organizing. Reformers are documenting abuses. The question is whether democracy can overcome plutocracy—the rule of the wealthy. The answer will shape twentieth-century America.`,
+        },
       ],
     },
     flashcards: [
@@ -5440,6 +7110,11 @@ The fight for women's rights has begun. It will take decades, face setbacks, div
       {id: "q44-1", question: "What was the Gilded Age?", options: ["Age of gold discovery", "Period of rapid industrialization with golden surface hiding poverty", "Colonial period", "Medieval times"], correctOptionIndex: 1, explanation: "Gilded Age (1870-1900) saw rapid industrialization and wealth, but 'gilded' means gold-covered surface hiding problems underneath."},
       {id: "q44-2", question: "Who were robber barons?", options: ["Medieval knights", "Wealthy industrialists who built fortunes through exploitation", "Government officials", "Foreign invaders"], correctOptionIndex: 1, explanation: "Robber barons were industrial tycoons like Rockefeller and Carnegie accused of exploiting workers and corrupting politics."},
       {id: "q44-3", question: "What was Gospel of Wealth?", options: ["Religious text", "Carnegie's idea that rich should use wealth for public good", "Economic policy", "Political party"], correctOptionIndex: 1, explanation: "Carnegie's philosophy that wealthy have responsibility to use fortunes to benefit society."},
+      {id: "q44-4", question: "What was a monopoly, and why were they problematic?", options: ["Healthy competition", "One company controlling entire industry, eliminating competition and raising prices", "Government ownership", "Worker cooperatives"], correctOptionIndex: 1, explanation: "A monopoly exists when one company controls an entire industry. Rockefeller's Standard Oil controlled 90% of oil refining. Monopolies could raise prices, lower quality, and crush competitors because consumers had no alternatives."},
+      {id: "q44-5", question: "What working conditions did Gilded Age workers face?", options: ["Luxury and safety", "12-16 hour days, dangerous conditions, child labor, low wages, no benefits", "Part-time easy work", "Modern safety standards"], correctOptionIndex: 1, explanation: "Workers faced brutal conditions: 12-16 hour days, six or seven days a week, dangerous machinery, child labor, poverty wages, no benefits, and employers who fired anyone who complained. Industrial accidents were common and workers had no legal protections."},
+      {id: "q44-6", question: "Why is it called the 'Gilded' Age rather than 'Golden' Age?", options: ["They meant the same thing", "Gilded means gold-plated—shiny surface covering cheaper metal, symbolizing wealth hiding poverty and corruption", "It was named after a person", "It refers to gold mining"], correctOptionIndex: 1, explanation: "Mark Twain coined 'Gilded Age' because gilding means covering something cheap with a thin layer of gold. The era appeared golden (prosperous, modern) on the surface but underneath was poverty, exploitation, corruption, and inequality. The name captured the era's hypocrisy."},
+      {id: "q44-7", question: "What contradiction existed in Carnegie's Gospel of Wealth?", options: ["No contradiction existed", "He preached philanthropy while paying workers poverty wages and crushing unions", "He was perfectly consistent", "He gave all his money away immediately"], correctOptionIndex: 1, explanation: "Carnegie preached that the wealthy should use fortunes for public good and built libraries, universities, and concert halls. But he paid workers poverty wages, crushed unions violently (like the Homestead Strike), and accumulated wealth through exploitation. He wanted to be remembered as a benefactor, not as the man who impoverished thousands."},
+      {id: "q44-8", question: "How did Gilded Age inequality compare to today?", options: ["Everyone was equal", "Extreme inequality—richest controlled vast wealth while workers lived in poverty, similar to modern wealth gaps", "Perfect distribution", "Only mild inequality"], correctOptionIndex: 1, explanation: "Gilded Age inequality was extreme: the richest 1% controlled about 40% of wealth while workers struggled in poverty. This concentration of wealth rivaled only by modern inequality. The era showed that rapid economic growth doesn't automatically benefit everyone—without regulation and labor rights, growth enriches only the wealthy."},
     ],
   },
 
@@ -5451,8 +7126,98 @@ The fight for women's rights has begun. It will take decades, face setbacks, div
     story: {
       narrator: "Giuseppe, age 14, Italian immigrant, 1892",
       chapters: [
-        {title: "Ellis Island", content: `I'm Giuseppe, fourteen, from Italy. We just arrived at Ellis Island. Steamship brought us across Atlantic—three weeks in crowded steerage. Now inspectors examine us for disease, ask questions. Will they let us in? Lady Liberty's torch visible from island. "Give me your tired, your poor, your huddled masses," Emma Lazarus wrote. We're those huddled masses seeking opportunity. America promises freedom and work. We'll see if it delivers.`},
-        {title: "Life in the Tenements", content: `We live in Lower Manhattan tenement—crowded, dark, no plumbing. Whole family shares two rooms with another family. I work in factory; Father in construction; Mother does piecework at home. Long hours, low pay. But it's better than Italy. We're saving money, learning English, building new life. America's a hard place for immigrants—discrimination, exploitation, dangerous work. But it's also land of opportunity. Our children will have chances we never had.`},
+        {
+          title: "The Journey to America",
+          content: `I'm Giuseppe, fourteen years old, and I'm from a small village in southern Italy. My family are peasant farmers who barely survive. The land is poor. Taxes are high. There's no future for us here. Father says America is different—there's work, opportunity, freedom. We're going to try our luck.
+
+We traveled to Naples, then boarded a steamship bound for New York. The cheapest passage is in steerage—the bottom of the ship. We paid $30 per person, everything we had saved for years.
+
+Steerage is horrible. Hundreds of us crammed into a dark, airless space. Bunk beds stacked three high. No privacy. The smell is awful—unwashed bodies, vomit from seasickness, the toilet overflow. We're packed so tightly that disease spreads easily. Several children die during the crossing and are buried at sea.
+
+The crossing takes three weeks. We're fed barely edible food—watery soup, hard bread. I'm seasick the first week. Mother fears I'll die. But I survive, and eventually the ship's motion becomes bearable.
+
+On deck, when we're allowed up for air, I meet other immigrants—Poles, Russians, Jews, Greeks. We're all fleeing poverty or persecution, seeking something better. We share stories, practice English phrases, dream about America.
+
+Finally, one morning, we see it: the Statue of Liberty rising from New York Harbor. Father reads the inscription at Liberty's base, written by Emma Lazarus: "Give me your tired, your poor, your huddled masses yearning to breathe free."
+
+"That's us," Father says. "We're those huddled masses." Mother cries—partly from relief at surviving the journey, partly from fear of what comes next.`,
+        },
+        {
+          title: "Ellis Island—The Gateway",
+          content: `The ship anchors in New York Harbor. First-class and second-class passengers disembark immediately—wealth means your documents are accepted without question. But we steerage passengers are transferred to ferries bound for Ellis Island.
+
+Ellis Island is the immigration station where we'll be inspected, questioned, and either admitted to America or rejected and sent back. I'm terrified. What if they don't let us in? We've spent everything to get here. There's no going back.
+
+The Great Hall of Ellis Island is enormous and crowded. Thousands of immigrants wait in long lines, speaking dozens of languages. Interpreters shout instructions in different languages. Children cry. Adults look anxious.
+
+First, medical inspection. Doctors examine us quickly—checking eyes, ears, throats. They're looking for diseases that would bar entry: trachoma (an eye disease), tuberculosis, mental illness. Anyone who looks sick is marked with chalk and set aside for further examination. I'm terrified I'll be marked, but the doctor passes me without comment.
+
+Then the questioning. An inspector asks Father: "Where are you from? How much money do you have? Do you have a job waiting? Can you read?"
+
+Father answers carefully. We're from Italy. We have $25. Uncle Paolo wrote that he'd help Father find construction work. Yes, Father can read—he learned as a boy.
+
+The inspector stamps our papers. We're admitted to the United States of America. We passed inspection at Ellis Island—the gateway to our new life.
+
+Some families aren't so lucky. A woman nearby is separated from her children because she has trachoma. She'll be sent back to Europe while her children stay in America with relatives. Her screams echo through the Great Hall.`,
+        },
+        {
+          title: "Life in the Tenements",
+          content: `We take a ferry to Manhattan and make our way to the Lower East Side, where Uncle Paolo lives. This neighborhood is called "Little Italy"—thousands of Italian immigrants live here, speaking Italian, cooking Italian food, maintaining our culture in this strange new land.
+
+Uncle Paolo takes us to our new home: a tenement building. Tenements are cheaply built apartment buildings designed to pack as many people as possible into small spaces. Our apartment is on the fourth floor—two rooms for our family of six, sharing a toilet in the hallway with five other families. There's no running water in the apartment. We fetch water from a hallway tap and carry it in buckets.
+
+The rooms are dark. There's one small window facing an airshaft—a narrow gap between buildings. The window lets in little light and less air. In summer, the apartment is stifling hot. In winter, we huddle around a small stove that barely keeps us warm.
+
+We share the apartment with another family—the Russos, also from Italy. Privacy is impossible. We hear everything from neighbors above, below, and next door. The building is crowded, loud, and often violent. Fights break out. Drunken men shout at night.
+
+But it's not all bad. The neighborhood is vibrant. Italian grocery stores, bakeries, churches. People speak Italian on the streets. We maintain our traditions even as we try to become American.
+
+I help Mother prepare dinner—pasta with tomato sauce, bread, a little cheese. It reminds us of home. Father eats quickly, exhausted from his construction job. I tell him about my day working in a factory, and he nods, too tired to respond.
+
+This is our life in America: hard work, poverty, crowding. But we're together, we're safe, and we have hope for something better.`,
+        },
+        {
+          title: "Becoming American",
+          content: `Making it in America is hard. I work in a factory twelve hours a day making shoes. I earn $5 a week, which I give to Father to help pay rent and buy food. The work is boring and exhausting, but the foreman says I'm lucky to have a job—there are always more immigrants desperate for work.
+
+I'm learning English slowly. At work, I pick up phrases. On the street, I practice with shopkeepers. I want to speak without an accent, to sound American. But it's hard. My tongue doesn't make English sounds naturally.
+
+In school—I attend at night when I'm not working—the teacher says we must become American, not Italian-American. "Speak English, not Italian," she insists. "Learn American ways. You're Americans now."
+
+But it's more complicated than that. In Little Italy, we maintain our identity. We speak Italian at home, celebrate Italian holidays, eat Italian food. Our culture is who we are. Yet we're also becoming American—learning the language, adopting customs, adapting to this new place.
+
+Some people call us "wops" or "dagos"—slurs against Italians. They say we're dirty, ignorant, taking jobs from Americans. Newspapers publish cartoons showing Italians as criminals or anarchists. There's talk of restricting Italian immigration.
+
+This is "nativism"—hostility toward immigrants by people who consider themselves "real" Americans. Never mind that their own ancestors were immigrants. They fear we'll change American culture, work for lower wages, bring crime and radicalism.
+
+It's painful being unwanted in a country we've sacrificed everything to reach. But we persist. We work hard, save money, send our children to school. Slowly, we're building a place for ourselves in America.
+
+My younger sister speaks English better than Italian now. She says she's American. Father is proud but also sad—we're losing our Italian identity even as we gain an American one. The melting pot doesn't just blend cultures; it also burns away parts of who we were.`,
+        },
+        {
+          title: "The New Colossus",
+          content: `By 1900, I'm twenty-two. I've lived in America eight years. I work as a skilled shoemaker now, earning better wages. My English is fluent. I'm saving to bring my cousins from Italy to join us.
+
+America isn't what we imagined. It's harder, harsher, more discriminatory. We work longer hours in worse conditions than we hoped. Poverty is real and persistent. The promise of opportunity is real, but achieving it requires enormous struggle.
+
+Yet we've made progress. Father bought a small house in Brooklyn—not in a tenement but an actual house with a yard. My siblings are educated—my youngest sister will attend college, impossible in Italy. We're building something here.
+
+I think about the Statue of Liberty, that symbol of American welcome. Emma Lazarus's poem calls America "The New Colossus"—a giant welcoming the world's oppressed. Her words are carved at Liberty's base:
+
+"Give me your tired, your poor, Your huddled masses yearning to breathe free, The wretched refuse of your teeming shore. Send these, the homeless, tempest-tost to me, I lift my lamp beside the golden door!"
+
+We are those huddled masses. America did give us a chance—not an easy chance, not a fair chance always, but a chance nonetheless. We seized it through hard work, sacrifice, and persistence.
+
+Between 1880 and 1920, over 20 million immigrants arrive in America—mostly from Southern and Eastern Europe: Italians, Poles, Russians, Jews, Greeks. We transform American cities. New York becomes the world's most diverse city. We bring our cultures, foods, traditions, and work ethic.
+
+American cities explode in size. New York grows from 3 million to 5 million. Chicago from 1 million to 2 million. Skyscrapers rise. Subway systems are built. Cities become centers of industry, commerce, culture—and also poverty, crime, and crowding.
+
+This is urbanization—the shift from a rural, agricultural nation to an urban, industrial one. By 1920, more Americans live in cities than on farms for the first time in our history.
+
+Immigrants like us drive this transformation. We provide labor for factories, construction, transportation. We create ethnic neighborhoods that become economic and cultural centers. We're building modern America—a diverse, urban, industrial nation very different from the rural, Anglo-Protestant America of the nineteenth century.
+
+The question is whether America will embrace this diversity or resist it. Will the promise of the Statue of Liberty—welcoming the world's tired, poor, huddled masses—be fulfilled? Or will nativism close the golden door? The coming decades will answer that question, as America struggles with its identity as a nation of immigrants.`,
+        },
       ],
     },
     flashcards: [
@@ -5469,6 +7234,11 @@ The fight for women's rights has begun. It will take decades, face setbacks, div
       {id: "q45-1", question: "What was Ellis Island?", options: ["Resort island", "Immigration station where millions entered America", "Prison", "Military base"], correctOptionIndex: 1, explanation: "Ellis Island was immigration station in New York Harbor where millions of immigrants were processed entering America."},
       {id: "q45-2", question: "What were tenements?", options: ["Luxury apartments", "Crowded, often unsafe buildings housing poor immigrants", "Government housing", "Hotels"], correctOptionIndex: 1, explanation: "Tenements were crowded, often unsafe apartment buildings where poor immigrants lived in cramped, unhealthy conditions."},
       {id: "q45-3", question: "What was nativism?", options: ["Welcoming immigrants", "Hostility toward immigrants by native-born Americans", "Immigration policy", "Cultural program"], correctOptionIndex: 1, explanation: "Nativism was hostility and discrimination against immigrants by native-born Americans who feared job competition and cultural change."},
+      {id: "q45-4", question: "What was 'New Immigration' and how did it differ from earlier immigration?", options: ["There was no difference", "New Immigration (1880-1920) brought millions from Southern/Eastern Europe vs. earlier Northern/Western European immigration", "Only from Asia", "Immigration stopped"], correctOptionIndex: 1, explanation: "Old Immigration (pre-1880) came mostly from Northern and Western Europe (Britain, Germany, Ireland, Scandinavia). New Immigration (1880-1920) came from Southern and Eastern Europe (Italy, Poland, Russia, Greece). Nativists viewed these new immigrants as more 'foreign' and harder to assimilate."},
+      {id: "q45-5", question: "What was steerage, and why did immigrants travel that way?", options: ["Luxury cabins", "Cheapest, most crowded ship section—only way poor immigrants could afford passage", "The ship's wheel", "First class"], correctOptionIndex: 1, explanation: "Steerage was the cheapest section of ships, below deck, crowded and unsanitary. Poor immigrants saved for years to afford even steerage tickets. The two-week journey was miserable—overcrowded, disease-ridden, with minimal food—but it was their only path to America."},
+      {id: "q45-6", question: "Why did cities grow so rapidly during this period?", options: ["Government orders", "Industrialization created factory jobs attracting both rural Americans and immigrants", "Cities shrank", "No one moved"], correctOptionIndex: 1, explanation: "Urbanization occurred because factories concentrated in cities, creating jobs. Rural Americans moved from farms seeking factory work, while millions of immigrants arrived needing employment. Cities like New York, Chicago, and Pittsburgh exploded in population, often faster than infrastructure could handle."},
+      {id: "q45-7", question: "What does Emma Lazarus's poem on the Statue of Liberty promise?", options: ["Only the wealthy", "America welcomes 'your tired, your poor, your huddled masses yearning to breathe free'", "No immigrants allowed", "Only skilled workers"], correctOptionIndex: 1, explanation: "Emma Lazarus's poem 'The New Colossus' on the Statue of Liberty base promises America welcomes the world's poor and oppressed. This ideal of America as refuge contrasted with nativist hostility, creating tension between American promise and American practice that continues today."},
+      {id: "q45-8", question: "What contradiction does Sofia see in American attitudes toward immigrants?", options: ["No contradiction existed", "Americans praised immigration's past contribution while opposing current immigrants—'your grandparents enriched America, but you threaten it'", "Everyone welcomed immigrants equally", "No one opposed immigration"], correctOptionIndex: 1, explanation: "Sofia notes Americans celebrate their immigrant heritage while opposing current immigration. They say 'my grandparents worked hard and assimilated,' implying new immigrants won't. But earlier generations faced identical accusations. Every wave of immigrants was called unassimilable until they assimilated. The pattern repeats: yesterday's 'new immigrants' become today's nativists."},
     ],
   },
 
@@ -5480,8 +7250,104 @@ The fight for women's rights has begun. It will take decades, face setbacks, div
     story: {
       narrator: "Michael, age 17, factory worker, 1886",
       chapters: [
-        {title: "The Haymarket Affair", content: `I'm Michael, seventeen, Chicago factory worker. We're striking for 8-hour workday—we work 12-14 hours now. May 4, 1886, rally at Haymarket Square. Peaceful until someone throws bomb, killing police. Police fire into crowd. Eight anarchists arrested though no evidence they threw bomb. All convicted; four hanged. Labor movement takes huge setback. Employers call all unions dangerous anarchists. But we won't stop fighting for fair treatment.`},
-        {title: "Unions Grow", content: `American Federation of Labor (AFL) under Samuel Gompers takes moderate approach—skilled workers only, focus on wages/hours, avoid radical politics. More successful than violent strikes. But excludes unskilled workers, women, minorities. Industrial Workers of the World (IWW) organizes everyone. Triangle Shirtwaist Fire (1911) kills 146 workers—doors locked, no fire escapes. Public outraged. Slowly, labor gaining rights through struggle and sacrifice.`},
+        {
+          title: "The Eight-Hour Day Movement",
+          content: `I'm Michael, seventeen years old, and I work in a factory in Chicago making agricultural equipment. I work fourteen hours a day, six days a week. I start at 6 a.m. and finish at 8 p.m. By the time I get home, eat dinner, and sleep, there's no time for anything else. No education. No family life. No rest. Just work, sleep, work, sleep.
+
+This is normal for American workers in the 1880s. Factory workers, miners, railroad workers—we all work twelve to fourteen hours daily. Many work seven days a week. Children as young as ten work the same hours.
+
+But workers are organizing to change this. The eight-hour day movement demands a basic reform: limit the workday to eight hours. "Eight hours for work, eight hours for rest, eight hours for what we will" is our slogan.
+
+It seems reasonable, even modest. But employers resist fiercely. They say shorter hours would reduce production and profits. They say workers would waste free time drinking. They say competition requires long hours.
+
+Labor unions are growing. The Knights of Labor, founded in 1869, organizes workers across industries. By 1886, it has 700,000 members. The movement is building momentum for the eight-hour day.
+
+May 1, 1886—May Day—hundreds of thousands of workers across America strike for the eight-hour day. In Chicago, 80,000 workers walk off jobs. Factories shut down. The city grinds to a halt.
+
+I join the strike. We march through Chicago's streets, carrying signs demanding the eight-hour day. Employers call us radicals and socialists. Police watch us carefully, hands on clubs.
+
+The strike is mostly peaceful. But tensions are rising. Some employers hire strikebreakers. Fights break out. Police attack picket lines. The atmosphere is tense, potentially violent.`,
+        },
+        {
+          title: "The Haymarket Tragedy",
+          content: `May 3, 1886. At the McCormick Reaper Works, police attack striking workers, killing two. Labor activists call for a protest rally the next evening at Haymarket Square.
+
+May 4. About 3,000 people gather at Haymarket Square. Speakers denounce police violence and demand workers' rights. Chicago's mayor attends and later says the rally was peaceful. He leaves around 10 p.m. when the crowd thins.
+
+Around 10:30, police suddenly march on the remaining crowd—about 300 people—and order them to disperse. The rally is peaceful and legal, but police want it ended.
+
+Then it happens. Someone throws a bomb into the police ranks. The explosion kills one officer instantly and wounds many others. Police open fire into the crowd. Workers fire back—some are armed. The shooting lasts minutes but feels like hours.
+
+When the smoke clears, seven police officers are dead or dying (most from friendly fire, investigators later conclude). At least four civilians are dead, dozens wounded. No one knows who threw the bomb. The bomber was never identified.
+
+But Chicago's authorities blame anarchists—radical activists who advocate abolishing government. They arrest eight labor leaders, though there's no evidence linking them to the bombing. The trial is a sham—the prosecution produces no evidence of who threw the bomb, only inflammatory speeches by the defendants advocating workers' rights.
+
+All eight are convicted. Seven are sentenced to death. One commits suicide in jail. Four are hanged. Three have their sentences commuted to life in prison. Illinois Governor John Peter Altgeld later pardons the survivors, calling the trial unjust.
+
+The Haymarket Affair devastates the labor movement. Employers paint all unions as dangerous anarchists. The Knights of Labor collapses. The eight-hour day movement stalls. Workers are afraid to organize, fearing they'll be called anarchists and arrested.`,
+        },
+        {
+          title: "The AFL and Craft Unionism",
+          content: `After Haymarket, labor organizers change tactics. Samuel Gompers, a cigar maker, builds the American Federation of Labor (AFL) founded in 1886. The AFL takes a different approach from the Knights of Labor.
+
+The AFL organizes only skilled workers—craftsmen like carpenters, machinists, printers. It excludes unskilled workers, women, and minorities. Gompers says skilled workers have bargaining power because they're harder to replace. Unskilled workers can be replaced easily, making them harder to organize.
+
+The AFL focuses on "bread and butter" issues: wages, hours, and working conditions. It avoids radical politics. It doesn't call for overthrowing capitalism or fundamental economic change. It just wants better pay and shorter hours for its members.
+
+The AFL uses collective bargaining—negotiating with employers as a group rather than individually. If employers refuse to negotiate, the AFL calls strikes. But AFL strikes are disciplined and organized, not spontaneous or violent.
+
+This moderate approach succeeds better than radical tactics. By 1900, the AFL has one million members. It wins wage increases and hour reductions for skilled workers. Some AFL unions achieve the eight-hour day.
+
+But the AFL's success is limited. It organizes only about 10% of the workforce—the skilled elite. The vast majority of workers—unskilled laborers, women, immigrants, Black workers—remain unorganized and exploited.
+
+I'm not a skilled craftsman, so the AFL won't accept me. I'm still working fourteen-hour days for low wages with no union protection. The AFL's success for some workers doesn't help workers like me.
+
+The fundamental problem remains: workers have no power individually. Employers can fire us, cut wages, worsen conditions. Only collective organization gives workers power. But organizing is dangerous—employers fire union members, blacklist them, use violence against strikes.`,
+        },
+        {
+          title: "The Triangle Shirtwaist Fire",
+          content: `March 25, 1911. A fire breaks out at the Triangle Shirtwaist Factory in New York City. The factory occupies the top three floors of a ten-story building. About 500 workers—mostly young immigrant women—work there making women's blouses.
+
+The fire starts in a scrap bin and spreads rapidly through the fabric-filled workspace. Workers rush to escape. But the factory owners have locked the exit doors—they claim it prevents theft and unauthorized breaks.
+
+Women pound on locked doors, screaming. Some break windows and jump from the eighth, ninth, and tenth floors. Firefighters' ladders only reach the sixth floor. Safety nets break under the weight of falling bodies.
+
+The fire lasts less than 30 minutes. When it's over, 146 workers are dead—123 women and 23 men. Some burned to death. Others died from smoke inhalation. Many jumped to their deaths rather than burn.
+
+I read about it in the newspapers. The stories are horrifying. Girls as young as fourteen burned alive because doors were locked. Bodies piled in stairwells. Women jumping from windows, clothes on fire.
+
+The public is outraged. Newspapers publish photos of bodies on the sidewalk, of coffins lined up for identification. People realize that factory workers face deadly conditions daily—locked doors, no fire escapes, flammable materials everywhere, no safety regulations.
+
+The factory owners are tried for manslaughter but acquitted—they claim they didn't know the doors were locked. But a civil suit later finds them liable, and they pay $75 per victim to families—a pittance for a life.
+
+The Triangle Fire becomes a turning point. Public outrage forces politicians to act. New York passes fire safety laws, factory inspection laws, limits on working hours for women and children. Other states follow. The tragedy proves that workers need government protection, not just union organization.
+
+But change comes slowly, purchased with workers' lives.`,
+        },
+        {
+          title: "Labor's Long Struggle",
+          content: `By 1914, I'm forty-five years old. I've been a factory worker my entire adult life. The labor movement has made progress, but it's been slow and costly.
+
+Some workers have won the eight-hour day—mostly skilled workers in AFL unions. Some states have passed safety laws, child labor restrictions, workers' compensation. The Triangle Fire led to real reforms in New York.
+
+But most workers still labor long hours in dangerous conditions for low pay. Employers still fire union organizers. Courts still issue injunctions breaking strikes. Police still attack picket lines. Corporate power still dominates politics.
+
+I think about the Haymarket martyrs—hanged for advocating workers' rights. I think about the Triangle Fire victims—burned alive because owners locked doors. I think about the thousands of workers killed in mines, factories, railroads, construction every year.
+
+Labor's victories come through struggle and sacrifice. Every reform—shorter hours, safety regulations, minimum wages, child labor laws—is opposed fiercely by employers and won only through strikes, protests, and political organizing.
+
+The fundamental conflict remains: labor versus capital. Workers create wealth through our labor. But owners control that wealth and decide how it's distributed. Owners profit enormously. Workers barely survive.
+
+Some radicals—socialists, anarchists, the Industrial Workers of the World (IWW)—argue the system is fundamentally unjust. They call for workers to own the means of production, to abolish wage labor itself. They organize unskilled workers, immigrants, women—everyone the AFL excludes.
+
+Others—reformers, Progressives, moderate unions—argue the system can be fixed with regulations, unions, and gradual reforms. They don't want revolution, just fair treatment within capitalism.
+
+I'm not sure who's right. But I know workers deserve better than we're getting. We deserve fair wages, safe conditions, reasonable hours, respect, and dignity. Whether we achieve that through moderate reforms or radical change, the struggle continues.
+
+Looking at my son—he's fourteen and starting factory work like I did—I hope his generation will have better. I hope the labor movement will win real power. I hope workers will finally get what we've fought for: a fair share of the wealth we create, control over our own lives, and the respect we've earned through our labor.
+
+That's what the labor movement is about—not just wages and hours, but human dignity and economic justice. The fight is far from over.`,
+        },
       ],
     },
     flashcards: [
@@ -5498,6 +7364,11 @@ The fight for women's rights has begun. It will take decades, face setbacks, div
       {id: "q46-1", question: "What was Haymarket Affair?", options: ["Market opening", "1886 labor rally ending in bombing and repression", "Peace conference", "Trade agreement"], correctOptionIndex: 1, explanation: "1886 Chicago labor rally for 8-hour day ended with bomb killing police, leading to execution of labor leaders and setback for movement."},
       {id: "q46-2", question: "What was AFL?", options: ["Football league", "Moderate union organizing skilled workers", "Government agency", "Corporation"], correctOptionIndex: 1, explanation: "American Federation of Labor was moderate union focusing on skilled workers' wages and hours."},
       {id: "q46-3", question: "What was Triangle Shirtwaist Fire?", options: ["Arson attack", "1911 factory fire killing 146 workers, spurring labor reforms", "Controlled burn", "False alarm"], correctOptionIndex: 1, explanation: "1911 fire at garment factory killed 146 workers due to locked doors and no fire escapes, spurring labor reform."},
+      {id: "q46-4", question: "What was the main goal of the eight-hour day movement?", options: ["Longer workdays", "Limit workday to 8 hours instead of 12-16 hours, giving workers time for rest and family", "Four-hour days", "No time limits"], correctOptionIndex: 1, explanation: "Workers demanded an eight-hour workday versus the standard 12-16 hours. The slogan was 'Eight hours for work, eight hours for rest, eight hours for what we will'—recognizing that workers deserved time for sleep, family, and personal pursuits, not just endless labor."},
+      {id: "q46-5", question: "How did employers typically respond to strikes?", options: ["Immediately agreed to demands", "Hired replacement workers, used private guards or police to break strikes violently", "Negotiated peacefully", "Raised wages voluntarily"], correctOptionIndex: 1, explanation: "Employers fought strikes viciously: hiring strikebreakers ('scabs'), using private security forces like Pinkertons to beat strikers, getting police or military to suppress strikes violently, and blacklisting union organizers. The government usually sided with employers, treating strikes as illegal conspiracies."},
+      {id: "q46-6", question: "What was the IWW (Wobblies) and how did it differ from the AFL?", options: ["They were identical", "IWW organized all workers (unskilled, women, immigrants, Black) for radical change; AFL organized only skilled white male workers for modest gains", "IWW opposed unions", "AFL was more radical"], correctOptionIndex: 1, explanation: "The Industrial Workers of the World (IWW/'Wobblies') organized ALL workers regardless of skill, race, gender, or nationality and sought revolutionary change. The AFL organized only skilled white male craftsmen and sought modest improvements within capitalism. The IWW's inclusivity and radicalism terrified employers more than the AFL's moderate approach."},
+      {id: "q46-7", question: "Why did the Triangle Shirtwaist Fire lead to reforms?", options: ["It didn't lead to any changes", "Public outrage at 146 deaths from locked doors and no fire escapes forced government to pass workplace safety laws", "Owners voluntarily reformed", "Workers stopped caring"], correctOptionIndex: 1, explanation: "The Triangle fire killed 146 workers, mostly young immigrant women, who couldn't escape because owners locked doors to prevent breaks and theft. Workers jumped to their deaths rather than burn. The horror shocked the public and forced New York to pass fire safety codes, factory inspections, and worker protection laws—proving that tragedy could sometimes overcome industry opposition to reform."},
+      {id: "q46-8", question: "What does Michael mean when he says the labor movement is about 'human dignity and economic justice'?", options: ["Only about higher wages", "Workers deserve respect, fair share of wealth they create, and control over their own lives—not just survival wages", "Workers should work for free", "Employers are always right"], correctOptionIndex: 1, explanation: "Michael argues the labor movement isn't just about wages and hours—it's about treating workers as human beings deserving dignity, not as disposable machines. Workers create the wealth; they deserve a fair share. They deserve safe conditions, reasonable hours, and respect. Economic justice means recognizing workers' humanity and giving them power over their own lives."},
     ],
   },
 
@@ -5509,8 +7380,116 @@ The fight for women's rights has begun. It will take decades, face setbacks, div
     story: {
       narrator: "Emma, age 16, Kansas farm daughter, 1896",
       chapters: [
-        {title: "Farmers' Struggles", content: `I'm Emma, sixteen, from Kansas farm. We're drowning in debt. Railroad monopolies charge high rates to ship our crops. Banks charge high interest. Farm prices keep falling. We work harder each year and get poorer. Farmers organizing—Farmers' Alliance, then People's Party (Populists). We demand government regulate railroads, graduated income tax, direct election of senators, unlimited silver coinage to increase money supply.`},
-        {title: "Cross of Gold", content: `William Jennings Bryan runs for president on free silver platform. His "Cross of Gold" speech electrifies us: "You shall not crucify mankind upon a cross of gold!" We're the producing class being exploited by bankers and corporations. But Bryan loses to McKinley. Populist Party fades. Some reforms will come later—income tax, direct election of senators. But for now, corporate power wins. Working people lose.`},
+        {
+          title: "Drowning in Debt",
+          content: `I'm Emma, sixteen years old, and I live on a wheat farm in Kansas. My family works from sunrise to sunset planting, tending, and harvesting wheat. We work harder every year. Yet every year we sink deeper into debt.
+
+The problem isn't laziness. We produce more wheat than ever. But the more we produce, the lower prices fall. In 1870, wheat sold for $1.50 per bushel. Now in 1896, it's 50 cents. We produce three times as much wheat but earn less money.
+
+Meanwhile, our costs keep rising. The railroad monopolies charge whatever they want to ship our crops to market. We have no choice—there's only one railroad through Kansas. They charge us high rates while giving rebates to big corporations.
+
+Banks charge crushing interest rates on loans. We borrowed money to buy equipment and seed. Now we owe more than our farm is worth. If we can't pay, the bank will foreclose—take our land and auction it.
+
+Farm equipment manufacturers, seed companies, grain elevator operators—they all charge high prices because they control the market. We're price-takers, not price-makers. We sell our wheat at whatever price buyers offer and buy supplies at whatever price sellers demand.
+
+Father sits at the kitchen table calculating debts. "We worked all year," he says, "and we're $200 deeper in debt." Mother cries quietly. My younger siblings don't understand why we work so hard yet have so little.
+
+This is the farmers' crisis of the 1890s. We're the backbone of America—we feed the nation—yet we're being crushed by railroads, banks, and corporations. Something has to change.`,
+        },
+        {
+          title: "The Farmers' Alliance",
+          content: `Farmers across the country are organizing. The Farmers' Alliance starts in Texas and spreads across the South and West. By 1890, it has over a million members.
+
+The Alliance holds meetings in schoolhouses and churches. Farmers share their struggles and realize we all face the same problems: falling crop prices, railroad monopolies, high interest rates, lack of political power.
+
+The Alliance tries cooperative solutions. We establish cooperative grain elevators to store crops and avoid middlemen. We create cooperative stores to buy supplies in bulk at lower prices. We negotiate with railroads for better shipping rates.
+
+Some cooperatives succeed, but most fail. Railroads refuse to negotiate. Banks won't lend to cooperatives. Large corporations undercut our prices until we go bankrupt. We realize economic cooperation isn't enough—we need political power.
+
+The Alliance becomes political. We demand reforms:
+
+• Government regulation of railroads and grain elevators
+• Graduated income tax so the wealthy pay their fair share
+• Direct election of senators (currently state legislatures elect them, and corporations control legislatures)
+• Government ownership of railroads, telegraphs, and telephones
+• Unlimited coinage of silver to increase the money supply
+
+This last demand—"free silver"—is crucial. The money supply is based on gold. As the economy grows, there's not enough money in circulation. This causes deflation—prices fall, making debts harder to repay. We owe debts in dollars that are worth more each year.
+
+If the government coined unlimited silver, the money supply would increase. This would cause inflation—prices would rise, making debts easier to repay. Creditors oppose this because it reduces the real value of money owed to them. But debtors like us support it desperately.`,
+        },
+        {
+          title: "The People's Party",
+          content: `In 1892, the Farmers' Alliance forms a political party: the People's Party, also called the Populist Party. At the founding convention in Omaha, Nebraska, we adopt a platform demanding sweeping reforms.
+
+The preamble is radical: "We meet in the midst of a nation brought to the verge of moral, political, and material ruin. Corruption dominates the ballot-box, the Legislatures, the Congress... The fruits of the toil of millions are boldly stolen to build up colossal fortunes for a few... From the same prolific womb of governmental injustice we breed the two great classes—tramps and millionaires."
+
+Our platform demands:
+• Free and unlimited coinage of silver
+• Graduated income tax
+• Government ownership of railroads
+• Direct election of senators
+• Eight-hour workday for industrial workers
+• Immigration restriction
+
+We're trying to unite farmers, workers, and reformers against corporate power. We see ourselves as the producing class—people who create wealth through labor—fighting against parasites who profit from our work without contributing.
+
+In 1892, our candidate James Weaver wins over a million votes and 22 electoral votes. In Kansas, Nebraska, Colorado, and other western states, Populists win governorships and congressional seats. We're a serious political force.
+
+But we face opposition from both major parties. Democrats and Republicans unite to defeat us. Newspapers call us radicals, socialists, and anarchists. Banks and railroads fund campaigns against us. Violence and fraud mar elections.
+
+Still, we're building a movement. For the first time, farmers have a political voice. We're challenging corporate power and demanding that government serve the people, not just the wealthy.`,
+        },
+        {
+          title: "The Cross of Gold",
+          content: `1896. The presidential election focuses on the money question: gold standard or free silver?
+
+Republicans nominate William McKinley, who supports the gold standard. He's backed by banks, corporations, and Eastern financial interests. His campaign manager, Mark Hanna, raises millions from wealthy donors.
+
+Democrats are divided. Then William Jennings Bryan, a 36-year-old congressman from Nebraska, gives the most electrifying speech in American political history at the Democratic National Convention.
+
+Bryan's "Cross of Gold" speech defends free silver and attacks the gold standard:
+
+"There are two ideas of government. There are those who believe that if you just legislate to make the well-to-do prosperous, that their prosperity will leak through on those below. The Democratic idea has been that if you legislate to make the masses prosperous their prosperity will find its way up and through every class that rests upon it."
+
+He attacks Eastern bankers and defends farmers and workers:
+
+"You come to us and tell us that the great cities are in favor of the gold standard. I tell you that the great cities rest upon these broad and fertile prairies. Burn down your cities and leave our farms, and your cities will spring up again as if by magic. But destroy our farms and the grass will grow in the streets of every city in the country."
+
+Then his closing, arms outstretched as if crucified:
+
+"You shall not press down upon the brow of labor this crown of thorns. You shall not crucify mankind upon a cross of gold!"
+
+The convention erupts. Bryan wins the Democratic nomination. The Populist Party also nominates him. We finally have a candidate who speaks for us, who understands our suffering, who will fight the money power.
+
+The campaign is intense. Bryan travels 18,000 miles, gives 600 speeches. McKinley stays home, running a "front porch campaign" funded by corporate millions. We farmers work desperately for Bryan—our last hope.`,
+        },
+        {
+          title: "Defeat and Legacy",
+          content: `November 1896. McKinley wins. He carries the Northeast, Midwest, and urban areas. Bryan carries the South and rural West. The split is clear: cities and industry versus farms and agriculture. Corporate power versus the people.
+
+We're devastated. Father sits silent at dinner. "They outspent us ten to one," he says. "Banks, railroads, corporations—all their money went to McKinley. How can we compete?"
+
+The Populist Party declines after 1896. Some Populists join the Democrats. Others give up on politics. The movement fragments and fades.
+
+But our ideas don't die. Many Populist demands will be achieved in the Progressive Era:
+
+• The graduated income tax (Sixteenth Amendment, 1913)
+• Direct election of senators (Seventeenth Amendment, 1913)
+• Government regulation of railroads (Interstate Commerce Commission strengthened)
+• Labor reforms including the eight-hour day
+• Initiative, referendum, and recall in many states
+
+We lost the battle but influenced the war. We showed that farmers and workers could organize politically, that corporate power could be challenged, that government could serve ordinary people rather than just the wealthy.
+
+I'm eighteen now. Our farm survived—barely. We're still in debt, still struggling. But I learned something from the Populist movement: change is possible if people organize and fight for it.
+
+The Populists proved that ordinary Americans could articulate a vision for a more just society and build a political movement to achieve it. We failed to win the presidency, but we changed the conversation. We pushed reforms that major parties eventually adopted. We showed that American democracy could be more than a choice between two corporate-backed parties.
+
+The struggle between concentrated wealth and democracy continues. The Populists showed one path forward: organize the people against the plutocrats. Whether through elections, cooperatives, or direct action, ordinary Americans have power if we use it collectively.
+
+Father says the Populist Party failed, but the Populist spirit survives. Every time farmers organize, workers strike, or citizens demand their government serve the people rather than the powerful—that's the Populist legacy. We didn't win in 1896, but we planted seeds that will keep growing.`,
+        },
       ],
     },
     flashcards: [
@@ -5527,6 +7506,11 @@ The fight for women's rights has begun. It will take decades, face setbacks, div
       {id: "q47-1", question: "Who were Populists?", options: ["City factory owners", "Farmers organizing against railroad/bank monopolies", "Foreign immigrants", "Government officials"], correctOptionIndex: 1, explanation: "Populists were farmers organizing through People's Party to fight railroad and bank exploitation."},
       {id: "q47-2", question: "What did Populists demand?", options: ["Lower farm prices", "Regulate railroads, income tax, direct senator election, free silver", "No government", "Return to monarchy"], correctOptionIndex: 1, explanation: "Populists demanded government regulation of railroads, graduated income tax, direct election of senators, and free silver coinage."},
       {id: "q47-3", question: "What was 'Cross of Gold'?", options: ["Jewelry", "Bryan's famous speech supporting free silver", "A building", "A book"], correctOptionIndex: 1, explanation: "Bryan's famous 1896 speech supporting free silver coinage to help farmers and working people."},
+      {id: "q47-4", question: "Why did farmers support free silver coinage?", options: ["They collected silver", "More currency would cause inflation, raising crop prices and making debts easier to pay", "They opposed it", "It had no effect"], correctOptionIndex: 1, explanation: "Farmers were crushed by debt denominated in expensive gold-backed dollars. Free silver would increase money supply, causing inflation. Inflation would raise crop prices (helping farmers sell) and reduce real debt burden (making debts easier to pay with cheaper dollars). Creditors opposed this for the same reasons."},
+      {id: "q47-5", question: "How did railroad monopolies exploit farmers?", options: ["They helped farmers", "Railroads charged high rates to ship crops, controlled grain storage, and farmers had no alternative transportation", "Farmers owned railroads", "Railroads gave free service"], correctOptionIndex: 1, explanation: "Railroads had monopolies on transportation—farmers couldn't ship crops to market any other way. Railroads charged whatever they wanted, gave discounts to big shippers but not small farmers, controlled grain elevators, and farmers were powerless. A farmer might lose money on crops just paying railroad fees."},
+      {id: "q47-6", question: "What Populist reforms were eventually adopted?", options: ["None were adopted", "Direct election of senators (17th Amendment), graduated income tax (16th Amendment), railroad regulation", "All demands immediately", "Monarchy was restored"], correctOptionIndex: 1, explanation: "Though Populists lost the 1896 election, many of their 'radical' demands were later adopted: direct election of senators (17th Amendment, 1913), graduated income tax (16th Amendment, 1913), government regulation of railroads and banks, initiative and referendum in many states. The Populists lost but their ideas won."},
+      {id: "q47-7", question: "Why did the Populist Party collapse after 1896?", options: ["It achieved all goals", "Fused with Democrats behind Bryan, lost identity; Bryan's defeat demoralized supporters", "It grew stronger", "Farmers became wealthy"], correctOptionIndex: 1, explanation: "The Populist Party made the strategic mistake of fusing with the Democratic Party and endorsing Bryan in 1896 rather than running their own candidate. When Bryan lost, the Populist Party had lost its independent identity and couldn't recover. Many Populists felt betrayed by the fusion strategy that subordinated their broader reform agenda to the single issue of free silver."},
+      {id: "q47-8", question: "What was the Populists' broader significance beyond their specific demands?", options: ["They had no significance", "Showed ordinary Americans could organize politically to challenge corporate power and demand government serve the people", "They supported corporations", "They opposed democracy"], correctOptionIndex: 1, explanation: "The Populists demonstrated that ordinary farmers and workers could organize a political movement challenging corporate power. They articulated a vision where government serves the people, not just the wealthy. Though they failed electorally, they proved political organizing could challenge the plutocracy and inspire future reform movements. Their spirit lives on whenever citizens organize to demand economic justice."},
     ],
   },
 
@@ -5540,8 +7524,102 @@ The fight for women's rights has begun. It will take decades, face setbacks, div
     story: {
       narrator: "Catherine, age 15, settlement house worker, 1910",
       chapters: [
-        {title: "Muckrakers and Reformers", content: `I'm Catherine, fifteen, volunteering at Hull House settlement house in Chicago. Progressive Era—reformers fighting corruption, poverty, inequality. Muckraking journalists expose problems: Upton Sinclair's "The Jungle" reveals meatpacking horrors; Jacob Riis photographs tenement poverty; Ida Tarbell exposes Standard Oil corruption. Reform movements everywhere: child labor laws, food safety, women's suffrage, direct democracy, trust-busting, conservation.`},
-        {title: "Progressive Presidents", content: `Teddy Roosevelt "trust-busts" monopolies, protects consumers, conserves natural resources. Taft continues but more cautiously. Wilson passes Federal Reserve, antitrust laws, reduces tariffs. Seventeenth Amendment gives direct senator election. Eighteenth Amendment prohibits alcohol. Nineteenth Amendment grants women's suffrage! Progressive Era makes government more responsive, regulates business, protects workers/consumers. But also sees more segregation, imperialism. Mixed legacy.`},
+        {
+          title: "Hull House and the Settlement Movement",
+          content: `I'm Catherine, fifteen years old, and I volunteer at Hull House in Chicago. Hull House is a settlement house founded by Jane Addams in 1889. It's located in a poor immigrant neighborhood where Italian, Polish, Greek, and Russian immigrants live crowded in tenements.
+
+Settlement houses are community centers where reformers live among the poor, offering education, social services, and advocacy. Hull House provides kindergarten for children, English classes for adults, art classes, music lessons, a public kitchen, a playground, and meeting spaces for labor unions and civic groups.
+
+I teach English to immigrant women twice a week. Many are factory workers who speak no English. Learning the language helps them navigate American society, understand their rights, and help their children with school.
+
+Jane Addams herself lives at Hull House. She's one of the most influential reformers in America—advocating for child labor laws, factory safety regulations, women's suffrage, and peace. She sees Hull House not as charity but as a way to address systemic problems. We don't just help individuals—we work to change the laws and conditions that create poverty.
+
+The Progressive Era, roughly 1900-1920, is a time of reform movements addressing problems created by industrialization, urbanization, and corporate power. Progressives believe government should actively regulate business, protect workers and consumers, and promote social welfare.
+
+We're fighting multiple battles: against child labor, for food and drug safety, for workers' rights, for women's suffrage, for direct democracy, against political corruption, for conservation of natural resources. It's an exciting, hopeful time—we believe we can make America more just and democratic.`,
+        },
+        {
+          title: "The Muckrakers Expose Corruption",
+          content: `Progressive reform is powered by investigative journalists called "muckrakers"—President Theodore Roosevelt's term for journalists who "rake the muck" of society's problems.
+
+Ida Tarbell writes "The History of the Standard Oil Company" (1904), exposing how John D. Rockefeller built his monopoly through ruthless, often illegal tactics. Her detailed reporting turns public opinion against corporate monopolies.
+
+Lincoln Steffens writes "The Shame of the Cities" (1904), exposing political corruption in city governments. He shows how political machines like New York's Tammany Hall trade political favors for money and votes.
+
+Upton Sinclair writes "The Jungle" (1906), a novel about meatpacking workers in Chicago. He intends to expose worker exploitation, but readers are horrified by his descriptions of unsanitary meat processing:
+
+"There was never the least attention paid to what was cut up for sausage... There would be meat stored in great piles in rooms; and the water from leaky roofs would drip over it, and thousands of rats would race about on it... A man could run his hand over these piles of meat and sweep off handfuls of the dried dung of rats... This is no fairy story and no joke; the meat would be shoveled into carts, and the man who did the shoveling would not trouble to lift out a rat even when he saw one—there were things that went into the sausage in comparison with which a poisoned rat was a tidbit."
+
+Public outrage forces Congress to act. The Pure Food and Drug Act and the Meat Inspection Act pass in 1906, establishing federal regulation of food and drugs. Sinclair later says, "I aimed at the public's heart, and by accident I hit it in the stomach."
+
+Jacob Riis photographs tenement life in "How the Other Half Lives" (1890), showing middle-class Americans the poverty, overcrowding, and suffering in immigrant neighborhoods.
+
+These muckrakers don't just report problems—they create political pressure for reform. They prove that investigative journalism can drive social change.`,
+        },
+        {
+          title: "Theodore Roosevelt and the Square Deal",
+          content: `Theodore Roosevelt becomes president in 1901 when McKinley is assassinated. At 42, he's the youngest president in history. He's energetic, charismatic, and committed to Progressive reform.
+
+Roosevelt's "Square Deal" promises fairness for workers, consumers, and businesses. He believes government should be an umpire ensuring fair play, not favoring either capital or labor.
+
+Roosevelt is the "trust-buster," using antitrust laws to break up monopolies. In 1902, he sues Northern Securities Company, a railroad trust. The Supreme Court orders it dissolved. Roosevelt brings 44 more antitrust suits, targeting Standard Oil, American Tobacco, and other monopolies. He's not against big business, just against abusive monopolies.
+
+The 1902 coal strike tests Roosevelt's principles. 140,000 miners strike for better wages and shorter hours. Mine owners refuse to negotiate. As winter approaches, coal shortages loom. Previous presidents would have sent troops to break the strike. Roosevelt threatens to seize the mines unless owners negotiate. Owners back down. The strike is settled with modest gains for miners.
+
+Roosevelt champions conservation. He's an outdoorsman who loves nature. He establishes national forests, national parks, wildlife refuges, and national monuments—preserving millions of acres from development. He creates the U.S. Forest Service under Gifford Pinchot.
+
+Roosevelt expands federal power dramatically. Before him, the federal government rarely intervened in the economy. After him, government regulation of business is accepted practice. He proves government can be a force for reform, not just protecting the wealthy.`,
+        },
+        {
+          title: "Woodrow Wilson and the New Freedom",
+          content: `Woodrow Wilson wins the presidency in 1912, running as a Progressive Democrat against Theodore Roosevelt (running as a Progressive/Bull Moose candidate) and conservative Republican William Howard Taft.
+
+Wilson's "New Freedom" program aims to restore competition by breaking up monopolies rather than just regulating them. He achieves major reforms:
+
+The Underwood Tariff (1913) reduces import taxes, lowering consumer prices and reducing corporate protection from foreign competition. To replace lost revenue, it establishes the first permanent federal income tax under the new Sixteenth Amendment.
+
+The Federal Reserve Act (1913) creates a national banking system to regulate money supply, provide stability, and prevent financial panics. It's the most significant banking reform in American history.
+
+The Clayton Antitrust Act (1914) strengthens antitrust laws, prohibiting specific practices like price discrimination and interlocking directorates. Importantly, it exempts labor unions from antitrust prosecution, allowing workers to organize and strike.
+
+The Federal Trade Commission (1914) is created to investigate and prevent unfair business practices.
+
+Wilson also supports the Seventeenth Amendment (1913), providing for direct election of senators by voters rather than state legislatures. This reduces corporate control over Senate elections.
+
+Child labor laws pass, though the Supreme Court strikes them down. Wilson supports an eight-hour workday for railroad workers. He appoints Louis Brandeis, a Progressive reformer, to the Supreme Court—the first Jewish justice.
+
+These reforms expand federal power and regulation dramatically. The Progressive Era establishes the principle that government should actively regulate the economy to protect public interest, not just let markets operate unchecked.`,
+        },
+        {
+          title: "The Progressive Legacy—Promise and Limits",
+          content: `By 1920, I'm 25 years old and still involved in reform work. The Progressive Era has transformed America in remarkable ways.
+
+We've achieved major reforms:
+• Pure Food and Drug Act protects consumers
+• Antitrust laws limit monopoly power
+• Conservation preserves natural resources
+• Income tax and direct election of senators make government more democratic
+• Labor laws improve working conditions (though child labor and long hours persist)
+• Women won the vote with the Nineteenth Amendment (1920)
+
+But the Progressive Era has serious limitations and contradictions.
+
+Racial injustice: Most Progressives ignore or actively support segregation. Woodrow Wilson segregates federal government offices. No major Progressive reforms address racial discrimination. Black Americans are excluded from most Progressive gains.
+
+Imperialism: Progressives who support democracy at home support empire abroad. The U.S. conquers the Philippines, intervenes in Latin America, imposes American power globally. Progressive presidents like Roosevelt and Wilson are imperialists.
+
+Prohibition: The Eighteenth Amendment (1919) bans alcohol, a reform pushed by Progressives concerned about alcoholism and family violence. But Prohibition creates organized crime, doesn't stop drinking, and violates personal freedom. It will be repealed in 1933.
+
+Limited labor gains: While some reforms help workers, fundamental power imbalances remain. Most workers still lack unions, work long hours for low pay, face dangerous conditions.
+
+Still, the Progressive Era proves government can be a force for reform. It establishes that democracy requires active government protecting ordinary citizens against powerful economic interests. It shows that organized citizens demanding change can achieve it.
+
+I think about my years at Hull House, teaching English to immigrant women, fighting for child labor laws, supporting suffrage. We didn't create a perfect society, but we made it more just. We proved that "progress" isn't automatic—it requires struggle, organization, and political will.
+
+The Progressive Era's fundamental insight is that democracy and unregulated capitalism are incompatible. If corporations have unlimited power, they'll corrupt politics, exploit workers, and create massive inequality. Only active government regulation and social reforms can make capitalism compatible with democracy and human dignity.
+
+That lesson remains relevant. Every generation faces the question: will government serve the powerful few or the democratic many? The Progressives showed that the answer depends on whether ordinary citizens organize and demand reform. Our legacy is proof that change is possible when people fight for it.`,
+        },
       ],
     },
     flashcards: [
@@ -5558,6 +7636,11 @@ The fight for women's rights has begun. It will take decades, face setbacks, div
       {id: "q48-1", question: "What was Progressive Era?", options: ["Period of no change", "Period of political/social reform movements 1900-1920", "Colonial period", "Medieval times"], correctOptionIndex: 1, explanation: "Progressive Era saw reforms attacking corruption, regulating business, protecting consumers/workers, expanding democracy."},
       {id: "q48-2", question: "Who were muckrakers?", options: ["Farmers", "Journalists exposing corruption and social problems", "Politicians", "Factory owners"], correctOptionIndex: 1, explanation: "Muckrakers were investigative journalists exposing corruption, unsafe conditions, and social problems."},
       {id: "q48-3", question: "What was Nineteenth Amendment?", options: ["Banned alcohol", "Granted women's suffrage", "Direct senator election", "Income tax"], correctOptionIndex: 1, explanation: "Nineteenth Amendment (1920) granted women the right to vote after decades of struggle."},
+      {id: "q48-4", question: "What Progressive Era constitutional amendments expanded democracy?", options: ["None passed", "16th (income tax), 17th (direct senate election), 18th (Prohibition), 19th (women's suffrage)", "Only one amendment", "Amendments reduced democracy"], correctOptionIndex: 1, explanation: "Four constitutional amendments passed during the Progressive Era: 16th allowed graduated income tax (1913), 17th required direct election of senators by voters rather than state legislatures (1913), 18th prohibited alcohol (1919), and 19th granted women's suffrage (1920). These fundamentally changed American democracy."},
+      {id: "q48-5", question: "What were settlement houses like Hull House?", options: ["Luxury hotels", "Community centers in immigrant neighborhoods providing education, childcare, and social services", "Government offices", "Factories"], correctOptionIndex: 1, explanation: "Settlement houses were community centers established by middle-class reformers in poor immigrant neighborhoods. Jane Addams's Hull House in Chicago provided English classes, childcare, healthcare, job training, and cultural programs. Reformers lived there, learning about poverty firsthand and advocating for social change."},
+      {id: "q48-6", question: "How did Progressives try to break political machines' power?", options: ["They supported machines", "Direct primaries, initiative, referendum, recall, secret ballot, nonpartisan city commissions", "Gave machines more power", "Did nothing"], correctOptionIndex: 1, explanation: "Progressives attacked political machines through reforms: direct primaries (voters choose candidates, not bosses), initiative/referendum (voters propose/approve laws directly), recall (voters remove officials), secret ballot (preventing vote buying), and nonpartisan city commissions (professional management). These aimed to reduce corruption and increase citizen participation."},
+      {id: "q48-7", question: "What were the Progressive Era's major limitations?", options: ["It had no limitations", "Most Progressives ignored or supported racial segregation, imperialism continued, and fundamental economic inequality remained", "It achieved complete equality", "Only helped the wealthy"], correctOptionIndex: 1, explanation: "Despite reforms, the Progressive Era had major blind spots: most Progressives supported or ignored racial segregation (Wilson segregated federal offices), Progressive presidents pursued imperialism abroad, labor still lacked real power, and wealth inequality remained extreme. The era reformed capitalism but didn't fundamentally change who held power."},
+      {id: "q48-8", question: "What was the Progressive Era's fundamental insight about democracy and capitalism?", options: ["They're always compatible", "Unregulated capitalism corrupts democracy—only active government regulation can balance corporate power", "Government should never regulate business", "Capitalism always creates equality"], correctOptionIndex: 1, explanation: "Progressives recognized that unregulated capitalism concentrates wealth and power, corrupting democracy. If corporations have unlimited power, they'll exploit workers, manipulate politics, and create massive inequality. Democracy requires active government regulating business, protecting workers and consumers, and limiting corporate power. This Progressive insight shaped American politics for the next century."},
     ],
   },
 
@@ -5569,8 +7652,100 @@ The fight for women's rights has begun. It will take decades, face setbacks, div
     story: {
       narrator: "Alice, age 16, suffragist, 1920",
       chapters: [
-        {title: "The Long Fight", content: `I'm Alice, sixteen, celebrating! After 72 years since Seneca Falls, women won the vote! Nineteenth Amendment ratified. Generations of women fought for this: Elizabeth Cady Stanton, Susan B. Anthony, Carrie Chapman Catt, Alice Paul. They endured ridicule, arrest, force-feeding in prison. Used different tactics: some lobbied legislators, others picketed White House, went on hunger strikes. Both approaches necessary. Today we voted for first time!`},
-        {title: "Unfinished Business", content: `Victory sweet but incomplete. Many Black women in South still can't vote due to Jim Crow restrictions. Native Americans not citizens yet. Poor women face poll taxes. Suffrage was crucial fight but not the end. We need equal pay, property rights, educational opportunities, reproductive rights. The vote is a tool for achieving equality, not equality itself. We'll keep fighting. Our daughters will finish what we started.`},
+        {
+          title: "Seneca Falls to Susan B. Anthony",
+          content: `I'm Alice, sixteen years old, and today—August 26, 1920—I watched my mother vote for the first time in her life. The Nineteenth Amendment has been ratified. Women have won the right to vote after 72 years of struggle.
+
+The fight began at Seneca Falls, New York in 1848. Elizabeth Cady Stanton and Lucretia Mott organized the first women's rights convention. Three hundred people attended. They issued the Declaration of Sentiments, modeled on the Declaration of Independence:
+
+"We hold these truths to be self-evident: that all men and women are created equal."
+
+The declaration listed grievances: women couldn't vote, couldn't own property after marriage, couldn't attend college, couldn't enter most professions, had no legal rights to their own children. The convention demanded women's suffrage—the right to vote.
+
+Many supporters of women's rights thought demanding the vote was too radical. Even some women's rights advocates believed women weren't ready for political participation. But Stanton and others insisted voting rights were fundamental to equality.
+
+Susan B. Anthony joined the movement in 1851. She and Stanton became partners, traveling the country giving speeches, organizing conventions, petitioning legislatures. They faced ridicule, rotten eggs thrown at speeches, newspapers calling them unwomanly and dangerous.
+
+In 1872, Anthony voted illegally in Rochester, New York to test whether the Fourteenth Amendment (which made "all persons born or naturalized in the United States" citizens) gave women the right to vote. She was arrested, tried, and fined. The judge wouldn't let her testify in her own defense because she was a woman. She refused to pay the fine.
+
+Anthony and Stanton spent decades fighting for a federal suffrage amendment. They died without seeing victory—Stanton in 1902, Anthony in 1906. But they built a movement that would eventually succeed.`,
+        },
+        {
+          title: "Two Strategies—NAWSA and the NWP",
+          content: `By the early 1900s, the suffrage movement split into two organizations with different strategies.
+
+The National American Woman Suffrage Association (NAWSA), led by Carrie Chapman Catt, pursued a state-by-state strategy. They lobbied state legislatures to grant women voting rights, believing success at the state level would build momentum for a federal amendment. Wyoming granted women's suffrage in 1869, followed by Colorado, Utah, Idaho, and eventually fifteen states by 1914.
+
+NAWSA's approach was moderate and patient. They emphasized that women voters would support reforms like prohibition, child labor laws, and political corruption. They avoided confrontation, worked within the system, and sought to prove women were responsible enough for political participation.
+
+Alice Paul took a different approach. She founded the National Woman's Party (NWP) in 1916. Paul had participated in the British suffrage movement, where women used militant tactics—hunger strikes, property destruction, public protests.
+
+Paul brought those tactics to America. In January 1917, the NWP began picketing the White House—the first group ever to do so. Women called "Silent Sentinels" stood outside the White House holding signs: "Mr. President, How Long Must Women Wait for Liberty?" and "Democracy Should Begin at Home."
+
+When America entered World War I in April 1917, the picketers continued, which outraged many Americans. How could women protest during wartime? The picketers carried signs quoting President Wilson's own words about democracy and self-determination, asking why those principles didn't apply to American women.
+
+Police arrested over 200 picketers for "obstructing traffic." In prison, they were beaten, confined to filthy cells, and force-fed when they went on hunger strikes. Paul herself was force-fed, a brutal procedure where guards held her down and pushed a tube down her throat to pour liquid food into her stomach.
+
+The brutality backfired. Public sympathy turned toward the suffragists. Women who endured imprisonment and force-feeding for the right to vote seemed heroic, not radical.`,
+        },
+        {
+          title: "The Final Push—Wilson Changes His Mind",
+          content: `President Woodrow Wilson initially opposed women's suffrage, saying it was a state issue, not a federal one. But the combination of NAWSA's lobbying, the NWP's protests, and women's contributions to the war effort changed his mind.
+
+During World War I, women took jobs in factories, served as nurses, sold war bonds, and managed farms while men fought overseas. They proved they could handle responsibilities traditionally reserved for men. The war demonstrated that women were full participants in American society who deserved full citizenship rights.
+
+In January 1918, Wilson announced his support for a federal suffrage amendment. He called it a "war measure" necessary for morale and credibility. How could America claim to fight for democracy abroad while denying it to half its citizens at home?
+
+The House of Representatives passed the amendment in January 1918 by exactly the two-thirds majority required. The Senate was harder. Suffragists lobbied intensely. Finally, in June 1919, the Senate passed the amendment.
+
+Then came ratification—thirty-six states (three-fourths of the forty-eight states) needed to approve it. Suffragists organized in every state. Anti-suffragists fought back, arguing women's suffrage would destroy families, lead to moral decay, and give Black women the vote (a racist argument used especially in the South).
+
+The ratification battle went state by state. By August 1920, thirty-five states had ratified. Tennessee was the final state needed. The Tennessee legislature was evenly divided. One young legislator, Harry Burn, planned to vote against ratification. But his mother sent him a letter: "Be a good boy... and vote for suffrage." He switched his vote. Tennessee ratified by one vote.
+
+On August 26, 1920, the Nineteenth Amendment became law: "The right of citizens of the United States to vote shall not be denied or abridged by the United States or by any State on account of sex."`,
+        },
+        {
+          title: "The First Vote",
+          content: `November 2, 1920. The first presidential election where women can vote nationwide. Mother and I go to the polling place together. She's forty-five years old and voting for the first time.
+
+The polling place is crowded. Men who've voted their whole lives stand in line alongside women voting for the first time. Some men are supportive. Others grumble about women in politics. A few make rude comments. Mother ignores them.
+
+When it's Mother's turn, the poll worker hands her a ballot. Her hands shake slightly. She's waited her entire adult life for this moment. She marks her ballot carefully, then drops it in the box.
+
+"I voted," she says, tears in her eyes. "I actually voted."
+
+Later, at home, we talk about the suffragists who made this possible. Elizabeth Cady Stanton, who demanded the vote when it seemed impossible. Susan B. Anthony, who fought for fifty years and died before victory. Carrie Chapman Catt, whose state-by-state strategy built the foundation. Alice Paul, whose militant tactics forced action.
+
+Millions of women—whose names aren't remembered—who attended meetings, signed petitions, gave speeches, marched in parades, endured ridicule and sometimes violence. Women who believed in a principle and fought for it across generations.
+
+Mother tells me about her mother—my grandmother—who attended suffrage meetings in the 1890s. Grandmother died in 1915, five years before victory. "She would have been so happy to see this," Mother says.
+
+The suffrage movement proves that change is possible even when it seems impossible. For 72 years, from Seneca Falls to the Nineteenth Amendment, women fought against entrenched opposition. They faced arguments that women were too emotional, too delicate, too ignorant for politics. They faced laws that treated them as property, not citizens. They endured arrest, imprisonment, and force-feeding.
+
+But they persisted. And they won.`,
+        },
+        {
+          title: "Victory Incomplete",
+          content: `The celebration is joyful but also bittersweet. We've won a crucial victory, but equality is far from achieved.
+
+First, many Black women still can't vote. The Nineteenth Amendment prohibits discrimination "on account of sex," but Southern states use the same Jim Crow tactics against Black women that they use against Black men: poll taxes, literacy tests, grandfather clauses, violence, and intimidation. Black women fought for suffrage too—leaders like Mary Church Terrell and Ida B. Wells worked for both women's rights and civil rights. But they won't fully exercise voting rights until the Civil Rights Movement of the 1960s.
+
+Second, Native American women can't vote because Native Americans aren't citizens. That won't change until the Indian Citizenship Act of 1924.
+
+Third, in some states, poll taxes prevent poor women of all races from voting. These won't be abolished until the Twenty-Fourth Amendment in 1964.
+
+Fourth, winning the vote doesn't mean winning equality. Women still face discrimination in employment, education, property rights, and family law. We can't serve on juries in many states. We're paid less than men for the same work. Professions like law and medicine remain largely closed to us. Married women often can't own property or sign contracts without their husbands' permission.
+
+The suffrage movement itself had significant flaws. Many white suffragists excluded or marginalized Black women. Some used racist arguments, claiming educated white women deserved the vote more than "ignorant" Black men. The movement prioritized gender over race, sometimes collaborating with racist politicians to gain support.
+
+Mother and I talk about this. "The vote is a tool," she says, "not the goal. The goal is full equality—economic, legal, social. We've won the tool. Now we use it to achieve the goal."
+
+I'm sixteen, part of the first generation of American women growing up with the right to vote. I won't take it for granted. I'll vote in every election. I'll use my voice in politics. I'll fight for the further reforms needed to achieve genuine equality.
+
+The suffragists taught me that change requires sustained struggle. They fought for 72 years. Some dedicated their entire lives to a cause they didn't live to see succeed. They believed in a principle—that women are equal citizens entitled to equal rights—and they fought for it despite obstacles.
+
+That principle still requires fighting for. Winning the vote is a milestone, not the destination. Our daughters and granddaughters will continue the work we're starting. Each generation moves closer to genuine equality. The suffragists showed us it's possible. Now it's our turn to continue the fight.`,
+        },
       ],
     },
     flashcards: [
@@ -5587,6 +7762,11 @@ The fight for women's rights has begun. It will take decades, face setbacks, div
       {id: "q49-1", question: "When did women win national suffrage?", options: ["1776", "1920 with Nineteenth Amendment", "1865", "2000"], correctOptionIndex: 1, explanation: "Women won national voting rights in 1920 when Nineteenth Amendment was ratified, 72 years after Seneca Falls."},
       {id: "q49-2", question: "Who were key suffrage leaders?", options: ["Only men", "Stanton, Anthony, Catt, Paul among many women", "Foreign queens", "No leaders"], correctOptionIndex: 1, explanation: "Key leaders included Elizabeth Cady Stanton, Susan B. Anthony, Carrie Chapman Catt, and Alice Paul among many others."},
       {id: "q49-3", question: "Was victory complete?", options: ["Yes, fully equal", "No—many Black women, Native Americans, poor women still couldn't vote", "Women lost the vote", "Only in North"], correctOptionIndex: 1, explanation: "Victory incomplete: Jim Crow kept many Black women from voting, Native Americans weren't citizens, poll taxes blocked poor women."},
+      {id: "q49-4", question: "How long did the suffrage movement last from Seneca Falls to the 19th Amendment?", options: ["5 years", "72 years—women who started the fight died before victory", "1 year", "100 years"], correctOptionIndex: 1, explanation: "From the 1848 Seneca Falls Convention to the 1920 ratification of the 19th Amendment took 72 years. Elizabeth Cady Stanton, Susan B. Anthony, and other pioneers died decades before women won the vote. It was a multi-generational struggle."},
+      {id: "q49-5", question: "What militant tactics did Alice Paul and the National Woman's Party use?", options: ["Only polite letters", "Picketed White House, went on hunger strikes, chained themselves to buildings", "Gave up peacefully", "Used violence"], correctOptionIndex: 1, explanation: "Alice Paul's National Woman's Party used militant tactics: picketing the White House (first group to do so), chaining themselves to buildings, going on hunger strikes in jail where they were force-fed. Their confrontational approach contrasted with NAWSA's moderate strategy but increased pressure on Wilson."},
+      {id: "q49-6", question: "How did World War I help the suffrage cause?", options: ["It didn't affect suffrage", "Women's war work proved their citizenship and made denying the vote hypocritical in a war 'for democracy'", "War ended suffrage movement", "Men opposed suffrage more"], correctOptionIndex: 1, explanation: "During WWI, women worked in factories, served as nurses, sold war bonds, and contributed to the war effort. Wilson asked them to support a war to 'make the world safe for democracy.' Suffragists pointed out the hypocrisy: how could America fight for democracy abroad while denying it to half its citizens at home? Women's patriotic service made opposition to suffrage untenable."},
+      {id: "q49-7", question: "Why did some women oppose women's suffrage?", options: ["All women supported it", "Some believed women's 'sphere' was home/family, that voting would corrupt women's moral purity", "Women were forced to oppose it", "No women opposed it"], correctOptionIndex: 1, explanation: "Some women genuinely opposed suffrage, arguing that women's role was in the home, that voting would expose women to corrupt politics, that women's moral influence depended on staying above politics, or that most women didn't want the vote. These 'antis' showed that women's rights wasn't universally supported even among women."},
+      {id: "q49-8", question: "Which women were still denied voting rights even after the 19th Amendment?", options: ["All women could vote equally", "Black women in Jim Crow South, Native American women (not citizens until 1924), poor women facing poll taxes", "Only foreign women", "Everyone could vote"], correctOptionIndex: 1, explanation: "The 19th Amendment's victory was incomplete. Black women in the South faced the same Jim Crow barriers as Black men—literacy tests, poll taxes, violence. Native American women weren't U.S. citizens until 1924. Asian American women couldn't become citizens. Poor women couldn't afford poll taxes. The amendment said states couldn't deny voting based on sex, but race, citizenship status, and wealth still excluded many women."},
     ],
   },
 
@@ -5600,8 +7780,121 @@ The fight for women's rights has begun. It will take decades, face setbacks, div
     story: {
       narrator: "James, age 18, American soldier in France, 1918",
       chapters: [
-        {title: "America Enters the War", content: `I'm James, eighteen, American soldier in France. War's been raging since 1914. European powers locked in brutal trench warfare. Wilson kept us neutral—"too proud to fight." But German submarine warfare, Zimmermann Telegram (Germany asking Mexico to attack U.S.), pulled us in. April 1917, we declared war. "War to end all wars," Wilson says. "Make world safe for democracy." I'm less idealistic seeing trenches, poison gas, machine guns. Modern warfare is hell.`},
-        {title: "War's End and Wilson's Dream", content: `American troops tip balance. Germany surrenders November 11, 1918. Nine million dead. Wilson proposes Fourteen Points—self-determination for nations, freedom of seas, League of Nations to prevent future wars. But Versailles Treaty harsh on Germany. Senate rejects League of Nations—won't surrender sovereignty. Wilson's dream dies. War didn't end all wars—harsh peace terms plant seeds for World War II. But for now, we're coming home. Changed men returning to changed nation.`},
+        {
+          title: "The Great War Begins",
+          content: `I'm James, eighteen years old, and I'm an American soldier in France. The war has been raging since 1914—four years of brutal combat that has killed millions and devastated Europe.
+
+The war started with the assassination of Archduke Franz Ferdinand of Austria-Hungary in June 1914. Within weeks, Europe's alliance system pulled nation after nation into conflict. Austria-Hungary declared war on Serbia. Russia mobilized to defend Serbia. Germany declared war on Russia and France. Britain entered to defend Belgium. The Ottoman Empire and Bulgaria joined Germany and Austria-Hungary (the Central Powers). Italy, Japan, and eventually many other nations joined Britain, France, and Russia (the Allies).
+
+The war quickly became a stalemate. On the Western Front in France and Belgium, opposing armies dug trenches stretching from the English Channel to Switzerland. For four years, millions of soldiers lived in those trenches—muddy, rat-infested ditches—launching attacks that gained yards of ground at the cost of thousands of lives.
+
+New weapons made the war horrifically deadly. Machine guns mowed down soldiers attacking across no-man's-land. Artillery bombardments destroyed everything. Poison gas—chlorine, phosgene, mustard gas—choked and blinded soldiers. Tanks, airplanes, and submarines changed warfare forever.
+
+President Woodrow Wilson kept America neutral for three years. "Too proud to fight," he said. Many Americans agreed—this was a European war, not our business. But events pulled us in.
+
+Germany's unrestricted submarine warfare targeted all ships, including American vessels. In May 1915, a German U-boat sank the Lusitania, killing 1,198 people including 128 Americans. Wilson protested, and Germany temporarily halted unrestricted submarine warfare.
+
+But in January 1917, Germany resumed unrestricted submarine warfare, hoping to starve Britain before America could intervene. Then British intelligence intercepted the Zimmermann Telegram—a German message to Mexico proposing an alliance. If Mexico attacked the United States, Germany would help Mexico reclaim Texas, New Mexico, and Arizona.
+
+Americans were outraged. On April 6, 1917, Congress declared war on Germany.`,
+        },
+        {
+          title: "Over There—American Doughboys in France",
+          content: `"Over there, over there, Send the word, send the word over there, That the Yanks are coming, the Yanks are coming... And we won't come back till it's over, over there."
+
+George M. Cohan's song captures American enthusiasm as we entered the war. We called ourselves "doughboys"—the nickname for American soldiers. We were confident, enthusiastic, and completely unprepared for what we'd face.
+
+I enlisted in May 1917, trained for six months, and shipped to France in November. The troopship was crowded and uncomfortable. Many soldiers got seasick. But we were excited. We'd heard stories about heroism and glory. We thought war would be an adventure.
+
+Arriving in France shattered our illusions. The trenches are hell on earth. Imagine living in a muddy ditch, four feet wide and six feet deep, for weeks or months. Rats everywhere—some as big as cats, feeding on corpses. Lice infest our clothes and hair. When it rains, trenches flood. We stand in water for days, developing trench foot—a painful condition where feet swell and rot.
+
+The smell is indescribable: mud, sweat, unwashed bodies, latrines, poison gas, and death—the sickly sweet smell of decomposing bodies in no-man's-land that we can't reach to bury.
+
+The noise is constant. Artillery bombardments shake the earth. Shells explode randomly, killing or maiming. We learn to distinguish sounds—the whistle of incoming shells, the different calibers of guns, the rattle of machine gun fire.
+
+Going "over the top"—leaving the trench to attack—is terrifying. Officers blow whistles. We climb ladders and run across no-man's-land toward enemy trenches. Machine guns open fire. Men fall by the dozens. Artillery shells explode. Those who reach the enemy trench fight with rifles, grenades, and bayonets.
+
+Attacks rarely succeed. We might capture a few hundred yards at the cost of thousands of lives. Then the enemy counter-attacks and retakes the ground. The front barely moves, but the casualty lists grow longer every day.`,
+        },
+        {
+          title: "The Tide Turns",
+          content: `By spring 1918, Germany launched a massive offensive, trying to win before American troops arrived in force. They broke through Allied lines, advancing toward Paris. For weeks, the outcome was uncertain. Would Germany win before America could tip the balance?
+
+Then the flood of American troops turned the tide. Over two million American soldiers reached France by late 1918. We were fresh, enthusiastic, and numerous. We lacked the experience of British and French troops who'd fought for four years, but we had energy and numbers.
+
+The Second Battle of the Marne in July 1918 stopped the German advance. American forces played a crucial role. Then came the Hundred Days Offensive—a series of Allied attacks from August to November that pushed German forces back.
+
+I fought in the Meuse-Argonne Offensive, the largest American battle of the war. Over one million American soldiers attacked German positions in eastern France. The fighting was brutal. In 47 days, we suffered 26,000 dead and 95,000 wounded. But we broke through German lines.
+
+By November, Germany's army was collapsing. Food shortages at home caused riots. The German navy mutinied. The Kaiser abdicated. On November 11, 1918, at 11 a.m.—the eleventh hour of the eleventh day of the eleventh month—the armistice took effect. The guns finally fell silent.
+
+I was in the trenches when the ceasefire began. At 10:59, artillery fired. At 11:00, silence. After four years of constant noise, the quiet was eerie. Men cried, cheered, prayed. We'd survived. The war was over.
+
+But the cost was staggering. Over 9 million soldiers dead worldwide. 21 million wounded. Entire generation of young men decimated. 116,000 Americans dead, 204,000 wounded. Families across America mourned sons, brothers, husbands, fathers.
+
+The "war to end all wars," Wilson called it. Standing in those trenches, seeing the devastation, I desperately wanted to believe him.`,
+        },
+        {
+          title: "Wilson's Fourteen Points and the Treaty of Versailles",
+          content: `President Wilson arrived in Paris for the peace conference with an idealistic vision. His Fourteen Points, announced in January 1918, outlined principles for lasting peace:
+
+• No secret treaties—open diplomacy
+• Freedom of the seas
+• Free trade among nations
+• Reduced armaments
+• Adjustment of colonial claims considering native peoples' interests
+• Self-determination for European peoples—letting nations govern themselves
+• League of Nations—an international organization to prevent future wars
+
+European leaders were less idealistic. British Prime Minister David Lloyd George, French Premier Georges Clemenceau, and Italian Prime Minister Vittorio Orlando wanted to punish Germany and protect their own interests.
+
+Clemenceau was particularly harsh. France had been invaded, suffered enormous casualties, and wanted revenge. "America is far away, protected by the ocean," Clemenceau said. "We are next to Germany. We want security."
+
+The Treaty of Versailles, signed June 28, 1919, reflected this tension between Wilson's idealism and European vengeanc e.
+
+The treaty forced Germany to:
+• Accept full responsibility for causing the war (the "war guilt" clause)
+• Pay massive reparations—$33 billion in damages
+• Lose all colonies and 13% of European territory
+• Limit its army to 100,000 men with no tanks, aircraft, or submarines
+• Demilitarize the Rhineland
+
+These terms were intentionally punishing. Germany wasn't even allowed to participate in negotiations—they were presented with the treaty and told to sign it.
+
+The treaty created new nations—Poland, Czechoslovakia, Yugoslavia—based on self-determination. But it also created resentments and instabilities that would lead to future conflicts.
+
+Most importantly for Wilson, the treaty established the League of Nations—an international organization where nations could resolve disputes peacefully. Wilson believed the League would correct the treaty's flaws and prevent future wars.
+
+But could he convince the American Senate to accept it?`,
+        },
+        {
+          title: "Coming Home to a Changed Nation",
+          content: `The Senate rejected the Treaty of Versailles and refused to join the League of Nations. Wilson toured the country promoting the treaty, but suffered a stroke that left him partially paralyzed. Without his leadership, the treaty died.
+
+Many senators feared the League would entangle America in foreign conflicts. Article X required members to defend each other against aggression. Senators argued this surrendered American sovereignty to an international body. Americans had just fought a war in Europe. Now we wanted to return to our own affairs.
+
+So America never joined the League of Nations—the organization Wilson created. Without American participation, the League lacked power to prevent future conflicts. Wilson's dream of collective security died.
+
+I returned home to Nebraska in January 1919. My hometown welcomed us with parades and celebrations. But I felt disconnected. Civilians celebrated our victory. We remembered the horror.
+
+I can't explain what I saw to people who weren't there. How do you describe watching friends die? Living in trenches? Going over the top knowing you might die in the next minute? The war changed us in ways civilians can't understand.
+
+Many veterans struggled to readjust. Some couldn't hold jobs, plagued by what they'd seen. Others drank to forget. We didn't have words like "PTSD" then, but we knew the war had damaged us psychologically, not just physically.
+
+America changed too. The war expanded federal power dramatically. The government drafted soldiers, controlled industries, restricted speech, encouraged conformity. Women worked in factories, earning money and independence. Black Americans migrated north seeking industrial jobs, beginning the Great Migration. The war accelerated social changes already underway.
+
+Looking back, I see the war's failures. It didn't end all wars—it planted seeds for World War II. The harsh treaty terms created German resentment that Hitler would exploit. The League failed without American participation. Millions died for territorial gains that lasted barely twenty years.
+
+But the war also showed American power on the world stage. We helped defeat Germany. We proposed principles for international peace. We demonstrated that oceans no longer isolated us from world affairs. America emerged from World War I as a major world power, though we didn't fully accept that role until World War II forced us to.
+
+I'm twenty-one now, a veteran of the Great War. I survived when many didn't. I saw the worst humanity can do—industrial slaughter in muddy trenches. I also saw courage, sacrifice, and solidarity among soldiers who protected each other.
+
+The war taught me that peace isn't natural or automatic. It requires work, wisdom, and willingness to address conflicts before they explode into violence. Wilson understood this. His Fourteen Points and League of Nations represented humanity's hope to prevent future wars through cooperation rather than force.
+
+We failed his vision. The League collapsed. Another world war came. But the dream didn't die. After World War II, we'd try again with the United Nations. Maybe someday we'll learn to resolve conflicts without sending young men to die in trenches.
+
+For now, I'm home, trying to build a normal life, carrying memories I'll never escape. The Great War is over. But for those of us who fought it, the war will never truly end.`,
+        },
       ],
     },
     flashcards: [
@@ -5618,6 +7911,11 @@ The fight for women's rights has begun. It will take decades, face setbacks, div
       {id: "q50-1", question: "Why did America enter WWI?", options: ["For fun", "German submarine warfare and Zimmermann Telegram", "Britain forced us", "No reason"], correctOptionIndex: 1, explanation: "America entered WWI due to unrestricted German submarine warfare and Zimmermann Telegram proposing German-Mexican alliance against U.S."},
       {id: "q50-2", question: "What were Wilson's Fourteen Points?", options: ["Math problems", "Peace plan including self-determination and League of Nations", "Battle strategies", "Economic policies"], correctOptionIndex: 1, explanation: "Fourteen Points were Wilson's idealistic peace plan including national self-determination, open diplomacy, and League of Nations."},
       {id: "q50-3", question: "Did U.S. join League of Nations?", options: ["Yes", "No—Senate rejected it, fearing loss of sovereignty", "Partially", "League never formed"], correctOptionIndex: 1, explanation: "Despite Wilson creating the League of Nations concept, U.S. Senate rejected membership, fearing it would compromise American sovereignty."},
+      {id: "q50-4", question: "When did World War I end?", options: ["1776", "November 11, 1918—Armistice Day", "1920", "1945"], correctOptionIndex: 1, explanation: "WWI fighting ended on November 11, 1918, now commemorated as Armistice Day (Veterans Day in U.S.). The war lasted from 1914 to 1918, killing millions."},
+      {id: "q50-5", question: "What was trench warfare like in WWI?", options: ["Comfortable and safe", "Brutal combat from fortified trenches causing massive casualties, mud, disease, stalemate", "Quick victories", "No casualties"], correctOptionIndex: 1, explanation: "Trench warfare defined WWI on the Western Front. Soldiers lived in muddy, disease-ridden trenches, facing machine guns, poison gas, and artillery. Advances measured in yards cost thousands of lives in brutal stalemate."},
+      {id: "q50-6", question: "How did the Treaty of Versailles treat Germany?", options: ["Very generously", "Harshly—blamed Germany, imposed massive reparations, took territory", "Fairly and equally", "Gave Germany more land"], correctOptionIndex: 1, explanation: "Treaty of Versailles placed full war blame on Germany, imposed crippling financial reparations, took territory, and limited military. Many historians argue this harsh treatment contributed to German resentment and rise of Hitler, leading to WWII."},
+      {id: "q50-7", question: "What were the main causes that started World War I?", options: ["Single cause only", "Complex web: alliance system, militarism, imperialism, nationalism, assassination of Archduke Franz Ferdinand", "Just an accident", "No clear causes"], correctOptionIndex: 1, explanation: "WWI resulted from multiple factors: rigid alliance system (one attack triggered chain reaction), arms race/militarism, competition for colonies (imperialism), intense nationalism, and the assassination of Archduke Franz Ferdinand in Sarajevo in June 1914 as the spark."},
+      {id: "q50-8", question: "What was the impact of American entry into WWI?", options: ["Made no difference", "Fresh troops, resources, and industrial power helped tip balance to Allies, leading to German defeat", "America lost the war", "War ended before Americans arrived"], correctOptionIndex: 1, explanation: "American entry in 1917 proved decisive. Fresh American troops (2 million deployed), vast industrial resources, financial support, and boosted Allied morale helped break the stalemate. By 1918, Germany faced overwhelming force and sued for peace, ending the war."},
     ],
   },
 ];
