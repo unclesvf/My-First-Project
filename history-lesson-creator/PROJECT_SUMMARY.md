@@ -1,8 +1,8 @@
-# History Lesson Creator - Project Summary
+# History for Homeschoolers - Project Summary
 
 ## ✅ Project Status: COMPLETE
 
-The History Lesson Creator application has been successfully built and is ready to use!
+The History for Homeschoolers application has been successfully built and is ready to use!
 
 ## 🚀 How to Run
 
@@ -192,6 +192,6 @@ Potential additions you could make:
 
 ## 🎉 Success!
 
-The History Lesson Creator is fully functional and ready for use. Students can now explore American history through an engaging, interactive experience!
+The History for Homeschoolers is fully functional and ready for use. Students can now explore American history through an engaging, interactive experience!
 
 **Enjoy learning history! 📚✨**

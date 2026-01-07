@@ -1,4 +1,4 @@
-# Final Session Summary - History Lesson Creator
+# Final Session Summary - History for Homeschoolers
 
 ## ✅ COMPLETE & WORKING APPLICATION
 
@@ -113,7 +113,7 @@ history-lesson-creator/
 Start new Claude Code conversation with:
 
 ```
-"Continue History Lesson Creator project. Generate lessons 7-22 following the same quality and format as lessons 1-6.
+"Continue History for Homeschoolers project. Generate lessons 7-22 following the same quality and format as lessons 1-6.
 
 Project location: C:\Users\scott\My-First-Project\My-First-Project\history-lesson-creator\
 

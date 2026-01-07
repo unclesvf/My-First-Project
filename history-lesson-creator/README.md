@@ -1,4 +1,4 @@
-# History Lesson Creator
+# History for Homeschoolers
 
 An engaging, interactive history lesson application for 7th graders, featuring immersive first-person stories, interactive flashcards, and knowledge-testing quizzes.
 
@@ -49,7 +49,7 @@ npm start
 ## Project Structure
 
 ```
-history-lesson-creator/
+history-for-homeschoolers/
 ├── app/                      # Next.js App Router pages
 │   ├── lesson/[id]/         # Dynamic lesson pages
 │   ├── globals.css          # Global styles

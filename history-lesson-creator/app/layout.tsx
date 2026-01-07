@@ -17,7 +17,7 @@ const merriweather = Merriweather({
 });
 
 export const metadata: Metadata = {
-  title: "History Lesson Creator - American History for 7th Grade",
+  title: "History for Homeschoolers - American History for 7th Grade",
   description: "Interactive history lessons featuring immersive stories, flashcards, and quizzes",
 };
 

@@ -1,4 +1,4 @@
-# History Lesson Creator - Progress Status
+# History for Homeschoolers - Progress Status
 
 ## ✅ PHASE 1 COMPLETE: All 50 Lessons Generated
 
