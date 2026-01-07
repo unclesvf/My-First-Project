@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 import { motion } from "framer-motion";
 import { ChevronLeft, ChevronRight, Shuffle, RotateCcw } from "lucide-react";
 import { Flashcard } from "@/lib/types";
@@ -15,19 +15,19 @@ export default function FlashcardDeck({ flashcards }: FlashcardDeckProps) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isFlipped, setIsFlipped] = useState(false);
 
-  const goToNext = () => {
+  const goToNext = useCallback(() => {
     if (currentIndex < cards.length - 1) {
       setIsFlipped(false);
       setCurrentIndex(currentIndex + 1);
     }
-  };
+  }, [currentIndex, cards.length]);
 
-  const goToPrevious = () => {
+  const goToPrevious = useCallback(() => {
     if (currentIndex > 0) {
       setIsFlipped(false);
       setCurrentIndex(currentIndex - 1);
     }
-  };
+  }, [currentIndex]);
 
   useEffect(() => {
     const handleKeyPress = (e: KeyboardEvent) => {

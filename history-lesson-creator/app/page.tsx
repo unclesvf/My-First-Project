@@ -15,7 +15,7 @@ export default function Home() {
           {/* Sponsor Banner */}
           <div className="mb-8 text-center">
             <p className="text-lg text-gray-600 font-medium">
-              Brought to you by Uncle's Value Farm.
+              Brought to you by Uncle&apos;s Value Farm.
             </p>
           </div>
 
