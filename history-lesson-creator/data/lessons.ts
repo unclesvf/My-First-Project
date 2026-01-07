@@ -264,6 +264,16 @@ That same year, a Dutch ship arrived carrying about twenty Africans. They were s
 
 Now, as I near the end of my seven years of service, I look at Jamestown with mixed feelings. We survived the impossible. We created a permanent English colony in America. But at what cost? So many died. We took land from the Powhatans. And I fear the seeds of slavery we've planted will bear bitter fruit.`,
         },
+        {
+          title: "Freedom's Promise and Price",
+          content: `Today I am twenty-one years old and a free man. My seven years of indenture are complete. Master Thompson gave me my freedom dues: fifty acres of land, tools, seed corn, and two sets of clothes. I own nothing else, but I own myself, and that means everything.
+
+I'm building a small cabin on my land, about ten miles upriver from Jamestown. The soil is good for tobacco, and if I work hard, I might prosper. Some former servants have become successful planters themselves, even serving in the House of Burgesses. In Virginia, a man can rise through his own labor—a chance I'd never have had in England.
+
+Yet I see troubling changes. More Africans arrive each year, and planters increasingly prefer enslaved workers over indentured servants. Enslaved people can never earn freedom like I did. Their children are born into bondage. The Virginia Assembly passes laws making this slavery permanent and hereditary. I fear we're creating a society built on permanent injustice.
+
+As I plant my first tobacco crop, I think about Jamestown's legacy. We proved English people could survive in America. We established representative government. We found economic success. But we also displaced the Powhatans, suffered terrible loss, and embraced slavery. Our colony is both a triumph and a tragedy—a pattern that will follow America for centuries to come. I'm free now, but I wonder: what kind of freedom are we building here?`,
+        },
       ],
     },
     flashcards: [
@@ -467,6 +477,16 @@ Despite everything the English had done to him, Squanto chose to help us. He tau
 
 We made a peace treaty with Massasoit that lasted over fifty years. In autumn of 1621, after our first successful harvest, we held a feast to celebrate. Massasoit and ninety of his men joined us for three days of eating and thanksgiving. This feast became the memory we now call the First Thanksgiving, though we didn't call it that then.`,
         },
+        {
+          title: "A New Beginning",
+          content: `I am eighteen now, and Plymouth is a real town. We have sturdy houses, productive fields, and enough food stored for winter. More ships bring new settlers each year. We're no longer desperately clinging to survival—we're building a permanent community.
+
+Father says the Mayflower Compact was our colony's most important achievement. Not the houses we built or the crops we grew, but that agreement to govern ourselves by common consent. It proved that people could create their own government without a king commanding them. Other colonies have noticed, and some have followed our example.
+
+Yet I cannot forget the price we paid. Mother's grave is in our hillside cemetery along with fifty others from that first winter. Squanto died two years ago from fever, still helping us negotiate with other tribes. His grave is here too. Sometimes I wonder if we had the right to take this land, even with Massasoit's blessing.
+
+The Wampanoag helped us survive, but already I see English settlements pushing further inland, taking more land. Our children will inherit a world where we English grow stronger and the native peoples grow weaker. I pray this won't end in bloodshed, but I fear my prayers may go unanswered. We came seeking freedom to worship as we chose, and we found it. But what freedom have we taken from others? These questions haunt me even as I give thanks for our survival.`,
+        },
       ],
     },
     flashcards: [
@@ -651,6 +671,16 @@ Then came Anne Hutchinson. She held Bible study meetings in her home where she q
 They put her on trial. I watched from the back of the meetinghouse as she defended herself brilliantly, using Scripture to answer every charge. But it didn't matter. They banished her too. She went to Rhode Island, and later to New York, where she was killed in a raid. Many said it was God's judgment, but I wonder if God really punishes people for thinking differently.`,
         },
         {
+          title: "Sundays and Scrutiny",
+          content: `Living in our "city upon a hill" means constant watchfulness—of ourselves and our neighbors. Last Sunday, the Goodman family was fined for their son laughing too loudly during services. Father says frivolity has no place in worship, but sometimes I wonder if God truly frowns upon a child's joy.
+
+Our Sabbath begins Saturday evening at sunset and continues until Sunday sunset. We cannot cook, travel, play, or work. We attend two long services, each lasting three hours or more. Father preaches about sin and salvation while the congregation sits on hard benches in the unheated meetinghouse. In winter, my fingers grow numb holding my Bible.
+
+The tithing man walks up and down the aisles with a long pole. One end has a feather to tickle awake drowsy women; the other end has a hard knob to rap the heads of sleeping men. I've felt that knob twice, and it hurts far worse than the shame.
+
+We must dress modestly always—no bright colors, no lace, no jewelry. Mother wears only gray and brown. When a woman from England visited wearing a purple ribbon, the magistrates made her remove it publicly. They said such vanity invites the Devil's attention. I see how people's eyes follow anyone who seems different, marking them for correction.`,
+        },
+        {
           title: "The Puritan Way of Life",
           content: `Our colony thrived despite these controversies. We built towns around meetinghouses and common greens. Education mattered deeply to us—every town with 50 families had to hire a schoolmaster. In 1636, we founded Harvard College to train ministers.
 
@@ -659,6 +689,16 @@ We established a covenant community where church members could vote and hold off
 We created laws based on the Bible, our "Puritan ethic" of hard work, thrift, and moral living. We wore plain clothes, avoided frivolity, and worked six days a week. Sunday was the Sabbath—a day of rest and worship where no work was permitted.
 
 By 1640, about 20,000 colonists lived in Massachusetts Bay. We were the largest and most powerful New England colony. But I've learned that building a "city upon a hill" is harder than it sounds. How do you create a perfect society when people disagree about what perfection means?`,
+        },
+        {
+          title: "Questions Without Answers",
+          content: `Now at seventeen, I've watched our colony grow from a holy experiment into something more complex. We banished Roger Williams and Anne Hutchinson for their beliefs, yet we ourselves fled England to escape religious persecution. Father says this is different—we enforce God's true will—but the contradiction troubles me.
+
+I've seen Winthrop's vision of charity and community produce remarkable things. When families struggle, neighbors help with barn-raisings and harvest. When sickness strikes, we care for each other. Our schools ensure even common children can read Scripture. These are noble achievements that spring from our shared covenant.
+
+Yet I've also seen how our certainty can become cruelty. We whip Quakers and drive them from town. We execute those we suspect of witchcraft. We take Native lands while calling ourselves righteous. The gap between our ideals and our actions weighs upon my conscience.
+
+Father tells me doubt is the Devil's whisper, but I believe these questions matter. Perhaps a "city upon a hill" isn't about perfection—it's about striving, failing, and learning. The world watches us not to copy us exactly, but to learn from both our successes and our mistakes. That legacy may be more valuable than the perfect society we sought to build.`,
         },
       ],
     },
@@ -844,6 +884,16 @@ Penn did something remarkable: he insisted on paying the Delaware Indians fairly
 Uncle writes that Pennsylvania attracts people from everywhere: English Quakers, German Lutherans, Scotch-Irish Presbyterians, Welsh Baptists. Like New York, it's a place where different people live together. The Middle Colonies are becoming known as the "bread basket" because we grow so much wheat and grain.`,
         },
         {
+          title: "Market Day",
+          content: `Tuesday is market day at the dock, and I help Father sell goods from his warehouse. The waterfront buzzes with activity—ships arriving from London, Amsterdam, the Caribbean. Sailors speak in tongues I don't recognize, their skin bearing the sun of distant seas.
+
+At the next stall, a German baker sells dark rye bread. Beyond him, a Jewish merchant displays fine fabrics brought from the Mediterranean. An African freedman trades furs he's collected from inland trappers. A French Huguenot woman sells cheese made from her family's dairy. We all conduct business together without suspicion or hatred.
+
+Yesterday, I attended a wedding between an English Anglican and a Dutch Reformed girl. Some people frowned—mixing religions causes conflict, they say—but most celebrated with the couple. Their children will carry both traditions, adding another thread to our colony's tapestry.
+
+This stands in sharp contrast to what I hear about other colonies. In Massachusetts, they hang Quakers and banish anyone who disagrees with their church. In Virginia, only the Church of England is permitted. But here, on any given Sunday, you can hear church bells from a dozen different congregations, each worshipping God in their own way. Father calls this our greatest achievement.`,
+        },
+        {
           title: "A Different Kind of Colony",
           content: `The Middle Colonies are different from New England and the South. In New England, the Puritans control everything—religion, government, daily life. They don't tolerate other beliefs. In Virginia and the South, wealthy plantation owners dominate, and slavery is growing.
 
@@ -852,6 +902,16 @@ But here in the middle, we have more freedom and more variety. We don't have one
 Our economies are diverse too. New York has trade and shipping. Pennsylvania has farming and crafts. We export wheat, flour, bread—earning us the nickname "bread basket colonies." We also have lumber, furs, and iron. Our ports are busy with ships from around the world.
 
 Father says the Middle Colonies represent America's future: a place where people from different backgrounds come together, where religious tolerance is valued, where trade and commerce create opportunity. I think he might be right. This diversity—people, religions, ideas—makes us strong and creative. We're building something new here, something the world hasn't seen before.`,
+        },
+        {
+          title: "The Price of Tolerance",
+          content: `Not everyone celebrates our diversity. Some ministers warn that tolerating false religions invites God's wrath. When a Catholic family moved onto our street, neighbors muttered about popish plots and foreign loyalties. I heard an English merchant complain that too many languages confuse commerce and divide communities.
+
+Even William Penn's experiment in Pennsylvania faces challenges. Some English settlers resent his treaties with Indians, wanting to simply take the land. Penn's own Quaker principles—refusing to swear oaths or support military defense—create tensions with the English Crown. How can a colony survive without defending itself?
+
+Yet for all its imperfections, religious tolerance has brought us prosperity. While other colonies fracture over religious disputes, we focus on trade and growth. Skilled craftsmen from across Europe choose the Middle Colonies because they can worship freely and work without persecution. Our diversity attracts talent.
+
+I'm learning that tolerance isn't just kindness—it's practical wisdom. When people feel safe and valued, they contribute their best. They invest, build, and create. Perhaps Father is right: the Middle Colonies are showing America what it could become—not a place of one truth enforced by law, but a marketplace of ideas where many truths coexist. It's messy and sometimes uncomfortable, but it's also vibrant and free.`,
         },
       ],
     },
@@ -1058,6 +1118,16 @@ But Father reminds me that slavery is a choice, not inevitable. The Northern col
 
 I'm only fourteen, but I understand that I'm witnessing something terrible—the creation of a system that will divide our nation. I wonder if future generations will judge us harshly for what we allowed to happen, for what we didn't stop when we could have.`,
         },
+        {
+          title: "Resistance and Humanity",
+          content: `Last week, three enslaved people escaped from Randolph's plantation. They disappeared into the forest, heading north. Randolph hired slave catchers with dogs to track them. Two were caught and whipped publicly as a warning. The third—a young man named Samuel—was never found. I hope he made it to freedom.
+
+I've seen small acts of resistance everywhere once I started looking. Enslaved workers slow their pace when overseers aren't watching. They break tools "accidentally." They sing songs with hidden meanings about freedom and deliverance. One woman Father knows keeps a small garden where she grows African plants from seeds she somehow preserved across the ocean. These small acts preserve their humanity against a system designed to deny it.
+
+At church, our minister preaches that slavery is God's will, quoting Bible passages about servants obeying masters. But Father showed me other passages about treating others as you'd want to be treated, about freedom and justice. "The Bible can be twisted to justify anything," he said. "You have to choose what kind of person you'll be."
+
+Our family will never buy enslaved workers. We'll stay small farmers and do our own labor. It's not enough—we should speak out more boldly—but it's something. Father says every person must decide whether to participate in evil or resist it, even in small ways. I'm choosing resistance. Someday, I hope this terrible institution will end, though I fear it may take something catastrophic to uproot what we've planted so deeply.`,
+        },
       ],
     },
     flashcards: [
@@ -1260,6 +1330,16 @@ The survivors were sold at auction. Families were separated. Children torn from 
 That night I couldn't sleep. I kept thinking about the sugar in our tea, the tobacco we ship, the molasses we buy to make rum. Our prosperity—all of colonial prosperity—is built on this system. The triangle connects us all: European manufactured goods, African lives, American resources, Caribbean sugar.
 
 Father says some Quakers in Philadelphia are speaking out against slavery, calling it evil and unchristian. But their voices are few. Most people find slavery too profitable to question. I fear that we're building an economy that will require a terrible reckoning someday. The human cost of our prosperity is too high, but we've built our whole world upon it.`,
+        },
+        {
+          title: "Breaking the Chain",
+          content: `I've made a decision that Father doesn't fully understand. When I inherit the business, I will not trade in goods produced by enslaved labor. No sugar, no tobacco, no rice, no indigo. I know this will cost us profit—these are the most valuable commodities in Atlantic trade.
+
+Father says I'm being impractical, that one merchant's conscience won't change the system. "You'll just make yourself poor while others grow rich," he warns. Perhaps he's right. But I've seen too much to continue participating, even indirectly, in human misery.
+
+I've been reading pamphlets by Quaker abolitionists who argue that slavery violates Christian principles and natural rights. If all men are created equal, as they say, then slavery is an abomination. The economic argument—that colonies need slavery to prosper—is a lie we tell ourselves to avoid confronting moral truth.
+
+I'm young, and my protest is small. But I believe the triangular trade's days are numbered. The contradiction is too great—English colonists who fled oppression now oppress others; Christians who preach love practice cruelty; merchants who prize liberty deny it to hundreds of thousands. Something will have to give. I don't know when or how, but I believe future generations will look back on this system with horror and shame. I want to be able to say I stood against it, even when standing against it cost me.`,
         },
       ],
     },
@@ -1464,6 +1544,16 @@ Most importantly, the Awakening taught colonists to think for themselves and que
 
 As I think back on that day when Whitefield preached, I realize I witnessed a transformation. Not just individual conversions, but a change in how Americans understood authority, community, and individual rights. We were becoming a people who believed in choosing our own paths—in religion, and eventually, in politics too.`,
         },
+        {
+          title: "Finding My Own Voice",
+          content: `Three years have passed since Whitefield's visit, and I'm seventeen now. The Great Awakening changed me in ways I'm still discovering. I joined a New Light congregation that meets in a barn because we left the established church. Here, I've found something remarkable: my voice matters.
+
+Last month, I spoke at our meeting about my faith journey. A woman—me, barely more than a girl—speaking about theology before the congregation! In the old church, only the minister spoke. Women sat silently. But in our revival meetings, the Spirit moves whom it will, and personal testimony carries weight regardless of who speaks.
+
+Mother worries this makes me too bold. "Women should be modest and quiet," she reminds me. But she herself attends these meetings where women pray aloud and share their experiences. The Great Awakening opened a door it cannot now close—once you taste religious freedom and personal authority, you can't pretend you never did.
+
+I see connections Uncle refuses to acknowledge. If I can interpret Scripture for myself, why can't colonists interpret their political rights? If no minister has absolute authority over my soul, does any king have absolute authority over my freedom? The Awakening taught us to value individual conscience over inherited tradition, to question authority, to believe in equality before God. These lessons extend beyond the meetinghouse. I don't know where this new spirit will lead America, but I know we've changed. We've learned to think for ourselves, and that knowledge is powerful and dangerous—a fire that, once lit, cannot easily be extinguished.`,
+        },
       ],
     },
     flashcards: [
@@ -1666,6 +1756,18 @@ King George III issued a Proclamation in 1763 forbidding colonists from settling
 The war also changed how we saw ourselves. Colonial militias had fought alongside British regulars. Sometimes we'd been treated with contempt, called inferior soldiers. But we'd proven ourselves in battle. We'd developed confidence in our own abilities and resentment of British arrogance.
 
 Most importantly, the war removed the French threat. For decades, we colonials had needed British military protection against France. Now that France was gone, we felt less dependent on Britain. Within twelve years of this great victory, we'd be at war with Britain itself. The seeds of revolution were planted in the very soil of our triumph.`,
+        },
+        {
+          title: "The Other Side",
+          content: `I'm older now, twenty-five, with scars from battles and memories that haunt me. Time has given me perspective I lacked as a young militiaman. We celebrated Britain's victory, but I've come to understand what we rarely acknowledged: this was someone else's loss, someone else's catastrophe.
+
+The Native peoples fought alongside France because they understood what we colonists represented—an endless wave of settlers pushing westward, clearing forests, claiming hunting grounds, driving them from ancestral lands. The French had been traders, willing to coexist. We English wanted the land itself, wanted to own it, farm it, transform it. For the tribes, our victory meant their doom.
+
+After the war, I met a Shawnee man named Red Hawk at a trading post. His people had fought against us. "You won your war," he told me, "but you've started another you don't yet understand. We will not simply disappear." His words proved prophetic—Pontiac's Rebellion erupted the year the war ended, as tribes rose up against British expansion.
+
+I think about the French habitants in Canada, now living under British rule, their world turned upside down. I think about the Spanish in Louisiana, suddenly under French control then Spanish again as empires traded territories like merchant goods. And I think about us colonials, victorious but soon to be taxed and restricted, our reward for winning becoming the reason we'd rebel.
+
+The French and Indian War taught me that every victory contains the seeds of future conflict. We fought for land, for empire, for glory. But in winning, we set forces in motion that would transform everything—creating an American identity separate from Britain, pushing Native peoples toward their long resistance, and lighting the fuse of revolution. Sometimes I wonder if anyone truly wins such wars, or if we all just trade one set of problems for another.`,
         },
       ],
     },
@@ -1873,6 +1975,18 @@ At the coffeehouse, men debate what this means. Some say we should accept whatev
 I don't fully understand the coming conflict, but I sense we're at a turning point. We've grown up in these decades of peace and prosperity. We've developed our own ways, our own ideas about liberty and rights. We've built a society that's distinctly American.
 
 Britain sees us as colonists who exist to serve the empire. But we're beginning to see ourselves differently—as people with rights, capable of governing ourselves, with our own destiny to shape. The question is whether Britain and the colonies can reconcile these different visions. From the worried conversations in Father's shop, I suspect the answer is no. A storm is coming, and I fear it will change everything.`,
+        },
+        {
+          title: "Contradictions and Possibilities",
+          content: `Today, I helped Father set type for a pamphlet about natural rights. The author argues that all men are created equal, that they possess inalienable rights to life, liberty, and property. As I arranged the metal letters, I wondered: does "all men" include women like me? Does it include the enslaved man who delivers paper to our shop?
+
+I asked Father this question. He paused, then admitted he didn't know. "The ideas are still forming, Rachel. We're writing principles we haven't fully worked out how to apply." This honesty comforts me more than false certainty would. At least we're asking the questions.
+
+Working in the print shop has shown me the power of ideas. Words on paper can travel across colonies, spark debates, change minds. I've seen pamphlets arguing for religious tolerance, against slavery, for women's education. Not all these ideas win immediately, but they plant seeds that might grow in future generations.
+
+I'm learning that colonial society is full of contradictions. We speak of liberty while practicing slavery. We celebrate equality while denying women political rights. We value education but restrict it by class and race. We build diverse communities but harbor prejudices. These contradictions won't resolve themselves—people will have to fight for change.
+
+I don't know what the coming years will bring. Will we remain British subjects or become something else? Will the ideas about equality and rights expand to include everyone, or will they remain privileges for a few? I'm just a fifteen-year-old printer's daughter, but I'm learning that ordinary people—through their choices, their voices, their work—shape history. Whatever America becomes, it will be built by people like us, one decision, one debate, one printed page at a time. The future is unwritten, and that both terrifies and thrills me.`,
         },
       ],
     },
@@ -2717,6 +2831,18 @@ News of Lexington and Concord is spreading throughout the colonies. Militias are
 We don't yet call it a revolution. We say we're defending our rights as Englishmen. But we're not fools. We've fired on the King's troops. They've fired on us. There's no peaceful resolution now. We're at war.
 
 Ralph Waldo Emerson would later call that first shot at Concord "the shot heard round the world." He's right. What happened here will echo far beyond Massachusetts. We've shown that ordinary people can stand up to the most powerful empire on Earth. Others will follow our example. The American Revolution has begun, and the world will never be the same.`,
+        },
+        {
+          title: "The Weight of Choice",
+          content: `Three days have passed. The reality of what we've done settles over me like a heavy cloak. I attended the funeral of Isaac Davis, our militia captain, killed at North Bridge. His widow wept. His children—four of them, the youngest just a baby—will grow up without a father. War isn't glorious musket fire and brave speeches. It's widows and orphans and empty chairs at dinner tables.
+
+Some neighbors have already fled, loyal to the Crown, unwilling to take up arms against their king. The Hutchinson family left yesterday for Boston and British protection. We grew up together, but now we're on opposite sides of an unbridgeable divide. How did we reach this point where neighbors become enemies?
+
+Father asks me the hardest question: what are we really fighting for? Is it about taxes on tea? The principle of representation? Or something deeper—the right to govern ourselves, to determine our own future? I think it's all of these things and more. We're fighting because we've become Americans without fully realizing it, and Americans cannot be ruled from across an ocean by a government that doesn't listen to them.
+
+But I worry about what we're creating. Will we simply replace British tyranny with our own? Our talk of liberty rings hollow when we keep human beings in slavery. We speak of equality while denying rights to women and the poor. If we win this war—and it's a tremendous "if" against the world's greatest military—will we live up to the principles we claim, or will we create a new version of the same old injustices?
+
+Tonight, I clean my musket and prepare for whatever comes next. The shot heard round the world has been fired, but the story is far from finished. We've started something momentous—a revolution that might change not just our colonies, but human history itself. Or we might fail, be hanged as traitors, and be remembered as foolish rebels who overreached. Everything is uncertain except this: we've crossed the bridge, burned it behind us, and there's no going back. We're all revolutionaries now, for better or worse, and we'll live or die by the choice we made on Lexington Green and Concord Bridge.`,
         },
       ],
     },
