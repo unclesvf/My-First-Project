@@ -80,6 +80,27 @@ export async function updateLastLogin(uid: string): Promise<void> {
 
 // ==================== TEACHER VALIDATION ====================
 
+export async function getUserByEmail(email: string): Promise<(UserProfile & { id: string }) | null> {
+  const usersRef = collection(db, 'users');
+  const q = query(
+    usersRef,
+    where('email', '==', email),
+    limit(1)
+  );
+
+  const querySnapshot = await getDocs(q);
+
+  if (querySnapshot.empty) {
+    return null;
+  }
+
+  const doc = querySnapshot.docs[0];
+  return {
+    id: doc.id,
+    ...doc.data()
+  } as UserProfile & { id: string };
+}
+
 export async function findTeacherByEmail(email: string): Promise<string | null> {
   const usersRef = collection(db, 'users');
   const q = query(
