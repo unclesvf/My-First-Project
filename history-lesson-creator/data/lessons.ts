@@ -8348,7 +8348,7 @@ For now, I'm home, trying to build a normal life, carrying memories I'll never e
     id: "lesson-51",
     title: "The Rough Rider President",
     description: "Theodore Roosevelt and the Progressive Era (1901-1909)",
-    heroImage: "/images/hero-roosevelt.jpg",
+    heroImage: "/images/hero-roosevelt.svg",
     story: {
       narrator: "Theodore Roosevelt, 26th President of the United States, 1901",
       chapters: [
