@@ -467,7 +467,7 @@ That first winter was our starving time. We had little food and inadequate shelt
 
 I helped care for the sick, though I was just a child. I watched Father and the other survivors dig graves in the frozen ground. We buried our dead secretly at night so the native people wouldn't know how weak we'd become. We feared they might attack if they knew half of us had perished.
 
-Only four women survived that winter. My aunt became like a mother to me. We lived in constant fear and grief, wondering if we'd made a terrible mistake in coming to this harsh land. Many times I wished we'd stayed in Holland, even if it meant not being fully English.`,
+Only four or five women survived that winter. My aunt became like a mother to me. We lived in constant fear and grief, wondering if we'd made a terrible mistake in coming to this harsh land. Many times I wished we'd stayed in Holland, even if it meant not being fully English.`,
         },
         {
           title: "Help from Squanto",
@@ -485,7 +485,7 @@ We made a peace treaty with Massasoit that lasted over fifty years. In autumn of
 
 Father says the Mayflower Compact was our colony's most important achievement. Not the houses we built or the crops we grew, but that agreement to govern ourselves by common consent. It proved that people could create their own government without a king commanding them. Other colonies have noticed, and some have followed our example.
 
-Yet I cannot forget the price we paid. Mother's grave is in our hillside cemetery along with fifty others from that first winter. Squanto died two years ago from fever, still helping us negotiate with other tribes. His grave is here too. Sometimes I wonder if we had the right to take this land, even with Massasoit's blessing.
+Yet I cannot forget the price we paid. Mother's grave is in our hillside cemetery along with fifty others from that first winter. Squanto died four years ago from fever, still helping us negotiate with other tribes. His grave is here too. Sometimes I wonder if we had the right to take this land, even with Massasoit's blessing.
 
 The Wampanoag helped us survive, but already I see English settlements pushing further inland, taking more land. Our children will inherit a world where we English grow stronger and the native peoples grow weaker. I pray this won't end in bloodshed, but I fear my prayers may go unanswered. We came seeking freedom to worship as we chose, and we found it. But what freedom have we taken from others? These questions haunt me even as I give thanks for our survival.`,
         },
