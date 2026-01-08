@@ -1,19 +1,44 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { ChevronLeft, ChevronRight, User } from "lucide-react";
+import { ChevronLeft, ChevronRight, User, CheckCircle2 } from "lucide-react";
 import { Chapter } from "@/lib/types";
 import { cn } from "@/lib/utils";
+import { useProgress } from "@/lib/hooks/useProgress";
+import { useAuth } from "@/lib/hooks/useAuth";
 
 interface StoryReaderProps {
   narrator: string;
   chapters: Chapter[];
+  lessonId: string;
 }
 
-export default function StoryReader({ narrator, chapters }: StoryReaderProps) {
+export default function StoryReader({ narrator, chapters, lessonId }: StoryReaderProps) {
+  const { user } = useAuth();
+  const { updateStoryProgress, currentLessonProgress } = useProgress();
   const [currentChapter, setCurrentChapter] = useState(0);
   const [direction, setDirection] = useState(0);
+  const [showCompletionBadge, setShowCompletionBadge] = useState(false);
+
+  // Load saved progress on mount
+  useEffect(() => {
+    if (currentLessonProgress?.storyProgress?.currentChapter !== undefined) {
+      setCurrentChapter(currentLessonProgress.storyProgress.currentChapter);
+    }
+  }, [currentLessonProgress]);
+
+  // Track progress when chapter changes
+  useEffect(() => {
+    if (user && lessonId) {
+      updateStoryProgress(lessonId, currentChapter, chapters.length);
+
+      // Show completion badge if on last chapter
+      if (currentChapter === chapters.length - 1) {
+        setShowCompletionBadge(true);
+      }
+    }
+  }, [currentChapter, user, lessonId, chapters.length]);
 
   const goToNextChapter = () => {
     if (currentChapter < chapters.length - 1) {
@@ -141,6 +166,27 @@ export default function StoryReader({ narrator, chapters }: StoryReaderProps) {
       <div className="mt-4 text-center text-sm text-gray-600">
         Chapter {currentChapter + 1} of {chapters.length}
       </div>
+
+      {/* Completion Badge */}
+      {showCompletionBadge && (
+        <motion.div
+          initial={{ opacity: 0, scale: 0.9, y: 20 }}
+          animate={{ opacity: 1, scale: 1, y: 0 }}
+          className="mt-6 rounded-xl border-2 border-green-200 bg-gradient-to-r from-green-50 to-emerald-50 p-4"
+        >
+          <div className="flex items-center justify-center gap-3">
+            <div className="rounded-full bg-green-500 p-2">
+              <CheckCircle2 className="h-6 w-6 text-white" />
+            </div>
+            <div>
+              <p className="font-semibold text-green-900">Story Complete!</p>
+              <p className="text-sm text-green-700">
+                You've finished reading all {chapters.length} chapters
+              </p>
+            </div>
+          </div>
+        </motion.div>
+      )}
     </div>
   );
 }

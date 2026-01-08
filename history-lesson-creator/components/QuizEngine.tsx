@@ -1,21 +1,29 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Check, X, Trophy, RotateCcw, ChevronRight } from "lucide-react";
+import { Check, X, Trophy, RotateCcw, ChevronRight, Clock, History } from "lucide-react";
 import { QuizQuestion, QuizResult } from "@/lib/types";
 import { cn } from "@/lib/utils";
+import { useProgress } from "@/lib/hooks/useProgress";
+import { useAuth } from "@/lib/hooks/useAuth";
 
 interface QuizEngineProps {
   questions: QuizQuestion[];
+  lessonId: string;
+  courseId: string;
 }
 
-export default function QuizEngine({ questions }: QuizEngineProps) {
+export default function QuizEngine({ questions, lessonId, courseId }: QuizEngineProps) {
+  const { user } = useAuth();
+  const { saveQuizAttempt } = useProgress();
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [selectedOption, setSelectedOption] = useState<number | null>(null);
   const [hasAnswered, setHasAnswered] = useState(false);
   const [results, setResults] = useState<QuizResult[]>([]);
   const [showResults, setShowResults] = useState(false);
+  const [startTime] = useState<number>(Date.now());
+  const [quizSaved, setQuizSaved] = useState(false);
 
   const handleOptionSelect = (optionIndex: number) => {
     if (hasAnswered) return;
@@ -52,10 +60,35 @@ export default function QuizEngine({ questions }: QuizEngineProps) {
     setHasAnswered(false);
     setResults([]);
     setShowResults(false);
+    setQuizSaved(false);
   };
 
   const score = results.filter((r) => r.isCorrect).length;
   const percentage = Math.round((score / questions.length) * 100);
+
+  // Save quiz attempt when results are shown
+  useEffect(() => {
+    if (showResults && !quizSaved && user) {
+      const timeSpent = Math.round((Date.now() - startTime) / 1000); // seconds
+
+      saveQuizAttempt(
+        lessonId,
+        courseId,
+        score,
+        questions.length,
+        percentage,
+        results,
+        timeSpent
+      )
+        .then(() => {
+          setQuizSaved(true);
+          console.log('Quiz attempt saved successfully');
+        })
+        .catch((error) => {
+          console.error('Failed to save quiz attempt:', error);
+        });
+    }
+  }, [showResults, quizSaved, user, lessonId, courseId, score, questions.length, percentage, results, startTime]);
 
   if (showResults) {
     return (
@@ -85,6 +118,12 @@ export default function QuizEngine({ questions }: QuizEngineProps) {
             <p className="text-xl text-gray-700">
               You got {score} out of {questions.length} correct
             </p>
+            {user && quizSaved && (
+              <div className="mt-4 flex items-center justify-center gap-2 text-sm text-gray-600">
+                <Clock className="h-4 w-4" />
+                <span>Completed in {Math.round((Date.now() - startTime) / 1000)} seconds</span>
+              </div>
+            )}
           </div>
 
           <div className="mb-8 space-y-3">
