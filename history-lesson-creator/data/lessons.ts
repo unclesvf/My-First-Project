@@ -698,7 +698,7 @@ By 1640, about 20,000 colonists lived in Massachusetts Bay. We were the largest 
 
 I've seen Winthrop's vision of charity and community produce remarkable things. When families struggle, neighbors help with barn-raisings and harvest. When sickness strikes, we care for each other. Our schools ensure even common children can read Scripture. These are noble achievements that spring from our shared covenant.
 
-Yet I've also seen how our certainty can become cruelty. We whip Quakers and drive them from town. We execute those we suspect of witchcraft. We take Native lands while calling ourselves righteous. The gap between our ideals and our actions weighs upon my conscience.
+Yet I've also seen how our certainty can become cruelty. We banish dissenters and brand those who question our authority. We execute those we suspect of witchcraft. We take Native lands while calling ourselves righteous. The gap between our ideals and our actions weighs upon my conscience.
 
 Father tells me doubt is the Devil's whisper, but I believe these questions matter. Perhaps a "city upon a hill" isn't about perfection—it's about striving, failing, and learning. The world watches us not to copy us exactly, but to learn from both our successes and our mistakes. That legacy may be more valuable than the perfect society we sought to build.`,
         },
