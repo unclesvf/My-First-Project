@@ -244,7 +244,7 @@ We were trapped. We ate our horses first, then rats and mice. When those ran out
 
 I survived by eating anything I could find. I dug for roots outside the fort walls at night, risking attack. I watched friends waste away, their eyes hollow and their bodies skeletal. We buried so many people that we ran out of space in the graveyard.
 
-In May 1610, supply ships arrived. Lord De La Warr brought food, new colonists, and renewed hope. We had been ready to abandon Jamestown and return to England, but these supplies saved the colony. Still, the memory of that winter haunts me even now.`,
+In June 1610, supply ships arrived. Lord De La Warr brought food, new colonists, and renewed hope. We had been ready to abandon Jamestown and return to England, but these supplies saved the colony. Still, the memory of that winter haunts me even now.`,
         },
         {
           title: "Tobacco Saves the Colony",
@@ -268,13 +268,13 @@ Now, as I near the end of my seven years of service, I look at Jamestown with mi
         },
         {
           title: "Freedom's Promise and Price",
-          content: `Today I am twenty-one years old and a free man. My seven years of indenture are complete. Master Thompson gave me my freedom dues: fifty acres of land, tools, seed corn, and two sets of clothes. I own nothing else, but I own myself, and that means everything.
+          content: `Today I am twenty-four years old. Three years ago I completed my seven years of indenture and became a free man. Master Thompson gave me my freedom dues: fifty acres of land, tools, seed corn, and two sets of clothes. I own nothing else, but I own myself, and that means everything.
 
-I'm building a small cabin on my land, about ten miles upriver from Jamestown. The soil is good for tobacco, and if I work hard, I might prosper. Some former servants have become successful planters themselves, even serving in the House of Burgesses. In Virginia, a man can rise through his own labor—a chance I'd never have had in England.
+In these three years since my freedom, I've built a small cabin on my land, about ten miles upriver from Jamestown. The soil is good for tobacco, and through hard work, I've begun to prosper. Some former servants have become successful planters themselves, even serving in our new House of Burgesses, which was established just this year. In Virginia, a man can rise through his own labor—a chance I'd never have had in England.
 
-Yet I see troubling changes. More Africans arrive each year, and planters increasingly prefer enslaved workers over indentured servants. Enslaved people can never earn freedom like I did. Their children are born into bondage. The Virginia Assembly passes laws making this slavery permanent and hereditary. I fear we're creating a society built on permanent injustice.
+Yet I see troubling changes. This year, a ship brought about twenty Africans to our shores. They were sold as workers, and I fear planters will increasingly prefer enslaved laborers over indentured servants like I once was. Unlike me, these Africans may never earn their freedom. Already, I see planters treating African workers differently than they treated English servants. I fear that in time, this bondage will become permanent and hereditary, creating a society built on injustice that can never be escaped.
 
-As I plant my first tobacco crop, I think about Jamestown's legacy. We proved English people could survive in America. We established representative government. We found economic success. But we also displaced the Powhatans, suffered terrible loss, and embraced slavery. Our colony is both a triumph and a tragedy—a pattern that will follow America for centuries to come. I'm free now, but I wonder: what kind of freedom are we building here?`,
+As I work my tobacco fields, I think about Jamestown's legacy. We proved English people could survive in America. We established representative government. We found economic success. But we also displaced the Powhatans, suffered terrible loss, and now embrace a system of forced labor that troubles my conscience. Our colony is both a triumph and a tragedy—a pattern that will follow America for centuries to come. I'm free now, but I wonder: what kind of freedom are we building here?`,
         },
       ],
     },
