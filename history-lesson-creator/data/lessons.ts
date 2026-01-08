@@ -4,7 +4,7 @@ export const lessons: Lesson[] = [
   {
     id: "lesson-1",
     title: "One World to the Next",
-    description: "English & Spanish Settlement in the Americas",
+    description: "Spanish Settlement in the Americas: St. Augustine and Spain's Colonial Empire",
     heroImage: "/images/hero-settlement.jpg",
     story: {
       narrator: "Mateo, a 13-year-old Spanish settler in St. Augustine, 1565",
@@ -43,23 +43,25 @@ I often wondered what Ahone thought about all this—his world changing so rapid
           title: "Two Worlds Collide",
           content: `By my second year in St. Augustine, I understood that we were not just building a settlement—we were building an empire. Spain claimed this land, and settlements like ours were the foundation of that claim.
 
-Father explained that England had established Jamestown to the north, just a few years ago. Like us, they struggled to survive, depending on the indigenous Powhatan people for food and knowledge. Like us, they came seeking riches, land, and glory for their kingdom.
+Father explained to me how our settlement fit into Spain's vast colonial empire. "We are not alone in this endeavor, Mateo," he said one evening. "To the south, our countrymen have built great cities. Santo Domingo on Hispaniola was founded seventy years ago and now has a university, a cathedral, and thousands of Spanish settlers. Havana in Cuba is nearly fifty years old and serves as the key to the Caribbean. From Mexico City to Lima in Peru, Spanish settlements are transforming these lands."
 
-I realized then that this "New World" was not new at all—it was ancient, with people who had lived here for generations beyond counting. What was new was us: the Spanish, the English, the French, all scrambling to plant our flags and claim what was never ours to claim.
+He told me that St. Augustine was Spain's answer to threats from France and other European powers. "The French tried to establish Fort Caroline just north of here last year, but we drove them out. Now we must prove that La Florida can be held, civilized, and made profitable for the Crown. We are the northern frontier of New Spain, the guardians of the treasure fleets that sail past our coast carrying silver from Peru and Mexico back to Spain."
 
-Yet here I am, part of this great collision of worlds. My children will be born in this land, speaking Spanish but living lives my grandparents in Seville could never imagine. We are creating something new from the meeting of old worlds—though at what cost, I'm still not sure.`,
+I realized then that this "New World" was not new at all—it was ancient, with people who had lived here for generations beyond counting. What was new was us: the Spanish bringing Christianity, Spanish law, and European ways to lands that had their own rich cultures long before we arrived. The Timucua had thrived here for countless generations, yet we treated them as if they had been waiting for us to bring them civilization.
+
+Yet here I am, part of this great expansion. My children will be born in this land, speaking Spanish but living lives my grandparents in Seville could never imagine. We are creating something new from the meeting of old worlds—though at what cost, I'm still not sure.`,
         },
         {
           title: "Reflections on Settlement",
-          content: `Looking back now, I see the pattern clearly. Both Spanish St. Augustine and English Jamestown were established for similar reasons: to claim territory, find wealth, spread religion, and expand empires. We both struggled through harsh conditions, disease, and starvation.
+          content: `Looking back now, I see the pattern clearly. St. Augustine follows the same path as older Spanish settlements throughout the Americas. Santo Domingo was established for the same reasons we came here: to claim territory, find wealth, spread Christianity, and expand Spain's empire. Like Santo Domingo, like Havana, like Mexico City—we all struggled through harsh conditions, disease, and conflict in our early years.
 
-We both depended on indigenous peoples for survival, yet both of our nations sought to dominate them. The Spanish used the *encomienda* system, forcing indigenous people to labor in exchange for supposed "protection" and religious instruction. The English in Jamestown would soon develop similar exploitative relationships with the Powhatan.
+We all depended on indigenous peoples for survival at first, yet Spain sought to dominate them through systems like the *encomienda*. I've heard from sailors who've been to Hispaniola that the Taíno people who once lived there in great numbers have nearly vanished—destroyed by European diseases, forced labor, and violence. The same pattern happened in Cuba, in Puerto Rico, across the Caribbean islands. Now I fear the same fate awaits the Timucua here in La Florida.
 
-What makes me sad is how little we learn from each other's humanity. The Timucua, the Powhatan—they are not obstacles to overcome or resources to exploit. They are people with their own rich cultures, histories, and rights to this land.
+What makes me sad is how little we learn from the humanity of those who were here first. The Timucua are not obstacles to overcome or resources to exploit. They are people with their own rich cultures, histories, and rights to this land. They had built lives here for countless generations before any European ship touched these shores. Yet we treat them as if they existed only to serve Spain's ambitions.
 
-Father once told me that history is written by those who build the strongest settlements and win the most battles. But I wonder: what will history say about us? Will it remember the bravery of exploration, or the tragedy of conquest? Will it honor the Timucua and Powhatan voices, or silence them beneath the weight of European ambition?
+Father once told me that history is written by those who build the strongest settlements and win the most battles. But I wonder: what will history say about us? Will it remember the bravery of exploration and the building of new settlements, or the tragedy of conquest and the destruction of entire peoples? Will it honor the Timucua voices, or silence them beneath the weight of Spanish ambition—just as the Taíno voices have been silenced in the islands to the south?
 
-These are the questions I carry with me as I grow into manhood in this New World—questions that have no easy answers, but must be asked nonetheless.`,
+These are the questions I carry with me as I grow into manhood in this New World—questions that have no easy answers, but must be asked nonetheless. I am part of Spain's great colonial enterprise, yet I cannot help but wonder if we are building our empire on foundations of injustice that will haunt us for generations to come.`,
         },
       ],
     },
@@ -71,8 +73,8 @@ These are the questions I carry with me as I grow into manhood in this New World
       },
       {
         id: "fc-2",
-        term: "Jamestown",
-        definition: "The first permanent English settlement in North America, established in 1607 in present-day Virginia.",
+        term: "Santo Domingo",
+        definition: "Founded in 1496 on the island of Hispaniola, Santo Domingo was the first permanent European settlement in the Americas and served as the capital of Spanish colonial administration in the Caribbean.",
       },
       {
         id: "fc-3",
@@ -81,8 +83,8 @@ These are the questions I carry with me as I grow into manhood in this New World
       },
       {
         id: "fc-4",
-        term: "Joint-Stock Company",
-        definition: "A business entity where investors pool their money to fund expeditions and settlements, sharing both risks and profits. The Virginia Company of London funded Jamestown.",
+        term: "Havana",
+        definition: "Founded in 1519, Havana became one of the most important Spanish ports in the Caribbean. It served as a key supply hub for St. Augustine and other Spanish settlements, and protected the treasure fleets carrying silver from the Americas to Spain.",
       },
       {
         id: "fc-5",
@@ -91,8 +93,8 @@ These are the questions I carry with me as I grow into manhood in this New World
       },
       {
         id: "fc-6",
-        term: "Powhatan",
-        definition: "A confederation of indigenous tribes in the Virginia region, led by Chief Powhatan, who interacted with the Jamestown settlers.",
+        term: "Taíno People",
+        definition: "Indigenous people who inhabited the Caribbean islands including Hispaniola, Cuba, and Puerto Rico. Their population was devastated by European diseases, forced labor, and violence during the early Spanish colonial period.",
       },
       {
         id: "fc-7",
@@ -111,8 +113,8 @@ These are the questions I carry with me as I grow into manhood in this New World
       },
       {
         id: "fc1-10",
-        term: "Virginia Company of London",
-        definition: "English joint-stock company chartered by King James I in 1606 that funded and established the Jamestown colony to pursue profit through trade and resources.",
+        term: "Fort Caroline",
+        definition: "A French settlement established in 1564 in northern Florida. It was destroyed by the Spanish in 1565 shortly after they founded St. Augustine, eliminating the French threat to Spanish claims in La Florida.",
       },
     ],
     quiz: [
@@ -130,7 +132,7 @@ These are the questions I carry with me as I grow into manhood in this New World
       },
       {
         id: "q-2",
-        question: "What was the primary motivation for both Spanish and English settlement in the Americas?",
+        question: "What was the primary motivation for Spanish settlement in the Americas?",
         options: [
           "Scientific research and exploration",
           "Escaping religious persecution only",
@@ -138,19 +140,19 @@ These are the questions I carry with me as I grow into manhood in this New World
           "Establishing trade routes with Asia",
         ],
         correctOptionIndex: 2,
-        explanation: "Both Spain and England sought to claim new territories, find wealth (especially gold and resources), spread Christianity, and expand their imperial power. These overlapping motivations drove colonization efforts.",
+        explanation: "Spain sought to claim new territories, find wealth (especially gold and silver), spread Christianity through Catholic missions, and expand their imperial power. St. Augustine was part of this broader Spanish colonial strategy.",
       },
       {
         id: "q-3",
-        question: "How did early European settlers in both St. Augustine and Jamestown survive their first difficult years?",
+        question: "How did early Spanish settlers in St. Augustine survive their first difficult years?",
         options: [
           "By bringing enough supplies from Europe",
-          "By relying heavily on help from indigenous peoples",
+          "By relying heavily on help from indigenous Timucua people and supplies from Havana",
           "By trading exclusively with other European settlements",
           "By immediately finding gold and resources",
         ],
         correctOptionIndex: 1,
-        explanation: "Both settlements struggled with starvation, disease, and harsh conditions. They survived largely due to assistance from indigenous peoples who taught them about local foods, farming techniques, and survival skills.",
+        explanation: "St. Augustine settlers struggled with harsh conditions and unfamiliar environment. They survived through assistance from the Timucua people who taught them about local foods and survival skills, and through supply ships from the established Spanish colony in Havana, Cuba.",
       },
       {
         id: "q-4",
@@ -190,27 +192,27 @@ These are the questions I carry with me as I grow into manhood in this New World
       },
       {
         id: "q-7",
-        question: "What funded the Jamestown settlement?",
+        question: "What older Spanish settlements did Mateo's father mention as examples of Spain's colonial empire?",
         options: [
-          "The Spanish monarchy",
-          "Individual wealthy explorers",
-          "The Virginia Company of London, a joint-stock company",
-          "The French government",
+          "Boston and New York",
+          "Santo Domingo and Havana",
+          "Paris and London",
+          "Quebec and Montreal",
         ],
-        correctOptionIndex: 2,
-        explanation: "Jamestown was funded by the Virginia Company of London, a joint-stock company where investors pooled resources hoping to profit from the settlement's success.",
+        correctOptionIndex: 1,
+        explanation: "Mateo's father explained that Santo Domingo (founded 1496 on Hispaniola) and Havana (founded 1519 in Cuba) were established Spanish cities that predated St. Augustine by decades. These settlements showed the pattern that St. Augustine would follow.",
       },
       {
         id: "q-8",
-        question: "According to the story, what similar pattern did both Spanish and English settlements follow?",
+        question: "According to Mateo's reflections, what tragic pattern did Spanish settlements follow throughout the Americas?",
         options: [
-          "Both immediately made peace with indigenous peoples",
-          "Both struggled with survival, depended on indigenous help, yet sought to dominate them",
-          "Both focused only on farming and avoided conflict",
-          "Both abandoned their settlements within a year",
+          "They immediately made peace and treated indigenous peoples as equals",
+          "They depended on indigenous help for survival, yet sought to dominate and exploit them",
+          "They focused only on farming and avoided all conflict",
+          "They abandoned indigenous peoples completely and relied only on European knowledge",
         ],
         correctOptionIndex: 1,
-        explanation: "Both settlements faced harsh conditions and relied on indigenous knowledge for survival. Yet both colonial powers also sought to control and exploit indigenous peoples, creating tragic contradictions.",
+        explanation: "Mateo observed that Spanish settlements from Santo Domingo to St. Augustine followed a tragic pattern: they relied on indigenous peoples for survival and knowledge, yet exploited them through systems like the encomienda. This led to the near-destruction of peoples like the Taíno in the Caribbean.",
       },
     ],
   },
