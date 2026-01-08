@@ -10,7 +10,29 @@
       "Bash(git commit:*)",
       "Bash(git push:*)",
       "Bash(node count_flashcards.js:*)",
-      "Bash(node count_chapters.js:*)"
+      "Bash(node count_chapters.js:*)",
+      "Bash(npm run build:*)",
+      "Bash(tree:*)",
+      "Bash(ls:*)",
+      "Bash(chmod:*)",
+      "Bash(bash:*)",
+      "Bash(echo:*)",
+      "Bash(cat:*)",
+      "Bash(ssh-keygen:*)",
+      "Bash(~/.ssh/id_rsa.pub.new)",
+      "Bash(ssh:*)",
+      "Bash(ssh-keyscan:*)",
+      "Bash(~/.ssh/known_hosts)",
+      "Bash(curl:*)",
+      "Bash(scp:*)",
+      "Bash(npm install:*)",
+      "Bash(npm run dev:*)",
+      "Bash(node export-lessons.js:*)",
+      "Bash(node simple-export.js:*)",
+      "Bash(node full-export.js:*)",
+      "Bash(node full-export-v2.js:*)",
+      "Bash(node full-export-final.js:*)",
+      "Bash(node fix-numbering.js:*)"
     ]
   }
 }
