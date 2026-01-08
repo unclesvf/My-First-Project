@@ -1,17 +1,21 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
 import { motion } from "framer-motion";
-import { BookOpen, CreditCard, Brain, ArrowLeft } from "lucide-react";
+import { BookOpen, CreditCard, Brain, ArrowLeft, Trophy, Target, Clock } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import StoryReader from "@/components/StoryReader";
 import FlashcardDeck from "@/components/FlashcardDeck";
 import QuizEngine from "@/components/QuizEngine";
-import { ProgressProvider } from "@/lib/contexts/ProgressContext";
+import { ProgressProvider, useProgress } from "@/lib/contexts/ProgressContext";
+import ProgressBar from "@/components/progress/ProgressBar";
+import ProgressBadge from "@/components/progress/ProgressBadge";
+import StatsCard from "@/components/progress/StatsCard";
 import { cn } from "@/lib/utils";
 import { Lesson } from "@/lib/types";
+import { useAuth } from "@/lib/hooks/useAuth";
 
 type Tab = "story" | "flashcards" | "quiz";
 
@@ -19,8 +23,11 @@ interface LessonViewProps {
   lesson: Lesson;
 }
 
-export default function LessonView({ lesson }: LessonViewProps) {
+// Internal component that consumes progress context
+function LessonContent({ lesson }: LessonViewProps) {
   const router = useRouter();
+  const { user } = useAuth();
+  const { currentLessonProgress } = useProgress();
   const [activeTab, setActiveTab] = useState<Tab>("story");
 
   // Extract courseId from lesson id (format: "lesson-51" -> course would be "american-history-7th-grade")
@@ -33,10 +40,18 @@ export default function LessonView({ lesson }: LessonViewProps) {
     { id: "quiz" as Tab, label: "Quiz", icon: Brain },
   ];
 
+  // Calculate progress statistics
+  const storyProgress = currentLessonProgress?.storyProgress;
+  const flashcardProgress = currentLessonProgress?.flashcardProgress;
+  const storyComplete = storyProgress?.status === "completed";
+  const totalChapters = lesson.story.chapters.length;
+  const currentChapter = storyProgress?.currentChapter ?? 0;
+  const masteredCards = flashcardProgress?.masteredCards?.length ?? 0;
+  const totalCards = lesson.flashcards.length;
+
   return (
-    <ProgressProvider lessonId={lesson.id}>
-      <div className="flex min-h-screen flex-col">
-        <Navigation />
+    <div className="flex min-h-screen flex-col">
+      <Navigation />
 
         <main className="flex-1 px-4 py-8 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-7xl">
@@ -56,6 +71,100 @@ export default function LessonView({ lesson }: LessonViewProps) {
               </h1>
               <p className="text-xl text-gray-600">{lesson.description}</p>
             </div>
+
+            {/* Progress Overview - Only show for authenticated users */}
+            {user && currentLessonProgress && (
+              <div className="mb-8">
+                <div className="mb-4 flex items-center justify-between">
+                  <h2 className="text-2xl font-semibold text-gray-900">
+                    Your Progress
+                  </h2>
+                  {storyComplete && (
+                    <ProgressBadge status="completed" size="lg" />
+                  )}
+                </div>
+
+                {/* Stats Cards Grid */}
+                <div className="mb-6 grid gap-4 sm:grid-cols-3">
+                  <StatsCard
+                    title="Story Progress"
+                    value={`${currentChapter + 1}/${totalChapters}`}
+                    subtitle={storyComplete ? "Complete!" : `Chapter ${currentChapter + 1}`}
+                    icon={BookOpen}
+                    color={storyComplete ? "green" : "blue"}
+                    size="sm"
+                  />
+                  <StatsCard
+                    title="Flashcards Mastered"
+                    value={`${masteredCards}/${totalCards}`}
+                    subtitle={masteredCards === totalCards ? "All mastered!" : "Keep practicing"}
+                    icon={Trophy}
+                    color={masteredCards === totalCards ? "green" : "purple"}
+                    size="sm"
+                  />
+                  <StatsCard
+                    title="Quiz Attempts"
+                    value={currentLessonProgress.quizAttempts?.length ?? 0}
+                    subtitle={
+                      currentLessonProgress.quizAttempts?.length
+                        ? `Best: ${Math.max(...(currentLessonProgress.quizAttempts?.map((a) => a.percentage) ?? [0]))}%`
+                        : "Not started"
+                    }
+                    icon={Brain}
+                    color={
+                      currentLessonProgress.quizAttempts?.some((a) => a.percentage >= 80)
+                        ? "green"
+                        : "amber"
+                    }
+                    size="sm"
+                  />
+                </div>
+
+                {/* Overall Progress Bar */}
+                <div className="rounded-lg border-2 border-gray-200 bg-white p-6">
+                  <h3 className="mb-4 text-lg font-semibold text-gray-900">
+                    Overall Lesson Progress
+                  </h3>
+                  <ProgressBar
+                    current={
+                      (storyComplete ? 1 : 0) +
+                      (masteredCards === totalCards ? 1 : 0) +
+                      (currentLessonProgress.quizAttempts?.some((a) => a.percentage >= 80) ? 1 : 0)
+                    }
+                    total={3}
+                    label="Completion"
+                    barColor="bg-green-600"
+                    height="lg"
+                  />
+                  <div className="mt-4 flex gap-2">
+                    <ProgressBadge
+                      status={storyComplete ? "completed" : "in-progress"}
+                      label="Story"
+                      size="sm"
+                      variant="pill"
+                    />
+                    <ProgressBadge
+                      status={masteredCards === totalCards ? "completed" : "in-progress"}
+                      label="Flashcards"
+                      size="sm"
+                      variant="pill"
+                    />
+                    <ProgressBadge
+                      status={
+                        currentLessonProgress.quizAttempts?.some((a) => a.percentage >= 80)
+                          ? "completed"
+                          : currentLessonProgress.quizAttempts?.length
+                          ? "in-progress"
+                          : "not-started"
+                      }
+                      label="Quiz"
+                      size="sm"
+                      variant="pill"
+                    />
+                  </div>
+                </div>
+              </div>
+            )}
 
             {/* Tabs */}
             <div className="mb-8 flex gap-2 overflow-x-auto border-b border-gray-200">
@@ -120,6 +229,14 @@ export default function LessonView({ lesson }: LessonViewProps) {
 
         <Footer />
       </div>
+    );
+}
+
+// Main component that provides progress context
+export default function LessonView({ lesson }: LessonViewProps) {
+  return (
+    <ProgressProvider lessonId={lesson.id}>
+      <LessonContent lesson={lesson} />
     </ProgressProvider>
   );
 }

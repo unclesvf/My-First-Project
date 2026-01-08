@@ -276,3 +276,12 @@ export function ProgressProvider({ children, lessonId }: ProgressProviderProps) 
 
   return <ProgressContext.Provider value={value}>{children}</ProgressContext.Provider>;
 }
+
+// Custom hook to use progress context
+export function useProgress() {
+  const context = useContext(ProgressContext);
+  if (!context) {
+    throw new Error('useProgress must be used within a ProgressProvider');
+  }
+  return context;
+}
