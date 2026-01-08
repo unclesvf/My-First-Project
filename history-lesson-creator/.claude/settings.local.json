@@ -32,7 +32,13 @@
       "Bash(node full-export.js:*)",
       "Bash(node full-export-v2.js:*)",
       "Bash(node full-export-final.js:*)",
-      "Bash(node fix-numbering.js:*)"
+      "Bash(node fix-numbering.js:*)",
+      "Bash(dir:*)",
+      "Bash(findstr:*)",
+      "Bash(firebase:*)",
+      "Bash(npx firebase --version)",
+      "Bash(npx firebase login:list:*)",
+      "Bash(npx firebase login)"
     ]
   }
 }
