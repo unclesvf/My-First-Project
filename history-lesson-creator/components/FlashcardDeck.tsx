@@ -2,18 +2,43 @@
 
 import { useState, useEffect, useCallback } from "react";
 import { motion } from "framer-motion";
-import { ChevronLeft, ChevronRight, Shuffle, RotateCcw } from "lucide-react";
+import { ChevronLeft, ChevronRight, Shuffle, RotateCcw, Star } from "lucide-react";
 import { Flashcard } from "@/lib/types";
 import { cn } from "@/lib/utils";
+import { useProgress } from "@/lib/hooks/useProgress";
+import { useAuth } from "@/lib/hooks/useAuth";
 
 interface FlashcardDeckProps {
   flashcards: Flashcard[];
+  lessonId: string;
 }
 
-export default function FlashcardDeck({ flashcards }: FlashcardDeckProps) {
+export default function FlashcardDeck({ flashcards, lessonId }: FlashcardDeckProps) {
+  const { user } = useAuth();
+  const { updateFlashcardProgress, currentLessonProgress } = useProgress();
   const [cards, setCards] = useState(flashcards);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isFlipped, setIsFlipped] = useState(false);
+  const [masteredCards, setMasteredCards] = useState<Set<string>>(new Set());
+
+  // Load mastered cards from progress
+  useEffect(() => {
+    if (currentLessonProgress?.flashcardProgress?.masteredCards) {
+      setMasteredCards(new Set(currentLessonProgress.flashcardProgress.masteredCards));
+    }
+  }, [currentLessonProgress]);
+
+  // Track progress when card changes
+  useEffect(() => {
+    if (user && lessonId) {
+      updateFlashcardProgress(
+        lessonId,
+        currentIndex,
+        cards.length,
+        Array.from(masteredCards)
+      );
+    }
+  }, [currentIndex, user, lessonId, cards.length, masteredCards]);
 
   const goToNext = useCallback(() => {
     if (currentIndex < cards.length - 1) {
@@ -43,6 +68,19 @@ export default function FlashcardDeck({ flashcards }: FlashcardDeckProps) {
     return () => window.removeEventListener("keydown", handleKeyPress);
   }, [currentIndex, goToNext, goToPrevious]);
 
+  const toggleMastered = () => {
+    const currentCardId = `${currentIndex}`;
+    const newMasteredCards = new Set(masteredCards);
+
+    if (newMasteredCards.has(currentCardId)) {
+      newMasteredCards.delete(currentCardId);
+    } else {
+      newMasteredCards.add(currentCardId);
+    }
+
+    setMasteredCards(newMasteredCards);
+  };
+
   const shuffleCards = () => {
     const shuffled = [...cards].sort(() => Math.random() - 0.5);
     setCards(shuffled);
@@ -56,14 +94,33 @@ export default function FlashcardDeck({ flashcards }: FlashcardDeckProps) {
     setIsFlipped(false);
   };
 
+  const isCurrentCardMastered = masteredCards.has(`${currentIndex}`);
+
   return (
     <div className="mx-auto max-w-2xl">
       {/* Controls */}
       <div className="mb-6 flex items-center justify-between">
-        <div className="text-sm text-gray-600">
-          Card {currentIndex + 1} of {cards.length}
+        <div>
+          <div className="text-sm text-gray-600">
+            Card {currentIndex + 1} of {cards.length}
+          </div>
+          <div className="mt-1 text-xs text-gray-500">
+            {masteredCards.size} mastered
+          </div>
         </div>
         <div className="flex gap-2">
+          <button
+            onClick={toggleMastered}
+            className={cn(
+              "flex items-center gap-2 rounded-lg border-2 px-4 py-2 text-sm font-semibold transition-all active:scale-95",
+              isCurrentCardMastered
+                ? "border-yellow-500 bg-yellow-50 text-yellow-700 hover:bg-yellow-100"
+                : "border-gray-300 bg-transparent text-gray-700 hover:bg-gray-50"
+            )}
+          >
+            <Star className={cn("h-4 w-4", isCurrentCardMastered && "fill-yellow-500")} />
+            {isCurrentCardMastered ? "Mastered" : "Master"}
+          </button>
           <button
             onClick={shuffleCards}
             className="flex items-center gap-2 rounded-lg border-2 border-primary-600 bg-transparent px-4 py-2 text-sm font-semibold text-primary-700 transition-all hover:bg-primary-50 active:scale-95"
