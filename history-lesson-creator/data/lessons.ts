@@ -869,7 +869,7 @@ Father tells me doubt is the Devil's whisper, but I believe these questions matt
           title: "From New Netherland to New York",
           content: `My name is Maria, and I am fourteen years old. I live in New York, though my family still calls it by its old name: New Amsterdam. My parents are Dutch, and they remember when this colony belonged to the Netherlands, not England.
 
-In 1664, when I was very young, English ships sailed into our harbor. Our governor, Peter Stuyvesant, wanted to fight, but the English had more guns and more ships. The Dutch citizens convinced him to surrender peacefully. We didn't want our town destroyed in a war we couldn't win.
+In 1664, before I was born, English ships sailed into our harbor. My parents tell me our governor, Peter Stuyvesant, wanted to fight, but the English had more guns and more ships. The Dutch citizens convinced him to surrender peacefully. They didn't want our town destroyed in a war we couldn't win.
 
 The English renamed everything. New Amsterdam became New York, after the Duke of York. New Netherland became New York colony. But they let us Dutch keep our land, our language, and our customs. My family still speaks Dutch at home, celebrates Sint Nikolaas in December, and bakes oliebollen for New Year's.
 
