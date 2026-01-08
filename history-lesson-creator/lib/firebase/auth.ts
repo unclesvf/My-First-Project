@@ -8,6 +8,7 @@ import {
   updateProfile,
 } from 'firebase/auth';
 import { auth } from './config';
+import { logger } from '@/lib/utils/logger';
 
 // Google Sign-In
 const googleProvider = new GoogleAuthProvider();
@@ -17,7 +18,7 @@ export async function signInWithGoogle(): Promise<User> {
     const result = await signInWithPopup(auth, googleProvider);
     return result.user;
   } catch (error: any) {
-    console.error('Error signing in with Google:', error);
+    logger.error('Error signing in with Google', error);
     throw new Error(error.message || 'Failed to sign in with Google');
   }
 }
@@ -36,7 +37,7 @@ export async function signUpWithEmail(
 
     return result.user;
   } catch (error: any) {
-    console.error('Error signing up with email:', error);
+    logger.error('Error signing up with email', error);
 
     // Provide user-friendly error messages
     if (error.code === 'auth/email-already-in-use') {
@@ -60,7 +61,7 @@ export async function signInWithEmail(
     const result = await signInWithEmailAndPassword(auth, email, password);
     return result.user;
   } catch (error: any) {
-    console.error('Error signing in with email:', error);
+    logger.error('Error signing in with email', error);
 
     // Provide user-friendly error messages
     if (error.code === 'auth/user-not-found') {
@@ -80,7 +81,7 @@ export async function signOut(): Promise<void> {
   try {
     await firebaseSignOut(auth);
   } catch (error: any) {
-    console.error('Error signing out:', error);
+    logger.error('Error signing out', error);
     throw new Error(error.message || 'Failed to sign out');
   }
 }
