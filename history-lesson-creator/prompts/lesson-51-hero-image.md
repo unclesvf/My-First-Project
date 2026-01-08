@@ -9,7 +9,7 @@
 
 ## 🍌 Nano Banana Pro Prompt
 
-Theodore Roosevelt standing confidently in the White House Oval Office, 1905. He is a robust man of 47 with his iconic round wire-rimmed glasses and prominent walrus mustache, wearing a perfectly tailored dark three-piece suit with gold watch chain. His expression is determined yet approachable, embodying his "speak softly and carry a big stick" philosophy. The presidential office features rich mahogany furniture, an ornate desk with papers about trust-busting legislation, leather-bound books on conservation, and the American flag. Through the tall windows behind him, a glimpse of the White House gardens he helped protect. Warm golden afternoon light creates dramatic side lighting, highlighting his strong features. Photographed in the style of early 20th century formal presidential portraits by Frances Benjamin Johnston, sepia-toned with subtle vignette effect, museum quality archival photograph, 8K resolution, historically accurate period details, sharp focus, professional composition.
+Theodore Roosevelt standing confidently in his White House presidential office, 1905. He is a robust man of 47 with his iconic round wire-rimmed glasses and prominent walrus mustache, wearing a perfectly tailored dark three-piece suit with gold watch chain. His expression is determined yet approachable, embodying his "speak softly and carry a big stick" philosophy. The presidential office features rich mahogany furniture, an ornate desk with papers about trust-busting legislation, leather-bound books on conservation, and the American flag. Through the tall windows behind him, a glimpse of the White House gardens he helped protect. Warm golden afternoon light creates dramatic side lighting, highlighting his strong features. Photographed in the style of early 20th century formal presidential portraits by Frances Benjamin Johnston, sepia-toned with subtle vignette effect, museum quality archival photograph, 8K resolution, historically accurate period details, sharp focus, professional composition.
 
 **Key Features:**
 - Emphasizes photorealistic historical portrait style
@@ -21,7 +21,7 @@ Theodore Roosevelt standing confidently in the White House Oval Office, 1905. He
 
 ## 🤖 Grok Imagine Prompt
 
-Theodore Roosevelt, 26th President, powerful portrait, 1905, White House Oval Office, dark formal three-piece suit, round wire-rimmed glasses, bold walrus mustache, age 47, confident authoritative stance, trust-busting documents on mahogany desk, conservation books, American flag, golden afternoon light through tall windows, Progressive Era symbolism, early 1900s presidential photography style, sepia tone, dramatic side lighting, determined expression, historically accurate period details, sharp focus, museum quality, professional formal portrait
+Theodore Roosevelt, 26th President, powerful portrait, 1905, White House presidential office, dark formal three-piece suit, round wire-rimmed glasses, bold walrus mustache, age 47, confident authoritative stance, trust-busting documents on mahogany desk, conservation books, American flag, golden afternoon light through tall windows, Progressive Era symbolism, early 1900s presidential photography style, sepia tone, dramatic side lighting, determined expression, historically accurate period details, sharp focus, museum quality, professional formal portrait
 
 **Key Features:**
 - Structured, comma-separated format for platform
@@ -35,7 +35,7 @@ Theodore Roosevelt, 26th President, powerful portrait, 1905, White House Oval Of
 
 Create a powerful and historically accurate presidential portrait of Theodore Roosevelt in 1905, during the height of his Progressive Era presidency. Show him as a vigorous man of 47 with his unmistakable round wire-rimmed spectacles and prominent walrus mustache that became his trademark. He wears an impeccably tailored dark three-piece suit typical of early 20th century presidential fashion, with a gold watch chain visible across his vest.
 
-Position him in the White House Oval Office, standing beside his mahogany desk which is scattered with documents about his trust-busting legislation and conservation initiatives—visual symbols of his Square Deal policies. Behind him, tall windows reveal the White House grounds he worked to preserve, and bookshelves line the walls filled with leather-bound volumes reflecting his intellectual nature. The American flag stands proudly nearby.
+Position him in his White House presidential office, standing beside his mahogany desk which is scattered with documents about his trust-busting legislation and conservation initiatives—visual symbols of his Square Deal policies. Behind him, tall windows reveal the White House grounds he worked to preserve, and bookshelves line the walls filled with leather-bound volumes reflecting his intellectual nature. The American flag stands proudly nearby.
 
 His expression should capture his unique combination of strength and optimism—the man who said "speak softly and carry a big stick" but also championed the common American. The lighting should be warm and golden, reminiscent of formal early 1900s presidential photography, creating a dignified yet approachable atmosphere.
 
@@ -61,7 +61,7 @@ Style this as a formal presidential portrait in the manner of early 20th century
 - TR's glasses: Round, wire-rimmed (not modern frames)
 - Mustache: Thick "walrus" style, very characteristic
 - Age in 1905: 47 years old (important for portrait accuracy)
-- White House Oval Office: Actually wasn't built until 1909, use "presidential office" instead
+- Presidential Office: The famous Oval Office wasn't built until 1909 (Taft's presidency); TR used a different presidential office in the White House
 - Clothing: Three-piece suits were standard, no tuxedos during day
 - References: Check Library of Congress for actual TR photos for verification
 
