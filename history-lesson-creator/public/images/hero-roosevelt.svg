@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" style="background: linear-gradient(135deg, #8B4513 0%, #D2691E 50%, #CD853F 100%)">
+  <!-- Background Pattern -->
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+    </pattern>
+    <linearGradient id="textGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#FFF8DC;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FFFAF0;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="400" fill="url(#grid)"/>
+
+  <!-- Decorative Elements -->
+  <circle cx="100" cy="350" r="80" fill="rgba(139,69,19,0.3)"/>
+  <circle cx="1100" cy="50" r="60" fill="rgba(205,133,63,0.3)"/>
+
+  <!-- Presidential Seal Outline -->
+  <circle cx="150" cy="200" r="70" fill="none" stroke="rgba(255,248,220,0.3)" stroke-width="3"/>
+  <circle cx="150" cy="200" r="60" fill="none" stroke="rgba(255,248,220,0.3)" stroke-width="2"/>
+
+  <!-- TR Glasses Icon (Simplified) -->
+  <g transform="translate(1000, 200)">
+    <ellipse cx="0" cy="0" rx="35" ry="30" fill="none" stroke="#FFF8DC" stroke-width="4"/>
+    <ellipse cx="70" cy="0" rx="35" ry="30" fill="none" stroke="#FFF8DC" stroke-width="4"/>
+    <line x1="35" y1="0" x2="35" y2="0" stroke="#FFF8DC" stroke-width="4"/>
+    <path d="M -35 0 L -50 -5" stroke="#FFF8DC" stroke-width="4" fill="none"/>
+    <path d="M 105 0 L 120 -5" stroke="#FFF8DC" stroke-width="4" fill="none"/>
+  </g>
+
+  <!-- Main Title -->
+  <text x="600" y="160" font-family="'Georgia', serif" font-size="72" font-weight="bold" fill="url(#textGradient)" text-anchor="middle" letter-spacing="2">
+    THE ROUGH RIDER
+  </text>
+
+  <!-- Subtitle -->
+  <text x="600" y="220" font-family="'Georgia', serif" font-size="48" font-weight="normal" fill="#FFF8DC" text-anchor="middle" opacity="0.95">
+    PRESIDENT
+  </text>
+
+  <!-- Lesson Info -->
+  <text x="600" y="280" font-family="'Arial', sans-serif" font-size="24" fill="#FFFAF0" text-anchor="middle" opacity="0.9">
+    Theodore Roosevelt • 1901-1909
+  </text>
+
+  <!-- Decorative Line -->
+  <line x1="400" y1="300" x2="800" y2="300" stroke="#FFF8DC" stroke-width="2" opacity="0.5"/>
+
+  <!-- Keywords -->
+  <text x="600" y="340" font-family="'Arial', sans-serif" font-size="18" fill="#FFFAF0" text-anchor="middle" opacity="0.8" letter-spacing="4">
+    PROGRESSIVE ERA • CONSERVATION • TRUST-BUSTING
+  </text>
+
+  <!-- Stars Decoration -->
+  <g fill="#FFF8DC" opacity="0.6">
+    <polygon points="300,50 305,65 320,65 308,75 313,90 300,80 287,90 292,75 280,65 295,65" />
+    <polygon points="900,350 905,365 920,365 908,375 913,390 900,380 887,390 892,375 880,365 895,365" />
+    <polygon points="250,320 253,328 261,328 255,333 257,341 250,336 243,341 245,333 239,328 247,328" />
+  </g>
+</svg>
