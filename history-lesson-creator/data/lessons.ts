@@ -5406,7 +5406,7 @@ Whether this doctrine will protect liberty or serve empire, whether it will insp
     description: "The Age of the Common Man (1828-1840)",
     heroImage: "/images/hero-jackson.jpg",
     story: {
-      narrator: "Thomas, age 15, son of a western farmer, 1828",
+      narrator: "Thomas, age 15, son of a western farmer, 1829",
       chapters: [
         {
           title: "A New Kind of President",
