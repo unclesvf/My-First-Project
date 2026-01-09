@@ -7190,7 +7190,7 @@ Most important: Black men can vote. My father registered to vote in 1867. He was
         },
         {
           title: "Constitutional Conventions",
-          content: `Summer 1867. South Carolina holds a constitutional convention to write a new state constitution. For the first time, Black men participate in government. Of 124 delegates, 76 are Black—a majority. Most were enslaved just two years ago.
+          content: `Early 1868. South Carolina holds a constitutional convention to write a new state constitution. For the first time, Black men participate in government. Of 124 delegates, 76 are Black—a majority. Most were enslaved just two years ago.
 
 I attend the convention's opening session in Charleston. The convention hall is packed—Black and white delegates, spectators, journalists. It's extraordinary seeing Black men debating law and policy, writing a constitution that will govern all South Carolinians.
 
