@@ -5934,7 +5934,7 @@ But Polk won't compromise with Mexico. He wants California and New Mexico, and h
         },
         {
           title: "Reaching Oregon",
-          content: `After six months, we finally reach Oregon's Willamette Valley. The land is beautiful—green, fertile, watered by rain. We claim 640 acres under the Donation Land Act. It's ours if we farm it for four years. We've traveled 2,000 miles for this moment.
+          content: `After six months, we finally reach Oregon's Willamette Valley. The land is beautiful—green, fertile, watered by rain. We claim 640 acres under Oregon's provisional land laws. It's ours if we farm it and improve it. We've traveled 2,000 miles for this moment.
 
 Building our homestead is backbreaking work. We clear land, build a cabin, plant crops. Our nearest neighbors are miles away. Winters are wet and mild compared to Missouri, but loneliness is hard. Mother misses her family, her church, her friends. We've gained land but lost community.
 
