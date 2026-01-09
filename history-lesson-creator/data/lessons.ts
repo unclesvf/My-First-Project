@@ -1309,7 +1309,7 @@ But I've learned that not all trade is honorable. Some of our fellow merchants p
 
 The Middle Colonies—New York, Pennsylvania, New Jersey—are the "bread basket." They export wheat, flour, and grain to the Caribbean islands and southern Europe. Their fertile soil and moderate climate make them ideal for farming.
 
-The Southern colonies grow cash crops for export: tobacco in Virginia and Maryland, rice and indigo in the Carolinas. These labor-intensive crops rely increasingly on enslaved African workers. The plantation owners grow rich, but at a terrible human cost.
+The Southern colonies grow cash crops for export: tobacco in Virginia and Maryland, rice in the Carolinas. These labor-intensive crops rely increasingly on enslaved African workers. The plantation owners grow rich, but at a terrible human cost.
 
 The Caribbean islands grow sugar—the most profitable crop in the Atlantic world. Sugar production is brutal work done by enslaved Africans who die in shocking numbers from exhaustion, disease, and abuse. Yet the demand for sugar in Europe seems endless, driving the whole vicious system.`,
         },
@@ -1364,7 +1364,7 @@ I'm young, and my protest is small. But I believe the triangular trade's days ar
       {
         id: "fc7-4",
         term: "Cash Crop",
-        definition: "Crops grown primarily for sale and profit rather than personal use, such as tobacco, rice, indigo, and sugar.",
+        definition: "Crops grown primarily for sale and profit rather than personal use, such as tobacco, rice, and sugar. Indigo would later become another important cash crop in the 1740s.",
       },
       {
         id: "fc7-5",
