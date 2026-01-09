@@ -3462,7 +3462,7 @@ This doesn't end the war officially—that will take two more years of negotiati
         },
         {
           title: "What Victory Means",
-          content: `As I watch the British surrender, I think about what this victory means for different people. For General Washington and the Continental Army, it's vindication of eight years of sacrifice. For the French, it's revenge against their British rivals. For most Americans, it's the chance to govern themselves without kings or lords.
+          content: `As I watch the British surrender, I think about what this victory means for different people. For General Washington and the Continental Army, it's vindication of over six years of sacrifice. For the French, it's revenge against their British rivals. For most Americans, it's the chance to govern themselves without kings or lords.
 
 But for my father and other Black soldiers, the meaning is more complicated. Father fought for American freedom in exchange for his own freedom. Many enslaved men were promised liberty for their military service. Some will receive it; others will be betrayed, sent back to slavery despite their service.
 
