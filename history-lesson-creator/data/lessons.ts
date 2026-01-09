@@ -1520,7 +1520,7 @@ People around me began to weep and cry out. Some fell to their knees. My mother 
           title: "Old Lights vs. New Lights",
           content: `Whitefield's visit divided our community. Some people, now called "New Lights," embraced this emotional, personal religion. They attended revival meetings, shared testimonies of their conversion experiences, and questioned whether ministers who hadn't been "born again" should even preach.
 
-Our traditional minister, Reverend Edwards, sided with the revival at first. He preached a famous sermon called "Sinners in the Hands of an Angry God," describing hell so vividly that people clutched their pews in terror. But other ministers, the "Old Lights," condemned this emotional excess.
+A famous minister from Northampton, Massachusetts—Reverend Jonathan Edwards—came to preach at our meetinghouse. His sermon "Sinners in the Hands of an Angry God" described hell so vividly that people clutched their pews in terror, and some fainted from fear. His words gave powerful support to the revival. But other ministers, the "Old Lights," condemned this emotional excess.
 
 The Old Lights said religion should be orderly, rational, and traditional. They accused revivalist preachers of stirring up dangerous emotions and undermining proper church authority. They pointed out that some revival meetings became chaotic, with people shouting, fainting, and claiming divine visions.
 
@@ -1538,7 +1538,7 @@ I saw this myself when an enslaved man named Samuel preached at a revival meetin
         },
         {
           title: "Long-Term Changes",
-          content: `The Great Awakening created lasting changes in colonial society. New denominations formed—Baptists and Methodists grew rapidly. Colleges were founded to train revival-minded ministers: Princeton, Dartmouth, Rutgers. The emphasis on personal choice and individual conscience planted seeds of independent thinking.
+          content: `The Great Awakening created lasting changes in colonial society. New denominations formed—Baptists and Methodists grew rapidly. New colleges would be founded to train revival-minded ministers—Princeton was established just a few years later in 1746, and others would follow in coming decades. The emphasis on personal choice and individual conscience planted seeds of independent thinking.
 
 It also exposed the gap between religious ideals and social reality. If all people truly were equal in God's eyes, how could we justify slavery? How could we accept rigid social hierarchies? Some ministers began preaching against slavery, though they remained a minority.
 
