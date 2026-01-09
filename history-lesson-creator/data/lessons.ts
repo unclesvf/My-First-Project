@@ -4982,7 +4982,7 @@ The British expected the burning to break American will. Instead, it strengthene
         },
         {
           title: "The Hartford Convention",
-          content: `While we defended Baltimore, New England Federalists met in Hartford, Connecticut. They opposed the war from the beginning—it hurt their shipping trade with Britain. Some talked openly of New England leaving the Union.
+          content: `Three months after we defended Baltimore, in December 1814, New England Federalists met in Hartford, Connecticut. They opposed the war from the beginning—it hurt their shipping trade with Britain. Some talked openly of New England leaving the Union.
 
 The Hartford Convention proposed constitutional amendments to limit federal power: require two-thirds vote to declare war, admit new states, or restrict trade. They wanted to protect New England's interests against the South and West. Some delegates whispered about secession if their demands weren't met.
 
