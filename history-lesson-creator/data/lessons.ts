@@ -1693,7 +1693,7 @@ I see connections Uncle refuses to acknowledge. If I can interpret Scripture for
           "Only Catholic churches grew",
         ],
         correctOptionIndex: 1,
-        explanation: "The Great Awakening led to rapid growth of Baptist and Methodist denominations, as well as the founding of new colleges like Princeton, Dartmouth, and Rutgers to train revivalist ministers.",
+        explanation: "The Great Awakening led to rapid growth of Baptist and Methodist denominations, as well as the founding of new colleges like Princeton (1746) to train revivalist ministers.",
       },
       {
         id: "q8-8",
