@@ -1948,7 +1948,7 @@ But even in this prosperous city, I see inequality everywhere. Wealthy merchants
           title: "Education and Ideas",
           content: `Education matters greatly to colonists, though it varies by region and class. In New England, towns fund public schools because Puritans believe everyone should read the Bible. The Middle Colonies have private schools and academies. The South educates wealthy children with private tutors, while poor children receive little formal education.
 
-We have nine colleges now: Harvard, William & Mary, Yale, Princeton, Columbia, Penn, Brown, Rutgers, and Dartmouth. They train ministers, lawyers, and gentlemen. But most learning happens through apprenticeships—boys learn trades by working with master craftsmen, just as I learned printing from Father.
+We have six colleges now: Harvard, William & Mary, Yale, Princeton, King's College in New York, and our own College of Philadelphia. They train ministers, lawyers, and gentlemen. But most learning happens through apprenticeships—boys learn trades by working with master craftsmen, just as I learned printing from Father.
 
 Books and newspapers connect us to a wider world of ideas. We read about Enlightenment philosophers like John Locke, who wrote about natural rights and government by consent. We discuss reason, science, and progress. These ideas are revolutionary—if people have natural rights, can kings truly rule by divine right?
 
