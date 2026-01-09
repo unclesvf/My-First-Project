@@ -7492,7 +7492,7 @@ The question of the Gilded Age is whether America will continue letting corporat
           title: "The Meaning of Progress",
           content: `The Gilded Age forces us to ask: What is progress?
 
-By some measures, America is progressing rapidly. Steel production increases twentyfold between 1870 and 1900. Railroad mileage quadruples. Factories produce goods once made slowly by hand. Inventions like electricity, telephones, and internal combustion engines transform life. America becomes the world's leading industrial nation.
+By some measures, America is progressing rapidly. Steel production increases more than one hundred fold between 1870 and 1900. Railroad mileage quadruples. Factories produce goods once made slowly by hand. Inventions like electricity, telephones, and internal combustion engines transform life. America becomes the world's leading industrial nation.
 
 Wealthy Americans live better than ever. They build enormous mansions—the Vanderbilts' estate has 250 rooms. They vacation in Europe, collect art, throw lavish parties. The upper class enjoys a golden age of luxury and culture.
 
