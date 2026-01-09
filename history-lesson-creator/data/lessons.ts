@@ -1100,9 +1100,9 @@ I asked Father why we don't speak out against slavery. He said quietly that thos
         },
         {
           title: "Different Souths",
-          content: `The Southern colonies are different from each other. Virginia and Maryland grow tobacco. South Carolina grows rice and indigo in coastal swamps where the work is brutal and deadly. The Carolinas have more enslaved workers than free people in some areas. Georgia was actually founded as a haven for poor English people and initially banned slavery, but that didn't last long.
+          content: `The Southern colonies are different from each other. Virginia and Maryland grow tobacco. South Carolina grows rice in coastal swamps where the work is brutal and deadly. The rice fields must be flooded and drained, and workers labor in water up to their knees, plagued by mosquitoes and disease. The Carolinas have more enslaved workers than free people in some areas.
 
-All Southern colonies have plantation economies, warm climates, and long growing seasons. The soil and climate are perfect for cash crops that sell for high prices in England: tobacco, rice, indigo, and later cotton. But these crops require intense labor, which is why planters turned to slavery.
+All Southern colonies have plantation economies, warm climates, and long growing seasons. The soil and climate are perfect for cash crops that sell for high prices in England: tobacco, rice, and later cotton. But these crops require intense labor, which is why planters turned to slavery.
 
 The plantation system creates a rigid social structure. At the top are wealthy planters who own huge estates and enslaved workers. They control the government and make the laws. Below them are small farmers like my family. At the bottom are poor white workers and indentured servants. And below even them—treated not as people but as property—are the enslaved Africans.
 
@@ -1155,8 +1155,8 @@ Our family will never buy enslaved workers. We'll stay small farmers and do our 
       },
       {
         id: "fc6-5",
-        term: "Indigo",
-        definition: "A plant used to make blue dye, grown as a cash crop in South Carolina. It required intense labor and was cultivated by enslaved workers.",
+        term: "Rice Cultivation",
+        definition: "Rice became South Carolina's main cash crop in the 1690s. Rice fields in coastal swamps required flooding and draining, making the work brutal and deadly, carried out by enslaved workers.",
       },
       {
         id: "fc6-6",
@@ -1190,12 +1190,12 @@ Our family will never buy enslaved workers. We'll stay small farmers and do our 
         question: "What were the main cash crops of the Southern colonies?",
         options: [
           "Wheat and corn",
-          "Tobacco, rice, and indigo",
+          "Tobacco and rice",
           "Cotton and sugar",
           "Potatoes and beans",
         ],
         correctOptionIndex: 1,
-        explanation: "The Southern colonies' main cash crops were tobacco (Virginia and Maryland), rice (South Carolina), and indigo (South Carolina). These crops required intensive labor and were grown for profit.",
+        explanation: "The Southern colonies' main cash crops were tobacco (Virginia and Maryland) and rice (South Carolina). These crops required intensive labor and were grown for profit. Later, indigo and cotton would also become important cash crops.",
       },
       {
         id: "q6-2",
