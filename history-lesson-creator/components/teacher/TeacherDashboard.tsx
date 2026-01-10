@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Users, BookOpen, TrendingUp, UserPlus } from "lucide-react";
 import { useAuth } from "@/lib/hooks/useAuth";
-import { getTeacherStudents, getStudentProgress, getQuizAttempts } from "@/lib/firebase/firestore";
+import { getTeacherStudents, getStudentProgress, getAllQuizAttempts } from "@/lib/firebase/firestore";
 import StatsCard from "@/components/progress/StatsCard";
 import StudentList from "./StudentList";
 import CreateStudentModal from "./CreateStudentModal";
@@ -35,7 +35,7 @@ export default function TeacherDashboard() {
         const studentsWithProgress = await Promise.all(
           studentsList.map(async (student) => {
             const progress = await getStudentProgress(student.uid);
-            const quizAttempts = await getQuizAttempts(student.uid);
+            const quizAttempts = await getAllQuizAttempts(student.uid);
 
             const completedLessons = progress.filter(
               (p) => p.status === "completed"
@@ -175,7 +175,7 @@ export default function TeacherDashboard() {
               const studentsWithProgress = await Promise.all(
                 studentsList.map(async (student) => {
                   const progress = await getStudentProgress(student.uid);
-                  const quizAttempts = await getQuizAttempts(student.uid);
+                  const quizAttempts = await getAllQuizAttempts(student.uid);
                   const completedLessons = progress.filter(
                     (p) => p.status === "completed"
                   ).length;

@@ -4,7 +4,7 @@ import { useState, useEffect, Fragment } from "react";
 import { Dialog, Transition } from "@headlessui/react";
 import { X, BookOpen, Award, Clock, Calendar, TrendingUp, Download } from "lucide-react";
 import { format } from "date-fns";
-import { getStudentProgress, getQuizAttempts } from "@/lib/firebase/firestore";
+import { getStudentProgress, getAllQuizAttempts } from "@/lib/firebase/firestore";
 import ProgressBar from "@/components/progress/ProgressBar";
 import ProgressBadge from "@/components/progress/ProgressBadge";
 import type { LessonProgress, QuizAttempt } from "@/lib/firebase/types";
@@ -30,7 +30,7 @@ export default function StudentProgress({
       try {
         const [progressData, quizData] = await Promise.all([
           getStudentProgress(studentId),
-          getQuizAttempts(studentId),
+          getAllQuizAttempts(studentId),
         ]);
         setProgress(progressData);
         setQuizAttempts(quizData);
@@ -68,10 +68,10 @@ export default function StudentProgress({
     progress.forEach((p) => {
       report += `\nLesson ${p.lessonId}:\n`;
       report += `- Status: ${p.status}\n`;
-      if (p.storyProgress) {
-        report += `- Story: Chapter ${p.storyProgress.currentChapter + 1}/${p.storyProgress.totalChapters}\n`;
+      if (p.storyProgress && typeof p.storyProgress === 'object') {
+        report += `- Story: Chapter ${(p.storyProgress.currentChapter || 0) + 1}/${p.storyProgress.totalChapters || 0}\n`;
       }
-      if (p.flashcardProgress) {
+      if (p.flashcardProgress && typeof p.flashcardProgress === 'object' && 'masteredCards' in p.flashcardProgress) {
         report += `- Flashcards: ${p.flashcardProgress.masteredCards?.length || 0} mastered\n`;
       }
     });
@@ -245,16 +245,16 @@ export default function StudentProgress({
                                     />
                                   </div>
                                   <div className="grid grid-cols-3 gap-4 text-sm">
-                                    {p.storyProgress && (
+                                    {p.storyProgress && typeof p.storyProgress === 'object' && (
                                       <div>
                                         <span className="text-gray-600">Story:</span>{" "}
                                         <span className="font-medium">
-                                          Chapter {p.storyProgress.currentChapter + 1}/
-                                          {p.storyProgress.totalChapters}
+                                          Chapter {(p.storyProgress.currentChapter || 0) + 1}/
+                                          {p.storyProgress.totalChapters || 0}
                                         </span>
                                       </div>
                                     )}
-                                    {p.flashcardProgress && (
+                                    {p.flashcardProgress && typeof p.flashcardProgress === 'object' && 'masteredCards' in p.flashcardProgress && (
                                       <div>
                                         <span className="text-gray-600">Flashcards:</span>{" "}
                                         <span className="font-medium">

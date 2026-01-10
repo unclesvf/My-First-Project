@@ -11,25 +11,29 @@ interface AuthModalProps {
   isOpen: boolean;
   onClose: () => void;
   defaultTab?: 'signin' | 'signup';
+  onAuthSuccess?: () => void;
 }
 
-export default function AuthModal({ isOpen, onClose, defaultTab = 'signin' }: AuthModalProps) {
+export default function AuthModal({ isOpen, onClose, defaultTab = 'signin', onAuthSuccess }: AuthModalProps) {
   const { signInWithGoogle, signInWithEmail, signUpWithEmail } = useAuth();
   const [selectedIndex, setSelectedIndex] = useState(defaultTab === 'signin' ? 0 : 1);
 
   const handleGoogleSignIn = async () => {
     await signInWithGoogle();
+    onAuthSuccess?.();
     onClose();
   };
 
   const handleEmailSignIn = async (email: string, password: string) => {
     await signInWithEmail(email, password);
+    onAuthSuccess?.();
     onClose();
   };
 
   const handleEmailSignUp = async (email: string, password: string, displayName?: string) => {
     if (!displayName) throw new Error('Display name is required');
     await signUpWithEmail(email, password, displayName);
+    onAuthSuccess?.();
     onClose();
   };
 

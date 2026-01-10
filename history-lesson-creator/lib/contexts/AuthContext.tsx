@@ -1,83 +1,59 @@
 "use client";
 
-import { createContext, useContext, useEffect, useState, ReactNode } from 'react';
+import { createContext, useContext, useEffect, useState } from 'react';
 import { User, onAuthStateChanged } from 'firebase/auth';
 import { auth } from '@/lib/firebase/config';
+import { getUserProfile, createUserProfile } from '@/lib/firebase/firestore';
+import { UserProfile } from '@/lib/firebase/types';
 import {
-  signInWithGoogle as firebaseSignInWithGoogle,
   signInWithEmail as firebaseSignInWithEmail,
   signUpWithEmail as firebaseSignUpWithEmail,
+  signInWithGoogle as firebaseSignInWithGoogle,
   signOut as firebaseSignOut,
 } from '@/lib/firebase/auth';
-import {
-  getUserProfile,
-  createUserProfile,
-  updateUserRole,
-  updateLastLogin,
-} from '@/lib/firebase/firestore';
-import type { UserProfile } from '@/lib/firebase/types';
 
 interface AuthContextType {
   user: User | null;
   userProfile: UserProfile | null;
   loading: boolean;
-  signInWithGoogle: () => Promise<void>;
   signInWithEmail: (email: string, password: string) => Promise<void>;
   signUpWithEmail: (email: string, password: string, displayName: string) => Promise<void>;
+  signInWithGoogle: () => Promise<void>;
   signOut: () => Promise<void>;
   setUserRole: (role: 'teacher' | 'student', teacherId?: string) => Promise<void>;
-  refreshUserProfile: () => Promise<void>;
+  refreshProfile: () => Promise<void>;
 }
 
-export const AuthContext = createContext<AuthContextType | undefined>(undefined);
+export const AuthContext = createContext<AuthContextType>({
+  user: null,
+  userProfile: null,
+  loading: true,
+  signInWithEmail: async () => {},
+  signUpWithEmail: async () => {},
+  signInWithGoogle: async () => {},
+  signOut: async () => {},
+  setUserRole: async () => {},
+  refreshProfile: async () => {},
+});
 
-export function AuthProvider({ children }: { children: ReactNode }) {
+export function AuthProvider({ children }: { children: React.ReactNode }) {
   const [user, setUser] = useState<User | null>(null);
   const [userProfile, setUserProfile] = useState<UserProfile | null>(null);
   const [loading, setLoading] = useState(true);
 
-  // Fetch user profile from Firestore
-  const fetchUserProfile = async (uid: string) => {
-    try {
-      const profile = await getUserProfile(uid);
-      setUserProfile(profile);
-      return profile;
-    } catch (error) {
-      console.error('Error fetching user profile:', error);
-      return null;
-    }
-  };
-
-  // Refresh user profile (useful after updates)
-  const refreshUserProfile = async () => {
-    if (user) {
-      await fetchUserProfile(user.uid);
-    }
-  };
-
-  // Listen to auth state changes
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, async (firebaseUser) => {
       setUser(firebaseUser);
 
       if (firebaseUser) {
-        // User is signed in
-        const profile = await fetchUserProfile(firebaseUser.uid);
+        let profile = await getUserProfile(firebaseUser.uid);
 
-        // If no profile exists, create one (first-time user)
         if (!profile) {
-          await createUserProfile(
-            firebaseUser.uid,
-            firebaseUser.email || '',
-            firebaseUser.displayName || 'User'
-          );
-          await fetchUserProfile(firebaseUser.uid);
-        } else {
-          // Update last login
-          await updateLastLogin(firebaseUser.uid);
+          profile = await createUserProfile(firebaseUser);
         }
+
+        setUserProfile(profile);
       } else {
-        // User is signed out
         setUserProfile(null);
       }
 
@@ -87,89 +63,87 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     return () => unsubscribe();
   }, []);
 
-  // Sign in with Google
-  const handleSignInWithGoogle = async () => {
-    try {
-      await firebaseSignInWithGoogle();
-      // onAuthStateChanged will handle the rest
-    } catch (error: any) {
-      console.error('Sign in error:', error);
-      throw error;
-    }
-  };
-
-  // Sign in with Email/Password
   const handleSignInWithEmail = async (email: string, password: string) => {
     try {
       await firebaseSignInWithEmail(email, password);
-      // onAuthStateChanged will handle the rest
-    } catch (error: any) {
-      console.error('Sign in error:', error);
+    } catch (error) {
       throw error;
     }
   };
 
-  // Sign up with Email/Password
-  const handleSignUpWithEmail = async (
-    email: string,
-    password: string,
-    displayName: string
-  ) => {
+  const handleSignUpWithEmail = async (email: string, password: string, displayName: string) => {
     try {
       await firebaseSignUpWithEmail(email, password, displayName);
-      // onAuthStateChanged will handle the rest
-    } catch (error: any) {
-      console.error('Sign up error:', error);
+    } catch (error) {
       throw error;
     }
   };
 
-  // Sign out
+  const handleSignInWithGoogle = async () => {
+    try {
+      await firebaseSignInWithGoogle();
+    } catch (error) {
+      throw error;
+    }
+  };
+
   const handleSignOut = async () => {
     try {
       await firebaseSignOut();
-      // onAuthStateChanged will handle the rest
-    } catch (error: any) {
-      console.error('Sign out error:', error);
+      setUser(null);
+      setUserProfile(null);
+    } catch (error) {
       throw error;
     }
   };
 
-  // Set user role (teacher or student)
-  const setUserRole = async (role: 'teacher' | 'student', teacherId?: string) => {
-    if (!user) {
-      throw new Error('No user signed in');
-    }
-
+  const handleSetUserRole = async (role: 'teacher' | 'student', teacherId?: string) => {
     try {
+      if (!user) throw new Error('No authenticated user');
+
+      const { updateUserRole } = await import('@/lib/firebase/firestore');
       await updateUserRole(user.uid, role, teacherId);
-      await refreshUserProfile();
-    } catch (error: any) {
-      console.error('Error setting user role:', error);
+
+      // Update user profile with new role
+      if (userProfile) {
+        setUserProfile({
+          ...userProfile,
+          role,
+          ...(teacherId && { teacherId }),
+        });
+      }
+    } catch (error) {
       throw error;
     }
   };
 
-  const value: AuthContextType = {
-    user,
-    userProfile,
-    loading,
-    signInWithGoogle: handleSignInWithGoogle,
-    signInWithEmail: handleSignInWithEmail,
-    signUpWithEmail: handleSignUpWithEmail,
-    signOut: handleSignOut,
-    setUserRole,
-    refreshUserProfile,
+  const handleRefreshProfile = async () => {
+    if (!user) return;
+    const profile = await getUserProfile(user.uid);
+    if (profile) {
+      setUserProfile(profile);
+    }
   };
 
-  return <AuthContext.Provider value={value}>{children}</AuthContext.Provider>;
+  return (
+    <AuthContext.Provider
+      value={{
+        user,
+        userProfile,
+        loading,
+        signInWithEmail: handleSignInWithEmail,
+        signUpWithEmail: handleSignUpWithEmail,
+        signInWithGoogle: handleSignInWithGoogle,
+        signOut: handleSignOut,
+        setUserRole: handleSetUserRole,
+        refreshProfile: handleRefreshProfile,
+      }}
+    >
+      {children}
+    </AuthContext.Provider>
+  );
 }
 
-// Custom hook to use auth context
 export function useAuth() {
-  const context = useContext(AuthContext);
-  if (context === undefined) {
-    throw new Error('useAuth must be used within an AuthProvider');
-  }
-  return context;
+  return useContext(AuthContext);
 }

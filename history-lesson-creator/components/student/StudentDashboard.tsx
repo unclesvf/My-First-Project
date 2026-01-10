@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import { BookOpen, TrendingUp, Award, Calendar } from "lucide-react";
 import { useAuth } from "@/lib/hooks/useAuth";
 import { useRouter } from "next/navigation";
-import { getStudentProgress, getQuizAttempts, getStudentAssignments } from "@/lib/firebase/firestore";
+import { getStudentProgress, getAllQuizAttempts, getStudentAssignments } from "@/lib/firebase/firestore";
 import { lessons } from "@/data/lessons";
 import StatsCard from "@/components/progress/StatsCard";
 import AssignedLessons from "./AssignedLessons";
@@ -29,9 +29,9 @@ export default function StudentDashboard() {
       try {
         const [progressData, quizData, assignmentData] = await Promise.all([
           getStudentProgress(user.uid),
-          getQuizAttempts(user.uid),
+          getAllQuizAttempts(user.uid),
           userProfile.teacherId
-            ? getStudentAssignments(user.uid, userProfile.teacherId)
+            ? getStudentAssignments(user.uid)
             : Promise.resolve([]),
         ]);
 

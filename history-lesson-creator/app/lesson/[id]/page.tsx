@@ -1,5 +1,5 @@
 import { lessons } from "@/data/lessons";
-import LessonView from "@/components/LessonView";
+import LessonWithAccessControl from "@/components/LessonWithAccessControl";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 
@@ -29,5 +29,5 @@ export default async function LessonPage(props: { params: Promise<{ id: string }
     );
   }
 
-  return <LessonView lesson={lesson} />;
+  return <LessonWithAccessControl lesson={lesson} />;
 }

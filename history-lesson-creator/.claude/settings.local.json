@@ -38,7 +38,14 @@
       "Bash(firebase:*)",
       "Bash(npx firebase --version)",
       "Bash(npx firebase login:list:*)",
-      "Bash(npx firebase login)"
+      "Bash(npx firebase login)",
+      "WebSearch",
+      "Bash(do grep -n \"id: \"\"lesson-$i\"\"\" /c/Users/scott/My-First-Project/My-First-Project/history-lesson-creator/data/lessons.ts)",
+      "Bash(start chrome \"C:\\\\Users\\\\scott\\\\My-First-Project\\\\My-First-Project\\\\history-lesson-creator\\\\SETUP_INSTRUCTIONS_PRINT.md\")",
+      "Bash(powershell -Command \"\n$md = Get-Content ''C:\\\\Users\\\\scott\\\\My-First-Project\\\\My-First-Project\\\\history-lesson-creator\\\\SETUP_INSTRUCTIONS_PRINT.md'' -Raw\n$html = @''\n<!DOCTYPE html>\n<html>\n<head>\n<meta charset=\"\"utf-8\"\">\n<title>Setup Instructions</title>\n<style>\nbody { font-family: Arial, sans-serif; max-width: 8.5in; margin: 0.5in auto; line-height: 1.6; }\nh1 { color: #2563eb; border-bottom: 3px solid #2563eb; padding-bottom: 10px; }\nh2 { color: #1e40af; margin-top: 30px; border-left: 4px solid #2563eb; padding-left: 10px; }\nh3 { color: #1e3a8a; }\ncode { background: #f3f4f6; padding: 2px 6px; border-radius: 3px; font-family: ''Courier New'', monospace; }\npre { background: #1f2937; color: #f3f4f6; padding: 15px; border-radius: 5px; overflow-x: auto; }\npre code { background: transparent; color: #f3f4f6; }\nul { margin-left: 20px; }\nli { margin: 8px 0; }\n.warning { background: #fef3c7; border-left: 4px solid #f59e0b; padding: 10px; margin: 15px 0; }\n.info { background: #dbeafe; border-left: 4px solid #3b82f6; padding: 10px; margin: 15px 0; }\n.success { background: #d1fae5; border-left: 4px solid #10b981; padding: 10px; margin: 15px 0; }\n@media print {\n  body { margin: 0.5in; }\n  h1, h2 { page-break-after: avoid; }\n  pre, code { page-break-inside: avoid; }\n}\n</style>\n</head>\n<body>\n<pre>'' + $md.Replace\\(''<'', ''&lt;''\\).Replace\\(''>'', ''&gt;''\\) + ''</pre>\n</body>\n</html>\n''@\n$html | Out-File ''C:\\\\Users\\\\scott\\\\My-First-Project\\\\My-First-Project\\\\history-lesson-creator\\\\SETUP_INSTRUCTIONS_PRINT.html'' -Encoding UTF8\nWrite-Host ''HTML file created''\n\")",
+      "Bash(start chrome:*)",
+      "Bash(timeout /t 3)",
+      "Bash(powershell -Command \"\\(New-Object -ComObject WScript.Shell\\).SendKeys\\(''^p''\\)\")"
     ]
   }
 }

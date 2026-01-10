@@ -57,14 +57,16 @@ export default function CreateStudentModal({
 
       const studentUid = userCredential.user.uid;
 
-      // Create user profile
-      await createUserProfile(studentUid, formData.email, formData.name);
 
-      // Set role as student with teacher ID
-      await updateUserRole(studentUid, "student", user.uid);
+      // Create student account with teacher link
+      await createStudentAccount(studentUid, formData.email, formData.name, user.uid);
 
-      // Add to teacher's student list
-      await createStudentAccount(user.uid, formData.email, formData.name, studentUid);
+
+
+
+
+
+
 
       setSuccess(true);
       setTimeout(() => {

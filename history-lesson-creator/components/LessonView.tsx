@@ -43,10 +43,10 @@ function LessonContent({ lesson }: LessonViewProps) {
   // Calculate progress statistics
   const storyProgress = currentLessonProgress?.storyProgress;
   const flashcardProgress = currentLessonProgress?.flashcardProgress;
-  const storyComplete = storyProgress?.status === "completed";
+  const storyComplete = typeof storyProgress === 'object' && storyProgress?.status === "completed";
   const totalChapters = lesson.story.chapters.length;
-  const currentChapter = storyProgress?.currentChapter ?? 0;
-  const masteredCards = flashcardProgress?.masteredCards?.length ?? 0;
+  const currentChapter = typeof storyProgress === 'object' ? (storyProgress?.currentChapter ?? 0) : (typeof storyProgress === 'number' ? storyProgress : 0);
+  const masteredCards = typeof flashcardProgress === 'object' && 'masteredCards' in flashcardProgress ? (flashcardProgress.masteredCards?.length ?? 0) : (Array.isArray(flashcardProgress) ? flashcardProgress.length : 0);
   const totalCards = lesson.flashcards.length;
 
   return (

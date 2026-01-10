@@ -23,8 +23,11 @@ export default function StoryReader({ narrator, chapters, lessonId }: StoryReade
 
   // Load saved progress on mount
   useEffect(() => {
-    if (currentLessonProgress?.storyProgress?.currentChapter !== undefined) {
-      setCurrentChapter(currentLessonProgress.storyProgress.currentChapter);
+    const sp = currentLessonProgress?.storyProgress;
+    if (typeof sp === 'object' && sp?.currentChapter !== undefined) {
+      setCurrentChapter(sp.currentChapter);
+    } else if (typeof sp === 'number') {
+      setCurrentChapter(sp);
     }
   }, [currentLessonProgress]);
 

@@ -4,16 +4,21 @@ import { createContext, useContext, useState, useEffect, useCallback, ReactNode 
 import { useAuth } from '@/lib/hooks/useAuth';
 import {
   getLessonProgress,
+  getAllLessonProgress,
   updateStoryProgress as firestoreUpdateStoryProgress,
   updateFlashcardProgress as firestoreUpdateFlashcardProgress,
   saveQuizAttempt as firestoreSaveQuizAttempt,
   getQuizAttempts,
+  getAllQuizAttempts,
+  updateLessonProgress as firestoreUpdateLessonProgress,
 } from '@/lib/firebase/firestore';
 import type { LessonProgress, QuizAttempt } from '@/lib/firebase/types';
 
 interface ProgressContextType {
   // Current lesson progress
   currentLessonProgress: LessonProgress | null;
+  allLessonProgress: LessonProgress[];
+  allQuizAttempts: QuizAttempt[];
   loading: boolean;
 
   // Progress tracking methods
@@ -26,7 +31,6 @@ interface ProgressContextType {
   ) => Promise<void>;
   saveQuizAttempt: (
     lessonId: string,
-    courseId: string,
     score: number,
     totalQuestions: number,
     percentage: number,
@@ -37,7 +41,10 @@ interface ProgressContextType {
   // Progress retrieval
   getLessonProgressData: (lessonId: string) => Promise<LessonProgress | null>;
   getQuizHistory: (lessonId?: string) => Promise<QuizAttempt[]>;
+  getAllLessonProgressData: () => Promise<LessonProgress[]>;
+  getAllQuizHistoryData: () => Promise<QuizAttempt[]>;
   refreshProgress: () => Promise<void>;
+  refreshAllProgress: () => Promise<void>;
 }
 
 export const ProgressContext = createContext<ProgressContextType | undefined>(undefined);
@@ -50,6 +57,8 @@ interface ProgressProviderProps {
 export function ProgressProvider({ children, lessonId }: ProgressProviderProps) {
   const { user } = useAuth();
   const [currentLessonProgress, setCurrentLessonProgress] = useState<LessonProgress | null>(null);
+  const [allLessonProgress, setAllLessonProgress] = useState<LessonProgress[]>([]);
+  const [allQuizAttempts, setAllQuizAttempts] = useState<QuizAttempt[]>([]);
   const [loading, setLoading] = useState(false);
 
   // Debounce timer for batch updates
@@ -79,6 +88,30 @@ export function ProgressProvider({ children, lessonId }: ProgressProviderProps) 
     }
   };
 
+  // Load all lesson progress from Firestore
+  const loadAllLessonProgress = async () => {
+    if (!user) return;
+
+    try {
+      const progress = await getAllLessonProgress(user.uid);
+      setAllLessonProgress(progress);
+    } catch (error) {
+      console.error('Error loading all lesson progress:', error);
+    }
+  };
+
+  // Load all quiz attempts from Firestore
+  const loadAllQuizAttempts = async () => {
+    if (!user) return;
+
+    try {
+      const attempts = await getAllQuizAttempts(user.uid);
+      setAllQuizAttempts(attempts);
+    } catch (error) {
+      console.error('Error loading all quiz attempts:', error);
+    }
+  };
+
   // Debounced story progress update
   const updateStoryProgress = useCallback(
     async (lesson: string, currentChapter: number, totalChapters: number) => {
@@ -94,7 +127,7 @@ export function ProgressProvider({ children, lessonId }: ProgressProviderProps) 
         status: currentChapter === totalChapters - 1 ? 'completed' : 'in_progress',
         storyProgress: {
           currentChapter,
-          chaptersCompleted: prev?.storyProgress?.chaptersCompleted || [],
+          chaptersCompleted: (typeof prev?.storyProgress === 'object' && prev?.storyProgress?.chaptersCompleted) || [],
           totalChapters,
         },
       } as LessonProgress));
@@ -184,7 +217,6 @@ export function ProgressProvider({ children, lessonId }: ProgressProviderProps) 
   const saveQuizAttempt = useCallback(
     async (
       lesson: string,
-      courseId: string,
       score: number,
       totalQuestions: number,
       percentage: number,
@@ -198,7 +230,6 @@ export function ProgressProvider({ children, lessonId }: ProgressProviderProps) 
       try {
         const attemptId = await firestoreSaveQuizAttempt(
           user.uid,
-          courseId,
           lesson,
           score,
           totalQuestions,
@@ -209,6 +240,9 @@ export function ProgressProvider({ children, lessonId }: ProgressProviderProps) 
 
         // Reload lesson progress to reflect quiz completion
         await loadLessonProgress(lesson);
+
+        // Reload all quiz attempts
+        await loadAllQuizAttempts();
 
         return attemptId;
       } catch (error) {
@@ -234,10 +268,10 @@ export function ProgressProvider({ children, lessonId }: ProgressProviderProps) 
     [user]
   );
 
-  // Get quiz history
+  // Get quiz history for a specific lesson
   const getQuizHistory = useCallback(
     async (lesson?: string): Promise<QuizAttempt[]> => {
-      if (!user) return [];
+      if (!user || !lesson) return [];
 
       try {
         return await getQuizAttempts(user.uid, lesson);
@@ -249,12 +283,41 @@ export function ProgressProvider({ children, lessonId }: ProgressProviderProps) 
     [user]
   );
 
+  // Get all lesson progress data
+  const getAllLessonProgressData = useCallback(async (): Promise<LessonProgress[]> => {
+    if (!user) return [];
+
+    try {
+      return await getAllLessonProgress(user.uid);
+    } catch (error) {
+      console.error('Error getting all lesson progress:', error);
+      return [];
+    }
+  }, [user]);
+
+  // Get all quiz history data
+  const getAllQuizHistoryData = useCallback(async (): Promise<QuizAttempt[]> => {
+    if (!user) return [];
+
+    try {
+      return await getAllQuizAttempts(user.uid);
+    } catch (error) {
+      console.error('Error getting all quiz history:', error);
+      return [];
+    }
+  }, [user]);
+
   // Refresh current lesson progress
   const refreshProgress = useCallback(async () => {
     if (lessonId) {
       await loadLessonProgress(lessonId);
     }
   }, [lessonId, user]);
+
+  // Refresh all progress
+  const refreshAllProgress = useCallback(async () => {
+    await Promise.all([loadAllLessonProgress(), loadAllQuizAttempts()]);
+  }, [user]);
 
   // Cleanup pending updates on unmount
   useEffect(() => {
@@ -265,13 +328,18 @@ export function ProgressProvider({ children, lessonId }: ProgressProviderProps) 
 
   const value: ProgressContextType = {
     currentLessonProgress,
+    allLessonProgress,
+    allQuizAttempts,
     loading,
     updateStoryProgress,
     updateFlashcardProgress,
     saveQuizAttempt,
     getLessonProgressData,
     getQuizHistory,
+    getAllLessonProgressData,
+    getAllQuizHistoryData,
     refreshProgress,
+    refreshAllProgress,
   };
 
   return <ProgressContext.Provider value={value}>{children}</ProgressContext.Provider>;

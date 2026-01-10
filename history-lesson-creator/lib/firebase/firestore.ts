@@ -3,269 +3,86 @@ import {
   getDoc,
   setDoc,
   updateDoc,
-  deleteDoc,
   collection,
+  addDoc,
   query,
   where,
   getDocs,
-  addDoc,
-  serverTimestamp,
   Timestamp,
   orderBy,
+  collectionGroup,
   limit,
 } from 'firebase/firestore';
 import { db } from './config';
-import type {
-  UserProfile,
-  LessonProgress,
-  QuizAttempt,
-  StudentInfo,
-  Assignment,
-  UserCourseStatus,
-} from './types';
+import { UserProfile, Purchase, CourseAccess, QuizAttempt, LessonProgress } from './types';
+import { User } from 'firebase/auth';
 
-// ==================== USER PROFILE ====================
+export async function createUserProfile(user: User): Promise<UserProfile> {
+  const userProfile: UserProfile = {
+    uid: user.uid,
+    email: user.email!,
+    displayName: user.displayName || user.email!.split('@')[0],
+    createdAt: Timestamp.now(),
+    courseAccess: {
+      status: 'free',
+      trialStartedAt: null,
+      trialEndsAt: null,
+      purchasedAt: null,
+      stripePaymentIntentId: null,
+      stripeCustomerId: null,
+    },
+  };
 
-export async function createUserProfile(
-  uid: string,
-  email: string,
-  displayName: string
-): Promise<void> {
-  const userRef = doc(db, 'users', uid);
-
-  await setDoc(userRef, {
-    uid,
-    email,
-    displayName,
-    role: null, // Will be set during role selection
-    teacherId: null,
-    createdAt: serverTimestamp(),
-    lastLogin: serverTimestamp(),
-    courses: {},
-  });
+  await setDoc(doc(db, 'users', user.uid), userProfile);
+  return userProfile;
 }
 
 export async function getUserProfile(uid: string): Promise<UserProfile | null> {
-  const userRef = doc(db, 'users', uid);
-  const userSnap = await getDoc(userRef);
-
-  if (!userSnap.exists()) {
-    return null;
+  const docRef = doc(db, 'users', uid);
+  const docSnap = await getDoc(docRef);
+  if (docSnap.exists()) {
+    return docSnap.data() as UserProfile;
   }
-
-  return userSnap.data() as UserProfile;
+  return null;
 }
-
-export async function updateUserRole(
-  uid: string,
-  role: 'teacher' | 'student',
-  teacherId?: string
-): Promise<void> {
-  const userRef = doc(db, 'users', uid);
-
-  const updateData: any = {
-    role,
-    teacherId: teacherId || null,
-  };
-
-  await updateDoc(userRef, updateData);
-}
-
-export async function updateLastLogin(uid: string): Promise<void> {
-  const userRef = doc(db, 'users', uid);
-  await updateDoc(userRef, {
-    lastLogin: serverTimestamp(),
-  });
-}
-
-// ==================== TEACHER VALIDATION ====================
 
 export async function getUserByEmail(email: string): Promise<(UserProfile & { id: string }) | null> {
   const usersRef = collection(db, 'users');
-  const q = query(
-    usersRef,
-    where('email', '==', email),
-    limit(1)
-  );
-
+  const q = query(usersRef, where('email', '==', email), limit(1));
   const querySnapshot = await getDocs(q);
-
-  if (querySnapshot.empty) {
-    return null;
+  if (!querySnapshot.empty) {
+    const doc = querySnapshot.docs[0];
+    return { id: doc.id, ...doc.data() } as UserProfile & { id: string };
   }
-
-  const doc = querySnapshot.docs[0];
-  return {
-    id: doc.id,
-    ...doc.data()
-  } as UserProfile & { id: string };
+  return null;
 }
 
-export async function findTeacherByEmail(email: string): Promise<string | null> {
-  const usersRef = collection(db, 'users');
-  const q = query(
-    usersRef,
-    where('email', '==', email),
-    where('role', '==', 'teacher'),
-    limit(1)
-  );
+export async function updateCourseAccess(uid: string, courseAccess: Partial<CourseAccess>): Promise<void> {
+  const userRef = doc(db, 'users', uid);
+  await updateDoc(userRef, { courseAccess });
+}
 
+export async function createPurchase(purchase: Omit<Purchase, 'id'>): Promise<string> {
+  const purchasesRef = collection(db, 'purchases');
+  const docRef = await addDoc(purchasesRef, purchase);
+  return docRef.id;
+}
+
+export async function getUserPurchases(uid: string): Promise<Purchase[]> {
+  const purchasesRef = collection(db, 'purchases');
+  const q = query(purchasesRef, where('userId', '==', uid), orderBy('purchasedAt', 'desc'));
   const querySnapshot = await getDocs(q);
-
-  if (querySnapshot.empty) {
-    return null;
-  }
-
-  return querySnapshot.docs[0].id; // Return teacher's UID
+  return querySnapshot.docs.map(doc => ({ id: doc.id, ...doc.data() } as Purchase));
 }
 
-// ==================== COURSE ACCESS ====================
+// ==================== Progress Tracking Functions ====================
 
-export async function getCourseStatus(
-  userId: string,
-  courseId: string
-): Promise<UserCourseStatus | null> {
-  const userRef = doc(db, 'users', userId);
-  const userSnap = await getDoc(userRef);
-
-  if (!userSnap.exists()) {
-    return null;
-  }
-
-  const userData = userSnap.data() as UserProfile;
-  return userData.courses?.[courseId] || null;
-}
-
-export async function startCourseTrial(
-  userId: string,
-  courseId: string,
-  trialDays: number = 7
-): Promise<void> {
-  const userRef = doc(db, 'users', userId);
-  const trialStartedAt = Timestamp.now();
-  const trialEndsAt = Timestamp.fromMillis(
-    trialStartedAt.toMillis() + trialDays * 24 * 60 * 60 * 1000
-  );
-
-  await updateDoc(userRef, {
-    [`courses.${courseId}`]: {
-      status: 'trial',
-      trialStartedAt,
-      trialEndsAt,
-      purchasedAt: null,
-      stripePaymentId: null,
-      amount: null,
-    },
-  });
-}
-
-export async function markCoursePurchased(
-  userId: string,
-  courseId: string,
-  stripePaymentId: string,
-  amount: number
-): Promise<void> {
-  const userRef = doc(db, 'users', userId);
-
-  await updateDoc(userRef, {
-    [`courses.${courseId}`]: {
-      status: 'purchased',
-      trialStartedAt: null,
-      trialEndsAt: null,
-      purchasedAt: serverTimestamp(),
-      stripePaymentId,
-      amount,
-    },
-  });
-}
-
-// ==================== LESSON PROGRESS ====================
-
-export async function getLessonProgress(
-  userId: string,
-  lessonId: string
-): Promise<LessonProgress | null> {
-  const progressRef = doc(db, 'progress', userId, 'lessons', lessonId);
-  const progressSnap = await getDoc(progressRef);
-
-  if (!progressSnap.exists()) {
-    return null;
-  }
-
-  return progressSnap.data() as LessonProgress;
-}
-
-export async function updateStoryProgress(
-  userId: string,
-  lessonId: string,
-  currentChapter: number,
-  totalChapters: number
-): Promise<void> {
-  const progressRef = doc(db, 'progress', userId, 'lessons', lessonId);
-
-  // Get current progress
-  const progressSnap = await getDoc(progressRef);
-
-  let chaptersCompleted: number[] = [];
-  if (progressSnap.exists()) {
-    const data = progressSnap.data() as LessonProgress;
-    chaptersCompleted = data.storyProgress?.chaptersCompleted || [];
-  }
-
-  // Add current chapter to completed list if not already there
-  if (!chaptersCompleted.includes(currentChapter)) {
-    chaptersCompleted.push(currentChapter);
-  }
-
-  const isCompleted = chaptersCompleted.length === totalChapters;
-
-  await setDoc(
-    progressRef,
-    {
-      lessonId,
-      status: isCompleted ? 'completed' : 'in_progress',
-      lastAccessedAt: serverTimestamp(),
-      completedAt: isCompleted ? serverTimestamp() : null,
-      storyProgress: {
-        currentChapter,
-        chaptersCompleted,
-        totalChapters,
-      },
-    },
-    { merge: true }
-  );
-}
-
-export async function updateFlashcardProgress(
-  userId: string,
-  lessonId: string,
-  cardIndex: number,
-  totalCards: number,
-  masteredCardIds: string[]
-): Promise<void> {
-  const progressRef = doc(db, 'progress', userId, 'lessons', lessonId);
-
-  await setDoc(
-    progressRef,
-    {
-      lessonId,
-      lastAccessedAt: serverTimestamp(),
-      flashcardProgress: {
-        cardsViewed: cardIndex + 1,
-        cardsTotal: totalCards,
-        lastCardIndex: cardIndex,
-        masteredCards: masteredCardIds,
-      },
-    },
-    { merge: true }
-  );
-}
-
-// ==================== QUIZ ATTEMPTS ====================
-
+/**
+ * Save a quiz attempt to Firestore
+ * Structure: users/{userId}/quizAttempts/{attemptId}
+ */
 export async function saveQuizAttempt(
   userId: string,
-  courseId: string,
   lessonId: string,
   score: number,
   totalQuestions: number,
@@ -273,138 +90,328 @@ export async function saveQuizAttempt(
   answers: any[],
   timeSpent: number
 ): Promise<string> {
-  const attemptsRef = collection(db, 'progress', userId, 'quizAttempts');
-
-  const attemptDoc = await addDoc(attemptsRef, {
-    userId,
-    courseId,
-    lessonId,
-    score,
-    totalQuestions,
-    percentage,
-    answers,
-    completedAt: serverTimestamp(),
-    timeSpent,
-  });
-
-  // Update lesson progress to mark quiz complete
-  const progressRef = doc(db, 'progress', userId, 'lessons', lessonId);
-  await setDoc(
-    progressRef,
-    {
+  try {
+    const quizAttempt: Omit<QuizAttempt, 'id'> = {
+      userId,
       lessonId,
-      lastAccessedAt: serverTimestamp(),
-    },
-    { merge: true }
-  );
+      score,
+      totalQuestions,
+      percentage,
+      answers,
+      timeSpent,
+      completedAt: Timestamp.now(),
+    };
 
-  return attemptDoc.id;
-}
+    const userQuizzesRef = collection(db, 'users', userId, 'quizAttempts');
+    const docRef = await addDoc(userQuizzesRef, quizAttempt);
 
-export async function getQuizAttempts(
-  userId: string,
-  lessonId?: string
-): Promise<QuizAttempt[]> {
-  const attemptsRef = collection(db, 'progress', userId, 'quizAttempts');
-
-  let q;
-  if (lessonId) {
-    q = query(
-      attemptsRef,
-      where('lessonId', '==', lessonId),
-      orderBy('completedAt', 'desc')
-    );
-  } else {
-    q = query(attemptsRef, orderBy('completedAt', 'desc'));
+    return docRef.id;
+  } catch (error) {
+    console.error('Error saving quiz attempt:', error);
+    throw new Error(`Failed to save quiz attempt: ${error instanceof Error ? error.message : 'Unknown error'}`);
   }
-
-  const querySnapshot = await getDocs(q);
-
-  return querySnapshot.docs.map(doc => ({
-    id: doc.id,
-    ...doc.data(),
-  })) as QuizAttempt[];
 }
 
-// ==================== STUDENT MANAGEMENT (Teachers) ====================
+/**
+ * Get all quiz attempts for a specific lesson
+ */
+export async function getQuizAttempts(userId: string, lessonId: string): Promise<QuizAttempt[]> {
+  try {
+    const userQuizzesRef = collection(db, 'users', userId, 'quizAttempts');
+    const q = query(userQuizzesRef, where('lessonId', '==', lessonId), orderBy('completedAt', 'desc'));
+    const querySnapshot = await getDocs(q);
 
-export async function createStudentAccount(
-  teacherId: string,
-  studentEmail: string,
-  studentName: string,
-  studentUid: string
-): Promise<void> {
-  const studentRef = doc(
-    db,
-    'students',
-    teacherId,
-    'studentList',
-    studentUid
-  );
-
-  await setDoc(studentRef, {
-    uid: studentUid,
-    email: studentEmail,
-    displayName: studentName,
-    createdAt: serverTimestamp(),
-    assignedLessons: [],
-  });
+    return querySnapshot.docs.map(doc => ({
+      id: doc.id,
+      ...doc.data(),
+    } as QuizAttempt));
+  } catch (error) {
+    console.error('Error getting quiz attempts:', error);
+    throw new Error(`Failed to get quiz attempts: ${error instanceof Error ? error.message : 'Unknown error'}`);
+  }
 }
 
-export async function getTeacherStudents(
-  teacherId: string
-): Promise<StudentInfo[]> {
-  const studentsRef = collection(db, 'students', teacherId, 'studentList');
-  const querySnapshot = await getDocs(studentsRef);
+/**
+ * Get all quiz attempts for a user across all lessons
+ * Limited to most recent 50 for performance
+ */
+export async function getAllQuizAttempts(userId: string): Promise<QuizAttempt[]> {
+  try {
+    const userQuizzesRef = collection(db, 'users', userId, 'quizAttempts');
+    const q = query(userQuizzesRef, orderBy('completedAt', 'desc'), limit(50));
+    const querySnapshot = await getDocs(q);
 
-  return querySnapshot.docs.map(doc => doc.data()) as StudentInfo[];
+    return querySnapshot.docs.map(doc => ({
+      id: doc.id,
+      ...doc.data(),
+    } as QuizAttempt));
+  } catch (error) {
+    console.error('Error getting all quiz attempts:', error);
+    throw new Error(`Failed to get all quiz attempts: ${error instanceof Error ? error.message : 'Unknown error'}`);
+  }
 }
 
-export async function getStudentProgress(
-  studentId: string
-): Promise<LessonProgress[]> {
-  const progressRef = collection(db, 'progress', studentId, 'lessons');
-  const querySnapshot = await getDocs(progressRef);
-
-  return querySnapshot.docs.map(doc => doc.data()) as LessonProgress[];
-}
-
-// ==================== ASSIGNMENTS ====================
-
-export async function createAssignment(
-  teacherId: string,
-  studentId: string,
-  courseId: string,
+/**
+ * Update lesson progress (story and flashcard progress)
+ * Structure: users/{userId}/lessonProgress/{lessonId}
+ */
+export async function updateLessonProgress(
+  userId: string,
   lessonId: string,
-  dueDate?: Date
-): Promise<string> {
-  const assignmentsRef = collection(db, 'assignments', teacherId);
+  progressData: Partial<LessonProgress>
+): Promise<void> {
+  try {
+    const lessonProgressRef = doc(db, 'users', userId, 'lessonProgress', lessonId);
 
-  const assignmentDoc = await addDoc(assignmentsRef, {
-    teacherId,
-    studentId,
-    courseId,
-    lessonId,
-    assignedAt: serverTimestamp(),
-    dueDate: dueDate ? Timestamp.fromDate(dueDate) : null,
-    status: 'assigned',
-    completedAt: null,
-  });
+    // First, try to get existing progress
+    const existingProgress = await getDoc(lessonProgressRef);
 
-  return assignmentDoc.id;
+    if (existingProgress.exists()) {
+      // Update existing document
+      await updateDoc(lessonProgressRef, {
+        ...progressData,
+        lastAccessedAt: Timestamp.now(),
+      });
+    } else {
+      // Create new document with defaults
+      const defaultProgress: LessonProgress = {
+        userId,
+        lessonId,
+        status: 'not_started',
+        storyProgress: 0,
+        flashcardProgress: [],
+        lastAccessedAt: Timestamp.now(),
+        ...progressData,
+      };
+
+      await setDoc(lessonProgressRef, defaultProgress);
+    }
+  } catch (error) {
+    console.error('Error updating lesson progress:', error);
+    throw new Error(`Failed to update lesson progress: ${error instanceof Error ? error.message : 'Unknown error'}`);
+  }
 }
 
-export async function getStudentAssignments(
-  studentId: string,
+/**
+ * Get progress for a specific lesson
+ */
+export async function getLessonProgress(userId: string, lessonId: string): Promise<LessonProgress | null> {
+  try {
+    const lessonProgressRef = doc(db, 'users', userId, 'lessonProgress', lessonId);
+    const docSnap = await getDoc(lessonProgressRef);
+
+    if (docSnap.exists()) {
+      return docSnap.data() as LessonProgress;
+    }
+
+    return null;
+  } catch (error) {
+    console.error('Error getting lesson progress:', error);
+    throw new Error(`Failed to get lesson progress: ${error instanceof Error ? error.message : 'Unknown error'}`);
+  }
+}
+
+/**
+ * Get progress for all lessons
+ */
+export async function getAllLessonProgress(userId: string): Promise<LessonProgress[]> {
+  try {
+    const lessonProgressRef = collection(db, 'users', userId, 'lessonProgress');
+    const q = query(lessonProgressRef, orderBy('lastAccessedAt', 'desc'));
+    const querySnapshot = await getDocs(q);
+
+    return querySnapshot.docs.map(doc => ({
+      id: doc.id,
+      ...doc.data(),
+    } as unknown as LessonProgress));
+  } catch (error) {
+    console.error('Error getting all lesson progress:', error);
+    throw new Error(`Failed to get all lesson progress: ${error instanceof Error ? error.message : 'Unknown error'}`);
+  }
+}
+
+/**
+ * Update story progress for a lesson
+ */
+export async function updateStoryProgress(
+  userId: string,
+  lessonId: string,
+  currentChapter: number,
+  totalChapters: number
+): Promise<void> {
+  try {
+    const lessonProgressRef = doc(db, 'users', userId, 'lessonProgress', lessonId);
+
+    // Determine if lesson is completed
+    const isCompleted = currentChapter >= totalChapters - 1;
+
+    // Get or create progress document
+    const existingProgress = await getDoc(lessonProgressRef);
+
+    if (existingProgress.exists()) {
+      await updateDoc(lessonProgressRef, {
+        storyProgress: currentChapter,
+        status: isCompleted ? 'completed' : 'in_progress',
+        lastAccessedAt: Timestamp.now(),
+      });
+    } else {
+      const defaultProgress: LessonProgress = {
+        userId,
+        lessonId,
+        status: isCompleted ? 'completed' : 'in_progress',
+        storyProgress: currentChapter,
+        flashcardProgress: [],
+        lastAccessedAt: Timestamp.now(),
+      };
+
+      await setDoc(lessonProgressRef, defaultProgress);
+    }
+  } catch (error) {
+    console.error('Error updating story progress:', error);
+    throw new Error(`Failed to update story progress: ${error instanceof Error ? error.message : 'Unknown error'}`);
+  }
+}
+
+/**
+ * Update flashcard progress for a lesson
+ */
+export async function updateFlashcardProgress(
+  userId: string,
+  lessonId: string,
+  cardIndex: number,
+  totalCards: number,
+  masteredCardIds: string[]
+): Promise<void> {
+  try {
+    const lessonProgressRef = doc(db, 'users', userId, 'lessonProgress', lessonId);
+
+    // Determine if all cards are mastered
+    const isCompleted = masteredCardIds.length === totalCards;
+
+    // Get or create progress document
+    const existingProgress = await getDoc(lessonProgressRef);
+
+    if (existingProgress.exists()) {
+      await updateDoc(lessonProgressRef, {
+        flashcardProgress: masteredCardIds,
+        status: isCompleted ? 'completed' : 'in_progress',
+        lastAccessedAt: Timestamp.now(),
+      });
+    } else {
+      const defaultProgress: LessonProgress = {
+        userId,
+        lessonId,
+        status: isCompleted ? 'completed' : 'in_progress',
+        storyProgress: 0,
+        flashcardProgress: masteredCardIds,
+        lastAccessedAt: Timestamp.now(),
+      };
+
+      await setDoc(lessonProgressRef, defaultProgress);
+    }
+  } catch (error) {
+    console.error('Error updating flashcard progress:', error);
+    throw new Error(`Failed to update flashcard progress: ${error instanceof Error ? error.message : 'Unknown error'}`);
+  }
+}
+
+// ==================== Student/Teacher Functions ====================
+
+/**
+ * Get student progress (alias for getAllLessonProgress)
+ */
+export async function getStudentProgress(userId: string): Promise<LessonProgress[]> {
+  return getAllLessonProgress(userId);
+}
+
+/**
+ * Get assignments for a student
+ */
+export async function getStudentAssignments(studentId: string): Promise<any[]> {
+  try {
+    const assignmentsRef = collection(db, 'assignments');
+    const q = query(
+      assignmentsRef,
+      where('studentId', '==', studentId),
+      orderBy('assignedAt', 'desc')
+    );
+    const querySnapshot = await getDocs(q);
+    return querySnapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }));
+  } catch (error) {
+    console.error('Error getting student assignments:', error);
+    return [];
+  }
+}
+
+/**
+ * Update user role
+ */
+export async function updateUserRole(
+  userId: string,
+  role: 'teacher' | 'student',
+  teacherId?: string
+): Promise<void> {
+  try {
+    const userRef = doc(db, 'users', userId);
+    const updateData: { role: string; teacherId?: string } = { role };
+    if (teacherId) {
+      updateData.teacherId = teacherId;
+    }
+    await updateDoc(userRef, updateData);
+  } catch (error) {
+    console.error('Error updating user role:', error);
+    throw new Error(`Failed to update user role: ${error instanceof Error ? error.message : 'Unknown error'}`);
+  }
+}
+
+/**
+ * Create a student account linked to a teacher
+ */
+export async function createStudentAccount(
+  studentUid: string,
+  email: string,
+  displayName: string,
   teacherId: string
-): Promise<Assignment[]> {
-  const assignmentsRef = collection(db, 'assignments', teacherId);
-  const q = query(assignmentsRef, where('studentId', '==', studentId));
+): Promise<void> {
+  try {
+    const userProfile = {
+      uid: studentUid,
+      email,
+      displayName,
+      role: 'student' as const,
+      teacherId,
+      createdAt: Timestamp.now(),
+      courseAccess: {
+        status: 'free' as const,
+        trialStartedAt: null,
+        trialEndsAt: null,
+        purchasedAt: null,
+        stripePaymentIntentId: null,
+        stripeCustomerId: null,
+      },
+    };
+    await setDoc(doc(db, 'users', studentUid), userProfile);
+  } catch (error) {
+    console.error('Error creating student account:', error);
+    throw new Error(`Failed to create student account: ${error instanceof Error ? error.message : 'Unknown error'}`);
+  }
+}
 
-  const querySnapshot = await getDocs(q);
-
-  return querySnapshot.docs.map(doc => ({
-    id: doc.id,
-    ...doc.data(),
-  })) as Assignment[];
+/**
+ * Get all students for a teacher
+ */
+export async function getTeacherStudents(teacherId: string): Promise<any[]> {
+  try {
+    const usersRef = collection(db, 'users');
+    const q = query(
+      usersRef,
+      where('teacherId', '==', teacherId),
+      where('role', '==', 'student')
+    );
+    const querySnapshot = await getDocs(q);
+    return querySnapshot.docs.map(doc => ({ uid: doc.id, ...doc.data() }));
+  } catch (error) {
+    console.error('Error getting teacher students:', error);
+    return [];
+  }
 }

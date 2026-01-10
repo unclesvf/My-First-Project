@@ -23,8 +23,9 @@ export default function FlashcardDeck({ flashcards, lessonId }: FlashcardDeckPro
 
   // Load mastered cards from progress
   useEffect(() => {
-    if (currentLessonProgress?.flashcardProgress?.masteredCards) {
-      setMasteredCards(new Set(currentLessonProgress.flashcardProgress.masteredCards));
+    const fp = currentLessonProgress?.flashcardProgress;
+    if (fp && typeof fp === 'object' && 'masteredCards' in fp && fp.masteredCards) {
+      setMasteredCards(new Set(fp.masteredCards));
     }
   }, [currentLessonProgress]);
 

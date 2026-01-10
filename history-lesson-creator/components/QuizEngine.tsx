@@ -73,7 +73,6 @@ export default function QuizEngine({ questions, lessonId, courseId }: QuizEngine
 
       saveQuizAttempt(
         lessonId,
-        courseId,
         score,
         questions.length,
         percentage,
@@ -88,7 +87,7 @@ export default function QuizEngine({ questions, lessonId, courseId }: QuizEngine
           console.error('Failed to save quiz attempt:', error);
         });
     }
-  }, [showResults, quizSaved, user, lessonId, courseId, score, questions.length, percentage, results, startTime]);
+  }, [showResults, quizSaved, user, lessonId, score, questions.length, percentage, results, startTime]);
 
   if (showResults) {
     return (
