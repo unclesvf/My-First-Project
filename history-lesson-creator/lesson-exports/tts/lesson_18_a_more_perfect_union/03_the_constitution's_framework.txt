@@ -1,0 +1,11 @@
+Chapter 3. The Constitution's Framework.
+
+The Constitution creates a government of separated powers designed to prevent tyranny. The delegates remembered how British power had been abused, so they built a system where no one branch could dominate.
+
+The Legislative Branch (Congress) makes laws. It's divided into two houses: the Senate and House of Representatives. This was the Great Compromise. Only Congress can declare war, collect taxes, coin money, and regulate interstate commerce.
+
+The Executive Branch, headed by the President, enforces laws. The President is commander-in-chief of the military, conducts foreign policy, and appoints judges and officials (with Senate approval). The President can veto laws, but Congress can override vetoes with a two-thirds vote.
+
+The Judicial Branch interprets laws. The Supreme Court and lower federal courts decide if laws follow the Constitution. Though not explicitly stated, this gives courts the power to strike down unconstitutional laws.
+
+Each branch checks the others. The President can veto laws, but Congress can override. Congress approves Presidential appointments and can impeach the President. The courts can declare laws unconstitutional. It's a delicate balance designed to protect liberty while maintaining effective government.

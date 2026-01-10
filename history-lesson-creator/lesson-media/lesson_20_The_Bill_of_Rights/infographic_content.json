@@ -1,0 +1,67 @@
+{
+  "title": "The Bill of Rights",
+  "subtitle": "Securing Liberties (1791)",
+  "time_period": "1791",
+  "narrator": "Jacob, age 16, apprentice to a newspaper printer, 1791",
+  "sections": [
+    {
+      "number": 1,
+      "title": "Promises Kept",
+      "summary": "I'm Jacob, sixteen, working at a newspaper in Philadelphia. Today we received news: the Bill of Rights has been ratified! The first ten amendments to the Constitution are now law, protecting our fundamental freedoms."
+    },
+    {
+      "number": 2,
+      "title": "Protecting the People",
+      "summary": "The other amendments protect us in different ways. The Second Amendment protects the right to bear arms. The Third says government can't force us to house soldiers."
+    },
+    {
+      "number": 3,
+      "title": "Freedom of the Press",
+      "summary": "As a printer's apprentice, the First Amendment means everything to me. Before these protections, criticizing government could land you in jail. In Britain, the Crown licenses printing presses and censors publications."
+    },
+    {
+      "number": 4,
+      "title": "Rights of the Accused",
+      "summary": "Last month, I attended a trial at the courthouse and saw the Bill of Rights in action. A man was accused of theft, and I watched how the amendments protected him even though he might be guilty. First, the authorities had arrested him with a proper warrant based on probable cause (Fourth Amendment)."
+    },
+    {
+      "number": 5,
+      "title": "A Living Promise",
+      "summary": "The Bill of Rights has been ratified, but my master says the real work is just beginning. These amendments are words on paper. They only mean something if we defend them, if courts enforce them, if citizens demand them."
+    }
+  ],
+  "key_facts": [
+    "I'm Jacob, sixteen, working at a newspaper in Philadelphia.",
+    "The Second Amendment protects the right to bear arms.",
+    "As a printer's apprentice, the First Amendment means everything to me.",
+    "Last month, I attended a trial at the courthouse and saw the Bill of Rights in action.",
+    "The Bill of Rights has been ratified, but my master says the real work is just beginning."
+  ],
+  "timeline_events": [],
+  "vocabulary": [
+    {
+      "term": "Bill of Rights",
+      "definition": "The first ten amendments to the Constitution, ratified in 1791, protecting individual liberties."
+    },
+    {
+      "term": "First Amendment",
+      "definition": "Protects freedom of speech, press, religion, assembly, and petition."
+    },
+    {
+      "term": "Fourth Amendment",
+      "definition": "Protects against unreasonable searches and seizures, requiring warrants based on probable cause."
+    },
+    {
+      "term": "Fifth Amendment",
+      "definition": "Protects right against self-incrimination, double jeopardy, and guarantees due process of law."
+    },
+    {
+      "term": "Sixth Amendment",
+      "definition": "Guarantees rights in criminal trials: speedy and public trial, jury, confront witnesses, have a lawyer."
+    },
+    {
+      "term": "James Madison",
+      "definition": "The 'Father of the Bill of Rights' who drafted and pushed the amendments through Congress."
+    }
+  ]
+}

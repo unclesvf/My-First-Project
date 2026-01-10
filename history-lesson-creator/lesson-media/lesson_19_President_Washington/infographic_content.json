@@ -1,0 +1,67 @@
+{
+  "title": "President Washington",
+  "subtitle": "First Administration (1789-1797)",
+  "time_period": "1789-1797",
+  "narrator": "Eleanor, age 14, living in New York City, 1789",
+  "sections": [
+    {
+      "number": 1,
+      "title": "A New Government Begins",
+      "summary": "I'm Eleanor, fourteen, and I witnessed history today. George Washington took the oath of office as our first President on the balcony of Federal Hall in New York City. Thousands of people filled the streets, cheering and crying."
+    },
+    {
+      "number": 2,
+      "title": "Hamilton's Financial Plan",
+      "summary": "Secretary Hamilton proposed a bold financial plan. The national government should assume all state debts from the Revolutionary War. We should create a national bank."
+    },
+    {
+      "number": 3,
+      "title": "Staying Neutral",
+      "summary": "In 1793, France and Britain went to war. France helped us win independence\u2014shouldn't we help them now? But Washington declared neutrality."
+    },
+    {
+      "number": 4,
+      "title": "The Whiskey Rebellion",
+      "summary": "In 1794, farmers in western Pennsylvania rebelled against Hamilton's whiskey tax. These frontier farmers grew grain and distilled it into whiskey\u2014easier to transport than bulky grain sacks. The tax hit them hard, and they saw it as the same kind of unfair taxation Britain had imposed."
+    },
+    {
+      "number": 5,
+      "title": "Washington's Legacy",
+      "summary": "When Washington left office in 1797, he'd served eight years as our first President. He could have served for life\u2014many wanted him to. But he chose to step down, proving that American presidents would serve limited terms and transfer power peacefully."
+    }
+  ],
+  "key_facts": [
+    "I'm Eleanor, fourteen, and I witnessed history today.",
+    "The national government should assume all state debts from the Revolutionary War.",
+    "France helped us win independence\u2014shouldn't we help them now?",
+    "In 1794, farmers in western Pennsylvania rebelled against Hamilton's whiskey tax.",
+    "When Washington left office in 1797, he'd served eight years as our first President."
+  ],
+  "timeline_events": [],
+  "vocabulary": [
+    {
+      "term": "George Washington (President)",
+      "definition": "First President of the United States (1789-1797) who established many precedents for the office."
+    },
+    {
+      "term": "Cabinet",
+      "definition": "The President's advisory group of department heads, including Secretary of State and Secretary of Treasury."
+    },
+    {
+      "term": "Alexander Hamilton",
+      "definition": "First Secretary of Treasury who created a financial plan favoring strong central government and industry."
+    },
+    {
+      "term": "Thomas Jefferson",
+      "definition": "First Secretary of State who favored limited federal power, states' rights, and an agricultural economy."
+    },
+    {
+      "term": "Neutrality Proclamation",
+      "definition": "Washington's 1793 declaration that America would remain neutral in European wars."
+    },
+    {
+      "term": "Precedent",
+      "definition": "An action or decision that serves as an example for future situations."
+    }
+  ]
+}

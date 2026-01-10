@@ -1,0 +1,67 @@
+{
+  "title": "Appomattox & Lincoln's Assassination",
+  "subtitle": "War's End (1865)",
+  "time_period": "1865",
+  "narrator": "Daniel, age 16, Union soldier, 1865",
+  "sections": [
+    {
+      "number": 1,
+      "title": "The Final Campaign",
+      "summary": "I'm Daniel, sixteen years old, and I've been a Union soldier for two years. I enlisted in 1863 after the Emancipation Proclamation. The war had become a crusade to end slavery, and I wanted to be part of it."
+    },
+    {
+      "number": 2,
+      "title": "Palm Sunday at Appomattox",
+      "summary": "April 9, 1865. Palm Sunday. We woke to news that Confederate forces blocked Lee's retreat route."
+    },
+    {
+      "number": 3,
+      "title": "The Armies Say Goodbye",
+      "summary": "April 12. Three days after the surrender, Confederate soldiers formally laid down their weapons. I was there, part of the Union honor guard."
+    },
+    {
+      "number": 4,
+      "title": "Our American Cousin",
+      "summary": "April 14, 1865. Good Friday. Five days after Appomattox, the war essentially over."
+    },
+    {
+      "number": 5,
+      "title": "What Might Have Been",
+      "summary": "Vice President Andrew Johnson became president on April 15. Johnson was a Tennessee Democrat who'd remained loyal to the Union. But he lacked Lincoln's vision, compassion, and political skill."
+    }
+  ],
+  "key_facts": [
+    "I'm Daniel, sixteen years old, and I've been a Union soldier for two years.",
+    "We woke to news that Confederate forces blocked Lee's retreat route.",
+    "Three days after the surrender, Confederate soldiers formally laid down their weapons.",
+    "Five days after Appomattox, the war essentially over.",
+    "Vice President Andrew Johnson became president on April 15."
+  ],
+  "timeline_events": [],
+  "vocabulary": [
+    {
+      "term": "Appomattox Court House",
+      "definition": "Site where Lee surrendered to Grant, ending Civil War (April 9, 1865)."
+    },
+    {
+      "term": "Ulysses S. Grant",
+      "definition": "Union general who accepted Lee's surrender."
+    },
+    {
+      "term": "Robert E. Lee",
+      "definition": "Confederate general who surrendered at Appomattox."
+    },
+    {
+      "term": "Generous Terms",
+      "definition": "Grant's lenient surrender terms allowing Confederates to keep horses/sidearms."
+    },
+    {
+      "term": "Lincoln's Assassination",
+      "definition": "President Lincoln shot by John Wilkes Booth April 14, 1865."
+    },
+    {
+      "term": "John Wilkes Booth",
+      "definition": "Confederate sympathizer who assassinated Lincoln."
+    }
+  ]
+}

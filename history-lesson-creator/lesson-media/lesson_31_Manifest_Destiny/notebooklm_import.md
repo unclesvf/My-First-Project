@@ -1,0 +1,97 @@
+# Manifest Destiny
+
+**Description:** Westward Expansion (1840s)
+
+**Narrator:** Samuel, age 16, on Oregon Trail, 1846
+
+---
+
+## Chapter 1: Oregon Trail
+
+I'm Samuel, sixteen, and our family has been on the Oregon Trail for six months. We left Independence, Missouri in the spring of 1846 with everything we owned packed into a covered wagon. Two thousand miles of prairie, mountains, rivers, and desert separate us from Oregon's Willamette Valley.
+
+The journey is harder than anyone imagined. We wake before dawn, travel until dusk, covering maybe fifteen miles a day if we're lucky. We've buried three people from our wagon train—cholera, accident, childbirth. Mother keeps a tight grip on my younger siblings, terrified of losing anyone.
+
+The landscape is beautiful and terrifying. Endless prairie grass, buffalo herds darkening the horizon, thunderstorms that shake our wagon. We crossed the Platte River, climbed through South Pass in the Rockies, and descended into the harsh desert beyond. Every step west is a step into the unknown.
+
+Journalist John O'Sullivan calls this "Manifest Destiny"—the idea that God intended America to span the continent from Atlantic to Pacific. President Polk echoes this, saying it's America's divine mission to spread democracy and civilization across North America. Many in our wagon train believe this. They see Oregon as a promised land, empty and waiting for Americans to claim it.
+
+---
+
+## Chapter 2: Whose Land?
+
+But the land isn't empty. We've passed through territories of the Pawnee, Sioux, Shoshone, and dozens of other Native nations. They watch our wagon trains from hills, sometimes trading with us, sometimes just observing. We're crossing their homeland without permission, hunting their buffalo, using their water, cutting their trees for firewood.
+
+Father tries to trade fairly when we encounter Native peoples. Some pioneers treat them with respect. But others are hostile, seeing them as obstacles to American progress. I've heard men in our train talk about Natives as "savages" who don't deserve the land because they don't farm it in European ways.
+
+This troubles me. The Natives we've met are skilled hunters, have complex societies, follow migration patterns refined over centuries. They use the land differently than we do, but they clearly own it and depend on it. When we claim Oregon as empty land ready for settlement, we're erasing the people who've lived there for thousands of years.
+
+I asked Father about this. He sighed and said, "Son, America needs land for its growing population. We believe our way of life—farming, democracy, Christianity—is superior and destined to spread. But you're right to feel uncomfortable. Manifest Destiny gives us a noble-sounding justification for taking what belongs to others. History will judge whether we're heroes or thieves."
+
+---
+
+## Chapter 3: 54-40 or Fight
+
+Oregon itself is disputed territory. Britain and America both claim it through competing treaties and exploration. The boundary hasn't been settled. Some Americans demand all of Oregon up to the 54°40' north latitude—the southern border of Russian Alaska. "54-40 or Fight!" is the slogan. They're willing to go to war with Britain for every inch of Oregon.
+
+President Polk campaigned on aggressive expansion. He's already annexed Texas in 1845, angering Mexico. Now he's negotiating with Britain over Oregon while preparing for possible war with Mexico over the Texas boundary and California.
+
+The tension is real. Britain has the world's most powerful navy. War with them would be devastating. But many Americans are land-hungry, believing the continent is rightfully ours. Compromise seems weak to them—they want all the territory America can seize.
+
+In the end, Polk compromises with Britain at the 49th parallel—the current U.S.-Canada border. We get the southern part of Oregon (present-day Oregon, Washington, Idaho). Britain keeps the northern part (British Columbia). The "54-40 or Fight" crowd is disappointed, but war is avoided. We've gained enormous territory without fighting Britain.
+
+But Polk won't compromise with Mexico. He wants California and New Mexico, and he's willing to provoke war to get them. Manifest Destiny, it seems, applies differently depending on the opponent's strength.
+
+---
+
+## Chapter 4: Reaching Oregon
+
+After six months, we finally reach Oregon's Willamette Valley. The land is beautiful—green, fertile, watered by rain. We claim 640 acres under Oregon's provisional land laws. It's ours if we farm it and improve it. We've traveled 2,000 miles for this moment.
+
+Building our homestead is backbreaking work. We clear land, build a cabin, plant crops. Our nearest neighbors are miles away. Winters are wet and mild compared to Missouri, but loneliness is hard. Mother misses her family, her church, her friends. We've gained land but lost community.
+
+More wagon trains arrive constantly. Oregon is filling with Americans, and we're organizing territorial government. We've banned slavery—most Oregonians are farmers who don't want to compete with slave labor. But we've also passed laws excluding free Black people from living here. Oregon's vision of freedom is selective.
+
+As I work our land, I think about the Native peoples who lived here before us. They're being pushed out, their villages abandoned, their salmon fishing sites taken over. We call this progress—transforming "wilderness" into farms and towns. But I can't shake the feeling that we're destroying a way of life that worked for thousands of years.
+
+---
+
+## Chapter 5: The Cost of Destiny
+
+Manifest Destiny has given America vast new territory. Oregon, Texas, and soon California and the Southwest will add millions of acres to the nation. Americans are flooding west, building farms, towns, eventually states. The nation is growing wealthy and powerful.
+
+But the costs are staggering. Native peoples are being displaced everywhere. The Cherokee's Trail of Tears is just the beginning—soon the Plains tribes, the Southwest tribes, the Pacific Northwest tribes will all face removal, war, or confinement to reservations. An entire continent's indigenous peoples are being dispossessed in the name of American expansion.
+
+Mexico will lose half its territory in the coming war. The Californios, Tejanos, and other Mexicans living in those territories will become Americans overnight, often losing their land through legal chicanery despite treaty promises. Their culture and language will be marginalized in what was once their homeland.
+
+Most troubling is what this expansion does to our slavery crisis. Every new territory raises the question: will it be slave or free? Oregon has chosen free. But Texas is slave. What about the territories we'll take from Mexico? The Missouri Compromise divided Louisiana Purchase territories at 36°30'. But that doesn't apply to these new lands. We'll have to fight this battle again and again.
+
+Standing on our Oregon claim, looking at the land we've worked so hard to reach, I understand the appeal of Manifest Destiny. We've created opportunity for our family, claimed land for farming, extended American democracy westward. This is the promise of the West—a fresh start, abundant land, freedom to build the life you choose.
+
+But I also see the darker truth: Manifest Destiny is a beautiful phrase for conquest. We've taken this land from people who lived here first. We've provoked war with Mexico to seize more. We're spreading not just democracy but also slavery's curse. And we're planting the seeds of future conflicts—between North and South over slavery's expansion, between settlers and Natives over land, between the ideal of equality and the practice of exclusion.
+
+America is fulfilling its destiny to span the continent. But destiny, I'm learning, is a word we use to make conquest sound noble. The land we've gained is real. So is the blood on our hands. Future generations will have to decide whether the cost was worth it, whether Manifest Destiny was divine providence or national greed. I fear I know the answer.
+
+---
+
+## Key Terms and Definitions
+
+**Manifest Destiny:** Belief America was destined by God to expand across North America.
+
+**Oregon Trail:** 2,000-mile route from Missouri to Oregon used by westward migrants.
+
+**James K. Polk:** President pursuing aggressive westward expansion.
+
+**Texas Annexation:** 1845 admission of Texas (former Mexican territory) as state.
+
+**54-40 or Fight:** Slogan demanding all Oregon to latitude 54°40'.
+
+**49th Parallel:** Compromise border between U.S. and Canada in Pacific Northwest.
+
+**John O'Sullivan:** Journalist who coined 'Manifest Destiny.'
+
+**Westward Expansion:** Movement of American settlers across continent in 1800s.
+
+**Oregon Trail:** 2,000-mile overland route from Missouri to Oregon Territory used by hundreds of thousands of settlers moving west, symbolizing American westward migration and Manifest Destiny.
+
+**James K. Polk:** Expansionist president (1845-1849) who acquired Oregon Territory through negotiation and California through war, believing in America's Manifest Destiny to span the continent.

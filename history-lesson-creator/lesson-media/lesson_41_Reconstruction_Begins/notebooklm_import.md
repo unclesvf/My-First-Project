@@ -1,0 +1,131 @@
+# Reconstruction Begins
+
+**Description:** Rebuilding the South (1865-1867)
+
+**Narrator:** Marcus, age 15, freed slave in Georgia, 1865
+
+---
+
+## Chapter 1: The Day of Jubilee
+
+I'm Marcus, fifteen years old, and I was born enslaved on a cotton plantation in Georgia. I've worked in the fields since I was seven—planting, weeding, picking cotton from dawn to dusk. I've been whipped for working too slowly. I've watched my older sister sold away when I was ten. I've lived every day knowing I was property, not a person.
+
+June 1865. The war is over. Union soldiers arrive at our plantation. They gather all the enslaved people—about 200 of us. A Union officer reads from a paper: By order of the President of the United States, all persons held as slaves are declared free.
+
+Free. The word doesn't seem real. We've heard rumors for months—Lincoln's Emancipation Proclamation, Confederate surrender, the Thirteenth Amendment working its way through the states. But hearing it officially declared, by a Union officer with the power to enforce it, makes it real.
+
+Some people shout and cry. Others are silent, stunned. Old Samuel, who's been enslaved for sixty years, falls to his knees weeping. My mother grabs my hand, squeezing so hard it hurts. "We're free, Marcus," she whispers. "Free."
+
+Master Harrison watches from the porch, face red with anger. He shouts that we're still his property, that the Union has no right to steal his slaves. The Union officer ignores him. "You're free to go wherever you want," he tells us. "You don't have to stay here."
+
+But where would we go? We have no money. No land. No possessions except the clothes we're wearing. We don't know where our families who were sold away have gone. Freedom is wonderful in principle, but terrifying in practice. What do we do now?
+
+---
+
+## Chapter 2: The Freedmen's Bureau
+
+Days after emancipation, most formerly enslaved people are still on the plantations. Some leave immediately, seeking family members sold away or just wanting to experience freedom by traveling. But most stay, not because we want to but because we have nowhere else to go.
+
+The Union army establishes the Freedmen's Bureau—an agency to help formerly enslaved people transition to freedom. Bureau agents arrive in Georgia, setting up offices in towns.
+
+I walk to town with my mother to visit the Bureau office. The agent is a young Union officer from Massachusetts. He's sympathetic but overwhelmed. Thousands of freed people need help—food, shelter, land, work, education. The Bureau has limited resources.
+
+"We're providing rations for those who have no food," he explains. "We're setting up schools so you can learn to read and write. And we're helping negotiate labor contracts with landowners."
+
+Labor contracts. The agent explains that freed people can work for former slaveholders, but now as paid laborers with written contracts. The contracts specify wages, working conditions, and term of employment. Both parties must agree. If the landowner violates the contract, the Bureau will intervene.
+
+It sounds better than slavery. But when Mother and I return to the plantation, Master Harrison offers a contract that pays almost nothing—$5 a month plus rations and a cabin. We'd work dawn to dusk, just like before, with harsh penalties for "idleness" or "disobedience."
+
+Mother refuses to sign. "I won't work for him anymore," she says. "Not for any wage."
+
+We leave the plantation with nothing but our clothes. We walk to town, where the Freedmen's Bureau provides temporary shelter and rations. They help Mother find work as a laundress. It doesn't pay much, but she's her own boss now. That matters more than money.
+
+The Freedmen's Bureau also sets up a school. I enroll immediately. Learning to read feels like true freedom—access to knowledge formerly forbidden to enslaved people.
+
+---
+
+## Chapter 3: The Promise of Land
+
+Summer 1865. There are rumors spreading through freed communities: "Forty acres and a mule." The government will give freed people land confiscated from Confederate plantations.
+
+The rumor comes from General Sherman's Special Field Order No. 15, issued in January 1865. It set aside land along the South Carolina and Georgia coast for formerly enslaved families. Each family could claim forty acres. The army would loan mules.
+
+By June, 40,000 freed people have settled on 400,000 acres of this land. They're building homes, planting crops, creating communities. For the first time, they own the land they work.
+
+I meet a family who'd settled on one of the Sea Islands. "It's ours," the father tells me, eyes shining. "We own forty acres. Our children will inherit it. We're free and we're landowners."
+
+But then President Johnson reverses the policy. He pardons former Confederates and returns their land—including the land freed people have settled on. Federal troops force families off land they've been farming for months.
+
+The devastation is total. Freed people believed the government had promised them land. "Forty acres and a mule" seemed like acknowledgment that we'd earned ownership through centuries of unpaid labor. Taking it away feels like a betrayal.
+
+Most freed people have no choice but to work for former slaveholders. But without land of our own, we have no leverage. Landowners offer terrible wages or sharecropping arrangements. Sharecropping means we work the land for a share of the crop—typically half. The landowner provides land, tools, and seed. We provide labor.
+
+In theory, sharecropping could work. In practice, it becomes a system of debt peonage. Landowners charge high prices for supplies, keep unfair records of debts, and manipulate the final accounting so sharecroppers end up owing money each year. We're trapped in cycles of debt, unable to leave until we pay what we "owe."
+
+Freedom without land or education or capital isn't much freedom. It's survival, not prosperity.
+
+---
+
+## Chapter 4: The Black Codes
+
+Fall 1865. Southern states begin passing "Black Codes"—laws specifically targeting freed people and restricting our freedom.
+
+Georgia's Black Code requires freed people to have written proof of employment. If you don't have a contract with a landowner, you can be arrested for vagrancy and forced to work for whoever pays your fine. It's slavery by another name.
+
+The codes prohibit Black people from owning firearms, serving on juries, testifying against white people in court, or voting. They establish separate legal standards—harsher punishments for Black people than whites for the same crimes.
+
+Some codes even require freed people to get licenses to work in any job other than farmer or servant. The licenses are expensive, keeping us in agricultural labor controlled by white landowners.
+
+I experience the Black Codes personally. Walking through town one evening, I'm stopped by a white constable. "Where's your proof of employment?" he demands.
+
+I explain I'm enrolled in the Freedmen's Bureau school and living with my mother, who works as a laundress. He says that's not good enough. I need a labor contract with a landowner or I'm vagrant. He arrests me.
+
+At the courthouse, they fine me $10—two months' wages for most freed people. I can't pay. The judge says I'll be hired out to whoever pays the fine. A plantation owner pays it. Now I owe him $10 plus interest, to be worked off at $5 per month. I'm trapped in forced labor.
+
+The Freedmen's Bureau agent intervenes, arguing the arrest was illegal. After weeks of bureaucracy, they release me. But thousands of other freed people aren't so lucky. They're trapped in labor arrangements that differ from slavery only in name.
+
+The Black Codes prove that former slaveholders and Confederate sympathizers still control Southern state governments. They're using legal mechanisms to restore as much of the pre-war social order as possible. Freedom guaranteed by the Thirteenth Amendment means little when state laws can criminalize Black life itself.
+
+---
+
+## Chapter 5: Presidential Reconstruction Fails
+
+By late 1865, it's clear that President Andrew Johnson's Reconstruction policy has failed. Johnson pardoned most former Confederates, allowed them to vote and hold office, and did nothing to stop the Black Codes. He opposes federal intervention to protect freed people's rights.
+
+Johnson believes Reconstruction should be lenient and quick. Restore Southern states to the Union, let them govern themselves, move on. He opposes Black voting rights, saying states should decide that question. His racism is barely concealed—he openly says he believes white people are superior and Black people unfit for citizenship.
+
+Meanwhile, Republicans in Congress grow increasingly angry. They'd fought a war to end slavery and preserve the Union. Now former Confederate leaders were returning to Congress, Black Codes were re-establishing quasi-slavery, and freed people had no protection.
+
+In December 1865, Congress refuses to seat the Southern representatives and senators Johnson allowed to be elected. Congress forms the Joint Committee on Reconstruction to investigate conditions in the South.
+
+The committee hears testimony from freed people about Black Codes, violence, exploitation, and denial of rights. They hear about the Ku Klux Klan—a terrorist organization of former Confederates who attack, whip, and murder freed people and white Republicans to maintain white supremacy.
+
+Congress decides to take control of Reconstruction away from Johnson. They'll pass laws protecting freed people's rights, require Southern states to guarantee Black voting rights, and use federal military power to enforce these requirements.
+
+It's called "Radical Reconstruction," though it's only radical in insisting that freed people actually be free and have rights as citizens. To us, it's just common sense—freedom means political rights, legal equality, and protection from violence. Anything less isn't freedom at all.
+
+I'm sixteen now, watching as Congress and the President battle over Reconstruction. The outcome will determine whether the promise of emancipation—freedom, citizenship, equality—will be fulfilled or betrayed. Radical Reconstruction offers hope. But I've learned that hope must be fought for, defended, and never taken for granted. The struggle for real freedom has only just begun.
+
+---
+
+## Key Terms and Definitions
+
+**Reconstruction:** Period (1865-1877) of rebuilding South and integrating freed slaves into society.
+
+**Thirteenth Amendment:** 1865 amendment abolishing slavery throughout the United States.
+
+**Freedmen's Bureau:** Federal agency helping freed slaves with food, education, and labor contracts.
+
+**Black Codes:** Southern laws restricting freed slaves' rights and movement.
+
+**Sharecropping:** System where freed slaves worked land for share of crop, often resulting in debt.
+
+**Andrew Johnson:** President whose lenient Reconstruction policies angered Republicans.
+
+**Radical Republicans:** Congressional group wanting harsh treatment of South and protection for freed slaves.
+
+**Presidential Reconstruction:** Johnson's lenient plan allowing quick Southern readmission with few protections for freed slaves.
+
+**Fourteenth Amendment:** 1868 amendment granting citizenship to freed slaves and guaranteeing equal protection under law, though Southern states initially resisted ratification.
+
+**Fifteenth Amendment:** 1870 amendment prohibiting denial of voting rights based on race, though Southern states later used literacy tests and poll taxes to circumvent it.

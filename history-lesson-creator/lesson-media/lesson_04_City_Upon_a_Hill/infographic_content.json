@@ -1,0 +1,67 @@
+{
+  "title": "City Upon a Hill",
+  "subtitle": "The Massachusetts Bay Colony (1630-1650)",
+  "time_period": "1630-1650",
+  "narrator": "John, age 13, son of a Puritan minister in Boston, 1630",
+  "sections": [
+    {
+      "number": 1,
+      "title": "A Holy Experiment",
+      "summary": "My name is John, and I am thirteen years old. My father is a Puritan minister who came to Massachusetts Bay with Governor John Winthrop. Unlike the Pilgrims at Plymouth, we didn't want to separate from the Church of England\u2014we wanted to purify it from within."
+    },
+    {
+      "number": 2,
+      "title": "Roger Williams and Anne Hutchinson",
+      "summary": "Not everyone agreed with our strict ways. Roger Williams, a young minister, preached that the government shouldn't enforce religious laws. He said colonists should pay Native Americans for their land, not just take it."
+    },
+    {
+      "number": 3,
+      "title": "Sundays and Scrutiny",
+      "summary": "Living in our \"city upon a hill\" means constant watchfulness\u2014of ourselves and our neighbors. Last Sunday, the Goodman family was fined for their son laughing too loudly during services. Father says frivolity has no place in worship, but sometimes I wonder if God truly frowns upon a child's joy."
+    },
+    {
+      "number": 4,
+      "title": "The Puritan Way of Life",
+      "summary": "Our colony thrived despite these controversies. We built towns around meetinghouses and common greens. Education mattered deeply to us\u2014every town with 50 families had to hire a schoolmaster."
+    },
+    {
+      "number": 5,
+      "title": "Questions Without Answers",
+      "summary": "Now at seventeen, I've watched our colony grow from a holy experiment into something more complex. We banished Roger Williams and Anne Hutchinson for their beliefs, yet we ourselves fled England to escape religious persecution. Father says this is different\u2014we enforce God's true will\u2014but the contrad..."
+    }
+  ],
+  "key_facts": [
+    "My father is a Puritan minister who came to Massachusetts Bay with Governor John Winthrop.",
+    "Roger Williams, a young minister, preached that the government shouldn't enforce religious laws.",
+    "Living in our \"city upon a hill\" means constant watchfulness\u2014of ourselves and our neighbors.",
+    "We built towns around meetinghouses and common greens.",
+    "Now at seventeen, I've watched our colony grow from a holy experiment into something more complex."
+  ],
+  "timeline_events": [],
+  "vocabulary": [
+    {
+      "term": "Puritans",
+      "definition": "English Protestants who wanted to 'purify' the Church of England from Catholic practices. Unlike Separatists, they wanted to reform the church from wi..."
+    },
+    {
+      "term": "John Winthrop",
+      "definition": "First governor of Massachusetts Bay Colony who envisioned the colony as a 'city upon a hill' - a model Christian community."
+    },
+    {
+      "term": "City Upon a Hill",
+      "definition": "John Winthrop's vision of Massachusetts Bay as a model society that the world would look to as an example of godly living."
+    },
+    {
+      "term": "Roger Williams",
+      "definition": "Puritan minister who advocated for religious freedom and separation of church and state. Banished from Massachusetts, he founded Rhode Island."
+    },
+    {
+      "term": "Anne Hutchinson",
+      "definition": "Puritan woman who held religious meetings and challenged church authority. She was tried and banished for her beliefs."
+    },
+    {
+      "term": "Harvard College",
+      "definition": "Founded in 1636, the first college in the American colonies, established primarily to train Puritan ministers."
+    }
+  ]
+}

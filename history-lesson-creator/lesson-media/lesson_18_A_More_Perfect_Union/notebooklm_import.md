@@ -1,0 +1,89 @@
+# A More Perfect Union
+
+**Description:** The Constitutional Convention (1787-1789)
+
+**Narrator:** Rebecca, age 15, daughter of a Pennsylvania delegate, 1787
+
+---
+
+## Chapter 1: The Articles of Confederation Fail
+
+I'm Rebecca, fifteen, living in Philadelphia. My father is a delegate to a special convention meeting here. After winning independence, our states created the Articles of Confederation—a weak central government that's failing. Congress can't collect taxes, regulate trade, or enforce laws. States act like separate countries, printing their own money and ignoring Congress.
+
+Last year, farmers in Massachusetts rebelled against high taxes in Shays' Rebellion. The weak national government couldn't stop it. Everyone realized we need a stronger government, or our new nation will fall apart. That's why delegates from twelve states are meeting in secret at Independence Hall.
+
+---
+
+## Chapter 2: The Great Compromise
+
+Father comes home exhausted each night, unable to tell me details—they've sworn secrecy. But I overhear conversations. The big debate is representation: Should each state have equal votes, or should larger states have more power based on population?
+
+Delegates are deadlocked. Small states fear being controlled by large states. Large states say equal votes are unfair when they have more people. Finally, Roger Sherman proposes the Great Compromise: a two-house legislature. The Senate gives each state equal votes (two senators). The House of Representatives bases votes on population. Both houses must approve laws.
+
+Other compromises follow. Northern and Southern states disagree about counting enslaved people for representation. They settle on the Three-Fifths Compromise—enslaved people count as three-fifths of a person for population purposes. This is morally wrong, but it's the compromise that keeps Southern states in the Union.
+
+---
+
+## Chapter 3: The Constitution's Framework
+
+The Constitution creates a government of separated powers designed to prevent tyranny. The delegates remembered how British power had been abused, so they built a system where no one branch could dominate.
+
+The Legislative Branch (Congress) makes laws. It's divided into two houses: the Senate and House of Representatives. This was the Great Compromise. Only Congress can declare war, collect taxes, coin money, and regulate interstate commerce.
+
+The Executive Branch, headed by the President, enforces laws. The President is commander-in-chief of the military, conducts foreign policy, and appoints judges and officials (with Senate approval). The President can veto laws, but Congress can override vetoes with a two-thirds vote.
+
+The Judicial Branch interprets laws. The Supreme Court and lower federal courts decide if laws follow the Constitution. Though not explicitly stated, this gives courts the power to strike down unconstitutional laws.
+
+Each branch checks the others. The President can veto laws, but Congress can override. Congress approves Presidential appointments and can impeach the President. The courts can declare laws unconstitutional. It's a delicate balance designed to protect liberty while maintaining effective government.
+
+---
+
+## Chapter 4: Ratification and the Bill of Rights
+
+The Constitution is finished—creating three branches of government with checks and balances, federalism dividing power between national and state governments. But it needs ratification by nine of thirteen states.
+
+Federalists like Hamilton, Madison, and Jay support it, writing essays called The Federalist Papers. Anti-Federalists like Patrick Henry oppose it, saying it gives too much power to the central government and lacks protection for individual rights.
+
+The debate is intense. To win ratification, Federalists promise to add a Bill of Rights—amendments protecting freedoms like speech, religion, press, and trial by jury. States ratify the Constitution. In 1789, George Washington becomes our first President. The Bill of Rights is added in 1791.
+
+We've created something remarkable: a republic based on popular sovereignty, where government power comes from the people. It's not perfect—it allows slavery, excludes women and non-property owners from voting. But it's a start, and the amendment process means we can improve it over time.
+
+---
+
+## Chapter 5: A Living Experiment
+
+Father brought home a printed copy of the Constitution. I read the Preamble carefully: "We the People of the United States, in Order to form a more perfect Union, establish Justice, insure domestic Tranquility, provide for the common defence, promote the general Welfare, and secure the Blessings of Liberty to ourselves and our Posterity, do ordain and establish this Constitution for the United States of America."
+
+"More perfect"—not perfect, but more perfect. Father explains that the delegates knew they hadn't created a perfect document. The Three-Fifths Compromise treats human beings as property. Women aren't mentioned. Native peoples aren't considered. Poor men without property often can't vote. Yet the Constitution includes a mechanism for amendment, a way to improve over time.
+
+This is the radical part: a government that can change, adapt, and grow more just without revolution. The Constitution isn't carved in stone like ancient laws. It's a living document that can evolve as we learn and grow as a people.
+
+Some delegates, like Benjamin Franklin, signed despite reservations. He reportedly said, "I consent, Sir, to this Constitution because I expect no better, and because I am not sure that it is not the best." He understood that perfection is impossible, but progress is essential.
+
+Standing in Independence Hall where both the Declaration and the Constitution were created, I feel the weight of what we've begun. In 1776, we declared our independence and stated our ideals. In 1787, we created a framework to pursue those ideals. The experiment is just beginning.
+
+Will we live up to "all men are created equal"? Will we expand liberty and justice to include everyone? Will this Constitution endure through challenges we can't yet imagine? These questions will define America's future. We've built the structure, but each generation must decide what kind of nation to build within it. Father says that's the true meaning of "We the People"—the Constitution belongs to all of us, and we all have a responsibility to make it work and make it better.
+
+---
+
+## Key Terms and Definitions
+
+**Constitutional Convention:** The 1787 Philadelphia meeting where delegates created the U.S. Constitution to replace the failing Articles of Confederation.
+
+**Articles of Confederation:** America's first government system (1781-1789), which created a weak central government that ultimately failed.
+
+**Great Compromise:** The agreement creating a two-house legislature: Senate (equal state representation) and House (population-based representation).
+
+**Three-Fifths Compromise:** The agreement to count enslaved people as three-fifths of a person for representation and taxation purposes.
+
+**Federalists:** Supporters of the Constitution who favored a strong central government, including Hamilton, Madison, and Jay.
+
+**Anti-Federalists:** Opponents of the Constitution who feared too much central power and wanted a Bill of Rights, including Patrick Henry.
+
+**Bill of Rights:** The first ten amendments to the Constitution, protecting individual freedoms like speech, religion, and due process.
+
+**Checks and Balances:** The system where each branch of government can limit the powers of the other branches.
+
+**Separation of Powers:** The constitutional principle dividing government into three branches—legislative, executive, and judicial—each with distinct responsibilities to prevent concentration of power and tyranny.
+
+**Shays' Rebellion:** 1786 Massachusetts farmers' uprising against high taxes that exposed the Articles of Confederation's weakness, prompting calls for a stronger national government and the Constitutional Convention.

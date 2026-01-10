@@ -1,0 +1,608 @@
+================================================================================
+HISTORICAL ACCURACY REPORT
+Generated: 2026-01-10T13:38:03.819202
+================================================================================
+
+Total Lessons Scanned: 51
+Lessons with Issues: 16
+Total Issues Found: 44
+
+================================================================================
+DETAILED FINDINGS
+================================================================================
+
+
+────────────────────────────────────────────────────────────
+LESSON: lesson-1 - One World to the Next
+Time Period: 1565-1570
+Narrator: Mateo, a 13-year-old Spanish settler in St. Augustine, 1565
+Issues Found: 1
+────────────────────────────────────────────────────────────
+
+  Issue #1:
+    Type: anachronism
+    Term: King Philip's War
+    Chapter: 3 - Building a New World
+    Problem: Referenced 110 years before it existed
+    Lesson Year: 1565
+    Term Year: 1675
+    Context: Major conflict between colonists and Native Americans
+    Text: ... people to Christianity and make them subjects of King Philip II. Some missionaries succeeded in baptizing Timu...
+
+────────────────────────────────────────────────────────────
+LESSON: lesson-6 - The Southern Way
+Time Period: 1660-1700
+Narrator: Thomas, age 14, son of a small tobacco farmer in Virginia, 1690
+Issues Found: 1
+────────────────────────────────────────────────────────────
+
+  Issue #1:
+    Type: anachronism
+    Term: McCulloch v. Maryland
+    Chapter: 3 - Different Souths
+    Problem: Referenced 159 years before it existed
+    Lesson Year: 1660
+    Term Year: 1819
+    Context: Supreme Court upholds federal power
+    Text: ...onies are different from each other. Virginia and Maryland grow tobacco. South Carolina grows rice in coasta...
+
+────────────────────────────────────────────────────────────
+LESSON: lesson-7 - Triangular Trade
+Time Period: 1650-1750
+Narrator: James, age 15, son of a merchant ship captain in Boston, 1720
+Issues Found: 8
+────────────────────────────────────────────────────────────
+
+  Issue #1:
+    Type: anachronism
+    Term: McCulloch v. Maryland
+    Chapter: 2 - The Colonial Economy
+    Problem: Referenced 169 years before it existed
+    Lesson Year: 1650
+    Term Year: 1819
+    Context: Supreme Court upholds federal power
+    Text: ...ow cash crops for export: tobacco in Virginia and Maryland, rice in the Carolinas. These labor-intensive cro...
+
+  Issue #2:
+    Type: anachronism
+    Term: Sugar Act
+    Chapter: 2 - The Colonial Economy
+    Problem: Referenced 114 years before it existed
+    Lesson Year: 1650
+    Term Year: 1764
+    Context: British tax on sugar and molasses
+    Text: ... terrible human cost.  The Caribbean islands grow sugar—the most profitable crop in the Atlantic world. S...
+
+  Issue #3:
+    Type: anachronism
+    Term: Sugar Act
+    Chapter: 2 - The Colonial Economy
+    Problem: Referenced 114 years before it existed
+    Lesson Year: 1650
+    Term Year: 1764
+    Context: British tax on sugar and molasses
+    Text: ...r—the most profitable crop in the Atlantic world. Sugar production is brutal work done by enslaved Africa...
+
+  Issue #4:
+    Type: anachronism
+    Term: Sugar Act
+    Chapter: 2 - The Colonial Economy
+    Problem: Referenced 114 years before it existed
+    Lesson Year: 1650
+    Term Year: 1764
+    Context: British tax on sugar and molasses
+    Text: ...xhaustion, disease, and abuse. Yet the demand for sugar in Europe seems endless, driving the whole viciou...
+
+  Issue #5:
+    Type: anachronism
+    Term: Sugar Act
+    Chapter: 3 - Navigation Acts and Mercantilism
+    Problem: Referenced 114 years before it existed
+    Lesson Year: 1650
+    Term Year: 1764
+    Context: British tax on sugar and molasses
+    Text: ...th English crews. Valuable goods like tobacco and sugar must go to England first, even if they're destine...
+
+  Issue #6:
+    Type: anachronism
+    Term: Sugar Act
+    Chapter: 4 - The Human Cost
+    Problem: Referenced 114 years before it existed
+    Lesson Year: 1650
+    Term Year: 1764
+    Context: British tax on sugar and molasses
+    Text: ...night I couldn't sleep. I kept thinking about the sugar in our tea, the tobacco we ship, the molasses we ...
+
+  Issue #7:
+    Type: anachronism
+    Term: Sugar Act
+    Chapter: 4 - The Human Cost
+    Problem: Referenced 114 years before it existed
+    Lesson Year: 1650
+    Term Year: 1764
+    Context: British tax on sugar and molasses
+    Text: ...ods, African lives, American resources, Caribbean sugar.  Father says some Quakers in Philadelphia are sp...
+
+  Issue #8:
+    Type: anachronism
+    Term: Sugar Act
+    Chapter: 5 - Breaking the Chain
+    Problem: Referenced 114 years before it existed
+    Lesson Year: 1650
+    Term Year: 1764
+    Context: British tax on sugar and molasses
+    Text: ...not trade in goods produced by enslaved labor. No sugar, no tobacco, no rice, no indigo. I know this will...
+
+────────────────────────────────────────────────────────────
+LESSON: lesson-8 - The Great Awakening
+Time Period: 1730-1750
+Narrator: Sarah, age 14, daughter of a Connecticut farmer, 1741
+Issues Found: 4
+────────────────────────────────────────────────────────────
+
+  Issue #1:
+    Type: anachronism
+    Term: Second Great Awakening
+    Chapter: 3 - A Democratization of Religion
+    Problem: Referenced 60 years before it existed
+    Lesson Year: 1730
+    Term Year: 1790
+    Context: Religious revival movement
+    Text: ...The Great Awakening changed how people thought about authority—both r...
+
+  Issue #2:
+    Type: anachronism
+    Term: Second Great Awakening
+    Chapter: 4 - Long-Term Changes
+    Problem: Referenced 60 years before it existed
+    Lesson Year: 1730
+    Term Year: 1790
+    Context: Religious revival movement
+    Text: ...The Great Awakening created lasting changes in colonial society. New ...
+
+  Issue #3:
+    Type: anachronism
+    Term: Second Great Awakening
+    Chapter: 5 - Finding My Own Voice
+    Problem: Referenced 60 years before it existed
+    Lesson Year: 1730
+    Term Year: 1790
+    Context: Religious revival movement
+    Text: ...ce Whitefield's visit, and I'm seventeen now. The Great Awakening changed me in ways I'm still discovering. I joine...
+
+  Issue #4:
+    Type: anachronism
+    Term: Second Great Awakening
+    Chapter: 5 - Finding My Own Voice
+    Problem: Referenced 60 years before it existed
+    Lesson Year: 1730
+    Term Year: 1790
+    Context: Religious revival movement
+    Text: ...women pray aloud and share their experiences. The Great Awakening opened a door it cannot now close—once you taste ...
+
+────────────────────────────────────────────────────────────
+LESSON: lesson-18 - A More Perfect Union
+Time Period: 1787-1789
+Narrator: Rebecca, age 15, daughter of a Pennsylvania delegate, 1787
+Issues Found: 3
+────────────────────────────────────────────────────────────
+
+  Issue #1:
+    Type: anachronism
+    Term: Bill of Rights
+    Chapter: 4 - Ratification and the Bill of Rights
+    Problem: Referenced 4 years before it existed
+    Lesson Year: 1787
+    Term Year: 1791
+    Context: First ten amendments to Constitution
+    Text: ...To win ratification, Federalists promise to add a Bill of Rights—amendments protecting freedoms like speech, relig...
+
+  Issue #2:
+    Type: anachronism
+    Term: Bill of Rights
+    Chapter: 4 - Ratification and the Bill of Rights
+    Problem: Referenced 4 years before it existed
+    Lesson Year: 1787
+    Term Year: 1791
+    Context: First ten amendments to Constitution
+    Text: ...eorge Washington becomes our first President. The Bill of Rights is added in 1791.  We've created something remark...
+
+  Issue #3:
+    Type: anachronism
+    Term: popular sovereignty
+    Chapter: 4 - Ratification and the Bill of Rights
+    Problem: Referenced 67 years before it existed
+    Lesson Year: 1787
+    Term Year: 1854
+    Context: Local voters decide slavery question
+    Text: ...created something remarkable: a republic based on popular sovereignty, where government power comes from the people. It...
+
+────────────────────────────────────────────────────────────
+LESSON: lesson-22 - The Louisiana Purchase
+Time Period: 1803-1808
+Narrator: Marie, age 14, daughter of a French trader in New Orleans, 1803
+Issues Found: 6
+────────────────────────────────────────────────────────────
+
+  Issue #1:
+    Type: anachronism
+    Term: Battle of New Orleans
+    Chapter: 1 - A Territory Changes Hands
+    Problem: Referenced 12 years before it existed
+    Lesson Year: 1803
+    Term Year: 1815
+    Context: Andrew Jackson's victory after war ended
+    Text: ...I'm Marie, fourteen, living in New Orleans. My city has been French, then Spanish, now Frenc...
+
+  Issue #2:
+    Type: anachronism
+    Term: Battle of New Orleans
+    Chapter: 2 - New Opportunities
+    Problem: Referenced 12 years before it existed
+    Lesson Year: 1803
+    Term Year: 1815
+    Context: Andrew Jackson's victory after war ended
+    Text: ...s major problems for America. We needed access to New Orleans—the mouth of the Mississippi River where western ...
+
+  Issue #3:
+    Type: anachronism
+    Term: Battle of New Orleans
+    Chapter: 4 - Life in New Orleans
+    Problem: Referenced 12 years before it existed
+    Lesson Year: 1803
+    Term Year: 1815
+    Context: Andrew Jackson's victory after war ended
+    Text: ...My city, New Orleans, is unlike anywhere else in America. We're French...
+
+  Issue #4:
+    Type: anachronism
+    Term: Battle of New Orleans
+    Chapter: 4 - Life in New Orleans
+    Problem: Referenced 12 years before it existed
+    Lesson Year: 1803
+    Term Year: 1815
+    Context: Andrew Jackson's victory after war ended
+    Text: ..., our Catholic schools. Some Americans talk about New Orleans like we're exotic territory to be conquered, not ...
+
+  Issue #5:
+    Type: anachronism
+    Term: Battle of New Orleans
+    Chapter: 4 - Life in New Orleans
+    Problem: Referenced 12 years before it existed
+    Lesson Year: 1803
+    Term Year: 1815
+    Context: Andrew Jackson's victory after war ended
+    Text: ...merica can include French-speaking Catholics from New Orleans. We'll make them expand their understanding of wh...
+
+  Issue #6:
+    Type: anachronism
+    Term: Battle of New Orleans
+    Chapter: 5 - The Price of Expansion
+    Problem: Referenced 12 years before it existed
+    Lesson Year: 1803
+    Term Year: 1815
+    Context: Andrew Jackson's victory after war ended
+    Text: ...bles our fundamental contradictions.  Standing in New Orleans as the American flag replaces the French tricolor...
+
+────────────────────────────────────────────────────────────
+LESSON: lesson-24 - The War of 1812
+Time Period: 1812-1815
+Narrator: Daniel, age 16, militiaman from Baltimore, 1814
+Issues Found: 4
+────────────────────────────────────────────────────────────
+
+  Issue #1:
+    Type: anachronism
+    Term: Secession
+    Chapter: 1 - Going to War Again
+    Problem: Referenced 48 years before it existed
+    Lesson Year: 1812
+    Term Year: 1860
+    Context: Southern states leave the Union
+    Text: ...and where merchants lose money. Some even talk of secession—leaving the Union!  In August 1814, British troop...
+
+  Issue #2:
+    Type: anachronism
+    Term: McCulloch v. Maryland
+    Chapter: 3 - The Burning of Washington
+    Problem: Referenced 7 years before it existed
+    Lesson Year: 1812
+    Term Year: 1819
+    Context: Supreme Court upholds federal power
+    Text: ...l. Our militia tried to stop them at Bladensburg, Maryland, but we broke and ran—soldiers call it the "Blade...
+
+  Issue #3:
+    Type: anachronism
+    Term: Secession
+    Chapter: 4 - The Hartford Convention
+    Problem: Referenced 48 years before it existed
+    Lesson Year: 1812
+    Term Year: 1860
+    Context: Southern states leave the Union
+    Text: ...he South and West. Some delegates whispered about secession if their demands weren't met.  Father was furious...
+
+  Issue #4:
+    Type: anachronism
+    Term: Secession
+    Chapter: 4 - The Hartford Convention
+    Problem: Referenced 48 years before it existed
+    Lesson Year: 1812
+    Term Year: 1860
+    Context: Southern states leave the Union
+    Text: ...looked foolish and unpatriotic. They'd threatened secession just as America was winning. The Federalist Party...
+
+────────────────────────────────────────────────────────────
+LESSON: lesson-32 - The Mexican-American War
+Time Period: 1846-1848
+Narrator: Miguel, age 16, American soldier, 1847
+Issues Found: 3
+────────────────────────────────────────────────────────────
+
+  Issue #1:
+    Type: anachronism
+    Term: Sherman Antitrust Act
+    Chapter: 3 - The Price of Victory
+    Problem: Referenced 44 years before it existed
+    Lesson Year: 1846
+    Term Year: 1890
+    Context: First antitrust law
+    Text: ...ome American citizens if they choose. But I don't trust these promises. I've seen how Americans treat Mex...
+
+  Issue #2:
+    Type: anachronism
+    Term: Secession
+    Chapter: 4 - The Slavery Question Returns
+    Problem: Referenced 14 years before it existed
+    Lesson Year: 1846
+    Term Year: 1860
+    Context: Southern states leave the Union
+    Text: ...ll dominate Congress forever. The South threatens secession if slavery is banned from the Mexican Cession.  T...
+
+  Issue #3:
+    Type: anachronism
+    Term: Ulysses S. Grant
+    Chapter: 5 - An Unjust War
+    Problem: Referenced 15 years before it existed
+    Lesson Year: 1846
+    Term Year: 1861
+    Context: Union general, 18th President
+    Text: ...merican War will lead directly to the Civil War.  Ulysses S. Grant, who fought in Mexico and will later command Unio...
+
+────────────────────────────────────────────────────────────
+LESSON: lesson-33 - The Compromise of 1850
+Time Period: 1850-1855
+Narrator: Anna, age 15, from California, 1850
+Issues Found: 3
+────────────────────────────────────────────────────────────
+
+  Issue #1:
+    Type: anachronism
+    Term: Secession
+    Chapter: 1 - Crisis Over Slavery
+    Problem: Referenced 10 years before it existed
+    Lesson Year: 1850
+    Term Year: 1860
+    Context: Southern states leave the Union
+    Text: ...tates a 16-15 advantage. The South is threatening secession if we're admitted.  Father owns a general store s...
+
+  Issue #2:
+    Type: anachronism
+    Term: Secession
+    Chapter: 5 - Temporary Peace
+    Problem: Referenced 10 years before it existed
+    Lesson Year: 1850
+    Term Year: 1860
+    Context: Southern states leave the Union
+    Text: ...850 brings temporary calm. Tensions ease. Talk of secession fades. Many Americans are relieved that catastrop...
+
+  Issue #3:
+    Type: anachronism
+    Term: Secession
+    Chapter: 5 - Temporary Peace
+    Problem: Referenced 10 years before it existed
+    Lesson Year: 1850
+    Term Year: 1860
+    Context: Southern states leave the Union
+    Text: ... doesn't keep its promises, many Southerners say, secession will be justified.  Living in California, far fro...
+
+────────────────────────────────────────────────────────────
+LESSON: lesson-36 - Dred Scott Decision
+Time Period: 1857-1862
+Narrator: Frederick, age 16, free Black in Pennsylvania, 1857
+Issues Found: 1
+────────────────────────────────────────────────────────────
+
+  Issue #1:
+    Type: anachronism
+    Term: Thirteenth Amendment
+    Chapter: 5 - The Path to War
+    Problem: Referenced 8 years before it existed
+    Lesson Year: 1857
+    Term Year: 1865
+    Context: Abolished slavery
+    Text: ... rights. His widow and daughters lived to see the Thirteenth Amendment abolish slavery in 1865, overturning Taney's ruli...
+
+────────────────────────────────────────────────────────────
+LESSON: lesson-41 - Reconstruction Begins
+Time Period: 1865-1867
+Narrator: Marcus, age 15, freed slave in Georgia, 1865
+Issues Found: 1
+────────────────────────────────────────────────────────────
+
+  Issue #1:
+    Type: anachronism
+    Term: Impeachment of Andrew Johnson
+    Chapter: 5 - Presidential Reconstruction Fails
+    Problem: Referenced 3 years before it existed
+    Lesson Year: 1865
+    Term Year: 1868
+    Context: First presidential impeachment trial
+    Text: ...By late 1865, it's clear that President Andrew Johnson's Reconstruction policy has failed. Johnson pardo...
+
+────────────────────────────────────────────────────────────
+LESSON: lesson-42 - Radical Reconstruction
+Time Period: 1867-1870
+Narrator: Eliza, age 16, freed slave in South Carolina, 1868
+Issues Found: 1
+────────────────────────────────────────────────────────────
+
+  Issue #1:
+    Type: anachronism
+    Term: Ku Klux Klan Act
+    Chapter: 5 - The Reign of Terror
+    Problem: Referenced 4 years before it existed
+    Lesson Year: 1867
+    Term Year: 1871
+    Context: Law against KKK terrorism
+    Text: ...g."  Congress passes the Enforcement Acts and the Ku Klux Klan Act, giving the federal government power to protect B...
+
+────────────────────────────────────────────────────────────
+LESSON: lesson-43 - The End of Reconstruction
+Time Period: 1877-1882
+Narrator: Samuel, age 17, Black voter in Mississippi, 1877
+Issues Found: 2
+────────────────────────────────────────────────────────────
+
+  Issue #1:
+    Type: anachronism
+    Term: Plessy v. Ferguson
+    Chapter: 4 - The Last Troops Leave
+    Problem: Referenced 19 years before it existed
+    Lesson Year: 1877
+    Term Year: 1896
+    Context: Supreme Court upholds segregation
+    Text: ...ries. The Supreme Court will uphold these laws in Plessy v. Ferguson (1896), ruling that "separate but equal" doesn't ...
+
+  Issue #2:
+    Type: anachronism
+    Term: separate but equal
+    Chapter: 4 - The Last Troops Leave
+    Problem: Referenced 19 years before it existed
+    Lesson Year: 1877
+    Term Year: 1896
+    Context: Legal doctrine allowing segregation
+    Text: ...e laws in Plessy v. Ferguson (1896), ruling that "separate but equal" doesn't violate the Fourteenth Amendment—even th...
+
+────────────────────────────────────────────────────────────
+LESSON: lesson-47 - The Populist Movement
+Time Period: 1896-1901
+Narrator: Emma, age 16, Kansas farm daughter, 1896
+Issues Found: 2
+────────────────────────────────────────────────────────────
+
+  Issue #1:
+    Type: anachronism
+    Term: Sixteenth Amendment
+    Chapter: 5 - Defeat and Legacy
+    Problem: Referenced 17 years before it existed
+    Lesson Year: 1896
+    Term Year: 1913
+    Context: Authorized federal income tax
+    Text: ...the Progressive Era:  • The graduated income tax (Sixteenth Amendment, 1913) • Direct election of senators (Seventeenth...
+
+  Issue #2:
+    Type: anachronism
+    Term: Seventeenth Amendment
+    Chapter: 5 - Defeat and Legacy
+    Problem: Referenced 17 years before it existed
+    Lesson Year: 1896
+    Term Year: 1913
+    Context: Direct election of senators
+    Text: ...h Amendment, 1913) • Direct election of senators (Seventeenth Amendment, 1913) • Government regulation of railroads (Inte...
+
+────────────────────────────────────────────────────────────
+LESSON: lesson-50 - World War I
+Time Period: 1914-1918
+Narrator: James, age 18, American soldier in France, 1918
+Issues Found: 2
+────────────────────────────────────────────────────────────
+
+  Issue #1:
+    Type: anachronism
+    Term: Treaty of Versailles
+    Chapter: 4 - Wilson's Fourteen Points and the Treaty of Versailles
+    Problem: Referenced 5 years before it existed
+    Lesson Year: 1914
+    Term Year: 1919
+    Context: Ended World War I
+    Text: ... "We are next to Germany. We want security."  The Treaty of Versailles, signed June 28, 1919, reflected this tension bet...
+
+  Issue #2:
+    Type: anachronism
+    Term: Treaty of Versailles
+    Chapter: 5 - Coming Home to a Changed Nation
+    Problem: Referenced 5 years before it existed
+    Lesson Year: 1914
+    Term Year: 1919
+    Context: Ended World War I
+    Text: ...The Senate rejected the Treaty of Versailles and refused to join the League of Nations. Wilson...
+
+────────────────────────────────────────────────────────────
+LESSON: lesson-51 - The Rough Rider President
+Time Period: 1901-1909
+Narrator: Theodore Roosevelt, 26th President of the United States, 1901
+Issues Found: 2
+────────────────────────────────────────────────────────────
+
+  Issue #1:
+    Type: anachronism
+    Term: Clayton Antitrust Act
+    Chapter: 3 - Trust-Busting and the Square Deal
+    Problem: Referenced 13 years before it existed
+    Lesson Year: 1901
+    Term Year: 1914
+    Context: Strengthened antitrust laws
+    Text: ...ak up the Northern Securities Company, a railroad trust that J.P. Morgan himself had created. When Morgan...
+
+  Issue #2:
+    Type: anachronism
+    Term: Clayton Antitrust Act
+    Chapter: 3 - Trust-Busting and the Square Deal
+    Problem: Referenced 13 years before it existed
+    Lesson Year: 1901
+    Term Year: 1914
+    Context: Strengthened antitrust laws
+    Text: ... in the Supreme Court, and I earned the nickname "Trust-Buster." Over my presidency, we brought 44 antitr...
+
+================================================================================
+LESSONS WITH NO ISSUES DETECTED
+================================================================================
+  ✓ lesson-2: Survival in Jamestown
+  ✓ lesson-3: The Mayflower Compact
+  ✓ lesson-4: City Upon a Hill
+  ✓ lesson-5: Diversity in the Colonies
+  ✓ lesson-9: French and Indian War
+  ✓ lesson-10: Colonial Life on the Eve of Revolution
+  ✓ lesson-11: No Taxation Without Representation
+  ✓ lesson-12: The Boston Massacre
+  ✓ lesson-13: The Boston Tea Party
+  ✓ lesson-14: The Shot Heard Round the World
+  ✓ lesson-15: Common Sense & Independence
+  ✓ lesson-16: Winter at Valley Forge
+  ✓ lesson-17: Victory at Yorktown
+  ✓ lesson-19: President Washington
+  ✓ lesson-20: The Bill of Rights
+  ✓ lesson-21: Hamilton vs. Jefferson
+  ✓ lesson-23: Lewis and Clark
+  ✓ lesson-25: The Monroe Doctrine
+  ✓ lesson-26: Jacksonian Democracy
+  ✓ lesson-27: Indian Removal
+  ✓ lesson-28: The Nullification Crisis
+  ✓ lesson-29: The Second Great Awakening
+  ✓ lesson-30: Seneca Falls Convention
+  ✓ lesson-31: Manifest Destiny
+  ✓ lesson-34: Uncle Tom's Cabin
+  ✓ lesson-35: Kansas-Nebraska Act
+  ✓ lesson-37: Lincoln's Election & Secession
+  ✓ lesson-38: The Civil War Begins
+  ✓ lesson-39: Gettysburg & Vicksburg
+  ✓ lesson-40: Appomattox & Lincoln's Assassination
+  ✓ lesson-44: The Gilded Age
+  ✓ lesson-45: Immigration and Urbanization
+  ✓ lesson-46: Labor Movement
+  ✓ lesson-48: The Progressive Era
+  ✓ lesson-49: Women's Suffrage
+
+================================================================================
+END OF REPORT
+================================================================================

@@ -1,0 +1,67 @@
+{
+  "title": "World War I",
+  "subtitle": "The Great War (1914-1918)",
+  "time_period": "1914-1918",
+  "narrator": "James, age 18, American soldier in France, 1918",
+  "sections": [
+    {
+      "number": 1,
+      "title": "The Great War Begins",
+      "summary": "I'm James, eighteen years old, and I'm an American soldier in France. The war has been raging since 1914\u2014four years of brutal combat that has killed millions and devastated Europe. The war started with the assassination of Archduke Franz Ferdinand of Austria-Hungary in June 1914."
+    },
+    {
+      "number": 2,
+      "title": "Over There\u2014American Doughboys in France",
+      "summary": "\"Over there, over there, Send the word, send the word over there, That the Yanks are coming, the Yanks are coming... And we won't come back till it's over, over there.\"\n\nGeorge M. Cohan's song captures American enthusiasm as we entered the war."
+    },
+    {
+      "number": 3,
+      "title": "The Tide Turns",
+      "summary": "By spring 1918, Germany launched a massive offensive, trying to win before American troops arrived in force. They broke through Allied lines, advancing toward Paris. For weeks, the outcome was uncertain."
+    },
+    {
+      "number": 4,
+      "title": "Wilson's Fourteen Points and the Treaty of Versailles",
+      "summary": "President Wilson arrived in Paris for the peace conference with an idealistic vision. His Fourteen Points, announced in January 1918, outlined principles for lasting peace:\n\n\u2022 No secret treaties\u2014open diplomacy\n\u2022 Freedom of the seas\n\u2022 Free trade among nations\n\u2022 Reduced armaments\n\u2022 Adjustment of colon..."
+    },
+    {
+      "number": 5,
+      "title": "Coming Home to a Changed Nation",
+      "summary": "The Senate rejected the Treaty of Versailles and refused to join the League of Nations. Wilson toured the country promoting the treaty, but suffered a stroke that left him partially paralyzed. Without his leadership, the treaty died."
+    }
+  ],
+  "key_facts": [
+    "I'm James, eighteen years old, and I'm an American soldier in France.",
+    "\"Over there, over there, Send the word, send the word over there, That the Yanks are coming, the Yanks are coming...",
+    "By spring 1918, Germany launched a massive offensive, trying to win before American troops arrived in force.",
+    "President Wilson arrived in Paris for the peace conference with an idealistic vision.",
+    "The Senate rejected the Treaty of Versailles and refused to join the League of Nations."
+  ],
+  "timeline_events": [],
+  "vocabulary": [
+    {
+      "term": "World War I",
+      "definition": "Global conflict (1914-1918) between Allied and Central Powers."
+    },
+    {
+      "term": "Trench Warfare",
+      "definition": "Brutal WWI combat from fortified trenches, causing massive casualties."
+    },
+    {
+      "term": "Zimmermann Telegram",
+      "definition": "German message to Mexico proposing alliance against U.S., helping push America into war."
+    },
+    {
+      "term": "Woodrow Wilson",
+      "definition": "President who led America in WWI and proposed League of Nations."
+    },
+    {
+      "term": "Fourteen Points",
+      "definition": "Wilson's peace plan including self-determination and League of Nations."
+    },
+    {
+      "term": "League of Nations",
+      "definition": "International organization Wilson proposed to prevent future wars\u2014U.S. Senate rejected it."
+    }
+  ]
+}

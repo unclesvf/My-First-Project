@@ -1,0 +1,67 @@
+{
+  "title": "Gettysburg & Vicksburg",
+  "subtitle": "Turning Point (1863)",
+  "time_period": "1863",
+  "narrator": "Sarah, age 15, from Gettysburg, 1863",
+  "sections": [
+    {
+      "number": 1,
+      "title": "Our Town Becomes a Battlefield",
+      "summary": "I'm Sarah, fifteen years old, and I live in Gettysburg, Pennsylvania. It's a small town\u2014just 2,400 people\u2014where ten roads meet. We have a Lutheran seminary, a college, farms, shops."
+    },
+    {
+      "number": 2,
+      "title": "Day Two\u2014Little Round Top",
+      "summary": "July 2. The second day of battle was even more terrible than the first. The fighting shifted south to the Round Tops\u2014rocky, wooded hills at the end of the Union line."
+    },
+    {
+      "number": 3,
+      "title": "Day Three\u2014Pickett's Charge",
+      "summary": "July 3, 1863. The third day of battle. The day Gettysburg became the war's turning point."
+    },
+    {
+      "number": 4,
+      "title": "The Aftermath",
+      "summary": "July 4. Lee's army began retreating to Virginia. The Battle of Gettysburg was over."
+    },
+    {
+      "number": 5,
+      "title": "Vicksburg\u2014The River Runs Free",
+      "summary": "The same day Lee retreated from Gettysburg\u2014July 4, 1863\u2014another momentous victory occurred a thousand miles away. Vicksburg, Mississippi, surrendered to General Ulysses S. Grant after a 47-day siege."
+    }
+  ],
+  "key_facts": [
+    "I'm Sarah, fifteen years old, and I live in Gettysburg, Pennsylvania.",
+    "The second day of battle was even more terrible than the first.",
+    "The morning was relatively quiet\u2014just scattered skirmishing.",
+    "Fifty-one thousand men killed, wounded, or missing in three days.",
+    "The same day Lee retreated from Gettysburg\u2014July 4, 1863\u2014another momentous victory occurred a thousand miles away."
+  ],
+  "timeline_events": [],
+  "vocabulary": [
+    {
+      "term": "Battle of Gettysburg",
+      "definition": "July 1863 battle in Pennsylvania, turning point with 51,000 casualties."
+    },
+    {
+      "term": "Pickett's Charge",
+      "definition": "Failed Confederate assault at Gettysburg resulting in massive casualties."
+    },
+    {
+      "term": "Gettysburg Address",
+      "definition": "Lincoln's brief, powerful speech at battlefield dedication."
+    },
+    {
+      "term": "Siege of Vicksburg",
+      "definition": "Grant's campaign capturing key Mississippi River fortress."
+    },
+    {
+      "term": "Ulysses S. Grant",
+      "definition": "Union general who captured Vicksburg and later commanded all Union armies."
+    },
+    {
+      "term": "George Meade",
+      "definition": "Union general who defeated Lee at Gettysburg."
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+digraph MindMap {
+  rankdir=LR;
+  node [shape=box, style="rounded,filled", fontname="Arial"];
+  edge [color="#666666"];
+
+  root [label="The Mayflower Compact", fillcolor="#4285f4", fontcolor="white", fontsize=14];
+
+  chapters [label="Chapters", fillcolor="#34a853", fontcolor="white"];
+  root -> chapters;
+  ch1 [label="Ch1: Separating from the Church", fillcolor="#e8f5e9"];
+  chapters -> ch1;
+  ch2 [label="Ch2: The Mayflower Compact", fillcolor="#e8f5e9"];
+  chapters -> ch2;
+  ch3 [label="Ch3: The First Winter", fillcolor="#e8f5e9"];
+  chapters -> ch3;
+  ch4 [label="Ch4: Help from Squanto", fillcolor="#e8f5e9"];
+  chapters -> ch4;
+  ch5 [label="Ch5: A New Beginning", fillcolor="#e8f5e9"];
+  chapters -> ch5;
+
+  concepts [label="Key Concepts", fillcolor="#fbbc04", fontcolor="black"];
+  root -> concepts;
+  fc1 [label="Pilgrims", fillcolor="#fff9c4"];
+  concepts -> fc1;
+  fc2 [label="Separatists", fillcolor="#fff9c4"];
+  concepts -> fc2;
+  fc3 [label="Mayflower", fillcolor="#fff9c4"];
+  concepts -> fc3;
+  fc4 [label="Mayflower Compact", fillcolor="#fff9c4"];
+  concepts -> fc4;
+  fc5 [label="Plymouth Colony", fillcolor="#fff9c4"];
+  concepts -> fc5;
+  fc6 [label="William Bradford", fillcolor="#fff9c4"];
+  concepts -> fc6;
+  fc7 [label="Squanto", fillcolor="#fff9c4"];
+  concepts -> fc7;
+  fc8 [label="Massasoit", fillcolor="#fff9c4"];
+  concepts -> fc8;
+
+  timeperiod [label="Time: 1620-1630", fillcolor="#ea4335", fontcolor="white"];
+  root -> timeperiod;
+}

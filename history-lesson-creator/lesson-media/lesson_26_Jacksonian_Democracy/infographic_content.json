@@ -1,0 +1,67 @@
+{
+  "title": "Jacksonian Democracy",
+  "subtitle": "The Age of the Common Man (1828-1840)",
+  "time_period": "1828-1840",
+  "narrator": "Thomas, age 15, son of a western farmer, 1829",
+  "sections": [
+    {
+      "number": 1,
+      "title": "A New Kind of President",
+      "summary": "I'm Thomas, fifteen, from Tennessee. Today Andrew Jackson was inaugurated as President, and everything feels different. Jackson isn't from a wealthy Eastern family like previous presidents\u2014he's from the frontier, like us."
+    },
+    {
+      "number": 2,
+      "title": "The Spoils System",
+      "summary": "Jackson introduced the \"spoils system\"\u2014rewarding political supporters with government jobs. \"To the victor belong the spoils,\" his supporters said. He fired many federal employees and replaced them with his own people."
+    },
+    {
+      "number": 3,
+      "title": "The Bank War",
+      "summary": "Jackson's biggest battle was against the Second Bank of the United States. This national bank, chartered by Congress, controlled much of the nation's money and credit. Jackson saw it as a corrupt monopoly that favored wealthy Eastern elites over common farmers and workers."
+    },
+    {
+      "number": 4,
+      "title": "The Rise of the Common Man",
+      "summary": "Jackson's presidency transformed American democracy. Before him, politics was dominated by wealthy, educated elites from established families. Jackson proved that a frontier-born, self-made man could become president."
+    },
+    {
+      "number": 5,
+      "title": "The Democratic Revolution",
+      "summary": "Jackson's legacy is contradictory. He democratized American politics, making government more responsive to ordinary citizens. He fought economic elites and broke their monopoly on power."
+    }
+  ],
+  "key_facts": [
+    "Today Andrew Jackson was inaugurated as President, and everything feels different.",
+    "Jackson introduced the \"spoils system\"\u2014rewarding political supporters with government jobs.",
+    "Jackson's biggest battle was against the Second Bank of the United States.",
+    "Jackson's presidency transformed American democracy.",
+    "He democratized American politics, making government more responsive to ordinary citizens."
+  ],
+  "timeline_events": [],
+  "vocabulary": [
+    {
+      "term": "Andrew Jackson",
+      "definition": "Seventh President (1829-1837), war hero who championed the 'common man' and expanded democratic participation."
+    },
+    {
+      "term": "Jacksonian Democracy",
+      "definition": "The expansion of political participation to common white men and belief in majority rule."
+    },
+    {
+      "term": "Spoils System",
+      "definition": "Practice of rewarding political supporters with government jobs, introduced by Jackson."
+    },
+    {
+      "term": "Universal White Male Suffrage",
+      "definition": "The expansion of voting rights to all white men, regardless of property ownership."
+    },
+    {
+      "term": "Old Hickory",
+      "definition": "Jackson's nickname, referring to his toughness like hickory wood."
+    },
+    {
+      "term": "Common Man",
+      "definition": "Ordinary citizens, especially farmers and workers, who Jackson claimed to represent."
+    }
+  ]
+}

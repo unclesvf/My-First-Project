@@ -1,0 +1,42 @@
+digraph MindMap {
+  rankdir=LR;
+  node [shape=box, style="rounded,filled", fontname="Arial"];
+  edge [color="#666666"];
+
+  root [label="Victory at Yorktown", fillcolor="#4285f4", fontcolor="white", fontsize=14];
+
+  chapters [label="Chapters", fillcolor="#34a853", fontcolor="white"];
+  root -> chapters;
+  ch1 [label="Ch1: A Long War", fillcolor="#e8f5e9"];
+  chapters -> ch1;
+  ch2 [label="Ch2: The Trap Closes", fillcolor="#e8f5e9"];
+  chapters -> ch2;
+  ch3 [label="Ch3: The Siege", fillcolor="#e8f5e9"];
+  chapters -> ch3;
+  ch4 [label="Ch4: Surrender", fillcolor="#e8f5e9"];
+  chapters -> ch4;
+  ch5 [label="Ch5: What Victory Means", fillcolor="#e8f5e9"];
+  chapters -> ch5;
+
+  concepts [label="Key Concepts", fillcolor="#fbbc04", fontcolor="black"];
+  root -> concepts;
+  fc1 [label="Battle of Yorktown", fillcolor="#fff9c4"];
+  concepts -> fc1;
+  fc2 [label="General Cornwallis", fillcolor="#fff9c4"];
+  concepts -> fc2;
+  fc3 [label="Admiral de Grasse", fillcolor="#fff9c4"];
+  concepts -> fc3;
+  fc4 [label="Rochambeau", fillcolor="#fff9c4"];
+  concepts -> fc4;
+  fc5 [label="Siege", fillcolor="#fff9c4"];
+  concepts -> fc5;
+  fc6 [label="Black Patriots", fillcolor="#fff9c4"];
+  concepts -> fc6;
+  fc7 [label="Treaty of Paris (1783)", fillcolor="#fff9c4"];
+  concepts -> fc7;
+  fc8 [label="Redoubt", fillcolor="#fff9c4"];
+  concepts -> fc8;
+
+  timeperiod [label="Time: 1781", fillcolor="#ea4335", fontcolor="white"];
+  root -> timeperiod;
+}

@@ -1,0 +1,102 @@
+# Video Overview: Diversity in the Colonies
+
+**Estimated Duration:** 8-10 minutes
+
+---
+
+## Introduction
+*Duration: 30 seconds*
+
+**Narration:**
+Welcome to our lesson on Diversity in the Colonies. The Middle Colonies: New York, Pennsylvania, New Jersey, Delaware (1664-1700). You'll experience this story through the eyes of Maria, age 14, daughter of a Dutch merchant in New York, 1680.
+
+**Visuals:**
+- Title card: Diversity in the Colonies
+- Historical map or period artwork
+- Narrator character introduction
+
+---
+
+## Chapter 1: From New Netherland to New York
+*Duration: 1-2 minutes*
+
+**Narration:**
+My name is Maria, and I am fourteen years old. I live in New York, though my family still calls it by its old name: New Amsterdam. My parents are Dutch, and they remember when this colony belonged to the Netherlands, not England. In 1664, before I was born, English ships sailed into our harbor.
+
+**Visuals:**
+- Chapter title: From New Netherland to New York
+- Period-appropriate imagery
+- Key concept highlights
+- Animated map or diagram (if applicable)
+
+---
+
+## Chapter 2: Penn's Holy Experiment
+*Duration: 1-2 minutes*
+
+**Narration:**
+My uncle moved to Pennsylvania, the new colony founded by William Penn, a Quaker. The Quakers are strange to us—they believe everyone is equal before God, they refuse to take oaths or fight in wars, and they let women preach in their meetings. In England, they're persecuted for these beliefs. Penn got a huge land grant from King Charles II to pay off a debt the king owed Penn's father.
+
+**Visuals:**
+- Chapter title: Penn's Holy Experiment
+- Period-appropriate imagery
+- Key concept highlights
+- Animated map or diagram (if applicable)
+
+---
+
+## Chapter 3: Market Day
+*Duration: 1-2 minutes*
+
+**Narration:**
+Tuesday is market day at the dock, and I help Father sell goods from his warehouse. The waterfront buzzes with activity—ships arriving from London, Amsterdam, the Caribbean. Sailors speak in tongues I don't recognize, their skin bearing the sun of distant seas. At the next stall, a German baker sells dark rye bread.
+
+**Visuals:**
+- Chapter title: Market Day
+- Period-appropriate imagery
+- Key concept highlights
+- Animated map or diagram (if applicable)
+
+---
+
+## Chapter 4: A Different Kind of Colony
+*Duration: 1-2 minutes*
+
+**Narration:**
+The Middle Colonies are different from New England and the South. In New England, the Puritans control everything—religion, government, daily life. They don't tolerate other beliefs. In Virginia and the South, wealthy plantation owners dominate, and slavery is growing.
+
+**Visuals:**
+- Chapter title: A Different Kind of Colony
+- Period-appropriate imagery
+- Key concept highlights
+- Animated map or diagram (if applicable)
+
+---
+
+## Chapter 5: The Price of Tolerance
+*Duration: 1-2 minutes*
+
+**Narration:**
+Not everyone celebrates our diversity. Some ministers warn that tolerating false religions invites God's wrath. When a Catholic family moved onto our street, neighbors muttered about popish plots and foreign loyalties. I heard an English merchant complain that too many languages confuse commerce and divide communities.
+
+**Visuals:**
+- Chapter title: The Price of Tolerance
+- Period-appropriate imagery
+- Key concept highlights
+- Animated map or diagram (if applicable)
+
+---
+
+## Conclusion
+*Duration: 30 seconds*
+
+**Narration:**
+In this lesson, we explored Diversity in the Colonies through 5 chapters. Key concepts included: Middle Colonies, New Amsterdam, William Penn, Quakers.
+
+**Visuals:**
+- Summary graphic with key points
+- Timeline showing events covered
+- Call to action for quiz/flashcards
+
+---
+

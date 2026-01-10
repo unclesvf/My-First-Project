@@ -1,0 +1,67 @@
+{
+  "title": "Labor Movement",
+  "subtitle": "Workers Unite (1877-1914)",
+  "time_period": "1877-1914",
+  "narrator": "Michael, age 17, factory worker, 1886",
+  "sections": [
+    {
+      "number": 1,
+      "title": "The Eight-Hour Day Movement",
+      "summary": "I'm Michael, seventeen years old, and I work in a factory in Chicago making agricultural equipment. I work fourteen hours a day, six days a week. I start at 6 a.m."
+    },
+    {
+      "number": 2,
+      "title": "The Haymarket Tragedy",
+      "summary": "May 3, 1886. At the McCormick Reaper Works, police attack striking workers, killing two. Labor activists call for a protest rally the next evening at Haymarket Square."
+    },
+    {
+      "number": 3,
+      "title": "The AFL and Craft Unionism",
+      "summary": "After Haymarket, labor organizers change tactics. Samuel Gompers, a cigar maker, builds the American Federation of Labor (AFL) founded in 1886. The AFL takes a different approach from the Knights of Labor."
+    },
+    {
+      "number": 4,
+      "title": "The Triangle Shirtwaist Fire",
+      "summary": "March 25, 1911. A fire breaks out at the Triangle Shirtwaist Factory in New York City. The factory occupies the top three floors of a ten-story building."
+    },
+    {
+      "number": 5,
+      "title": "Labor's Long Struggle",
+      "summary": "By 1914, I'm forty-five years old. I've been a factory worker my entire adult life. The labor movement has made progress, but it's been slow and costly."
+    }
+  ],
+  "key_facts": [
+    "I'm Michael, seventeen years old, and I work in a factory in Chicago making agricultural equipment.",
+    "At the McCormick Reaper Works, police attack striking workers, killing two.",
+    "Samuel Gompers, a cigar maker, builds the American Federation of Labor (AFL) founded in 1886.",
+    "A fire breaks out at the Triangle Shirtwaist Factory in New York City.",
+    "The labor movement has made progress, but it's been slow and costly."
+  ],
+  "timeline_events": [],
+  "vocabulary": [
+    {
+      "term": "Haymarket Affair",
+      "definition": "1886 Chicago labor rally ending in bombing and violent repression of labor movement."
+    },
+    {
+      "term": "American Federation of Labor",
+      "definition": "Moderate union organizing skilled workers, led by Samuel Gompers."
+    },
+    {
+      "term": "Samuel Gompers",
+      "definition": "AFL leader who pursued moderate labor tactics."
+    },
+    {
+      "term": "Strike",
+      "definition": "Workers refusing to work to pressure employers for better conditions."
+    },
+    {
+      "term": "Eight-Hour Day",
+      "definition": "Labor movement goal to limit workday to eight hours."
+    },
+    {
+      "term": "Triangle Shirtwaist Fire",
+      "definition": "1911 fire killing 146 workers, spurring labor reforms."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "title": "The Boston Massacre",
+  "subtitle": "Rising Tensions in Boston (1770)",
+  "time_period": "1770",
+  "narrator": "Abigail, age 14, daughter of a Boston shopkeeper, 1770",
+  "sections": [
+    {
+      "number": 1,
+      "title": "Redcoats in Boston",
+      "summary": "My name is Abigail, and I am fourteen years old. For the past two years, British soldiers\u2014\"redcoats\"\u2014have been stationed in Boston. There are thousands of them, living among us, a constant reminder of British power."
+    },
+    {
+      "number": 2,
+      "title": "The Night of March 5",
+      "summary": "On the cold evening of March 5, 1770, I heard shouting in the street. A crowd was harassing a British sentry, throwing snowballs and ice, calling him names. More soldiers came to help him."
+    },
+    {
+      "number": 3,
+      "title": "The Trial and Propaganda",
+      "summary": "The soldiers were arrested and tried for murder. In a surprise move, John Adams\u2014a patriot who opposes British policies\u2014agreed to defend them. He believes even British soldiers deserve a fair trial and a good lawyer."
+    },
+    {
+      "number": 4,
+      "title": "The Aftermath",
+      "summary": "The day after the shooting, acting Governor Thomas Hutchinson met with angry town leaders. Thousands of armed colonists gathered on the Common. The message was clear: remove the troops or face an uprising."
+    },
+    {
+      "number": 5,
+      "title": "A Turning Point",
+      "summary": "In the months that followed, an uneasy quiet settled over Boston. Most of the Townshend Acts were repealed\u2014except for the tax on tea, which Britain kept as a symbol of their right to tax us. The troops were gone from our streets."
+    }
+  ],
+  "key_facts": [
+    "For the past two years, British soldiers\u2014\"redcoats\"\u2014have been stationed in Boston.",
+    "On the cold evening of March 5, 1770, I heard shouting in the street.",
+    "In a surprise move, John Adams\u2014a patriot who opposes British policies\u2014agreed to defend them.",
+    "The day after the shooting, acting Governor Thomas Hutchinson met with angry town leaders.",
+    "In the months that followed, an uneasy quiet settled over Boston."
+  ],
+  "timeline_events": [],
+  "vocabulary": [
+    {
+      "term": "Boston Massacre",
+      "definition": "A 1770 confrontation where British soldiers killed five colonists during a tense street encounter, used as propaganda against British rule."
+    },
+    {
+      "term": "Townshend Acts",
+      "definition": "British laws taxing tea, glass, paper, and paint in the colonies, leading to renewed boycotts and tensions."
+    },
+    {
+      "term": "Crispus Attucks",
+      "definition": "A man of African and Native American descent, the first person killed in the Boston Massacre, considered the first casualty of the American Revolution..."
+    },
+    {
+      "term": "John Adams",
+      "definition": "Patriot lawyer who defended the British soldiers in the Boston Massacre trial, believing in the right to fair legal representation."
+    },
+    {
+      "term": "Paul Revere",
+      "definition": "Boston silversmith and patriot who created an influential engraving of the Boston Massacre that served as anti-British propaganda."
+    },
+    {
+      "term": "Propaganda",
+      "definition": "Information, often exaggerated or biased, used to promote a particular political cause or point of view."
+    }
+  ]
+}

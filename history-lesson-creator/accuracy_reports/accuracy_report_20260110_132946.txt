@@ -1,0 +1,118 @@
+================================================================================
+HISTORICAL ACCURACY REPORT
+Generated: 2026-01-10T13:29:46.294682
+================================================================================
+
+Total Lessons Scanned: 51
+Lessons with Issues: 1
+Total Issues Found: 4
+
+================================================================================
+DETAILED FINDINGS
+================================================================================
+
+
+────────────────────────────────────────────────────────────
+LESSON: lesson-2 - Survival in Jamestown
+Time Period: 1609-1614
+Narrator: Samuel, age 14, an indentured servant in Jamestown, 1609
+Issues Found: 4
+────────────────────────────────────────────────────────────
+
+  Issue #1:
+    Type: anachronism
+    Term: House of Burgesses
+    Chapter: 4 - The First Representative Government
+    Problem: Referenced 10 years before it existed
+    Lesson Year: 1609
+    Term Year: 1619
+    Context: First representative assembly in American colonies
+    Text: ...ened. The Virginia Company allowed us to form the House of Burgesses, the first representative assembly in the America...
+
+  Issue #2:
+    Type: anachronism
+    Term: slavery
+    Chapter: 4 - The First Representative Government
+    Problem: Referenced 10 years before it existed
+    Lesson Year: 1609
+    Term Year: 1619
+    Context: Forced labor system
+    Text: ...ked the beginning of something dark—the system of slavery that would eventually replace indentured servitud...
+
+  Issue #3:
+    Type: anachronism
+    Term: slavery
+    Chapter: 4 - The First Representative Government
+    Problem: Referenced 10 years before it existed
+    Lesson Year: 1609
+    Term Year: 1619
+    Context: Forced labor system
+    Text: ... land from the Powhatans. And I fear the seeds of slavery we've planted will bear bitter fruit....
+
+  Issue #4:
+    Type: anachronism
+    Term: House of Burgesses
+    Chapter: 5 - Freedom's Promise and Price
+    Problem: Referenced 10 years before it existed
+    Lesson Year: 1609
+    Term Year: 1619
+    Context: First representative assembly in American colonies
+    Text: ...sful planters themselves, even serving in our new House of Burgesses, which was established just this year. In Virgini...
+
+================================================================================
+LESSONS WITH NO ISSUES DETECTED
+================================================================================
+  ✓ lesson-1: One World to the Next
+  ✓ lesson-3: The Mayflower Compact
+  ✓ lesson-4: City Upon a Hill
+  ✓ lesson-5: Diversity in the Colonies
+  ✓ lesson-6: The Southern Way
+  ✓ lesson-7: Triangular Trade
+  ✓ lesson-8: The Great Awakening
+  ✓ lesson-9: French and Indian War
+  ✓ lesson-10: Colonial Life on the Eve of Revolution
+  ✓ lesson-11: No Taxation Without Representation
+  ✓ lesson-12: The Boston Massacre
+  ✓ lesson-13: The Boston Tea Party
+  ✓ lesson-14: The Shot Heard Round the World
+  ✓ lesson-15: Common Sense & Independence
+  ✓ lesson-16: Winter at Valley Forge
+  ✓ lesson-17: Victory at Yorktown
+  ✓ lesson-18: A More Perfect Union
+  ✓ lesson-19: President Washington
+  ✓ lesson-20: The Bill of Rights
+  ✓ lesson-21: Hamilton vs. Jefferson
+  ✓ lesson-22: The Louisiana Purchase
+  ✓ lesson-23: Lewis and Clark
+  ✓ lesson-24: The War of 1812
+  ✓ lesson-25: The Monroe Doctrine
+  ✓ lesson-26: Jacksonian Democracy
+  ✓ lesson-27: Indian Removal
+  ✓ lesson-28: The Nullification Crisis
+  ✓ lesson-29: The Second Great Awakening
+  ✓ lesson-30: Seneca Falls Convention
+  ✓ lesson-31: Manifest Destiny
+  ✓ lesson-32: The Mexican-American War
+  ✓ lesson-33: The Compromise of 1850
+  ✓ lesson-34: Uncle Tom's Cabin
+  ✓ lesson-35: Kansas-Nebraska Act
+  ✓ lesson-36: Dred Scott Decision
+  ✓ lesson-37: Lincoln's Election & Secession
+  ✓ lesson-38: The Civil War Begins
+  ✓ lesson-39: Gettysburg & Vicksburg
+  ✓ lesson-40: Appomattox & Lincoln's Assassination
+  ✓ lesson-41: Reconstruction Begins
+  ✓ lesson-42: Radical Reconstruction
+  ✓ lesson-43: The End of Reconstruction
+  ✓ lesson-44: The Gilded Age
+  ✓ lesson-45: Immigration and Urbanization
+  ✓ lesson-46: Labor Movement
+  ✓ lesson-47: The Populist Movement
+  ✓ lesson-48: The Progressive Era
+  ✓ lesson-49: Women's Suffrage
+  ✓ lesson-50: World War I
+  ✓ lesson-51: The Rough Rider President
+
+================================================================================
+END OF REPORT
+================================================================================

@@ -1,0 +1,67 @@
+{
+  "title": "Survival in Jamestown",
+  "subtitle": "The Struggles of the First Permanent English Colony (1607-1620)",
+  "time_period": "1607-1620",
+  "narrator": "Samuel, age 14, an indentured servant in Jamestown, 1609",
+  "sections": [
+    {
+      "number": 1,
+      "title": "Arrival in Virginia",
+      "summary": "My name is Samuel, and I am fourteen years old. I came to Virginia as an indentured servant, bound to work for seven years in exchange for passage to this new land. The Virginia Company promised riches and opportunity, but what I found was something very different."
+    },
+    {
+      "number": 2,
+      "title": "The Starving Time",
+      "summary": "The winter of 1609 brought horror beyond imagination. We called it the \"Starving Time.\" Captain Smith had been injured and returned to England, leaving us without strong leadership. The Powhatans, tired of our demands for food, stopped trading with us and surrounded the fort."
+    },
+    {
+      "number": 3,
+      "title": "Tobacco Saves the Colony",
+      "summary": "A man named John Rolfe changed everything when he began growing tobacco. He experimented with seeds from the Caribbean, creating a variety that grew well in Virginia's soil and tasted sweet when smoked. The English couldn't get enough of it."
+    },
+    {
+      "number": 4,
+      "title": "The First Representative Government",
+      "summary": "In 1619, something remarkable happened. The Virginia Company allowed us to form the House of Burgesses, the first representative assembly in the American colonies. We could elect burgesses to make local laws, as long as they didn't contradict the company's rules or English law."
+    },
+    {
+      "number": 5,
+      "title": "Freedom's Promise and Price",
+      "summary": "Today I am twenty-four years old. Three years ago I completed my seven years of indenture and became a free man. Master Thompson gave me my freedom dues: fifty acres of land, tools, seed corn, and two sets of clothes."
+    }
+  ],
+  "key_facts": [
+    "I came to Virginia as an indentured servant, bound to work for seven years in exchange for passage to this new land.",
+    "The winter of 1609 brought horror beyond imagination.",
+    "A man named John Rolfe changed everything when he began growing tobacco.",
+    "The Virginia Company allowed us to form the House of Burgesses, the first representative assembly in the American colonies.",
+    "Three years ago I completed my seven years of indenture and became a free man."
+  ],
+  "timeline_events": [],
+  "vocabulary": [
+    {
+      "term": "Jamestown",
+      "definition": "The first permanent English settlement in North America, established in 1607 in present-day Virginia by the Virginia Company."
+    },
+    {
+      "term": "Virginia Company",
+      "definition": "A joint-stock company chartered by King James I to establish colonies in America. Investors hoped to profit from gold and other resources."
+    },
+    {
+      "term": "John Smith",
+      "definition": "An English soldier and explorer who helped Jamestown survive its early years through strict discipline and trade with the Powhatans."
+    },
+    {
+      "term": "Starving Time",
+      "definition": "The winter of 1609-1610 in Jamestown when disease, starvation, and conflict with Native Americans killed about 440 of 500 colonists."
+    },
+    {
+      "term": "Pocahontas",
+      "definition": "Daughter of Powhatan chief who aided early Jamestown colonists and later married John Rolfe, helping establish peaceful relations."
+    },
+    {
+      "term": "Tobacco",
+      "definition": "The cash crop that saved Jamestown's economy. John Rolfe developed a marketable variety that became hugely profitable in England."
+    }
+  ]
+}

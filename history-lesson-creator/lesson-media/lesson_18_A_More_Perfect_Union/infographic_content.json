@@ -1,0 +1,67 @@
+{
+  "title": "A More Perfect Union",
+  "subtitle": "The Constitutional Convention (1787-1789)",
+  "time_period": "1787-1789",
+  "narrator": "Rebecca, age 15, daughter of a Pennsylvania delegate, 1787",
+  "sections": [
+    {
+      "number": 1,
+      "title": "The Articles of Confederation Fail",
+      "summary": "I'm Rebecca, fifteen, living in Philadelphia. My father is a delegate to a special convention meeting here. After winning independence, our states created the Articles of Confederation\u2014a weak central government that's failing."
+    },
+    {
+      "number": 2,
+      "title": "The Great Compromise",
+      "summary": "Father comes home exhausted each night, unable to tell me details\u2014they've sworn secrecy. But I overhear conversations. The big debate is representation: Should each state have equal votes, or should larger states have more power based on population?"
+    },
+    {
+      "number": 3,
+      "title": "The Constitution's Framework",
+      "summary": "The Constitution creates a government of separated powers designed to prevent tyranny. The delegates remembered how British power had been abused, so they built a system where no one branch could dominate. The Legislative Branch (Congress) makes laws."
+    },
+    {
+      "number": 4,
+      "title": "Ratification and the Bill of Rights",
+      "summary": "The Constitution is finished\u2014creating three branches of government with checks and balances, federalism dividing power between national and state governments. But it needs ratification by nine of thirteen states. Federalists like Hamilton, Madison, and Jay support it, writing essays called The Feder..."
+    },
+    {
+      "number": 5,
+      "title": "A Living Experiment",
+      "summary": "Father brought home a printed copy of the Constitution. I read the Preamble carefully: \"We the People of the United States, in Order to form a more perfect Union, establish Justice, insure domestic Tranquility, provide for the common defence, promote the general Welfare, and secure the Blessings of ..."
+    }
+  ],
+  "key_facts": [
+    "My father is a delegate to a special convention meeting here.",
+    "Father comes home exhausted each night, unable to tell me details\u2014they've sworn secrecy.",
+    "The Constitution creates a government of separated powers designed to prevent tyranny.",
+    "The Constitution is finished\u2014creating three branches of government with checks and balances, federalism dividing power between national and state governments.",
+    "Father brought home a printed copy of the Constitution."
+  ],
+  "timeline_events": [],
+  "vocabulary": [
+    {
+      "term": "Constitutional Convention",
+      "definition": "The 1787 Philadelphia meeting where delegates created the U.S. Constitution to replace the failing Articles of Confederation."
+    },
+    {
+      "term": "Articles of Confederation",
+      "definition": "America's first government system (1781-1789), which created a weak central government that ultimately failed."
+    },
+    {
+      "term": "Great Compromise",
+      "definition": "The agreement creating a two-house legislature: Senate (equal state representation) and House (population-based representation)."
+    },
+    {
+      "term": "Three-Fifths Compromise",
+      "definition": "The agreement to count enslaved people as three-fifths of a person for representation and taxation purposes."
+    },
+    {
+      "term": "Federalists",
+      "definition": "Supporters of the Constitution who favored a strong central government, including Hamilton, Madison, and Jay."
+    },
+    {
+      "term": "Anti-Federalists",
+      "definition": "Opponents of the Constitution who feared too much central power and wanted a Bill of Rights, including Patrick Henry."
+    }
+  ]
+}

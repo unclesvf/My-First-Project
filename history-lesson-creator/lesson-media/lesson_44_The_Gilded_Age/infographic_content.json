@@ -1,0 +1,67 @@
+{
+  "title": "The Gilded Age",
+  "subtitle": "Industry and Inequality (1870-1900)",
+  "time_period": "1870-1900",
+  "narrator": "Anna, age 15, factory worker in New York, 1890",
+  "sections": [
+    {
+      "number": 1,
+      "title": "The Golden Surface",
+      "summary": "I'm Anna, fifteen years old, and I work in a garment factory in New York City. My family immigrated from Italy two years ago seeking opportunity in America. What we found was hard work, poverty, and inequality\u2014but also a nation transforming before our eyes."
+    },
+    {
+      "number": 2,
+      "title": "Life in the Factory",
+      "summary": "I work twelve hours a day, six days a week in a garment factory making shirtwaists (women's blouses). The factory is on the eighth floor of a building with no fire escapes. Three hundred women and girls work here, crowded together at sewing machines."
+    },
+    {
+      "number": 3,
+      "title": "The Titans of Industry",
+      "summary": "The men who control American industry are sometimes called \"Robber Barons\"\u2014a term suggesting they stole their fortunes. Others call them \"Captains of Industry\"\u2014leaders who built America's economy. The truth is complicated."
+    },
+    {
+      "number": 4,
+      "title": "Child Labor and Exploitation",
+      "summary": "The worst aspect of the Gilded Age is child labor. Children as young as six work in mines, factories, and fields instead of attending school. I see it daily in the garment factory where ten-year-old girls work alongside me."
+    },
+    {
+      "number": 5,
+      "title": "The Meaning of Progress",
+      "summary": "The Gilded Age forces us to ask: What is progress? By some measures, America is progressing rapidly. Steel production increases more than one hundred fold between 1870 and 1900."
+    }
+  ],
+  "key_facts": [
+    "I'm Anna, fifteen years old, and I work in a garment factory in New York City.",
+    "I work twelve hours a day, six days a week in a garment factory making shirtwaists (women's blouses).",
+    "The men who control American industry are sometimes called \"Robber Barons\"\u2014a term suggesting they stole their fortunes.",
+    "Children as young as six work in mines, factories, and fields instead of attending school.",
+    "Steel production increases more than one hundred fold between 1870 and 1900."
+  ],
+  "timeline_events": [],
+  "vocabulary": [
+    {
+      "term": "Gilded Age",
+      "definition": "Period (1870-1900) of rapid industrialization, wealth inequality, and political corruption."
+    },
+    {
+      "term": "Robber Barons",
+      "definition": "Wealthy industrialists accused of building fortunes through exploitation and corruption."
+    },
+    {
+      "term": "Andrew Carnegie",
+      "definition": "Steel magnate who preached 'Gospel of Wealth.'"
+    },
+    {
+      "term": "John D. Rockefeller",
+      "definition": "Oil industry monopolist who controlled Standard Oil."
+    },
+    {
+      "term": "J.P. Morgan",
+      "definition": "Powerful banker who financed major corporations."
+    },
+    {
+      "term": "Monopoly",
+      "definition": "When one company controls entire industry, eliminating competition."
+    }
+  ]
+}

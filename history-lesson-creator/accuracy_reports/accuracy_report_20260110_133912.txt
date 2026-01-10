@@ -1,0 +1,88 @@
+================================================================================
+HISTORICAL ACCURACY REPORT
+Generated: 2026-01-10T13:39:10.761583
+================================================================================
+
+Total Lessons Scanned: 51
+Lessons with Issues: 1
+Total Issues Found: 1
+
+================================================================================
+DETAILED FINDINGS
+================================================================================
+
+
+────────────────────────────────────────────────────────────
+LESSON: lesson-1 - One World to the Next
+Time Period: 1565-1570
+Narrator: Mateo, a 13-year-old Spanish settler in St. Augustine, 1565
+Issues Found: 1
+────────────────────────────────────────────────────────────
+
+  Issue #1:
+    Type: anachronism
+    Term: King Philip's War
+    Chapter: 3 - Building a New World
+    Problem: Referenced 110 years before it existed
+    Lesson Year: 1565
+    Term Year: 1675
+    Context: Major conflict between colonists and Native Americans
+    Text: ... people to Christianity and make them subjects of King Philip II. Some missionaries succeeded in baptizing Timu...
+
+================================================================================
+LESSONS WITH NO ISSUES DETECTED
+================================================================================
+  ✓ lesson-2: Survival in Jamestown
+  ✓ lesson-3: The Mayflower Compact
+  ✓ lesson-4: City Upon a Hill
+  ✓ lesson-5: Diversity in the Colonies
+  ✓ lesson-6: The Southern Way
+  ✓ lesson-7: Triangular Trade
+  ✓ lesson-8: The Great Awakening
+  ✓ lesson-9: French and Indian War
+  ✓ lesson-10: Colonial Life on the Eve of Revolution
+  ✓ lesson-11: No Taxation Without Representation
+  ✓ lesson-12: The Boston Massacre
+  ✓ lesson-13: The Boston Tea Party
+  ✓ lesson-14: The Shot Heard Round the World
+  ✓ lesson-15: Common Sense & Independence
+  ✓ lesson-16: Winter at Valley Forge
+  ✓ lesson-17: Victory at Yorktown
+  ✓ lesson-18: A More Perfect Union
+  ✓ lesson-19: President Washington
+  ✓ lesson-20: The Bill of Rights
+  ✓ lesson-21: Hamilton vs. Jefferson
+  ✓ lesson-22: The Louisiana Purchase
+  ✓ lesson-23: Lewis and Clark
+  ✓ lesson-24: The War of 1812
+  ✓ lesson-25: The Monroe Doctrine
+  ✓ lesson-26: Jacksonian Democracy
+  ✓ lesson-27: Indian Removal
+  ✓ lesson-28: The Nullification Crisis
+  ✓ lesson-29: The Second Great Awakening
+  ✓ lesson-30: Seneca Falls Convention
+  ✓ lesson-31: Manifest Destiny
+  ✓ lesson-32: The Mexican-American War
+  ✓ lesson-33: The Compromise of 1850
+  ✓ lesson-34: Uncle Tom's Cabin
+  ✓ lesson-35: Kansas-Nebraska Act
+  ✓ lesson-36: Dred Scott Decision
+  ✓ lesson-37: Lincoln's Election & Secession
+  ✓ lesson-38: The Civil War Begins
+  ✓ lesson-39: Gettysburg & Vicksburg
+  ✓ lesson-40: Appomattox & Lincoln's Assassination
+  ✓ lesson-41: Reconstruction Begins
+  ✓ lesson-42: Radical Reconstruction
+  ✓ lesson-43: The End of Reconstruction
+  ✓ lesson-44: The Gilded Age
+  ✓ lesson-45: Immigration and Urbanization
+  ✓ lesson-46: Labor Movement
+  ✓ lesson-47: The Populist Movement
+  ✓ lesson-48: The Progressive Era
+  ✓ lesson-49: Women's Suffrage
+  ✓ lesson-50: World War I
+  ✓ lesson-51: The Rough Rider President
+
+================================================================================
+END OF REPORT
+================================================================================

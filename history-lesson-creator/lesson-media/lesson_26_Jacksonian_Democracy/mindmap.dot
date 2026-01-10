@@ -1,0 +1,42 @@
+digraph MindMap {
+  rankdir=LR;
+  node [shape=box, style="rounded,filled", fontname="Arial"];
+  edge [color="#666666"];
+
+  root [label="Jacksonian Democracy", fillcolor="#4285f4", fontcolor="white", fontsize=14];
+
+  chapters [label="Chapters", fillcolor="#34a853", fontcolor="white"];
+  root -> chapters;
+  ch1 [label="Ch1: A New Kind of President", fillcolor="#e8f5e9"];
+  chapters -> ch1;
+  ch2 [label="Ch2: The Spoils System", fillcolor="#e8f5e9"];
+  chapters -> ch2;
+  ch3 [label="Ch3: The Bank War", fillcolor="#e8f5e9"];
+  chapters -> ch3;
+  ch4 [label="Ch4: The Rise of the Common Man", fillcolor="#e8f5e9"];
+  chapters -> ch4;
+  ch5 [label="Ch5: The Democratic Revolution", fillcolor="#e8f5e9"];
+  chapters -> ch5;
+
+  concepts [label="Key Concepts", fillcolor="#fbbc04", fontcolor="black"];
+  root -> concepts;
+  fc1 [label="Andrew Jackson", fillcolor="#fff9c4"];
+  concepts -> fc1;
+  fc2 [label="Jacksonian Democracy", fillcolor="#fff9c4"];
+  concepts -> fc2;
+  fc3 [label="Spoils System", fillcolor="#fff9c4"];
+  concepts -> fc3;
+  fc4 [label="Universal White Male Suffrage", fillcolor="#fff9c4"];
+  concepts -> fc4;
+  fc5 [label="Old Hickory", fillcolor="#fff9c4"];
+  concepts -> fc5;
+  fc6 [label="Common Man", fillcolor="#fff9c4"];
+  concepts -> fc6;
+  fc7 [label="Rotation in Office", fillcolor="#fff9c4"];
+  concepts -> fc7;
+  fc8 [label="Democratic Participation", fillcolor="#fff9c4"];
+  concepts -> fc8;
+
+  timeperiod [label="Time: 1828-1840", fillcolor="#ea4335", fontcolor="white"];
+  root -> timeperiod;
+}

@@ -1,0 +1,73 @@
+{
+  "title": "The War of 1812",
+  "subtitle": "Second War for Independence (1812-1815)",
+  "time_period": "1812-1815",
+  "narrator": "Daniel, age 16, militiaman from Baltimore, 1814",
+  "sections": [
+    {
+      "number": 1,
+      "title": "Going to War Again",
+      "summary": "I'm Daniel, sixteen, and we're at war with Britain again. The reasons are complicated: Britain's been stopping our ships, searching them, and forcing American sailors to serve in the British navy\u2014\"impressment,\" they call it. Britain aids Native tribes fighting American expansion."
+    },
+    {
+      "number": 2,
+      "title": "The Star-Spangled Banner",
+      "summary": "All night on September 13-14, 1814, British ships bombarded Fort McHenry. I watched from the city as \"rockets' red glare\" and \"bombs bursting in air\" lit up the darkness. Would the fort surrender?"
+    },
+    {
+      "number": 3,
+      "title": "The Burning of Washington",
+      "summary": "August 1814 brought America's darkest moment in the war. A British force marched on Washington D.C., our nation's capital. Our militia tried to stop them at Bladensburg, Maryland, but we broke and ran\u2014soldiers call it the \"Bladensburg Races.\"\n\nBritish troops entered Washington unopposed."
+    },
+    {
+      "number": 4,
+      "title": "The Hartford Convention",
+      "summary": "Three months after we defended Baltimore, in December 1814, New England Federalists met in Hartford, Connecticut. They opposed the war from the beginning\u2014it hurt their shipping trade with Britain. Some talked openly of New England leaving the Union."
+    },
+    {
+      "number": 5,
+      "title": "The Battle of New Orleans",
+      "summary": "The war's strangest moment came in January 1815. Andrew Jackson, commanding American forces in New Orleans, faced a battle British army. On January 8, British troops in neat formations charged American positions behind cotton bales and earthworks."
+    },
+    {
+      "number": 6,
+      "title": "What the War Meant",
+      "summary": "The War of 1812 ended where it began\u2014no territory changed hands, no major concessions made. Historians sometimes call it a pointless war, achieving nothing at the cost of thousands of lives. But it changed America in profound ways."
+    }
+  ],
+  "key_facts": [
+    "I'm Daniel, sixteen, and we're at war with Britain again.",
+    "All night on September 13-14, 1814, British ships bombarded Fort McHenry.",
+    "August 1814 brought America's darkest moment in the war.",
+    "Three months after we defended Baltimore, in December 1814, New England Federalists met in Hartford, Connecticut.",
+    "Andrew Jackson, commanding American forces in New Orleans, faced a battle British army.",
+    "The War of 1812 ended where it began\u2014no territory changed hands, no major concessions made."
+  ],
+  "timeline_events": [],
+  "vocabulary": [
+    {
+      "term": "War of 1812",
+      "definition": "War between U.S. and Britain (1812-1815) over impressment, trade restrictions, and expansion."
+    },
+    {
+      "term": "Impressment",
+      "definition": "British practice of forcing American sailors to serve in the British navy."
+    },
+    {
+      "term": "War Hawks",
+      "definition": "Congressional leaders who pushed for war with Britain, wanting to seize Canada and defend American honor."
+    },
+    {
+      "term": "Fort McHenry",
+      "definition": "Baltimore fort that withstood British bombardment in 1814, inspiring the Star-Spangled Banner."
+    },
+    {
+      "term": "Francis Scott Key",
+      "definition": "Lawyer who wrote 'The Star-Spangled Banner' after watching Fort McHenry's defense."
+    },
+    {
+      "term": "Treaty of Ghent",
+      "definition": "The 1814 treaty ending the War of 1812 with no major territorial changes."
+    }
+  ]
+}

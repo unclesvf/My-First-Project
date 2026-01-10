@@ -1,0 +1,67 @@
+{
+  "title": "Dred Scott Decision",
+  "subtitle": "The Supreme Court Fails (1857)",
+  "time_period": "1857",
+  "narrator": "Frederick, age 16, free Black in Pennsylvania, 1857",
+  "sections": [
+    {
+      "number": 1,
+      "title": "Dred Scott's Long Battle",
+      "summary": "I'm Frederick, sixteen years old, and I'm free. My father was born enslaved but bought his freedom and moved our family to Pennsylvania, a free state. We have our own home, our own business."
+    },
+    {
+      "number": 2,
+      "title": "No Rights That White Men Must Respect",
+      "summary": "Chief Justice Taney's opinion was read in the courtroom. The words spread through the free Black community like fire. I heard them from my father, who heard them from a lawyer friend."
+    },
+    {
+      "number": 3,
+      "title": "The Missouri Compromise Struck Down",
+      "summary": "Taney's opinion went further than just denying Dred Scott's freedom and Black citizenship. He struck down the Missouri Compromise, the law that had regulated slavery in the territories for 37 years. The Missouri Compromise of 1820 banned slavery north of the 36\u00b030' line in the Louisiana Territory."
+    },
+    {
+      "number": 4,
+      "title": "Sectional Crisis Deepens",
+      "summary": "The reaction to the Dred Scott decision splits along sectional lines, making the national divide even worse. Southerners celebrate. Finally, they say, the Supreme Court has recognized their rights."
+    },
+    {
+      "number": 5,
+      "title": "The Path to War",
+      "summary": "Four years after the Dred Scott decision, the Civil War begins. I'm twenty now, watching the nation tear itself apart over the question the Supreme Court tried to settle. Looking back, I see how the decision made war more likely."
+    }
+  ],
+  "key_facts": [
+    "My father was born enslaved but bought his freedom and moved our family to Pennsylvania, a free state.",
+    "Chief Justice Taney's opinion was read in the courtroom.",
+    "Taney's opinion went further than just denying Dred Scott's freedom and Black citizenship.",
+    "The reaction to the Dred Scott decision splits along sectional lines, making the national divide even worse.",
+    "Four years after the Dred Scott decision, the Civil War begins."
+  ],
+  "timeline_events": [],
+  "vocabulary": [
+    {
+      "term": "Dred Scott v. Sandford",
+      "definition": "1857 Supreme Court case ruling enslaved people weren't citizens and had no rights."
+    },
+    {
+      "term": "Roger Taney",
+      "definition": "Chief Justice who wrote Dred Scott decision."
+    },
+    {
+      "term": "Dred Scott",
+      "definition": "Enslaved man who sued for freedom after living in free territory."
+    },
+    {
+      "term": "Citizenship",
+      "definition": "Legal status Court denied to all Black people, free or enslaved."
+    },
+    {
+      "term": "Missouri Compromise",
+      "definition": "1820 agreement Court declared unconstitutional in Dred Scott."
+    },
+    {
+      "term": "Territorial Slavery",
+      "definition": "Court ruled Congress couldn't ban slavery in territories."
+    }
+  ]
+}

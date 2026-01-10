@@ -1,0 +1,1092 @@
+================================================================================
+HISTORICAL ACCURACY REPORT
+Generated: 2026-01-10T13:25:47.268875
+================================================================================
+
+Total Lessons Scanned: 51
+Lessons with Issues: 32
+Total Issues Found: 112
+
+================================================================================
+DETAILED FINDINGS
+================================================================================
+
+
+────────────────────────────────────────────────────────────
+LESSON: lesson-2 - Survival in Jamestown
+Time Period: 1609-1614
+Narrator: Samuel, age 14, an indentured servant in Jamestown, 1609
+Issues Found: 16
+────────────────────────────────────────────────────────────
+
+  Issue #1:
+    Type: anachronism
+    Term: John Rolfe
+    Chapter: 3 - Tobacco Saves the Colony
+    Problem: Referenced 3 years before it existed
+    Lesson Year: 1609
+    Term Year: 1612
+    Context: Introduced tobacco cultivation to Virginia
+    Text: ...A man named John Rolfe changed everything when he began growing tobacco....
+
+  Issue #2:
+    Type: anachronism
+    Term: John Rolfe
+    Chapter: 3 - Tobacco Saves the Colony
+    Problem: Referenced 3 years before it existed
+    Lesson Year: 1609
+    Term Year: 1612
+    Context: Introduced tobacco cultivation to Virginia
+    Text: ...ed years of their lives for a chance in America.  John Rolfe also married Pocahontas, daughter of Chief Powhat...
+
+  Issue #3:
+    Type: anachronism
+    Term: tobacco
+    Chapter: 3 - Tobacco Saves the Colony
+    Problem: Referenced 3 years before it existed
+    Lesson Year: 1609
+    Term Year: 1612
+    Context: Cash crop that saved Virginia
+    Text: ...hn Rolfe changed everything when he began growing tobacco. He experimented with seeds from the Caribbean, c...
+
+  Issue #4:
+    Type: anachronism
+    Term: tobacco
+    Chapter: 3 - Tobacco Saves the Colony
+    Problem: Referenced 3 years before it existed
+    Lesson Year: 1609
+    Term Year: 1612
+    Context: Cash crop that saved Virginia
+    Text: ...aves that brought profit. Everyone wanted to grow tobacco. Fields replaced forests. Even the streets of Jam...
+
+  Issue #5:
+    Type: anachronism
+    Term: tobacco
+    Chapter: 3 - Tobacco Saves the Colony
+    Problem: Referenced 3 years before it existed
+    Lesson Year: 1609
+    Term Year: 1612
+    Context: Cash crop that saved Virginia
+    Text: ...er barrel to England, and money poured back.  But tobacco required intense labor. The work was backbreaking...
+
+  Issue #6:
+    Type: nation_check
+    Term: America
+    Chapter: 3 - Tobacco Saves the Colony
+    Text: ...e who traded years of their lives for a chance in America.  John Rolfe also married Pocahontas, daughter of...
+
+  Issue #7:
+    Type: anachronism
+    Term: House of Burgesses
+    Chapter: 4 - The First Representative Government
+    Problem: Referenced 10 years before it existed
+    Lesson Year: 1609
+    Term Year: 1619
+    Context: First representative assembly in American colonies
+    Text: ...ened. The Virginia Company allowed us to form the House of Burgesses, the first representative assembly in the America...
+
+  Issue #8:
+    Type: anachronism
+    Term: slavery
+    Chapter: 4 - The First Representative Government
+    Problem: Referenced 10 years before it existed
+    Lesson Year: 1609
+    Term Year: 1619
+    Context: Forced labor system
+    Text: ...ked the beginning of something dark—the system of slavery that would eventually replace indentured servitud...
+
+  Issue #9:
+    Type: anachronism
+    Term: slavery
+    Chapter: 4 - The First Representative Government
+    Problem: Referenced 10 years before it existed
+    Lesson Year: 1609
+    Term Year: 1619
+    Context: Forced labor system
+    Text: ... land from the Powhatans. And I fear the seeds of slavery we've planted will bear bitter fruit....
+
+  Issue #10:
+    Type: anachronism
+    Term: tobacco
+    Chapter: 4 - The First Representative Government
+    Problem: Referenced 3 years before it existed
+    Lesson Year: 1609
+    Term Year: 1612
+    Context: Cash crop that saved Virginia
+    Text: ...n their own government. We discussed matters like tobacco prices, land distribution, and relations with the...
+
+  Issue #11:
+    Type: nation_check
+    Term: America
+    Chapter: 4 - The First Representative Government
+    Text: ...ossible. We created a permanent English colony in America. But at what cost? So many died. We took land fro...
+
+  Issue #12:
+    Type: anachronism
+    Term: House of Burgesses
+    Chapter: 5 - Freedom's Promise and Price
+    Problem: Referenced 10 years before it existed
+    Lesson Year: 1609
+    Term Year: 1619
+    Context: First representative assembly in American colonies
+    Text: ...sful planters themselves, even serving in our new House of Burgesses, which was established just this year. In Virgini...
+
+  Issue #13:
+    Type: anachronism
+    Term: tobacco
+    Chapter: 5 - Freedom's Promise and Price
+    Problem: Referenced 3 years before it existed
+    Lesson Year: 1609
+    Term Year: 1612
+    Context: Cash crop that saved Virginia
+    Text: ...iles upriver from Jamestown. The soil is good for tobacco, and through hard work, I've begun to prosper. So...
+
+  Issue #14:
+    Type: anachronism
+    Term: tobacco
+    Chapter: 5 - Freedom's Promise and Price
+    Problem: Referenced 3 years before it existed
+    Lesson Year: 1609
+    Term Year: 1612
+    Context: Cash crop that saved Virginia
+    Text: ...njustice that can never be escaped.  As I work my tobacco fields, I think about Jamestown's legacy. We prov...
+
+  Issue #15:
+    Type: nation_check
+    Term: America
+    Chapter: 5 - Freedom's Promise and Price
+    Text: ...legacy. We proved English people could survive in America. We established representative government. We fou...
+
+  Issue #16:
+    Type: nation_check
+    Term: America
+    Chapter: 5 - Freedom's Promise and Price
+    Text: ... triumph and a tragedy—a pattern that will follow America for centuries to come. I'm free now, but I wonder...
+
+────────────────────────────────────────────────────────────
+LESSON: lesson-3 - The Mayflower Compact
+Time Period: 1620-1625
+Narrator: Elizabeth, age 12, a Pilgrim aboard the Mayflower, 1620
+Issues Found: 4
+────────────────────────────────────────────────────────────
+
+  Issue #1:
+    Type: nation_check
+    Term: America
+    Chapter: 1 - Separating from the Church
+    Text: ...Virginia Company offered us a chance to settle in America, we decided to go.  Not all of us were Separatist...
+
+  Issue #2:
+    Type: forward_reference
+    Term: would create
+    Chapter: 2 - The Mayflower Compact
+    Text: ...e good of the colony.  The Compact stated that we would create "just and equal laws" for the general good. It wa...
+
+  Issue #3:
+    Type: nation_check
+    Term: America
+    Chapter: 2 - The Mayflower Compact
+    Text: ...and an important precedent for self-government in America....
+
+  Issue #4:
+    Type: anachronism
+    Term: First Thanksgiving
+    Chapter: 4 - Help from Squanto
+    Problem: Referenced 1 years before it existed
+    Lesson Year: 1620
+    Term Year: 1621
+    Context: Harvest celebration at Plymouth
+    Text: ...ing. This feast became the memory we now call the First Thanksgiving, though we didn't call it that then....
+
+────────────────────────────────────────────────────────────
+LESSON: lesson-4 - City Upon a Hill
+Time Period: 1630-1635
+Narrator: John, age 13, son of a Puritan minister in Boston, 1630
+Issues Found: 1
+────────────────────────────────────────────────────────────
+
+  Issue #1:
+    Type: nation_check
+    Term: America
+    Chapter: 1 - A Holy Experiment
+    Text: ... ourselves, and we brought the charter with us to America. This meant England couldn't easily control us fr...
+
+────────────────────────────────────────────────────────────
+LESSON: lesson-5 - Diversity in the Colonies
+Time Period: 1680-1685
+Narrator: Maria, age 14, daughter of a Dutch merchant in New York, 1680
+Issues Found: 5
+────────────────────────────────────────────────────────────
+
+  Issue #1:
+    Type: anachronism
+    Term: Philadelphia
+    Chapter: 2 - Penn's Holy Experiment
+    Problem: Referenced 2 years before it existed
+    Lesson Year: 1680
+    Term Year: 1682
+    Context: Founded by William Penn in Pennsylvania
+    Text: ...p freely and live in peace. He called his capital Philadelphia, which means "city of brotherly love."  Penn did ...
+
+  Issue #2:
+    Type: anachronism
+    Term: William Penn
+    Chapter: 2 - Penn's Holy Experiment
+    Problem: Referenced 2 years before it existed
+    Lesson Year: 1680
+    Term Year: 1682
+    Context: Founded Pennsylvania
+    Text: ... moved to Pennsylvania, the new colony founded by William Penn, a Quaker. The Quakers are strange to us—they bel...
+
+  Issue #3:
+    Type: nation_check
+    Term: America
+    Chapter: 4 - A Different Kind of Colony
+    Text: ...world.  Father says the Middle Colonies represent America's future: a place where people from different bac...
+
+  Issue #4:
+    Type: anachronism
+    Term: William Penn
+    Chapter: 5 - The Price of Tolerance
+    Problem: Referenced 2 years before it existed
+    Lesson Year: 1680
+    Term Year: 1682
+    Context: Founded Pennsylvania
+    Text: ...es confuse commerce and divide communities.  Even William Penn's experiment in Pennsylvania faces challenges. So...
+
+  Issue #5:
+    Type: nation_check
+    Term: America
+    Chapter: 5 - The Price of Tolerance
+    Text: ... Father is right: the Middle Colonies are showing America what it could become—not a place of one truth enf...
+
+────────────────────────────────────────────────────────────
+LESSON: lesson-6 - The Southern Way
+Time Period: 1690-1695
+Narrator: Thomas, age 14, son of a small tobacco farmer in Virginia, 1690
+Issues Found: 1
+────────────────────────────────────────────────────────────
+
+  Issue #1:
+    Type: nation_check
+    Term: America
+    Chapter: 4 - Understanding the System
+    Text: ...What we build now," Father says, "will shape what America becomes. And I fear we're building on sand and bl...
+
+────────────────────────────────────────────────────────────
+LESSON: lesson-7 - Triangular Trade
+Time Period: 1720-1725
+Narrator: James, age 15, son of a merchant ship captain in Boston, 1720
+Issues Found: 1
+────────────────────────────────────────────────────────────
+
+  Issue #1:
+    Type: anachronism
+    Term: Boston Tea Party
+    Chapter: 1 - A Merchant's Life
+    Problem: Referenced 53 years before it existed
+    Lesson Year: 1720
+    Term Year: 1773
+    Context: Colonial protest against British taxation
+    Text: ....  Father owns a share of the ship with two other Boston merchants. They invest in the cargo we carry: rum...
+
+────────────────────────────────────────────────────────────
+LESSON: lesson-8 - The Great Awakening
+Time Period: 1741-1746
+Narrator: Sarah, age 14, daughter of a Connecticut farmer, 1741
+Issues Found: 2
+────────────────────────────────────────────────────────────
+
+  Issue #1:
+    Type: forward_reference
+    Term: years later
+    Chapter: 4 - Long-Term Changes
+    Text: ...ed ministers—Princeton was established just a few years later in 1746, and others would follow in coming decade...
+
+  Issue #2:
+    Type: nation_check
+    Term: America
+    Chapter: 5 - Finding My Own Voice
+    Text: ...use. I don't know where this new spirit will lead America, but I know we've changed. We've learned to think...
+
+────────────────────────────────────────────────────────────
+LESSON: lesson-9 - French and Indian War
+Time Period: 1755-1760
+Narrator: Benjamin, age 16, a colonial militiaman from Virginia, 1755
+Issues Found: 4
+────────────────────────────────────────────────────────────
+
+  Issue #1:
+    Type: nation_check
+    Term: America
+    Chapter: 3 - The Tide Turns
+    Text: ...changed strategy. He poured money and troops into America, making this theater of war a priority. He promot...
+
+  Issue #2:
+    Type: nation_check
+    Term: America
+    Chapter: 3 - The Tide Turns
+    Text: .... Quebec fell, and with it, French power in North America crumbled.  By 1763, the Treaty of Paris ended the...
+
+  Issue #3:
+    Type: nation_check
+    Term: America
+    Chapter: 3 - The Tide Turns
+    Text: ...or losses. The British Empire now dominated North America. We colonials celebrated—we'd helped win a great ...
+
+  Issue #4:
+    Type: nation_check
+    Term: America
+    Chapter: 4 - Seeds of Revolution
+    Text: ...benefit. They planned to station 10,000 troops in America and expected us to help pay for them through new ...
+
+────────────────────────────────────────────────────────────
+LESSON: lesson-10 - Colonial Life on the Eve of Revolution
+Time Period: 1763-1768
+Narrator: Rachel, age 15, daughter of a Philadelphia printer, 1763
+Issues Found: 1
+────────────────────────────────────────────────────────────
+
+  Issue #1:
+    Type: nation_check
+    Term: America
+    Chapter: 5 - Contradictions and Possibilities
+    Text: ... their voices, their work—shape history. Whatever America becomes, it will be built by people like us, one ...
+
+────────────────────────────────────────────────────────────
+LESSON: lesson-11 - No Taxation Without Representation
+Time Period: 1765-1770
+Narrator: William, age 16, apprentice to a Boston printer, 1765
+Issues Found: 5
+────────────────────────────────────────────────────────────
+
+  Issue #1:
+    Type: anachronism
+    Term: Boston Tea Party
+    Chapter: 1 - The Stamp Act
+    Problem: Referenced 8 years before it existed
+    Lesson Year: 1765
+    Term Year: 1773
+    Context: Colonial protest against British taxation
+    Text: ...ears old. I'm an apprentice at a printing shop in Boston, learning the trade from Master Green. Today, Mar...
+
+  Issue #2:
+    Type: nation_check
+    Term: America
+    Chapter: 1 - The Stamp Act
+    Text: ...he money will pay for British troops stationed in America.  Master Green is livid. "This will destroy our b...
+
+  Issue #3:
+    Type: government_check
+    Term: Congress
+    Chapter: 3 - Colonial Unity
+    Text: ...rom nine colonies met in New York for a Stamp Act Congress. This is remarkable—the colonies rarely cooperate...
+
+  Issue #4:
+    Type: government_check
+    Term: Congress
+    Chapter: 3 - Colonial Unity
+    Text: ...ate. But this threat has brought us together. The Congress declared that only colonial assemblies, not Parli...
+
+  Issue #5:
+    Type: nation_check
+    Term: America
+    Chapter: 4 - The Townshend Acts
+    Text: ...pay the salaries of royal governors and judges in America. Master Green explains why this is dangerous: "If...
+
+────────────────────────────────────────────────────────────
+LESSON: lesson-12 - The Boston Massacre
+Time Period: 1770-1775
+Narrator: Abigail, age 14, daughter of a Boston shopkeeper, 1770
+Issues Found: 7
+────────────────────────────────────────────────────────────
+
+  Issue #1:
+    Type: anachronism
+    Term: Boston Tea Party
+    Chapter: 1 - Redcoats in Boston
+    Problem: Referenced 3 years before it existed
+    Lesson Year: 1770
+    Term Year: 1773
+    Context: Colonial protest against British taxation
+    Text: ...ritish soldiers—"redcoats"—have been stationed in Boston. There are thousands of them, living among us, a ...
+
+  Issue #2:
+    Type: anachronism
+    Term: Boston Tea Party
+    Chapter: 1 - Redcoats in Boston
+    Problem: Referenced 3 years before it existed
+    Lesson Year: 1770
+    Term Year: 1773
+    Context: Colonial protest against British taxation
+    Text: ...ions simmer every day.  The soldiers compete with Bostonians for jobs, working for lower wages during thei...
+
+  Issue #3:
+    Type: anachronism
+    Term: Boston Tea Party
+    Chapter: 2 - The Night of March 5
+    Problem: Referenced 3 years before it existed
+    Lesson Year: 1770
+    Term Year: 1773
+    Context: Colonial protest against British taxation
+    Text: ...in the street. The next day, people called it the Boston Massacre. British soldiers had killed unarmed col...
+
+  Issue #4:
+    Type: anachronism
+    Term: Boston Tea Party
+    Chapter: 4 - The Aftermath
+    Problem: Referenced 3 years before it existed
+    Lesson Year: 1770
+    Term Year: 1773
+    Context: Colonial protest against British taxation
+    Text: ...hops closed and church bells tolled. Thousands of Bostonians marched behind the coffins of the five victim...
+
+  Issue #5:
+    Type: anachronism
+    Term: Boston Tea Party
+    Chapter: 5 - A Turning Point
+    Problem: Referenced 3 years before it existed
+    Lesson Year: 1770
+    Term Year: 1773
+    Context: Colonial protest against British taxation
+    Text: ...onths that followed, an uneasy quiet settled over Boston. Most of the Townshend Acts were repealed—except ...
+
+  Issue #6:
+    Type: anachronism
+    Term: Boston Tea Party
+    Chapter: 5 - A Turning Point
+    Problem: Referenced 3 years before it existed
+    Lesson Year: 1770
+    Term Year: 1773
+    Context: Colonial protest against British taxation
+    Text: ...ed us further apart.  Looking back now, I see the Boston Massacre as a turning point. Not because of what ...
+
+  Issue #7:
+    Type: nation_check
+    Term: America
+    Chapter: 5 - A Turning Point
+    Text: ...hat it represented. The bonds between Britain and America were breaking. Five men died on King Street, but ...
+
+────────────────────────────────────────────────────────────
+LESSON: lesson-13 - The Boston Tea Party
+Time Period: 1773-1778
+Narrator: Thomas, age 15, apprentice to a Boston carpenter, 1773
+Issues Found: 3
+────────────────────────────────────────────────────────────
+
+  Issue #1:
+    Type: government_check
+    Term: Congress
+    Chapter: 3 - The Intolerable Acts
+    Text: ...sistance.  Plans are being made for a Continental Congress—representatives from all thirteen colonies meetin...
+
+  Issue #2:
+    Type: government_check
+    Term: Congress
+    Chapter: 4 - Colonial Unity Emerges
+    Text: ...ia) met in Philadelphia for the First Continental Congress. This was extraordinary—never before had the colo...
+
+  Issue #3:
+    Type: government_check
+    Term: Congress
+    Chapter: 4 - Colonial Unity Emerges
+    Text: ...n attack on one colony was an attack on all.  The Congress debated how to respond to British tyranny. Some w...
+
+────────────────────────────────────────────────────────────
+LESSON: lesson-14 - The Shot Heard Round the World
+Time Period: 1775-1780
+Narrator: Nathan, age 17, a Minuteman from Concord, Massachusetts, 1775
+Issues Found: 1
+────────────────────────────────────────────────────────────
+
+  Issue #1:
+    Type: government_check
+    Term: Congress
+    Chapter: 4 - No Turning Back
+    Text: ... the British forces there. The Second Continental Congress will meet to decide what to do. But in truth, the...
+
+────────────────────────────────────────────────────────────
+LESSON: lesson-15 - Common Sense & Independence
+Time Period: 1776-1781
+Narrator: Hannah, age 16, daughter of a Philadelphia delegate, 1776
+Issues Found: 4
+────────────────────────────────────────────────────────────
+
+  Issue #1:
+    Type: government_check
+    Term: Congress
+    Chapter: 1 - Common Sense
+    Text: ...s old. My father is a delegate to the Continental Congress meeting here in Philadelphia. In January, a pamph...
+
+  Issue #2:
+    Type: government_check
+    Term: Congress
+    Chapter: 2 - Writing the Declaration
+    Text: ...ht ought to be, free and independent States." The Congress appointed a committee to draft a declaration: Tho...
+
+  Issue #3:
+    Type: government_check
+    Term: Congress
+    Chapter: 3 - The Vote for Independence
+    Text: ...On July 2, 1776, the Continental Congress voted for independence. Twelve colonies voted yes...
+
+  Issue #4:
+    Type: government_check
+    Term: Congress
+    Chapter: 3 - The Vote for Independence
+    Text: ...f war, there was no turning back.  On July 4, the Congress adopted the Declaration. Church bells rang. Crowd...
+
+────────────────────────────────────────────────────────────
+LESSON: lesson-16 - Winter at Valley Forge
+Time Period: 1777-1778
+Narrator: Joseph, age 17, Continental Army soldier, 1777-1778
+Issues Found: 2
+────────────────────────────────────────────────────────────
+
+  Issue #1:
+    Type: government_check
+    Term: Congress
+    Chapter: 1 - Defeat and Despair
+    Text: ...side with inadequate food, clothing, and shelter. Congress hasn't sent supplies or paid us. Some men are des...
+
+  Issue #2:
+    Type: government_check
+    Term: Congress
+    Chapter: 4 - Daily Survival
+    Text: ... Continental currency. We complain bitterly about Congress, about officers, about the cold, the hunger, ever...
+
+────────────────────────────────────────────────────────────
+LESSON: lesson-18 - A More Perfect Union
+Time Period: 1787-1792
+Narrator: Rebecca, age 15, daughter of a Pennsylvania delegate, 1787
+Issues Found: 16
+────────────────────────────────────────────────────────────
+
+  Issue #1:
+    Type: government_check
+    Term: Congress
+    Chapter: 1 - The Articles of Confederation Fail
+    Text: ...eration—a weak central government that's failing. Congress can't collect taxes, regulate trade, or enforce l...
+
+  Issue #2:
+    Type: government_check
+    Term: Congress
+    Chapter: 1 - The Articles of Confederation Fail
+    Text: ... countries, printing their own money and ignoring Congress.  Last year, farmers in Massachusetts rebelled ag...
+
+  Issue #3:
+    Type: government_check
+    Term: Senate
+    Chapter: 2 - The Great Compromise
+    Text: ...he Great Compromise: a two-house legislature. The Senate gives each state equal votes (two senators). The ...
+
+  Issue #4:
+    Type: government_check
+    Term: Congress
+    Chapter: 3 - The Constitution's Framework
+    Text: ...e branch could dominate.  The Legislative Branch (Congress) makes laws. It's divided into two houses: the Se...
+
+  Issue #5:
+    Type: government_check
+    Term: Senate
+    Chapter: 3 - The Constitution's Framework
+    Text: ...ss) makes laws. It's divided into two houses: the Senate and House of Representatives. This was the Great ...
+
+  Issue #6:
+    Type: government_check
+    Term: Congress
+    Chapter: 3 - The Constitution's Framework
+    Text: ...resentatives. This was the Great Compromise. Only Congress can declare war, collect taxes, coin money, and r...
+
+  Issue #7:
+    Type: government_check
+    Term: President
+    Chapter: 3 - The Constitution's Framework
+    Text: ...te commerce.  The Executive Branch, headed by the President, enforces laws. The President is commander-in-chi...
+
+  Issue #8:
+    Type: government_check
+    Term: President
+    Chapter: 3 - The Constitution's Framework
+    Text: ...anch, headed by the President, enforces laws. The President is commander-in-chief of the military, conducts f...
+
+  Issue #9:
+    Type: government_check
+    Term: Senate
+    Chapter: 3 - The Constitution's Framework
+    Text: ...n policy, and appoints judges and officials (with Senate approval). The President can veto laws, but Congr...
+
+  Issue #10:
+    Type: government_check
+    Term: President
+    Chapter: 3 - The Constitution's Framework
+    Text: ... judges and officials (with Senate approval). The President can veto laws, but Congress can override vetoes w...
+
+  Issue #11:
+    Type: government_check
+    Term: Congress
+    Chapter: 3 - The Constitution's Framework
+    Text: ...enate approval). The President can veto laws, but Congress can override vetoes with a two-thirds vote.  The ...
+
+  Issue #12:
+    Type: government_check
+    Term: President
+    Chapter: 3 - The Constitution's Framework
+    Text: ...utional laws.  Each branch checks the others. The President can veto laws, but Congress can override. Congres...
+
+  Issue #13:
+    Type: government_check
+    Term: Congress
+    Chapter: 3 - The Constitution's Framework
+    Text: ...ecks the others. The President can veto laws, but Congress can override. Congress approves Presidential appo...
+
+  Issue #14:
+    Type: government_check
+    Term: Congress
+    Chapter: 3 - The Constitution's Framework
+    Text: ...esident can veto laws, but Congress can override. Congress approves Presidential appointments and can impeac...
+
+  Issue #15:
+    Type: government_check
+    Term: President
+    Chapter: 3 - The Constitution's Framework
+    Text: ...ves Presidential appointments and can impeach the President. The courts can declare laws unconstitutional. It...
+
+  Issue #16:
+    Type: government_check
+    Term: President
+    Chapter: 4 - Ratification and the Bill of Rights
+    Text: ...ion. In 1789, George Washington becomes our first President. The Bill of Rights is added in 1791.  We've crea...
+
+────────────────────────────────────────────────────────────
+LESSON: lesson-19 - President Washington
+Time Period: 1789-1794
+Narrator: Eleanor, age 14, living in New York City, 1789
+Issues Found: 1
+────────────────────────────────────────────────────────────
+
+  Issue #1:
+    Type: forward_reference
+    Term: would become
+    Chapter: 4 - The Whiskey Rebellion
+    Text: ...anny, enforcing law without revenge. That balance would become the American way....
+
+────────────────────────────────────────────────────────────
+LESSON: lesson-22 - The Louisiana Purchase
+Time Period: 1803-1808
+Narrator: Marie, age 14, daughter of a French trader in New Orleans, 1803
+Issues Found: 1
+────────────────────────────────────────────────────────────
+
+  Issue #1:
+    Type: anachronism
+    Term: Civil War
+    Chapter: 2 - New Opportunities
+    Problem: Referenced 58 years before it existed
+    Lesson Year: 1803
+    Term Year: 1861
+    Context: American Civil War
+    Text: ... haunt America for decades, eventually leading to civil war. For now, though, Americans celebrate. We've doub...
+
+────────────────────────────────────────────────────────────
+LESSON: lesson-28 - The Nullification Crisis
+Time Period: 1832-1837
+Narrator: James, age 16, from South Carolina, 1832
+Issues Found: 2
+────────────────────────────────────────────────────────────
+
+  Issue #1:
+    Type: anachronism
+    Term: Civil War
+    Chapter: 3 - Jackson's Response
+    Problem: Referenced 29 years before it existed
+    Lesson Year: 1832
+    Term Year: 1861
+    Context: American Civil War
+    Text: ... on a knife's edge—one wrong move, and we'd be in civil war thirty years before it actually happened....
+
+  Issue #2:
+    Type: anachronism
+    Term: Civil War
+    Chapter: 5 - The Crisis's Meaning
+    Problem: Referenced 29 years before it existed
+    Lesson Year: 1832
+    Term Year: 1861
+    Context: American Civil War
+    Text: ...n to national majority rule.  It foreshadowed the Civil War. The arguments South Carolina made in 1832—states...
+
+────────────────────────────────────────────────────────────
+LESSON: lesson-30 - Seneca Falls Convention
+Time Period: 1848-1853
+Narrator: Charlotte, age 17, at the convention, 1848
+Issues Found: 1
+────────────────────────────────────────────────────────────
+
+  Issue #1:
+    Type: anachronism
+    Term: Civil War
+    Chapter: 4 - The Long Road Ahead
+    Problem: Referenced 13 years before it existed
+    Lesson Year: 1848
+    Term Year: 1861
+    Context: American Civil War
+    Text: ...is connection will also cause problems. After the Civil War, when the nation debates giving Black men the vot...
+
+────────────────────────────────────────────────────────────
+LESSON: lesson-32 - The Mexican-American War
+Time Period: 1847-1852
+Narrator: Miguel, age 16, American soldier, 1847
+Issues Found: 2
+────────────────────────────────────────────────────────────
+
+  Issue #1:
+    Type: anachronism
+    Term: Abraham Lincoln
+    Chapter: 1 - War with Mexico
+    Problem: Referenced 13 years before it existed
+    Lesson Year: 1847
+    Term Year: 1860
+    Context: 16th President during Civil War
+    Text: ... expand slavery into new territories. Congressman Abraham Lincoln questions Polk's claim about where American blood...
+
+  Issue #2:
+    Type: anachronism
+    Term: Civil War
+    Chapter: 5 - An Unjust War
+    Problem: Referenced 14 years before it existed
+    Lesson Year: 1847
+    Term Year: 1861
+    Context: American Civil War
+    Text: ...he Mexican-American War will lead directly to the Civil War.  Ulysses S. Grant, who fought in Mexico and will...
+
+────────────────────────────────────────────────────────────
+LESSON: lesson-34 - Uncle Tom's Cabin
+Time Period: 1852-1857
+Narrator: Rebecca, age 14, Northern girl, 1852
+Issues Found: 3
+────────────────────────────────────────────────────────────
+
+  Issue #1:
+    Type: anachronism
+    Term: Civil War
+    Chapter: 5 - The Power of Words
+    Problem: Referenced 9 years before it existed
+    Lesson Year: 1852
+    Term Year: 1861
+    Context: American Civil War
+    Text: .... Years from now, when people ask what caused the Civil War (which feels increasingly inevitable), they'll po...
+
+  Issue #2:
+    Type: anachronism
+    Term: Civil War
+    Chapter: 5 - The Power of Words
+    Problem: Referenced 9 years before it existed
+    Lesson Year: 1852
+    Term Year: 1861
+    Context: American Civil War
+    Text: ...eportedly said, when he met Mrs. Stowe during the Civil War, "So you're the little woman who wrote the book t...
+
+  Issue #3:
+    Type: anachronism
+    Term: Abraham Lincoln
+    Chapter: 5 - The Power of Words
+    Problem: Referenced 8 years before it existed
+    Lesson Year: 1852
+    Term Year: 1860
+    Context: 16th President during Civil War
+    Text: ...as. But they'll also point to Uncle Tom's Cabin.  Abraham Lincoln reportedly said, when he met Mrs. Stowe during th...
+
+────────────────────────────────────────────────────────────
+LESSON: lesson-35 - Kansas-Nebraska Act
+Time Period: 1856-1861
+Narrator: John, age 17, Kansas settler, 1856
+Issues Found: 1
+────────────────────────────────────────────────────────────
+
+  Issue #1:
+    Type: anachronism
+    Term: Civil War
+    Chapter: 5 - Democracy Fails
+    Problem: Referenced 5 years before it existed
+    Lesson Year: 1856
+    Term Year: 1861
+    Context: American Civil War
+    Text: ...ve existed.  Bleeding Kansas was a preview of the Civil War. We showed that Americans would kill each other o...
+
+────────────────────────────────────────────────────────────
+LESSON: lesson-36 - Dred Scott Decision
+Time Period: 1857-1862
+Narrator: Frederick, age 16, free Black in Pennsylvania, 1857
+Issues Found: 5
+────────────────────────────────────────────────────────────
+
+  Issue #1:
+    Type: forward_reference
+    Term: would establish
+    Chapter: 1 - Dred Scott's Long Battle
+    Text: ...ack community watched anxiously. If Scott won, it would establish that enslaved people who entered free territory b...
+
+  Issue #2:
+    Type: anachronism
+    Term: Abraham Lincoln
+    Chapter: 4 - Sectional Crisis Deepens
+    Problem: Referenced 3 years before it existed
+    Lesson Year: 1857
+    Term Year: 1860
+    Context: 16th President during Civil War
+    Text: ...erritories, going beyond what the case required.  Abraham Lincoln, a Republican lawyer from Illinois, says the deci...
+
+  Issue #3:
+    Type: anachronism
+    Term: Civil War
+    Chapter: 5 - The Path to War
+    Problem: Referenced 4 years before it existed
+    Lesson Year: 1857
+    Term Year: 1861
+    Context: American Civil War
+    Text: ...Four years after the Dred Scott decision, the Civil War begins. I'm twenty now, watching the nation tear ...
+
+  Issue #4:
+    Type: anachronism
+    Term: Civil War
+    Chapter: 5 - The Path to War
+    Problem: Referenced 4 years before it existed
+    Lesson Year: 1857
+    Term Year: 1861
+    Context: American Civil War
+    Text: ...n was bound to respect." It still stings. But the Civil War and the constitutional amendments that followed p...
+
+  Issue #5:
+    Type: anachronism
+    Term: Abraham Lincoln
+    Chapter: 5 - The Path to War
+    Problem: Referenced 3 years before it existed
+    Lesson Year: 1857
+    Term Year: 1860
+    Context: 16th President during Civil War
+    Text: ...rectly contradicting the Supreme Court.  In 1860, Abraham Lincoln was elected president without winning a single So...
+
+────────────────────────────────────────────────────────────
+LESSON: lesson-37 - Lincoln's Election & Secession
+Time Period: 1860-1865
+Narrator: William, age 15, from South Carolina, 1860
+Issues Found: 1
+────────────────────────────────────────────────────────────
+
+  Issue #1:
+    Type: technology
+    Term: telegraph
+    Chapter: 2 - Lincoln Wins—The South Reacts
+    Text: ...November 6, 1860. Election results arrive by telegraph. Abraham Lincoln has won the presidency. He carri...
+
+────────────────────────────────────────────────────────────
+LESSON: lesson-38 - The Civil War Begins
+Time Period: 1862-1867
+Narrator: Thomas, age 17, Union soldier, 1862
+Issues Found: 4
+────────────────────────────────────────────────────────────
+
+  Issue #1:
+    Type: forward_reference
+    Term: will build
+    Chapter: 2 - Building an Army
+    Text: ...mmand. He was young, energetic, and organized. "I will build the finest army the world has seen," he promised....
+
+  Issue #2:
+    Type: technology
+    Term: railroad
+    Chapter: 4 - Second Bull Run—Defeat Again
+    Text: ...t, then positioned his troops along an unfinished railroad cut.  Pope attacked Jackson's position repeatedly...
+
+  Issue #3:
+    Type: technology
+    Term: railroad
+    Chapter: 4 - Second Bull Run—Defeat Again
+    Text: ...ry fire. Men fell by the hundreds. We'd reach the railroad cut, fight hand-to-hand, then be driven back. We ...
+
+  Issue #4:
+    Type: anachronism
+    Term: Emancipation Proclamation
+    Chapter: 5 - Antietam—The Bloodiest Day
+    Problem: Referenced 1 years before it existed
+    Lesson Year: 1862
+    Term Year: 1863
+    Context: Lincoln's proclamation freeing slaves
+    Text: ...ve days after Antietam, he issued the Preliminary Emancipation Proclamation. On January 1, 1863, all slaves in states still i...
+
+────────────────────────────────────────────────────────────
+LESSON: lesson-43 - The End of Reconstruction
+Time Period: 1877-1882
+Narrator: Samuel, age 17, Black voter in Mississippi, 1877
+Issues Found: 6
+────────────────────────────────────────────────────────────
+
+  Issue #1:
+    Type: post_existence
+    Term: Civil War
+    Chapter: 1 - The North Grows Weary
+    Text: ...issippi. I was born free in 1860, just before the Civil War. My early childhood was during slavery, though my...
+
+  Issue #2:
+    Type: post_existence
+    Term: Civil War
+    Chapter: 1 - The North Grows Weary
+    Text: ... of Representatives in 1874.  Third, fatigue. The Civil War ended in 1865. Reconstruction has lasted over a d...
+
+  Issue #3:
+    Type: technology
+    Term: railroad
+    Chapter: 1 - The North Grows Weary
+    Text: ...lagued by corruption scandals—the Crédit Mobilier railroad scandal, the Whiskey Ring tax fraud, and others. ...
+
+  Issue #4:
+    Type: post_existence
+    Term: Civil War
+    Chapter: 3 - The Disputed Election of 1876
+    Text: ...en election.  Some Democrats talk of resuming the Civil War. There's talk of armed resistance, of not allowin...
+
+  Issue #5:
+    Type: post_existence
+    Term: Civil War
+    Chapter: 4 - The Last Troops Leave
+    Text: ...ed us. It feels like a betrayal of everything the Civil War was fought for.  Within days of the troops' depar...
+
+  Issue #6:
+    Type: technology
+    Term: railroad
+    Chapter: 4 - The Last Troops Leave
+    Text: ...te facilities for Black and white people—schools, railroad cars, restaurants, hotels, water fountains, even ...
+
+────────────────────────────────────────────────────────────
+LESSON: lesson-44 - The Gilded Age
+Time Period: 1890-1895
+Narrator: Anna, age 15, factory worker in New York, 1890
+Issues Found: 5
+────────────────────────────────────────────────────────────
+
+  Issue #1:
+    Type: technology
+    Term: telephone
+    Chapter: 1 - The Golden Surface
+    Text: ...ake by hand. Inventions transform daily life: the telephone, electric lights, the phonograph, motion pictures...
+
+  Issue #2:
+    Type: technology
+    Term: electric
+    Chapter: 1 - The Golden Surface
+    Text: .... Inventions transform daily life: the telephone, electric lights, the phonograph, motion pictures.  Enormou...
+
+  Issue #3:
+    Type: technology
+    Term: telegraph
+    Chapter: 3 - The Titans of Industry
+    Text: ...rated from Scotland poor, worked in factories and telegraph offices, invested wisely, and built a steel empir...
+
+  Issue #4:
+    Type: technology
+    Term: Railroad
+    Chapter: 5 - The Meaning of Progress
+    Text: ...more than one hundred fold between 1870 and 1900. Railroad mileage quadruples. Factories produce goods once ...
+
+  Issue #5:
+    Type: technology
+    Term: electricity
+    Chapter: 5 - The Meaning of Progress
+    Text: ...e goods once made slowly by hand. Inventions like electricity, telephones, and internal combustion engines tran...
+
+────────────────────────────────────────────────────────────
+LESSON: lesson-46 - Labor Movement
+Time Period: 1886-1891
+Narrator: Michael, age 17, factory worker, 1886
+Issues Found: 1
+────────────────────────────────────────────────────────────
+
+  Issue #1:
+    Type: technology
+    Term: railroad
+    Chapter: 1 - The Eight-Hour Day Movement
+    Text: ...an workers in the 1880s. Factory workers, miners, railroad workers—we all work twelve to fourteen hours dail...
+
+────────────────────────────────────────────────────────────
+LESSON: lesson-47 - The Populist Movement
+Time Period: 1896-1901
+Narrator: Emma, age 16, Kansas farm daughter, 1896
+Issues Found: 3
+────────────────────────────────────────────────────────────
+
+  Issue #1:
+    Type: technology
+    Term: railroad
+    Chapter: 1 - Drowning in Debt
+    Text: ...ess money.  Meanwhile, our costs keep rising. The railroad monopolies charge whatever they want to ship our ...
+
+  Issue #2:
+    Type: technology
+    Term: railroad
+    Chapter: 1 - Drowning in Debt
+    Text: ...ops to market. We have no choice—there's only one railroad through Kansas. They charge us high rates while g...
+
+  Issue #3:
+    Type: technology
+    Term: railroad
+    Chapter: 2 - The Farmers' Alliance
+    Text: ... all face the same problems: falling crop prices, railroad monopolies, high interest rates, lack of politica...
+
+────────────────────────────────────────────────────────────
+LESSON: lesson-48 - The Progressive Era
+Time Period: 1910-1915
+Narrator: Catherine, age 15, settlement house worker, 1910
+Issues Found: 2
+────────────────────────────────────────────────────────────
+
+  Issue #1:
+    Type: technology
+    Term: railroad
+    Chapter: 3 - Theodore Roosevelt and the Square Deal
+    Text: .... In 1902, he sues Northern Securities Company, a railroad trust. The Supreme Court orders it dissolved. Roo...
+
+  Issue #2:
+    Type: technology
+    Term: railroad
+    Chapter: 4 - Woodrow Wilson and the New Freedom
+    Text: ...m down. Wilson supports an eight-hour workday for railroad workers. He appoints Louis Brandeis, a Progressiv...
+
+────────────────────────────────────────────────────────────
+LESSON: lesson-51 - The Rough Rider President
+Time Period: 1901-1906
+Narrator: Theodore Roosevelt, 26th President of the United States, 1901
+Issues Found: 1
+────────────────────────────────────────────────────────────
+
+  Issue #1:
+    Type: technology
+    Term: railroad
+    Chapter: 3 - Trust-Busting and the Square Deal
+    Text: ...as to break up the Northern Securities Company, a railroad trust that J.P. Morgan himself had created. When ...
+
+================================================================================
+LESSONS WITH NO ISSUES DETECTED
+================================================================================
+  ✓ lesson-1: One World to the Next
+  ✓ lesson-17: Victory at Yorktown
+  ✓ lesson-20: The Bill of Rights
+  ✓ lesson-21: Hamilton vs. Jefferson
+  ✓ lesson-23: Lewis and Clark
+  ✓ lesson-24: The War of 1812
+  ✓ lesson-25: The Monroe Doctrine
+  ✓ lesson-26: Jacksonian Democracy
+  ✓ lesson-27: Indian Removal
+  ✓ lesson-29: The Second Great Awakening
+  ✓ lesson-31: Manifest Destiny
+  ✓ lesson-33: The Compromise of 1850
+  ✓ lesson-39: Gettysburg & Vicksburg
+  ✓ lesson-40: Appomattox & Lincoln's Assassination
+  ✓ lesson-41: Reconstruction Begins
+  ✓ lesson-42: Radical Reconstruction
+  ✓ lesson-45: Immigration and Urbanization
+  ✓ lesson-49: Women's Suffrage
+  ✓ lesson-50: World War I
+
+================================================================================
+END OF REPORT
+================================================================================

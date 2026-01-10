@@ -1,0 +1,67 @@
+{
+  "title": "The Shot Heard Round the World",
+  "subtitle": "Lexington and Concord (1775)",
+  "time_period": "1775",
+  "narrator": "Nathan, age 17, a Minuteman from Concord, Massachusetts, 1775",
+  "sections": [
+    {
+      "number": 1,
+      "title": "The Midnight Ride",
+      "summary": "My name is Nathan, and I am seventeen years old. I'm a Minuteman\u2014part of our militia trained to be ready at a minute's notice. Tonight, April 18, 1775, that training will be tested."
+    },
+    {
+      "number": 2,
+      "title": "Lexington Green",
+      "summary": "At dawn in Lexington, Captain John Parker lined up about 70 militiamen on the town green. They could hear the British approaching\u2014marching feet, rattling equipment, officers shouting commands. The British force was ten times their size."
+    },
+    {
+      "number": 3,
+      "title": "The Battle of Concord",
+      "summary": "By the time the British reached Concord, we'd assembled hundreds of militiamen. We watched from a ridge as British soldiers searched the town for weapons and supplies. We'd hidden most of it, but they found some and started burning it."
+    },
+    {
+      "number": 4,
+      "title": "No Turning Back",
+      "summary": "Tonight, I'm home, exhausted and shaken. I fired my musket at British soldiers today. British soldiers fired at me."
+    },
+    {
+      "number": 5,
+      "title": "The Weight of Choice",
+      "summary": "Three days have passed. The reality of what we've done settles over me like a heavy cloak. I attended the funeral of Isaac Davis, our militia captain, killed at North Bridge."
+    }
+  ],
+  "key_facts": [
+    "I'm a Minuteman\u2014part of our militia trained to be ready at a minute's notice.",
+    "At dawn in Lexington, Captain John Parker lined up about 70 militiamen on the town green.",
+    "By the time the British reached Concord, we'd assembled hundreds of militiamen.",
+    "This morning we were British subjects arguing about taxes and rights.",
+    "The reality of what we've done settles over me like a heavy cloak."
+  ],
+  "timeline_events": [],
+  "vocabulary": [
+    {
+      "term": "Lexington and Concord",
+      "definition": "The first battles of the American Revolution on April 19, 1775, where colonial militias fought British troops."
+    },
+    {
+      "term": "Minutemen",
+      "definition": "Colonial militia members trained to be ready to fight at a minute's notice."
+    },
+    {
+      "term": "Paul Revere",
+      "definition": "Patriot who rode from Boston to Lexington warning that British troops were coming to seize colonial weapons."
+    },
+    {
+      "term": "Shot Heard Round the World",
+      "definition": "A phrase describing the first shot at Lexington or Concord, symbolizing the start of the American Revolution and its global significance."
+    },
+    {
+      "term": "John Parker",
+      "definition": "Captain who commanded the militia at Lexington Green, famously saying 'If they mean to have a war, let it begin here.'"
+    },
+    {
+      "term": "Second Continental Congress",
+      "definition": "Meeting of colonial delegates in May 1775 that managed the war effort and eventually declared independence."
+    }
+  ]
+}

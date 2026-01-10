@@ -1,0 +1,131 @@
+================================================================================
+HISTORICAL ACCURACY REPORT
+Generated: 2026-01-10T13:43:44.681654
+================================================================================
+
+Total Lessons Scanned: 50
+Total Flashcards Scanned: 500
+Total Quiz Questions Scanned: 216
+Lessons with Issues: 2
+Total Issues Found: 4
+
+================================================================================
+DETAILED FINDINGS
+================================================================================
+
+
+────────────────────────────────────────────────────────────
+LESSON: lesson-6 - The Southern Way
+Time Period: 1660-1700
+Narrator: Thomas, age 14, son of a small tobacco farmer in Virginia, 1690
+Flashcards: 10 | Quiz Questions: 0
+Issues Found: 2
+────────────────────────────────────────────────────────────
+
+  Issue #1:
+    Type: anachronism
+    Term: indigo
+    Location: flashcard_definition
+    Flashcard #1: Plantation
+    Problem: Referenced 80 years before it existed
+    Lesson Year: 1660
+    Term Year: 1740
+    Context: Blue dye crop in Carolina
+    Text: ... farm that grew cash crops like tobacco, rice, or indigo using enslaved labor. Plantations dominated the S...
+
+  Issue #2:
+    Type: anachronism
+    Term: indigo
+    Location: flashcard_definition
+    Flashcard #2: Cash Crop
+    Problem: Referenced 80 years before it existed
+    Lesson Year: 1660
+    Term Year: 1740
+    Context: Blue dye crop in Carolina
+    Text: ...er's own use. Examples include tobacco, rice, and indigo....
+
+────────────────────────────────────────────────────────────
+LESSON: lesson-24 - The War of 1812
+Time Period: 1812-1815
+Narrator: Daniel, age 16, militiaman from Baltimore, 1814
+Flashcards: 10 | Quiz Questions: 8
+Issues Found: 2
+────────────────────────────────────────────────────────────
+
+  Issue #1:
+    Type: anachronism
+    Term: John C. Calhoun
+    Location: quiz_explanation
+    Quiz #6: Who were the 'War Hawks' and what did they want?...
+    Problem: Referenced 16 years before it existed
+    Lesson Year: 1812
+    Term Year: 1828
+    Context: Southern states' rights advocate
+    Text: ...icans from the South and West like Henry Clay and John C. Calhoun. They pushed for war to defend American honor, st...
+
+  Issue #2:
+    Type: anachronism
+    Term: Henry Clay
+    Location: quiz_explanation
+    Quiz #6: Who were the 'War Hawks' and what did they want?...
+    Problem: Referenced 8 years before it existed
+    Lesson Year: 1812
+    Term Year: 1820
+    Context: The Great Compromiser
+    Text: ...mocratic-Republicans from the South and West like Henry Clay and John C. Calhoun. They pushed for war to defen...
+
+================================================================================
+LESSONS WITH NO ISSUES DETECTED
+================================================================================
+  ✓ lesson-1: One World to the Next
+  ✓ lesson-2: Survival in Jamestown
+  ✓ lesson-3: The Mayflower Compact
+  ✓ lesson-4: City Upon a Hill
+  ✓ lesson-5: Diversity in the Colonies
+  ✓ lesson-7: Triangular Trade
+  ✓ lesson-8: The Great Awakening
+  ✓ lesson-9: French and Indian War
+  ✓ lesson-10: Colonial Life on the Eve of Revolution
+  ✓ lesson-11: No Taxation Without Representation
+  ✓ lesson-12: The Boston Massacre
+  ✓ lesson-13: The Boston Tea Party
+  ✓ lesson-14: The Shot Heard Round the World
+  ✓ lesson-15: Common Sense & Independence
+  ✓ lesson-16: Winter at Valley Forge
+  ✓ lesson-17: Victory at Yorktown
+  ✓ lesson-18: A More Perfect Union
+  ✓ lesson-19: President Washington
+  ✓ lesson-20: The Bill of Rights
+  ✓ lesson-21: Hamilton vs. Jefferson
+  ✓ lesson-22: The Louisiana Purchase
+  ✓ lesson-23: Lewis and Clark
+  ✓ lesson-25: The Monroe Doctrine
+  ✓ lesson-26: Jacksonian Democracy
+  ✓ lesson-27: Indian Removal
+  ✓ lesson-28: The Nullification Crisis
+  ✓ lesson-29: The Second Great Awakening
+  ✓ lesson-30: Seneca Falls Convention
+  ✓ lesson-31: Manifest Destiny
+  ✓ lesson-32: The Mexican-American War
+  ✓ lesson-33: The Compromise of 1850
+  ✓ lesson-34: Uncle Tom's Cabin
+  ✓ lesson-35: Kansas-Nebraska Act
+  ✓ lesson-36: Dred Scott Decision
+  ✓ lesson-37: Lincoln's Election & Secession
+  ✓ lesson-38: The Civil War Begins
+  ✓ lesson-39: Gettysburg & Vicksburg
+  ✓ lesson-40: Appomattox & Lincoln's Assassination
+  ✓ lesson-41: Reconstruction Begins
+  ✓ lesson-42: Radical Reconstruction
+  ✓ lesson-43: The End of Reconstruction
+  ✓ lesson-44: The Gilded Age
+  ✓ lesson-45: Immigration and Urbanization
+  ✓ lesson-46: Labor Movement
+  ✓ lesson-47: The Populist Movement
+  ✓ lesson-48: The Progressive Era
+  ✓ lesson-49: Women's Suffrage
+  ✓ lesson-50: World War I
+
+================================================================================
+END OF REPORT
+================================================================================

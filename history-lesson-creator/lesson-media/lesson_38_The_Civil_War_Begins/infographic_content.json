@@ -1,0 +1,67 @@
+{
+  "title": "The Civil War Begins",
+  "subtitle": "Bull Run to Antietam (1861-1862)",
+  "time_period": "1861-1862",
+  "narrator": "Thomas, age 17, Union soldier, 1862",
+  "sections": [
+    {
+      "number": 1,
+      "title": "First Bull Run\u2014The Illusion Shatters",
+      "summary": "I'm Thomas, seventeen years old, and I enlisted in the Union Army in May 1861. The war fever in my hometown of Cleveland was intense. After Fort Sumter fell, President Lincoln called for 75,000 volunteers."
+    },
+    {
+      "number": 2,
+      "title": "Building an Army",
+      "summary": "After Bull Run, the Union Army transformed. General George McClellan took command. He was young, energetic, and organized."
+    },
+    {
+      "number": 3,
+      "title": "The Peninsula Campaign\u2014Frustration",
+      "summary": "Spring 1862. McClellan's Peninsula Campaign began with promise and ended in frustration. We landed over 100,000 troops on the peninsula between the York and James Rivers, planning to march up to Richmond, just 70 miles away."
+    },
+    {
+      "number": 4,
+      "title": "Second Bull Run\u2014Defeat Again",
+      "summary": "After McClellan's Peninsula Campaign failed, Lincoln tried a new approach. He brought General John Pope from the West to command a new Army of Virginia. Pope was confident, even arrogant."
+    },
+    {
+      "number": 5,
+      "title": "Antietam\u2014The Bloodiest Day",
+      "summary": "September 17, 1862. Antietam. The bloodiest single day in American history."
+    }
+  ],
+  "key_facts": [
+    "I'm Thomas, seventeen years old, and I enlisted in the Union Army in May 1861.",
+    "\"I will build the finest army the world has seen,\" he promised.",
+    "McClellan's Peninsula Campaign began with promise and ended in frustration.",
+    "After McClellan's Peninsula Campaign failed, Lincoln tried a new approach.",
+    "Twenty-three thousand men killed, wounded, or missing in twelve hours of fighting."
+  ],
+  "timeline_events": [],
+  "vocabulary": [
+    {
+      "term": "Battle of Bull Run",
+      "definition": "First major Civil War battle (July 1861), Confederate victory shocking the North."
+    },
+    {
+      "term": "Stonewall Jackson",
+      "definition": "Confederate general who earned nickname at Bull Run for standing firm."
+    },
+    {
+      "term": "Battle of Antietam",
+      "definition": "Bloodiest single day in American history (Sept. 1862), 23,000 casualties."
+    },
+    {
+      "term": "Emancipation Proclamation",
+      "definition": "Lincoln's 1863 order freeing slaves in Confederate states."
+    },
+    {
+      "term": "Robert E. Lee",
+      "definition": "Brilliant Confederate general who led Army of Northern Virginia."
+    },
+    {
+      "term": "George McClellan",
+      "definition": "Cautious Union general who commanded at Antietam."
+    }
+  ]
+}

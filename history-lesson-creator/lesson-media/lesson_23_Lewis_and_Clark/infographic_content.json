@@ -1,0 +1,73 @@
+{
+  "title": "Lewis and Clark",
+  "subtitle": "Exploring the West (1804-1806)",
+  "time_period": "1804-1806",
+  "narrator": "William, age 17, member of the Corps of Discovery, 1805",
+  "sections": [
+    {
+      "number": 1,
+      "title": "Into the Unknown",
+      "summary": "I'm William, seventeen, and I'm part of the greatest adventure in American history. Meriwether Lewis and William Clark are leading the Corps of Discovery\u2014about 40 men\u2014to explore the Louisiana Purchase and beyond, all the way to the Pacific Ocean. President Jefferson gave Lewis specific orders: map t..."
+    },
+    {
+      "number": 2,
+      "title": "Sacagawea's Help",
+      "summary": "In North Dakota, we met Sacagawea, a Shoshone woman who joined us as interpreter and guide. She's about sixteen and carries her baby son on her back. Her presence signals peaceful intentions to tribes we meet\u2014no war party travels with a woman and baby."
+    },
+    {
+      "number": 3,
+      "title": "Encounters with Native Peoples",
+      "summary": "The expedition's success depended entirely on Native peoples. We didn't discover anything\u2014Native nations had lived in and traveled through these lands for thousands of years. They shared knowledge that saved our lives."
+    },
+    {
+      "number": 4,
+      "title": "The Rocky Mountains",
+      "summary": "Nothing prepared us for the Rocky Mountains. Jefferson hoped we'd find an easy passage\u2014maybe a short portage between rivers. Instead, we found a seemingly endless range of rugged peaks."
+    },
+    {
+      "number": 5,
+      "title": "Reaching the Pacific",
+      "summary": "On November 7, 1805, we finally saw it\u2014the Pacific Ocean. \"Ocean in view! O!"
+    },
+    {
+      "number": 6,
+      "title": "What We Discovered",
+      "summary": "The Lewis and Clark Expedition changed America's vision of itself. Before, Americans thought of their nation as confined to lands east of the Mississippi. After, they imagined a nation spanning the continent."
+    }
+  ],
+  "key_facts": [
+    "I'm William, seventeen, and I'm part of the greatest adventure in American history.",
+    "In North Dakota, we met Sacagawea, a Shoshone woman who joined us as interpreter and guide.",
+    "The expedition's success depended entirely on Native peoples.",
+    "Jefferson hoped we'd find an easy passage\u2014maybe a short portage between rivers.",
+    "On November 7, 1805, we finally saw it\u2014the Pacific Ocean.",
+    "The Lewis and Clark Expedition changed America's vision of itself."
+  ],
+  "timeline_events": [],
+  "vocabulary": [
+    {
+      "term": "Lewis and Clark Expedition",
+      "definition": "The 1804-1806 exploration of Louisiana Purchase and beyond, led by Meriwether Lewis and William Clark."
+    },
+    {
+      "term": "Corps of Discovery",
+      "definition": "The name of the expedition group led by Lewis and Clark."
+    },
+    {
+      "term": "Sacagawea",
+      "definition": "Shoshone woman who served as interpreter and guide for the Lewis and Clark expedition."
+    },
+    {
+      "term": "Meriwether Lewis",
+      "definition": "Co-leader of the western expedition, chosen by President Jefferson."
+    },
+    {
+      "term": "William Clark",
+      "definition": "Co-leader of the western expedition, skilled mapmaker and frontiersman."
+    },
+    {
+      "term": "Pacific Ocean",
+      "definition": "The expedition's goal, reached in November 1805 after crossing the continent."
+    }
+  ]
+}

@@ -1,0 +1,116 @@
+# Video Overview: The Rough Rider President
+
+**Estimated Duration:** 9-12 minutes
+
+---
+
+## Introduction
+*Duration: 30 seconds*
+
+**Narration:**
+Welcome to our lesson on The Rough Rider President. Theodore Roosevelt and the Progressive Era (1901-1909). You'll experience this story through the eyes of Theodore Roosevelt, 26th President of the United States, 1901.
+
+**Visuals:**
+- Title card: The Rough Rider President
+- Historical map or period artwork
+- Narrator character introduction
+
+---
+
+## Chapter 1: From Sickly Boy to Rough Rider
+*Duration: 1-2 minutes*
+
+**Narration:**
+My name is Theodore Roosevelt, and I was not supposed to survive childhood. Born in 1858 to a wealthy New York family, I suffered from terrible asthma that left me gasping for breath, weak and confined indoors while other boys played. The doctors said I had a weak constitution and would never be strong. But my father took me aside one day and said, "Theodore, you have the mind but not the body, and without the body the mind cannot go as far as it should.
+
+**Visuals:**
+- Chapter title: From Sickly Boy to Rough Rider
+- Period-appropriate imagery
+- Key concept highlights
+- Animated map or diagram (if applicable)
+
+---
+
+## Chapter 2: An Accidental President
+*Duration: 1-2 minutes*
+
+**Narration:**
+On September 14, 1901, I became President of the United States at age 42—the youngest president in American history. But I did not want it to happen this way. President McKinley had been shot by an assassin eight days earlier at the Pan-American Exposition in Buffalo. When I received the telegram that he was dying, I rushed to Buffalo, but arrived too late.
+
+**Visuals:**
+- Chapter title: An Accidental President
+- Period-appropriate imagery
+- Key concept highlights
+- Animated map or diagram (if applicable)
+
+---
+
+## Chapter 3: Trust-Busting and the Square Deal
+*Duration: 1-2 minutes*
+
+**Narration:**
+America in 1901 was dominated by massive corporations—trusts—that controlled entire industries. J.P. Morgan's banking empire, John D. Rockefeller's Standard Oil, Carnegie's steel monopoly—these men had more power than most governments.
+
+**Visuals:**
+- Chapter title: Trust-Busting and the Square Deal
+- Period-appropriate imagery
+- Key concept highlights
+- Animated map or diagram (if applicable)
+
+---
+
+## Chapter 4: Conservation: Preserving America's Natural Heritage
+*Duration: 1-2 minutes*
+
+**Narration:**
+Of all my achievements, I am most proud of my conservation work. I was America's first conservation president, and I used every power at my disposal to protect our natural heritage. Growing up, I loved nature—studying birds, collecting specimens, exploring forests. Out West as a young man, I saw the destruction firsthand: forests stripped bare, wildlife hunted to near extinction, beautiful landscapes ruined by unchecked exploitation.
+
+**Visuals:**
+- Chapter title: Conservation: Preserving America's Natural Heritage
+- Period-appropriate imagery
+- Key concept highlights
+- Animated map or diagram (if applicable)
+
+---
+
+## Chapter 5: Speaking Softly and Carrying a Big Stick
+*Duration: 1-2 minutes*
+
+**Narration:**
+"Speak softly and carry a big stick; you will go far." This West African proverb became my motto for foreign policy. I believed America should be strong, confident, and willing to use power—but preferably to avoid war rather than wage it. When I became president, America was emerging as a world power after our victory in the Spanish-American War. We had possessions in the Caribbean and Pacific.
+
+**Visuals:**
+- Chapter title: Speaking Softly and Carrying a Big Stick
+- Period-appropriate imagery
+- Key concept highlights
+- Animated map or diagram (if applicable)
+
+---
+
+## Chapter 6: The Bully Pulpit and Progressive Legacy
+*Duration: 1-2 minutes*
+
+**Narration:**
+I loved being President. The presidency gave me what I called a "bully pulpit"—a platform to speak directly to the American people and advocate for the causes I believed in. And I used it constantly. I broke presidential precedents right and left.
+
+**Visuals:**
+- Chapter title: The Bully Pulpit and Progressive Legacy
+- Period-appropriate imagery
+- Key concept highlights
+- Animated map or diagram (if applicable)
+
+---
+
+## Conclusion
+*Duration: 30 seconds*
+
+**Narration:**
+In this lesson, we explored The Rough Rider President through 6 chapters. Key concepts included: Theodore Roosevelt, Rough Riders, Trust-Busting, Square Deal.
+
+**Visuals:**
+- Summary graphic with key points
+- Timeline showing events covered
+- Call to action for quiz/flashcards
+
+---
+

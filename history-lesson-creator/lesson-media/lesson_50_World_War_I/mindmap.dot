@@ -1,0 +1,42 @@
+digraph MindMap {
+  rankdir=LR;
+  node [shape=box, style="rounded,filled", fontname="Arial"];
+  edge [color="#666666"];
+
+  root [label="World War I", fillcolor="#4285f4", fontcolor="white", fontsize=14];
+
+  chapters [label="Chapters", fillcolor="#34a853", fontcolor="white"];
+  root -> chapters;
+  ch1 [label="Ch1: The Great War Begins", fillcolor="#e8f5e9"];
+  chapters -> ch1;
+  ch2 [label="Ch2: Over There—American Doughboys in France", fillcolor="#e8f5e9"];
+  chapters -> ch2;
+  ch3 [label="Ch3: The Tide Turns", fillcolor="#e8f5e9"];
+  chapters -> ch3;
+  ch4 [label="Ch4: Wilson's Fourteen Points and the Treaty ", fillcolor="#e8f5e9"];
+  chapters -> ch4;
+  ch5 [label="Ch5: Coming Home to a Changed Nation", fillcolor="#e8f5e9"];
+  chapters -> ch5;
+
+  concepts [label="Key Concepts", fillcolor="#fbbc04", fontcolor="black"];
+  root -> concepts;
+  fc1 [label="World War I", fillcolor="#fff9c4"];
+  concepts -> fc1;
+  fc2 [label="Trench Warfare", fillcolor="#fff9c4"];
+  concepts -> fc2;
+  fc3 [label="Zimmermann Telegram", fillcolor="#fff9c4"];
+  concepts -> fc3;
+  fc4 [label="Woodrow Wilson", fillcolor="#fff9c4"];
+  concepts -> fc4;
+  fc5 [label="Fourteen Points", fillcolor="#fff9c4"];
+  concepts -> fc5;
+  fc6 [label="League of Nations", fillcolor="#fff9c4"];
+  concepts -> fc6;
+  fc7 [label="Treaty of Versailles", fillcolor="#fff9c4"];
+  concepts -> fc7;
+  fc8 [label="Armistice Day", fillcolor="#fff9c4"];
+  concepts -> fc8;
+
+  timeperiod [label="Time: 1914-1918", fillcolor="#ea4335", fontcolor="white"];
+  root -> timeperiod;
+}
