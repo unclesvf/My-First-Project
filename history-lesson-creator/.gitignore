@@ -38,3 +38,5 @@ next-env.d.ts
 
 # Deployment configuration (contains credentials)
 deploy.config
+*.onnx
+lessons/tts/models/
