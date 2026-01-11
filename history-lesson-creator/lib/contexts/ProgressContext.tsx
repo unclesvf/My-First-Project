@@ -14,6 +14,30 @@ import {
 } from '@/lib/firebase/firestore';
 import type { LessonProgress, QuizAttempt } from '@/lib/firebase/types';
 
+// Development mode - use localStorage fallback when Firestore unavailable
+const DEV_MODE = process.env.NODE_ENV === 'development';
+const LOCAL_STORAGE_KEY = 'dev_progress_data';
+
+// Helper functions for localStorage fallback
+function getLocalProgress(): { lessons: Record<string, LessonProgress>; quizAttempts: QuizAttempt[] } {
+  if (typeof window === 'undefined') return { lessons: {}, quizAttempts: [] };
+  try {
+    const data = localStorage.getItem(LOCAL_STORAGE_KEY);
+    return data ? JSON.parse(data) : { lessons: {}, quizAttempts: [] };
+  } catch {
+    return { lessons: {}, quizAttempts: [] };
+  }
+}
+
+function saveLocalProgress(data: { lessons: Record<string, LessonProgress>; quizAttempts: QuizAttempt[] }) {
+  if (typeof window === 'undefined') return;
+  try {
+    localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(data));
+  } catch (e) {
+    console.warn('Failed to save progress to localStorage:', e);
+  }
+}
+
 interface ProgressContextType {
   // Current lesson progress
   currentLessonProgress: LessonProgress | null;
@@ -223,6 +247,41 @@ export function ProgressProvider({ children, lessonId }: ProgressProviderProps) 
       answers: any[],
       timeSpent: number
     ): Promise<string> => {
+      // In dev mode without user, use localStorage
+      if (DEV_MODE && !user) {
+        const attemptId = `local-${Date.now()}`;
+        const localData = getLocalProgress();
+        const newAttempt: QuizAttempt = {
+          id: attemptId,
+          lessonId: lesson,
+          score,
+          totalQuestions,
+          percentage,
+          answers,
+          timeSpent,
+          completedAt: new Date(),
+        };
+        localData.quizAttempts.push(newAttempt);
+
+        // Update lesson progress
+        localData.lessons[lesson] = {
+          ...localData.lessons[lesson],
+          lessonId: lesson,
+          status: 'completed',
+          quizProgress: {
+            bestScore: Math.max(localData.lessons[lesson]?.quizProgress?.bestScore || 0, percentage),
+            attempts: (localData.lessons[lesson]?.quizProgress?.attempts || 0) + 1,
+            lastAttemptDate: new Date(),
+          },
+        } as LessonProgress;
+
+        saveLocalProgress(localData);
+        setAllQuizAttempts(localData.quizAttempts);
+        setCurrentLessonProgress(localData.lessons[lesson]);
+        console.log('Quiz saved to localStorage (dev mode):', { lesson, score, percentage });
+        return attemptId;
+      }
+
       if (!user) {
         throw new Error('Cannot save quiz attempt: user not authenticated');
       }
@@ -247,6 +306,38 @@ export function ProgressProvider({ children, lessonId }: ProgressProviderProps) 
         return attemptId;
       } catch (error) {
         console.error('Error saving quiz attempt:', error);
+
+        // In dev mode, fall back to localStorage on Firestore error
+        if (DEV_MODE) {
+          const attemptId = `local-${Date.now()}`;
+          const localData = getLocalProgress();
+          const newAttempt: QuizAttempt = {
+            id: attemptId,
+            lessonId: lesson,
+            score,
+            totalQuestions,
+            percentage,
+            answers,
+            timeSpent,
+            completedAt: new Date(),
+          };
+          localData.quizAttempts.push(newAttempt);
+          localData.lessons[lesson] = {
+            ...localData.lessons[lesson],
+            lessonId: lesson,
+            status: 'completed',
+            quizProgress: {
+              bestScore: Math.max(localData.lessons[lesson]?.quizProgress?.bestScore || 0, percentage),
+              attempts: (localData.lessons[lesson]?.quizProgress?.attempts || 0) + 1,
+              lastAttemptDate: new Date(),
+            },
+          } as LessonProgress;
+          saveLocalProgress(localData);
+          setAllQuizAttempts(localData.quizAttempts);
+          console.log('Quiz saved to localStorage (dev fallback):', { lesson, score, percentage });
+          return attemptId;
+        }
+
         throw error;
       }
     },

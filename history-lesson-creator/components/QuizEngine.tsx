@@ -8,6 +8,9 @@ import { cn } from "@/lib/utils";
 import { useProgress } from "@/lib/hooks/useProgress";
 import { useAuth } from "@/lib/hooks/useAuth";
 
+// Development mode flag
+const DEV_MODE = process.env.NODE_ENV === 'development';
+
 interface QuizEngineProps {
   questions: QuizQuestion[];
   lessonId: string;
@@ -68,7 +71,11 @@ export default function QuizEngine({ questions, lessonId, courseId }: QuizEngine
 
   // Save quiz attempt when results are shown
   useEffect(() => {
-    if (showResults && !quizSaved && user) {
+    // In dev mode, save even without user (uses localStorage fallback)
+    // In production, require user authentication
+    const canSave = DEV_MODE || user;
+
+    if (showResults && !quizSaved && canSave) {
       const timeSpent = Math.round((Date.now() - startTime) / 1000); // seconds
 
       saveQuizAttempt(
@@ -117,10 +124,11 @@ export default function QuizEngine({ questions, lessonId, courseId }: QuizEngine
             <p className="text-xl text-gray-700">
               You got {score} out of {questions.length} correct
             </p>
-            {user && quizSaved && (
+            {quizSaved && (
               <div className="mt-4 flex items-center justify-center gap-2 text-sm text-gray-600">
                 <Clock className="h-4 w-4" />
                 <span>Completed in {Math.round((Date.now() - startTime) / 1000)} seconds</span>
+                {DEV_MODE && !user && <span className="text-amber-600">(saved locally)</span>}
               </div>
             )}
           </div>
