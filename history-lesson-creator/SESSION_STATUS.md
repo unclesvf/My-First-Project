@@ -1,0 +1,214 @@
+# History for Homeschoolers - Session Status
+
+**Last Updated:** January 10, 2026
+**Project Path:** `C:\Users\scott\My-First-Project\My-First-Project\history-lesson-creator`
+
+---
+
+## Quick Start
+
+```bash
+cd "C:\Users\scott\My-First-Project\My-First-Project\history-lesson-creator"
+npm run dev
+# Opens at http://localhost:3000
+```
+
+---
+
+## Current State: FULLY FUNCTIONAL
+
+### Content Status
+| Item | Count | Status |
+|------|-------|--------|
+| Lessons | 51 (50 + 1 bonus) | Complete |
+| Chapters | 260 total | All lessons have 5+ chapters |
+| Flashcards | 512 total | All lessons have 10+ flashcards |
+| Quiz Questions | 408 total | All lessons have 8 questions |
+
+### Build Status: PASSING
+- `npm run build` - Success
+- `npm run dev` - Working
+
+---
+
+## Configuration
+
+### Firebase (Configured)
+- Project: `history-for-homeschoolers`
+- Auth: Email/password and Google sign-in enabled
+- Firestore: Set up (security rules need updating for write access)
+- Config location: `.env.local`
+
+### Stripe (Configured - January 2026)
+- **Mode:** Live keys configured
+- **Publishable Key:** `pk_live_51SntEb3jSTlaKj8Q...`
+- **Secret Key:** `sk_live_51SntEb3jSTlaKj8Q...`
+- **Price ID:** `price_1SnuHk3jSTlaKj8QA3W4W1Ba`
+- **Product ID:** `prod_TlRAHwtKeDo3IN`
+- **Course Price:** $19.99 (1999 cents)
+- **Webhook Secret:** Not yet configured (optional)
+
+### Environment Variables (.env.local)
+```
+# Firebase - configured
+NEXT_PUBLIC_FIREBASE_API_KEY=...
+NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN=history-for-homeschoolers.firebaseapp.com
+NEXT_PUBLIC_FIREBASE_PROJECT_ID=history-for-homeschoolers
+...
+
+# Stripe - configured
+NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY=pk_live_...
+STRIPE_SECRET_KEY=sk_live_...
+NEXT_PUBLIC_STRIPE_PRICE_ID=price_1SnuHk3jSTlaKj8QA3W4W1Ba
+
+# Course settings
+NEXT_PUBLIC_COURSE_PRICE=1999
+NEXT_PUBLIC_FREE_LESSONS_COUNT=8
+NEXT_PUBLIC_TRIAL_DAYS=7
+```
+
+---
+
+## Development Mode Features
+
+### Dev Bypass (Enabled)
+In development (`npm run dev`), the following bypasses are active:
+- **Paywall bypassed** - All lessons accessible without payment
+- **Auth loading skipped** - Lessons load immediately without waiting for Firebase auth
+
+Files with dev bypass:
+- `lib/hooks/useTrialStatus.ts` - `DEV_BYPASS_PAYWALL`
+- `lib/utils/accessControl.ts` - `DEV_BYPASS_PAYWALL`
+- `components/LessonWithAccessControl.tsx` - `DEV_BYPASS`
+
+### Test Access Page
+- URL: `http://localhost:3000/test-access`
+- Shows current user info and access status
+- Button to grant test access (blocked by Firestore rules currently)
+
+---
+
+## Known Issues
+
+### 1. Firestore Permission Errors
+**Status:** Non-blocking, can be ignored for now
+**Symptom:** Console shows "Missing or insufficient permissions"
+**Cause:** Firestore security rules don't allow users to update their own `courseAccess` field
+**Impact:** Progress tracking doesn't save to cloud in dev mode
+**Fix:** Update Firestore security rules in Firebase Console
+
+### 2. Next.js Lockfile Warning
+**Status:** Cosmetic warning only
+**Symptom:** Warning about multiple lockfiles
+**Cause:** Extra `package-lock.json` in `C:\Users\scott\`
+**Impact:** None - app works fine
+
+---
+
+## Key Files & Structure
+
+```
+history-lesson-creator/
+├── app/
+│   ├── page.tsx                 # Home page - lesson list
+│   ├── layout.tsx               # Root layout with AuthProvider
+│   ├── dashboard/
+│   │   ├── layout.tsx           # ProgressProvider wrapper
+│   │   └── page.tsx             # Student dashboard
+│   ├── lesson/[id]/page.tsx     # Individual lesson view
+│   ├── purchase-success/        # Stripe success page
+│   ├── purchase-cancel/         # Stripe cancel page
+│   ├── test-access/             # Dev testing page
+│   └── api/
+│       ├── grant-test-access/   # Dev-only access granting
+│       └── stripe/              # Stripe checkout & webhooks
+├── components/
+│   ├── LessonWithAccessControl.tsx  # Access control wrapper
+│   ├── LessonView.tsx           # Main lesson UI
+│   ├── StoryReader.tsx          # Story mode
+│   ├── FlashcardDeck.tsx        # Flashcard mode
+│   ├── QuizEngine.tsx           # Quiz mode
+│   ├── Navigation.tsx           # Header nav
+│   ├── auth/                    # Auth components
+│   └── payment/                 # Stripe/paywall components
+├── data/
+│   └── lessons.ts               # All 51 lessons content
+├── lib/
+│   ├── contexts/                # React contexts (Auth, Progress)
+│   ├── hooks/                   # Custom hooks
+│   ├── firebase/                # Firebase config & functions
+│   ├── stripe/                  # Stripe config & checkout
+│   └── utils/                   # Utility functions
+├── .env.local                   # Environment variables (DO NOT COMMIT)
+├── PROGRESS_STATUS.md           # Detailed progress tracking
+└── SESSION_STATUS.md            # This file
+```
+
+---
+
+## Access Control Logic
+
+### Free vs Premium Lessons
+- **Lessons 1-8:** Free for everyone
+- **Lessons 9-51:** Require purchase or trial
+
+### User States
+1. **Not logged in** - Can view lessons 1-8
+2. **Logged in, free tier** - Can view lessons 1-8
+3. **On trial** - Full access for 7 days
+4. **Purchased** - Full access forever
+
+### Dev Mode
+- All access checks bypassed
+- All lessons accessible immediately
+
+---
+
+## Recent Changes (January 2026)
+
+1. Added dev mode paywall bypass
+2. Fixed duplicate Navigation in layout
+3. Removed basePath config for local development
+4. Added refreshProfile to AuthContext
+5. Fixed Suspense boundaries for Next.js 14
+6. Added Stripe live keys configuration
+7. Updated PROGRESS_STATUS.md with complete audit
+
+---
+
+## Next Steps (Optional)
+
+1. **Fix Firestore Rules** - Allow users to update their own profile/progress
+2. **Configure Stripe Webhooks** - For production payment confirmation
+3. **Deploy to Production** - Vercel or similar
+4. **Teacher Dashboard** - Student management features
+5. **Analytics** - Track user progress and engagement
+
+---
+
+## Useful Commands
+
+```bash
+# Start development server
+npm run dev
+
+# Build for production
+npm run build
+
+# Check for type errors
+npx tsc --noEmit
+
+# View at
+http://localhost:3000
+
+# Test access page (dev only)
+http://localhost:3000/test-access
+```
+
+---
+
+## Contact & Resources
+
+- **Stripe Dashboard:** https://dashboard.stripe.com
+- **Firebase Console:** https://console.firebase.google.com
+- **Project:** history-for-homeschoolers
