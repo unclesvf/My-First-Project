@@ -2,6 +2,13 @@
 
 **Last Updated:** January 10, 2026
 **Project Path:** `C:\Users\scott\My-First-Project\My-First-Project\history-lesson-creator`
+**Git Root:** `C:\Users\scott\My-First-Project\My-First-Project` (one level up!)
+
+---
+
+## IMPORTANT: Read First
+
+**For Git/LFS instructions, see:** `CLAUDE_INSTRUCTIONS.md`
 
 ---
 
@@ -207,8 +214,34 @@ http://localhost:3000/test-access
 
 ---
 
+## Git & LFS Configuration
+
+### Repository
+- **Remote:** https://github.com/unclesvf/My-First-Project.git
+- **Branch:** main
+- **Git Root:** `C:\Users\scott\My-First-Project\My-First-Project` (NOT the project folder!)
+
+### Git LFS
+- **Status:** Enabled (GitHub Pro)
+- **Tracked:** `*.onnx` files
+- **Current LFS files:**
+  - `lessons/tts/models/en_US-lessac-medium.onnx` (60 MB)
+  - `lessons/tts/models/en_US-ryan-high.onnx` (115 MB)
+
+### Git Commands (run from git root!)
+```bash
+cd "C:/Users/scott/My-First-Project/My-First-Project"
+git status
+git add -A
+git commit -m "message"
+git push
+```
+
+---
+
 ## Contact & Resources
 
+- **GitHub Repo:** https://github.com/unclesvf/My-First-Project
 - **Stripe Dashboard:** https://dashboard.stripe.com
 - **Firebase Console:** https://console.firebase.google.com
 - **Project:** history-for-homeschoolers
