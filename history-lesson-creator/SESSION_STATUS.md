@@ -95,6 +95,30 @@ Files with dev bypass:
 
 ---
 
+## Claude Code Skills (8 Total)
+
+Custom skills for development assistance. See `CLAUDE_INSTRUCTIONS.md` for full details.
+
+### Content Creation
+| Skill | Command | Purpose |
+|-------|---------|---------|
+| Lesson Builder | `/lesson-builder` | Create new lessons |
+| Image Prompter | `/image-prompter` | Generate AI image prompts |
+| Historical Accuracy Checker | `/historical-accuracy-checker` | Verify historical accuracy |
+| TTS Audio Generator | `/generate-audio` | Create audio narration |
+
+### Development
+| Skill | Command | Purpose |
+|-------|---------|---------|
+| Content Auditor | `/audit-content` | Check lesson completeness |
+| Git/LFS Handler | `/git-push` | Handle git with LFS |
+| Course Scaffolder | `/new-course` | Create new course projects |
+| Build & Deploy | `/deploy` | Production deployment |
+
+Skill files: `.claude/skills/*.md`
+
+---
+
 ## Known Issues
 
 ### 1. Firestore Permission Errors

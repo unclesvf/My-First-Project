@@ -17,6 +17,55 @@ C:\Users\scott\My-First-Project\My-First-Project
 
 ---
 
+## Available Skills
+
+This project has **8 custom skills** to help with development. Skills are located in `.claude/skills/` and can be invoked with slash commands or natural language.
+
+### Content Creation Skills
+
+| Skill | Command | Description |
+|-------|---------|-------------|
+| **Lesson Builder** | `/lesson-builder` | Scaffold new lessons with chapters, flashcards, and quizzes |
+| **Image Prompter** | `/image-prompter` | Generate AI image prompts with historical accuracy |
+| **Historical Accuracy Checker** | `/historical-accuracy-checker` | Verify historical accuracy of lesson content |
+| **TTS Audio Generator** | `/generate-audio` | Create text-to-speech narration for lessons |
+
+### Development Skills
+
+| Skill | Command | Description |
+|-------|---------|-------------|
+| **Content Auditor** | `/audit-content` | Audit all lessons for completeness and quality |
+| **Git/LFS Handler** | `/git-push` | Handle git operations with proper LFS management |
+| **Course Scaffolder** | `/new-course` | Create a new course project from scratch |
+| **Build & Deploy** | `/deploy` | Build, validate, and deploy to production |
+
+### Skill Usage Examples
+
+```
+"Create a new lesson about the American Revolution"
+"Generate audio for lesson 15"
+"Audit the content for missing flashcards"
+"Deploy to production"
+"Commit and push my changes"
+```
+
+### Skill Files
+
+All skill definitions are in:
+```
+.claude/skills/
+├── lesson-builder.md           # Create new lessons
+├── image-prompter.md           # Generate image prompts
+├── historical-accuracy-checker.md  # Verify accuracy
+├── tts-generator.md            # Audio narration
+├── content-auditor.md          # Content completeness
+├── git-handler.md              # Git/LFS operations
+├── course-scaffolder.md        # New course setup
+└── deploy.md                   # Production deployment
+```
+
+---
+
 ## Git LFS Configuration
 
 This project uses **Git Large File Storage (LFS)** for large files.
