@@ -38,3 +38,7 @@ next-env.d.ts
 
 # Deployment configuration (contains credentials)
 deploy.config
+
+# Sensitive files
+**/Stripe*Key*.txt
+**/stripe*key*.txt

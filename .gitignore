@@ -1,0 +1,5 @@
+# Sensitive files - API keys, secrets
+Stripe*Key*.txt
+stripe*key*.txt
+*credentials*.json
+*.secret
