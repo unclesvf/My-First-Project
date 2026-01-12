@@ -1,6 +1,6 @@
 # History for Homeschoolers - Session Status
 
-**Last Updated:** January 10, 2026
+**Last Updated:** January 11, 2026
 **Project Path:** `C:\Users\scott\My-First-Project\My-First-Project\history-lesson-creator`
 **Git Root:** `C:\Users\scott\My-First-Project\My-First-Project` (one level up!)
 
@@ -82,11 +82,14 @@ NEXT_PUBLIC_TRIAL_DAYS=7
 In development (`npm run dev`), the following bypasses are active:
 - **Paywall bypassed** - All lessons accessible without payment
 - **Auth loading skipped** - Lessons load immediately without waiting for Firebase auth
+- **Progress saves to localStorage** - Quiz scores persist without Firestore/auth
 
 Files with dev bypass:
 - `lib/hooks/useTrialStatus.ts` - `DEV_BYPASS_PAYWALL`
 - `lib/utils/accessControl.ts` - `DEV_BYPASS_PAYWALL`
 - `components/LessonWithAccessControl.tsx` - `DEV_BYPASS`
+- `lib/contexts/ProgressContext.tsx` - `DEV_MODE` localStorage fallback
+- `components/QuizEngine.tsx` - `DEV_MODE` allows saving without user
 
 ### Test Access Page
 - URL: `http://localhost:3000/test-access`
@@ -197,6 +200,18 @@ history-lesson-creator/
 
 ## Recent Changes (January 2026)
 
+### January 11, 2026 (Latest Session)
+1. **Created 5 new Claude skills:**
+   - `tts-generator.md` - Generate TTS audio narration
+   - `git-handler.md` - Git/LFS operations with correct paths
+   - `content-auditor.md` - Audit lesson completeness
+   - `course-scaffolder.md` - Create new course projects
+   - `deploy.md` - Build and deploy to production
+2. **Updated CLAUDE_INSTRUCTIONS.md** - Added comprehensive skills reference (8 total skills)
+3. **Added localStorage fallback for progress** - Quiz scores now persist in dev mode without auth
+4. **Updated SESSION_STATUS.md** - Added skills section
+
+### January 10, 2026 (Previous Session)
 1. Added dev mode paywall bypass
 2. Fixed duplicate Navigation in layout
 3. Removed basePath config for local development
@@ -204,6 +219,8 @@ history-lesson-creator/
 5. Fixed Suspense boundaries for Next.js 14
 6. Added Stripe live keys configuration
 7. Updated PROGRESS_STATUS.md with complete audit
+8. Set up Git LFS for large ONNX files
+9. Created initial 3 Claude skills (lesson-builder, image-prompter, historical-accuracy-checker)
 
 ---
 
