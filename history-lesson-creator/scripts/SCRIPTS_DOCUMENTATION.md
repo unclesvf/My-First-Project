@@ -136,6 +136,55 @@ python scripts/render_mindmaps.py
 
 ---
 
+### 5. `historical_image_accuracy_checker.py`
+
+**Purpose:** Evaluate AI-generated images for historical accuracy using a two-stage VLM pipeline.
+
+**Location:** `scripts/historical_image_accuracy_checker.py`
+
+**Prerequisites:**
+- Ollama running with vision models installed:
+  - `ollama pull llama3.2-vision`
+  - `ollama pull qwen2.5vl`
+- Python packages: `pillow`, `requests`, `reportlab`
+
+**Usage:**
+```bash
+# Evaluate images with specific era
+python scripts/historical_image_accuracy_checker.py --folder generated_images/session_xxx --era "1920s"
+
+# Use defaults (most recent session in generated_images/)
+python scripts/historical_image_accuracy_checker.py --era "1565 Spanish colonial"
+
+# Custom threshold (default is 80)
+python scripts/historical_image_accuracy_checker.py --folder ./images --era "Civil War era" --threshold 70
+```
+
+**How It Works:**
+1. **First Pass (Llama 3.2 Vision):** Quick evaluation of each image against the specified era
+2. **Second Pass (Qwen2.5-VL):** Images scoring above threshold get detailed scrutiny with stricter prompts
+3. **Scoring:** Final score is average of both passes for qualifying images
+
+**Output:**
+- `*.accuracy.json` - Individual JSON report next to each image
+- `accuracy_report_<timestamp>.pdf` - Summary PDF with color-coded results:
+  - Green: Keepers (passed both evaluations)
+  - Yellow: Borderline (passed first, borderline on second)
+  - Red: Rejected (failed first pass)
+
+**Arguments:**
+| Argument | Short | Description |
+|----------|-------|-------------|
+| `--folder` | `-f` | Path to image folder |
+| `--era` | `-e` | Historical era (e.g., "1920s", "Victorian England") |
+| `--threshold` | `-t` | Score threshold for second pass (default: 80) |
+| `--output` | `-o` | Custom PDF output path |
+| `--quiet` | `-q` | Suppress progress output |
+
+**When to Use:** After generating images with AI tools to filter out historically inaccurate results
+
+---
+
 ## Data Files
 
 ### `data/lessons.ts`
