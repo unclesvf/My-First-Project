@@ -13,6 +13,7 @@ import {
   updateLessonProgress as firestoreUpdateLessonProgress,
 } from '@/lib/firebase/firestore';
 import type { LessonProgress, QuizAttempt } from '@/lib/firebase/types';
+import { Timestamp } from 'firebase/firestore';
 
 // Development mode - use localStorage fallback when Firestore unavailable
 const DEV_MODE = process.env.NODE_ENV === 'development';
@@ -253,26 +254,28 @@ export function ProgressProvider({ children, lessonId }: ProgressProviderProps) 
         const localData = getLocalProgress();
         const newAttempt: QuizAttempt = {
           id: attemptId,
+          userId: 'local-dev-user',
           lessonId: lesson,
           score,
           totalQuestions,
           percentage,
           answers,
           timeSpent,
-          completedAt: new Date(),
+          completedAt: Timestamp.fromDate(new Date()),
         };
         localData.quizAttempts.push(newAttempt);
 
-        // Update lesson progress
+        // Update lesson progress with quiz attempt
+        const existingAttempts = localData.lessons[lesson]?.quizAttempts || [];
         localData.lessons[lesson] = {
           ...localData.lessons[lesson],
+          userId: 'local-dev-user',
           lessonId: lesson,
           status: 'completed',
-          quizProgress: {
-            bestScore: Math.max(localData.lessons[lesson]?.quizProgress?.bestScore || 0, percentage),
-            attempts: (localData.lessons[lesson]?.quizProgress?.attempts || 0) + 1,
-            lastAttemptDate: new Date(),
-          },
+          storyProgress: localData.lessons[lesson]?.storyProgress || 0,
+          flashcardProgress: localData.lessons[lesson]?.flashcardProgress || [],
+          quizAttempts: [...existingAttempts, newAttempt],
+          lastAccessedAt: Timestamp.fromDate(new Date()),
         } as LessonProgress;
 
         saveLocalProgress(localData);
@@ -313,24 +316,26 @@ export function ProgressProvider({ children, lessonId }: ProgressProviderProps) 
           const localData = getLocalProgress();
           const newAttempt: QuizAttempt = {
             id: attemptId,
+            userId: 'local-dev-user',
             lessonId: lesson,
             score,
             totalQuestions,
             percentage,
             answers,
             timeSpent,
-            completedAt: new Date(),
+            completedAt: Timestamp.fromDate(new Date()),
           };
           localData.quizAttempts.push(newAttempt);
+          const existingAttempts = localData.lessons[lesson]?.quizAttempts || [];
           localData.lessons[lesson] = {
             ...localData.lessons[lesson],
+            userId: 'local-dev-user',
             lessonId: lesson,
             status: 'completed',
-            quizProgress: {
-              bestScore: Math.max(localData.lessons[lesson]?.quizProgress?.bestScore || 0, percentage),
-              attempts: (localData.lessons[lesson]?.quizProgress?.attempts || 0) + 1,
-              lastAttemptDate: new Date(),
-            },
+            storyProgress: localData.lessons[lesson]?.storyProgress || 0,
+            flashcardProgress: localData.lessons[lesson]?.flashcardProgress || [],
+            quizAttempts: [...existingAttempts, newAttempt],
+            lastAccessedAt: Timestamp.fromDate(new Date()),
           } as LessonProgress;
           saveLocalProgress(localData);
           setAllQuizAttempts(localData.quizAttempts);

@@ -16,6 +16,7 @@ import {
 import { db } from './config';
 import { UserProfile, Purchase, CourseAccess, QuizAttempt, LessonProgress } from './types';
 import { User } from 'firebase/auth';
+import { logger } from '../utils/logger';
 
 export async function createUserProfile(user: User): Promise<UserProfile> {
   const userProfile: UserProfile = {
@@ -107,7 +108,7 @@ export async function saveQuizAttempt(
 
     return docRef.id;
   } catch (error) {
-    console.error('Error saving quiz attempt:', error);
+    logger.error('Error saving quiz attempt', error);
     throw new Error(`Failed to save quiz attempt: ${error instanceof Error ? error.message : 'Unknown error'}`);
   }
 }
@@ -126,7 +127,7 @@ export async function getQuizAttempts(userId: string, lessonId: string): Promise
       ...doc.data(),
     } as QuizAttempt));
   } catch (error) {
-    console.error('Error getting quiz attempts:', error);
+    logger.error('Error getting quiz attempts', error);
     throw new Error(`Failed to get quiz attempts: ${error instanceof Error ? error.message : 'Unknown error'}`);
   }
 }
@@ -146,7 +147,7 @@ export async function getAllQuizAttempts(userId: string): Promise<QuizAttempt[]>
       ...doc.data(),
     } as QuizAttempt));
   } catch (error) {
-    console.error('Error getting all quiz attempts:', error);
+    logger.error('Error getting all quiz attempts', error);
     throw new Error(`Failed to get all quiz attempts: ${error instanceof Error ? error.message : 'Unknown error'}`);
   }
 }
@@ -187,7 +188,7 @@ export async function updateLessonProgress(
       await setDoc(lessonProgressRef, defaultProgress);
     }
   } catch (error) {
-    console.error('Error updating lesson progress:', error);
+    logger.error('Error updating lesson progress', error);
     throw new Error(`Failed to update lesson progress: ${error instanceof Error ? error.message : 'Unknown error'}`);
   }
 }
@@ -206,7 +207,7 @@ export async function getLessonProgress(userId: string, lessonId: string): Promi
 
     return null;
   } catch (error) {
-    console.error('Error getting lesson progress:', error);
+    logger.error('Error getting lesson progress', error);
     throw new Error(`Failed to get lesson progress: ${error instanceof Error ? error.message : 'Unknown error'}`);
   }
 }
@@ -225,7 +226,7 @@ export async function getAllLessonProgress(userId: string): Promise<LessonProgre
       ...doc.data(),
     } as unknown as LessonProgress));
   } catch (error) {
-    console.error('Error getting all lesson progress:', error);
+    logger.error('Error getting all lesson progress', error);
     throw new Error(`Failed to get all lesson progress: ${error instanceof Error ? error.message : 'Unknown error'}`);
   }
 }
@@ -267,7 +268,7 @@ export async function updateStoryProgress(
       await setDoc(lessonProgressRef, defaultProgress);
     }
   } catch (error) {
-    console.error('Error updating story progress:', error);
+    logger.error('Error updating story progress', error);
     throw new Error(`Failed to update story progress: ${error instanceof Error ? error.message : 'Unknown error'}`);
   }
 }
@@ -310,7 +311,7 @@ export async function updateFlashcardProgress(
       await setDoc(lessonProgressRef, defaultProgress);
     }
   } catch (error) {
-    console.error('Error updating flashcard progress:', error);
+    logger.error('Error updating flashcard progress', error);
     throw new Error(`Failed to update flashcard progress: ${error instanceof Error ? error.message : 'Unknown error'}`);
   }
 }
@@ -338,7 +339,7 @@ export async function getStudentAssignments(studentId: string): Promise<any[]> {
     const querySnapshot = await getDocs(q);
     return querySnapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }));
   } catch (error) {
-    console.error('Error getting student assignments:', error);
+    logger.error('Error getting student assignments', error);
     return [];
   }
 }
@@ -359,7 +360,7 @@ export async function updateUserRole(
     }
     await updateDoc(userRef, updateData);
   } catch (error) {
-    console.error('Error updating user role:', error);
+    logger.error('Error updating user role', error);
     throw new Error(`Failed to update user role: ${error instanceof Error ? error.message : 'Unknown error'}`);
   }
 }
@@ -392,7 +393,7 @@ export async function createStudentAccount(
     };
     await setDoc(doc(db, 'users', studentUid), userProfile);
   } catch (error) {
-    console.error('Error creating student account:', error);
+    logger.error('Error creating student account', error);
     throw new Error(`Failed to create student account: ${error instanceof Error ? error.message : 'Unknown error'}`);
   }
 }
@@ -411,7 +412,7 @@ export async function getTeacherStudents(teacherId: string): Promise<any[]> {
     const querySnapshot = await getDocs(q);
     return querySnapshot.docs.map(doc => ({ uid: doc.id, ...doc.data() }));
   } catch (error) {
-    console.error('Error getting teacher students:', error);
+    logger.error('Error getting teacher students', error);
     return [];
   }
 }

@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Check, X, Trophy, RotateCcw, ChevronRight, Clock, History } from "lucide-react";
+import { Check, X, Trophy, RotateCcw, ChevronRight, Clock } from "lucide-react";
 import { QuizQuestion, QuizResult } from "@/lib/types";
 import { cn } from "@/lib/utils";
 import { useProgress } from "@/lib/hooks/useProgress";
