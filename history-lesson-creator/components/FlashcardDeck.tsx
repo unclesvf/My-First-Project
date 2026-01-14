@@ -112,6 +112,8 @@ export default function FlashcardDeck({ flashcards, lessonId }: FlashcardDeckPro
         <div className="flex gap-2">
           <button
             onClick={toggleMastered}
+            aria-label={isCurrentCardMastered ? "Unmark card as mastered" : "Mark card as mastered"}
+            aria-pressed={isCurrentCardMastered}
             className={cn(
               "flex items-center gap-2 rounded-lg border-2 px-4 py-2 text-sm font-semibold transition-all active:scale-95",
               isCurrentCardMastered
@@ -124,6 +126,7 @@ export default function FlashcardDeck({ flashcards, lessonId }: FlashcardDeckPro
           </button>
           <button
             onClick={shuffleCards}
+            aria-label="Shuffle flashcards"
             className="flex items-center gap-2 rounded-lg border-2 border-primary-600 bg-transparent px-4 py-2 text-sm font-semibold text-primary-700 transition-all hover:bg-primary-50 active:scale-95"
           >
             <Shuffle className="h-4 w-4" />
@@ -131,6 +134,7 @@ export default function FlashcardDeck({ flashcards, lessonId }: FlashcardDeckPro
           </button>
           <button
             onClick={resetCards}
+            aria-label="Reset flashcards to original order"
             className="flex items-center gap-2 rounded-lg border-2 border-gray-600 bg-transparent px-4 py-2 text-sm font-semibold text-gray-700 transition-all hover:bg-gray-50 active:scale-95"
           >
             <RotateCcw className="h-4 w-4" />
@@ -144,6 +148,19 @@ export default function FlashcardDeck({ flashcards, lessonId }: FlashcardDeckPro
         <motion.div
           className="relative h-full w-full cursor-pointer"
           onClick={() => setIsFlipped(!isFlipped)}
+          onKeyDown={(e) => {
+            if (e.key === ' ' || e.key === 'Enter') {
+              e.preventDefault();
+              setIsFlipped(!isFlipped);
+            }
+          }}
+          role="button"
+          tabIndex={0}
+          aria-label={`Flashcard ${currentIndex + 1} of ${cards.length}. ${
+            isFlipped
+              ? `Definition: ${cards[currentIndex].definition}`
+              : `Term: ${cards[currentIndex].term}`
+          }. Press space to ${isFlipped ? 'see term' : 'reveal definition'}.`}
           style={{ transformStyle: "preserve-3d" }}
           animate={{ rotateY: isFlipped ? 180 : 0 }}
           transition={{ duration: 0.6, type: "spring", stiffness: 100 }}
@@ -192,10 +209,11 @@ export default function FlashcardDeck({ flashcards, lessonId }: FlashcardDeckPro
       </div>
 
       {/* Navigation */}
-      <div className="flex items-center justify-between">
+      <nav className="flex items-center justify-between" aria-label="Flashcard navigation">
         <button
           onClick={goToPrevious}
           disabled={currentIndex === 0}
+          aria-label="Previous flashcard"
           className={cn(
             "flex items-center gap-2 rounded-lg px-6 py-3 font-semibold transition-all",
             currentIndex === 0
@@ -207,10 +225,13 @@ export default function FlashcardDeck({ flashcards, lessonId }: FlashcardDeckPro
           Previous
         </button>
 
-        <div className="flex gap-1">
+        <div className="flex gap-1" role="tablist" aria-label="Flashcard progress">
           {cards.map((_, index) => (
             <div
               key={index}
+              role="tab"
+              aria-selected={index === currentIndex}
+              aria-label={`Card ${index + 1}`}
               className={cn(
                 "h-2 w-2 rounded-full transition-all",
                 index === currentIndex ? "w-6 bg-primary-600" : "bg-gray-300"
@@ -222,6 +243,7 @@ export default function FlashcardDeck({ flashcards, lessonId }: FlashcardDeckPro
         <button
           onClick={goToNext}
           disabled={currentIndex === cards.length - 1}
+          aria-label="Next flashcard"
           className={cn(
             "flex items-center gap-2 rounded-lg px-6 py-3 font-semibold transition-all",
             currentIndex === cards.length - 1
@@ -232,7 +254,7 @@ export default function FlashcardDeck({ flashcards, lessonId }: FlashcardDeckPro
           Next
           <ChevronRight className="h-5 w-5" />
         </button>
-      </div>
+      </nav>
 
       {/* Keyboard Hints */}
       <div className="mt-6 text-center text-sm text-gray-500">

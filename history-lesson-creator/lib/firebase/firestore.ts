@@ -14,7 +14,7 @@ import {
   limit,
 } from 'firebase/firestore';
 import { db } from './config';
-import { UserProfile, Purchase, CourseAccess, QuizAttempt, LessonProgress } from './types';
+import { UserProfile, Purchase, CourseAccess, QuizAttempt, QuizAnswer, LessonProgress } from './types';
 import { User } from 'firebase/auth';
 import { logger } from '../utils/logger';
 
@@ -88,7 +88,7 @@ export async function saveQuizAttempt(
   score: number,
   totalQuestions: number,
   percentage: number,
-  answers: any[],
+  answers: QuizAnswer[],
   timeSpent: number
 ): Promise<string> {
   try {

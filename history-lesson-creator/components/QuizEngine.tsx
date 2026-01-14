@@ -110,7 +110,7 @@ export default function QuizEngine({ questions, lessonId, courseId }: QuizEngine
             transition={{ delay: 0.2, type: "spring", stiffness: 200 }}
             className="mb-6 inline-block rounded-full bg-gradient-to-br from-accent-400 to-accent-600 p-6"
           >
-            <Trophy className="h-16 w-16 text-white" />
+            <Trophy className="h-16 w-16 text-white" aria-hidden="true" />
           </motion.div>
 
           <h2 className="mb-4 text-4xl font-bold text-gray-900">
@@ -182,9 +182,10 @@ export default function QuizEngine({ questions, lessonId, courseId }: QuizEngine
           <div className="flex justify-center gap-4">
             <button
               onClick={resetQuiz}
+              aria-label="Retake the quiz"
               className="flex items-center gap-2 rounded-lg bg-primary-600 px-6 py-3 font-semibold text-white transition-all hover:bg-primary-700 hover:shadow-lg active:scale-95"
             >
-              <RotateCcw className="h-5 w-5" />
+              <RotateCcw className="h-5 w-5" aria-hidden="true" />
               Try Again
             </button>
           </div>
@@ -199,14 +200,21 @@ export default function QuizEngine({ questions, lessonId, courseId }: QuizEngine
   return (
     <div className="mx-auto max-w-3xl">
       {/* Progress */}
-      <div className="mb-6">
+      <div className="mb-6" role="status" aria-live="polite">
         <div className="mb-2 flex items-center justify-between text-sm text-gray-600">
           <span>
             Question {currentQuestion + 1} of {questions.length}
           </span>
           <span>{Math.round(((currentQuestion + 1) / questions.length) * 100)}%</span>
         </div>
-        <div className="h-2 w-full overflow-hidden rounded-full bg-gray-200">
+        <div
+          className="h-2 w-full overflow-hidden rounded-full bg-gray-200"
+          role="progressbar"
+          aria-valuenow={currentQuestion + 1}
+          aria-valuemin={1}
+          aria-valuemax={questions.length}
+          aria-label={`Quiz progress: question ${currentQuestion + 1} of ${questions.length}`}
+        >
           <motion.div
             className="h-full bg-primary-600"
             initial={{ width: 0 }}
@@ -231,7 +239,7 @@ export default function QuizEngine({ questions, lessonId, courseId }: QuizEngine
             {question.question}
           </h3>
 
-          <div className="space-y-3">
+          <div className="space-y-3" role="group" aria-label="Answer options">
             {question.options.map((option, index) => {
               const isSelected = selectedOption === index;
               const isCorrectOption = index === question.correctOptionIndex;
@@ -243,6 +251,16 @@ export default function QuizEngine({ questions, lessonId, courseId }: QuizEngine
                   key={index}
                   onClick={() => handleOptionSelect(index)}
                   disabled={hasAnswered}
+                  aria-label={`Option ${index + 1}: ${option}${
+                    hasAnswered
+                      ? showCorrect
+                        ? ' (correct answer)'
+                        : showIncorrect
+                        ? ' (incorrect)'
+                        : ''
+                      : ''
+                  }`}
+                  aria-pressed={isSelected}
                   className={cn(
                     "w-full rounded-lg border-2 p-4 text-left font-medium transition-all",
                     !hasAnswered &&
@@ -268,9 +286,9 @@ export default function QuizEngine({ questions, lessonId, courseId }: QuizEngine
                   <div className="flex items-center justify-between">
                     <span>{option}</span>
                     {showCorrect && (
-                      <Check className="h-5 w-5 text-green-600" />
+                      <Check className="h-5 w-5 text-green-600" aria-hidden="true" />
                     )}
-                    {showIncorrect && <X className="h-5 w-5 text-red-600" />}
+                    {showIncorrect && <X className="h-5 w-5 text-red-600" aria-hidden="true" />}
                   </div>
                 </motion.button>
               );
@@ -305,12 +323,17 @@ export default function QuizEngine({ questions, lessonId, courseId }: QuizEngine
             >
               <button
                 onClick={goToNextQuestion}
+                aria-label={
+                  currentQuestion < questions.length - 1
+                    ? `Go to question ${currentQuestion + 2}`
+                    : "See quiz results"
+                }
                 className="flex items-center gap-2 rounded-lg bg-primary-600 px-6 py-3 font-semibold text-white transition-all hover:bg-primary-700 hover:shadow-lg active:scale-95"
               >
                 {currentQuestion < questions.length - 1
                   ? "Next Question"
                   : "See Results"}
-                <ChevronRight className="h-5 w-5" />
+                <ChevronRight className="h-5 w-5" aria-hidden="true" />
               </button>
             </motion.div>
           )}

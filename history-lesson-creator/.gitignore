@@ -56,3 +56,8 @@ __pycache__/
 tmpclaude-*
 nul
 ~$*
+
+# Large files
+*.tar.gz
+*.wav
+voice_references/
