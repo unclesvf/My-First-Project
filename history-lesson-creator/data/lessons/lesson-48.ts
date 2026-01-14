@@ -1,0 +1,133 @@
+import { Lesson } from "@/lib/types";
+
+const lesson: Lesson = {
+    id: "lesson-48",
+    title: "The Progressive Era",
+    description: "Reform Movements (1900-1920)",
+    heroImage: "/images/hero-progressive.jpg",
+    story: {
+      narrator: "Catherine, age 15, settlement house worker, 1910",
+      chapters: [
+        {
+          title: "Hull House and the Settlement Movement",
+          content: `I'm Catherine, fifteen years old, and I volunteer at Hull House in Chicago. Hull House is a settlement house founded by Jane Addams in 1889. It's located in a poor immigrant neighborhood where Italian, Polish, Greek, and Russian immigrants live crowded in tenements.
+
+Settlement houses are community centers where reformers live among the poor, offering education, social services, and advocacy. Hull House provides kindergarten for children, English classes for adults, art classes, music lessons, a public kitchen, a playground, and meeting spaces for labor unions and civic groups.
+
+I teach English to immigrant women twice a week. Many are factory workers who speak no English. Learning the language helps them navigate American society, understand their rights, and help their children with school.
+
+Jane Addams herself lives at Hull House. She's one of the most influential reformers in America—advocating for child labor laws, factory safety regulations, women's suffrage, and peace. She sees Hull House not as charity but as a way to address systemic problems. We don't just help individuals—we work to change the laws and conditions that create poverty.
+
+The Progressive Era, roughly 1900-1920, is a time of reform movements addressing problems created by industrialization, urbanization, and corporate power. Progressives believe government should actively regulate business, protect workers and consumers, and promote social welfare.
+
+We're fighting multiple battles: against child labor, for food and drug safety, for workers' rights, for women's suffrage, for direct democracy, against political corruption, for conservation of natural resources. It's an exciting, hopeful time—we believe we can make America more just and democratic.`
+        },
+        {
+          title: "The Muckrakers Expose Corruption",
+          content: `Progressive reform is powered by investigative journalists called "muckrakers"—President Theodore Roosevelt's term for journalists who "rake the muck" of society's problems.
+
+Ida Tarbell writes "The History of the Standard Oil Company" (1904), exposing how John D. Rockefeller built his monopoly through ruthless, often illegal tactics. Her detailed reporting turns public opinion against corporate monopolies.
+
+Lincoln Steffens writes "The Shame of the Cities" (1904), exposing political corruption in city governments. He shows how political machines like New York's Tammany Hall trade political favors for money and votes.
+
+Upton Sinclair writes "The Jungle" (1906), a novel about meatpacking workers in Chicago. He intends to expose worker exploitation, but readers are horrified by his descriptions of unsanitary meat processing:
+
+"There was never the least attention paid to what was cut up for sausage... There would be meat stored in great piles in rooms; and the water from leaky roofs would drip over it, and thousands of rats would race about on it... A man could run his hand over these piles of meat and sweep off handfuls of the dried dung of rats... This is no fairy story and no joke; the meat would be shoveled into carts, and the man who did the shoveling would not trouble to lift out a rat even when he saw one—there were things that went into the sausage in comparison with which a poisoned rat was a tidbit."
+
+Public outrage forces Congress to act. The Pure Food and Drug Act and the Meat Inspection Act pass in 1906, establishing federal regulation of food and drugs. Sinclair later says, "I aimed at the public's heart, and by accident I hit it in the stomach."
+
+Jacob Riis photographs tenement life in "How the Other Half Lives" (1890), showing middle-class Americans the poverty, overcrowding, and suffering in immigrant neighborhoods.
+
+These muckrakers don't just report problems—they create political pressure for reform. They prove that investigative journalism can drive social change.`
+        },
+        {
+          title: "Theodore Roosevelt and the Square Deal",
+          content: `Theodore Roosevelt becomes president in 1901 when McKinley is assassinated. At 42, he's the youngest president in history. He's energetic, charismatic, and committed to Progressive reform.
+
+Roosevelt's "Square Deal" promises fairness for workers, consumers, and businesses. He believes government should be an umpire ensuring fair play, not favoring either capital or labor.
+
+Roosevelt is the "trust-buster," using antitrust laws to break up monopolies. In 1902, he sues Northern Securities Company, a railroad trust. The Supreme Court orders it dissolved. Roosevelt brings 44 more antitrust suits, targeting Standard Oil, American Tobacco, and other monopolies. He's not against big business, just against abusive monopolies.
+
+The 1902 coal strike tests Roosevelt's principles. 140,000 miners strike for better wages and shorter hours. Mine owners refuse to negotiate. As winter approaches, coal shortages loom. Previous presidents would have sent troops to break the strike. Roosevelt threatens to seize the mines unless owners negotiate. Owners back down. The strike is settled with modest gains for miners.
+
+Roosevelt champions conservation. He's an outdoorsman who loves nature. He establishes national forests, national parks, wildlife refuges, and national monuments—preserving millions of acres from development. He creates the U.S. Forest Service under Gifford Pinchot.
+
+Roosevelt expands federal power dramatically. Before him, the federal government rarely intervened in the economy. After him, government regulation of business is accepted practice. He proves government can be a force for reform, not just protecting the wealthy.`
+        },
+        {
+          title: "Woodrow Wilson and the New Freedom",
+          content: `Woodrow Wilson wins the presidency in 1912, running as a Progressive Democrat against Theodore Roosevelt (running as a Progressive/Bull Moose candidate) and conservative Republican William Howard Taft.
+
+Wilson's "New Freedom" program aims to restore competition by breaking up monopolies rather than just regulating them. He achieves major reforms:
+
+The Underwood Tariff (1913) reduces import taxes, lowering consumer prices and reducing corporate protection from foreign competition. To replace lost revenue, it establishes the first permanent federal income tax under the new Sixteenth Amendment.
+
+The Federal Reserve Act (1913) creates a national banking system to regulate money supply, provide stability, and prevent financial panics. It's the most significant banking reform in American history.
+
+The Clayton Antitrust Act (1914) strengthens antitrust laws, prohibiting specific practices like price discrimination and interlocking directorates. Importantly, it exempts labor unions from antitrust prosecution, allowing workers to organize and strike.
+
+The Federal Trade Commission (1914) is created to investigate and prevent unfair business practices.
+
+Wilson also supports the Seventeenth Amendment (1913), providing for direct election of senators by voters rather than state legislatures. This reduces corporate control over Senate elections.
+
+Child labor laws pass, though the Supreme Court strikes them down. Wilson supports an eight-hour workday for railroad workers. He appoints Louis Brandeis, a Progressive reformer, to the Supreme Court—the first Jewish justice.
+
+These reforms expand federal power and regulation dramatically. The Progressive Era establishes the principle that government should actively regulate the economy to protect public interest, not just let markets operate unchecked.`
+        },
+        {
+          title: "The Progressive Legacy—Promise and Limits",
+          content: `By 1920, I'm 25 years old and still involved in reform work. The Progressive Era has transformed America in remarkable ways.
+
+We've achieved major reforms:
+• Pure Food and Drug Act protects consumers
+• Antitrust laws limit monopoly power
+• Conservation preserves natural resources
+• Income tax and direct election of senators make government more democratic
+• Labor laws improve working conditions (though child labor and long hours persist)
+• Women won the vote with the Nineteenth Amendment (1920)
+
+But the Progressive Era has serious limitations and contradictions.
+
+Racial injustice: Most Progressives ignore or actively support segregation. Woodrow Wilson segregates federal government offices. No major Progressive reforms address racial discrimination. Black Americans are excluded from most Progressive gains.
+
+Imperialism: Progressives who support democracy at home support empire abroad. The U.S. conquers the Philippines, intervenes in Latin America, imposes American power globally. Progressive presidents like Roosevelt and Wilson are imperialists.
+
+Prohibition: The Eighteenth Amendment (1919) bans alcohol, a reform pushed by Progressives concerned about alcoholism and family violence. But Prohibition creates organized crime, doesn't stop drinking, and violates personal freedom. It will be repealed in 1933.
+
+Limited labor gains: While some reforms help workers, fundamental power imbalances remain. Most workers still lack unions, work long hours for low pay, face dangerous conditions.
+
+Still, the Progressive Era proves government can be a force for reform. It establishes that democracy requires active government protecting ordinary citizens against powerful economic interests. It shows that organized citizens demanding change can achieve it.
+
+I think about my years at Hull House, teaching English to immigrant women, fighting for child labor laws, supporting suffrage. We didn't create a perfect society, but we made it more just. We proved that "progress" isn't automatic—it requires struggle, organization, and political will.
+
+The Progressive Era's fundamental insight is that democracy and unregulated capitalism are incompatible. If corporations have unlimited power, they'll corrupt politics, exploit workers, and create massive inequality. Only active government regulation and social reforms can make capitalism compatible with democracy and human dignity.
+
+That lesson remains relevant. Every generation faces the question: will government serve the powerful few or the democratic many? The Progressives showed that the answer depends on whether ordinary citizens organize and demand reform. Our legacy is proof that change is possible when people fight for it.`
+        }
+      ]
+    },
+    flashcards: [
+      {id: "fc48-1", term: "Progressive Era", definition: "Period (1900-1920) of political and social reform movements."},
+      {id: "fc48-2", term: "Muckrakers", definition: "Journalists exposing corruption and social problems."},
+      {id: "fc48-3", term: "Upton Sinclair", definition: "Author of 'The Jungle' exposing meatpacking industry horrors."},
+      {id: "fc48-4", term: "Theodore Roosevelt", definition: "Progressive president who 'trust-busted' monopolies and conserved nature."},
+      {id: "fc48-5", term: "Hull House", definition: "Settlement house founded by Jane Addams to help immigrants and poor."},
+      {id: "fc48-6", term: "Seventeenth Amendment", definition: "1913 amendment providing direct election of senators."},
+      {id: "fc48-7", term: "Nineteenth Amendment", definition: "1920 amendment granting women's suffrage."},
+      {id: "fc48-8", term: "Trust-Busting", definition: "Breaking up monopolies to restore competition."},
+      {id: "fc48-9", term: "Jane Addams", definition: "Social reformer who founded Hull House settlement in Chicago, helping immigrants and advocating for child labor laws, women's suffrage, and peace."},
+      {id: "fc48-10", term: "Pure Food and Drug Act", definition: "1906 law regulating food and medicine safety, passed after Upton Sinclair's 'The Jungle' exposed meatpacking industry horrors."}
+    ],
+    quiz: [
+      {id: "q48-1", question: "What was Progressive Era?", options: ["Period of no change", "Period of political/social reform movements 1900-1920", "Colonial period", "Medieval times"], correctOptionIndex: 1, explanation: "Progressive Era saw reforms attacking corruption, regulating business, protecting consumers/workers, expanding democracy."},
+      {id: "q48-2", question: "Who were muckrakers?", options: ["Farmers", "Journalists exposing corruption and social problems", "Politicians", "Factory owners"], correctOptionIndex: 1, explanation: "Muckrakers were investigative journalists exposing corruption, unsafe conditions, and social problems."},
+      {id: "q48-3", question: "What was Nineteenth Amendment?", options: ["Banned alcohol", "Granted women's suffrage", "Direct senator election", "Income tax"], correctOptionIndex: 1, explanation: "Nineteenth Amendment (1920) granted women the right to vote after decades of struggle."},
+      {id: "q48-4", question: "What Progressive Era constitutional amendments expanded democracy?", options: ["None passed", "16th (income tax), 17th (direct senate election), 18th (Prohibition), 19th (women's suffrage)", "Only one amendment", "Amendments reduced democracy"], correctOptionIndex: 1, explanation: "Four constitutional amendments passed during the Progressive Era: 16th allowed graduated income tax (1913), 17th required direct election of senators by voters rather than state legislatures (1913), 18th prohibited alcohol (1919), and 19th granted women's suffrage (1920). These fundamentally changed American democracy."},
+      {id: "q48-5", question: "What were settlement houses like Hull House?", options: ["Luxury hotels", "Community centers in immigrant neighborhoods providing education, childcare, and social services", "Government offices", "Factories"], correctOptionIndex: 1, explanation: "Settlement houses were community centers established by middle-class reformers in poor immigrant neighborhoods. Jane Addams's Hull House in Chicago provided English classes, childcare, healthcare, job training, and cultural programs. Reformers lived there, learning about poverty firsthand and advocating for social change."},
+      {id: "q48-6", question: "How did Progressives try to break political machines' power?", options: ["They supported machines", "Direct primaries, initiative, referendum, recall, secret ballot, nonpartisan city commissions", "Gave machines more power", "Did nothing"], correctOptionIndex: 1, explanation: "Progressives attacked political machines through reforms: direct primaries (voters choose candidates, not bosses), initiative/referendum (voters propose/approve laws directly), recall (voters remove officials), secret ballot (preventing vote buying), and nonpartisan city commissions (professional management). These aimed to reduce corruption and increase citizen participation."},
+      {id: "q48-7", question: "What were the Progressive Era's major limitations?", options: ["It had no limitations", "Most Progressives ignored or supported racial segregation, imperialism continued, and fundamental economic inequality remained", "It achieved complete equality", "Only helped the wealthy"], correctOptionIndex: 1, explanation: "Despite reforms, the Progressive Era had major blind spots: most Progressives supported or ignored racial segregation (Wilson segregated federal offices), Progressive presidents pursued imperialism abroad, labor still lacked real power, and wealth inequality remained extreme. The era reformed capitalism but didn't fundamentally change who held power."},
+      {id: "q48-8", question: "What was the Progressive Era's fundamental insight about democracy and capitalism?", options: ["They're always compatible", "Unregulated capitalism corrupts democracy—only active government regulation can balance corporate power", "Government should never regulate business", "Capitalism always creates equality"], correctOptionIndex: 1, explanation: "Progressives recognized that unregulated capitalism concentrates wealth and power, corrupting democracy. If corporations have unlimited power, they'll exploit workers, manipulate politics, and create massive inequality. Democracy requires active government regulating business, protecting workers and consumers, and limiting corporate power. This Progressive insight shaped American politics for the next century."}
+    ]
+  };
+
+export default lesson;
