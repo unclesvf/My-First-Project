@@ -1,137 +1,234 @@
 # Claude Instructions for History Lesson Creator
 
-## IMMEDIATE ACTION REQUIRED
+## QUICK CONTEXT
 
-**CHECK THESE STATUS FILES FIRST:**
-- `TTS_GENERATION_STATUS.md` - **ACTIVE** - TTS audio generation quality testing (V2 in progress)
-- `IMAGE_GENERATION_STATUS.md` - ✅ **COMPLETE** - All 276 images generated (100% success)
-- `TTS_PROJECT_STATUS.md` - Overall TTS project status and working configuration
+**Last Major Update:** January 14, 2026
+**Project:** History for Homeschoolers - 51 lessons on American history (1565-1920)
+**Stack:** Next.js 15, TypeScript, Firebase Auth, Stripe, Tailwind CSS
 
-### Current Priority: TTS Audio Generation Quality
-- **Testing V2 output** for Lesson 2 (`Survival_in_Jamestown_Zonos_V2.wav`)
-- Quality pipeline includes: Whisper verification, noise reduction, standardized pauses
-- See `TTS_GENERATION_STATUS.md` for full details on what was tried and next steps
+### Current State
+- ✅ **App Build:** Passing, production-ready
+- ✅ **Content:** 51 lessons complete with chapters, flashcards, quizzes
+- ✅ **Images:** 276/276 historical images generated
+- ✅ **Code Quality:** Security fixes and optimizations completed (Jan 14)
+- ⏳ **TTS Audio:** V2 quality testing - awaiting user feedback
+- ⚠️ **Firestore Rules:** Created but need manual deployment (requires `firebase login`)
 
 ---
 
-## Project Overview
+## RECENT SESSION SUMMARY (January 14, 2026)
 
-This is a history education application containing 51 lessons covering American history from 1565 to 1877. Each lesson features:
-- Narrative chapters told from a first-person historical perspective
-- Flashcards for vocabulary
-- Quizzes to test comprehension
+### Code Quality Fixes Completed
+| Fix | File(s) | Description |
+|-----|---------|-------------|
+| Unused import | `components/QuizEngine.tsx` | Removed unused `History` import |
+| Secure logging | `lib/firebase/firestore.ts` | Replaced 12 `console.error` with `logger.error` |
+| Type errors | `lib/contexts/ProgressContext.tsx` | Fixed Timestamp and quizProgress type issues |
+| Input validation | `lib/firebase/auth.ts` | Added email/password validation, name sanitization |
+| Accessibility | `components/FlashcardDeck.tsx` | Added ARIA labels, keyboard support |
+| Accessibility | `components/QuizEngine.tsx` | Added ARIA labels, progress bar roles |
+| Type safety | `lib/firebase/firestore.ts` | Changed `any[]` to `QuizAnswer[]` |
+| XSS protection | `lib/utils/sanitize.ts` | Created DOMPurify sanitization utilities |
+| Code organization | `data/lessons/` | Split 770KB file into 51 individual lesson files |
 
-## Important Files to Know
+### New Files Created
+- `lib/utils/sanitize.ts` - XSS protection utilities (sanitizeHtml, sanitizeText, sanitizeUrl)
+- `data/lessons/*.ts` - 51 individual lesson files + index.ts
+- `scripts/split-lessons.js` - Utility to regenerate lesson splits
+- `STATUS.md` - Consolidated project status document
 
-### Scripts Documentation
-**Always refer to `scripts/SCRIPTS_DOCUMENTATION.md` for detailed documentation on all available scripts**, including:
-- `historical_accuracy_checker.py` - Scan lessons for anachronisms
-- `export_lessons.py` - Export lessons to text and TTS formats
-- `lesson_media_generator.py` - Generate mind maps, infographics, video scripts
-- `render_mindmaps.py` - Render mind map images with Graphviz
+### Cleanup Done
+- Removed ~70 `tmpclaude-*` temp files
+- Updated `.gitignore` to exclude temp files, `*.wav`, `*.tar.gz`, `voice_references/`
+
+---
+
+## PENDING ACTIONS (Require User)
+
+### 1. Deploy Firestore Security Rules
+```bash
+cd "C:\Users\scott\My-First-Project\My-First-Project\history-lesson-creator"
+firebase login
+firebase deploy --only firestore:rules
+```
+**Why:** Rules are created in `firestore.rules` but not deployed. Console shows permission errors until deployed.
+
+### 2. Configure Stripe Webhooks
+- Go to Stripe Dashboard → Developers → Webhooks
+- Add endpoint for payment confirmations
+- Update webhook secret in environment
+
+### 3. TTS Audio Feedback
+- User needs to evaluate `Survival_in_Jamestown_Zonos_V2.wav` quality
+- If acceptable: batch generate all 51 lessons (~13-17 hours)
+- If not: try lower speaking rate or different TTS model
+
+---
+
+## PROJECT STRUCTURE
+
+### Key Directories
+```
+history-lesson-creator/
+├── app/                    # Next.js pages and API routes
+├── components/             # React components (auth, payment, progress, student, teacher)
+├── data/
+│   ├── lessons.ts          # Re-exports from lessons/ (backward compatible)
+│   └── lessons/            # 51 individual lesson files (NEW)
+├── lib/
+│   ├── firebase/           # Auth, Firestore, config
+│   ├── contexts/           # AuthContext, ProgressContext
+│   ├── hooks/              # useAuth, useProgress, useTrialStatus
+│   └── utils/              # logger.ts, sanitize.ts (NEW)
+├── scripts/                # Python automation scripts
+├── generated_images/       # 276 AI-generated historical images
+└── lessons/                # TTS audio files and chunks
+```
 
 ### Data Files
-- `data/lessons.ts` - Master file containing all 51 lessons with chapters, flashcards, and quizzes
+- `data/lessons/index.ts` - Exports `lessons` array, `getLessonById()`, `TOTAL_LESSONS`
+- Individual lessons: `data/lessons/lesson-01.ts` through `lesson-51.ts`
+- **Backward compatible:** `import { lessons } from '@/data/lessons'` still works
 
-### Output Directories
-- `lesson-exports/` - Exported text files for reading and TTS
-- `lesson-media/` - Generated mind maps, infographics, video scripts
-- `accuracy_reports/` - Historical accuracy scan results
+---
 
-## Working with Lessons
+## WORKING WITH LESSONS
 
-### Editing Lesson Content
-After editing any lesson content in `data/lessons.ts`, run the following scripts in order:
+### Editing a Single Lesson
+```typescript
+// Edit the specific lesson file
+// e.g., data/lessons/lesson-05.ts
+
+import { Lesson } from "@/lib/types";
+
+const lesson: Lesson = {
+  id: "lesson-5",
+  title: "...",
+  // ...
+};
+
+export default lesson;
+```
+
+### After Editing Lessons
 1. `python scripts/historical_accuracy_checker.py` - Verify no anachronisms
 2. `python scripts/export_lessons.py` - Update exports
 3. `python scripts/lesson_media_generator.py` - Update media files
-4. `python scripts/render_mindmaps.py` - Update mind map images
 
-### Historical Accuracy
-The accuracy checker contains a 350+ term timeline database. Be especially careful about:
-- References to settlements, people, or events before they existed
-- The lesson's time period is specified in its description field
-- Some forward-looking references are intentional for educational purposes
+---
 
-## TTS Audio Generation
+## SECURITY IMPLEMENTATION
 
-This project uses Zonos TTS with voice cloning to generate audio narration for lessons.
+### Completed ✅
+| Feature | Location | Notes |
+|---------|----------|-------|
+| Secure logger | `lib/utils/logger.ts` | Environment-aware, sanitizes in production |
+| Input validation | `lib/firebase/auth.ts` | Email format, password strength, name sanitization |
+| XSS protection | `lib/utils/sanitize.ts` | DOMPurify-based sanitization |
+| Firestore rules | `firestore.rules` | Role-based access, quiz immutability |
+| Error boundary | `app/error.tsx` | Graceful error handling |
 
-### Critical Documentation
-**READ BEFORE WORKING ON TTS:**
-- `TTS_GENERATION_STATUS.md` - **Current session status** - what was tried, what works, next steps
-- `TTS_VOICE_TESTING_NOTES.md` - Voice testing attempts, what failed, recommendations
-- `TTS_PROJECT_STATUS.md` - Overall TTS project status and working configuration
+### Usage
+```typescript
+import { sanitizeHtml, sanitizeText, sanitizeUrl } from '@/lib/utils/sanitize';
+import { logger } from '@/lib/utils/logger';
 
-### Key TTS Scripts (in project root)
-| Script | Purpose |
-|--------|---------|
-| `generate_lesson_verified.py` | Quality-gated generation with Whisper verification |
-| `process_chunks_aggressive.py` | Post-processing with noise reduction and precise pauses |
-| `concatenate_chunks.py` | Simple chunk concatenation with normalization |
-| `analyze_generated_audio.py` | Quality analysis tool (volume, tempo, consistency) |
-| `generate_all_lessons.py` | Batch generation (needs quality pipeline integration) |
+// Sanitize user input
+const safeHtml = sanitizeHtml(userInput);
+const safeText = sanitizeText(userInput);
+const safeUrl = sanitizeUrl(userInput);
 
-### Voice References
-- `voice_references/selected/` - 10 prepared voice references (all tested, working)
-- `voice_references/LibriSpeech/` - Source dataset for voice references
-
-### Generated Audio
-- `lessons/*_Zonos_V2.wav` - Latest quality version (with V2 processing)
-- `lessons/*_Zonos_Verified.wav` - Whisper-verified version
-- `lessons/lesson_XX_verified/` - Individual verified chunks
-
-### TTS Quality Pipeline (Current Best)
-```bash
-# Step 1: Generate with Whisper verification
-python3 generate_lesson_verified.py --lesson N
-
-# Step 2: Apply aggressive processing (noise reduction, precise pauses)
-python3 process_chunks_aggressive.py --lesson N
+// Secure logging
+logger.error('Something went wrong', error);
 ```
 
-### Known Issues & Mitigations
-| Issue | Mitigation |
-|-------|------------|
-| Missing words | Whisper verification, regenerate if WER > 15% |
-| Background hums | 120Hz high-pass filter + noisereduce library |
-| Inconsistent pauses | Aggressive silence trimming + precise pause insertion |
-| Volume variation | Per-chunk LUFS normalization |
+---
 
-## Image Generation ✅ COMPLETE
+## TTS AUDIO GENERATION
 
-All 276 historical images have been generated and validated.
+### Current Status
+- **V2 Pipeline:** Testing quality output
+- **Test File:** `lessons/Survival_in_Jamestown_Zonos_V2.wav`
+- **Issues Being Resolved:** Hum elimination, pause consistency
 
-### Final Results
-- **Lessons 1-2**: 11 images in `batch_session_20260113_195255/keepers/`
-- **Lessons 3-51**: 265 images in `batch_session_20260113_150301/keepers/`
-- **Total**: 276 images, 100% acceptance rate
+### Generation Pipeline
+```bash
+# In WSL
+python3 generate_lesson_verified.py --lesson N    # Whisper-verified chunks
+python3 process_chunks_aggressive.py --lesson N   # Noise reduction + pauses
+```
 
 ### Documentation
-- `IMAGE_GENERATION_STATUS.md` - Completion status and regeneration history
-- `HISTORICAL_IMAGE_GENERATION_PRD.md` - Full PRD with era guidelines and lessons learned
+- `TTS_GENERATION_STATUS.md` - Current session status
+- `TTS_PROJECT_STATUS.md` - Overall configuration
+- `TTS_VOICE_TESTING_NOTES.md` - Voice testing results
 
-### Image Generation Pipeline (for reference)
-1. **Prompt Generation**: GPT-OS generates historically-accurate image prompts
-2. **Image Generation**: Z-Image Turbo via ComfyUI (8 steps, fast)
-3. **VLM Evaluation**: Two-pass validation (MiniCPM-V, then Qwen2.5VL)
-4. **Threshold**: Average score >= 75 to accept
+---
 
-### Key Scripts
-- `scripts/cross_lesson_batch.py` - Full batch pipeline
-- `scripts/regenerate_failures.py` - Regenerate failed images
-- `scripts/historical_image_gen_loop.py` - Core generation/evaluation functions
-- `scripts/era_guidelines.py` - 13 historical era specifications
-- `scripts/narrator_specs.py` - 51 narrator demographics
+## IMAGE GENERATION ✅ COMPLETE
 
-### GPU Memory Management (for future work)
-**Must manage GPU memory between phases:**
-- Unload ComfyUI before running VLM models
-- Unload Ollama models before running ComfyUI
-- Use `num_ctx: 8192` for VLM (not 65536 default) to fit in GPU
+All 276 historical images generated and validated (100% success rate).
 
-## Key Constraints
+### Location
+- `generated_images/batch_session_20260113_150301/keepers/` - Lessons 3-51
+- `generated_images/batch_session_20260113_195255/keepers/` - Lessons 1-2
+
+### Documentation
+- `IMAGE_GENERATION_STATUS.md` - Completion status
+- `HISTORICAL_IMAGE_GENERATION_PRD.md` - Full PRD with era guidelines
+
+---
+
+## AVAILABLE CLAUDE SKILLS
+
+| Command | Purpose |
+|---------|---------|
+| `/lesson-builder` | Create new lessons |
+| `/image-prompter` | Generate AI image prompts |
+| `/historical-accuracy-checker` | Verify historical accuracy |
+| `/generate-audio` | Create TTS audio narration |
+| `/audit-content` | Check lesson completeness |
+| `/git-push` | Handle git with LFS |
+| `/new-course` | Create new course projects |
+| `/deploy` | Production deployment |
+
+---
+
+## USEFUL COMMANDS
+
+```bash
+# Development
+npm run dev                              # Start dev server (http://localhost:3000)
+npm run build                            # Production build
+npx tsc --noEmit                         # Type check only
+
+# Firebase (requires login first)
+firebase login
+firebase deploy --only firestore:rules
+
+# Git (from project root - one level up)
+cd "C:\Users\scott\My-First-Project\My-First-Project"
+git add -A && git commit -m "message" && git push
+```
+
+---
+
+## KEY CONSTRAINTS
 
 - Lessons must be historically accurate for their time period
-- Narrative chapters are written from a first-person perspective of someone living in that era
-- Each lesson has a specific narrator character appropriate to the historical context
+- Narrative chapters are first-person perspective from that era
+- Each lesson has a specific narrator appropriate to historical context
+- 350+ term timeline database for anachronism detection
+
+---
+
+## DOCUMENTATION INDEX
+
+| Document | Purpose |
+|----------|---------|
+| `STATUS.md` | Quick project status overview |
+| `SECURITY-FIXES.md` | Security implementation guide |
+| `TTS_GENERATION_STATUS.md` | TTS pipeline status |
+| `IMAGE_GENERATION_STATUS.md` | Image generation completion |
+| `HISTORICAL_IMAGE_GENERATION_PRD.md` | Image generation PRD |
+| `scripts/SCRIPTS_DOCUMENTATION.md` | Python scripts reference |

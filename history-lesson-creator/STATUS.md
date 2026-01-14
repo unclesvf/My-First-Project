@@ -1,6 +1,6 @@
 # History for Homeschoolers - Project Status
 
-**Last Updated:** January 13, 2026
+**Last Updated:** January 14, 2026
 **Project Path:** `C:\Users\scott\My-First-Project\My-First-Project\history-lesson-creator`
 
 ---
@@ -22,27 +22,52 @@ npm run dev
 | **App Build** | ✅ PASSING | Next.js 15, TypeScript, Tailwind |
 | **Content** | ✅ COMPLETE | 51 lessons, 260 chapters, 512 flashcards, 408 quiz questions |
 | **Images** | ✅ COMPLETE | 276/276 images generated (100% success) |
-| **TTS Audio** | ⏳ TESTING | V2 quality pipeline, awaiting feedback |
+| **Code Quality** | ✅ COMPLETE | Security, accessibility, type safety fixes (Jan 14) |
+| **TTS Audio** | ⏳ TESTING | V2 quality pipeline, awaiting user feedback |
 | **Firebase Auth** | ✅ CONFIGURED | Email/password + Google OAuth |
 | **Stripe Payments** | ✅ CONFIGURED | Live keys, $19.99 course price |
-| **Firestore Rules** | ⚠️ NEEDS DEPLOY | Rules created, need `firebase deploy --only firestore:rules` |
+| **Firestore Rules** | ⚠️ NEEDS DEPLOY | Run: `firebase login && firebase deploy --only firestore:rules` |
 
 ---
 
-## Active Work Items
+## Recent Session (January 14, 2026)
 
-### TTS Audio Generation (Priority)
-- **Status:** Testing V2 output (`Survival_in_Jamestown_Zonos_V2.wav`)
-- **Issues being tested:** Hum elimination, pause consistency, overall quality
-- **Next:** If V2 acceptable, batch generate all 51 lessons (~13-17 hours)
-- **See:** `TTS_GENERATION_STATUS.md` for full details
+### Completed Fixes
+| Fix | Status |
+|-----|--------|
+| Remove unused imports | ✅ |
+| Replace console.error with secure logger | ✅ |
+| Fix ProgressContext type errors | ✅ |
+| Add input validation to auth | ✅ |
+| Add ARIA accessibility labels | ✅ |
+| Fix `any[]` type in firestore | ✅ |
+| Clean up ~70 temp files | ✅ |
+| Update .gitignore | ✅ |
+| Split lessons.ts (770KB → 51 files) | ✅ |
+| Add XSS protection (DOMPurify) | ✅ |
 
-### Pending Security Fixes
-- [ ] Deploy Firestore security rules
-- [ ] Implement input validation in auth
-- [ ] Add XSS protection (DOMPurify)
-- [ ] Configure Stripe webhooks
-- **See:** `SECURITY-FIXES.md` for implementation guide
+### New Files
+- `lib/utils/sanitize.ts` - XSS protection utilities
+- `data/lessons/*.ts` - 51 individual lesson files
+- `scripts/split-lessons.js` - Lesson split utility
+
+---
+
+## Pending Actions (User Required)
+
+### 1. Deploy Firestore Rules
+```bash
+firebase login
+firebase deploy --only firestore:rules
+```
+
+### 2. Configure Stripe Webhooks
+- Stripe Dashboard → Developers → Webhooks
+- Add endpoint for payment confirmations
+
+### 3. TTS Audio Quality Review
+- Evaluate `lessons/Survival_in_Jamestown_Zonos_V2.wav`
+- If acceptable: batch generate all 51 lessons
 
 ---
 
@@ -50,11 +75,27 @@ npm run dev
 
 | Item | Count | Status |
 |------|-------|--------|
-| Lessons | 51 (50 + 1 bonus) | Complete |
-| Chapters | 260 total | All lessons have 5+ chapters |
-| Flashcards | 512 total | All lessons have 10+ flashcards |
-| Quiz Questions | 408 total | All lessons have 8 questions |
-| Historical Images | 276 | 100% generated and validated |
+| Lessons | 51 | Complete |
+| Chapters | 260+ | All lessons 5+ chapters |
+| Flashcards | 512+ | All lessons 10+ flashcards |
+| Quiz Questions | 408 | All lessons 8 questions |
+| Historical Images | 276 | 100% generated |
+
+---
+
+## Key File Locations
+
+| Purpose | Location |
+|---------|----------|
+| Lesson Data | `data/lessons/` (51 individual files) |
+| Lesson Index | `data/lessons/index.ts` (exports all) |
+| Legacy Import | `data/lessons.ts` (re-exports for compatibility) |
+| Firebase Config | `lib/firebase/config.ts` |
+| Auth Functions | `lib/firebase/auth.ts` |
+| Firestore Ops | `lib/firebase/firestore.ts` |
+| Security Rules | `firestore.rules` |
+| XSS Protection | `lib/utils/sanitize.ts` |
+| Secure Logger | `lib/utils/logger.ts` |
 
 ---
 
@@ -84,40 +125,16 @@ NEXT_PUBLIC_TRIAL_DAYS=7
 
 ---
 
-## Key File Locations
+## Security Implementation Status
 
-| Purpose | Location |
-|---------|----------|
-| Lesson Data | `data/lessons.ts` (770KB - consider splitting) |
-| Firebase Config | `lib/firebase/config.ts` |
-| Auth Functions | `lib/firebase/auth.ts` |
-| Firestore Operations | `lib/firebase/firestore.ts` |
-| Security Rules | `firestore.rules` |
-| Generated Images | `generated_images/batch_session_*/keepers/` |
-| TTS Scripts | Root: `generate_lesson_verified.py`, `process_chunks_aggressive.py` |
-
----
-
-## Claude Skills (8 Available)
-
-| Command | Purpose |
-|---------|---------|
-| `/lesson-builder` | Create new lessons |
-| `/image-prompter` | Generate AI image prompts |
-| `/historical-accuracy-checker` | Verify historical accuracy |
-| `/generate-audio` | Create TTS audio narration |
-| `/audit-content` | Check lesson completeness |
-| `/git-push` | Handle git with LFS |
-| `/new-course` | Create new course projects |
-| `/deploy` | Production deployment |
-
----
-
-## Known Issues
-
-1. **Firestore Permission Errors** - Deploy security rules to fix
-2. **Large Data File** - `data/lessons.ts` is 770KB, should be split
-3. **TTS Quality** - Testing V2 processing pipeline
+| Feature | Status | Location |
+|---------|--------|----------|
+| Secure logger | ✅ Done | `lib/utils/logger.ts` |
+| Input validation | ✅ Done | `lib/firebase/auth.ts` |
+| XSS protection | ✅ Done | `lib/utils/sanitize.ts` |
+| Firestore rules | ⚠️ Need deploy | `firestore.rules` |
+| Error boundary | ✅ Done | `app/error.tsx` |
+| ARIA accessibility | ✅ Done | FlashcardDeck, QuizEngine |
 
 ---
 
@@ -130,14 +147,15 @@ npm run build                  # Production build
 npx tsc --noEmit              # Type check
 
 # Firebase
+firebase login
 firebase deploy --only firestore:rules
 
 # TTS Generation (WSL)
 python3 generate_lesson_verified.py --lesson N
 python3 process_chunks_aggressive.py --lesson N
 
-# Git (from git root, one level up)
-cd "C:/Users/scott/My-First-Project/My-First-Project"
+# Git (from git root)
+cd "C:\Users\scott\My-First-Project\My-First-Project"
 git add -A && git commit -m "message" && git push
 ```
 
@@ -147,14 +165,24 @@ git add -A && git commit -m "message" && git push
 
 | Document | Purpose |
 |----------|---------|
-| `CLAUDE.md` | Claude instructions and priorities |
-| `SESSION_STATUS.md` | Detailed session state |
+| `CLAUDE.md` | Claude instructions and context |
+| `SECURITY-FIXES.md` | Security implementation guide |
 | `TTS_GENERATION_STATUS.md` | TTS pipeline status |
 | `IMAGE_GENERATION_STATUS.md` | Image generation completion |
-| `SECURITY-FIXES.md` | Security implementation guide |
-| `HISTORICAL_IMAGE_GENERATION_PRD.md` | Image generation PRD (58KB) |
-| `TTS_SCRIPTING_PRD.md` | TTS scripting requirements |
+| `HISTORICAL_IMAGE_GENERATION_PRD.md` | Image generation PRD |
+| `scripts/SCRIPTS_DOCUMENTATION.md` | Python scripts reference |
 
 ---
 
-*This is a consolidated status document. For detailed information on specific topics, refer to the individual documentation files listed above.*
+## Known Issues
+
+1. ~~Large Data File~~ → **FIXED:** Split into 51 files
+2. ~~Console.error exposure~~ → **FIXED:** Using secure logger
+3. ~~Missing input validation~~ → **FIXED:** Added to auth
+4. ~~No XSS protection~~ → **FIXED:** DOMPurify added
+5. **Firestore permissions** → Need to deploy rules (user action required)
+6. **TTS quality** → Awaiting V2 feedback
+
+---
+
+*For detailed Claude instructions, see `CLAUDE.md`*
