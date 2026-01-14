@@ -265,3 +265,42 @@ python scripts/render_mindmaps.py
 ---
 
 *Last updated: January 2026*
+
+### 6. `historical_image_gen_loop.py`
+
+**Purpose:** Self-correcting image generation pipeline that generates historically accurate images for lesson chapters using FluxDev + Ollama VLM evaluation.
+
+**Location:** `scripts/historical_image_gen_loop.py`
+
+**Prerequisites:**
+- Ollama running with models installed:
+  - `ollama pull qwen2.5:14b` (or similar for prompt generation)
+  - `ollama pull llama3.2-vision`
+  - `ollama pull qwen2.5vl`
+- ComfyUI running with Flux model loaded
+- Python packages: `requests`, `pillow`
+
+**Usage:**
+```bash
+# Generate images for all chapters of lesson 1
+python scripts/historical_image_gen_loop.py --lesson 1
+
+# Generate image for specific chapter
+python scripts/historical_image_gen_loop.py --lesson 1 --chapter 2
+
+# Use custom threshold (default: 75)
+python scripts/historical_image_gen_loop.py --lesson 1 --threshold 80
+```
+
+**How It Works:**
+1. Load Lesson from exports or JSON
+2. Generate Era Props via Ollama LLM
+3. Create Flux-optimized image prompt
+4. Generate image via ComfyUI API
+5. Two-stage VLM evaluation (Llama 3.2 Vision -> Qwen2.5-VL)
+6. Auto-refinement if score < threshold (up to 3 attempts)
+7. Organize outputs into keepers/fails folders
+
+**Output:** `generated_images/session_<timestamp>/` with keepers/, fails/, and generation_report.json
+
+**When to Use:** To generate historically accurate chapter images automatically with self-correction

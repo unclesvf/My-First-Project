@@ -1,6 +1,6 @@
 # History for Homeschoolers - Session Status
 
-**Last Updated:** January 11, 2026
+**Last Updated:** January 13, 2026
 **Project Path:** `C:\Users\scott\My-First-Project\My-First-Project\history-lesson-creator`
 **Git Root:** `C:\Users\scott\My-First-Project\My-First-Project` (one level up!)
 
@@ -200,7 +200,21 @@ history-lesson-creator/
 
 ## Recent Changes (January 2026)
 
-### January 11, 2026 (Latest Session)
+### January 13, 2026 (Latest Session)
+**Historical Image Generation Pipeline - Lessons 1 & 2 Complete**
+1. **Fixed VLM evaluation issues:**
+   - Replaced llama3.2-vision (too harsh, avg 58) with MiniCPM-V (avg 75) for first pass
+   - Simplified evaluation prompt to avoid JSON parsing errors
+2. **Fixed pipeline script (`historical_image_gen_loop.py`):**
+   - Updated `evaluate_image()` to use simple prompts instead of JSON format
+   - Switched to `/api/chat` endpoint for VLM calls
+   - Added `get_brief_feedback()` for refinement hints
+3. **Completed image generation:**
+   - Lesson 1: 5/5 chapters accepted → `generated_images/session_20260112_225212/keepers/`
+   - Lesson 2: 6/6 chapters accepted (first round!) → `generated_images/session_20260113_104712/keepers/`
+4. **Pipeline validated:** 100% first-attempt success on Lesson 2 confirms fix is working
+
+### January 11, 2026
 1. **Created 5 new Claude skills:**
    - `tts-generator.md` - Generate TTS audio narration
    - `git-handler.md` - Git/LFS operations with correct paths
