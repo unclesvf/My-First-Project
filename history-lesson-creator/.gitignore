@@ -42,3 +42,17 @@ deploy.config
 # Sensitive files
 **/Stripe*Key*.txt
 **/stripe*key*.txt
+
+# Python virtual environments
+venv_zonos/
+venv/
+.venv/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Temp files
+tmpclaude-*
+nul
+~$*
