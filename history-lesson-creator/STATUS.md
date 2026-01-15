@@ -1,6 +1,6 @@
 # History for Homeschoolers - Project Status
 
-**Last Updated:** January 14, 2026
+**Last Updated:** January 15, 2026
 **Project Path:** `C:\Users\scott\My-First-Project\My-First-Project\history-lesson-creator`
 
 ---
@@ -22,7 +22,7 @@ npm run dev
 | **App Build** | ✅ PASSING | Next.js 15, TypeScript, Tailwind |
 | **Content** | ✅ COMPLETE | 51 lessons, 260 chapters, 512 flashcards, 408 quiz questions |
 | **Images** | ✅ COMPLETE | 276/276 images generated (100% success) |
-| **Code Quality** | ✅ COMPLETE | Security, accessibility, type safety fixes (Jan 14) |
+| **Code Quality** | ✅ COMPLETE | Two audits completed (Jan 14 & 15), all critical fixes applied |
 | **TTS Audio** | ⏳ TESTING | V2 quality pipeline, awaiting user feedback |
 | **Firebase Auth** | ✅ CONFIGURED | Email/password + Google OAuth |
 | **Stripe Payments** | ✅ CONFIGURED | Live keys, $19.99 course price |
@@ -30,9 +30,61 @@ npm run dev
 
 ---
 
-## Recent Session (January 14, 2026)
+## Recent Session (January 15, 2026)
 
-### Completed Fixes
+### Code Audit & Fixes (Two Commits)
+
+**Commit 1: `fa01af4`** - Console logging + Stripe modernization
+| Fix | Files | Description |
+|-----|-------|-------------|
+| Console → logger | 5 files | 24 console calls replaced with secure logger |
+| Stripe API update | 2 files | Removed deprecated `redirectToCheckout`, now uses URL redirect |
+
+**Commit 2: `979fe49`** - Quiz data integrity + remaining logging
+| Fix | Files | Description |
+|-----|-------|-------------|
+| Quiz data fix | `lib/types.ts`, `QuizEngine.tsx` | Added `correctIndex` to properly capture correct answers |
+| Type safety | `ProgressContext.tsx` | Changed `any[]` to `QuizResult[]`, transforms to `QuizAnswer` for Firestore |
+| Console → logger | 7 files | 14 additional console calls replaced |
+| React Hook fix | `dashboard/page.tsx` | Fixed useCallback/useEffect ordering |
+
+### Terminal Setup
+- Installed **WezTerm** terminal emulator (GPU-accelerated, Rust-based)
+- Configuration: `~/.wezterm.lua` with Catppuccin Mocha theme
+- Installed **JetBrains Mono Nerd Font** as primary font
+
+### Remaining Non-Critical Warnings
+7 ESLint warnings about React Hook dependencies in `ProgressContext.tsx` and `StoryReader.tsx`. These are internal function references that don't cause runtime issues. Build passes and app functions correctly.
+
+### DEV_BYPASS_PAYWALL Note
+The `DEV_BYPASS_PAYWALL` flag in `lib/utils/accessControl.ts` is intentionally left enabled for testing purposes. This bypasses paywall checks in development mode.
+
+---
+
+## Previous Session (January 14, 2026)
+
+### GPU/ComfyUI Optimizations (Latest)
+| Optimization | Status | Details |
+|--------------|--------|---------|
+| PyTorch 2.9.0+cu130 | ✅ | CUDA 13 optimized kernels |
+| Flash Attention 2.8.3 | ✅ | Memory-efficient attention |
+| SageAttention 2.2.0 | ✅ | Faster attention computation |
+| Triton 3.5.1 | ✅ | JIT kernel compilation |
+| Optimized startup script | ✅ | `C:\Users\scott\ComfyUI\start_optimized.bat` |
+
+**Performance Improvement:** ~14% faster (7.2s/step vs 8.5s/step before)
+
+**Note:** NVFP4 models require RTX 50-series (Blackwell) GPUs. RTX 4090 uses FP8 which is already optimal.
+
+### Flux.2 Dev Test (In Progress)
+- **Status:** Running 50-prompt quality test
+- **Model:** flux2_dev_fp8mixed.safetensors
+- **Resolution:** 1344x768 (landscape 16:9)
+- **Steps:** 28 @ ~7.2s/step
+- **Time per image:** ~280-320 seconds
+- **Estimated completion:** ~4 hours total
+
+### Code Quality Fixes (Completed Earlier)
 | Fix | Status |
 |-----|--------|
 | Remove unused imports | ✅ |
@@ -50,6 +102,7 @@ npm run dev
 - `lib/utils/sanitize.ts` - XSS protection utilities
 - `data/lessons/*.ts` - 51 individual lesson files
 - `scripts/split-lessons.js` - Lesson split utility
+- `C:\Users\scott\ComfyUI\start_optimized.bat` - Optimized ComfyUI launcher
 
 ---
 
@@ -177,11 +230,14 @@ git add -A && git commit -m "message" && git push
 ## Known Issues
 
 1. ~~Large Data File~~ → **FIXED:** Split into 51 files
-2. ~~Console.error exposure~~ → **FIXED:** Using secure logger
+2. ~~Console.error exposure~~ → **FIXED:** 38+ calls replaced with secure logger (Jan 14-15)
 3. ~~Missing input validation~~ → **FIXED:** Added to auth
 4. ~~No XSS protection~~ → **FIXED:** DOMPurify added
-5. **Firestore permissions** → Need to deploy rules (user action required)
-6. **TTS quality** → Awaiting V2 feedback
+5. ~~Quiz data integrity~~ → **FIXED:** correctIndex now captured properly (Jan 15)
+6. ~~Deprecated Stripe API~~ → **FIXED:** Modernized to URL-based checkout (Jan 15)
+7. **Firestore permissions** → Need to deploy rules (user action required)
+8. **TTS quality** → Awaiting V2 feedback
+9. **ESLint warnings** → 7 non-critical React Hook warnings (safe to ignore)
 
 ---
 
