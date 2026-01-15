@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import { Chrome } from 'lucide-react';
+import { logger } from '@/lib/utils/logger';
 
 interface GoogleSignInButtonProps {
   onSignIn: () => Promise<void>;
@@ -19,7 +20,7 @@ export default function GoogleSignInButton({ onSignIn, className = '' }: GoogleS
     try {
       await onSignIn();
     } catch (err: any) {
-      console.error('Google sign-in error:', err);
+      logger.error('Google sign-in error', err);
       setError(err.message || 'Failed to sign in with Google');
     } finally {
       setLoading(false);

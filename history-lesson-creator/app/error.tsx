@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect } from 'react';
+import { logger } from '@/lib/utils/logger';
 
 export default function Error({
   error,
@@ -11,11 +12,7 @@ export default function Error({
 }) {
   useEffect(() => {
     // Log to error reporting service
-    if (process.env.NODE_ENV === 'production') {
-      console.error('Application error:', error.digest);
-    } else {
-      console.error('Error details:', error);
-    }
+    logger.error('Application error', error);
   }, [error]);
 
   return (

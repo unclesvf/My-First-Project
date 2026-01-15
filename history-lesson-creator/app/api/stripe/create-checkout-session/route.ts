@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import Stripe from 'stripe';
+import { logger } from '@/lib/utils/logger';
 
 /**
  * POST /api/stripe/create-checkout-session
@@ -19,7 +20,7 @@ export async function POST(request: NextRequest) {
   // Verify required environment variables
   const stripeSecretKey = process.env.STRIPE_SECRET_KEY;
   if (!stripeSecretKey) {
-    console.error('Missing STRIPE_SECRET_KEY environment variable');
+    logger.error('Missing STRIPE_SECRET_KEY environment variable');
     return NextResponse.json(
       { error: 'Server configuration error' },
       { status: 500 }
@@ -91,7 +92,7 @@ export async function POST(request: NextRequest) {
   } catch (error) {
     // Handle Stripe-specific errors
     if (error instanceof Stripe.errors.StripeError) {
-      console.error('Stripe error:', error.type, error.message);
+      logger.error('Stripe error', { type: error.type, code: error.code });
       return NextResponse.json(
         { error: `Stripe error: ${error.message}` },
         { status: 400 }
@@ -99,8 +100,7 @@ export async function POST(request: NextRequest) {
     }
 
     // Handle general errors
-    const errorMessage = error instanceof Error ? error.message : 'Unknown error occurred';
-    console.error('Checkout session creation failed:', errorMessage);
+    logger.error('Checkout session creation failed', error);
     return NextResponse.json(
       { error: 'Failed to create checkout session' },
       { status: 500 }

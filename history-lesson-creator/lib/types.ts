@@ -33,5 +33,6 @@ export type QuizQuestion = {
 export type QuizResult = {
   questionId: string;
   selectedIndex: number;
+  correctIndex: number;
   isCorrect: boolean;
 };

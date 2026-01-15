@@ -13,7 +13,8 @@ import {
   getAllQuizAttempts,
   updateLessonProgress as firestoreUpdateLessonProgress,
 } from '@/lib/firebase/firestore';
-import type { LessonProgress, QuizAttempt } from '@/lib/firebase/types';
+import type { LessonProgress, QuizAttempt, QuizAnswer } from '@/lib/firebase/types';
+import type { QuizResult } from '@/lib/types';
 import { Timestamp } from 'firebase/firestore';
 
 // Development mode - use localStorage fallback when Firestore unavailable
@@ -60,7 +61,7 @@ interface ProgressContextType {
     score: number,
     totalQuestions: number,
     percentage: number,
-    answers: any[],
+    answers: QuizResult[],
     timeSpent: number
   ) => Promise<string>;
 
@@ -246,9 +247,17 @@ export function ProgressProvider({ children, lessonId }: ProgressProviderProps) 
       score: number,
       totalQuestions: number,
       percentage: number,
-      answers: any[],
+      answers: QuizResult[],
       timeSpent: number
     ): Promise<string> => {
+      // Transform QuizResult to QuizAnswer format for Firestore
+      const quizAnswers: QuizAnswer[] = answers.map((answer) => ({
+        questionId: answer.questionId,
+        selectedOptionIndex: answer.selectedIndex,
+        correctOptionIndex: answer.correctIndex,
+        isCorrect: answer.isCorrect,
+      }));
+
       // In dev mode without user, use localStorage
       if (DEV_MODE && !user) {
         const attemptId = `local-${Date.now()}`;
@@ -260,7 +269,7 @@ export function ProgressProvider({ children, lessonId }: ProgressProviderProps) 
           score,
           totalQuestions,
           percentage,
-          answers,
+          answers: quizAnswers,
           timeSpent,
           completedAt: Timestamp.fromDate(new Date()),
         };
@@ -297,7 +306,7 @@ export function ProgressProvider({ children, lessonId }: ProgressProviderProps) 
           score,
           totalQuestions,
           percentage,
-          answers,
+          quizAnswers,
           timeSpent
         );
 
@@ -322,7 +331,7 @@ export function ProgressProvider({ children, lessonId }: ProgressProviderProps) 
             score,
             totalQuestions,
             percentage,
-            answers,
+            answers: quizAnswers,
             timeSpent,
             completedAt: Timestamp.fromDate(new Date()),
           };

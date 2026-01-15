@@ -3,6 +3,7 @@ import Stripe from 'stripe';
 import { db } from '@/lib/firebase/config';
 import { doc, updateDoc, Timestamp } from 'firebase/firestore';
 import { createPurchase } from '@/lib/firebase/firestore';
+import { logger } from '@/lib/utils/logger';
 
 /**
  * POST /api/stripe/webhooks
@@ -17,11 +18,7 @@ export async function POST(request: NextRequest) {
   const webhookSecret = process.env.STRIPE_WEBHOOK_SECRET;
 
   if (!stripeSecretKey || !webhookSecret) {
-    console.error(
-      'Missing Stripe configuration:',
-      !stripeSecretKey && 'STRIPE_SECRET_KEY',
-      !webhookSecret && 'STRIPE_WEBHOOK_SECRET'
-    );
+    logger.error('Missing Stripe configuration');
     return NextResponse.json(
       { error: 'Server configuration error' },
       { status: 500 }
@@ -34,7 +31,7 @@ export async function POST(request: NextRequest) {
     const signature = request.headers.get('stripe-signature');
 
     if (!signature) {
-      console.error('Missing stripe-signature header');
+      logger.error('Missing stripe-signature header');
       return NextResponse.json(
         { error: 'Missing webhook signature' },
         { status: 400 }
@@ -51,8 +48,7 @@ export async function POST(request: NextRequest) {
     try {
       event = stripe.webhooks.constructEvent(rawBody, signature, webhookSecret);
     } catch (error) {
-      const errorMessage = error instanceof Error ? error.message : 'Unknown error';
-      console.error('Webhook signature verification failed:', errorMessage);
+      logger.error('Webhook signature verification failed', error);
       return NextResponse.json(
         { error: 'Webhook signature verification failed' },
         { status: 401 }
@@ -69,10 +65,7 @@ export async function POST(request: NextRequest) {
 
       // Validate required fields
       if (!userId || !stripePaymentIntentId) {
-        console.error(
-          'Invalid checkout session data:',
-          { userId, stripePaymentIntentId }
-        );
+        logger.error('Invalid checkout session data');
         return NextResponse.json(
           { error: 'Invalid session data' },
           { status: 400 }
@@ -113,19 +106,11 @@ export async function POST(request: NextRequest) {
           purchasedAt: Timestamp.now(),
         });
 
-        console.log(`Purchase completed for user ${userId}:`, {
-          amount,
-          currency,
-          paymentIntentId: stripePaymentIntentId,
-        });
+        logger.info(`Purchase completed for user ${userId}`, { amount, currency });
 
         return NextResponse.json({ received: true }, { status: 200 });
       } catch (error) {
-        const errorMessage = error instanceof Error ? error.message : 'Unknown error';
-        console.error(
-          `Failed to process purchase for user ${userId}:`,
-          errorMessage
-        );
+        logger.error(`Failed to process purchase for user ${userId}`, error);
         // Return 200 to prevent Stripe from retrying
         // Log should be reviewed for manual intervention
         return NextResponse.json({ received: true }, { status: 200 });
@@ -133,11 +118,10 @@ export async function POST(request: NextRequest) {
     }
 
     // Return 200 for other event types
-    console.log(`Unhandled webhook event type: ${event.type}`);
+    logger.info(`Unhandled webhook event type: ${event.type}`);
     return NextResponse.json({ received: true }, { status: 200 });
   } catch (error) {
-    const errorMessage = error instanceof Error ? error.message : 'Unknown error occurred';
-    console.error('Webhook processing error:', errorMessage);
+    logger.error('Webhook processing error', error);
     return NextResponse.json(
       { error: 'Webhook processing failed' },
       { status: 500 }

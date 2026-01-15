@@ -1,10 +1,11 @@
 "use client";
 
 export const dynamic = 'force-dynamic';
-import { useEffect, useState } from "react";
+import { useEffect, useState, useCallback } from "react";
 import { useRouter } from "next/navigation";
 import { useAuth } from "@/lib/hooks/useAuth";
 import { useProgress } from "@/lib/hooks/useProgress";
+import { logger } from "@/lib/utils/logger";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import ProgressOverview from "@/components/student/ProgressOverview";
@@ -21,6 +22,23 @@ export default function DashboardPage() {
   const [quizAttempts, setQuizAttempts] = useState<QuizAttempt[]>([]);
   const [dataLoading, setDataLoading] = useState(true);
 
+  // Load progress data callback
+  const loadProgressData = useCallback(async () => {
+    try {
+      setDataLoading(true);
+      const [allProgress, allQuizzes] = await Promise.all([
+        progress.getAllLessonProgressData(),
+        progress.getAllQuizHistoryData(),
+      ]);
+      setLessonProgress(allProgress);
+      setQuizAttempts(allQuizzes);
+    } catch (error) {
+      logger.error("Error loading progress data", error);
+    } finally {
+      setDataLoading(false);
+    }
+  }, [progress]);
+
   // Protect route - redirect if not authenticated
   useEffect(() => {
     if (!loading) {
@@ -35,23 +53,7 @@ export default function DashboardPage() {
     if (user && !loading) {
       loadProgressData();
     }
-  }, [user, loading]);
-
-  const loadProgressData = async () => {
-    try {
-      setDataLoading(true);
-      const [allProgress, allQuizzes] = await Promise.all([
-        progress.getAllLessonProgressData(),
-        progress.getAllQuizHistoryData(),
-      ]);
-      setLessonProgress(allProgress);
-      setQuizAttempts(allQuizzes);
-    } catch (error) {
-      console.error("Error loading progress data:", error);
-    } finally {
-      setDataLoading(false);
-    }
-  };
+  }, [user, loading, loadProgressData]);
 
   // Show loading state while checking auth
   if (loading || !user || !userProfile) {

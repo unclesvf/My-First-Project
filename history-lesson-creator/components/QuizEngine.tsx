@@ -43,6 +43,7 @@ export default function QuizEngine({ questions, lessonId, courseId }: QuizEngine
       {
         questionId: questions[currentQuestion].id,
         selectedIndex: optionIndex,
+        correctIndex: questions[currentQuestion].correctOptionIndex,
         isCorrect,
       },
     ]);

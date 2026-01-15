@@ -2,6 +2,7 @@
 
 import { useState, FormEvent } from 'react';
 import { Mail, Lock, User, AlertCircle } from 'lucide-react';
+import { logger } from '@/lib/utils/logger';
 
 interface EmailSignInFormProps {
   mode: 'signin' | 'signup';
@@ -47,7 +48,7 @@ export default function EmailSignInForm({ mode, onSubmit, className = '' }: Emai
       setPassword('');
       setDisplayName('');
     } catch (err: any) {
-      console.error('Form submission error:', err);
+      logger.error('Form submission error', err);
 
       // User-friendly error messages
       let errorMessage = err.message || 'An error occurred';
