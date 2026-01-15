@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { doc, updateDoc, Timestamp } from 'firebase/firestore';
 import { db } from '@/lib/firebase/config';
+import { logger } from '@/lib/utils/logger';
 
 /**
  * Development-only endpoint to grant test access
@@ -38,7 +39,7 @@ export async function POST(request: NextRequest) {
       message: 'Test access granted successfully',
     });
   } catch (error) {
-    console.error('Error granting test access:', error);
+    logger.error('Error granting test access', error);
     return NextResponse.json(
       { error: 'Failed to grant access' },
       { status: 500 }

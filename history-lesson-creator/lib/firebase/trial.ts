@@ -1,6 +1,7 @@
 import { db } from '@/lib/firebase/config';
 import { doc, updateDoc, getDoc, Timestamp } from 'firebase/firestore';
 import { UserProfile } from '@/lib/firebase/types';
+import { logger } from '@/lib/utils/logger';
 
 const TRIAL_DURATION_DAYS = parseInt(process.env.NEXT_PUBLIC_TRIAL_DAYS || '7', 10);
 
@@ -30,13 +31,13 @@ export const startTrial = async (userId: string): Promise<boolean> => {
 
     // Check if trial has already been started
     if (courseAccess.trialStartedAt) {
-      console.warn('Trial already started for this user');
+      logger.warn('Trial already started for this user');
       return false;
     }
 
     // Check if user already has purchased access
     if (courseAccess.status === 'purchased') {
-      console.warn('User already has purchased access');
+      logger.warn('User already has purchased access');
       return false;
     }
 
@@ -55,7 +56,7 @@ export const startTrial = async (userId: string): Promise<boolean> => {
 
     return true;
   } catch (error) {
-    console.error('Error starting trial:', error);
+    logger.error('Error starting trial', error);
     throw error;
   }
 };
@@ -118,7 +119,7 @@ export const getTrialStatus = async (userId: string): Promise<TrialStatus> => {
       daysRemaining,
     };
   } catch (error) {
-    console.error('Error getting trial status:', error);
+    logger.error('Error getting trial status', error);
     throw error;
   }
 };
@@ -132,7 +133,7 @@ export const hasTrialExpired = async (userId: string): Promise<boolean> => {
     const trialStatus = await getTrialStatus(userId);
     return trialStatus.isExpired;
   } catch (error) {
-    console.error('Error checking trial expiration:', error);
+    logger.error('Error checking trial expiration', error);
     return true; // Default to expired on error for safety
   }
 };
@@ -145,7 +146,7 @@ export const isTrialActive = async (userId: string): Promise<boolean> => {
     const trialStatus = await getTrialStatus(userId);
     return trialStatus.isActive;
   } catch (error) {
-    console.error('Error checking if trial is active:', error);
+    logger.error('Error checking if trial is active', error);
     return false; // Default to inactive on error for safety
   }
 };

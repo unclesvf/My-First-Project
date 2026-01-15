@@ -2,6 +2,7 @@
 
 import { createContext, useContext, useState, useEffect, useCallback, ReactNode } from 'react';
 import { useAuth } from '@/lib/hooks/useAuth';
+import { logger } from '@/lib/utils/logger';
 import {
   getLessonProgress,
   getAllLessonProgress,
@@ -35,7 +36,7 @@ function saveLocalProgress(data: { lessons: Record<string, LessonProgress>; quiz
   try {
     localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(data));
   } catch (e) {
-    console.warn('Failed to save progress to localStorage:', e);
+    logger.warn('Failed to save progress to localStorage', e);
   }
 }
 
@@ -107,7 +108,7 @@ export function ProgressProvider({ children, lessonId }: ProgressProviderProps) 
       const progress = await getLessonProgress(user.uid, lesson);
       setCurrentLessonProgress(progress);
     } catch (error) {
-      console.error('Error loading lesson progress:', error);
+      logger.error('Error loading lesson progress', error);
     } finally {
       setLoading(false);
     }
@@ -121,7 +122,7 @@ export function ProgressProvider({ children, lessonId }: ProgressProviderProps) 
       const progress = await getAllLessonProgress(user.uid);
       setAllLessonProgress(progress);
     } catch (error) {
-      console.error('Error loading all lesson progress:', error);
+      logger.error('Error loading all lesson progress', error);
     }
   };
 
@@ -133,7 +134,7 @@ export function ProgressProvider({ children, lessonId }: ProgressProviderProps) 
       const attempts = await getAllQuizAttempts(user.uid);
       setAllQuizAttempts(attempts);
     } catch (error) {
-      console.error('Error loading all quiz attempts:', error);
+      logger.error('Error loading all quiz attempts', error);
     }
   };
 
@@ -141,7 +142,7 @@ export function ProgressProvider({ children, lessonId }: ProgressProviderProps) 
   const updateStoryProgress = useCallback(
     async (lesson: string, currentChapter: number, totalChapters: number) => {
       if (!user) {
-        console.warn('Cannot update progress: user not authenticated');
+        logger.warn('Cannot update progress: user not authenticated');
         return;
       }
 
@@ -169,7 +170,7 @@ export function ProgressProvider({ children, lessonId }: ProgressProviderProps) 
           // Reload to get server data
           await loadLessonProgress(lesson);
         } catch (error) {
-          console.error('Error updating story progress:', error);
+          logger.error('Error updating story progress', error);
         } finally {
           pendingUpdates.delete(key);
           setPendingUpdates(new Map(pendingUpdates));
@@ -191,7 +192,7 @@ export function ProgressProvider({ children, lessonId }: ProgressProviderProps) 
       masteredCardIds: string[]
     ) => {
       if (!user) {
-        console.warn('Cannot update progress: user not authenticated');
+        logger.warn('Cannot update progress: user not authenticated');
         return;
       }
 
@@ -225,7 +226,7 @@ export function ProgressProvider({ children, lessonId }: ProgressProviderProps) 
           // Reload to get server data
           await loadLessonProgress(lesson);
         } catch (error) {
-          console.error('Error updating flashcard progress:', error);
+          logger.error('Error updating flashcard progress', error);
         } finally {
           pendingUpdates.delete(key);
           setPendingUpdates(new Map(pendingUpdates));
@@ -281,7 +282,7 @@ export function ProgressProvider({ children, lessonId }: ProgressProviderProps) 
         saveLocalProgress(localData);
         setAllQuizAttempts(localData.quizAttempts);
         setCurrentLessonProgress(localData.lessons[lesson]);
-        console.log('Quiz saved to localStorage (dev mode):', { lesson, score, percentage });
+        logger.debug('Quiz saved to localStorage (dev mode)', { lesson, score, percentage });
         return attemptId;
       }
 
@@ -308,7 +309,7 @@ export function ProgressProvider({ children, lessonId }: ProgressProviderProps) 
 
         return attemptId;
       } catch (error) {
-        console.error('Error saving quiz attempt:', error);
+        logger.error('Error saving quiz attempt', error);
 
         // In dev mode, fall back to localStorage on Firestore error
         if (DEV_MODE) {
@@ -339,7 +340,7 @@ export function ProgressProvider({ children, lessonId }: ProgressProviderProps) 
           } as LessonProgress;
           saveLocalProgress(localData);
           setAllQuizAttempts(localData.quizAttempts);
-          console.log('Quiz saved to localStorage (dev fallback):', { lesson, score, percentage });
+          logger.debug('Quiz saved to localStorage (dev fallback)', { lesson, score, percentage });
           return attemptId;
         }
 
@@ -357,7 +358,7 @@ export function ProgressProvider({ children, lessonId }: ProgressProviderProps) 
       try {
         return await getLessonProgress(user.uid, lesson);
       } catch (error) {
-        console.error('Error getting lesson progress:', error);
+        logger.error('Error getting lesson progress', error);
         return null;
       }
     },
@@ -372,7 +373,7 @@ export function ProgressProvider({ children, lessonId }: ProgressProviderProps) 
       try {
         return await getQuizAttempts(user.uid, lesson);
       } catch (error) {
-        console.error('Error getting quiz history:', error);
+        logger.error('Error getting quiz history', error);
         return [];
       }
     },
@@ -386,7 +387,7 @@ export function ProgressProvider({ children, lessonId }: ProgressProviderProps) 
     try {
       return await getAllLessonProgress(user.uid);
     } catch (error) {
-      console.error('Error getting all lesson progress:', error);
+      logger.error('Error getting all lesson progress', error);
       return [];
     }
   }, [user]);
@@ -398,7 +399,7 @@ export function ProgressProvider({ children, lessonId }: ProgressProviderProps) 
     try {
       return await getAllQuizAttempts(user.uid);
     } catch (error) {
-      console.error('Error getting all quiz history:', error);
+      logger.error('Error getting all quiz history', error);
       return [];
     }
   }, [user]);

@@ -83,9 +83,9 @@ export async function POST(request: NextRequest) {
       },
     });
 
-    // Return session URL for client-side redirect
+    // Return session ID and URL for client-side redirect
     return NextResponse.json(
-      { sessionId: session.id },
+      { sessionId: session.id, url: session.url },
       { status: 200 }
     );
   } catch (error) {

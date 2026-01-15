@@ -7,6 +7,7 @@ import { QuizQuestion, QuizResult } from "@/lib/types";
 import { cn } from "@/lib/utils";
 import { useProgress } from "@/lib/hooks/useProgress";
 import { useAuth } from "@/lib/hooks/useAuth";
+import { logger } from "@/lib/utils/logger";
 
 // Development mode flag
 const DEV_MODE = process.env.NODE_ENV === 'development';
@@ -88,10 +89,10 @@ export default function QuizEngine({ questions, lessonId, courseId }: QuizEngine
       )
         .then(() => {
           setQuizSaved(true);
-          console.log('Quiz attempt saved successfully');
+          logger.debug('Quiz attempt saved successfully');
         })
         .catch((error) => {
-          console.error('Failed to save quiz attempt:', error);
+          logger.error('Failed to save quiz attempt', error);
         });
     }
   }, [showResults, quizSaved, user, lessonId, score, questions.length, percentage, results, startTime]);

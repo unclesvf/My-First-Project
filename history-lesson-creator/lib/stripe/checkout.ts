@@ -1,4 +1,5 @@
 import { stripeConfig } from './config';
+import { logger } from '@/lib/utils/logger';
 
 interface CheckoutSessionParams {
   userId: string;
@@ -11,12 +12,13 @@ interface CheckoutSessionParams {
 
 interface CheckoutSessionResponse {
   sessionId: string;
+  url?: string;
   error?: string;
 }
 
 /**
  * Creates a Stripe checkout session
- * Should be called from a server-side API route
+ * Returns session ID and checkout URL for redirect
  */
 export const createCheckoutSession = async (
   params: CheckoutSessionParams
@@ -46,10 +48,10 @@ export const createCheckoutSession = async (
     }
 
     const data = await response.json();
-    return { sessionId: data.sessionId };
+    return { sessionId: data.sessionId, url: data.url };
   } catch (error) {
     const errorMessage = error instanceof Error ? error.message : 'Unknown error occurred';
-    console.error('Error creating checkout session:', errorMessage);
+    logger.error('Error creating checkout session', error);
     return {
       sessionId: '',
       error: errorMessage,
@@ -58,41 +60,26 @@ export const createCheckoutSession = async (
 };
 
 /**
- * Redirects to Stripe Checkout
- * This should be called after getting a session ID from createCheckoutSession
+ * Redirects to Stripe Checkout using the session URL
  */
-export const redirectToCheckout = async (sessionId: string): Promise<void> => {
-  try {
-    const { getStripe } = await import('./config');
-    const stripe = await getStripe();
-
-    if (!stripe) {
-      throw new Error('Stripe failed to initialize');
-    }
-
-    const { error } = await (stripe as any).redirectToCheckout({
-      sessionId,
-    });
-
-    if (error) {
-      throw new Error(error.message || 'Failed to redirect to Stripe');
-    }
-  } catch (error) {
-    const errorMessage = error instanceof Error ? error.message : 'Unknown error occurred';
-    console.error('Error redirecting to checkout:', errorMessage);
-    throw error;
+export const redirectToCheckout = async (checkoutUrl: string): Promise<void> => {
+  if (!checkoutUrl) {
+    throw new Error('Checkout URL is required');
   }
+
+  // Redirect to Stripe checkout
+  window.location.href = checkoutUrl;
 };
 
 /**
  * Handle complete checkout flow: create session and redirect
  */
 export const handleCheckout = async (params: CheckoutSessionParams): Promise<void> => {
-  const { sessionId, error } = await createCheckoutSession(params);
+  const { url, error } = await createCheckoutSession(params);
 
-  if (error || !sessionId) {
+  if (error || !url) {
     throw new Error(error || 'Failed to create checkout session');
   }
 
-  await redirectToCheckout(sessionId);
+  await redirectToCheckout(url);
 };
