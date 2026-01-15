@@ -348,6 +348,8 @@ python scripts/export_prompts_for_higgsfield.py --lesson 10
 | `/project-status` | Quick overview of all systems and completion status |
 | `/organize-images` | Move reviewed images to deployment folders |
 | `/validate-lesson` | Deep validation of lesson content, images, audio, quiz |
+| `/cost-estimate` | Estimate costs/time for Higgsfield API, local FLUX, TTS batches |
+| `/rebuild-lesson` | Regenerate all assets (images + audio) for a single lesson |
 
 ---
 

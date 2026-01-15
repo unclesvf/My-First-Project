@@ -304,3 +304,253 @@ python scripts/historical_image_gen_loop.py --lesson 1 --threshold 80
 **Output:** `generated_images/session_<timestamp>/` with keepers/, fails/, and generation_report.json
 
 **When to Use:** To generate historically accurate chapter images automatically with self-correction
+
+---
+
+### 7. `auto_fix_anachronisms.py`
+
+**Purpose:** Automated pipeline to detect anachronistic objects in images and fix them using AI inpainting.
+
+**Location:** `scripts/auto_fix_anachronisms.py`
+
+**Prerequisites:**
+- Python packages: `torch`, `transformers`, `segment-anything`, `opencv-python`, `pillow`
+- ComfyUI running with FLUX Fill model loaded
+- Run `setup_auto_fix.py` to install dependencies
+
+**Usage:**
+```bash
+# Dry run - detect only, no inpainting
+python scripts/auto_fix_anachronisms.py --image L10_Ch1.png --era "1760s colonial" --dry-run
+
+# Full auto-detection and fix
+python scripts/auto_fix_anachronisms.py --image L10_Ch1.png --era "1760s colonial"
+
+# Batch processing from JSON file
+python scripts/auto_fix_anachronisms.py --batch images_to_check.json
+
+# Adjust detection threshold (default: 0.40)
+python scripts/auto_fix_anachronisms.py --image img.png --era "1776" --threshold 0.50
+```
+
+**How It Works:**
+1. **Detection (Grounding DINO):** Zero-shot object detection finds anachronistic items based on era
+2. **Segmentation (SAM):** Generates precise masks around detected objects
+3. **Inpainting (FLUX Fill):** Replaces masked areas with period-appropriate content
+
+**Supported Eras:**
+- `1600s` - Early colonial period
+- `1700s` - 18th century general
+- `1760s colonial` - Pre-revolutionary America
+- `1776` - Revolutionary War era
+- `1800s early` - Early 19th century
+- `1800s late` - Late 19th century
+
+**Output:** `generated_images/auto_fixed/` with fixed images and masks
+
+**When to Use:** After batch image generation to automatically detect and fix anachronisms
+
+---
+
+### 8. `setup_auto_fix.py`
+
+**Purpose:** Install dependencies for the automated anachronism detection pipeline.
+
+**Location:** `scripts/setup_auto_fix.py`
+
+**Usage:**
+```bash
+python scripts/setup_auto_fix.py
+```
+
+**Installs:**
+- PyTorch with CUDA support
+- Transformers (includes Grounding DINO)
+- Segment Anything (SAM)
+- OpenCV, Pillow
+- SAM ViT-H checkpoint (~2.4 GB)
+
+**When to Use:** One-time setup before using `auto_fix_anachronisms.py`
+
+---
+
+### 9. `fill_inpaint.py`
+
+**Purpose:** Manual mask-based inpainting using FLUX Fill model via ComfyUI.
+
+**Location:** `scripts/fill_inpaint.py`
+
+**Prerequisites:**
+- ComfyUI running with FLUX Fill GGUF model (`flux1-fill-dev-Q8_0.gguf`)
+- Mask image (white = area to replace, black = preserve)
+
+**Usage:**
+```bash
+# Single image inpainting
+python scripts/fill_inpaint.py --image path/to/image.png --mask path/to/mask.png --prompt "colonial desk items"
+
+# With custom output name
+python scripts/fill_inpaint.py --image img.png --mask mask.png --prompt "quill pen and inkpot" --output fixed_image
+
+# Batch processing
+python scripts/fill_inpaint.py --batch inpaint_jobs.json
+```
+
+**Batch JSON Format:**
+```json
+{
+  "jobs": [
+    {
+      "image": "path/to/image.png",
+      "mask": "path/to/mask.png",
+      "prompt": "What should appear in masked area",
+      "output_name": "output_prefix"
+    }
+  ]
+}
+```
+
+**Output:** `generated_images/fill_inpainted/`
+
+**When to Use:** When you have a specific mask and know exactly what to replace
+
+---
+
+### 10. `kontext_refine.py`
+
+**Purpose:** Text-described image editing using FLUX Kontext model.
+
+**Location:** `scripts/kontext_refine.py`
+
+**Prerequisites:**
+- ComfyUI running with FLUX Kontext model (`flux1-dev-kontext_fp8_scaled.safetensors`)
+
+**Usage:**
+```bash
+# Single edit
+python scripts/kontext_refine.py --image img.png --edit "Remove the typewriter and replace with a quill pen"
+
+# Batch processing
+python scripts/kontext_refine.py --batch edits.json
+```
+
+**Output:** `generated_images/kontext_refined/`
+
+**When to Use:** When you want to describe changes in natural language without creating masks
+
+---
+
+### 11. `export_prompts_for_higgsfield.py`
+
+**Purpose:** Export image prompts in formats suitable for Higgsfield.ai / Nano Banana Pro.
+
+**Location:** `scripts/export_prompts_for_higgsfield.py`
+
+**Usage:**
+```bash
+# Full export with metadata (60-dash separators between prompts)
+python scripts/export_prompts_for_higgsfield.py
+
+# Clean prompts only (no metadata)
+python scripts/export_prompts_for_higgsfield.py --format prompts
+
+# CSV format for spreadsheets
+python scripts/export_prompts_for_higgsfield.py --format csv
+
+# Filter by lesson number
+python scripts/export_prompts_for_higgsfield.py --lesson 10
+
+# Filter by era
+python scripts/export_prompts_for_higgsfield.py --era "1776"
+```
+
+**Output Directory:** `prompts_export/`
+- `all_prompts_*.txt` - Full with metadata and 60-dash separators
+- `all_prompts_*_clean.txt` - Prompts only
+- `all_prompts_*.csv` - Spreadsheet format
+
+**When to Use:** To export prompts for use with Higgsfield web UI or other generation services
+
+---
+
+### 12. `higgsfield_batch_generate.py`
+
+**Purpose:** Batch image generation via Higgsfield Cloud API.
+
+**Location:** `scripts/higgsfield_batch_generate.py`
+
+**Prerequisites:**
+- `pip install higgsfield-client`
+- API credentials in `.env.local` or environment variables (`HF_API_KEY`, `HF_API_SECRET`)
+
+**Usage:**
+```bash
+# Dry run - show what would be generated
+python scripts/higgsfield_batch_generate.py --dry-run
+
+# Generate all 265 images
+python scripts/higgsfield_batch_generate.py
+
+# Generate single lesson
+python scripts/higgsfield_batch_generate.py --lesson 10
+```
+
+**IMPORTANT:** API credits are billed SEPARATELY from Higgsfield subscription.
+- Web UI (higgsfield.ai): Unlimited Nano Banana Pro with Ultimate plan
+- Cloud API: ~$0.05-0.06 per image (requires credit purchase)
+
+**Output:** `generated_images/higgsfield_batch/<timestamp>/`
+
+**When to Use:** For programmatic batch generation when willing to pay API credits
+
+---
+
+### 13. `flux2_batch_generate.py`
+
+**Purpose:** Batch generation of all historical images using FLUX.2 Dev via local ComfyUI.
+
+**Location:** `scripts/flux2_batch_generate.py`
+
+**Prerequisites:**
+- ComfyUI running with FLUX.2 Dev FP8 model
+- `start_optimized.bat` for best performance
+
+**Usage:**
+```bash
+python scripts/flux2_batch_generate.py
+```
+
+**Features:**
+- Generates 252 images (skips 24 already-good Chapter 1 images)
+- Fixed prompts for L10 (typewriter issue) and L15 (modern map issue)
+- Auto-saves to ComfyUI output directory
+
+**Output:** `ComfyUI/output/L*_Ch*_*.png`
+
+**When to Use:** For local batch generation using RTX 4090
+
+---
+
+## Models Reference (ComfyUI)
+
+| Model | File | Location | Size | Purpose |
+|-------|------|----------|------|---------|
+| FLUX.2 Dev FP8 | `flux2_dev_fp8mixed.safetensors` | `models/unet/` | ~12 GB | Text-to-image generation |
+| FLUX Fill Q8 | `flux1-fill-dev-Q8_0.gguf` | `models/unet/` | 11.84 GB | Mask-based inpainting |
+| FLUX Kontext FP8 | `flux1-dev-kontext_fp8_scaled.safetensors` | `models/diffusion_models/` | 11.09 GB | Text-based image editing |
+| SAM ViT-H | `sam_vit_h_4b8939.pth` | `models/sam/` | 2.39 GB | Segmentation masks |
+| T5-XXL FP16 | `t5xxl_fp16.safetensors` | `models/clip/` | ~9 GB | Text encoder |
+| CLIP-L | `clip_l.safetensors` | `models/clip/` | ~0.5 GB | Text encoder |
+
+---
+
+## ComfyUI Workflows
+
+| Workflow | File | Purpose |
+|----------|------|---------|
+| FLUX Fill Inpaint | `workflows/flux_fill_inpaint.json` | Mask-based inpainting |
+| Kontext Refine | `workflows/kontext_image_refine.json` | Text-based editing |
+
+---
+
+*Last updated: January 14, 2026*
