@@ -37,6 +37,15 @@
 
 Performed comprehensive code review and fixed high/medium priority issues.
 
+#### Critical Fixes (Latest)
+| Issue | File | Fix |
+|-------|------|-----|
+| Wrong PaywallModal defaults | `components/payment/PaywallModal.tsx` | Changed default courseId from `history-for-homeschoolers` to `age-of-enlightenment` |
+| Wrong LessonWithAccessControl courseId | `components/LessonWithAccessControl.tsx` | Changed courseId from `american-history-7th-grade` to `age-of-enlightenment` |
+| Invalid Stripe API version | `app/api/stripe/create-checkout-session/route.ts` | Removed invalid `apiVersion: '2025-12-15.clover'` |
+| Missing Stripe webhook | `app/api/stripe/webhook/route.ts` | Created webhook handler to verify payments server-side |
+| Missing Firebase Admin SDK | `lib/firebase/admin.ts` | Added Firebase Admin configuration for server-side operations |
+
 #### High Priority Fixes
 | Issue | File | Fix |
 |-------|------|-----|
@@ -56,15 +65,21 @@ Performed comprehensive code review and fixed high/medium priority issues.
 - `components/QuizEngine.tsx`
 - `components/StoryReader.tsx`
 - `components/LessonView.tsx`
+- `components/LessonWithAccessControl.tsx`
+- `components/payment/PaywallModal.tsx`
 - `lib/contexts/ProgressContext.tsx`
 - `lib/firebase/firestore.ts`
 - `lib/firebase/types.ts`
+- `lib/firebase/admin.ts` (NEW)
 - `firestore.rules`
 - `app/api/stripe/create-checkout-session/route.ts`
+- `app/api/stripe/webhook/route.ts` (NEW)
+- `package.json` (added firebase-admin)
+- `.env.local.example` (added Firebase Admin credentials)
 
 #### Build Status
 - TypeScript compilation: ✅ Passing
-- All fixes committed and pushed to GitHub
+- npm dependencies: ✅ 562 packages installed (added firebase-admin)
 
 ---
 

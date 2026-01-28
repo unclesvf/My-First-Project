@@ -60,9 +60,7 @@ export async function POST(request: NextRequest) {
     }
 
     // Initialize Stripe with server-side secret key
-    const stripe = new Stripe(stripeSecretKey, {
-      apiVersion: '2025-12-15.clover',
-    });
+    const stripe = new Stripe(stripeSecretKey);
 
     // Create checkout session
     const session = await stripe.checkout.sessions.create({
