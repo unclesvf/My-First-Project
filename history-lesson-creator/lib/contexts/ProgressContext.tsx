@@ -1,6 +1,6 @@
 "use client";
 
-import { createContext, useContext, useState, useEffect, useCallback, ReactNode } from 'react';
+import { createContext, useContext, useState, useEffect, useCallback, ReactNode, useRef } from 'react';
 import { useAuth } from '@/lib/hooks/useAuth';
 import { logger } from '@/lib/utils/logger';
 import {
@@ -17,9 +17,9 @@ import type { LessonProgress, QuizAttempt, QuizAnswer } from '@/lib/firebase/typ
 import type { QuizResult } from '@/lib/types';
 import { Timestamp } from 'firebase/firestore';
 
-// Development mode - use localStorage fallback when Firestore unavailable
-const DEV_MODE = process.env.NODE_ENV === 'development';
-const LOCAL_STORAGE_KEY = 'dev_progress_data';
+// Use localStorage fallback when Firestore unavailable or user not logged in
+const USE_LOCAL_STORAGE = true; // Always allow local storage fallback
+const LOCAL_STORAGE_KEY = 'history_app_progress';
 
 // Helper functions for localStorage fallback
 function getLocalProgress(): { lessons: Record<string, LessonProgress>; quizAttempts: QuizAttempt[] } {
@@ -88,35 +88,29 @@ export function ProgressProvider({ children, lessonId }: ProgressProviderProps) 
   const [allQuizAttempts, setAllQuizAttempts] = useState<QuizAttempt[]>([]);
   const [loading, setLoading] = useState(false);
 
-  // Debounce timer for batch updates
-  const [pendingUpdates, setPendingUpdates] = useState<Map<string, NodeJS.Timeout>>(new Map());
-
-  // Load lesson progress on mount or when lessonId changes
-  useEffect(() => {
-    if (user && lessonId) {
-      loadLessonProgress(lessonId);
-    } else {
-      setCurrentLessonProgress(null);
-    }
-  }, [user, lessonId]);
+  // Debounce timers for batch updates
+  const pendingUpdatesRef = useRef<Map<string, NodeJS.Timeout>>(new Map());
 
   // Load lesson progress from Firestore
-  const loadLessonProgress = async (lesson: string) => {
-    if (!user) return;
+  const loadLessonProgress = useCallback(
+    async (lesson: string) => {
+      if (!user) return;
 
-    setLoading(true);
-    try {
-      const progress = await getLessonProgress(user.uid, lesson);
-      setCurrentLessonProgress(progress);
-    } catch (error) {
-      logger.error('Error loading lesson progress', error);
-    } finally {
-      setLoading(false);
-    }
-  };
+      setLoading(true);
+      try {
+        const progress = await getLessonProgress(user.uid, lesson);
+        setCurrentLessonProgress(progress);
+      } catch (error) {
+        logger.error('Error loading lesson progress', error);
+      } finally {
+        setLoading(false);
+      }
+    },
+    [user]
+  );
 
   // Load all lesson progress from Firestore
-  const loadAllLessonProgress = async () => {
+  const loadAllLessonProgress = useCallback(async () => {
     if (!user) return;
 
     try {
@@ -125,10 +119,10 @@ export function ProgressProvider({ children, lessonId }: ProgressProviderProps) 
     } catch (error) {
       logger.error('Error loading all lesson progress', error);
     }
-  };
+  }, [user]);
 
   // Load all quiz attempts from Firestore
-  const loadAllQuizAttempts = async () => {
+  const loadAllQuizAttempts = useCallback(async () => {
     if (!user) return;
 
     try {
@@ -137,12 +131,45 @@ export function ProgressProvider({ children, lessonId }: ProgressProviderProps) 
     } catch (error) {
       logger.error('Error loading all quiz attempts', error);
     }
-  };
+  }, [user]);
+
+  // Load lesson progress on mount or when lessonId changes
+  useEffect(() => {
+    if (user && lessonId) {
+      loadLessonProgress(lessonId);
+    } else if (!user && lessonId && USE_LOCAL_STORAGE) {
+      // Guest mode: Load from local storage
+      const localData = getLocalProgress();
+      setCurrentLessonProgress(localData.lessons[lessonId] || null);
+    } else {
+      setCurrentLessonProgress(null);
+    }
+  }, [user, lessonId, loadLessonProgress]);
 
   // Debounced story progress update
   const updateStoryProgress = useCallback(
     async (lesson: string, currentChapter: number, totalChapters: number) => {
       if (!user) {
+        if (USE_LOCAL_STORAGE) {
+           // Guest mode: update local storage
+           const localData = getLocalProgress();
+           localData.lessons[lesson] = {
+             ...localData.lessons[lesson],
+             userId: 'guest-user',
+             lessonId: lesson,
+             status: currentChapter === totalChapters - 1 ? 'completed' : 'in_progress',
+             storyProgress: {
+               currentChapter,
+               chaptersCompleted: [],
+               totalChapters,
+             },
+             lastAccessedAt: Timestamp.now(),
+           } as LessonProgress;
+           
+           saveLocalProgress(localData);
+           setCurrentLessonProgress(localData.lessons[lesson]);
+           return;
+        }
         logger.warn('Cannot update progress: user not authenticated');
         return;
       }
@@ -161,6 +188,7 @@ export function ProgressProvider({ children, lessonId }: ProgressProviderProps) 
 
       // Debounce Firestore write
       const key = `story-${lesson}`;
+      const pendingUpdates = pendingUpdatesRef.current;
       if (pendingUpdates.has(key)) {
         clearTimeout(pendingUpdates.get(key)!);
       }
@@ -174,14 +202,12 @@ export function ProgressProvider({ children, lessonId }: ProgressProviderProps) 
           logger.error('Error updating story progress', error);
         } finally {
           pendingUpdates.delete(key);
-          setPendingUpdates(new Map(pendingUpdates));
         }
       }, 500); // 500ms debounce
 
       pendingUpdates.set(key, timer);
-      setPendingUpdates(new Map(pendingUpdates));
     },
-    [user, pendingUpdates]
+    [user, loadLessonProgress]
   );
 
   // Debounced flashcard progress update
@@ -193,6 +219,28 @@ export function ProgressProvider({ children, lessonId }: ProgressProviderProps) 
       masteredCardIds: string[]
     ) => {
       if (!user) {
+        if (USE_LOCAL_STORAGE) {
+          // Guest mode: update local storage
+          const localData = getLocalProgress();
+          const existing = localData.lessons[lesson] || {};
+          
+          localData.lessons[lesson] = {
+            ...existing,
+            userId: 'guest-user',
+            lessonId: lesson,
+            flashcardProgress: {
+               cardsViewed: cardIndex + 1,
+               cardsTotal: totalCards,
+               lastCardIndex: cardIndex,
+               masteredCards: masteredCardIds,
+            },
+            lastAccessedAt: Timestamp.now(),
+          } as LessonProgress;
+
+          saveLocalProgress(localData);
+          setCurrentLessonProgress(localData.lessons[lesson]);
+          return;
+        }
         logger.warn('Cannot update progress: user not authenticated');
         return;
       }
@@ -211,6 +259,7 @@ export function ProgressProvider({ children, lessonId }: ProgressProviderProps) 
 
       // Debounce Firestore write
       const key = `flashcard-${lesson}`;
+      const pendingUpdates = pendingUpdatesRef.current;
       if (pendingUpdates.has(key)) {
         clearTimeout(pendingUpdates.get(key)!);
       }
@@ -230,14 +279,12 @@ export function ProgressProvider({ children, lessonId }: ProgressProviderProps) 
           logger.error('Error updating flashcard progress', error);
         } finally {
           pendingUpdates.delete(key);
-          setPendingUpdates(new Map(pendingUpdates));
         }
       }, 500); // 500ms debounce
 
       pendingUpdates.set(key, timer);
-      setPendingUpdates(new Map(pendingUpdates));
     },
-    [user, pendingUpdates]
+    [user, loadLessonProgress]
   );
 
   // Save quiz attempt (no debounce - immediate save)
@@ -258,8 +305,8 @@ export function ProgressProvider({ children, lessonId }: ProgressProviderProps) 
         isCorrect: answer.isCorrect,
       }));
 
-      // In dev mode without user, use localStorage
-      if (DEV_MODE && !user) {
+      // Guest mode or dev fallback
+      if (USE_LOCAL_STORAGE && !user) {
         const attemptId = `local-${Date.now()}`;
         const localData = getLocalProgress();
         const newAttempt: QuizAttempt = {
@@ -320,8 +367,8 @@ export function ProgressProvider({ children, lessonId }: ProgressProviderProps) 
       } catch (error) {
         logger.error('Error saving quiz attempt', error);
 
-        // In dev mode, fall back to localStorage on Firestore error
-        if (DEV_MODE) {
+        // Fall back to localStorage on Firestore error
+        if (USE_LOCAL_STORAGE) {
           const attemptId = `local-${Date.now()}`;
           const localData = getLocalProgress();
           const newAttempt: QuizAttempt = {
@@ -356,7 +403,7 @@ export function ProgressProvider({ children, lessonId }: ProgressProviderProps) 
         throw error;
       }
     },
-    [user]
+    [user, loadAllQuizAttempts, loadLessonProgress]
   );
 
   // Get lesson progress data
@@ -418,19 +465,20 @@ export function ProgressProvider({ children, lessonId }: ProgressProviderProps) 
     if (lessonId) {
       await loadLessonProgress(lessonId);
     }
-  }, [lessonId, user]);
+  }, [lessonId, loadLessonProgress]);
 
   // Refresh all progress
   const refreshAllProgress = useCallback(async () => {
     await Promise.all([loadAllLessonProgress(), loadAllQuizAttempts()]);
-  }, [user]);
+  }, [loadAllLessonProgress, loadAllQuizAttempts]);
 
   // Cleanup pending updates on unmount
   useEffect(() => {
+    const pendingUpdates = pendingUpdatesRef.current;
     return () => {
-      pendingUpdates.forEach(timer => clearTimeout(timer));
+      pendingUpdates.forEach((timer) => clearTimeout(timer));
     };
-  }, [pendingUpdates]);
+  }, []);
 
   const value: ProgressContextType = {
     currentLessonProgress,

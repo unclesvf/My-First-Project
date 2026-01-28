@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import { Lesson } from "@/lib/types";
 import { useAuth } from "@/lib/hooks/useAuth";
 import { useTrialStatus } from "@/lib/hooks/useTrialStatus";
-import { checkLessonAccess } from "@/lib/utils/accessControl";
+import { checkLessonAccess, getFreeLessonsCount } from "@/lib/utils/accessControl";
 import LessonView from "@/components/LessonView";
 import { PaywallModal } from "@/components/payment/PaywallModal";
 import { TrialBanner } from "@/components/payment/TrialBanner";
@@ -15,6 +15,7 @@ const DEV_BYPASS = process.env.NODE_ENV === "development";
 
 interface LessonWithAccessControlProps {
   lesson: Lesson;
+  lessonNumber?: number;
 }
 
 /**
@@ -24,6 +25,7 @@ interface LessonWithAccessControlProps {
  */
 export default function LessonWithAccessControl({
   lesson,
+  lessonNumber,
 }: LessonWithAccessControlProps) {
   const { user, userProfile, loading: authLoading } = useAuth();
   const { isOnTrial, trialExpired } = useTrialStatus();
@@ -33,8 +35,16 @@ export default function LessonWithAccessControl({
     null
   );
 
-  // Extract lesson number from lesson id (e.g., "lesson-1" -> 1)
-  const lessonNumber = parseInt(lesson.id.split("-")[1] || "0", 10);
+  const parsedLessonNumber = parseInt(
+    lesson.id.match(/\d+/)?.[0] || "",
+    10
+  );
+  const resolvedLessonNumber =
+    typeof lessonNumber === "number" && lessonNumber > 0
+      ? lessonNumber
+      : Number.isFinite(parsedLessonNumber) && parsedLessonNumber > 0
+      ? parsedLessonNumber
+      : getFreeLessonsCount() + 1;
 
   // Determine course ID (could be extracted from lesson in the future)
   const courseId = "american-history-7th-grade";
@@ -52,7 +62,7 @@ export default function LessonWithAccessControl({
     }
 
     // Check access for this lesson
-    const accessResult = checkLessonAccess(lessonNumber, userProfile);
+    const accessResult = checkLessonAccess(resolvedLessonNumber, userProfile);
 
     if (accessResult.allowed) {
       setIsAccessGranted(true);
@@ -63,11 +73,11 @@ export default function LessonWithAccessControl({
       setAccessDeniedReason(accessResult.reason || null);
 
       // Show paywall modal for premium lessons
-      if (lessonNumber > 8) {
+      if (resolvedLessonNumber > getFreeLessonsCount()) {
         setShowPaywall(true);
       }
     }
-  }, [lessonNumber, userProfile, authLoading]);
+  }, [resolvedLessonNumber, userProfile, authLoading]);
 
   // In development, skip auth loading check
   // Show loading state while auth is loading
@@ -122,7 +132,7 @@ export default function LessonWithAccessControl({
   }
 
   // Access denied - show appropriate message based on lesson type
-  if (lessonNumber > 8) {
+  if (resolvedLessonNumber > getFreeLessonsCount()) {
     // Premium lesson - show paywall modal for authenticated users
     // For unauthenticated users, show "Sign up to continue" message
     return (

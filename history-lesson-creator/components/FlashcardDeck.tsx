@@ -21,13 +21,35 @@ export default function FlashcardDeck({ flashcards, lessonId }: FlashcardDeckPro
   const [isFlipped, setIsFlipped] = useState(false);
   const [masteredCards, setMasteredCards] = useState<Set<string>>(new Set());
 
+  const getCardId = useCallback((card: Flashcard) => {
+    if (card.id) return card.id;
+    return `${card.term}-${card.definition}`;
+  }, []);
+
+  const normalizeMasteredCardIds = useCallback(
+    (ids: string[]) => {
+      return ids
+        .map((id) => {
+          if (/^\d+$/.test(id)) {
+            const legacyIndex = Number(id);
+            const card = flashcards[legacyIndex];
+            return card ? getCardId(card) : id;
+          }
+          return id;
+        })
+        .filter((id) => id);
+    },
+    [flashcards, getCardId]
+  );
+
   // Load mastered cards from progress
   useEffect(() => {
     const fp = currentLessonProgress?.flashcardProgress;
     if (fp && typeof fp === 'object' && 'masteredCards' in fp && fp.masteredCards) {
-      setMasteredCards(new Set(fp.masteredCards));
+      const normalized = normalizeMasteredCardIds(fp.masteredCards);
+      setMasteredCards(new Set(normalized));
     }
-  }, [currentLessonProgress]);
+  }, [currentLessonProgress, normalizeMasteredCardIds]);
 
   // Track progress when card changes
   useEffect(() => {
@@ -39,7 +61,7 @@ export default function FlashcardDeck({ flashcards, lessonId }: FlashcardDeckPro
         Array.from(masteredCards)
       );
     }
-  }, [currentIndex, user, lessonId, cards.length, masteredCards]);
+  }, [currentIndex, user, lessonId, cards.length, masteredCards, updateFlashcardProgress]);
 
   const goToNext = useCallback(() => {
     if (currentIndex < cards.length - 1) {
@@ -70,7 +92,7 @@ export default function FlashcardDeck({ flashcards, lessonId }: FlashcardDeckPro
   }, [currentIndex, goToNext, goToPrevious]);
 
   const toggleMastered = () => {
-    const currentCardId = `${currentIndex}`;
+    const currentCardId = getCardId(cards[currentIndex]);
     const newMasteredCards = new Set(masteredCards);
 
     if (newMasteredCards.has(currentCardId)) {
@@ -95,7 +117,7 @@ export default function FlashcardDeck({ flashcards, lessonId }: FlashcardDeckPro
     setIsFlipped(false);
   };
 
-  const isCurrentCardMastered = masteredCards.has(`${currentIndex}`);
+  const isCurrentCardMastered = masteredCards.has(getCardId(cards[currentIndex]));
 
   return (
     <div className="mx-auto max-w-2xl">
@@ -258,7 +280,7 @@ export default function FlashcardDeck({ flashcards, lessonId }: FlashcardDeckPro
 
       {/* Keyboard Hints */}
       <div className="mt-6 text-center text-sm text-gray-500">
-        Use arrow keys to navigate • Space/Enter to flip
+        Use arrow keys to navigate; Space/Enter to flip
       </div>
     </div>
   );

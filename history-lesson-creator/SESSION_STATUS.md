@@ -1,6 +1,6 @@
 # History for Homeschoolers - Session Status
 
-**Last Updated:** January 13, 2026
+**Last Updated:** January 28, 2026
 **Project Path:** `C:\Users\scott\My-First-Project\My-First-Project\history-lesson-creator`
 **Git Root:** `C:\Users\scott\My-First-Project\My-First-Project` (one level up!)
 
@@ -200,7 +200,67 @@ history-lesson-creator/
 
 ## Recent Changes (January 2026)
 
-### January 13, 2026 (Latest Session)
+### January 28, 2026
+1. Fixed flashcard mastery tracking to use stable card IDs and migrated legacy index saves
+2. Hardened progress debouncing with ref-backed timers to avoid stale updates
+3. Lesson access control now uses explicit lesson numbers (no dependency on ID format)
+4. Quiz engine guards empty question sets and avoids NaN percentages
+5. Role selection modal is dismissible with a per-user "not now" flag
+6. Dashboard now redirects by role to `/student` or `/teacher`
+7. UI updates: access badges on lesson cards, sticky lesson tabs, review links in quiz history
+8. Trial banner no longer overlaps nav (sticky), export page confirms mass downloads and supports copy summary
+9. Mojibake cleanup across UI text labels
+10. `npm run build` passes clean; React Hook warnings resolved and `outputFileTracingRoot` set
+11. `npm run lint` passes clean (Next.js notes `next lint` deprecation)
+
+### January 15, 2026 (Latest Session)
+**Full Batch Image Validation & Regeneration Pipeline**
+
+1. **Validated all 276 FLUX.2 Dev generated images:**
+   - Created new evaluation session: `generated_images/flux2_dev_eval_20260115_122256/`
+   - Copied all images from `C:\Users\scott\ComfyUI\output\` with proper naming
+   - Combined era data from L1-2 and L3-51 prompt files
+
+2. **Two-VLM Pipeline Results:**
+   - First pass (MiniCPM-V): 268/276 passed (97%)
+   - Second pass (Qwen2.5-VL): 261/268 accepted (97%)
+   - 15 images failed validation and require regeneration
+
+3. **Failed Images (15 total):**
+   | Image | First Pass | Second Pass | Status |
+   |-------|------------|-------------|--------|
+   | L1_Ch1 | 20 | N/A | First pass fail |
+   | L1_Ch2 | 20 | N/A | First pass fail |
+   | L1_Ch3 | 25 | N/A | First pass fail |
+   | L7_Ch5 | 20 | N/A | First pass fail |
+   | L9_Ch1 | 98 | 20 | Second pass reject |
+   | L10_Ch1 | 95 | 0 | Second pass reject (typewriter detected!) |
+   | L13_Ch2 | 65 | N/A | First pass fail |
+   | L19_Ch1 | 65 | N/A | First pass fail |
+   | L19_Ch5 | 65 | N/A | First pass fail |
+   | L28_Ch6 | 95 | 20 | Second pass reject |
+   | L37_Ch3 | 95 | 20 | Second pass reject |
+   | L42_Ch5 | 95 | 0 | Second pass reject |
+   | L48_Ch4 | 85 | 20 | Second pass reject |
+   | L49_Ch3 | 95 | 0 | Second pass reject |
+   | L50_Ch3 | 50 | N/A | First pass fail |
+
+4. **VLM Pipeline Validation:**
+   - Qwen2.5-VL successfully caught anachronisms MiniCPM-V missed (e.g., typewriter in L10_Ch1)
+   - Two-VLM pipeline working as designed - more lenient first pass, strict second pass
+
+5. **New Scripts Created:**
+   - `scripts/regenerate_cycle1.py` - Regeneration script for flux2_dev_eval session
+
+6. **Regeneration Cycle 1 (In Progress):**
+   - Using FLUX.2 Dev FP8 (`flux2_dev_fp8mixed.safetensors`)
+   - Settings: 1344x768, 28 steps, euler sampler, beta scheduler
+   - Queue processing: L01_Ch1-3 done, L07_Ch5 in progress
+   - Remaining: L09, L10, L13, L19, L28, L37, L42, L48, L49, L50 chapters
+   - Estimated completion: ~60 minutes from start
+   - After generation: Automatic VLM re-evaluation (MiniCPM-V + Qwen2.5-VL)
+
+### January 13, 2026
 **Historical Image Generation Pipeline - Lessons 1 & 2 Complete**
 1. **Fixed VLM evaluation issues:**
    - Replaced llama3.2-vision (too harsh, avg 58) with MiniCPM-V (avg 75) for first pass

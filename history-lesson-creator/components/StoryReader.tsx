@@ -41,7 +41,7 @@ export default function StoryReader({ narrator, chapters, lessonId }: StoryReade
         setShowCompletionBadge(true);
       }
     }
-  }, [currentChapter, user, lessonId, chapters.length]);
+  }, [currentChapter, user, lessonId, chapters.length, updateStoryProgress]);
 
   const goToNextChapter = () => {
     if (currentChapter < chapters.length - 1) {

@@ -68,8 +68,9 @@ export default function QuizEngine({ questions, lessonId, courseId }: QuizEngine
     setQuizSaved(false);
   };
 
+  const totalQuestions = questions.length;
   const score = results.filter((r) => r.isCorrect).length;
-  const percentage = Math.round((score / questions.length) * 100);
+  const percentage = totalQuestions > 0 ? Math.round((score / totalQuestions) * 100) : 0;
 
   // Save quiz attempt when results are shown
   useEffect(() => {
@@ -96,7 +97,7 @@ export default function QuizEngine({ questions, lessonId, courseId }: QuizEngine
           logger.error('Failed to save quiz attempt', error);
         });
     }
-  }, [showResults, quizSaved, user, lessonId, score, questions.length, percentage, results, startTime]);
+  }, [showResults, quizSaved, user, lessonId, score, questions.length, percentage, results, startTime, saveQuizAttempt]);
 
   if (showResults) {
     return (
@@ -193,6 +194,21 @@ export default function QuizEngine({ questions, lessonId, courseId }: QuizEngine
           </div>
         </div>
       </motion.div>
+    );
+  }
+
+  if (totalQuestions === 0) {
+    return (
+      <div className="mx-auto max-w-2xl">
+        <div className="card-base p-8 text-center">
+          <h3 className="mb-2 text-2xl font-bold text-gray-900">
+            No Quiz Questions Yet
+          </h3>
+          <p className="text-gray-600">
+            This lesson does not have quiz questions available right now.
+          </p>
+        </div>
+      </div>
     );
   }
 

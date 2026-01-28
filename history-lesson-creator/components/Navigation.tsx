@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Link from "next/link";
 import { Book, User, LogOut, GraduationCap, Users, Menu } from "lucide-react";
 import { Menu as HeadlessMenu, Transition } from '@headlessui/react';
@@ -22,8 +22,31 @@ export default function Navigation() {
     }
   };
 
-  // Show role selection modal if user is authenticated but has no role
   const showRoleModal = user && userProfile && !userProfile.role;
+
+  useEffect(() => {
+    if (!showRoleModal) {
+      setRoleModalOpen(false);
+      return;
+    }
+
+    if (typeof window === 'undefined' || !user) {
+      return;
+    }
+
+    const key = `role-modal-dismissed-${user.uid}`;
+    const dismissed = localStorage.getItem(key) === 'true';
+    setRoleModalOpen(!dismissed);
+  }, [showRoleModal, user]);
+
+  const handleRoleModalClose = () => {
+    setRoleModalOpen(false);
+    if (!user) return;
+    const key = `role-modal-dismissed-${user.uid}`;
+    if (typeof window !== "undefined") {
+      localStorage.setItem(key, "true");
+    }
+  };
 
   return (
     <>
@@ -163,8 +186,15 @@ export default function Navigation() {
       {/* Role Selection Modal - shown if user has no role */}
       {showRoleModal && (
         <RoleSelectionModal
-          isOpen={true}
-          onComplete={() => setRoleModalOpen(false)}
+          isOpen={roleModalOpen}
+          onComplete={() => {
+            setRoleModalOpen(false);
+            if (user && typeof window !== "undefined") {
+              const key = `role-modal-dismissed-${user.uid}`;
+              localStorage.removeItem(key);
+            }
+          }}
+          onClose={handleRoleModalClose}
         />
       )}
     </>

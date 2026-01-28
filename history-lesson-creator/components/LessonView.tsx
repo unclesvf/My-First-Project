@@ -167,32 +167,34 @@ function LessonContent({ lesson }: LessonViewProps) {
             )}
 
             {/* Tabs */}
-            <div className="mb-8 flex gap-2 overflow-x-auto border-b border-gray-200">
-              {tabs.map((tab) => {
-                const Icon = tab.icon;
-                return (
-                  <button
-                    key={tab.id}
-                    onClick={() => setActiveTab(tab.id)}
-                    className={cn(
-                      "relative flex items-center gap-2 whitespace-nowrap px-6 py-3 font-semibold transition-colors",
-                      activeTab === tab.id
-                        ? "text-primary-700"
-                        : "text-gray-600 hover:text-gray-900"
-                    )}
-                  >
-                    <Icon className="h-5 w-5" />
-                    {tab.label}
-                    {activeTab === tab.id && (
-                      <motion.div
-                        layoutId="activeTab"
-                        className="absolute bottom-0 left-0 right-0 h-0.5 bg-primary-600"
-                        transition={{ type: "spring", stiffness: 500, damping: 30 }}
-                      />
-                    )}
-                  </button>
-                );
-              })}
+            <div className="sticky top-16 z-30 -mx-4 mb-8 bg-white/95 px-4 pt-2 backdrop-blur sm:-mx-6 sm:px-6 lg:-mx-8 lg:px-8">
+              <div className="flex gap-2 overflow-x-auto border-b border-gray-200">
+                {tabs.map((tab) => {
+                  const Icon = tab.icon;
+                  return (
+                    <button
+                      key={tab.id}
+                      onClick={() => setActiveTab(tab.id)}
+                      className={cn(
+                        "relative flex items-center gap-2 whitespace-nowrap px-6 py-3 font-semibold transition-colors",
+                        activeTab === tab.id
+                          ? "text-primary-700"
+                          : "text-gray-600 hover:text-gray-900"
+                      )}
+                    >
+                      <Icon className="h-5 w-5" />
+                      {tab.label}
+                      {activeTab === tab.id && (
+                        <motion.div
+                          layoutId="activeTab"
+                          className="absolute bottom-0 left-0 right-0 h-0.5 bg-primary-600"
+                          transition={{ type: "spring", stiffness: 500, damping: 30 }}
+                        />
+                      )}
+                    </button>
+                  );
+                })}
+              </div>
             </div>
 
             {/* Tab Content */}

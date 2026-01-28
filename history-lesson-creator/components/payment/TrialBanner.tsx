@@ -81,7 +81,7 @@ export function TrialBanner({ courseId = 'history-for-homeschoolers', courseName
 
   if (isExpired) {
     return (
-      <div className="fixed top-0 left-0 right-0 z-40 bg-red-50 border-b-2 border-red-300 shadow-sm">
+      <div className="sticky top-0 z-40 bg-red-50 border-b-2 border-red-300 shadow-sm">
         <div className="max-w-7xl mx-auto px-4 py-3 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between gap-4">
             <div className="flex items-center gap-3">
@@ -137,7 +137,7 @@ export function TrialBanner({ courseId = 'history-for-homeschoolers', courseName
 
   // Active trial banner
   return (
-    <div className={`fixed top-0 left-0 right-0 z-40 border-b-2 shadow-sm transition-colors ${
+    <div className={`sticky top-0 z-40 border-b-2 shadow-sm transition-colors ${
       isWarning
         ? 'bg-yellow-50 border-yellow-300'
         : 'bg-blue-50 border-blue-300'

@@ -11,7 +11,8 @@ export async function generateStaticParams() {
 
 export default async function LessonPage(props: { params: Promise<{ id: string }> }) {
   const params = await props.params;
-  const lesson = lessons.find((l) => l.id === params.id);
+  const lessonIndex = lessons.findIndex((l) => l.id === params.id);
+  const lesson = lessonIndex >= 0 ? lessons[lessonIndex] : undefined;
 
   if (!lesson) {
     return (
@@ -29,5 +30,10 @@ export default async function LessonPage(props: { params: Promise<{ id: string }
     );
   }
 
-  return <LessonWithAccessControl lesson={lesson} />;
+  return (
+    <LessonWithAccessControl
+      lesson={lesson}
+      lessonNumber={lessonIndex + 1}
+    />
+  );
 }

@@ -87,12 +87,12 @@ export function PaywallModal({ isOpen, onClose, courseId = 'history-for-homescho
   };
 
   const benefits = [
-    { icon: '50', label: '50+ Engaging Lessons' },
-    { icon: '📚', label: 'Interactive Flashcards' },
-    { icon: '✓', label: 'Comprehensive Quizzes' },
-    { icon: '📊', label: 'Progress Tracking' },
-    { icon: '🏆', label: 'Achievement Badges' },
-    { icon: '♾️', label: 'Lifetime Access' },
+    { label: '50+ Engaging Lessons' },
+    { label: 'Interactive Flashcards' },
+    { label: 'Comprehensive Quizzes' },
+    { label: 'Progress Tracking' },
+    { label: 'Achievement Badges' },
+    { label: 'Lifetime Access' },
   ];
 
   const showTrialOffer = !isOnTrial && !trialExpired;
@@ -228,10 +228,7 @@ export function PaywallModal({ isOpen, onClose, courseId = 'history-for-homescho
                                 Processing...
                               </>
                             ) : (
-                              <>
-                                💳
-                                Purchase Course for $19.99
-                              </>
+                              <>Purchase Course for $19.99</>
                             )}
                           </button>
                         </div>

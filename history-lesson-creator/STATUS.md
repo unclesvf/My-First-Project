@@ -1,6 +1,6 @@
 # History for Homeschoolers - Project Status
 
-**Last Updated:** January 15, 2026
+**Last Updated:** January 28, 2026
 **Project Path:** `C:\Users\scott\My-First-Project\My-First-Project\history-lesson-creator`
 
 ---
@@ -27,6 +27,23 @@ npm run dev
 | **Firebase Auth** | ✅ CONFIGURED | Email/password + Google OAuth |
 | **Stripe Payments** | ✅ CONFIGURED | Live keys, $19.99 course price |
 | **Firestore Rules** | ⚠️ NEEDS DEPLOY | Run: `firebase login && firebase deploy --only firestore:rules` |
+
+---
+
+## Recent Session (January 28, 2026)
+
+### UI and Logic Improvements
+- Flashcard mastery now uses stable card IDs (shuffle-safe) with legacy index migration
+- Progress debouncing uses a ref-backed timer map to avoid stale updates
+- Lesson access control uses explicit lesson numbers (no reliance on lesson ID format)
+- Quiz engine guards empty question sets and avoids NaN percentages
+- Role selection modal is dismissible and respects a per-user "not now" flag
+- Dashboard now redirects to `/student` or `/teacher` based on role
+- UI updates: access badges on lesson cards, sticky lesson tabs, review links in quiz history
+- Trial banner is sticky (no nav overlap), export page confirms mass downloads and supports copy summary
+- Mojibake cleanup across UI text labels
+- Build: `npm run build` passes clean; React Hook warnings resolved and `outputFileTracingRoot` set to avoid lockfile root warning
+- Lint: `npm run lint` passes clean (Next.js notes `next lint` deprecation)
 
 ---
 

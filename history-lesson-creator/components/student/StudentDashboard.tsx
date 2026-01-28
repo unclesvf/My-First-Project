@@ -209,15 +209,15 @@ export default function StudentDashboard() {
                       <div className="flex items-center gap-2">
                         {isCompleted ? (
                           <span className="rounded-full bg-green-100 px-2 py-1 text-xs font-semibold text-green-700">
-                            ✓ Completed
+                            Completed
                           </span>
                         ) : isStarted ? (
                           <span className="rounded-full bg-blue-100 px-2 py-1 text-xs font-semibold text-blue-700">
-                            In Progress
+                            Continue
                           </span>
                         ) : (
                           <span className="rounded-full bg-gray-100 px-2 py-1 text-xs font-semibold text-gray-700">
-                            Not Started
+                            Start
                           </span>
                         )}
                       </div>

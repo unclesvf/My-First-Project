@@ -3,6 +3,7 @@
 ## ✅ ALL PHASES COMPLETE
 
 **Last Audit:** January 2025
+**Last Updated:** January 28, 2026
 **Build Status:** ✅ PASSING
 
 ---
@@ -150,7 +151,8 @@ Firebase-based progress tracking with:
 
 ### Build Status: ✅ PASSING
 ```
-npm run build - Success
+npm run build - Success (Jan 28, 2026); React Hook deps resolved, outputFileTracingRoot set
+npm run lint - Success (Jan 28, 2026); Next.js notes `next lint` deprecation
 ```
 
 ### Core Application Files
@@ -180,6 +182,14 @@ npm run build - Success
 - ✅ saveQuizAttempt parameter fix
 - ✅ Suspense boundaries added for useSearchParams (Next.js 14)
 - ✅ ProgressProvider context added to dashboard layout
+- ✅ Flashcard mastery tracking uses stable card IDs (shuffle-safe)
+- ✅ Progress debouncing uses ref-backed timer map
+- ✅ Lesson access uses explicit lesson numbers (no ID parsing dependency)
+- ✅ Quiz engine handles empty question sets safely
+- ✅ Role selection modal is dismissible with per-user deferral
+- ✅ Dashboard redirects to role-specific routes
+- ✅ UI polish: lesson access badges, sticky lesson tabs, quiz history titles/links
+- ✅ Trial banner no longer overlaps nav; export page confirms mass downloads/copy summary
 
 ### Dependencies
 - Next.js 14 (App Router)
@@ -230,6 +240,6 @@ If you want to continue developing:
 
 ---
 
-**Last Updated:** January 2025
+**Last Updated:** January 28, 2026
 **Status:** ALL PHASES COMPLETE - Application fully functional
 **Build:** PASSING

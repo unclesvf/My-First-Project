@@ -5,6 +5,7 @@ import { useState } from 'react';
 
 export default function ExportLessonsPage() {
   const [exporting, setExporting] = useState(false);
+  const [copying, setCopying] = useState(false);
 
   // Generate combined markdown file
   const generateCombinedMarkdown = () => {
@@ -88,7 +89,7 @@ export default function ExportLessonsPage() {
       content += `${qIndex + 1}. ${question.question}\n`;
       question.options.forEach((option, optIndex) => {
         const isCorrect = optIndex === question.correctOptionIndex;
-        content += `   ${String.fromCharCode(65 + optIndex)}. ${option}${isCorrect ? ' ✓' : ''}\n`;
+        content += `   ${String.fromCharCode(65 + optIndex)}. ${option}${isCorrect ? ' (correct)' : ''}\n`;
       });
       content += `   *${question.explanation}*\n\n`;
     });
@@ -137,6 +138,13 @@ export default function ExportLessonsPage() {
   };
 
   const handleExport = (type: string) => {
+    if (type === 'all-individual') {
+      const confirmed =
+        typeof window !== 'undefined' &&
+        window.confirm('This will trigger 50 downloads. Continue?');
+      if (!confirmed) return;
+    }
+
     setExporting(true);
 
     setTimeout(() => {
@@ -164,6 +172,16 @@ export default function ExportLessonsPage() {
     }, 100);
   };
 
+  const handleCopySummary = async () => {
+    if (typeof window === 'undefined' || !navigator.clipboard) return;
+    setCopying(true);
+    try {
+      await navigator.clipboard.writeText(generateSummary());
+    } finally {
+      setCopying(false);
+    }
+  };
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-purple-50 p-8">
       <div className="max-w-4xl mx-auto">
@@ -181,7 +199,7 @@ export default function ExportLessonsPage() {
             {/* Summary File */}
             <div className="border border-gray-200 rounded-lg p-6">
               <h3 className="text-lg font-semibold text-gray-800 mb-2">
-                📋 Lesson Summary (Recommended First)
+                Lesson Summary (Recommended First)
               </h3>
               <p className="text-sm text-gray-600 mb-4">
                 Overview with all 50 lesson titles and topics. Start here to give AI context.
@@ -195,12 +213,19 @@ export default function ExportLessonsPage() {
               >
                 Download LESSON-SUMMARY.md
               </button>
+              <button
+                onClick={handleCopySummary}
+                disabled={copying || exporting}
+                className="ml-3 bg-gray-200 hover:bg-gray-300 text-gray-800 font-semibold px-4 py-2 rounded disabled:opacity-50"
+              >
+                {copying ? "Copying..." : "Copy Summary"}
+              </button>
             </div>
 
             {/* Combined File */}
             <div className="border border-gray-200 rounded-lg p-6">
               <h3 className="text-lg font-semibold text-gray-800 mb-2">
-                📚 All Lessons Combined
+                All Lessons Combined
               </h3>
               <p className="text-sm text-gray-600 mb-4">
                 Complete text of all 50 lessons in one file. Best for comprehensive analysis.
@@ -219,7 +244,7 @@ export default function ExportLessonsPage() {
             {/* JSON Export */}
             <div className="border border-gray-200 rounded-lg p-6">
               <h3 className="text-lg font-semibold text-gray-800 mb-2">
-                🔧 JSON Data Export
+                JSON Data Export
               </h3>
               <p className="text-sm text-gray-600 mb-4">
                 Structured data format with all lessons, chapters, vocabulary, and quizzes.
@@ -238,7 +263,7 @@ export default function ExportLessonsPage() {
             {/* Individual Files */}
             <div className="border border-gray-200 rounded-lg p-6">
               <h3 className="text-lg font-semibold text-gray-800 mb-2">
-                📄 Individual Lesson Files
+                Individual Lesson Files
               </h3>
               <p className="text-sm text-gray-600 mb-4">
                 Download all 50 lessons as separate markdown files (one per lesson).
@@ -256,7 +281,7 @@ export default function ExportLessonsPage() {
           </div>
 
           <div className="mt-8 bg-yellow-50 border border-yellow-200 rounded-lg p-4">
-            <h3 className="font-semibold text-yellow-800 mb-2">💡 Tips for Using with AI Assistants:</h3>
+            <h3 className="font-semibold text-yellow-800 mb-2">Tips for Using with AI Assistants:</h3>
             <ul className="text-sm text-yellow-700 space-y-1 list-disc list-inside">
               <li><strong>Start with LESSON-SUMMARY.md</strong> - Gives AI overview of all 50 lessons</li>
               <li><strong>For specific lessons:</strong> Upload individual lesson files</li>
@@ -272,7 +297,7 @@ export default function ExportLessonsPage() {
               href="/"
               className="text-blue-600 hover:text-blue-700 underline"
             >
-              ← Back to Home
+              {"<-"} Back to Home
             </a>
           </div>
         </div>

@@ -5,6 +5,8 @@ import { motion } from "framer-motion";
 import { Award, TrendingUp, TrendingDown, Calendar, Clock, Filter } from "lucide-react";
 import { format } from "date-fns";
 import type { QuizAttempt } from "@/lib/firebase/types";
+import { lessons } from "@/data/lessons";
+import Link from "next/link";
 
 interface QuizHistoryProps {
   quizAttempts: QuizAttempt[];
@@ -14,6 +16,7 @@ interface QuizHistoryProps {
 export default function QuizHistory({ quizAttempts, loading }: QuizHistoryProps) {
   const [sortBy, setSortBy] = useState<"date" | "score">("date");
   const [filterLesson, setFilterLesson] = useState<string | null>(null);
+  const lessonTitleMap = new Map(lessons.map((lesson) => [lesson.id, lesson.title]));
 
   // Get unique lessons for filter
   const uniqueLessons = Array.from(
@@ -58,7 +61,6 @@ export default function QuizHistory({ quizAttempts, loading }: QuizHistoryProps)
       <div className="rounded-xl border-2 border-gray-200 bg-white p-6">
         <h2 className="mb-4 text-2xl font-bold text-gray-900">Quiz History</h2>
         <div className="py-8 text-center">
-          <div className="mb-4 text-6xl">📝</div>
           <h3 className="mb-2 text-lg font-semibold text-gray-900">
             No Quizzes Yet
           </h3>
@@ -131,7 +133,7 @@ export default function QuizHistory({ quizAttempts, loading }: QuizHistoryProps)
               <option value="">All Lessons</option>
               {uniqueLessons.map((lesson) => (
                 <option key={lesson} value={lesson}>
-                  Lesson {lesson}
+                  {lessonTitleMap.get(lesson) || `Lesson ${lesson}`}
                 </option>
               ))}
             </select>
@@ -173,13 +175,12 @@ export default function QuizHistory({ quizAttempts, loading }: QuizHistoryProps)
 
       {filteredAttempts.length === 0 ? (
         <div className="py-8 text-center">
-          <div className="mb-4 text-4xl">📋</div>
           <h3 className="mb-2 text-lg font-semibold text-gray-900">
             No Quizzes Found
           </h3>
           <p className="text-gray-600">
             {filterLesson
-              ? `No quizzes found for Lesson ${filterLesson}`
+              ? `No quizzes found for ${lessonTitleMap.get(filterLesson) || `Lesson ${filterLesson}`}`
               : "No quizzes completed yet"}
           </p>
         </div>
@@ -245,7 +246,7 @@ export default function QuizHistory({ quizAttempts, loading }: QuizHistoryProps)
                   {/* Lesson Info */}
                   <div>
                     <div className="font-semibold text-gray-900">
-                      Lesson {attempt.lessonId}
+                      {lessonTitleMap.get(attempt.lessonId) || `Lesson ${attempt.lessonId}`}
                     </div>
                     <div className="text-sm text-gray-600">
                       {attempt.score}/{attempt.totalQuestions} correct answers
@@ -264,6 +265,14 @@ export default function QuizHistory({ quizAttempts, loading }: QuizHistoryProps)
                   <div className="flex items-center justify-end gap-1">
                     <Clock className="h-4 w-4" />
                     {Math.floor(attempt.timeSpent / 60)}m {attempt.timeSpent % 60}s
+                  </div>
+                  <div className="mt-2">
+                    <Link
+                      href={`/lesson/${attempt.lessonId}`}
+                      className="text-xs font-semibold text-primary-600 hover:text-primary-700"
+                    >
+                      Review lesson
+                    </Link>
                   </div>
                 </div>
               </motion.div>

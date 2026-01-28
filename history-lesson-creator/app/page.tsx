@@ -1,11 +1,16 @@
+"use client";
+
 import Link from "next/link";
-import { motion } from "framer-motion";
 import { BookOpen, CreditCard, Brain } from "lucide-react";
 import { lessons } from "@/data/lessons";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import { useAuth } from "@/lib/hooks/useAuth";
+import { checkLessonAccess, isLessonFree } from "@/lib/utils/accessControl";
 
 export default function Home() {
+  const { userProfile } = useAuth();
+
   return (
     <div className="flex min-h-screen flex-col">
       <Navigation />
@@ -75,7 +80,22 @@ export default function Home() {
               Available Lessons
             </h2>
             <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-              {lessons.map((lesson) => (
+              {lessons.map((lesson, index) => {
+                const lessonNumber = index + 1;
+                const isFree = isLessonFree(lessonNumber);
+                const access = checkLessonAccess(lessonNumber, userProfile);
+                const accessLabel = isFree
+                  ? "Free"
+                  : access.allowed
+                  ? "Unlocked"
+                  : "Locked";
+                const accessStyles = isFree
+                  ? "bg-green-100 text-green-700"
+                  : access.allowed
+                  ? "bg-blue-100 text-blue-700"
+                  : "bg-gray-100 text-gray-600";
+
+                return (
                 <Link
                   key={lesson.id}
                   href={`/lesson/${lesson.id}`}
@@ -83,6 +103,11 @@ export default function Home() {
                 >
                   <div className="card-base overflow-hidden transition-all hover:shadow-2xl hover:-translate-y-1">
                     <div className="h-48 bg-gradient-to-br from-primary-500 to-primary-700 p-6 text-white">
+                      <div className="mb-3 flex items-center justify-between">
+                        <span className={`rounded-full px-2 py-1 text-xs font-semibold ${accessStyles}`}>
+                          {accessLabel}
+                        </span>
+                      </div>
                       <h3 className="mb-2 text-2xl font-bold">
                         {lesson.title}
                       </h3>
@@ -105,13 +130,14 @@ export default function Home() {
                       </div>
                       <div className="flex items-center justify-between">
                         <span className="text-sm font-semibold text-primary-600 group-hover:text-primary-700">
-                          Start Learning →
+                          Start Learning {"->"}
                         </span>
                       </div>
                     </div>
                   </div>
                 </Link>
-              ))}
+                );
+              })}
             </div>
           </div>
         </div>

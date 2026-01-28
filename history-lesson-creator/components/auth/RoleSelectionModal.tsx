@@ -2,16 +2,17 @@
 
 import { Fragment, useState } from 'react';
 import { Dialog, Transition } from '@headlessui/react';
-import { GraduationCap, Users, Mail, AlertCircle } from 'lucide-react';
+import { GraduationCap, Users, Mail, AlertCircle, X } from 'lucide-react';
 import { useAuth } from '@/lib/hooks/useAuth';
 import { getUserByEmail } from '@/lib/firebase/firestore';
 
 interface RoleSelectionModalProps {
   isOpen: boolean;
   onComplete: () => void;
+  onClose: () => void;
 }
 
-export default function RoleSelectionModal({ isOpen, onComplete }: RoleSelectionModalProps) {
+export default function RoleSelectionModal({ isOpen, onComplete, onClose }: RoleSelectionModalProps) {
   const { setUserRole } = useAuth();
   const [selectedRole, setSelectedRole] = useState<'teacher' | 'student' | null>(null);
   const [teacherEmail, setTeacherEmail] = useState('');
@@ -72,7 +73,7 @@ export default function RoleSelectionModal({ isOpen, onComplete }: RoleSelection
 
   return (
     <Transition appear show={isOpen} as={Fragment}>
-      <Dialog as="div" className="relative z-50" onClose={() => {}}>
+      <Dialog as="div" className="relative z-50" onClose={onClose}>
         <Transition.Child
           as={Fragment}
           enter="ease-out duration-300"
@@ -97,12 +98,23 @@ export default function RoleSelectionModal({ isOpen, onComplete }: RoleSelection
               leaveTo="opacity-0 scale-95"
             >
               <Dialog.Panel className="w-full max-w-lg transform overflow-hidden rounded-2xl bg-white p-6 text-left align-middle shadow-xl transition-all">
-                <Dialog.Title as="h3" className="text-2xl font-bold text-gray-900 mb-2">
-                  Welcome! Tell us about yourself
-                </Dialog.Title>
-                <p className="text-gray-600 mb-6">
-                  Are you a teacher or a student?
-                </p>
+                <div className="mb-6 flex items-start justify-between">
+                  <div>
+                    <Dialog.Title as="h3" className="text-2xl font-bold text-gray-900 mb-2">
+                      Welcome! Tell us about yourself
+                    </Dialog.Title>
+                    <p className="text-gray-600">
+                      Are you a teacher or a student?
+                    </p>
+                  </div>
+                  <button
+                    onClick={onClose}
+                    className="rounded-lg p-1 text-gray-500 hover:text-gray-700 hover:bg-gray-100 transition-colors"
+                    aria-label="Close role selection"
+                  >
+                    <X className="h-5 w-5" />
+                  </button>
+                </div>
 
                 <div className="space-y-3 mb-6">
                   {/* Teacher Option */}
