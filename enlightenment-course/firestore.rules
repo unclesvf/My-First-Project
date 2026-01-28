@@ -1,0 +1,170 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // Helper functions
+    function isAuthenticated() {
+      return request.auth != null;
+    }
+
+    function isOwner(userId) {
+      return isAuthenticated() && request.auth.uid == userId;
+    }
+
+    function isTeacher() {
+      return isAuthenticated() &&
+             exists(/databases/$(database)/documents/users/$(request.auth.uid)) &&
+             get(/databases/$(database)/documents/users/$(request.auth.uid)).data.role == 'teacher';
+    }
+
+    function isStudent() {
+      return isAuthenticated() &&
+             exists(/databases/$(database)/documents/users/$(request.auth.uid)) &&
+             get(/databases/$(database)/documents/users/$(request.auth.uid)).data.role == 'student';
+    }
+
+    function belongsToTeacher(teacherId) {
+      return isAuthenticated() &&
+             exists(/databases/$(database)/documents/users/$(request.auth.uid)) &&
+             get(/databases/$(database)/documents/users/$(request.auth.uid)).data.teacherId == teacherId;
+    }
+
+    // Users collection - profiles
+    match /users/{userId} {
+      // Users can read their own profile
+      // Teachers can read profiles of their students
+      allow read: if isOwner(userId) ||
+                     (isTeacher() &&
+                      get(/databases/$(database)/documents/users/$(userId)).data.teacherId == request.auth.uid);
+
+      // Users can create their own profile
+      allow create: if isOwner(userId) &&
+                       request.resource.data.uid == userId &&
+                       request.resource.data.email is string &&
+                       request.resource.data.displayName is string;
+
+      // Users can update their own profile (but not role or teacherId without proper checks)
+      allow update: if isOwner(userId) &&
+                       // Can't change uid or email
+                       request.resource.data.uid == resource.data.uid &&
+                       request.resource.data.email == resource.data.email &&
+                       // Role changes restricted (handled separately)
+                       (request.resource.data.role == resource.data.role ||
+                        isTeacher());
+
+      // Only users can delete their own profile
+      allow delete: if isOwner(userId);
+    }
+
+    // Students subcollection - teacher's student list
+    match /students/{teacherId}/studentList/{studentId} {
+      // Teachers can read/write their own student lists
+      allow read, write: if isAuthenticated() && request.auth.uid == teacherId;
+
+      // Students can read their own entry
+      allow read: if isOwner(studentId);
+    }
+
+    // Lesson progress subcollection (under users)
+    // Path: users/{userId}/lessonProgress/{lessonId}
+    match /users/{userId}/lessonProgress/{lessonId} {
+      // Users can read/write their own progress
+      allow read, write: if isOwner(userId);
+
+      // Teachers can read their students' progress
+      allow read: if isTeacher() && belongsToTeacher(userId);
+
+      // No one can delete progress
+      allow delete: if false;
+    }
+
+    // Quiz attempts subcollection (under users)
+    // Path: users/{userId}/quizAttempts/{attemptId}
+    match /users/{userId}/quizAttempts/{attemptId} {
+      // Users can read their own quiz attempts
+      allow read: if isOwner(userId);
+
+      // Teachers can read their students' quiz attempts
+      allow read: if isTeacher() && belongsToTeacher(userId);
+
+      // Users can create quiz attempts (but not modify them once created)
+      allow create: if isOwner(userId) &&
+                       request.resource.data.userId == userId &&
+                       request.resource.data.completedAt != null &&
+                       request.resource.data.score >= 0 &&
+                       request.resource.data.percentage >= 0 &&
+                       request.resource.data.percentage <= 100;
+
+      // Quiz attempts are immutable - no updates or deletes
+      allow update, delete: if false;
+    }
+
+    // Legacy progress collection paths (for backwards compatibility)
+    // Can be removed after data migration
+    match /progress/{userId}/lessons/{lessonId} {
+      allow read, write: if isOwner(userId);
+      allow read: if isTeacher() && belongsToTeacher(userId);
+      allow delete: if false;
+    }
+
+    match /progress/{userId}/quizAttempts/{attemptId} {
+      allow read: if isOwner(userId);
+      allow read: if isTeacher() && belongsToTeacher(userId);
+      allow create: if isOwner(userId);
+      allow update, delete: if false;
+    }
+
+    match /progress/{userId}/flashcards/{flashcardId} {
+      allow read, write: if isOwner(userId);
+      allow read: if isTeacher() && belongsToTeacher(userId);
+    }
+
+    // Assignments collection
+    match /assignments/{teacherId}/{assignmentId} {
+      // Teachers can read/write their own assignments
+      allow read, write: if isAuthenticated() && request.auth.uid == teacherId;
+
+      // Students can read assignments assigned to them
+      allow read: if isStudent() &&
+                     resource.data.studentId == request.auth.uid;
+
+      // Students cannot modify or delete assignments
+      allow update, delete: if false;
+    }
+
+    // Purchases collection (for future Stripe integration)
+    match /purchases/{purchaseId} {
+      // Users can read their own purchases
+      allow read: if isAuthenticated() &&
+                     resource.data.userId == request.auth.uid;
+
+      // Only server (via webhook) can create purchases
+      // This will be handled by Firebase Cloud Functions
+      allow create, update, delete: if false;
+    }
+
+    // Course enrollment/access
+    match /enrollments/{userId} {
+      // Users can read their own enrollments
+      allow read: if isOwner(userId);
+
+      // Users can create their own enrollments (for free trial)
+      allow create: if isOwner(userId) &&
+                       request.resource.data.userId == userId;
+
+      // Users can update their own enrollments (within limits)
+      allow update: if isOwner(userId) &&
+                       // Can't change purchase status (only webhook can)
+                       request.resource.data.purchased == resource.data.purchased;
+
+      // Teachers can read their students' enrollments
+      allow read: if isTeacher() && belongsToTeacher(userId);
+    }
+
+    // Default deny all other paths
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}
