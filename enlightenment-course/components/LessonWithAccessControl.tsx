@@ -8,6 +8,7 @@ import { checkLessonAccess, getFreeLessonsCount, isLessonFree } from "@/lib/util
 import LessonView from "@/components/LessonView";
 import { PaywallModal } from "@/components/payment/PaywallModal";
 import { TrialBanner } from "@/components/payment/TrialBanner";
+import AuthModal from "@/components/auth/AuthModal";
 import { AlertCircle } from "lucide-react";
 
 // Development mode bypass
@@ -28,6 +29,7 @@ export default function LessonWithAccessControl({
   const { user, userProfile, loading: authLoading } = useAuth();
   const { isOnTrial, trialExpired } = useTrialStatus();
   const [showPaywall, setShowPaywall] = useState(false);
+  const [showAuthModal, setShowAuthModal] = useState(false);
   const [isAccessGranted, setIsAccessGranted] = useState(DEV_BYPASS);
   const [accessDeniedReason, setAccessDeniedReason] = useState<string | null>(
     null
@@ -139,45 +141,51 @@ export default function LessonWithAccessControl({
 
         {/* Show sign-up message for unauthenticated users */}
         {!user && (
-          <div className="flex min-h-screen flex-col">
-            <div className="flex flex-1 items-center justify-center px-4">
-              <div className="w-full max-w-md text-center">
-                <div className="mb-6 flex justify-center">
-                  <div className="rounded-full bg-blue-100 p-4">
-                    <AlertCircle className="h-8 w-8 text-blue-600" />
+          <>
+            <AuthModal
+              isOpen={showAuthModal}
+              onClose={() => setShowAuthModal(false)}
+              onAuthSuccess={() => {
+                setShowAuthModal(false);
+                // User is now authenticated, the useEffect will re-check access
+              }}
+            />
+            <div className="flex min-h-screen flex-col">
+              <div className="flex flex-1 items-center justify-center px-4">
+                <div className="w-full max-w-md text-center">
+                  <div className="mb-6 flex justify-center">
+                    <div className="rounded-full bg-blue-100 p-4">
+                      <AlertCircle className="h-8 w-8 text-blue-600" />
+                    </div>
                   </div>
-                </div>
-                <h2 className="mb-3 text-2xl font-bold text-gray-900">
-                  Sign up to continue
-                </h2>
-                <p className="mb-6 text-gray-600">
-                  This lesson requires an account. Create a free account to get
-                  started with our free lessons, or explore premium content with
-                  a trial.
-                </p>
-                <div className="flex gap-3 flex-col sm:flex-row">
-                  <button
-                    onClick={() => {
-                      if (typeof window !== "undefined") {
-                        window.location.href = "/";
+                  <h2 className="mb-3 text-2xl font-bold text-gray-900">
+                    Sign up to continue
+                  </h2>
+                  <p className="mb-6 text-gray-600">
+                    This lesson requires an account. Create a free account to get
+                    started with our free lessons, or explore premium content with
+                    a trial.
+                  </p>
+                  <div className="flex gap-3 flex-col sm:flex-row">
+                    <button
+                      onClick={() => setShowAuthModal(true)}
+                      className="flex-1 rounded-lg bg-blue-600 px-6 py-3 font-semibold text-white transition-colors hover:bg-blue-700"
+                    >
+                      Sign Up
+                    </button>
+                    <button
+                      onClick={() =>
+                        typeof window !== "undefined" && window.history.back()
                       }
-                    }}
-                    className="flex-1 rounded-lg bg-blue-600 px-6 py-3 font-semibold text-white transition-colors hover:bg-blue-700"
-                  >
-                    Sign Up
-                  </button>
-                  <button
-                    onClick={() =>
-                      typeof window !== "undefined" && window.history.back()
-                    }
-                    className="flex-1 rounded-lg border-2 border-gray-300 px-6 py-3 font-semibold text-gray-700 transition-colors hover:bg-gray-50"
-                  >
-                    Back
-                  </button>
+                      className="flex-1 rounded-lg border-2 border-gray-300 px-6 py-3 font-semibold text-gray-700 transition-colors hover:bg-gray-50"
+                    >
+                      Back
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
+          </>
         )}
       </>
     );
