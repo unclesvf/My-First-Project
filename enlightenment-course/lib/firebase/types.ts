@@ -4,7 +4,7 @@ export interface UserProfile {
   uid: string;
   email: string;
   displayName: string;
-  role?: 'teacher' | 'student';
+  role?: 'teacher' | 'student' | 'learner';
   teacherId?: string;
   createdAt: Timestamp;
   // Per-course access: { 'course-id': CourseAccess, ... }

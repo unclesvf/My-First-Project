@@ -61,10 +61,8 @@ export default function RoleSelectionModal({ isOpen, onComplete }: RoleSelection
         // Teacher role
         await setUserRole('teacher');
       } else if (selectedRole === 'learner') {
-        // Independent learner - no special role needed, just complete setup
-        // They can access courses based on their purchase/trial status
-        onComplete();
-        return;
+        // Independent learner - set learner role
+        await setUserRole('learner');
       }
 
       onComplete();

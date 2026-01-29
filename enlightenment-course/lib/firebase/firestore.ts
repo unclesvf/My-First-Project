@@ -397,7 +397,7 @@ export async function getStudentAssignments(studentId: string): Promise<any[]> {
  */
 export async function updateUserRole(
   userId: string,
-  role: 'teacher' | 'student',
+  role: 'teacher' | 'student' | 'learner',
   teacherId?: string
 ): Promise<void> {
   try {
