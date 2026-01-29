@@ -20,6 +20,7 @@ export default function FlashcardDeck({ flashcards, lessonId }: FlashcardDeckPro
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isFlipped, setIsFlipped] = useState(false);
   const [masteredCards, setMasteredCards] = useState<Set<string>>(new Set());
+  const [showMoreControls, setShowMoreControls] = useState(false);
 
   const getCardId = useCallback((card: Flashcard) => {
     if (card.id) return card.id;
@@ -146,22 +147,39 @@ export default function FlashcardDeck({ flashcards, lessonId }: FlashcardDeckPro
             <Star className={cn("h-4 w-4", isCurrentCardMastered && "fill-yellow-500")} />
             {isCurrentCardMastered ? "Mastered" : "Master"}
           </button>
-          <button
-            onClick={shuffleCards}
-            aria-label="Shuffle flashcards"
-            className="flex items-center gap-2 rounded-lg border-2 border-primary-600 bg-transparent px-4 py-2 text-sm font-semibold text-primary-700 transition-all hover:bg-primary-50 active:scale-95"
-          >
-            <Shuffle className="h-4 w-4" />
-            Shuffle
-          </button>
-          <button
-            onClick={resetCards}
-            aria-label="Reset flashcards to original order"
-            className="flex items-center gap-2 rounded-lg border-2 border-gray-600 bg-transparent px-4 py-2 text-sm font-semibold text-gray-700 transition-all hover:bg-gray-50 active:scale-95"
-          >
-            <RotateCcw className="h-4 w-4" />
-            Reset
-          </button>
+          <div className="relative">
+            <button
+              onClick={() => setShowMoreControls((prev) => !prev)}
+              aria-label="More flashcard controls"
+              className="flex items-center gap-2 rounded-lg border-2 border-gray-300 bg-transparent px-4 py-2 text-sm font-semibold text-gray-700 transition-all hover:bg-gray-50 active:scale-95"
+            >
+              More
+            </button>
+            {showMoreControls && (
+              <div className="absolute right-0 z-10 mt-2 w-40 rounded-lg border border-gray-200 bg-white p-2 shadow-lg">
+                <button
+                  onClick={() => {
+                    shuffleCards();
+                    setShowMoreControls(false);
+                  }}
+                  className="flex w-full items-center gap-2 rounded-md px-3 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                >
+                  <Shuffle className="h-4 w-4" />
+                  Shuffle
+                </button>
+                <button
+                  onClick={() => {
+                    resetCards();
+                    setShowMoreControls(false);
+                  }}
+                  className="flex w-full items-center gap-2 rounded-md px-3 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                >
+                  <RotateCcw className="h-4 w-4" />
+                  Reset
+                </button>
+              </div>
+            )}
+          </div>
         </div>
       </div>
 

@@ -84,6 +84,7 @@ export default function Home() {
                 const lessonNumber = index + 1;
                 const isFree = isLessonFree(lessonNumber);
                 const access = checkLessonAccess(lessonNumber, userProfile);
+                const canStart = isFree || access.allowed;
                 const accessLabel = isFree
                   ? "Free"
                   : access.allowed
@@ -94,14 +95,16 @@ export default function Home() {
                   : access.allowed
                   ? "bg-blue-100 text-blue-700"
                   : "bg-gray-100 text-gray-600";
+                const actionLabel = canStart ? "Start Lesson" : "Unlock Lesson";
+                const actionStyles = canStart
+                  ? "bg-primary-600 hover:bg-primary-700"
+                  : "bg-gray-600 hover:bg-gray-700";
 
                 return (
-                <Link
-                  key={lesson.id}
-                  href={`/lesson/${lesson.id}`}
-                  className="group"
-                >
-                  <div className="card-base overflow-hidden transition-all hover:shadow-2xl hover:-translate-y-1">
+                  <div
+                    key={lesson.id}
+                    className="card-base overflow-hidden transition-all hover:shadow-2xl hover:-translate-y-1"
+                  >
                     <div className="h-48 bg-gradient-to-br from-primary-500 to-primary-700 p-6 text-white">
                       <div className="mb-3 flex items-center justify-between">
                         <span className={`rounded-full px-2 py-1 text-xs font-semibold ${accessStyles}`}>
@@ -113,29 +116,34 @@ export default function Home() {
                       </h3>
                       <p className="text-primary-100">{lesson.description}</p>
                     </div>
-                    <div className="p-6">
-                      <div className="mb-4 flex items-center justify-between text-sm text-gray-600">
-                        <span className="flex items-center gap-1">
-                          <BookOpen className="h-4 w-4" />
-                          {lesson.story.chapters.length} chapters
-                        </span>
-                        <span className="flex items-center gap-1">
-                          <CreditCard className="h-4 w-4" />
-                          {lesson.flashcards.length} cards
-                        </span>
-                        <span className="flex items-center gap-1">
-                          <Brain className="h-4 w-4" />
-                          {lesson.quiz.length} questions
-                        </span>
-                      </div>
-                      <div className="flex items-center justify-between">
-                        <span className="text-sm font-semibold text-primary-600 group-hover:text-primary-700">
-                          Start Learning {"->"}
-                        </span>
-                      </div>
+                    <div className="p-6 space-y-4">
+                      <Link
+                        href={`/lesson/${lesson.id}`}
+                        className={`block w-full rounded-lg px-4 py-3 text-center text-sm font-semibold text-white transition-colors ${actionStyles}`}
+                      >
+                        {actionLabel}
+                      </Link>
+                      <details className="rounded-lg border border-gray-200 bg-gray-50 px-4 py-3 text-sm text-gray-600">
+                        <summary className="cursor-pointer font-semibold text-gray-700">
+                          Lesson Details
+                        </summary>
+                        <div className="mt-3 flex flex-col gap-2">
+                          <span className="flex items-center gap-1">
+                            <BookOpen className="h-4 w-4" />
+                            {lesson.story.chapters.length} chapters
+                          </span>
+                          <span className="flex items-center gap-1">
+                            <CreditCard className="h-4 w-4" />
+                            {lesson.flashcards.length} cards
+                          </span>
+                          <span className="flex items-center gap-1">
+                            <Brain className="h-4 w-4" />
+                            {lesson.quiz.length} questions
+                          </span>
+                        </div>
+                      </details>
                     </div>
                   </div>
-                </Link>
                 );
               })}
             </div>

@@ -154,13 +154,13 @@ export default function StoryReader({ narrator, chapters, lessonId }: StoryReade
           onClick={goToNextChapter}
           disabled={currentChapter === chapters.length - 1}
           className={cn(
-            "flex items-center gap-2 rounded-lg px-4 py-2 font-semibold transition-all",
+            "flex items-center gap-2 rounded-lg px-6 py-3 font-semibold transition-all",
             currentChapter === chapters.length - 1
               ? "cursor-not-allowed bg-gray-100 text-gray-400"
               : "bg-primary-600 text-white hover:bg-primary-700 hover:shadow-lg active:scale-95"
           )}
         >
-          Next
+          Next Chapter
           <ChevronRight className="h-5 w-5" />
         </button>
       </div>

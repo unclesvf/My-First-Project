@@ -206,24 +206,54 @@ function LessonContent({ lesson }: LessonViewProps) {
               transition={{ duration: 0.3 }}
             >
               {activeTab === "story" && (
-                <StoryReader
-                  narrator={lesson.story.narrator}
-                  chapters={lesson.story.chapters}
-                  lessonId={lesson.id}
-                />
+                <>
+                  <StoryReader
+                    narrator={lesson.story.narrator}
+                    chapters={lesson.story.chapters}
+                    lessonId={lesson.id}
+                  />
+                  <div className="mt-8 flex justify-end">
+                    <button
+                      onClick={() => setActiveTab("flashcards")}
+                      className="rounded-lg bg-primary-600 px-6 py-3 font-semibold text-white transition-colors hover:bg-primary-700"
+                    >
+                      Continue to Flashcards
+                    </button>
+                  </div>
+                </>
               )}
               {activeTab === "flashcards" && (
-                <FlashcardDeck
-                  flashcards={lesson.flashcards}
-                  lessonId={lesson.id}
-                />
+                <>
+                  <FlashcardDeck
+                    flashcards={lesson.flashcards}
+                    lessonId={lesson.id}
+                  />
+                  <div className="mt-8 flex justify-end">
+                    <button
+                      onClick={() => setActiveTab("quiz")}
+                      className="rounded-lg bg-primary-600 px-6 py-3 font-semibold text-white transition-colors hover:bg-primary-700"
+                    >
+                      Continue to Quiz
+                    </button>
+                  </div>
+                </>
               )}
               {activeTab === "quiz" && (
-                <QuizEngine
-                  questions={lesson.quiz}
-                  lessonId={lesson.id}
-                  courseId={courseId}
-                />
+                <>
+                  <QuizEngine
+                    questions={lesson.quiz}
+                    lessonId={lesson.id}
+                    courseId={courseId}
+                  />
+                  <div className="mt-8 flex justify-end">
+                    <button
+                      onClick={() => router.push("/")}
+                      className="rounded-lg border-2 border-gray-300 px-6 py-3 font-semibold text-gray-700 transition-colors hover:bg-gray-50"
+                    >
+                      Back to Lessons
+                    </button>
+                  </div>
+                </>
               )}
             </motion.div>
           </div>

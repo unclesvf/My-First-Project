@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { Award, TrendingUp, TrendingDown, Calendar, Clock, Filter } from "lucide-react";
+import { Award, TrendingUp, TrendingDown, Calendar, Filter } from "lucide-react";
 import { format } from "date-fns";
 import type { QuizAttempt } from "@/lib/firebase/types";
 import { lessons } from "@/data/lessons";
@@ -16,6 +16,7 @@ interface QuizHistoryProps {
 export default function QuizHistory({ quizAttempts, loading }: QuizHistoryProps) {
   const [sortBy, setSortBy] = useState<"date" | "score">("date");
   const [filterLesson, setFilterLesson] = useState<string | null>(null);
+  const [showFilters, setShowFilters] = useState(false);
   const lessonTitleMap = new Map(lessons.map((lesson) => [lesson.id, lesson.title]));
 
   // Get unique lessons for filter
@@ -120,57 +121,67 @@ export default function QuizHistory({ quizAttempts, loading }: QuizHistoryProps)
       </div>
 
       {/* Filters and Sort Controls */}
-      <div className="mb-6 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
-        <div className="flex flex-col gap-2 sm:flex-row sm:gap-4">
-          {/* Filter by Lesson */}
-          <div className="flex items-center gap-2">
-            <Filter className="h-4 w-4 text-gray-600" />
-            <select
-              value={filterLesson || ""}
-              onChange={(e) => setFilterLesson(e.target.value || null)}
-              className="rounded-lg border-2 border-gray-200 bg-white px-3 py-2 text-sm font-medium text-gray-900 transition-colors hover:border-gray-300 focus:border-primary-500 focus:outline-none"
-            >
-              <option value="">All Lessons</option>
-              {uniqueLessons.map((lesson) => (
-                <option key={lesson} value={lesson}>
-                  {lessonTitleMap.get(lesson) || `Lesson ${lesson}`}
-                </option>
-              ))}
-            </select>
+      <div className="mb-6 space-y-4">
+        <div className="flex items-center justify-between">
+          <button
+            onClick={() => setShowFilters((prev) => !prev)}
+            className="inline-flex items-center gap-2 rounded-lg border-2 border-gray-200 px-3 py-2 text-sm font-medium text-gray-700 transition-colors hover:border-gray-300"
+          >
+            <Filter className="h-4 w-4" />
+            Filters
+          </button>
+          <div className="text-sm text-gray-600">
+            {filteredAttempts.length} quizzes
           </div>
+        </div>
 
-          {/* Sort By */}
-          <div className="flex items-center gap-2">
-            <span className="text-sm font-medium text-gray-600">Sort by:</span>
-            <div className="flex gap-2">
-              <button
-                onClick={() => setSortBy("date")}
-                className={`rounded-lg px-3 py-2 text-sm font-medium transition-colors ${
-                  sortBy === "date"
-                    ? "border-2 border-primary-500 bg-primary-50 text-primary-700"
-                    : "border-2 border-gray-200 text-gray-600 hover:border-gray-300"
-                }`}
+        {showFilters && (
+          <div className="flex flex-col gap-2 sm:flex-row sm:gap-4">
+            {/* Filter by Lesson */}
+            <div className="flex items-center gap-2">
+              <Filter className="h-4 w-4 text-gray-600" />
+              <select
+                value={filterLesson || ""}
+                onChange={(e) => setFilterLesson(e.target.value || null)}
+                className="rounded-lg border-2 border-gray-200 bg-white px-3 py-2 text-sm font-medium text-gray-900 transition-colors hover:border-gray-300 focus:border-primary-500 focus:outline-none"
               >
-                Date
-              </button>
-              <button
-                onClick={() => setSortBy("score")}
-                className={`rounded-lg px-3 py-2 text-sm font-medium transition-colors ${
-                  sortBy === "score"
-                    ? "border-2 border-primary-500 bg-primary-50 text-primary-700"
-                    : "border-2 border-gray-200 text-gray-600 hover:border-gray-300"
-                }`}
-              >
-                Score
-              </button>
+                <option value="">All Lessons</option>
+                {uniqueLessons.map((lesson) => (
+                  <option key={lesson} value={lesson}>
+                    {lessonTitleMap.get(lesson) || `Lesson ${lesson}`}
+                  </option>
+                ))}
+              </select>
+            </div>
+
+            {/* Sort By */}
+            <div className="flex items-center gap-2">
+              <span className="text-sm font-medium text-gray-600">Sort by:</span>
+              <div className="flex gap-2">
+                <button
+                  onClick={() => setSortBy("date")}
+                  className={`rounded-lg px-3 py-2 text-sm font-medium transition-colors ${
+                    sortBy === "date"
+                      ? "border-2 border-primary-500 bg-primary-50 text-primary-700"
+                      : "border-2 border-gray-200 text-gray-600 hover:border-gray-300"
+                  }`}
+                >
+                  Date
+                </button>
+                <button
+                  onClick={() => setSortBy("score")}
+                  className={`rounded-lg px-3 py-2 text-sm font-medium transition-colors ${
+                    sortBy === "score"
+                      ? "border-2 border-primary-500 bg-primary-50 text-primary-700"
+                      : "border-2 border-gray-200 text-gray-600 hover:border-gray-300"
+                  }`}
+                >
+                  Score
+                </button>
+              </div>
             </div>
           </div>
-        </div>
-
-        {/* Results Count */}
-        <div className="text-sm text-gray-600">
-          Showing {filteredAttempts.length} of {quizAttempts.length} quizzes
-        </div>
+        )}
       </div>
 
       {filteredAttempts.length === 0 ? (
@@ -261,10 +272,6 @@ export default function QuizHistory({ quizAttempts, loading }: QuizHistoryProps)
                     {attempt.completedAt
                       ? format(attempt.completedAt.toDate(), "MMM d, yyyy")
                       : "N/A"}
-                  </div>
-                  <div className="flex items-center justify-end gap-1">
-                    <Clock className="h-4 w-4" />
-                    {Math.floor(attempt.timeSpent / 60)}m {attempt.timeSpent % 60}s
                   </div>
                   <div className="mt-2">
                     <Link

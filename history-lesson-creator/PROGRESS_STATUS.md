@@ -190,6 +190,12 @@ npm run lint - Success (Jan 28, 2026); Next.js notes `next lint` deprecation
 - ✅ Dashboard redirects to role-specific routes
 - ✅ UI polish: lesson access badges, sticky lesson tabs, quiz history titles/links
 - ✅ Trial banner no longer overlaps nav; export page confirms mass downloads/copy summary
+- ✅ Student UI simplification: action-first lesson cards, "Next Up" dashboard focus, collapsible stats, lesson titles in progress, collapsed quiz filters
+- ✅ Additional simplification: flashcard controls tucked under "More", larger story navigation, guided continue buttons, clearer assigned lesson action
+- ✅ Minor simplification: reduced visual clutter in progress empty state and quiz filter header text
+- ✅ Further simplification: trimmed assigned lesson metadata, simplified recent lessons, removed quiz time detail, streamlined student lesson tiles
+- ✅ Build passes clean after simplification (Jan 28, 2026)
+- ✅ Lint passes clean after simplification (Jan 28, 2026)
 
 ### Dependencies
 - Next.js 14 (App Router)

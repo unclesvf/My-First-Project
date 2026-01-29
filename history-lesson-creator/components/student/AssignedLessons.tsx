@@ -94,17 +94,6 @@ export default function AssignedLessons({
                   </p>
 
                   <div className="flex flex-wrap gap-3 text-sm text-gray-600">
-                    {/* Assigned Date */}
-                    <div className="flex items-center gap-1">
-                      <Calendar className="h-4 w-4" />
-                      <span>
-                        Assigned{" "}
-                        {assignment.assignedAt
-                          ? format(assignment.assignedAt.toDate(), "MMM d")
-                          : "N/A"}
-                      </span>
-                    </div>
-
                     {/* Due Date */}
                     {assignment.dueDate && (
                       <div
@@ -133,7 +122,7 @@ export default function AssignedLessons({
                       : "bg-blue-600 text-white hover:bg-blue-700"
                   }`}
                 >
-                  {isCompleted ? "Review" : "Start Lesson"}
+                  {isCompleted ? "Review" : "Start Now"}
                 </button>
               </div>
             </motion.div>

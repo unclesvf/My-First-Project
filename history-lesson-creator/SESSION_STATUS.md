@@ -212,6 +212,12 @@ history-lesson-creator/
 9. Mojibake cleanup across UI text labels
 10. `npm run build` passes clean; React Hook warnings resolved and `outputFileTracingRoot` set
 11. `npm run lint` passes clean (Next.js notes `next lint` deprecation)
+12. Student UI simplification: action-first lesson cards, "Next Up" dashboard focus, collapsible stats, lesson titles in progress, collapsed quiz filters
+13. Additional simplification: flashcard controls tucked under "More", larger story navigation, guided continue buttons, clearer assigned lesson action
+14. Minor simplification: reduced visual clutter in progress empty state and quiz filter header text
+15. Further simplification: trimmed assigned lesson metadata, simplified recent lessons, removed quiz time detail, streamlined lesson tiles in student dashboard
+16. `npm run build` passes clean (post-simplification)
+17. `npm run lint` passes clean (post-simplification)
 
 ### January 15, 2026 (Latest Session)
 **Full Batch Image Validation & Regeneration Pipeline**

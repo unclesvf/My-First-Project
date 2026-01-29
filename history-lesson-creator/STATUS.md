@@ -44,6 +44,12 @@ npm run dev
 - Mojibake cleanup across UI text labels
 - Build: `npm run build` passes clean; React Hook warnings resolved and `outputFileTracingRoot` set to avoid lockfile root warning
 - Lint: `npm run lint` passes clean (Next.js notes `next lint` deprecation)
+- Student UI simplification pass: action-first lesson cards with details toggle, "Next Up" dashboard focus, collapsible stats, lesson title mapping in progress, and collapsed quiz filters
+- Additional simplification: flashcard controls tucked under "More", larger story navigation, guided continue buttons, and clearer assigned lesson action
+- Minor simplification: less visual clutter in progress empty state and quiz filter header text
+- Further simplification: trimmed assigned lesson metadata, simplified recent lesson cards, removed quiz time detail, and streamlined lesson tiles in student dashboard
+- Build: `npm run build` passes clean (post-simplification)
+- Lint: `npm run lint` passes clean (post-simplification)
 
 ---
 

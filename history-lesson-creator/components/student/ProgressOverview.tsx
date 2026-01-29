@@ -5,6 +5,7 @@ import { BookOpen, CheckCircle, Clock, TrendingUp } from "lucide-react";
 import ProgressBar from "@/components/progress/ProgressBar";
 import ProgressBadge from "@/components/progress/ProgressBadge";
 import type { LessonProgress } from "@/lib/firebase/types";
+import { lessons } from "@/data/lessons";
 
 interface ProgressOverviewProps {
   progress: LessonProgress[];
@@ -19,6 +20,8 @@ export default function ProgressOverview({
   totalLessonsStarted,
   loading,
 }: ProgressOverviewProps) {
+  const lessonTitleMap = new Map(lessons.map((lesson) => [lesson.id, lesson.title]));
+
   if (loading) {
     return (
       <div className="rounded-xl border-2 border-gray-200 bg-white p-6">
@@ -60,7 +63,6 @@ export default function ProgressOverview({
 
       {totalLessonsStarted === 0 ? (
         <div className="py-8 text-center">
-          <div className="mb-4 text-6xl">📚</div>
           <h3 className="mb-2 text-lg font-semibold text-gray-900">
             Ready to Start Learning?
           </h3>
@@ -77,7 +79,7 @@ export default function ProgressOverview({
           {/* Overall Progress Bar */}
           <div className="rounded-lg border-2 border-gray-200 bg-gray-50 p-4">
             <div className="mb-3 flex items-center justify-between">
-              <h3 className="font-semibold text-gray-900">Overall Completion</h3>
+              <h3 className="font-semibold text-gray-900">Overall Progress</h3>
               <span className="text-2xl font-bold text-primary-600">
                 {progressPercentage}%
               </span>
@@ -129,7 +131,7 @@ export default function ProgressOverview({
 
           {/* Recent Lessons */}
           <div>
-            <h3 className="mb-3 font-semibold text-gray-900">Recent Activity</h3>
+            <h3 className="mb-3 font-semibold text-gray-900">Recent Lessons</h3>
             <div className="space-y-2">
               {progress.slice(0, 5).map((p) => (
                 <div
@@ -140,14 +142,8 @@ export default function ProgressOverview({
                     <BookOpen className="h-5 w-5 text-gray-400" />
                     <div>
                       <div className="font-medium text-gray-900">
-                        Lesson {p.lessonId}
+                        {lessonTitleMap.get(p.lessonId) || `Lesson ${p.lessonId}`}
                       </div>
-                      {p.lastAccessedAt && (
-                        <div className="text-xs text-gray-500">
-                          Last accessed:{" "}
-                          {new Date(p.lastAccessedAt.toDate()).toLocaleDateString()}
-                        </div>
-                      )}
                     </div>
                   </div>
                   <ProgressBadge
