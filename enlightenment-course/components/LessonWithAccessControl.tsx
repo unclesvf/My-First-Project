@@ -130,13 +130,57 @@ export default function LessonWithAccessControl({
     return (
       <>
         {/* Show paywall modal for authenticated users */}
-        {user && (
+        {user && showPaywall && (
           <PaywallModal
             isOpen={showPaywall}
-            onClose={() => setShowPaywall(false)}
+            onClose={() => {
+              // Redirect to home when user clicks "Maybe Later"
+              if (typeof window !== "undefined") {
+                window.location.href = "/";
+              }
+            }}
             courseId={courseId}
             courseName="Age of Enlightenment - Ideas That Shaped America"
           />
+        )}
+
+        {/* Show access denied message when paywall is closed but user still doesn't have access */}
+        {user && !showPaywall && (
+          <div className="flex min-h-screen flex-col">
+            <div className="flex flex-1 items-center justify-center px-4">
+              <div className="w-full max-w-md text-center">
+                <div className="mb-6 flex justify-center">
+                  <div className="rounded-full bg-amber-100 p-4">
+                    <AlertCircle className="h-8 w-8 text-amber-600" />
+                  </div>
+                </div>
+                <h2 className="mb-3 text-2xl font-bold text-gray-900">
+                  Premium Content
+                </h2>
+                <p className="mb-6 text-gray-600">
+                  This lesson requires a subscription or free trial. Start your 7-day free trial to access all lessons.
+                </p>
+                <div className="flex gap-3 flex-col sm:flex-row">
+                  <button
+                    onClick={() => setShowPaywall(true)}
+                    className="flex-1 rounded-lg bg-blue-600 px-6 py-3 font-semibold text-white transition-colors hover:bg-blue-700"
+                  >
+                    View Options
+                  </button>
+                  <button
+                    onClick={() => {
+                      if (typeof window !== "undefined") {
+                        window.location.href = "/";
+                      }
+                    }}
+                    className="flex-1 rounded-lg border-2 border-gray-300 px-6 py-3 font-semibold text-gray-700 transition-colors hover:bg-gray-50"
+                  >
+                    Back to Home
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
         )}
 
         {/* Show sign-up message for unauthenticated users */}
