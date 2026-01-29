@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
 import { motion } from "framer-motion";
 import { BookOpen, CreditCard, Brain, ArrowLeft, Trophy, Target, Clock } from "lucide-react";
+import Image from "next/image";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import StoryReader from "@/components/StoryReader";
@@ -73,6 +74,21 @@ function LessonContent({ lesson }: LessonViewProps) {
               <ArrowLeft className="h-5 w-5" />
               Back to Lessons
             </button>
+
+            {/* Hero Image */}
+            {lesson.heroImage && (
+              <div className="mb-8 overflow-hidden rounded-xl shadow-lg">
+                <div className="relative aspect-video w-full">
+                  <Image
+                    src={lesson.heroImage}
+                    alt={lesson.title}
+                    fill
+                    className="object-cover"
+                    priority
+                  />
+                </div>
+              </div>
+            )}
 
             {/* Header */}
             <div className="mb-8">
