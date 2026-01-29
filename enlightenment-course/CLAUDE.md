@@ -2,24 +2,74 @@
 
 ## QUICK CONTEXT
 
-**Last Updated:** January 28, 2026
+**Last Updated:** January 28, 2026 (Evening)
 **Course:** Age of Enlightenment: Ideas That Shaped America
 **Target Audience:** 7th-8th grade homeschool students
 **Stack:** Next.js 15, React 19, TypeScript, Firebase Auth, Stripe, Tailwind CSS
+**Live URL:** https://enlightenment-course.vercel.app
 
 ### Current State
+- ✅ **Deployed:** Live on Vercel with auto-deploy from GitHub
 - ✅ **Lesson Content:** 24 lessons complete with chapters, flashcards, quizzes
 - ✅ **Image Prompts:** All 24 hero image prompts ready in IMAGE_PROMPTS.md
-- ✅ **App Components:** Copied from history-lesson-creator (Jan 15)
-- ✅ **Code Quality:** Bug fixes applied (Jan 28)
+- ✅ **Firebase:** Auth, Firestore, Admin SDK all configured
+- ✅ **Stripe:** Webhook, checkout, per-course access working
+- ✅ **7-Day Trial:** Free trial flow working (no credit card required)
+- ✅ **Per-Course Access:** Separate access for each course
 - ✅ **TypeScript:** Compilation passing
 - ⏳ **Hero Images:** Awaiting GPU availability for generation
 - ⏳ **TTS Audio:** Not yet generated
-- ⏳ **Firebase Config:** Requires .env.local configuration
 
 ---
 
-## RECENT SESSION SUMMARY (January 28, 2026)
+## RECENT SESSION SUMMARY (January 28, 2026 - Evening)
+
+### Deployment & Payment Integration
+
+Deployed to Vercel and implemented full payment/trial system.
+
+#### Vercel Deployment
+- **Live URL:** https://enlightenment-course.vercel.app
+- **Auto-deploy:** Pushes to `main` branch auto-deploy
+- **Environment Variables:** Firebase and Stripe keys configured
+
+#### Per-Course Access System
+Changed from single `courseAccess` object to `Record<string, CourseAccess>` so each course has separate access tracking.
+
+```typescript
+// Old: courseAccess: CourseAccess
+// New: courseAccess: Record<string, CourseAccess>
+
+// Stripe products:
+// History: price_1SnuHk3jSTlaKj8QA3W4W1Ba
+// Enlightenment: price_1Sujbp3jSTlaKj8QxBEZTzy7
+```
+
+#### Stripe Webhook
+- Endpoint: `/api/stripe/webhook`
+- Events: `checkout.session.completed`, `payment_intent.succeeded`, `payment_intent.payment_failed`
+- Uses `COURSE_CONFIG` to map price IDs to course IDs
+
+#### User Roles
+Added "Homeschooler / Independent Learner" role option:
+- **Teacher** - Manages students
+- **Homeschooler** - Independent learning (no teacher required)
+- **Student** - Linked to a teacher
+
+#### Key Files Changed
+- `lib/firebase/types.ts` - Per-course access types, COURSE_CONFIG
+- `lib/firebase/firestore.ts` - updateCourseAccess function
+- `lib/firebase/trial.ts` - Course-specific trial management
+- `lib/utils/accessControl.ts` - Course-aware access checks
+- `lib/hooks/useTrialStatus.ts` - Course-specific trial status
+- `components/auth/RoleSelectionModal.tsx` - Added learner role
+- `components/LessonWithAccessControl.tsx` - Fixed blank page on paywall skip
+- `app/api/stripe/webhook/route.ts` - Per-course purchase handling
+- `firestore.rules` - Updated for courseAccess and role updates
+
+---
+
+## EARLIER SESSION SUMMARY (January 28, 2026 - Morning)
 
 ### Code Review & Bug Fixes
 

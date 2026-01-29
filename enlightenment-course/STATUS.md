@@ -1,7 +1,8 @@
 # Age of Enlightenment Course - Project Status
 
-**Last Updated:** January 28, 2026
+**Last Updated:** January 28, 2026 (Evening)
 **Project Path:** `C:\Users\scott\My-First-Project\My-First-Project\enlightenment-course`
+**Live URL:** https://enlightenment-course.vercel.app
 
 ---
 
@@ -25,13 +26,72 @@
 | **App Components** | ✅ COMPLETE | Copied from history-lesson-creator (Jan 15) |
 | **Code Quality** | ✅ COMPLETE | Bug fixes applied (Jan 28) |
 | **Image Prompts** | ✅ COMPLETE | 24 hero image prompts ready for generation |
+| **Vercel Deployment** | ✅ COMPLETE | Live at https://enlightenment-course.vercel.app |
+| **Firebase Config** | ✅ COMPLETE | Auth, Firestore, Admin SDK all configured |
+| **Stripe Integration** | ✅ COMPLETE | Webhook, checkout, per-course access |
+| **Per-Course Access** | ✅ COMPLETE | Separate access control for each course |
+| **7-Day Free Trial** | ✅ COMPLETE | No credit card required trial working |
 | **Hero Images** | ⏳ PENDING | Awaiting GPU availability for generation |
 | **TTS Audio** | ⏳ PENDING | Narration audio not yet generated |
-| **Firebase Config** | ⏳ PENDING | Requires .env.local configuration |
 
 ---
 
-## Recent Session (January 28, 2026)
+## Recent Session (January 28, 2026 - Evening)
+
+### Deployment & Infrastructure
+
+Successfully deployed the course to production with full payment integration.
+
+#### Vercel Deployment
+- **Live URL:** https://enlightenment-course.vercel.app
+- **Auto-deploy:** Connected to GitHub, auto-deploys on push to main
+- **Environment Variables:** All configured (Firebase, Stripe)
+
+#### Per-Course Access Control
+Implemented separate access tracking for each course so purchasing one doesn't grant access to the other.
+
+| Change | Details |
+|--------|---------|
+| `UserProfile.courseAccess` | Changed from single object to `Record<string, CourseAccess>` |
+| `COURSE_CONFIG` | Maps Stripe price IDs to course IDs |
+| `getCourseAccessForCourse()` | Helper function for backward compatibility |
+| Webhook handler | Updates per-course access on successful payment |
+
+**Stripe Products:**
+- History course: `price_1SnuHk3jSTlaKj8QA3W4W1Ba`
+- Enlightenment course: `price_1Sujbp3jSTlaKj8QxBEZTzy7`
+
+#### Stripe Webhook
+- **Endpoint:** `/api/stripe/webhook`
+- **Events:** `checkout.session.completed`, `payment_intent.succeeded`, `payment_intent.payment_failed`
+- **Signing Secret:** Configured in Vercel env vars
+
+#### Homeschooler Role
+Added "Homeschooler / Independent Learner" option to role selection for users who don't have a classroom teacher.
+
+| Role | Description |
+|------|-------------|
+| Teacher | Create student accounts, assign lessons, track progress |
+| Homeschooler / Independent Learner | Learn independently without a teacher |
+| Student with a Teacher | Join a teacher's class with their email |
+
+#### Firebase Rules
+Updated Firestore security rules to allow:
+- Users to set their role on first login
+- Users to update their courseAccess (for trial/purchase)
+- Proper partial update handling
+
+#### Bug Fixes
+| Issue | Fix |
+|-------|-----|
+| Sign Up button redirecting to home | Now opens AuthModal properly |
+| Blank page when closing paywall | Shows helpful message with "View Options" and "Back to Home" |
+| Learner role not saving | Added 'learner' as valid role type throughout codebase |
+| Trial start permission error | Fixed Firestore rules for courseAccess updates |
+
+---
+
+## Earlier Session (January 28, 2026 - Morning)
 
 ### Code Review & Bug Fixes
 
@@ -277,29 +337,21 @@ enlightenment-course/
 
 ## Pending Actions
 
-### 1. Configure Firebase (Required for Build)
-```bash
-# Copy example and add your Firebase credentials
-cp .env.local.example .env.local
-# Edit .env.local with Firebase project settings
-```
-
-### 2. Generate Hero Images
+### 1. Generate Hero Images
 - 24 prompts ready in `IMAGE_PROMPTS.md` and `prompts_export/hero_prompts.txt`
 - Use same pipeline as history-lesson-creator
 - Resolution: 1344x768 (16:9 landscape)
 - Model: Flux.2 Dev recommended
 
-### 3. Generate TTS Audio
+### 2. Generate TTS Audio
 - Use same pipeline as history-lesson-creator
 - Generate narration for all 120 chapters
 - Consider using Zonos V2 pipeline once tested
 
-### 4. Deploy Firebase Rules
-```bash
-firebase login
-firebase deploy --only firestore:rules
-```
+### 3. Test Payment Flow (Optional)
+- Create a test account and complete purchase with test card `4242 4242 4242 4242`
+- Verify webhook processes payment and grants access
+- Or wait for trial to expire to test purchase prompt
 
 ---
 
@@ -344,3 +396,4 @@ This course is designed as a companion to the "History for Homeschoolers" Americ
 *Course created January 14, 2026*
 *App infrastructure added January 15, 2026*
 *Bug fixes applied January 28, 2026*
+*Deployed to Vercel with full payment integration January 28, 2026*
