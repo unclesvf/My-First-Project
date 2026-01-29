@@ -3,6 +3,7 @@ import Stripe from 'stripe';
 import { logger } from '@/lib/utils/logger';
 import { adminDb } from '@/lib/firebase/admin';
 import { Timestamp } from 'firebase-admin/firestore';
+import { COURSE_CONFIG } from '@/lib/firebase/types';
 
 /**
  * POST /api/stripe/webhook
@@ -99,12 +100,10 @@ export async function POST(request: NextRequest) {
 
 /**
  * Handle successful checkout session
- * Updates user's course access to 'purchased' and creates purchase record
+ * Updates user's course access to 'purchased' for the specific course and creates purchase record
  */
 async function handleCheckoutSessionCompleted(session: Stripe.Checkout.Session) {
   const userId = session.client_reference_id;
-  const courseId = session.metadata?.courseId || 'age-of-enlightenment';
-  const courseName = session.metadata?.courseName || 'Age of Enlightenment - Ideas That Shaped America';
 
   if (!userId) {
     logger.error('Checkout session missing client_reference_id (userId)', {
@@ -112,6 +111,25 @@ async function handleCheckoutSessionCompleted(session: Stripe.Checkout.Session) 
     });
     return;
   }
+
+  // Determine which course was purchased from the line items
+  // First check metadata, then try to look up from price ID
+  let courseId = session.metadata?.courseId;
+  let courseName = session.metadata?.courseName;
+
+  // If not in metadata, try to get from the session's line items via the price ID
+  if (!courseId && session.line_items?.data?.[0]?.price?.id) {
+    const priceId = session.line_items.data[0].price.id;
+    const courseConfig = COURSE_CONFIG[priceId];
+    if (courseConfig) {
+      courseId = courseConfig.courseId;
+      courseName = courseConfig.courseName;
+    }
+  }
+
+  // Default to age-of-enlightenment if we can't determine the course
+  courseId = courseId || 'age-of-enlightenment';
+  courseName = courseName || 'Age of Enlightenment - Ideas That Shaped America';
 
   logger.info('Processing checkout session completed', {
     sessionId: session.id,
@@ -132,12 +150,12 @@ async function handleCheckoutSessionCompleted(session: Stripe.Checkout.Session) 
 
     const now = Timestamp.now();
 
-    // Update course access to purchased
+    // Update course access to purchased for this specific course
     await userRef.update({
-      'courseAccess.status': 'purchased',
-      'courseAccess.purchasedAt': now,
-      'courseAccess.stripePaymentIntentId': session.payment_intent,
-      'courseAccess.stripeCustomerId': session.customer,
+      [`courseAccess.${courseId}.status`]: 'purchased',
+      [`courseAccess.${courseId}.purchasedAt`]: now,
+      [`courseAccess.${courseId}.stripePaymentIntentId`]: session.payment_intent,
+      [`courseAccess.${courseId}.stripeCustomerId`]: session.customer,
     });
 
     // Create purchase record

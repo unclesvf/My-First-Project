@@ -23,14 +23,8 @@ export async function createUserProfile(user: User): Promise<UserProfile> {
     email: user.email!,
     displayName: user.displayName || user.email!.split('@')[0],
     createdAt: Timestamp.now(),
-    courseAccess: {
-      status: 'free',
-      trialStartedAt: null,
-      trialEndsAt: null,
-      purchasedAt: null,
-      stripePaymentIntentId: null,
-      stripeCustomerId: null,
-    },
+    // Initialize with empty courseAccess - access will be added per-course
+    courseAccess: {},
   };
 
   await setDoc(doc(db, 'users', user.uid), userProfile);
@@ -57,9 +51,23 @@ export async function getUserByEmail(email: string): Promise<(UserProfile & { id
   return null;
 }
 
-export async function updateCourseAccess(uid: string, courseAccess: Partial<CourseAccess>): Promise<void> {
+/**
+ * Update course access for a specific course
+ */
+export async function updateCourseAccess(
+  uid: string,
+  courseId: string,
+  courseAccess: Partial<CourseAccess>
+): Promise<void> {
   const userRef = doc(db, 'users', uid);
-  await updateDoc(userRef, { courseAccess });
+
+  // Build update object with dot notation for nested field
+  const updates: Record<string, unknown> = {};
+  for (const [key, value] of Object.entries(courseAccess)) {
+    updates[`courseAccess.${courseId}.${key}`] = value;
+  }
+
+  await updateDoc(userRef, updates);
 }
 
 export async function createPurchase(purchase: Omit<Purchase, 'id'>): Promise<string> {

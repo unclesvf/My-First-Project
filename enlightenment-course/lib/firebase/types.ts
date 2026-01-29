@@ -7,7 +7,8 @@ export interface UserProfile {
   role?: 'teacher' | 'student';
   teacherId?: string;
   createdAt: Timestamp;
-  courseAccess: CourseAccess;
+  // Per-course access: { 'course-id': CourseAccess, ... }
+  courseAccess: Record<string, CourseAccess>;
 }
 
 export interface CourseAccess {
@@ -17,6 +18,55 @@ export interface CourseAccess {
   purchasedAt: Timestamp | null;
   stripePaymentIntentId: string | null;
   stripeCustomerId: string | null;
+}
+
+// Course configuration - maps Price IDs to Course IDs
+export const COURSE_CONFIG: Record<string, { courseId: string; courseName: string }> = {
+  'price_1SnuHk3jSTlaKj8QA3W4W1Ba': {
+    courseId: 'history-for-homeschoolers',
+    courseName: 'American History 1565-1914',
+  },
+  'price_1Sujbp3jSTlaKj8QxBEZTzy7': {
+    courseId: 'age-of-enlightenment',
+    courseName: 'Age of Enlightenment - Ideas That Shaped America',
+  },
+};
+
+// Helper to get default empty course access
+export function getDefaultCourseAccess(): CourseAccess {
+  return {
+    status: 'free',
+    trialStartedAt: null,
+    trialEndsAt: null,
+    purchasedAt: null,
+    stripePaymentIntentId: null,
+    stripeCustomerId: null,
+  };
+}
+
+// Helper to get course access for a specific course (with backwards compatibility)
+export function getCourseAccessForCourse(
+  userProfile: UserProfile | null | undefined,
+  courseId: string
+): CourseAccess | null {
+  if (!userProfile?.courseAccess) return null;
+
+  // Check if it's the new format (keyed by courseId)
+  if (userProfile.courseAccess[courseId]) {
+    return userProfile.courseAccess[courseId];
+  }
+
+  // Backwards compatibility: if courseAccess has 'status' directly, it's old format
+  // Treat old format as applying to 'history-for-homeschoolers' only
+  const oldFormat = userProfile.courseAccess as unknown as CourseAccess;
+  if (oldFormat.status && typeof oldFormat.status === 'string') {
+    if (courseId === 'history-for-homeschoolers') {
+      return oldFormat;
+    }
+    return null;
+  }
+
+  return null;
 }
 
 export interface Purchase {
