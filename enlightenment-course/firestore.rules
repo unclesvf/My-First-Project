@@ -44,13 +44,14 @@ service cloud.firestore {
                        request.resource.data.email is string &&
                        request.resource.data.displayName is string;
 
-      // Users can update their own profile (but not role or teacherId without proper checks)
+      // Users can update their own profile
+      // Using .get() with defaults to handle partial updates (like courseAccess changes)
       allow update: if isOwner(userId) &&
-                       // Can't change uid or email
-                       request.resource.data.uid == resource.data.uid &&
-                       request.resource.data.email == resource.data.email &&
-                       // Role changes restricted (handled separately)
-                       (request.resource.data.role == resource.data.role ||
+                       // Can't change uid or email (use .get() for partial update compatibility)
+                       request.resource.data.get('uid', resource.data.uid) == resource.data.uid &&
+                       request.resource.data.get('email', resource.data.email) == resource.data.email &&
+                       // Role changes restricted (only teachers can change roles)
+                       (request.resource.data.get('role', resource.data.role) == resource.data.role ||
                         isTeacher());
 
       // Only users can delete their own profile
