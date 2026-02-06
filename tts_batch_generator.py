@@ -284,6 +284,31 @@ def extract_narrator_name(text):
         return match.group(1)
     return None
 
+def strip_meta_intro(text):
+    """
+    Remove the meta-introduction that confuses the TTS model.
+    Strips lines like:
+      - "Welcome to today's history lesson..."
+      - "You will hear this story from..."
+    And starts from the first Chapter heading or narrator's first line.
+    """
+    lines = text.split('\n')
+    
+    # Find where the actual story begins
+    start_idx = 0
+    for i, line in enumerate(lines):
+        # Look for "Chapter One" or "Chapter 1" or similar
+        if re.match(r'^Chapter\s+(One|Two|1|2|I|II)\b', line, re.IGNORECASE):
+            start_idx = i
+            break
+        # Or look for "My name is..." as narrator's first line
+        if re.match(r'^My name is\s+', line, re.IGNORECASE):
+            start_idx = i
+            break
+    
+    # Return from the story start
+    return '\n'.join(lines[start_idx:]).strip()
+
 def get_voice_description(narrator_name, filename):
     """Get the voice description for a narrator, handling duplicates."""
     # Handle special cases where same name appears in different lessons
@@ -387,10 +412,10 @@ def process_lesson(model, input_path, output_path, lesson_name):
     
     # Read the script
     with open(input_path, 'r', encoding='utf-8') as f:
-        text = f.read()
+        full_text = f.read()
     
-    # Extract narrator
-    narrator = extract_narrator_name(text)
+    # Extract narrator BEFORE stripping (intro has the narrator name)
+    narrator = extract_narrator_name(full_text)
     voice_desc = get_voice_description(narrator, lesson_name) if narrator else None
     
     if not voice_desc:
@@ -398,9 +423,16 @@ def process_lesson(model, input_path, output_path, lesson_name):
         print(f"  Using default teenage narrator voice.")
         voice_desc = "Teenage American narrator, clear and engaging, speaks with historical interest."
     
+    # Add pacing instruction to voice description
+    voice_desc = f"Speak at a calm, unhurried pace with natural pauses between sentences. {voice_desc}"
+    
+    # Strip the meta-intro that confuses the TTS model
+    text = strip_meta_intro(full_text)
+    
     print(f"  Narrator: {narrator}")
-    print(f"  Voice: {voice_desc[:60]}...")
-    print(f"  Text length: {len(text)} characters")
+    print(f"  Voice: {voice_desc[:70]}...")
+    print(f"  Original length: {len(full_text)} chars")
+    print(f"  After strip: {len(text)} chars")
     
     # Generate audio for the WHOLE lesson at once (no chunking)
     # Qwen3-TTS supports up to 32K tokens which is plenty for our lessons
