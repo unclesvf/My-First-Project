@@ -400,39 +400,26 @@ def process_lesson(model, input_path, output_path, lesson_name):
     
     print(f"  Narrator: {narrator}")
     print(f"  Voice: {voice_desc[:60]}...")
+    print(f"  Text length: {len(text)} characters")
     
-    # Chunk the text for better quality
-    chunks = chunk_text(text, max_chars=800)
-    print(f"  Text chunks: {len(chunks)}")
+    # Generate audio for the WHOLE lesson at once (no chunking)
+    # Qwen3-TTS supports up to 32K tokens which is plenty for our lessons
+    print(f"  Generating full lesson audio...", end=" ", flush=True)
+    start_time = time.time()
     
-    # Generate audio for each chunk
-    all_audio = []
-    sample_rate = None
+    wavs, sr = model.generate_voice_design(
+        text=text,
+        language="English",
+        instruct=voice_desc,
+    )
     
-    for i, chunk in enumerate(chunks):
-        print(f"  Generating chunk {i+1}/{len(chunks)}...", end=" ", flush=True)
-        start_time = time.time()
-        
-        wavs, sr = model.generate_voice_design(
-            text=chunk,
-            language="English",
-            instruct=voice_desc,
-        )
-        
-        all_audio.append(wavs[0])
-        sample_rate = sr
-        
-        elapsed = time.time() - start_time
-        print(f"({elapsed:.1f}s)")
-    
-    # Concatenate all chunks
-    import numpy as np
-    final_audio = np.concatenate(all_audio)
+    elapsed = time.time() - start_time
+    print(f"({elapsed:.1f}s)")
     
     # Save the audio
-    sf.write(output_path, final_audio, sample_rate)
+    sf.write(output_path, wavs[0], sr)
     print(f"  Saved: {output_path}")
-    print(f"  Duration: {len(final_audio)/sample_rate:.1f} seconds")
+    print(f"  Duration: {len(wavs[0])/sr:.1f} seconds")
     
     return True
 
