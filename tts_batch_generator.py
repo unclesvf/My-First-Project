@@ -2,7 +2,7 @@
 Qwen3-TTS Batch Generator for History Courses
 Generates audio for all 75 lessons (24 Enlightenment + 51 American History)
 
-Place this script in: C:\AI\qwen-tts-models\
+Place this script in: C:/AI/qwen-tts-models/
 Run with: python tts_batch_generator.py
 
 Requirements:
@@ -347,11 +347,11 @@ def get_voice_description(narrator_name, filename):
         return NARRATOR_VOICES.get("Anna_Factory", NARRATOR_VOICES.get(narrator_name))
     if narrator_name == "Catherine" and "Progressive" in filename:
         return NARRATOR_VOICES.get("Catherine_Settlement", NARRATOR_VOICES.get(narrator_name))
-    if narrator_name == "Theodore" in filename or "Rough_Rider" in filename:
+    if "Theodore" in str(narrator_name) or "Rough_Rider" in filename:
         return NARRATOR_VOICES.get("Theodore_Roosevelt")
     
     # Check for "modern student" pattern
-    if "modern student" in text.lower() or "Light_Endures" in filename:
+    if "Light_Endures" in filename:
         return NARRATOR_VOICES.get("Modern_Student")
     
     return NARRATOR_VOICES.get(narrator_name)
